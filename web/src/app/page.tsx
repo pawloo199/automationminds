@@ -29,7 +29,7 @@ export default async function HomePage() {
   return (
     <SiteLayout transparentHeader>
       <JsonLd data={faqPageJsonLd(data.faq)} />
-      <HeroSlider slides={data.heroSlides} />
+      <HeroSlider slides={data.heroSlides} phone={data.settings.phone} />
       {data.intro ? (
         <IntroSection
           subtitle={data.intro.subtitle}

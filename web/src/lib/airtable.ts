@@ -131,6 +131,7 @@ function mapHeroSlide(record: {
     id,
     subtitle: str(fields.Subtitle),
     title: str(fields.Title),
+    description: str(fields.Description),
     imageUrl: str(fields.ImageUrl),
     buttonText: str(fields.ButtonText),
     buttonLink: str(fields.ButtonLink),

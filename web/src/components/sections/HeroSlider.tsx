@@ -6,11 +6,21 @@ import type { HeroSlide } from "@/lib/airtable.types";
 import { cn } from "@/lib/cn";
 import { ArrowRight, ChevronDown, ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
-export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
+const SWIPE_THRESHOLD_PX = 48;
+
+export function HeroSlider({
+  slides,
+  phone,
+}: {
+  slides: HeroSlide[];
+  phone?: string;
+}) {
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
+  const touchStart = useRef<{ x: number; y: number } | null>(null);
+  const resumeAutoplayTimeout = useRef<number | null>(null);
   const slide = slides[active];
   const total = slides.length;
 
@@ -26,6 +36,60 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
     () => setActive((i) => (i === slides.length - 1 ? 0 : i + 1)),
     [slides.length],
   );
+
+  const scheduleAutoplayResume = useCallback(() => {
+    if (resumeAutoplayTimeout.current) {
+      window.clearTimeout(resumeAutoplayTimeout.current);
+    }
+
+    resumeAutoplayTimeout.current = window.setTimeout(() => {
+      setPaused(false);
+      resumeAutoplayTimeout.current = null;
+    }, 8000);
+  }, []);
+
+  const handleTouchStart = useCallback((event: React.TouchEvent<HTMLElement>) => {
+    if (slides.length <= 1) return;
+
+    const touch = event.touches[0];
+    if (!touch) return;
+
+    setPaused(true);
+    touchStart.current = { x: touch.clientX, y: touch.clientY };
+  }, [slides.length]);
+
+  const handleTouchEnd = useCallback(
+    (event: React.TouchEvent<HTMLElement>) => {
+      if (!touchStart.current || slides.length <= 1) return;
+
+      const touch = event.changedTouches[0];
+      if (!touch) return;
+
+      const deltaX = touch.clientX - touchStart.current.x;
+      const deltaY = touch.clientY - touchStart.current.y;
+      touchStart.current = null;
+
+      const isHorizontalSwipe =
+        Math.abs(deltaX) >= SWIPE_THRESHOLD_PX &&
+        Math.abs(deltaX) > Math.abs(deltaY);
+
+      if (isHorizontalSwipe) {
+        if (deltaX < 0) {
+          next();
+        } else {
+          prev();
+        }
+      }
+
+      scheduleAutoplayResume();
+    },
+    [slides.length, next, prev, scheduleAutoplayResume],
+  );
+
+  const handleTouchCancel = useCallback(() => {
+    touchStart.current = null;
+    scheduleAutoplayResume();
+  }, [scheduleAutoplayResume]);
 
   useEffect(() => {
     if (slides.length <= 1 || paused) return;
@@ -46,11 +110,22 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
     };
   }, [slides.length, next, paused]);
 
+  useEffect(() => {
+    return () => {
+      if (resumeAutoplayTimeout.current) {
+        window.clearTimeout(resumeAutoplayTimeout.current);
+      }
+    };
+  }, []);
+
   if (!slide) return null;
 
   return (
     <section
-      className="relative min-h-[90vh] overflow-hidden bg-dark"
+      className="relative min-h-[90vh] overflow-hidden bg-dark touch-pan-y md:touch-auto"
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+      onTouchCancel={handleTouchCancel}
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       onFocusCapture={() => setPaused(true)}
@@ -108,18 +183,35 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
               {slide.title}
             </h1>
 
-            {slide.buttonText && slide.buttonLink ? (
-              <div className="mt-10 flex justify-center sm:justify-start">
-                <Button
-                  href={slide.buttonLink}
-                  className="group px-8 py-4 text-base md:px-10 md:py-[1.125rem] md:text-lg"
-                >
-                  {slide.buttonText}
-                  <ArrowRight
-                    className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 md:h-5 md:w-5"
-                    aria-hidden
-                  />
-                </Button>
+            {slide.description ? (
+              <p className="mx-auto mt-5 max-w-md text-sm leading-relaxed text-white/75 sm:mx-0 md:max-w-lg">
+                {slide.description}
+              </p>
+            ) : null}
+
+            {(slide.buttonText && slide.buttonLink) || phone ? (
+              <div className="mt-10 flex w-full flex-col items-stretch gap-4 sm:flex-row sm:items-center sm:justify-start">
+                {slide.buttonText && slide.buttonLink ? (
+                  <Button
+                    href={slide.buttonLink}
+                    className="group w-full px-8 py-4 text-base sm:w-auto md:px-10 md:py-[1.125rem] md:text-lg"
+                  >
+                    {slide.buttonText}
+                    <ArrowRight
+                      className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 md:h-5 md:w-5"
+                      aria-hidden
+                    />
+                  </Button>
+                ) : null}
+                {phone ? (
+                  <Button
+                    href={`tel:${phone.replace(/\s/g, "")}`}
+                    variant="outline-white"
+                    className="w-full px-8 py-4 text-base sm:w-auto md:px-10 md:py-[1.125rem] md:text-lg"
+                  >
+                    {phone}
+                  </Button>
+                ) : null}
               </div>
             ) : null}
           </div>

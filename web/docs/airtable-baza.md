@@ -72,6 +72,7 @@ Jedna lub więcej rekordów — używany jest pierwszy.
 |------|-----|
 | Subtitle | Single line text |
 | Title | Long text |
+| Description | Long text (krótki opis pod nagłówkiem, max ~2 wiersze) |
 | ImageUrl | URL |
 | ButtonText | Single line text |
 | ButtonLink | Single line text |

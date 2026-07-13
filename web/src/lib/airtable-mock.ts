@@ -84,6 +84,8 @@ export const mockHeroSlides: HeroSlide[] = [
     id: "1",
     subtitle: "Zwiększ efektywność Twojej firmy",
     title: "Zautomatyzujemy nawet 80% zadań wykonywanych w Twojej firmie",
+    description:
+      "Automatyzujemy powtarzalne zadania i wdrażamy AI, by Twój zespół pracował efektywniej.",
     imageUrl: "/images/migrated/hero-1.jpg",
     buttonText: "Skorzystaj z bezpłatnej konsultacji",
     buttonLink: "/kontakt",
@@ -93,6 +95,8 @@ export const mockHeroSlides: HeroSlide[] = [
     id: "2",
     subtitle: "Pomagamy automatyzować i mierzyć procesy",
     title: "Pomagamy automatyzować i mierzyć procesy",
+    description:
+      "Analizujemy procesy, wdrażamy narzędzia i mierzymy efekty na każdym etapie.",
     imageUrl: "/images/migrated/hero-2.jpg",
     buttonText: "Dowiedz się więcej",
     buttonLink: "/o-nas",
@@ -102,6 +106,8 @@ export const mockHeroSlides: HeroSlide[] = [
     id: "3",
     subtitle: "Sztuczna inteligencja w Twojej firmie",
     title: "Customowe rozwiązania AI",
+    description:
+      "Tworzymy rozwiązania AI dopasowane do procesów i celów Twojej firmy.",
     imageUrl: "/images/migrated/hero-3.jpg",
     buttonText: "Sprawdź",
     buttonLink: "/uslugi/automatyzacja-oraz-ai-w-niestandardowych-procesach",

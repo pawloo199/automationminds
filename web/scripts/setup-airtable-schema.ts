@@ -74,6 +74,7 @@ const tables: TableDef[] = [
     fields: [
       { name: "Title", type: "multilineText" },
       { name: "Subtitle", type: "singleLineText" },
+      { name: "Description", type: "multilineText" },
       { name: "ImageUrl", type: "url" },
       { name: "ButtonText", type: "singleLineText" },
       { name: "ButtonLink", type: "url" },

@@ -26,6 +26,7 @@ export interface HeroSlide {
   id: string;
   subtitle: string;
   title: string;
+  description: string;
   imageUrl: string;
   buttonText: string;
   buttonLink: string;

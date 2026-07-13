@@ -121,6 +121,7 @@ async function seedAirtable() {
     await base("HeroSlides").create({
       Subtitle: slide.subtitle,
       Title: slide.title,
+      Description: slide.description,
       ImageUrl: slide.imageUrl,
       ButtonText: slide.buttonText,
       ButtonLink: slide.buttonLink,
