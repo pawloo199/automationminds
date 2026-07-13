@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "migrate": "tsx scripts/migrate-from-wordpress.ts",
-    "setup-schema": "tsx scripts/setup-airtable-schema.ts"
+    "setup-schema": "tsx scripts/setup-airtable-schema.ts",
+    "seed-demo": "tsx scripts/seed-airtable-demo.ts"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

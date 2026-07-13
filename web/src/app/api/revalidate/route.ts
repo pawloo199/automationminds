@@ -1,14 +1,9 @@
+import {
+  applyRevalidatePath,
+  resolveRevalidatePlan,
+} from "@/lib/revalidate-paths";
 import { revalidatePath } from "next/cache";
 import { NextRequest, NextResponse } from "next/server";
-import { getLandingPages, getServices } from "@/lib/airtable";
-
-const REVALIDATE_PATHS = [
-  "/",
-  "/o-nas",
-  "/kontakt",
-  "/polityka-prywatnosci",
-  "/dziekujemy",
-] as const;
 
 export async function GET(request: NextRequest) {
   const secret = request.nextUrl.searchParams.get("secret");
@@ -17,32 +12,15 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: "Invalid secret" }, { status: 401 });
   }
 
+  const tableName = request.nextUrl.searchParams.get("tableName");
+  const recordId = request.nextUrl.searchParams.get("recordId");
+  const full = request.nextUrl.searchParams.get("full") === "true";
+
+  const plan = await resolveRevalidatePlan({ tableName, recordId, full });
   const revalidated: string[] = [];
 
-  for (const path of REVALIDATE_PATHS) {
-    revalidatePath(path, "layout");
-    revalidatePath(path, "page");
-    revalidated.push(path);
-  }
-
-  revalidatePath("/uslugi", "layout");
-  revalidatePath("/kampanie", "layout");
-  revalidated.push("/uslugi", "/kampanie");
-
-  const [services, landingPages] = await Promise.all([
-    getServices(),
-    getLandingPages(),
-  ]);
-
-  for (const service of services) {
-    const path = `/uslugi/${service.slug}`;
-    revalidatePath(path, "page");
-    revalidated.push(path);
-  }
-
-  for (const page of landingPages) {
-    const path = `/kampanie/${page.slug}`;
-    revalidatePath(path, "page");
+  for (const path of plan.paths) {
+    applyRevalidatePath(path, revalidatePath);
     revalidated.push(path);
   }
 
@@ -53,6 +31,9 @@ export async function GET(request: NextRequest) {
   return NextResponse.json({
     revalidated: true,
     now: Date.now(),
+    mode: plan.mode,
+    tableName: plan.tableName,
+    recordId: plan.recordId,
     paths: revalidated,
     airtableConfigured,
     hint: airtableConfigured

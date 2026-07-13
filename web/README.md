@@ -38,6 +38,8 @@ Strona: [http://localhost:3000](http://localhost:3000)
 
 Szczegółowy schemat bazy: [docs/airtable-baza.md](docs/airtable-baza.md)
 
+Automatyzacja odświeżania treści (Airtable → Vercel, wzorzec IRLF): [docs/airtable-automation.md](docs/airtable-automation.md)
+
 Migracja treści z WordPress:
 
 ```bash

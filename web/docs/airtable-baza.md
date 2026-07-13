@@ -200,19 +200,17 @@ Bez tokenów Airtable strona działa na danych mock z `src/lib/airtable-mock.ts`
 
 ---
 
-## Automatyzacja revalidate
+## Automatyzacja revalidate (jak IRLF)
 
-Po edycji treści CMS w Airtable skonfiguruj automatyzację:
+Po edycji treści CMS skonfiguruj automatyzację Airtable z krokiem **Run script** — szczegóły krok po kroku:
 
-1. Trigger: **When record is updated** (dowolna tabela CMS)
-2. Action: **Send webhook** (GET)
-3. URL produkcji:
-   ```
-   https://automationminds.net/api/revalidate?secret=TWOJ_REVALIDATE_SECRET
-   ```
-4. URL preview Vercel:
-   ```
-   https://TWOJ-PROJEKT.vercel.app/api/revalidate?secret=TWOJ_REVALIDATE_SECRET
-   ```
+**[docs/airtable-automation.md](airtable-automation.md)**
 
-Odpowiedź `200` z `"revalidated": true` oznacza odświeżenie cache ISR.
+Skrypt do wklejenia w Airtable: [`scripts/airtable-automation-revalidate.js`](../scripts/airtable-automation-revalidate.js)
+
+Skrót:
+
+1. Trigger: **When record is created/updated** (tabele CMS, nie `ContactSubmissions`)
+2. Action: **Run script** + input variables: `revalidateSecret`, `siteUrl`, `tableName`, `recordId`
+3. Endpoint: `GET {siteUrl}/api/revalidate?secret=...&tableName=...&recordId=...`
+4. Oczekiwana odpowiedź: `{ "revalidated": true }`
