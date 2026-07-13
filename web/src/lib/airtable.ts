@@ -1,5 +1,4 @@
-import Airtable from "airtable";
-import type { FieldSet, Records } from "airtable";
+import { createAirtableBase, type FieldSet } from "./airtable-client";
 import { cache } from "react";
 import type {
   CaseStudy,
@@ -66,9 +65,7 @@ function getBase() {
   if (!isConfigured()) {
     throw new Error("Airtable not configured");
   }
-  return new Airtable({ apiKey: process.env.AIRTABLE_API_TOKEN }).base(
-    process.env.AIRTABLE_BASE_ID!,
-  );
+  return createAirtableBase();
 }
 
 function str(value: unknown): string {
@@ -84,12 +81,12 @@ async function fetchPublished<T>(
   mapRecord: (record: { id: string; fields: FieldSet }) => T,
   sortField = "Order",
 ): Promise<T[]> {
-  const records = (await getBase()(table)
+  const records = await getBase()(table)
     .select({
       filterByFormula: "{Published} = TRUE()",
       sort: [{ field: sortField, direction: "asc" }],
     })
-    .all()) as Records<FieldSet>;
+    .all();
 
   return records.map((r) => mapRecord({ id: r.id, fields: r.fields }));
 }
@@ -312,7 +309,7 @@ async function getPageSections(pageSlug?: string): Promise<PageSection[]> {
       : "TRUE()";
     const records = (await getBase()(TABLES.pageSections)
       .select({ filterByFormula: formula })
-      .all()) as Records<FieldSet>;
+      .all());
     return records.map((r) => mapPageSection({ id: r.id, fields: r.fields }));
   } catch {
     return [];
@@ -343,7 +340,7 @@ export const getPageSection = cache(
           filterByFormula: `AND({PageSlug} = '${pageSlug}', {SectionKey} = '${sectionKey}')`,
           maxRecords: 1,
         })
-        .all()) as Records<FieldSet>;
+        .all());
       if (records.length === 0) {
         return getMockPageSection(pageSlug, sectionKey);
       }
@@ -419,7 +416,7 @@ async function fetchLandingBenefits(): Promise<LandingBenefit[]> {
   try {
     const records = (await getBase()(TABLES.landingBenefits)
       .select({ sort: [{ field: "Order", direction: "asc" }] })
-      .all()) as Records<FieldSet>;
+      .all());
     return records.map((r) =>
       mapLandingBenefit({ id: r.id, fields: r.fields }),
     );
@@ -432,7 +429,7 @@ async function fetchLandingSections(): Promise<LandingSection[]> {
   try {
     const records = (await getBase()(TABLES.landingSections)
       .select({ sort: [{ field: "Order", direction: "asc" }] })
-      .all()) as Records<FieldSet>;
+      .all());
     return records.map((r) =>
       mapLandingSection({ id: r.id, fields: r.fields }),
     );
@@ -451,7 +448,7 @@ export const getLandingPages = cache(async (): Promise<LandingPage[]> => {
           filterByFormula: "AND({Published} = TRUE(), {NoIndex} != TRUE())",
           sort: [{ field: "Slug", direction: "asc" }],
         })
-        .all() as Promise<Records<FieldSet>>,
+        .all(),
       fetchLandingBenefits(),
       fetchLandingSections(),
     ]);
@@ -476,7 +473,7 @@ export const getLandingPageBySlug = cache(
             filterByFormula: `AND({Slug} = '${slug}', {Published} = TRUE())`,
             maxRecords: 1,
           })
-          .all() as Promise<Records<FieldSet>>,
+          .all(),
         fetchLandingBenefits(),
         fetchLandingSections(),
       ]);
@@ -503,7 +500,7 @@ export const getListItems = cache(
           filterByFormula: `{PageSlug} = '${pageSlug}'`,
           sort: [{ field: "Order", direction: "asc" }],
         })
-        .all()) as Records<FieldSet>;
+        .all());
       const items = records.map((r) =>
         mapListItem({ id: r.id, fields: r.fields }),
       );
@@ -549,7 +546,7 @@ export const getCaseStudies = cache(
           filterByFormula: formula,
           sort: [{ field: "Order", direction: "asc" }],
         })
-        .all()) as Records<FieldSet>;
+        .all());
       const items = records.map((r) =>
         mapCaseStudy({ id: r.id, fields: r.fields }),
       );
@@ -596,7 +593,7 @@ export const getServices = cache(async (): Promise<Service[]> => {
         filterByFormula: "{Published} = TRUE()",
         sort: [{ field: "Order", direction: "asc" }],
       })
-      .all()) as Records<FieldSet>;
+      .all());
     const services = records.map((r) =>
       mapService({ id: r.id, fields: r.fields }),
     );
@@ -616,7 +613,7 @@ export const getServiceBySlug = cache(
           filterByFormula: `{Slug} = '${slug}'`,
           maxRecords: 1,
         })
-        .all()) as Records<FieldSet>;
+        .all());
       if (records.length === 0) return getMockServiceBySlug(slug);
       return mapService({ id: records[0].id, fields: records[0].fields });
     } catch {
@@ -635,7 +632,7 @@ export const getProcessSteps = cache(
           filterByFormula: `{ServiceSlug} = '${serviceSlug}'`,
           sort: [{ field: "StepNumber", direction: "asc" }],
         })
-        .all()) as Records<FieldSet>;
+        .all());
       const steps = records.map((r) =>
         mapProcessStep({ id: r.id, fields: r.fields }),
       );

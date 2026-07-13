@@ -66,7 +66,7 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
             type="button"
             onClick={prev}
             aria-label="Poprzedni slajd"
-            className="absolute left-4 top-1/2 z-20 -translate-y-1/2 rounded-full bg-white/10 p-3 text-white backdrop-blur hover:bg-white/20"
+            className="absolute left-4 top-1/2 z-20 hidden -translate-y-1/2 rounded-full bg-white/10 p-3 text-white backdrop-blur hover:bg-white/20 md:block"
           >
             <ChevronLeft className="h-6 w-6" />
           </button>
@@ -74,7 +74,7 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
             type="button"
             onClick={next}
             aria-label="Następny slajd"
-            className="absolute right-4 top-1/2 z-20 -translate-y-1/2 rounded-full bg-white/10 p-3 text-white backdrop-blur hover:bg-white/20"
+            className="absolute right-4 top-1/2 z-20 hidden -translate-y-1/2 rounded-full bg-white/10 p-3 text-white backdrop-blur hover:bg-white/20 md:block"
           >
             <ChevronRight className="h-6 w-6" />
           </button>

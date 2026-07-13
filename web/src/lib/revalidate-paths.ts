@@ -1,4 +1,4 @@
-import Airtable from "airtable";
+import { createAirtableBase } from "./airtable-client";
 
 const STATIC_PAGES = [
   "/",
@@ -21,9 +21,7 @@ function isConfigured(): boolean {
 }
 
 function getBase() {
-  return new Airtable({ apiKey: process.env.AIRTABLE_API_TOKEN }).base(
-    process.env.AIRTABLE_BASE_ID!,
-  );
+  return createAirtableBase();
 }
 
 function pageSlugToPath(pageSlug: string): string {

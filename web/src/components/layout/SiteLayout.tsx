@@ -1,6 +1,7 @@
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { getServices, getSettings } from "@/lib/airtable";
+import { cn } from "@/lib/cn";
 import type { ReactNode } from "react";
 
 export async function SiteLayout({
@@ -22,7 +23,7 @@ export async function SiteLayout({
         services={services}
         transparent={transparentHeader}
       />
-      <main className="pt-[72px]">{children}</main>
+      <main className={cn(!transparentHeader && "pt-[72px]")}>{children}</main>
       <Footer settings={settings} />
     </>
   );
