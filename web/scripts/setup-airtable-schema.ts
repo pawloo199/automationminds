@@ -78,6 +78,11 @@ const tables: TableDef[] = [
       { name: "ImageUrl", type: "url" },
       { name: "ButtonText", type: "singleLineText" },
       { name: "ButtonLink", type: "url" },
+      {
+        name: "ButtonOpensModal",
+        type: "checkbox",
+        options: { icon: "check", color: "greenBright" },
+      },
       { name: "Order", type: "number", options: { precision: 0 } },
       {
         name: "Published",
@@ -221,10 +226,56 @@ const tables: TableDef[] = [
   {
     name: "ContactSubmissions",
     fields: [
+      { name: "FirstName", type: "singleLineText" },
+      { name: "LastName", type: "singleLineText" },
       { name: "Name", type: "singleLineText" },
       { name: "Email", type: "email" },
       { name: "Phone", type: "singleLineText" },
+      { name: "Company", type: "singleLineText" },
+      {
+        name: "ConsentGiven",
+        type: "checkbox",
+        options: { icon: "check", color: "greenBright" },
+      },
       { name: "Message", type: "multilineText" },
+      { name: "AdditionalNotes", type: "multilineText" },
+      {
+        name: "EmployeeCount",
+        type: "singleSelect",
+        options: {
+          choices: [
+            { name: "1–10" },
+            { name: "11–50" },
+            { name: "51–200" },
+            { name: "201–500" },
+            { name: "500+" },
+          ],
+        },
+      },
+      {
+        name: "Industry",
+        type: "singleSelect",
+        options: {
+          choices: [
+            { name: "IT / technologie" },
+            { name: "E-commerce" },
+            { name: "Produkcja" },
+            { name: "Usługi profesjonalne" },
+            { name: "Finanse i ubezpieczenia" },
+            { name: "Zdrowie i medycyna" },
+            { name: "Edukacja" },
+            { name: "Inna" },
+          ],
+        },
+      },
+      { name: "InterestedServices", type: "multilineText" },
+      {
+        name: "FormStep",
+        type: "singleSelect",
+        options: {
+          choices: [{ name: "1" }, { name: "2" }],
+        },
+      },
       { name: "SourcePage", type: "singleLineText" },
       { name: "UtmSource", type: "singleLineText" },
       { name: "UtmMedium", type: "singleLineText" },

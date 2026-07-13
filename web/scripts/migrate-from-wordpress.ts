@@ -125,6 +125,7 @@ async function seedAirtable() {
       ImageUrl: slide.imageUrl,
       ButtonText: slide.buttonText,
       ButtonLink: slide.buttonLink,
+      ButtonOpensModal: slide.buttonOpensModal,
       Order: slide.order,
       Published: true,
     });

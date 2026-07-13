@@ -122,6 +122,15 @@ class AirtableTable {
       body: JSON.stringify({ fields }),
     });
   }
+
+  async update(recordId: string, fields: FieldSet): Promise<AirtableRecord> {
+    const url = tableUrl(this.tableName);
+    url.pathname += `/${recordId}`;
+    return airtableRequest<AirtableRecord>(url, {
+      method: "PATCH",
+      body: JSON.stringify({ fields }),
+    });
+  }
 }
 
 export type AirtableBase = (tableName: string) => AirtableTable;

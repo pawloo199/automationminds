@@ -46,9 +46,12 @@ async function main() {
 
     await base("HeroSlides").update(record.id, {
       Description: mock.description,
+      ButtonOpensModal: mock.buttonOpensModal,
     });
     updated += 1;
-    console.log(`✓ ${order || title} → ${mock.description}`);
+    console.log(
+      `✓ ${order || title} → modal: ${mock.buttonOpensModal ? "tak" : "nie"}`,
+    );
   }
 
   console.log(`\nZaktualizowano ${updated}/${records.length} slajdów.`);

@@ -75,7 +75,8 @@ Jedna lub więcej rekordów — używany jest pierwszy.
 | Description | Long text (krótki opis pod nagłówkiem, max ~2 wiersze) |
 | ImageUrl | URL |
 | ButtonText | Single line text |
-| ButtonLink | Single line text |
+| ButtonLink | Single line text / URL (ignorowany gdy `ButtonOpensModal` = true) |
+| ButtonOpensModal | Checkbox — otwiera modal z formularzem kontaktowym zamiast nawigacji |
 | Order | Number |
 | Published | Checkbox |
 
@@ -181,10 +182,19 @@ Jedna lub więcej rekordów — używany jest pierwszy.
 
 | Pole | Typ |
 |------|-----|
-| Name | Single line text |
+| FirstName | Single line text |
+| LastName | Single line text |
+| Name | Single line text (imię + nazwisko) |
 | Email | Email |
 | Phone | Single line text |
+| Company | Single line text |
+| ConsentGiven | Checkbox |
 | Message | Long text |
+| AdditionalNotes | Long text (krok 2 — opis potrzeb) |
+| EmployeeCount | Single select (`1–10`, `11–50`, `51–200`, `201–500`, `500+`) |
+| Industry | Single select (branża) |
+| InterestedServices | Long text (wybrane usługi, przecinkami) |
+| FormStep | Single select (`1`, `2`) |
 | SourcePage | Single line text |
 | Status | Single select (`New`, `Contacted`, `Closed`) |
 

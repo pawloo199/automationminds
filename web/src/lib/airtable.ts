@@ -4,6 +4,8 @@ import { cache } from "react";
 import type {
   CaseStudy,
   ContactSubmissionData,
+  ContactSubmissionStep1Data,
+  ContactSubmissionStep2Data,
   FaqItem,
   FeatureTile,
   FeatureTileGroup,
@@ -77,6 +79,10 @@ function num(value: unknown): number {
   return typeof value === "number" ? value : 0;
 }
 
+function bool(value: unknown): boolean {
+  return value === true;
+}
+
 async function fetchPublished<T>(
   table: string,
   mapRecord: (record: { id: string; fields: FieldSet }) => T,
@@ -135,6 +141,7 @@ function mapHeroSlide(record: {
     imageUrl: str(fields.ImageUrl),
     buttonText: str(fields.ButtonText),
     buttonLink: str(fields.ButtonLink),
+    buttonOpensModal: bool(fields.ButtonOpensModal),
     order: num(fields.Order),
   };
 }
@@ -718,6 +725,62 @@ export async function createContactSubmission(
     UtmContent: data.utmContent || "",
     Status: "New",
   });
+}
+
+export async function createContactSubmissionStep1(
+  data: ContactSubmissionStep1Data,
+): Promise<string> {
+  if (!isConfigured()) {
+    console.info("[mock] Contact step 1:", data);
+    return "mock-submission-id";
+  }
+
+  const record = await getBase()(TABLES.contactSubmissions).create({
+    FirstName: data.firstName,
+    LastName: data.lastName,
+    Name: `${data.firstName} ${data.lastName}`.trim(),
+    Email: data.email,
+    Phone: data.phone,
+    Company: data.company,
+    ConsentGiven: data.consent,
+    Message: "",
+    SourcePage: data.sourcePage,
+    UtmSource: data.utmSource || "",
+    UtmMedium: data.utmMedium || "",
+    UtmCampaign: data.utmCampaign || "",
+    UtmTerm: data.utmTerm || "",
+    UtmContent: data.utmContent || "",
+    FormStep: "1",
+    Status: "New",
+  });
+
+  return record.id;
+}
+
+export async function updateContactSubmissionStep2(
+  submissionId: string,
+  data: ContactSubmissionStep2Data,
+): Promise<void> {
+  if (!isConfigured()) {
+    console.info("[mock] Contact step 2:", submissionId, data);
+    return;
+  }
+
+  const fields: Record<string, unknown> = {
+    FormStep: "2",
+  };
+
+  if (data.employeeCount) fields.EmployeeCount = data.employeeCount;
+  if (data.industry) fields.Industry = data.industry;
+  if (data.interestedServices?.length) {
+    fields.InterestedServices = data.interestedServices.join(", ");
+  }
+  if (data.additionalNotes?.trim()) {
+    fields.AdditionalNotes = data.additionalNotes.trim();
+    fields.Message = data.additionalNotes.trim();
+  }
+
+  await getBase()(TABLES.contactSubmissions).update(submissionId, fields);
 }
 
 export { isConfigured };

@@ -89,6 +89,7 @@ export const mockHeroSlides: HeroSlide[] = [
     imageUrl: "/images/migrated/hero-1.jpg",
     buttonText: "Skorzystaj z bezpłatnej konsultacji",
     buttonLink: "/kontakt",
+    buttonOpensModal: true,
     order: 1,
   },
   {
@@ -100,6 +101,7 @@ export const mockHeroSlides: HeroSlide[] = [
     imageUrl: "/images/migrated/hero-2.jpg",
     buttonText: "Dowiedz się więcej",
     buttonLink: "/o-nas",
+    buttonOpensModal: false,
     order: 2,
   },
   {
@@ -111,6 +113,7 @@ export const mockHeroSlides: HeroSlide[] = [
     imageUrl: "/images/migrated/hero-3.jpg",
     buttonText: "Sprawdź",
     buttonLink: "/uslugi/automatyzacja-oraz-ai-w-niestandardowych-procesach",
+    buttonOpensModal: false,
     order: 3,
   },
 ];

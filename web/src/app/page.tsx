@@ -8,7 +8,7 @@ import { StatsRow } from "@/components/sections/StatsRow";
 import { TabbedCases } from "@/components/sections/TabbedCases";
 import { ToolsGrid } from "@/components/sections/ToolsGrid";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { getHomePageData } from "@/lib/airtable";
+import { getHomePageData, getServices } from "@/lib/airtable";
 import { faqPageJsonLd } from "@/lib/json-ld";
 import { buildMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
@@ -24,12 +24,19 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function HomePage() {
-  const data = await getHomePageData();
+  const [data, services] = await Promise.all([getHomePageData(), getServices()]);
 
   return (
     <SiteLayout transparentHeader>
       <JsonLd data={faqPageJsonLd(data.faq)} />
-      <HeroSlider slides={data.heroSlides} phone={data.settings.phone} />
+      <HeroSlider
+        slides={data.heroSlides}
+        phone={data.settings.phone}
+        services={services.map((service) => ({
+          id: service.id,
+          menuLabel: service.menuLabel,
+        }))}
+      />
       {data.intro ? (
         <IntroSection
           subtitle={data.intro.subtitle}

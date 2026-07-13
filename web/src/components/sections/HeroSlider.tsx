@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
+import { ContactModal } from "@/components/forms/ContactModal";
 import type { HeroSlide } from "@/lib/airtable.types";
 import { cn } from "@/lib/cn";
 import { ArrowRight, ChevronDown, ChevronLeft, ChevronRight } from "lucide-react";
@@ -13,12 +14,15 @@ const SWIPE_THRESHOLD_PX = 48;
 export function HeroSlider({
   slides,
   phone,
+  services = [],
 }: {
   slides: HeroSlide[];
   phone?: string;
+  services?: { id: string; menuLabel: string }[];
 }) {
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
+  const [contactModalOpen, setContactModalOpen] = useState(false);
   const touchStart = useRef<{ x: number; y: number } | null>(null);
   const resumeAutoplayTimeout = useRef<number | null>(null);
   const slide = slides[active];
@@ -111,6 +115,12 @@ export function HeroSlider({
   }, [slides.length, next, paused]);
 
   useEffect(() => {
+    if (contactModalOpen) {
+      setPaused(true);
+    }
+  }, [contactModalOpen]);
+
+  useEffect(() => {
     return () => {
       if (resumeAutoplayTimeout.current) {
         window.clearTimeout(resumeAutoplayTimeout.current);
@@ -189,9 +199,22 @@ export function HeroSlider({
               </p>
             ) : null}
 
-            {(slide.buttonText && slide.buttonLink) || phone ? (
+            {(slide.buttonText && (slide.buttonOpensModal || slide.buttonLink)) ||
+            phone ? (
               <div className="mt-10 flex w-full flex-col items-stretch gap-4 sm:flex-row sm:items-center sm:justify-start">
-                {slide.buttonText && slide.buttonLink ? (
+                {slide.buttonText && slide.buttonOpensModal ? (
+                  <Button
+                    type="button"
+                    onClick={() => setContactModalOpen(true)}
+                    className="group w-full px-8 py-4 text-base sm:w-auto md:px-10 md:py-[1.125rem] md:text-lg"
+                  >
+                    {slide.buttonText}
+                    <ArrowRight
+                      className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 md:h-5 md:w-5"
+                      aria-hidden
+                    />
+                  </Button>
+                ) : slide.buttonText && slide.buttonLink ? (
                   <Button
                     href={slide.buttonLink}
                     className="group w-full px-8 py-4 text-base sm:w-auto md:px-10 md:py-[1.125rem] md:text-lg"
@@ -299,6 +322,13 @@ export function HeroSlider({
         </span>
         <ChevronDown className="hero-scroll-hint h-4 w-4" aria-hidden />
       </div>
+
+      <ContactModal
+        open={contactModalOpen}
+        onClose={() => setContactModalOpen(false)}
+        sourcePage="/"
+        services={services}
+      />
     </section>
   );
 }

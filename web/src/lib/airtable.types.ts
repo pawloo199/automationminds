@@ -30,6 +30,7 @@ export interface HeroSlide {
   imageUrl: string;
   buttonText: string;
   buttonLink: string;
+  buttonOpensModal: boolean;
   order: number;
 }
 
@@ -172,6 +173,28 @@ export interface ContactSubmissionData {
   utmCampaign?: string;
   utmTerm?: string;
   utmContent?: string;
+}
+
+export interface ContactSubmissionStep1Data {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  company: string;
+  consent: boolean;
+  sourcePage: string;
+  utmSource?: string;
+  utmMedium?: string;
+  utmCampaign?: string;
+  utmTerm?: string;
+  utmContent?: string;
+}
+
+export interface ContactSubmissionStep2Data {
+  employeeCount?: string;
+  industry?: string;
+  interestedServices?: string[];
+  additionalNotes?: string;
 }
 
 export interface HomePageData {
