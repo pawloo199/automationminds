@@ -1,4 +1,5 @@
 import type { BreadcrumbItem, FaqItem, LandingPage, Service, Settings } from "./airtable.types";
+import { absoluteAssetUrl } from "./assets";
 import { siteUrl } from "./metadata";
 
 export function organizationJsonLd(settings: Settings) {
@@ -7,7 +8,7 @@ export function organizationJsonLd(settings: Settings) {
     "@type": "Organization",
     name: settings.siteName || "Automation Minds",
     url: siteUrl,
-    logo: `${siteUrl}${settings.logoColorUrl}`,
+    logo: absoluteAssetUrl(settings.logoColorUrl),
     email: settings.email || undefined,
     telephone: settings.phone || undefined,
     address: settings.address

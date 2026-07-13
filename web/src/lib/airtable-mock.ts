@@ -65,8 +65,8 @@ export const mockSettings: Settings = {
   phone: "+48 726 587 379",
   email: "kontakt@automationminds.net",
   address: "Polska",
-  logoWhiteUrl: "/images/logo-white.svg",
-  logoColorUrl: "/images/logo-color.svg",
+  logoWhiteUrl: "/images/logo-white.png",
+  logoColorUrl: "/images/logo-color.png",
   metaDescription:
     "Automation Minds — automatyzacja procesów biznesowych i rozwiązania AI dla firm.",
   defaultOgImageUrl: "/opengraph-image",

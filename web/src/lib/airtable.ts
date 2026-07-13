@@ -1,4 +1,5 @@
 import { createAirtableBase, type FieldSet } from "./airtable-client";
+import { normalizeLogoUrl } from "./assets";
 import { cache } from "react";
 import type {
   CaseStudy,
@@ -97,8 +98,14 @@ function mapSettings(fields: FieldSet): Settings {
     phone: str(fields.Phone) || mockSettings.phone,
     email: str(fields.Email) || mockSettings.email,
     address: str(fields.Address) || mockSettings.address,
-    logoWhiteUrl: str(fields.LogoWhiteUrl) || mockSettings.logoWhiteUrl,
-    logoColorUrl: str(fields.LogoColorUrl) || mockSettings.logoColorUrl,
+    logoWhiteUrl: normalizeLogoUrl(
+      str(fields.LogoWhiteUrl),
+      mockSettings.logoWhiteUrl,
+    ),
+    logoColorUrl: normalizeLogoUrl(
+      str(fields.LogoColorUrl),
+      mockSettings.logoColorUrl,
+    ),
     metaDescription:
       str(fields.MetaDescription) || mockSettings.metaDescription,
     defaultOgImageUrl:

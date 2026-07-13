@@ -29,8 +29,146 @@ body {
   font-family: var(--font-space-grotesk), system-ui, sans-serif;
 }
 
+@property --hero-grid-x {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 20%;
+}
+
+@property --hero-grid-y {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 30%;
+}
+
+@property --hero-grid-glow {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 10rem;
+}
+
+.hero-grid {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  mask-image: linear-gradient(to bottom, black 48%, transparent 100%);
+}
+
+.hero-grid__base,
+.hero-grid__accent {
+  position: absolute;
+  inset: 0;
+  background-size: 4rem 4rem;
+}
+
+.hero-grid__base {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+}
+
+.hero-grid__accent {
+  background-image:
+    linear-gradient(to right, rgba(109, 81, 253, 0.5) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(109, 81, 253, 0.5) 1px, transparent 1px),
+    radial-gradient(circle, rgba(139, 116, 255, 0.95) 1.5px, transparent 2px);
+  mask-image: radial-gradient(
+    circle var(--hero-grid-glow) at var(--hero-grid-x) var(--hero-grid-y),
+    black 0%,
+    transparent 100%
+  );
+}
+
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
+  }
+
+  @keyframes hero-content-enter {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 1.5rem, 0);
+    }
+
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes hero-ken-burns {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+
+    to {
+      transform: scale3d(1.06, 1.06, 1);
+    }
+  }
+
+  @keyframes hero-scroll-hint {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0);
+      opacity: 0.4;
+    }
+
+    50% {
+      transform: translate3d(0, 0.35rem, 0);
+      opacity: 1;
+    }
+  }
+
+  .hero-content-enter {
+    animation: hero-content-enter 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .hero-ken-burns {
+    animation: hero-ken-burns 18s ease-out forwards;
+    will-change: transform;
+  }
+
+  .hero-scroll-hint {
+    animation: hero-scroll-hint 2.4s ease-in-out infinite;
+  }
+
+  .hero-grid__accent {
+    animation: hero-grid-spotlight 18s ease-in-out infinite;
+  }
+
+  @keyframes hero-grid-spotlight {
+    0%,
+    100% {
+      --hero-grid-x: 16%;
+      --hero-grid-y: 24%;
+      --hero-grid-glow: 9rem;
+    }
+
+    25% {
+      --hero-grid-x: 78%;
+      --hero-grid-y: 38%;
+      --hero-grid-glow: 12rem;
+    }
+
+    50% {
+      --hero-grid-x: 52%;
+      --hero-grid-y: 72%;
+      --hero-grid-glow: 10rem;
+    }
+
+    75% {
+      --hero-grid-x: 28%;
+      --hero-grid-y: 52%;
+      --hero-grid-glow: 13rem;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-content-enter,
+  .hero-ken-burns,
+  .hero-scroll-hint,
+  .hero-grid__accent {
+    animation: none !important;
   }
 }
