@@ -1,11 +1,8 @@
 # Automation Minds
 
-Repozytorium zawiera:
+Strona firmowa Automation Minds — **Next.js 15** + **Airtable CMS** + deploy na **Vercel**.
 
-- **`automationminds/`** — oryginalny motyw WordPress (ACF, Bootstrap/Crafto)
-- **`web/`** — nowa strona Next.js + Airtable + Vercel
-
-## Uruchomienie strony Next.js
+## Uruchomienie lokalne
 
 ```bash
 cd web
@@ -17,4 +14,6 @@ Szczegóły: [web/README.md](web/README.md)
 
 ## Deploy
 
-Aplikacja Next.js deployowana jest z folderu `web/` na Vercel (region `fra1`).
+Aplikacja deployowana jest z folderu `web/` na Vercel (region `fra1`).
+
+Produkcja: https://web-topaz-sigma-56.vercel.app

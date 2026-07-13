@@ -4,6 +4,7 @@ import type {
   FeatureTile,
   HeroSlide,
   HomePageData,
+  LandingPage,
   ListItem,
   PageSection,
   ProcessStep,
@@ -12,12 +13,64 @@ import type {
   Tool,
 } from "./airtable.types";
 
+const sectionDefaults = {
+  imageAlt: "",
+  metaTitle: "",
+  metaDescription: "",
+};
+
+function completeService(
+  s: Omit<
+    Service,
+    "metaTitle" | "metaDescription" | "ogImageUrl" | "updatedAt" | "introImageAlt"
+  > &
+    Partial<
+      Pick<
+        Service,
+        "metaTitle" | "metaDescription" | "ogImageUrl" | "updatedAt" | "introImageAlt"
+      >
+    >,
+): Service {
+  return {
+    ...s,
+    metaTitle: s.metaTitle ?? s.title,
+    metaDescription: s.metaDescription ?? s.introBody.slice(0, 155),
+    ogImageUrl: s.ogImageUrl ?? s.bannerImageUrl,
+    updatedAt: s.updatedAt ?? "",
+    introImageAlt: s.introImageAlt ?? s.introTitle,
+  };
+}
+
+function completeCaseStudy(
+  c: Omit<CaseStudy, "imageAlt"> & Partial<Pick<CaseStudy, "imageAlt">>,
+): CaseStudy {
+  return { ...c, imageAlt: c.imageAlt ?? c.title };
+}
+
+function completeFaq(
+  f: Omit<FaqItem, "keywords"> & Partial<Pick<FaqItem, "keywords">>,
+): FaqItem {
+  return { ...f, keywords: f.keywords ?? "" };
+}
+
+function withSectionDefaults(
+  section: Omit<PageSection, keyof typeof sectionDefaults> &
+    Partial<typeof sectionDefaults>,
+): PageSection {
+  return { ...sectionDefaults, ...section };
+}
+
 export const mockSettings: Settings = {
+  siteName: "Automation Minds",
   phone: "+48 726 587 379",
+  email: "kontakt@automationminds.net",
+  address: "Polska",
   logoWhiteUrl: "/images/logo-white.svg",
   logoColorUrl: "/images/logo-color.svg",
   metaDescription:
     "Automation Minds — automatyzacja procesów biznesowych i rozwiązania AI dla firm.",
+  defaultOgImageUrl: "/opengraph-image",
+  googleSiteVerification: "",
   statRating: "4.95",
   statRatingLabel: "1,488 ocen",
   statPercent: "80",
@@ -31,8 +84,7 @@ export const mockHeroSlides: HeroSlide[] = [
     id: "1",
     subtitle: "Zwiększ efektywność Twojej firmy",
     title: "Zautomatyzujemy nawet 80% zadań wykonywanych w Twojej firmie",
-    imageUrl:
-      "https://images.unsplash.com/photo-1551434678-e076c223a692?w=1920&q=80",
+    imageUrl: "/images/migrated/hero-1.jpg",
     buttonText: "Skorzystaj z bezpłatnej konsultacji",
     buttonLink: "/kontakt",
     order: 1,
@@ -41,8 +93,7 @@ export const mockHeroSlides: HeroSlide[] = [
     id: "2",
     subtitle: "Pomagamy automatyzować i mierzyć procesy",
     title: "Pomagamy automatyzować i mierzyć procesy",
-    imageUrl:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&q=80",
+    imageUrl: "/images/migrated/hero-2.jpg",
     buttonText: "Dowiedz się więcej",
     buttonLink: "/o-nas",
     order: 2,
@@ -51,15 +102,14 @@ export const mockHeroSlides: HeroSlide[] = [
     id: "3",
     subtitle: "Sztuczna inteligencja w Twojej firmie",
     title: "Customowe rozwiązania AI",
-    imageUrl:
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1920&q=80",
+    imageUrl: "/images/migrated/hero-3.jpg",
     buttonText: "Sprawdź",
     buttonLink: "/uslugi/automatyzacja-oraz-ai-w-niestandardowych-procesach",
     order: 3,
   },
 ];
 
-const introSection: PageSection = {
+const introSection: PageSection = withSectionDefaults({
   id: "intro-home",
   pageSlug: "home",
   sectionKey: "intro",
@@ -68,9 +118,10 @@ const introSection: PageSection = {
   body: "Pomagamy firmom budować, automatyzować i mierzyć ich procesy niezależnie od działu. Wierzymy, że aż 80% zadań wykonywanych przez pracowników może być z powodzeniem zautomatyzowane przy użyciu nowoczesnych technologii oraz sztucznej inteligencji.",
   imageUrl:
     "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80",
+  imageAlt: "Zespół pracujący nad automatyzacją procesów",
   buttonText: "Bezpłatna konsultacja",
   buttonLink: "/kontakt",
-};
+});
 
 export const mockListItems: ListItem[] = [
   {
@@ -222,7 +273,7 @@ export const mockFeatureTilesBenefits: FeatureTile[] = [
 ];
 
 export const mockCaseStudies: CaseStudy[] = [
-  {
+  completeCaseStudy({
     id: "c1",
     context: "home",
     title: "Sprzedaż w rytmie sukcesu",
@@ -231,8 +282,8 @@ export const mockCaseStudies: CaseStudy[] = [
       "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=900&q=80",
     body: "Tworzymy jasne i spójne procesy sprzedażowe, które eliminują chaos, zwiększają efektywność zespołu i pozwalają na osiąganie lepszych wyników sprzedażowych.",
     order: 1,
-  },
-  {
+  }),
+  completeCaseStudy({
     id: "c2",
     context: "home",
     title: "HR w nowoczesnym wydaniu",
@@ -241,8 +292,8 @@ export const mockCaseStudies: CaseStudy[] = [
       "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=900&q=80",
     body: "Pomagamy w wypracowaniu przejrzystych procesów zarządzania aplikacjami rekrutacyjnymi i kadrowymi, które usprawniają obsługę pracowników i kandydatów.",
     order: 2,
-  },
-  {
+  }),
+  completeCaseStudy({
     id: "c3",
     context: "home",
     title: "Porządek w finansach",
@@ -251,8 +302,8 @@ export const mockCaseStudies: CaseStudy[] = [
       "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=900&q=80",
     body: "Organizujemy procesy księgowe, eliminując wąskie gardła i zapewniając zgodność operacji finansowych z najlepszymi praktykami rynkowymi.",
     order: 3,
-  },
-  {
+  }),
+  completeCaseStudy({
     id: "c4",
     context: "home",
     title: "Produkcja bez przestojów",
@@ -261,7 +312,7 @@ export const mockCaseStudies: CaseStudy[] = [
       "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=900&q=80",
     body: "Analizujemy i usprawniamy procesy produkcyjne, aby zwiększyć wydajność, zminimalizować straty i skrócić czas realizacji.",
     order: 4,
-  },
+  }),
 ];
 
 export const mockTools: Tool[] = [
@@ -276,30 +327,30 @@ export const mockTools: Tool[] = [
 ];
 
 export const mockFaq: FaqItem[] = [
-  {
+  completeFaq({
     id: "f1",
     question: "Co to jest automatyzacja procesów biznesowych?",
     answer:
       "Automatyzacja procesów biznesowych to wdrożenie technologii, która zastępuje ręczne, powtarzalne zadania, pozwalając Twojemu zespołowi skupić się na bardziej strategicznych działaniach.",
     order: 1,
-  },
-  {
+  }),
+  completeFaq({
     id: "f2",
     question: "Ile czasu zajmuje wdrożenie automatyzacji w mojej firmie?",
     answer:
       "Czas wdrożenia zależy od wielkości firmy, złożoności procesów i liczby obszarów do automatyzacji. Prostsze procesy mogą trwać kilka tygodni, bardziej złożone projekty kilka miesięcy.",
     order: 2,
-  },
-  {
+  }),
+  completeFaq({
     id: "f3",
     question: "Czy automatyzacja jest opłacalna dla małych firm?",
     answer:
       "Tak, automatyzacja przynosi korzyści niezależnie od wielkości firmy. Nawet małe przedsiębiorstwa mogą zyskać dzięki oszczędności czasu, zmniejszeniu liczby błędów i lepszej organizacji procesów.",
     order: 3,
-  },
+  }),
 ];
 
-export const mockServices: Service[] = [
+const rawMockServices = [
   {
     id: "s1",
     slug: "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -500,6 +551,8 @@ export const mockServices: Service[] = [
   },
 ];
 
+export const mockServices: Service[] = rawMockServices.map(completeService);
+
 export const mockProcessSteps: ProcessStep[] = [
   {
     id: "p1",
@@ -551,7 +604,7 @@ export function getMockHomePageData(): HomePageData {
     heroSlides: mockHeroSlides,
     intro: introSection,
     listItems: mockListItems,
-    areasHeader: {
+    areasHeader: withSectionDefaults({
       id: "areas-header",
       pageSlug: "home",
       sectionKey: "areas-header",
@@ -561,10 +614,10 @@ export function getMockHomePageData(): HomePageData {
       imageUrl: "",
       buttonText: "",
       buttonLink: "",
-    },
+    }),
     featureTilesAreas: mockFeatureTilesAreas,
     stats: mockSettings,
-    conversation: {
+    conversation: withSectionDefaults({
       id: "conversation",
       pageSlug: "home",
       sectionKey: "conversation",
@@ -575,8 +628,8 @@ export function getMockHomePageData(): HomePageData {
         "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1200&q=80",
       buttonText: "Bezpłatna konsultacja",
       buttonLink: "/kontakt",
-    },
-    benefitsHeader: {
+    }),
+    benefitsHeader: withSectionDefaults({
       id: "benefits-header",
       pageSlug: "home",
       sectionKey: "benefits-header",
@@ -586,9 +639,9 @@ export function getMockHomePageData(): HomePageData {
       imageUrl: "",
       buttonText: "Bezpłatna konsultacja",
       buttonLink: "/kontakt",
-    },
+    }),
     featureTilesBenefits: mockFeatureTilesBenefits,
-    caseStudiesHeader: {
+    caseStudiesHeader: withSectionDefaults({
       id: "cases-header",
       pageSlug: "home",
       sectionKey: "cases-header",
@@ -598,9 +651,9 @@ export function getMockHomePageData(): HomePageData {
       imageUrl: "",
       buttonText: "",
       buttonLink: "",
-    },
+    }),
     caseStudies: mockCaseStudies,
-    toolsHeader: {
+    toolsHeader: withSectionDefaults({
       id: "tools-header",
       pageSlug: "home",
       sectionKey: "tools-header",
@@ -610,9 +663,9 @@ export function getMockHomePageData(): HomePageData {
       imageUrl: "",
       buttonText: "",
       buttonLink: "",
-    },
+    }),
     tools: mockTools,
-    faqHeader: {
+    faqHeader: withSectionDefaults({
       id: "faq-header",
       pageSlug: "home",
       sectionKey: "faq-header",
@@ -622,9 +675,9 @@ export function getMockHomePageData(): HomePageData {
       imageUrl: "",
       buttonText: "",
       buttonLink: "",
-    },
+    }),
     faq: mockFaq,
-    contactCta: {
+    contactCta: withSectionDefaults({
       id: "contact-cta",
       pageSlug: "home",
       sectionKey: "contact-cta",
@@ -634,7 +687,7 @@ export function getMockHomePageData(): HomePageData {
       imageUrl: "",
       buttonText: "Wyślij zapytanie",
       buttonLink: "/kontakt",
-    },
+    }),
   };
 }
 
@@ -652,7 +705,7 @@ export function getMockPageSection(
     home.toolsHeader!,
     home.faqHeader!,
     home.contactCta!,
-    {
+    withSectionDefaults({
       id: "about-banner",
       pageSlug: "o-nas",
       sectionKey: "banner",
@@ -663,8 +716,8 @@ export function getMockPageSection(
         "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80",
       buttonText: "",
       buttonLink: "",
-    },
-    {
+    }),
+    withSectionDefaults({
       id: "contact-banner",
       pageSlug: "kontakt",
       sectionKey: "banner",
@@ -675,8 +728,8 @@ export function getMockPageSection(
         "https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1920&q=80",
       buttonText: "",
       buttonLink: "",
-    },
-    {
+    }),
+    withSectionDefaults({
       id: "contact-sidebar",
       pageSlug: "kontakt",
       sectionKey: "contact-sidebar",
@@ -687,8 +740,8 @@ export function getMockPageSection(
         "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
       buttonText: "",
       buttonLink: "",
-    },
-    {
+    }),
+    withSectionDefaults({
       id: "contact-form-header",
       pageSlug: "kontakt",
       sectionKey: "contact-form",
@@ -698,14 +751,126 @@ export function getMockPageSection(
       imageUrl: "",
       buttonText: "",
       buttonLink: "",
-    },
+    }),
   ];
 
-  return (
-    sections.find(
-      (s) => s.pageSlug === pageSlug && s.sectionKey === sectionKey,
-    ) ?? null
+  const found = sections.find(
+    (s) => s.pageSlug === pageSlug && s.sectionKey === sectionKey,
   );
+  return found ?? null;
+}
+
+export const mockLandingPages: LandingPage[] = [
+  {
+    id: "lp1",
+    slug: "automatyzacja-sprzedazy",
+    campaignName: "Google Ads — Sprzedaż",
+    metaTitle: "Automatyzacja sprzedaży dla firm | Automation Minds",
+    metaDescription:
+      "Zautomatyzuj procesy sprzedażowe i zwiększ efektywność zespołu. Bezpłatna konsultacja 30 min.",
+    heroTitle: "Automatyzacja sprzedaży, która zwiększa wyniki",
+    heroSubtitle: "Więcej leadów, mniej ręcznej pracy — dopasowane do Twojego CRM",
+    heroImageUrl: "/images/migrated/hero-1.jpg",
+    heroImageAlt: "Automatyzacja procesów sprzedażowych",
+    primaryCtaText: "Umów bezpłatną konsultację",
+    primaryCtaLink: "#formularz",
+    socialProof: "80% procesów można zautomatyzować · 1542+ automatyzacji dziennie",
+    relatedServiceSlug: "automatyzacja-dla-sprzedazy-i-marketingu",
+    formEnabled: true,
+    noIndex: false,
+    updatedAt: new Date().toISOString(),
+    benefits: [
+      {
+        id: "b1",
+        landingSlug: "automatyzacja-sprzedazy",
+        title: "Szybsza obsługa leadów",
+        body: "Automatyczne przypisywanie i follow-up bez opóźnień.",
+        order: 1,
+      },
+      {
+        id: "b2",
+        landingSlug: "automatyzacja-sprzedazy",
+        title: "Mniej błędów w CRM",
+        body: "Spójne dane klientów bez ręcznego przepisywania.",
+        order: 2,
+      },
+      {
+        id: "b3",
+        landingSlug: "automatyzacja-sprzedazy",
+        title: "Raporty na czas",
+        body: "Dashboardy sprzedażowe odświeżane automatycznie.",
+        order: 3,
+      },
+    ],
+    sections: [
+      {
+        id: "s1",
+        landingSlug: "automatyzacja-sprzedazy",
+        title: "Dlaczego automatyzacja sprzedaży?",
+        body: "Powtarzalne zadania pochłaniają czas handlowców. Automatyzacja pozwala skupić się na relacjach z klientami i zamykaniu transakcji. Wdrażamy rozwiązania dopasowane do Twojego lejka sprzedażowego — od pierwszego kontaktu po raportowanie wyników.",
+        order: 1,
+      },
+      {
+        id: "s2",
+        landingSlug: "automatyzacja-sprzedazy",
+        title: "Jak pracujemy",
+        body: "Zaczynamy od bezpłatnej konsultacji 30 minut, podczas której analizujemy procesy i proponujemy konkretne usprawnienia. Następnie projektujemy i wdrażamy automatyzacje z testami oraz szkoleniem zespołu.",
+        order: 2,
+      },
+    ],
+  },
+  {
+    id: "lp2",
+    slug: "ai-dla-firm",
+    campaignName: "Google Ads — AI",
+    metaTitle: "Rozwiązania AI dla firm | Automation Minds",
+    metaDescription:
+      "Customowe rozwiązania AI dopasowane do procesów Twojej firmy. Umów bezpłatną konsultację.",
+    heroTitle: "Customowe rozwiązania AI dla Twojej firmy",
+    heroSubtitle: "Praktyczne wdrożenia AI, które realnie odciążają zespół",
+    heroImageUrl: "/images/migrated/hero-3.jpg",
+    heroImageAlt: "Sztuczna inteligencja w biznesie",
+    primaryCtaText: "Sprawdź możliwości AI",
+    primaryCtaLink: "#formularz",
+    socialProof: "4.95 ocena · 1 488 zadowolonych klientów",
+    relatedServiceSlug: "automatyzacja-oraz-ai-w-niestandardowych-procesach",
+    formEnabled: true,
+    noIndex: false,
+    updatedAt: new Date().toISOString(),
+    benefits: [
+      {
+        id: "b4",
+        landingSlug: "ai-dla-firm",
+        title: "Automatyzacja dokumentów",
+        body: "Klasyfikacja, ekstrakcja danych i routing zadań.",
+        order: 1,
+      },
+      {
+        id: "b5",
+        landingSlug: "ai-dla-firm",
+        title: "Asystenci AI",
+        body: "Wsparcie zespołu w codziennych procesach.",
+        order: 2,
+      },
+    ],
+    sections: [
+      {
+        id: "s3",
+        landingSlug: "ai-dla-firm",
+        title: "AI, które ma sens biznesowy",
+        body: "Nie wdrażamy AI dla samego AI. Skupiamy się na procesach, gdzie automatyzacja przynosi mierzalne oszczędności czasu i kosztów. Od analizy po wdrożenie i wsparcie.",
+        order: 1,
+      },
+    ],
+  },
+];
+
+export function getMockLandingPageBySlug(slug: string): LandingPage | null {
+  return mockLandingPages.find((p) => p.slug === slug) ?? null;
+}
+
+export function getMockLandingPages(): LandingPage[] {
+  return mockLandingPages;
 }
 
 export function getMockListItems(pageSlug: string): ListItem[] {

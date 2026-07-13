@@ -1,9 +1,18 @@
-import { getServices } from "@/lib/airtable";
+import { getLandingPages, getServices } from "@/lib/airtable";
 import { siteUrl } from "@/lib/metadata";
 import type { MetadataRoute } from "next";
 
+function parseDate(value: string | undefined): Date {
+  if (!value) return new Date();
+  const parsed = new Date(value);
+  return Number.isNaN(parsed.getTime()) ? new Date() : parsed;
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const services = await getServices();
+  const [services, landingPages] = await Promise.all([
+    getServices(),
+    getLandingPages(),
+  ]);
 
   const staticPages = ["", "/o-nas", "/kontakt", "/polityka-prywatnosci"].map(
     (path) => ({
@@ -16,10 +25,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const servicePages = services.map((service) => ({
     url: `${siteUrl}/uslugi/${service.slug}`,
-    lastModified: new Date(),
+    lastModified: parseDate(service.updatedAt),
     changeFrequency: "weekly" as const,
     priority: 0.7,
   }));
 
-  return [...staticPages, ...servicePages];
+  const campaignPages = landingPages
+    .filter((page) => !page.noIndex)
+    .map((page) => ({
+      url: `${siteUrl}/kampanie/${page.slug}`,
+      lastModified: parseDate(page.updatedAt),
+      changeFrequency: "weekly" as const,
+      priority: 0.75,
+    }));
+
+  return [...staticPages, ...servicePages, ...campaignPages];
 }

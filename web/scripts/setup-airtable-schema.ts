@@ -41,15 +41,26 @@ type FieldDef = {
 
 type TableDef = { name: string; fields: FieldDef[] };
 
+const dateTimeOptions = {
+  timeZone: "Europe/Warsaw",
+  dateFormat: { name: "iso" },
+  timeFormat: { name: "24hour" },
+};
+
 const tables: TableDef[] = [
   {
     name: "Settings",
     fields: [
       { name: "Label", type: "singleLineText" },
+      { name: "SiteName", type: "singleLineText" },
       { name: "Phone", type: "singleLineText" },
+      { name: "Email", type: "email" },
+      { name: "Address", type: "singleLineText" },
       { name: "LogoWhiteUrl", type: "url" },
       { name: "LogoColorUrl", type: "url" },
       { name: "MetaDescription", type: "multilineText" },
+      { name: "DefaultOgImageUrl", type: "url" },
+      { name: "GoogleSiteVerification", type: "singleLineText" },
       { name: "StatRating", type: "singleLineText" },
       { name: "StatRatingLabel", type: "singleLineText" },
       { name: "StatPercent", type: "singleLineText" },
@@ -83,8 +94,11 @@ const tables: TableDef[] = [
       { name: "Title", type: "multilineText" },
       { name: "Body", type: "multilineText" },
       { name: "ImageUrl", type: "url" },
+      { name: "ImageAlt", type: "singleLineText" },
       { name: "ButtonText", type: "singleLineText" },
       { name: "ButtonLink", type: "url" },
+      { name: "MetaTitle", type: "singleLineText" },
+      { name: "MetaDescription", type: "multilineText" },
     ],
   },
   {
@@ -126,6 +140,7 @@ const tables: TableDef[] = [
       { name: "ServiceSlug", type: "singleLineText" },
       { name: "Icon", type: "singleLineText" },
       { name: "ImageUrl", type: "url" },
+      { name: "ImageAlt", type: "singleLineText" },
       { name: "Body", type: "multilineText" },
       { name: "Order", type: "number", options: { precision: 0 } },
       {
@@ -153,6 +168,7 @@ const tables: TableDef[] = [
     fields: [
       { name: "Question", type: "multilineText" },
       { name: "Answer", type: "multilineText" },
+      { name: "Keywords", type: "singleLineText" },
       { name: "Order", type: "number", options: { precision: 0 } },
       {
         name: "Published",
@@ -167,12 +183,17 @@ const tables: TableDef[] = [
       { name: "Slug", type: "singleLineText" },
       { name: "Title", type: "singleLineText" },
       { name: "MenuLabel", type: "singleLineText" },
+      { name: "MetaTitle", type: "singleLineText" },
+      { name: "MetaDescription", type: "multilineText" },
+      { name: "OgImageUrl", type: "url" },
+      { name: "UpdatedAt", type: "dateTime", options: dateTimeOptions },
       { name: "BannerImageUrl", type: "url" },
       { name: "BannerTitle", type: "singleLineText" },
       { name: "IntroSubtitle", type: "singleLineText" },
       { name: "IntroTitle", type: "multilineText" },
       { name: "IntroBody", type: "multilineText" },
       { name: "IntroImageUrl", type: "url" },
+      { name: "IntroImageAlt", type: "singleLineText" },
       { name: "IntroButtonText", type: "singleLineText" },
       { name: "IntroButtonLink", type: "url" },
       { name: "TabsSubtitle", type: "singleLineText" },
@@ -204,6 +225,11 @@ const tables: TableDef[] = [
       { name: "Phone", type: "singleLineText" },
       { name: "Message", type: "multilineText" },
       { name: "SourcePage", type: "singleLineText" },
+      { name: "UtmSource", type: "singleLineText" },
+      { name: "UtmMedium", type: "singleLineText" },
+      { name: "UtmCampaign", type: "singleLineText" },
+      { name: "UtmTerm", type: "singleLineText" },
+      { name: "UtmContent", type: "singleLineText" },
       {
         name: "Status",
         type: "singleSelect",
@@ -215,6 +241,57 @@ const tables: TableDef[] = [
           ],
         },
       },
+    ],
+  },
+  {
+    name: "LandingPages",
+    fields: [
+      { name: "Slug", type: "singleLineText" },
+      { name: "CampaignName", type: "singleLineText" },
+      {
+        name: "Published",
+        type: "checkbox",
+        options: { icon: "check", color: "greenBright" },
+      },
+      { name: "MetaTitle", type: "singleLineText" },
+      { name: "MetaDescription", type: "multilineText" },
+      { name: "HeroTitle", type: "multilineText" },
+      { name: "HeroSubtitle", type: "singleLineText" },
+      { name: "HeroImageUrl", type: "url" },
+      { name: "HeroImageAlt", type: "singleLineText" },
+      { name: "PrimaryCtaText", type: "singleLineText" },
+      { name: "PrimaryCtaLink", type: "url" },
+      { name: "SocialProof", type: "singleLineText" },
+      { name: "RelatedServiceSlug", type: "singleLineText" },
+      {
+        name: "FormEnabled",
+        type: "checkbox",
+        options: { icon: "check", color: "greenBright" },
+      },
+      {
+        name: "NoIndex",
+        type: "checkbox",
+        options: { icon: "check", color: "greenBright" },
+      },
+      { name: "UpdatedAt", type: "dateTime", options: dateTimeOptions },
+    ],
+  },
+  {
+    name: "LandingBenefits",
+    fields: [
+      { name: "LandingSlug", type: "singleLineText" },
+      { name: "Title", type: "singleLineText" },
+      { name: "Body", type: "multilineText" },
+      { name: "Order", type: "number", options: { precision: 0 } },
+    ],
+  },
+  {
+    name: "LandingSections",
+    fields: [
+      { name: "LandingSlug", type: "singleLineText" },
+      { name: "Title", type: "singleLineText" },
+      { name: "Body", type: "multilineText" },
+      { name: "Order", type: "number", options: { precision: 0 } },
     ],
   },
 ];
@@ -239,25 +316,42 @@ async function main() {
   const schema = (await metaRequest(
     "GET",
     `/bases/${BASE_ID}/tables`,
-  )) as { tables: { name: string }[] };
+  )) as {
+    tables: { id: string; name: string; fields: { name: string }[] }[];
+  };
 
-  const existing = new Set(schema.tables.map((t) => t.name));
+  const existing = new Map(schema.tables.map((t) => [t.name, t]));
 
   for (const table of tables) {
-    if (existing.has(table.name)) {
-      console.log(`✓ Tabela już istnieje: ${table.name}`);
+    const current = existing.get(table.name);
+    if (!current) {
+      console.log(`+ Tworzę tabelę: ${table.name}`);
+      await metaRequest("POST", `/bases/${BASE_ID}/tables`, {
+        name: table.name,
+        fields: table.fields.map((f) => ({
+          name: f.name,
+          type: f.type,
+          ...(f.options ? { options: f.options } : {}),
+        })),
+      });
       continue;
     }
 
-    console.log(`+ Tworzę tabelę: ${table.name}`);
-    await metaRequest("POST", `/bases/${BASE_ID}/tables`, {
-      name: table.name,
-      fields: table.fields.map((f) => ({
-        name: f.name,
-        type: f.type,
-        ...(f.options ? { options: f.options } : {}),
-      })),
-    });
+    console.log(`✓ Tabela już istnieje: ${table.name}`);
+    const fieldNames = new Set(current.fields.map((f) => f.name));
+    for (const field of table.fields) {
+      if (fieldNames.has(field.name)) continue;
+      console.log(`  + Dodaję pole ${table.name}.${field.name}`);
+      await metaRequest(
+        "POST",
+        `/bases/${BASE_ID}/tables/${current.id}/fields`,
+        {
+          name: field.name,
+          type: field.type,
+          ...(field.options ? { options: field.options } : {}),
+        },
+      );
+    }
   }
 
   console.log("\nSchemat gotowy. Uruchom: npm run migrate -- --seed");

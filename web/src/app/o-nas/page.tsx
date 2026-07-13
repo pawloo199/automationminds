@@ -2,39 +2,56 @@ import { SiteLayout } from "@/components/layout/SiteLayout";
 import { IntroSection } from "@/components/sections/IntroSection";
 import { PageBanner } from "@/components/sections/PageBanner";
 import { StatsRow } from "@/components/sections/StatsRow";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
+import { Container } from "@/components/ui/Container";
 import {
   getFeatureTiles,
-  getListItems,
-  getSettings,
   getHomePageData,
+  getListItems,
+  getPageSection,
+  getSettings,
 } from "@/lib/airtable";
-import { getMockPageSection } from "@/lib/airtable-mock";
+import { breadcrumbJsonLd } from "@/lib/json-ld";
 import { buildMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
 
 export const revalidate = 60;
 
-export const metadata: Metadata = buildMetadata({
-  title: "O nas — Automation Minds",
-  description: "Poznaj zespół Automation Minds i nasze podejście do automatyzacji.",
-  path: "/o-nas",
-});
+export async function generateMetadata(): Promise<Metadata> {
+  const banner = await getPageSection("o-nas", "banner");
+  return buildMetadata({
+    title: banner?.metaTitle || "O nas — Automation Minds",
+    description:
+      banner?.metaDescription ||
+      "Poznaj zespół Automation Minds i nasze podejście do automatyzacji.",
+    path: "/o-nas",
+  });
+}
 
 export default async function AboutPage() {
-  const [homeData, listItems, featureTiles, settings] = await Promise.all([
+  const [homeData, listItems, featureTiles, settings, banner] = await Promise.all([
     getHomePageData(),
     getListItems("o-nas"),
     getFeatureTiles("areas"),
     getSettings(),
+    getPageSection("o-nas", "banner"),
   ]);
 
-  const banner = getMockPageSection("o-nas", "banner");
+  const breadcrumbs = [
+    { label: "Strona główna", href: "/" },
+    { label: "O nas" },
+  ];
 
   return (
     <SiteLayout>
+      <JsonLd data={breadcrumbJsonLd(breadcrumbs)} />
       {banner ? (
         <PageBanner title={banner.title} imageUrl={banner.imageUrl} />
       ) : null}
+      <Container className="py-4">
+        <Breadcrumbs items={breadcrumbs} />
+      </Container>
       {homeData.intro ? (
         <IntroSection
           subtitle={homeData.intro.subtitle}

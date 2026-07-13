@@ -6,7 +6,6 @@ Strona firmowa Automation Minds zbudowana w **Next.js 15** z **Tailwind CSS 4** 
 
 ```
 AutomationMinds/
-├── automationminds/   # Oryginalny motyw WordPress (referencja)
 └── web/               # Aplikacja Next.js (ten folder)
 ```
 

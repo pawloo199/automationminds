@@ -1,4 +1,11 @@
-import { SiteLayout } from "@/components/layout/SiteLayout";
+import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { getSettings } from "@/lib/airtable";
+import {
+  localBusinessJsonLd,
+  organizationJsonLd,
+  websiteJsonLd,
+} from "@/lib/json-ld";
 import { buildMetadata } from "@/lib/metadata";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -11,36 +18,44 @@ const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
 });
 
-export const metadata: Metadata = buildMetadata({
-  title: "Automation Minds — automatyzacja procesów biznesowych",
-  description:
-    "Automation Minds pomaga firmom automatyzować procesy biznesowe i wdrażać rozwiązania AI.",
-});
+export async function generateMetadata(): Promise<Metadata> {
+  const settings = await getSettings();
+  const metadata = buildMetadata({
+    title: "Automation Minds — automatyzacja procesów biznesowych",
+    description: settings.metaDescription,
+    ogImage: settings.defaultOgImageUrl,
+  });
 
-export default function RootLayout({
+  return {
+    ...metadata,
+    verification: settings.googleSiteVerification
+      ? { google: settings.googleSiteVerification }
+      : undefined,
+  };
+}
+
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const settings = await getSettings();
+
   return (
     <html lang="pl">
       <body className={`${spaceGrotesk.variable} antialiased`}>
+        <JsonLd
+          data={[
+            organizationJsonLd(settings),
+            websiteJsonLd(settings),
+            localBusinessJsonLd(settings),
+          ]}
+        />
+        <GoogleAnalytics />
         {children}
         <Analytics />
         <SpeedInsights />
       </body>
     </html>
-  );
-}
-
-export function LayoutWithSite({
-  children,
-  transparentHeader = false,
-}: {
-  children: React.ReactNode;
-  transparentHeader?: boolean;
-}) {
-  return (
-    <SiteLayout transparentHeader={transparentHeader}>{children}</SiteLayout>
   );
 }

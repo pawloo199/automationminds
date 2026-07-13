@@ -24,6 +24,11 @@ export async function POST(request: Request) {
       phone: parsed.data.phone,
       message: parsed.data.message,
       sourcePage: parsed.data.sourcePage,
+      utmSource: parsed.data.utmSource,
+      utmMedium: parsed.data.utmMedium,
+      utmCampaign: parsed.data.utmCampaign,
+      utmTerm: parsed.data.utmTerm,
+      utmContent: parsed.data.utmContent,
     });
 
     return NextResponse.json({ success: true });

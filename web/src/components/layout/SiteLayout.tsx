@@ -22,8 +22,8 @@ export async function SiteLayout({
         services={services}
         transparent={transparentHeader}
       />
-      <main>{children}</main>
-      <Footer />
+      <main className="pt-[72px]">{children}</main>
+      <Footer settings={settings} />
     </>
   );
 }

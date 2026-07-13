@@ -5,37 +5,43 @@ import { Container } from "@/components/ui/Container";
 import type { HeroSlide } from "@/lib/airtable.types";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
   const [active, setActive] = useState(0);
   const slide = slides[active];
 
-  if (!slide) return null;
+  const prev = useCallback(
+    () => setActive((i) => (i === 0 ? slides.length - 1 : i - 1)),
+    [slides.length],
+  );
+  const next = useCallback(
+    () => setActive((i) => (i === slides.length - 1 ? 0 : i + 1)),
+    [slides.length],
+  );
 
-  const prev = () => setActive((i) => (i === 0 ? slides.length - 1 : i - 1));
-  const next = () => setActive((i) => (i === slides.length - 1 ? 0 : i + 1));
+  useEffect(() => {
+    if (slides.length <= 1) return;
+    const id = window.setInterval(next, 6000);
+    return () => window.clearInterval(id);
+  }, [slides.length, next]);
+
+  if (!slide) return null;
 
   return (
     <section className="relative min-h-[85vh] overflow-hidden bg-dark">
-      {slides.map((s, index) => (
-        <div
-          key={s.id}
-          className={`absolute inset-0 transition-opacity duration-700 ${
-            index === active ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          <Image
-            src={s.imageUrl}
-            alt={s.title}
-            fill
-            priority={index === 0}
-            className="object-cover"
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-dark/90 via-dark/70 to-dark/40" />
-        </div>
-      ))}
+      <div className="absolute inset-0">
+        <Image
+          key={slide.id}
+          src={slide.imageUrl}
+          alt={slide.title}
+          fill
+          priority={active === 0}
+          className="object-cover"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-dark/90 via-dark/70 to-dark/40" />
+      </div>
 
       <Container className="relative z-10 flex min-h-[85vh] items-center py-24">
         <div className="max-w-3xl text-white">

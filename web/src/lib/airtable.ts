@@ -9,6 +9,9 @@ import type {
   FeatureTileGroup,
   HeroSlide,
   HomePageData,
+  LandingBenefit,
+  LandingPage,
+  LandingSection,
   ListItem,
   PageSection,
   ProcessStep,
@@ -19,6 +22,8 @@ import type {
 import {
   getMockCaseStudiesForService,
   getMockHomePageData,
+  getMockLandingPageBySlug,
+  getMockLandingPages,
   getMockListItems,
   getMockPageSection,
   getMockProcessSteps,
@@ -46,6 +51,9 @@ const TABLES = {
   services: "Services",
   processSteps: "ProcessSteps",
   contactSubmissions: "ContactSubmissions",
+  landingPages: "LandingPages",
+  landingBenefits: "LandingBenefits",
+  landingSections: "LandingSections",
 } as const;
 
 function isConfigured(): boolean {
@@ -88,11 +96,18 @@ async function fetchPublished<T>(
 
 function mapSettings(fields: FieldSet): Settings {
   return {
+    siteName: str(fields.SiteName) || mockSettings.siteName,
     phone: str(fields.Phone) || mockSettings.phone,
+    email: str(fields.Email) || mockSettings.email,
+    address: str(fields.Address) || mockSettings.address,
     logoWhiteUrl: str(fields.LogoWhiteUrl) || mockSettings.logoWhiteUrl,
     logoColorUrl: str(fields.LogoColorUrl) || mockSettings.logoColorUrl,
     metaDescription:
       str(fields.MetaDescription) || mockSettings.metaDescription,
+    defaultOgImageUrl:
+      str(fields.DefaultOgImageUrl) || mockSettings.defaultOgImageUrl,
+    googleSiteVerification:
+      str(fields.GoogleSiteVerification) || mockSettings.googleSiteVerification,
     statRating: str(fields.StatRating) || mockSettings.statRating,
     statRatingLabel: str(fields.StatRatingLabel) || mockSettings.statRatingLabel,
     statPercent: str(fields.StatPercent) || mockSettings.statPercent,
@@ -132,8 +147,11 @@ function mapPageSection(record: {
     title: str(fields.Title),
     body: str(fields.Body),
     imageUrl: str(fields.ImageUrl),
+    imageAlt: str(fields.ImageAlt),
     buttonText: str(fields.ButtonText),
     buttonLink: str(fields.ButtonLink),
+    metaTitle: str(fields.MetaTitle),
+    metaDescription: str(fields.MetaDescription),
   };
 }
 
@@ -171,6 +189,7 @@ function mapCaseStudy(record: { id: string; fields: FieldSet }): CaseStudy {
     title: str(fields.Title),
     icon: str(fields.Icon),
     imageUrl: str(fields.ImageUrl),
+    imageAlt: str(fields.ImageAlt) || str(fields.Title),
     body: str(fields.Body),
     order: num(fields.Order),
   };
@@ -193,22 +212,32 @@ function mapFaq(record: { id: string; fields: FieldSet }): FaqItem {
     question: str(fields.Question),
     answer: str(fields.Answer),
     order: num(fields.Order),
+    keywords: str(fields.Keywords),
   };
 }
 
 function mapService(record: { id: string; fields: FieldSet }): Service {
   const { id, fields } = record;
+  const title = str(fields.Title);
+  const introBody = str(fields.IntroBody);
+  const introTitle = str(fields.IntroTitle);
+  const bannerImageUrl = str(fields.BannerImageUrl);
   return {
     id,
     slug: str(fields.Slug),
-    title: str(fields.Title),
-    menuLabel: str(fields.MenuLabel) || str(fields.Title),
-    bannerImageUrl: str(fields.BannerImageUrl),
-    bannerTitle: str(fields.BannerTitle) || str(fields.Title),
+    title,
+    menuLabel: str(fields.MenuLabel) || title,
+    metaTitle: str(fields.MetaTitle) || title,
+    metaDescription: str(fields.MetaDescription) || introBody.slice(0, 155),
+    ogImageUrl: str(fields.OgImageUrl) || bannerImageUrl,
+    updatedAt: str(fields.UpdatedAt),
+    bannerImageUrl,
+    bannerTitle: str(fields.BannerTitle) || title,
     introSubtitle: str(fields.IntroSubtitle),
-    introTitle: str(fields.IntroTitle),
-    introBody: str(fields.IntroBody),
+    introTitle,
+    introBody,
     introImageUrl: str(fields.IntroImageUrl),
+    introImageAlt: str(fields.IntroImageAlt) || introTitle,
     introButtonText: str(fields.IntroButtonText),
     introButtonLink: str(fields.IntroButtonLink),
     tabsSubtitle: str(fields.TabsSubtitle),
@@ -301,6 +330,168 @@ function findSection(
     ) ?? getMockPageSection(pageSlug, sectionKey)
   );
 }
+
+export const getPageSection = cache(
+  async (pageSlug: string, sectionKey: string): Promise<PageSection | null> => {
+    if (!isConfigured()) {
+      return getMockPageSection(pageSlug, sectionKey);
+    }
+
+    try {
+      const records = (await getBase()(TABLES.pageSections)
+        .select({
+          filterByFormula: `AND({PageSlug} = '${pageSlug}', {SectionKey} = '${sectionKey}')`,
+          maxRecords: 1,
+        })
+        .all()) as Records<FieldSet>;
+      if (records.length === 0) {
+        return getMockPageSection(pageSlug, sectionKey);
+      }
+      return mapPageSection({ id: records[0].id, fields: records[0].fields });
+    } catch {
+      return getMockPageSection(pageSlug, sectionKey);
+    }
+  },
+);
+
+function mapLandingBenefit(record: {
+  id: string;
+  fields: FieldSet;
+}): LandingBenefit {
+  const { id, fields } = record;
+  return {
+    id,
+    landingSlug: str(fields.LandingSlug),
+    title: str(fields.Title),
+    body: str(fields.Body),
+    order: num(fields.Order),
+  };
+}
+
+function mapLandingSection(record: {
+  id: string;
+  fields: FieldSet;
+}): LandingSection {
+  const { id, fields } = record;
+  return {
+    id,
+    landingSlug: str(fields.LandingSlug),
+    title: str(fields.Title),
+    body: str(fields.Body),
+    order: num(fields.Order),
+  };
+}
+
+function mapLandingPage(
+  record: { id: string; fields: FieldSet },
+  benefits: LandingBenefit[],
+  sections: LandingSection[],
+): LandingPage {
+  const { id, fields } = record;
+  const slug = str(fields.Slug);
+  return {
+    id,
+    slug,
+    campaignName: str(fields.CampaignName),
+    metaTitle: str(fields.MetaTitle),
+    metaDescription: str(fields.MetaDescription),
+    heroTitle: str(fields.HeroTitle),
+    heroSubtitle: str(fields.HeroSubtitle),
+    heroImageUrl: str(fields.HeroImageUrl),
+    heroImageAlt: str(fields.HeroImageAlt) || str(fields.HeroTitle),
+    primaryCtaText: str(fields.PrimaryCtaText),
+    primaryCtaLink: str(fields.PrimaryCtaLink),
+    socialProof: str(fields.SocialProof),
+    relatedServiceSlug: str(fields.RelatedServiceSlug),
+    formEnabled: Boolean(fields.FormEnabled),
+    noIndex: Boolean(fields.NoIndex),
+    updatedAt: str(fields.UpdatedAt),
+    benefits: benefits
+      .filter((b) => b.landingSlug === slug)
+      .sort((a, b) => a.order - b.order),
+    sections: sections
+      .filter((s) => s.landingSlug === slug)
+      .sort((a, b) => a.order - b.order),
+  };
+}
+
+async function fetchLandingBenefits(): Promise<LandingBenefit[]> {
+  try {
+    const records = (await getBase()(TABLES.landingBenefits)
+      .select({ sort: [{ field: "Order", direction: "asc" }] })
+      .all()) as Records<FieldSet>;
+    return records.map((r) =>
+      mapLandingBenefit({ id: r.id, fields: r.fields }),
+    );
+  } catch {
+    return [];
+  }
+}
+
+async function fetchLandingSections(): Promise<LandingSection[]> {
+  try {
+    const records = (await getBase()(TABLES.landingSections)
+      .select({ sort: [{ field: "Order", direction: "asc" }] })
+      .all()) as Records<FieldSet>;
+    return records.map((r) =>
+      mapLandingSection({ id: r.id, fields: r.fields }),
+    );
+  } catch {
+    return [];
+  }
+}
+
+export const getLandingPages = cache(async (): Promise<LandingPage[]> => {
+  if (!isConfigured()) return getMockLandingPages();
+
+  try {
+    const [records, benefits, sections] = await Promise.all([
+      getBase()(TABLES.landingPages)
+        .select({
+          filterByFormula: "AND({Published} = TRUE(), {NoIndex} != TRUE())",
+          sort: [{ field: "Slug", direction: "asc" }],
+        })
+        .all() as Promise<Records<FieldSet>>,
+      fetchLandingBenefits(),
+      fetchLandingSections(),
+    ]);
+
+    const pages = records.map((r) =>
+      mapLandingPage({ id: r.id, fields: r.fields }, benefits, sections),
+    );
+    return pages.length > 0 ? pages : getMockLandingPages();
+  } catch {
+    return getMockLandingPages();
+  }
+});
+
+export const getLandingPageBySlug = cache(
+  async (slug: string): Promise<LandingPage | null> => {
+    if (!isConfigured()) return getMockLandingPageBySlug(slug);
+
+    try {
+      const [records, benefits, sections] = await Promise.all([
+        getBase()(TABLES.landingPages)
+          .select({
+            filterByFormula: `AND({Slug} = '${slug}', {Published} = TRUE())`,
+            maxRecords: 1,
+          })
+          .all() as Promise<Records<FieldSet>>,
+        fetchLandingBenefits(),
+        fetchLandingSections(),
+      ]);
+
+      if (records.length === 0) return getMockLandingPageBySlug(slug);
+      return mapLandingPage(
+        { id: records[0].id, fields: records[0].fields },
+        benefits,
+        sections,
+      );
+    } catch {
+      return getMockLandingPageBySlug(slug);
+    }
+  },
+);
 
 export const getListItems = cache(
   async (pageSlug: string): Promise<ListItem[]> => {
@@ -515,6 +706,11 @@ export async function createContactSubmission(
     Phone: data.phone,
     Message: data.message,
     SourcePage: data.sourcePage,
+    UtmSource: data.utmSource || "",
+    UtmMedium: data.utmMedium || "",
+    UtmCampaign: data.utmCampaign || "",
+    UtmTerm: data.utmTerm || "",
+    UtmContent: data.utmContent || "",
     Status: "New",
   });
 }

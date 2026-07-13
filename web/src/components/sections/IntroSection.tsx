@@ -1,5 +1,3 @@
-"use client";
-
 import { cn } from "@/lib/cn";
 import { Check } from "lucide-react";
 import Image from "next/image";
@@ -12,6 +10,7 @@ export function IntroSection({
   title,
   body,
   imageUrl,
+  imageAlt,
   buttonText,
   buttonLink,
   listItems,
@@ -21,6 +20,7 @@ export function IntroSection({
   title: string;
   body?: string;
   imageUrl?: string;
+  imageAlt?: string;
   buttonText?: string;
   buttonLink?: string;
   listItems?: string[];
@@ -47,7 +47,7 @@ export function IntroSection({
                 {listItems.map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-surface text-brand">
-                      <Check className="h-4 w-4" />
+                      <Check className="h-4 w-4" aria-hidden />
                     </span>
                     <span className="text-dark">{item}</span>
                   </li>
@@ -64,7 +64,7 @@ export function IntroSection({
             <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-xl">
               <Image
                 src={imageUrl}
-                alt={title}
+                alt={imageAlt || title}
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"

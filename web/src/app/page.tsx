@@ -7,7 +7,9 @@ import { IntroSection } from "@/components/sections/IntroSection";
 import { StatsRow } from "@/components/sections/StatsRow";
 import { TabbedCases } from "@/components/sections/TabbedCases";
 import { ToolsGrid } from "@/components/sections/ToolsGrid";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { getHomePageData } from "@/lib/airtable";
+import { faqPageJsonLd } from "@/lib/json-ld";
 import { buildMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
 
@@ -26,6 +28,7 @@ export default async function HomePage() {
 
   return (
     <SiteLayout transparentHeader>
+      <JsonLd data={faqPageJsonLd(data.faq)} />
       <HeroSlider slides={data.heroSlides} />
       {data.intro ? (
         <IntroSection

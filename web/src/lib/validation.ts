@@ -7,6 +7,11 @@ export const contactSchema = z.object({
   message: z.string().min(10, "Wiadomość jest zbyt krótka"),
   sourcePage: z.string().min(1),
   website: z.string().optional(),
+  utmSource: z.string().optional(),
+  utmMedium: z.string().optional(),
+  utmCampaign: z.string().optional(),
+  utmTerm: z.string().optional(),
+  utmContent: z.string().optional(),
 });
 
 export type ContactFormValues = z.infer<typeof contactSchema>;

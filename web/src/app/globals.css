@@ -29,6 +29,8 @@ body {
   font-family: var(--font-space-grotesk), system-ui, sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }

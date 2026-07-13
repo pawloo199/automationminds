@@ -25,9 +25,17 @@ export function Header({
   const [servicesOpen, setServicesOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
+    let ticking = false;
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        setScrolled(window.scrollY > 40);
+        ticking = false;
+      });
+    };
     onScroll();
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
@@ -53,19 +61,18 @@ export function Header({
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-all duration-300",
-        isSolid ? "bg-white/95 py-3 shadow-md backdrop-blur" : "bg-transparent py-5",
+        "fixed inset-x-0 top-0 z-50 h-[72px] transition-colors duration-300",
+        isSolid ? "bg-white/95 shadow-md backdrop-blur" : "bg-transparent",
       )}
     >
-      <Container className="flex items-center justify-between gap-4">
+      <Container className="flex h-full items-center justify-between gap-4">
         <Link href="/" className="relative z-10 flex items-center">
           <Image
             src={isSolid ? settings.logoColorUrl : settings.logoWhiteUrl}
-            alt="Automation Minds"
+            alt={settings.siteName || "Automation Minds"}
             width={180}
             height={36}
             className="h-9 w-auto"
-            priority
           />
         </Link>
 

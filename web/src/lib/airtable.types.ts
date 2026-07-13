@@ -5,10 +5,15 @@ export type FeatureTileGroup = "areas" | "benefits";
 export type CaseStudyContext = "home" | "service";
 
 export interface Settings {
+  siteName: string;
   phone: string;
+  email: string;
+  address: string;
   logoWhiteUrl: string;
   logoColorUrl: string;
   metaDescription: string;
+  defaultOgImageUrl: string;
+  googleSiteVerification: string;
   statRating: string;
   statRatingLabel: string;
   statPercent: string;
@@ -35,8 +40,11 @@ export interface PageSection {
   title: string;
   body: string;
   imageUrl: string;
+  imageAlt: string;
   buttonText: string;
   buttonLink: string;
+  metaTitle: string;
+  metaDescription: string;
 }
 
 export interface ListItem {
@@ -62,6 +70,7 @@ export interface CaseStudy {
   title: string;
   icon: string;
   imageUrl: string;
+  imageAlt: string;
   body: string;
   order: number;
 }
@@ -78,6 +87,7 @@ export interface FaqItem {
   question: string;
   answer: string;
   order: number;
+  keywords: string;
 }
 
 export interface Service {
@@ -85,12 +95,17 @@ export interface Service {
   slug: string;
   title: string;
   menuLabel: string;
+  metaTitle: string;
+  metaDescription: string;
+  ogImageUrl: string;
+  updatedAt: string;
   bannerImageUrl: string;
   bannerTitle: string;
   introSubtitle: string;
   introTitle: string;
   introBody: string;
   introImageUrl: string;
+  introImageAlt: string;
   introButtonText: string;
   introButtonLink: string;
   tabsSubtitle: string;
@@ -108,12 +123,54 @@ export interface ProcessStep {
   body: string;
 }
 
+export interface LandingBenefit {
+  id: string;
+  landingSlug: string;
+  title: string;
+  body: string;
+  order: number;
+}
+
+export interface LandingSection {
+  id: string;
+  landingSlug: string;
+  title: string;
+  body: string;
+  order: number;
+}
+
+export interface LandingPage {
+  id: string;
+  slug: string;
+  campaignName: string;
+  metaTitle: string;
+  metaDescription: string;
+  heroTitle: string;
+  heroSubtitle: string;
+  heroImageUrl: string;
+  heroImageAlt: string;
+  primaryCtaText: string;
+  primaryCtaLink: string;
+  socialProof: string;
+  relatedServiceSlug: string;
+  formEnabled: boolean;
+  noIndex: boolean;
+  benefits: LandingBenefit[];
+  sections: LandingSection[];
+  updatedAt: string;
+}
+
 export interface ContactSubmissionData {
   name: string;
   email: string;
   phone: string;
   message: string;
   sourcePage: string;
+  utmSource?: string;
+  utmMedium?: string;
+  utmCampaign?: string;
+  utmTerm?: string;
+  utmContent?: string;
 }
 
 export interface HomePageData {
@@ -134,4 +191,9 @@ export interface HomePageData {
   faqHeader: PageSection | null;
   faq: FaqItem[];
   contactCta: PageSection | null;
+}
+
+export interface BreadcrumbItem {
+  label: string;
+  href?: string;
 }
