@@ -21,9 +21,11 @@ export const contactStep1Schema = z.object({
   email: z.string().email("Podaj poprawny adres e-mail"),
   phone: z.string().min(7, "Podaj numer telefonu"),
   company: z.string().min(2, "Podaj nazwę firmy"),
-  consent: z.literal(true, {
-    errorMap: () => ({ message: "Wymagana zgoda na przetwarzanie danych" }),
-  }),
+  consent: z
+    .boolean()
+    .refine((value) => value === true, {
+      message: "Wymagana zgoda na przetwarzanie danych",
+    }),
   sourcePage: z.string().min(1),
   website: z.string().optional(),
   utmSource: z.string().optional(),
