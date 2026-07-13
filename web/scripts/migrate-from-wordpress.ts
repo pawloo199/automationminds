@@ -173,6 +173,8 @@ async function seedAirtable() {
       Icon: tile.icon,
       Title: tile.title,
       Body: tile.body,
+      Href: tile.href ?? "",
+      LinkLabel: tile.linkLabel ?? "",
       Order: tile.order,
       Published: true,
     });

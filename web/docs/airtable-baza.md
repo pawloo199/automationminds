@@ -109,6 +109,8 @@ Jedna lub więcej rekordów — używany jest pierwszy.
 | Icon | Single line text (np. `sparkles`, `users`) |
 | Title | Single line text |
 | Body | Long text |
+| Href | Single line text (ścieżka URL, np. `/uslugi/automatyzacja-dla-hr`; puste = kafelek bez linku) |
+| LinkLabel | Single line text (etykieta CTA; opcjonalne, domyślnie „Dowiedz się więcej”) |
 | Order | Number |
 | Published | Checkbox |
 

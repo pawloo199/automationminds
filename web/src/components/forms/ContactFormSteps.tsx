@@ -6,7 +6,6 @@ import {
   EMPLOYEE_COUNT_OPTIONS,
   INDUSTRY_OPTIONS,
 } from "@/lib/contact-form-options";
-import { cn } from "@/lib/cn";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -195,30 +194,6 @@ export function ContactFormSteps({
 
   return (
     <div className="space-y-4">
-      <div className="flex items-center gap-3">
-        <div className="flex items-center gap-2">
-          <span
-            className={cn(
-              "flex h-7 w-7 items-center justify-center rounded-full text-xs font-semibold",
-              step === 1 ? "bg-brand text-white" : "bg-brand/15 text-brand",
-            )}
-          >
-            1
-          </span>
-          <span
-            className={cn(
-              "flex h-7 w-7 items-center justify-center rounded-full text-xs font-semibold",
-              step === 2 ? "bg-brand text-white" : "bg-surface text-muted",
-            )}
-          >
-            2
-          </span>
-        </div>
-        <p className="text-xs font-medium uppercase tracking-wider text-muted">
-          Krok {step} z 2
-        </p>
-      </div>
-
       {step === 1 ? (
         <form onSubmit={submitStep1} className="space-y-3">
           <input

@@ -180,7 +180,7 @@ export function HeroSlider({
       </div>
 
       <Container className="relative z-10 flex min-h-[90vh] items-center py-28 md:py-32">
-        <div className="max-w-4xl md:px-12 lg:max-w-5xl lg:px-16">
+        <div className="w-full max-w-4xl md:px-12 lg:max-w-none lg:px-16 xl:px-14">
           <div key={slide.id} className="hero-content-enter text-center sm:text-left">
             <div className="mb-6 flex items-center justify-center gap-4 sm:justify-start">
               <span className="hidden h-px w-10 bg-brand sm:block sm:w-14" aria-hidden />
@@ -189,12 +189,12 @@ export function HeroSlider({
               </p>
             </div>
 
-            <h1 className="mx-auto max-w-[18ch] text-4xl font-bold leading-[1.06] tracking-tight text-white sm:mx-0 sm:text-5xl lg:text-[3.25rem] xl:text-[3.5rem]">
+            <h1 className="mx-auto max-w-[18ch] text-4xl font-bold leading-[1.06] tracking-tight text-white sm:mx-0 sm:max-w-none sm:text-5xl lg:max-w-4xl lg:text-[3.25rem] xl:max-w-5xl xl:text-[3.5rem]">
               {slide.title}
             </h1>
 
             {slide.description ? (
-              <p className="mx-auto mt-5 max-w-md text-sm leading-relaxed text-white/75 sm:mx-0 md:max-w-lg">
+              <p className="mx-auto mt-5 max-w-md text-sm leading-relaxed text-white/75 sm:mx-0 lg:max-w-3xl lg:text-[0.9375rem] xl:max-w-4xl">
                 {slide.description}
               </p>
             ) : null}

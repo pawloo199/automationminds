@@ -126,6 +126,8 @@ const tables: TableDef[] = [
       },
       { name: "Icon", type: "singleLineText" },
       { name: "Body", type: "multilineText" },
+      { name: "Href", type: "singleLineText" },
+      { name: "LinkLabel", type: "singleLineText" },
       { name: "Order", type: "number", options: { precision: 0 } },
       {
         name: "Published",

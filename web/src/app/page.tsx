@@ -45,7 +45,12 @@ export default async function HomePage() {
           imageUrl={data.intro.imageUrl}
           buttonText={data.intro.buttonText}
           buttonLink={data.intro.buttonLink}
-          listItems={data.listItems.map((item) => item.text)}
+          listItems={data.listItems.slice(0, 4).map((item) => item.text)}
+          sourcePage="/"
+          services={services.map((service) => ({
+            id: service.id,
+            menuLabel: service.menuLabel,
+          }))}
         />
       ) : null}
       {data.areasHeader ? (

@@ -189,6 +189,8 @@ function mapFeatureTile(record: {
     title: str(fields.Title),
     body: str(fields.Body),
     order: num(fields.Order),
+    href: str(fields.Href) || undefined,
+    linkLabel: str(fields.LinkLabel) || undefined,
   };
 }
 

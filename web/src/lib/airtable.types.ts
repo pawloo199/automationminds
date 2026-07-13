@@ -63,6 +63,10 @@ export interface FeatureTile {
   title: string;
   body: string;
   order: number;
+  /** Ścieżka do silosu tematycznego, np. /uslugi/automatyzacja-dla-hr */
+  href?: string;
+  /** Etykieta CTA na kafelku-linku; domyślnie „Dowiedz się więcej” */
+  linkLabel?: string;
 }
 
 export interface CaseStudy {
