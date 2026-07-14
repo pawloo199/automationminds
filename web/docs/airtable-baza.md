@@ -65,6 +65,8 @@ Jedna lub więcej rekordów — używany jest pierwszy.
 | StatPercentLabel | Long text | Opis procentu |
 | StatNumber | Single line text | np. 1542 |
 | StatNumberLabel | Long text | Opis liczby |
+| StatDeployments | Single line text | np. 320 |
+| StatDeploymentsLabel | Long text | Opis czwartej statystyki |
 
 ### HeroSlides
 
@@ -85,13 +87,16 @@ Jedna lub więcej rekordów — używany jest pierwszy.
 | Pole | Typ |
 |------|-----|
 | PageSlug | Single line text (`home`, `o-nas`, `kontakt`) |
-| SectionKey | Single line text (`intro`, `areas-header`, `conversation`, `benefits-header`, `cases-header`, `tools-header`, `faq-header`, `contact-cta`, `banner`, `contact-sidebar`, `contact-form`) |
+| SectionKey | Single line text (`intro`, `areas-header`, `conversation`, `cases-header`, `faq-header`, `guide-header`, `banner`, `contact-sidebar`, `contact-form`) |
 | Subtitle | Single line text |
 | Title | Long text |
 | Body | Long text |
 | ImageUrl | URL |
 | ButtonText | Single line text |
 | ButtonLink | Single line text |
+| CitiesSubtitle | Single line text (sekcja miast, np. `conversation`) |
+| CitiesTitle | Single line text |
+| CitiesBody | Long text |
 
 ### ListItems
 
@@ -105,7 +110,7 @@ Jedna lub więcej rekordów — używany jest pierwszy.
 
 | Pole | Typ |
 |------|-----|
-| Group | Single select (`areas`, `benefits`) |
+| Group | Single select (`areas`) |
 | Icon | Single line text (np. `sparkles`, `users`) |
 | Title | Single line text |
 | Body | Long text |
@@ -121,13 +126,25 @@ Jedna lub więcej rekordów — używany jest pierwszy.
 | Context | Single select (`home`, `service`) |
 | ServiceSlug | Single line text (puste dla `home`) |
 | Title | Single line text |
+| Slug | Single line text (np. `sprzedaz-w-rytmie-sukcesu`; URL: `/case-studies/{slug}`) |
 | Icon | Single line text |
 | ImageUrl | URL |
 | Body | Long text |
 | Order | Number |
 | Published | Checkbox |
 
+### CitySilos
+
+| Pole | Typ |
+|------|-----|
+| Name | Single line text (np. `Warszawa`) |
+| Href | Single line text (ścieżka silosu SEO, np. `/automatyzacja-warszawa`) |
+| Order | Number |
+| Published | Checkbox |
+
 ### Tools
+
+_Tabela nieużywana — sekcja usunięta ze strony głównej. Rekordy można skasować skryptem `remove-home-benefits-tools.ts`._
 
 | Pole | Typ |
 |------|-----|

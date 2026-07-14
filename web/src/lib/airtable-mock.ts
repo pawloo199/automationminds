@@ -1,5 +1,6 @@
 import type {
   CaseStudy,
+  CitySilo,
   FaqItem,
   FeatureTile,
   HeroSlide,
@@ -10,8 +11,8 @@ import type {
   ProcessStep,
   Service,
   Settings,
-  Tool,
 } from "./airtable.types";
+import { getLatestGuideArticles } from "./guide-articles-mock";
 
 const sectionDefaults = {
   imageAlt: "",
@@ -72,12 +73,63 @@ export const mockSettings: Settings = {
   defaultOgImageUrl: "/opengraph-image",
   googleSiteVerification: "",
   statRating: "4.95",
-  statRatingLabel: "1,488 ocen",
+  statRatingLabel: "Średnia ocena współpracy wśród klientów.",
   statPercent: "80",
-  statPercentLabel: "Nawet tyle procesów możesz z nami zaoszczędzić.",
+  statPercentLabel: "Powtarzalnych procesów da się zautomatyzować w typowej firmie.",
   statNumber: "1542",
-  statNumberLabel: "Codziennych automatyzacji u naszych klientów.",
+  statNumberLabel: "Aktywnych automatyzacji każdego dnia u naszych klientów.",
+  statDeployments: "320",
+  statDeploymentsLabel: "Zrealizowanych projektów automatyzacji w Polsce.",
 };
+
+export const mockCitySilos: CitySilo[] = [
+  { id: "c1", name: "Warszawa", href: "/automatyzacja-warszawa", order: 1 },
+  { id: "c2", name: "Kraków", href: "/automatyzacja-krakow", order: 2 },
+  { id: "c3", name: "Wrocław", href: "/automatyzacja-wroclaw", order: 3 },
+  { id: "c4", name: "Łódź", href: "/automatyzacja-lodz", order: 4 },
+  { id: "c5", name: "Poznań", href: "/automatyzacja-poznan", order: 5 },
+  { id: "c6", name: "Gdańsk", href: "/automatyzacja-gdansk", order: 6 },
+  { id: "c7", name: "Szczecin", href: "/automatyzacja-szczecin", order: 7 },
+  { id: "c8", name: "Katowice", href: "/automatyzacja-katowice", order: 8 },
+  { id: "c9", name: "Lublin", href: "/automatyzacja-lublin", order: 9 },
+  { id: "c10", name: "Bydgoszcz", href: "/automatyzacja-bydgoszcz", order: 10 },
+  { id: "c11", name: "Białystok", href: "/automatyzacja-bialystok", order: 11 },
+  { id: "c12", name: "Gdynia", href: "/automatyzacja-gdynia", order: 12 },
+  { id: "c13", name: "Częstochowa", href: "/automatyzacja-czestochowa", order: 13 },
+  { id: "c14", name: "Radom", href: "/automatyzacja-radom", order: 14 },
+  { id: "c15", name: "Toruń", href: "/automatyzacja-torun", order: 15 },
+  { id: "c16", name: "Sosnowiec", href: "/automatyzacja-sosnowiec", order: 16 },
+  { id: "c17", name: "Kielce", href: "/automatyzacja-kielce", order: 17 },
+  { id: "c18", name: "Gliwice", href: "/automatyzacja-gliwice", order: 18 },
+  { id: "c19", name: "Olsztyn", href: "/automatyzacja-olsztyn", order: 19 },
+  { id: "c20", name: "Bielsko-Biała", href: "/automatyzacja-bielsko-biala", order: 20 },
+  { id: "c21", name: "Rzeszów", href: "/automatyzacja-rzeszow", order: 21 },
+  { id: "c22", name: "Zabrze", href: "/automatyzacja-zabrze", order: 22 },
+  { id: "c23", name: "Opole", href: "/automatyzacja-opole", order: 23 },
+  { id: "c24", name: "Ruda Śląska", href: "/automatyzacja-ruda-slaska", order: 24 },
+  { id: "c25", name: "Rybnik", href: "/automatyzacja-rybnik", order: 25 },
+  { id: "c26", name: "Tychy", href: "/automatyzacja-tychy", order: 26 },
+  { id: "c27", name: "Płock", href: "/automatyzacja-plock", order: 27 },
+  { id: "c28", name: "Wałbrzych", href: "/automatyzacja-walbrzych", order: 28 },
+  { id: "c29", name: "Tarnów", href: "/automatyzacja-tarnow", order: 29 },
+  { id: "c30", name: "Chorzów", href: "/automatyzacja-chorzow", order: 30 },
+  { id: "c31", name: "Kalisz", href: "/automatyzacja-kalisz", order: 31 },
+  { id: "c32", name: "Koszalin", href: "/automatyzacja-koszalin", order: 32 },
+  { id: "c33", name: "Legnica", href: "/automatyzacja-legnica", order: 33 },
+  { id: "c34", name: "Grudziądz", href: "/automatyzacja-grudziadz", order: 34 },
+  { id: "c35", name: "Dąbrowa Górnicza", href: "/automatyzacja-dabrowa-gornicza", order: 35 },
+  { id: "c36", name: "Nowy Sącz", href: "/automatyzacja-nowy-sacz", order: 36 },
+  { id: "c37", name: "Jelenia Góra", href: "/automatyzacja-jelenia-gora", order: 37 },
+  { id: "c38", name: "Konin", href: "/automatyzacja-konin", order: 38 },
+  { id: "c39", name: "Piotrków Trybunalski", href: "/automatyzacja-piotrkow-trybunalski", order: 39 },
+  { id: "c40", name: "Lubin", href: "/automatyzacja-lubin", order: 40 },
+  { id: "c41", name: "Inowrocław", href: "/automatyzacja-inowroclaw", order: 41 },
+  { id: "c42", name: "Ostrów Wielkopolski", href: "/automatyzacja-ostrow-wielkopolski", order: 42 },
+  { id: "c43", name: "Stargard", href: "/automatyzacja-stargard", order: 43 },
+  { id: "c44", name: "Mysłowice", href: "/automatyzacja-myslowice", order: 44 },
+  { id: "c45", name: "Piła", href: "/automatyzacja-pila", order: 45 },
+  { id: "c46", name: "Suwałki", href: "/automatyzacja-suwalki", order: 46 },
+];
 
 export const mockHeroSlides: HeroSlide[] = [
   {
@@ -246,101 +298,62 @@ export const mockFeatureTilesAreas: FeatureTile[] = [
   },
 ];
 
-export const mockFeatureTilesBenefits: FeatureTile[] = [
-  {
-    id: "b1",
-    group: "benefits",
-    icon: "users",
-    title: "Skalowanie wymaga większej ilości osób",
-    body: "Rozwój Twojej firmy wiąże się z zatrudnianiem dodatkowych osób, aby zrealizować powtarzalne zadania.",
-    order: 1,
-  },
-  {
-    id: "b2",
-    group: "benefits",
-    icon: "clock",
-    title: "Zespół spędza większość czasu na powtarzalnych zadaniach",
-    body: "Twój zespół nie może rozwinąć skrzydeł, bo większość czasu spędza na powtarzalnych zadaniach.",
-    order: 2,
-  },
-  {
-    id: "b3",
-    group: "benefits",
-    icon: "file-spreadsheet",
-    title: "Brak danych z kluczowych procesów twojej firmy",
-    body: "Wiedza o produkcji lub statusie realizowanych zadań istnieje tylko na kartach lub w excelu.",
-    order: 3,
-  },
-  {
-    id: "b4",
-    group: "benefits",
-    icon: "chart-line",
-    title: "Brak zautomatyzowanych raportów",
-    body: "Na raporty musisz czekać tygodniami. Nie podejmujesz decyzji biznesowych w oparciu o dane.",
-    order: 4,
-  },
-  {
-    id: "b5",
-    group: "benefits",
-    icon: "messages-square",
-    title: "Niefektywna komunikacja pomiędzy działami",
-    body: "Brak spójności i synchronizacji działań pomiędzy zespołami. Chaos w kalendarzach i działaniach.",
-    order: 5,
-  },
-];
-
 export const mockCaseStudies: CaseStudy[] = [
   completeCaseStudy({
     id: "c1",
     context: "home",
+    slug: "sprzedaz-w-rytmie-sukcesu",
     title: "Sprzedaż w rytmie sukcesu",
     icon: "trending-up",
     imageUrl:
       "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=900&q=80",
-    body: "Tworzymy jasne i spójne procesy sprzedażowe, które eliminują chaos, zwiększają efektywność zespołu i pozwalają na osiąganie lepszych wyników sprzedażowych.",
+    body: "Tworzymy jasne i spójne procesy sprzedażowe, które eliminują chaos, zwiększają efektywność zespołu i pozwalają na osiąganie lepszych wyników sprzedażowych.\n\nAutomatyzujemy przypomnienia, aktualizacje CRM i raportowanie pipeline'u, dzięki czemu handlowcy skupiają się na rozmowach z klientami zamiast na uzupełnianiu arkuszy.",
     order: 1,
   }),
   completeCaseStudy({
     id: "c2",
     context: "home",
+    slug: "hr-w-nowoczesnym-wydaniu",
     title: "HR w nowoczesnym wydaniu",
     icon: "users",
     imageUrl:
       "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=900&q=80",
-    body: "Pomagamy w wypracowaniu przejrzystych procesów zarządzania aplikacjami rekrutacyjnymi i kadrowymi, które usprawniają obsługę pracowników i kandydatów.",
+    body: "Pomagamy w wypracowaniu przejrzystych procesów zarządzania aplikacjami rekrutacyjnymi i kadrowymi, które usprawniają obsługę pracowników i kandydatów.\n\nOd onboardingu po wnioski urlopowe — łączymy narzędzia HR w jeden spójny przepływ, który skraca czas reakcji i poprawia doświadczenie zespołu.",
     order: 2,
   }),
   completeCaseStudy({
     id: "c3",
     context: "home",
+    slug: "porzadek-w-finansach",
     title: "Porządek w finansach",
     icon: "calculator",
     imageUrl:
       "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=900&q=80",
-    body: "Organizujemy procesy księgowe, eliminując wąskie gardła i zapewniając zgodność operacji finansowych z najlepszymi praktykami rynkowymi.",
+    body: "Organizujemy procesy księgowe, eliminując wąskie gardła i zapewniając zgodność operacji finansowych z najlepszymi praktykami rynkowymi.\n\nFaktury, zatwierdzenia i raporty miesięczne przestają być ręcznym obowiązkiem — dane trafiają tam, gdzie trzeba, bez dublowania pracy między działami.",
     order: 3,
   }),
   completeCaseStudy({
     id: "c4",
     context: "home",
+    slug: "produkcja-bez-przestojow",
     title: "Produkcja bez przestojów",
     icon: "factory",
     imageUrl:
       "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=900&q=80",
-    body: "Analizujemy i usprawniamy procesy produkcyjne, aby zwiększyć wydajność, zminimalizować straty i skrócić czas realizacji.",
+    body: "Analizujemy i usprawniamy procesy produkcyjne, aby zwiększyć wydajność, zminimalizować straty i skrócić czas realizacji.\n\nIntegrujemy dane z hali produkcyjnej z planowaniem i magazynem, żeby zespoły widziały problemy zanim staną się przestojem.",
     order: 4,
   }),
-];
-
-export const mockTools: Tool[] = [
-  { id: "t1", name: "Google", logoUrl: "", order: 1 },
-  { id: "t2", name: "Microsoft", logoUrl: "", order: 2 },
-  { id: "t3", name: "Zapier", logoUrl: "", order: 3 },
-  { id: "t4", name: "Make", logoUrl: "", order: 4 },
-  { id: "t5", name: "PowerApps", logoUrl: "/images/tools/PowerApps_scalable.svg", order: 5 },
-  { id: "t6", name: "WordPress", logoUrl: "", order: 6 },
-  { id: "t7", name: "HubSpot", logoUrl: "/images/tools/hubspot-logo.svg", order: 7 },
-  { id: "t8", name: "Pipedrive", logoUrl: "/images/tools/Pipedrive-logo.svg", order: 8 },
+  completeCaseStudy({
+    id: "c5",
+    context: "home",
+    slug: "obsluga-klienta-bez-kolejek",
+    title: "Obsługa klienta bez kolejek",
+    icon: "headphones",
+    imageUrl:
+      "https://images.unsplash.com/photo-1423666639041-f56000c27a9b?w=900&q=80",
+    body: "Porządkujemy obsługę zgłoszeń klientów — od pierwszego kontaktu po zamknięcie sprawy — tak, by nic nie ginęło między kanałami komunikacji.\n\nAutomatyczne triażowanie, przypomnienia i eskalacje skracają czas odpowiedzi i podnoszą satysfakcję klientów bez dokładania etatów w supportcie.",
+    order: 5,
+  }),
 ];
 
 export const mockFaq: FaqItem[] = [
@@ -348,22 +361,85 @@ export const mockFaq: FaqItem[] = [
     id: "f1",
     question: "Co to jest automatyzacja procesów biznesowych?",
     answer:
-      "Automatyzacja procesów biznesowych to wdrożenie technologii, która zastępuje ręczne, powtarzalne zadania, pozwalając Twojemu zespołowi skupić się na bardziej strategicznych działaniach.",
+      "Automatyzacja procesów biznesowych to wdrożenie technologii, która przejmuje powtarzalne, ręczne zadania — od wprowadzania danych po wysyłkę powiadomień i raportów. Dzięki temu zespół może skupić się na pracy wymagającej decyzji, relacji z klientem i rozwoju firmy.",
     order: 1,
   }),
   completeFaq({
     id: "f2",
     question: "Ile czasu zajmuje wdrożenie automatyzacji w mojej firmie?",
     answer:
-      "Czas wdrożenia zależy od wielkości firmy, złożoności procesów i liczby obszarów do automatyzacji. Prostsze procesy mogą trwać kilka tygodni, bardziej złożone projekty kilka miesięcy.",
+      "Czas zależy od skali i złożoności procesów. Prostsze automatyzacje — np. jeden przepływ między dwoma narzędziami — często uruchamiamy w kilka tygodni. Szersze projekty obejmujące wiele działów planujemy etapami, z pierwszymi efektami widocznymi już w trakcie wdrożenia.",
     order: 2,
   }),
   completeFaq({
     id: "f3",
     question: "Czy automatyzacja jest opłacalna dla małych firm?",
     answer:
-      "Tak, automatyzacja przynosi korzyści niezależnie od wielkości firmy. Nawet małe przedsiębiorstwa mogą zyskać dzięki oszczędności czasu, zmniejszeniu liczby błędów i lepszej organizacji procesów.",
+      "Tak. Małe firmy często najszybciej odczuwają korzyści, bo każda zaoszczędzona godzina pracy ma większy wpływ na wynik. Zaczynamy od procesów, które generują największy chaos lub błędy — bez konieczności dużych inwestycji na start.",
     order: 3,
+  }),
+  completeFaq({
+    id: "f4",
+    question: "Jakie procesy warto automatyzować w pierwszej kolejności?",
+    answer:
+      "Najlepiej zacząć od zadań powtarzalnych, czasochłonnych i podatnych na błędy: obsługi formularzy, faktur, leadów sprzedażowych, onboardingu pracowników czy raportów cyklicznych. Podczas bezpłatnej konsultacji wspólnie wskażemy 2–3 obszary z najszybszym zwrotem.",
+    order: 4,
+  }),
+  completeFaq({
+    id: "f5",
+    question: "Czy potrzebujemy własnego działu IT?",
+    answer:
+      "Nie. Projektujemy i wdrażamy rozwiązania end-to-end, tłumacząc je w języku biznesowym. Po uruchomieniu przekazujemy dokumentację i szkolimy zespół, aby mógł korzystać z automatyzacji bez codziennego wsparcia technicznego.",
+    order: 5,
+  }),
+  completeFaq({
+    id: "f6",
+    question: "Jak wygląda współpraca z Automation Minds?",
+    answer:
+      "Zaczynamy od rozmowy i mapowania procesów, potem proponujemy zakres i harmonogram. Wdrażamy w krótkich iteracjach, testujemy na żywych danych i dopracowujemy rozwiązanie razem z Twoim zespołem. Na końcu przekazujemy gotowy przepływ wraz ze wsparciem po uruchomieniu.",
+    order: 6,
+  }),
+  completeFaq({
+    id: "f7",
+    question: "Jakie narzędzia i technologie wykorzystujecie?",
+    answer:
+      "Dobieramy stack do Twoich systemów i budżetu — od platform no-code/low-code po integracje API i rozwiązania AI. Ważniejsze niż konkretna technologia jest to, żeby automatyzacja była stabilna, czytelna dla zespołu i łatwa w rozwoju w przyszłości.",
+    order: 7,
+  }),
+  completeFaq({
+    id: "f8",
+    question: "Czy automatyzacja zastąpi pracowników?",
+    answer:
+      "Automatyzacja nie polega na redukcji etatów, lecz na odciążeniu zespołu od pracy mechaniczej. Pracownicy zyskują czas na obsługę klientów, sprzedaż, analizę i rozwój — obszary, w których ludzie mają największą wartość.",
+    order: 8,
+  }),
+  completeFaq({
+    id: "f9",
+    question: "Ile kosztuje wdrożenie automatyzacji?",
+    answer:
+      "Koszt zależy od liczby procesów, integracji i stopnia skomplikowania logiki. Po wstępnej analizie przedstawiamy przejrzystą wycenę i priorytety — często można zacząć od jednego modułu i rozbudowywać rozwiązanie etapami.",
+    order: 9,
+  }),
+  completeFaq({
+    id: "f10",
+    question: "Co jeśli nasze systemy nie mają gotowych integracji?",
+    answer:
+      "To częsta sytuacja. Łączymy narzędzia przez API, webhooki, pliki pośrednie lub dedykowane konektory. Jeśli dane są dostępne cyfrowo, prawie zawsze da się zaprojektować bezpieczny przepływ bez ręcznego przenoszenia informacji.",
+    order: 10,
+  }),
+  completeFaq({
+    id: "f11",
+    question: "Czy oferujecie wsparcie po wdrożeniu?",
+    answer:
+      "Tak. Po uruchomieniu monitorujemy działanie rozwiązania, reagujemy na zmiany w procesach i pomagamy rozbudowywać automatyzacje wraz z rozwojem firmy. Możesz też zgłaszać nowe potrzeby w ramach stałej współpracy.",
+    order: 11,
+  }),
+  completeFaq({
+    id: "f12",
+    question: "Czy dane mojej firmy są bezpieczne?",
+    answer:
+      "Bezpieczeństwo traktujemy priorytetowo. Stosujemy dostęp oparty na rolach, szyfrowanie połączeń i minimalizujemy zakres przetwarzanych danych. Przed wdrożeniem omawiamy wymagania RODO i zasady przechowywania informacji.",
+    order: 12,
   }),
 ];
 
@@ -629,8 +705,8 @@ export function getMockHomePageData(): HomePageData {
       title: "Gdzie wspieramy Twoją firmę",
       body: "",
       imageUrl: "",
-      buttonText: "",
-      buttonLink: "",
+      buttonText: "Bezpłatna konsultacja",
+      buttonLink: "/kontakt",
     }),
     featureTilesAreas: mockFeatureTilesAreas,
     stats: mockSettings,
@@ -638,26 +714,19 @@ export function getMockHomePageData(): HomePageData {
       id: "conversation",
       pageSlug: "home",
       sectionKey: "conversation",
-      subtitle: "Poznaj nasze możliwości",
-      title: "Wszystko zaczynamy od rozmowy",
-      body: "Zapraszamy do rozmowy z jednym z naszych ekspertów automatyzacji. Podczas bezpłatnych 30 minut możesz ocenić nasze kompetencje oraz opowiedzieć o potrzebach Twojej firmy.",
+      subtitle: "Skala i zasięg",
+      title: "Wdrażamy automatyzację w firmach w całej Polsce",
+      body: "Ponad 1 500 aktywnych automatyzacji, setki wdrożeń i wsparcie w największych aglomeracjach — pomagamy firmom skalować procesy bez dokładania etatów.\n\nBez względu na to, czy działasz w Warszawie, Krakowie czy mniejszym mieście, dobieramy rozwiązania pod Twoje procesy i zespół.",
       imageUrl:
         "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1200&q=80",
       buttonText: "Bezpłatna konsultacja",
       buttonLink: "/kontakt",
+      citiesSubtitle: "Zasięg w całym kraju",
+      citiesTitle: "Automatyzacja tam, gdzie działa Twoja firma",
+      citiesBody:
+        "Pracujemy z firmami w całej Polsce — od aglomeracji po mniejsze rynki lokalne. Dla każdego miasta dobieramy rozwiązania dopasowane do Twojego regionu i branży.",
     }),
-    benefitsHeader: withSectionDefaults({
-      id: "benefits-header",
-      pageSlug: "home",
-      sectionKey: "benefits-header",
-      subtitle: "Korzyści z automatyzacji",
-      title: "Czy potrzebujesz automatyzacji?",
-      body: "Jeżeli Ty lub Twoi pracownicy muszą regularnie wykonywać powtarzalne zadania, automatyzacja procesów biznesowych jest dla Ciebie.",
-      imageUrl: "",
-      buttonText: "Bezpłatna konsultacja",
-      buttonLink: "/kontakt",
-    }),
-    featureTilesBenefits: mockFeatureTilesBenefits,
+    citySilos: mockCitySilos,
     caseStudiesHeader: withSectionDefaults({
       id: "cases-header",
       pageSlug: "home",
@@ -670,18 +739,6 @@ export function getMockHomePageData(): HomePageData {
       buttonLink: "",
     }),
     caseStudies: mockCaseStudies,
-    toolsHeader: withSectionDefaults({
-      id: "tools-header",
-      pageSlug: "home",
-      sectionKey: "tools-header",
-      subtitle: "Sprawdzone technologie",
-      title: "Narzędzia",
-      body: "",
-      imageUrl: "",
-      buttonText: "",
-      buttonLink: "",
-    }),
-    tools: mockTools,
     faqHeader: withSectionDefaults({
       id: "faq-header",
       pageSlug: "home",
@@ -694,17 +751,18 @@ export function getMockHomePageData(): HomePageData {
       buttonLink: "",
     }),
     faq: mockFaq,
-    contactCta: withSectionDefaults({
-      id: "contact-cta",
+    guideHeader: withSectionDefaults({
+      id: "guide-header",
       pageSlug: "home",
-      sectionKey: "contact-cta",
-      subtitle: "Skontaktuj się z nami",
-      title: "Porozmawiajmy jak możemy odciążyć Twój zespół",
-      body: "Opowiedz nam o swojej firmie, jej procesach i potrzebach, a my pokażemy możliwości automatyzacji.",
+      sectionKey: "guide-header",
+      subtitle: "Poradnik",
+      title: "Wiedza o automatyzacji procesów",
+      body: "Praktyczne artykuły o wdrożeniach, narzędziach i usprawnianiu codziennej pracy zespołu.",
       imageUrl: "",
-      buttonText: "Wyślij zapytanie",
-      buttonLink: "/kontakt",
+      buttonText: "Więcej artykułów",
+      buttonLink: "/poradnik",
     }),
+    guideArticles: getLatestGuideArticles(6),
   };
 }
 
@@ -717,11 +775,9 @@ export function getMockPageSection(
     home.intro!,
     home.areasHeader!,
     home.conversation!,
-    home.benefitsHeader!,
     home.caseStudiesHeader!,
-    home.toolsHeader!,
     home.faqHeader!,
-    home.contactCta!,
+    home.guideHeader!,
     withSectionDefaults({
       id: "about-banner",
       pageSlug: "o-nas",

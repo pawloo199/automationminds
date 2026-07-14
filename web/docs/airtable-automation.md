@@ -77,8 +77,9 @@ Odpowiedź (wymagana przez skrypt):
 | Tabela | Rewalidowane ścieżki |
 |--------|----------------------|
 | `Settings` | Wszystkie strony statyczne + `/uslugi`, `/kampanie` |
-| `HeroSlides`, `FAQ`, `Tools` | `/` |
+| `HeroSlides`, `FAQ` | `/` |
 | `FeatureTiles` | `/`, ewentualnie `/o-nas` (grupa `areas`) |
+| `CitySilos` | `/`, `/o-nas` |
 | `PageSections` | strona z pola `PageSlug` (`home` → `/`, `kontakt` → `/kontakt`) |
 | `ListItems` | strona z `PageSlug` |
 | `CaseStudies` | `/` lub `/uslugi/{ServiceSlug}` |
@@ -118,8 +119,8 @@ curl "https://TWOJA-DOMENA/api/revalidate?secret=TWÓJ_SECRET&full=true"
 - PageSections
 - ListItems
 - FeatureTiles
+- CitySilos
 - CaseStudies
-- Tools
 - FAQ
 - Services
 - ProcessSteps

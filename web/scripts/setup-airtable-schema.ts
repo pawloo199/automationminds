@@ -67,6 +67,8 @@ const tables: TableDef[] = [
       { name: "StatPercentLabel", type: "multilineText" },
       { name: "StatNumber", type: "singleLineText" },
       { name: "StatNumberLabel", type: "multilineText" },
+      { name: "StatDeployments", type: "singleLineText" },
+      { name: "StatDeploymentsLabel", type: "multilineText" },
     ],
   },
   {
@@ -103,6 +105,9 @@ const tables: TableDef[] = [
       { name: "ImageAlt", type: "singleLineText" },
       { name: "ButtonText", type: "singleLineText" },
       { name: "ButtonLink", type: "url" },
+      { name: "CitiesSubtitle", type: "singleLineText" },
+      { name: "CitiesTitle", type: "singleLineText" },
+      { name: "CitiesBody", type: "multilineText" },
       { name: "MetaTitle", type: "singleLineText" },
       { name: "MetaDescription", type: "multilineText" },
     ],
@@ -122,7 +127,7 @@ const tables: TableDef[] = [
       {
         name: "Group",
         type: "singleSelect",
-        options: { choices: [{ name: "areas" }, { name: "benefits" }] },
+        options: { choices: [{ name: "areas" }] },
       },
       { name: "Icon", type: "singleLineText" },
       { name: "Body", type: "multilineText" },
@@ -140,6 +145,7 @@ const tables: TableDef[] = [
     name: "CaseStudies",
     fields: [
       { name: "Title", type: "singleLineText" },
+      { name: "Slug", type: "singleLineText" },
       {
         name: "Context",
         type: "singleSelect",
@@ -163,6 +169,19 @@ const tables: TableDef[] = [
     fields: [
       { name: "Name", type: "singleLineText" },
       { name: "LogoUrl", type: "url" },
+      { name: "Order", type: "number", options: { precision: 0 } },
+      {
+        name: "Published",
+        type: "checkbox",
+        options: { icon: "check", color: "greenBright" },
+      },
+    ],
+  },
+  {
+    name: "CitySilos",
+    fields: [
+      { name: "Name", type: "singleLineText" },
+      { name: "Href", type: "singleLineText" },
       { name: "Order", type: "number", options: { precision: 0 } },
       {
         name: "Published",

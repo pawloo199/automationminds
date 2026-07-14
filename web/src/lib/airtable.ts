@@ -3,6 +3,7 @@ import { normalizeLogoUrl } from "./assets";
 import { cache } from "react";
 import type {
   CaseStudy,
+  CitySilo,
   ContactSubmissionData,
   ContactSubmissionStep1Data,
   ContactSubmissionStep2Data,
@@ -19,8 +20,10 @@ import type {
   ProcessStep,
   Service,
   Settings,
-  Tool,
 } from "./airtable.types";
+import {
+  getLatestGuideArticles,
+} from "./guide-articles-mock";
 import {
   getMockCaseStudiesForService,
   getMockHomePageData,
@@ -31,14 +34,13 @@ import {
   getMockProcessSteps,
   getMockServiceBySlug,
   mockCaseStudies,
+  mockCitySilos,
   mockFaq,
   mockFeatureTilesAreas,
-  mockFeatureTilesBenefits,
   mockHeroSlides,
   mockListItems,
   mockServices,
   mockSettings,
-  mockTools,
 } from "./airtable-mock";
 
 const TABLES = {
@@ -48,7 +50,7 @@ const TABLES = {
   listItems: "ListItems",
   featureTiles: "FeatureTiles",
   caseStudies: "CaseStudies",
-  tools: "Tools",
+  citySilos: "CitySilos",
   faq: "FAQ",
   services: "Services",
   processSteps: "ProcessSteps",
@@ -73,6 +75,15 @@ function getBase() {
 
 function str(value: unknown): string {
   return typeof value === "string" ? value : "";
+}
+
+function slugify(value: string): string {
+  return value
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
 }
 
 function num(value: unknown): number {
@@ -125,6 +136,10 @@ function mapSettings(fields: FieldSet): Settings {
       str(fields.StatPercentLabel) || mockSettings.statPercentLabel,
     statNumber: str(fields.StatNumber) || mockSettings.statNumber,
     statNumberLabel: str(fields.StatNumberLabel) || mockSettings.statNumberLabel,
+    statDeployments:
+      str(fields.StatDeployments) || mockSettings.statDeployments,
+    statDeploymentsLabel:
+      str(fields.StatDeploymentsLabel) || mockSettings.statDeploymentsLabel,
   };
 }
 
@@ -162,6 +177,9 @@ function mapPageSection(record: {
     imageAlt: str(fields.ImageAlt),
     buttonText: str(fields.ButtonText),
     buttonLink: str(fields.ButtonLink),
+    citiesSubtitle: str(fields.CitiesSubtitle) || undefined,
+    citiesTitle: str(fields.CitiesTitle) || undefined,
+    citiesBody: str(fields.CitiesBody) || undefined,
     metaTitle: str(fields.MetaTitle),
     metaDescription: str(fields.MetaDescription),
   };
@@ -194,10 +212,22 @@ function mapFeatureTile(record: {
   };
 }
 
-function mapCaseStudy(record: { id: string; fields: FieldSet }): CaseStudy {
+function mapCitySilo(record: { id: string; fields: FieldSet }): CitySilo {
   const { id, fields } = record;
   return {
     id,
+    name: str(fields.Name),
+    href: str(fields.Href),
+    order: num(fields.Order),
+  };
+}
+
+function mapCaseStudy(record: { id: string; fields: FieldSet }): CaseStudy {
+  const { id, fields } = record;
+  const title = str(fields.Title);
+  return {
+    id,
+    slug: str(fields.Slug) || slugify(title),
     context: str(fields.Context) === "service" ? "service" : "home",
     serviceSlug: str(fields.ServiceSlug) || undefined,
     title: str(fields.Title),
@@ -205,16 +235,6 @@ function mapCaseStudy(record: { id: string; fields: FieldSet }): CaseStudy {
     imageUrl: str(fields.ImageUrl),
     imageAlt: str(fields.ImageAlt) || str(fields.Title),
     body: str(fields.Body),
-    order: num(fields.Order),
-  };
-}
-
-function mapTool(record: { id: string; fields: FieldSet }): Tool {
-  const { id, fields } = record;
-  return {
-    id,
-    name: str(fields.Name),
-    logoUrl: str(fields.LogoUrl),
     order: num(fields.Order),
   };
 }
@@ -306,11 +326,9 @@ async function getPageSections(pageSlug?: string): Promise<PageSection[]> {
       "intro",
       "areas-header",
       "conversation",
-      "benefits-header",
       "cases-header",
-      "tools-header",
       "faq-header",
-      "contact-cta",
+      "guide-header",
       "banner",
       "contact-sidebar",
       "contact-form",
@@ -528,22 +546,17 @@ export const getListItems = cache(
   },
 );
 
-export const getFeatureTiles = cache(
-  async (group: FeatureTileGroup): Promise<FeatureTile[]> => {
-    const fallback =
-      group === "areas" ? mockFeatureTilesAreas : mockFeatureTilesBenefits;
+export const getFeatureTiles = cache(async (): Promise<FeatureTile[]> => {
+  if (!isConfigured()) return mockFeatureTilesAreas;
 
-    if (!isConfigured()) return fallback;
-
-    try {
-      const tiles = await fetchPublished(TABLES.featureTiles, mapFeatureTile);
-      const filtered = tiles.filter((t) => t.group === group);
-      return filtered.length > 0 ? filtered : fallback;
-    } catch {
-      return fallback;
-    }
-  },
-);
+  try {
+    const tiles = await fetchPublished(TABLES.featureTiles, mapFeatureTile);
+    const filtered = tiles.filter((t) => t.group === "areas");
+    return filtered.length > 0 ? filtered : mockFeatureTilesAreas;
+  } catch {
+    return mockFeatureTilesAreas;
+  }
+});
 
 export const getCaseStudies = cache(
   async (context: "home" | string): Promise<CaseStudy[]> => {
@@ -579,14 +592,39 @@ export const getCaseStudies = cache(
   },
 );
 
-export const getTools = cache(async (): Promise<Tool[]> => {
-  if (!isConfigured()) return mockTools;
+export const getCaseStudyBySlug = cache(
+  async (slug: string): Promise<CaseStudy | null> => {
+    if (!slug) return null;
+
+    if (!isConfigured()) {
+      return mockCaseStudies.find((item) => item.slug === slug) ?? null;
+    }
+
+    try {
+      const records = (await getBase()(TABLES.caseStudies)
+        .select({
+          filterByFormula: `AND({Slug} = '${slug}', {Published} = TRUE())`,
+          maxRecords: 1,
+        })
+        .all());
+      if (records.length > 0) {
+        return mapCaseStudy({ id: records[0].id, fields: records[0].fields });
+      }
+      return mockCaseStudies.find((item) => item.slug === slug) ?? null;
+    } catch {
+      return mockCaseStudies.find((item) => item.slug === slug) ?? null;
+    }
+  },
+);
+
+export const getCitySilos = cache(async (): Promise<CitySilo[]> => {
+  if (!isConfigured()) return mockCitySilos;
 
   try {
-    const tools = await fetchPublished(TABLES.tools, mapTool);
-    return tools.length > 0 ? tools : mockTools;
+    const cities = await fetchPublished(TABLES.citySilos, mapCitySilo);
+    return cities.length > 0 ? cities : mockCitySilos;
   } catch {
-    return mockTools;
+    return mockCitySilos;
   }
 });
 
@@ -669,19 +707,17 @@ export const getHomePageData = cache(async (): Promise<HomePageData> => {
     homeSections,
     listItems,
     featureTilesAreas,
-    featureTilesBenefits,
     caseStudies,
-    tools,
+    citySilos,
     faq,
   ] = await Promise.all([
     getSettings(),
     getHeroSlides(),
     getPageSections("home"),
     getListItems("home"),
-    getFeatureTiles("areas"),
-    getFeatureTiles("benefits"),
+    getFeatureTiles(),
     getCaseStudies("home"),
-    getTools(),
+    getCitySilos(),
     getFaq(),
   ]);
 
@@ -694,15 +730,13 @@ export const getHomePageData = cache(async (): Promise<HomePageData> => {
     featureTilesAreas,
     stats: settings,
     conversation: findSection(homeSections, "home", "conversation"),
-    benefitsHeader: findSection(homeSections, "home", "benefits-header"),
-    featureTilesBenefits,
+    citySilos,
     caseStudiesHeader: findSection(homeSections, "home", "cases-header"),
     caseStudies,
-    toolsHeader: findSection(homeSections, "home", "tools-header"),
-    tools,
     faqHeader: findSection(homeSections, "home", "faq-header"),
     faq,
-    contactCta: findSection(homeSections, "home", "contact-cta"),
+    guideHeader: findSection(homeSections, "home", "guide-header"),
+    guideArticles: getLatestGuideArticles(6),
   };
 });
 

@@ -33,7 +33,7 @@ export default async function AboutPage() {
   const [homeData, listItems, featureTiles, settings, banner] = await Promise.all([
     getHomePageData(),
     getListItems("o-nas"),
-    getFeatureTiles("areas"),
+    getFeatureTiles(),
     getSettings(),
     getPageSection("o-nas", "banner"),
   ]);
@@ -86,7 +86,11 @@ export default async function AboutPage() {
         </section>
       ) : null}
       {homeData.conversation ? (
-        <StatsRow section={homeData.conversation} stats={settings} />
+        <StatsRow
+          section={homeData.conversation}
+          stats={settings}
+          cities={homeData.citySilos}
+        />
       ) : null}
     </SiteLayout>
   );

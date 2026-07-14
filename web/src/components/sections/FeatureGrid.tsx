@@ -1,3 +1,4 @@
+import { ContactCtaModalButton } from "@/components/forms/ContactCtaModalButton";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import type { FeatureTile } from "@/lib/airtable.types";
@@ -122,43 +123,19 @@ export function FeatureGrid({
   subtitle,
   title,
   tiles,
-  variant = "cards",
+  buttonText,
+  buttonLink,
+  sourcePage = "/",
+  services = [],
 }: {
   subtitle?: string;
   title: string;
   tiles: FeatureTile[];
-  variant?: "cards" | "benefits";
+  buttonText?: string;
+  buttonLink?: string;
+  sourcePage?: string;
+  services?: { id: string; menuLabel: string }[];
 }) {
-  if (variant === "benefits") {
-    return (
-      <section className="py-20 lg:py-28">
-        <Container>
-          {title ? (
-            <SectionHeading subtitle={subtitle} title={title} className="mb-12" />
-          ) : subtitle ? (
-            <p className="mb-12 text-center text-sm font-semibold uppercase tracking-widest text-brand">
-              {subtitle}
-            </p>
-          ) : null}
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {tiles.map((tile) => (
-              <div
-                key={tile.id}
-                className="rounded-2xl border border-brand/10 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
-              >
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-surface">
-                  <TileIcon name={tile.icon} />
-                </div>
-                <h3 className="text-lg font-semibold text-dark">{tile.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">{tile.body}</p>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </section>
-    );
-  }
-
   const linkedCount = tiles.filter((tile) => tile.href?.trim()).length;
   const summary =
     tiles.length > 0
@@ -210,6 +187,17 @@ export function FeatureGrid({
             </div>
           ))}
         </div>
+
+        {buttonText && buttonLink ? (
+          <div className="relative mt-8 flex justify-center sm:mt-12 lg:mt-14">
+            <ContactCtaModalButton
+              label={buttonText}
+              sourcePage={sourcePage}
+              services={services}
+              className="group w-full px-10 py-[1.125rem] text-base sm:w-auto md:text-lg"
+            />
+          </div>
+        ) : null}
       </Container>
     </section>
   );

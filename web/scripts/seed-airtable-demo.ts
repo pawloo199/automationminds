@@ -90,6 +90,8 @@ async function seedSettings(base: AirtableBase) {
     StatPercentLabel: mockSettings.statPercentLabel,
     StatNumber: mockSettings.statNumber,
     StatNumberLabel: mockSettings.statNumberLabel,
+    StatDeployments: mockSettings.statDeployments,
+    StatDeploymentsLabel: mockSettings.statDeploymentsLabel,
   };
 
   if (records.length === 0) {

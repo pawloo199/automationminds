@@ -1,6 +1,6 @@
 export type PageSlug = "home" | "o-nas" | "kontakt" | string;
 
-export type FeatureTileGroup = "areas" | "benefits";
+export type FeatureTileGroup = "areas";
 
 export type CaseStudyContext = "home" | "service";
 
@@ -20,6 +20,8 @@ export interface Settings {
   statPercentLabel: string;
   statNumber: string;
   statNumberLabel: string;
+  statDeployments: string;
+  statDeploymentsLabel: string;
 }
 
 export interface HeroSlide {
@@ -45,6 +47,9 @@ export interface PageSection {
   imageAlt: string;
   buttonText: string;
   buttonLink: string;
+  citiesSubtitle?: string;
+  citiesTitle?: string;
+  citiesBody?: string;
   metaTitle: string;
   metaDescription: string;
 }
@@ -69,8 +74,16 @@ export interface FeatureTile {
   linkLabel?: string;
 }
 
+export interface CitySilo {
+  id: string;
+  name: string;
+  href: string;
+  order: number;
+}
+
 export interface CaseStudy {
   id: string;
+  slug: string;
   context: CaseStudyContext;
   serviceSlug?: string;
   title: string;
@@ -81,11 +94,19 @@ export interface CaseStudy {
   order: number;
 }
 
-export interface Tool {
+export interface GuideArticle {
   id: string;
-  name: string;
-  logoUrl: string;
-  order: number;
+  slug: string;
+  title: string;
+  excerpt: string;
+  body: string;
+  imageUrl: string;
+  imageAlt: string;
+  category: string;
+  publishedAt: string;
+  readTimeMinutes: number;
+  metaTitle?: string;
+  metaDescription?: string;
 }
 
 export interface FaqItem {
@@ -210,15 +231,13 @@ export interface HomePageData {
   featureTilesAreas: FeatureTile[];
   stats: Settings;
   conversation: PageSection | null;
-  benefitsHeader: PageSection | null;
-  featureTilesBenefits: FeatureTile[];
+  citySilos: CitySilo[];
   caseStudiesHeader: PageSection | null;
   caseStudies: CaseStudy[];
-  toolsHeader: PageSection | null;
-  tools: Tool[];
   faqHeader: PageSection | null;
   faq: FaqItem[];
-  contactCta: PageSection | null;
+  guideHeader: PageSection | null;
+  guideArticles: GuideArticle[];
 }
 
 export interface BreadcrumbItem {

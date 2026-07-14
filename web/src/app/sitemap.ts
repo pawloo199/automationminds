@@ -1,4 +1,6 @@
-import { getLandingPages, getServices } from "@/lib/airtable";
+import { getCaseStudies, getLandingPages, getServices } from "@/lib/airtable";
+import { caseStudyPath } from "@/lib/case-study-icons";
+import { getGuideArticles, guideArticlePath } from "@/lib/guide-articles";
 import { siteUrl } from "@/lib/metadata";
 import type { MetadataRoute } from "next";
 
@@ -9,12 +11,14 @@ function parseDate(value: string | undefined): Date {
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const [services, landingPages] = await Promise.all([
+  const [services, landingPages, caseStudies, guideArticles] = await Promise.all([
     getServices(),
     getLandingPages(),
+    getCaseStudies("home"),
+    Promise.resolve(getGuideArticles()),
   ]);
 
-  const staticPages = ["", "/o-nas", "/kontakt", "/polityka-prywatnosci"].map(
+  const staticPages = ["", "/o-nas", "/poradnik", "/kontakt", "/polityka-prywatnosci"].map(
     (path) => ({
       url: `${siteUrl}${path}`,
       lastModified: new Date(),
@@ -39,5 +43,25 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.75,
     }));
 
-  return [...staticPages, ...servicePages, ...campaignPages];
+  const caseStudyPages = caseStudies.map((item) => ({
+    url: `${siteUrl}${caseStudyPath(item.slug)}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.65,
+  }));
+
+  const guidePages = guideArticles.map((item) => ({
+    url: `${siteUrl}${guideArticlePath(item.slug)}`,
+    lastModified: new Date(item.publishedAt),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  return [
+    ...staticPages,
+    ...servicePages,
+    ...campaignPages,
+    ...caseStudyPages,
+    ...guidePages,
+  ];
 }

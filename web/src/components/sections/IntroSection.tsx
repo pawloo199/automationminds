@@ -57,9 +57,9 @@ export function IntroSection({
                 {listItems.map((item) => (
                   <li
                     key={item}
-                    className="flex items-start gap-3 rounded-2xl border border-brand/10 bg-white/70 p-4 shadow-sm"
+                    className="flex items-center gap-3 rounded-2xl border border-brand/10 bg-white/70 p-4 shadow-sm"
                   >
-                    <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-surface text-brand">
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-surface text-brand">
                       <Check className="h-4 w-4" aria-hidden />
                     </span>
                     <span className="text-sm leading-relaxed text-dark">

@@ -37,14 +37,13 @@ import {
   getMockHomePageData,
   mockFaq,
   mockFeatureTilesAreas,
-  mockFeatureTilesBenefits,
   mockHeroSlides,
   mockListItems,
   mockProcessSteps,
   mockServices,
   mockSettings,
-  mockTools,
   mockCaseStudies,
+  mockCitySilos,
 } from "../src/lib/airtable-mock";
 
 const BASE_ID = process.env.AIRTABLE_BASE_ID;
@@ -114,6 +113,8 @@ async function seedAirtable() {
     StatPercentLabel: mockSettings.statPercentLabel,
     StatNumber: mockSettings.statNumber,
     StatNumberLabel: mockSettings.statNumberLabel,
+    StatDeployments: mockSettings.statDeployments,
+    StatDeploymentsLabel: mockSettings.statDeploymentsLabel,
   });
 
   console.log("Seeding HeroSlides...");
@@ -136,11 +137,9 @@ async function seedAirtable() {
     { ...home.intro!, sectionKey: "intro" },
     { ...home.areasHeader!, sectionKey: "areas-header" },
     { ...home.conversation!, sectionKey: "conversation" },
-    { ...home.benefitsHeader!, sectionKey: "benefits-header" },
     { ...home.caseStudiesHeader!, sectionKey: "cases-header" },
-    { ...home.toolsHeader!, sectionKey: "tools-header" },
     { ...home.faqHeader!, sectionKey: "faq-header" },
-    { ...home.contactCta!, sectionKey: "contact-cta" },
+    { ...home.guideHeader!, sectionKey: "guide-header" },
   ];
 
   for (const section of sections) {
@@ -167,7 +166,7 @@ async function seedAirtable() {
   }
 
   console.log("Seeding FeatureTiles...");
-  for (const tile of [...mockFeatureTilesAreas, ...mockFeatureTilesBenefits]) {
+  for (const tile of mockFeatureTilesAreas) {
     await base("FeatureTiles").create({
       Group: tile.group,
       Icon: tile.icon,
@@ -186,20 +185,22 @@ async function seedAirtable() {
       Context: item.context,
       ServiceSlug: item.serviceSlug ?? "",
       Title: item.title,
+      Slug: item.slug,
       Icon: item.icon,
       ImageUrl: item.imageUrl,
+      ImageAlt: item.imageAlt,
       Body: item.body,
       Order: item.order,
       Published: true,
     });
   }
 
-  console.log("Seeding Tools...");
-  for (const tool of mockTools) {
-    await base("Tools").create({
-      Name: tool.name,
-      LogoUrl: tool.logoUrl,
-      Order: tool.order,
+  console.log("Seeding CitySilos...");
+  for (const city of mockCitySilos) {
+    await base("CitySilos").create({
+      Name: city.name,
+      Href: city.href,
+      Order: city.order,
       Published: true,
     });
   }

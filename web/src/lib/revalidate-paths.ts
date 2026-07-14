@@ -8,7 +8,7 @@ const STATIC_PAGES = [
   "/dziekujemy",
 ] as const;
 
-const LAYOUT_PATHS = ["/", "/uslugi", "/kampanie"] as const;
+const LAYOUT_PATHS = ["/", "/uslugi", "/kampanie", "/case-studies", "/poradnik"] as const;
 
 function str(value: unknown): string {
   return typeof value === "string" ? value : "";
@@ -39,16 +39,17 @@ function pathsForTableOnly(tableName: string): string[] {
       return [...STATIC_PAGES, "/uslugi", "/kampanie"];
     case "HeroSlides":
     case "FAQ":
-    case "Tools":
       return ["/"];
     case "FeatureTiles":
+      return ["/", "/o-nas"];
+    case "CitySilos":
       return ["/", "/o-nas"];
     case "ListItems":
       return ["/", "/o-nas"];
     case "PageSections":
       return ["/", "/o-nas", "/kontakt"];
     case "CaseStudies":
-      return ["/", "/uslugi"];
+      return ["/", "/uslugi", "/case-studies"];
     case "Services":
       return ["/", "/uslugi"];
     case "ProcessSteps":
@@ -80,18 +81,23 @@ function pathsFromRecord(
       return [...STATIC_PAGES, "/uslugi", "/kampanie"];
     case "HeroSlides":
     case "FAQ":
-    case "Tools":
       return ["/"];
     case "FeatureTiles":
-      return str(fields.Group) === "areas" ? ["/", "/o-nas"] : ["/"];
+      return ["/", "/o-nas"];
+    case "CitySilos":
+      return ["/", "/o-nas"];
     case "ListItems":
       return [pageSlugToPath(pageSlug)];
     case "PageSections":
       return [pageSlugToPath(pageSlug)];
     case "CaseStudies":
-      return context === "service" && serviceSlug
-        ? ["/", `/uslugi/${serviceSlug}`]
-        : ["/"];
+      return unique([
+        "/",
+        "/uslugi",
+        "/case-studies",
+        str(fields.Slug) ? `/case-studies/${str(fields.Slug)}` : "",
+        context === "service" && serviceSlug ? `/uslugi/${serviceSlug}` : "",
+      ]);
     case "Services":
       return unique(["/", slug ? `/uslugi/${slug}` : "/uslugi"]);
     case "ProcessSteps":
@@ -148,6 +154,26 @@ async function fetchAllDynamicPaths(): Promise<string[]> {
     // ignore
   }
 
+  try {
+    const caseStudies = await base("CaseStudies")
+      .select({
+        fields: ["Slug"],
+        filterByFormula: "AND({Published} = TRUE(), {Context} = 'home')",
+      })
+      .all();
+    for (const record of caseStudies) {
+      const slug = str(record.fields.Slug);
+      if (slug) paths.push(`/case-studies/${slug}`);
+    }
+  } catch {
+    // ignore
+  }
+
+  const { getGuideArticles } = await import("./guide-articles");
+  for (const article of getGuideArticles()) {
+    paths.push(`/poradnik/${article.slug}`);
+  }
+
   return paths;
 }
 
@@ -157,6 +183,8 @@ export async function getAllRevalidatePaths(): Promise<string[]> {
     ...STATIC_PAGES,
     "/uslugi",
     "/kampanie",
+    "/case-studies",
+    "/poradnik",
     ...dynamic,
   ]);
 }
@@ -213,7 +241,7 @@ export function applyRevalidatePath(
   path: string,
   revalidate: (path: string, type?: "layout" | "page") => void,
 ): void {
-  if (path === "/uslugi" || path === "/kampanie") {
+  if (path === "/uslugi" || path === "/kampanie" || path === "/case-studies" || path === "/poradnik") {
     revalidate(path, "layout");
     return;
   }

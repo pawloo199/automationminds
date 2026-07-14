@@ -109,6 +109,7 @@ export function Header({
               </div>
             ) : null}
           </div>
+          {navLink("/poradnik", "Poradnik")}
           {navLink("/o-nas", "O nas")}
           {navLink("/kontakt", "Kontakt")}
         </nav>
@@ -157,6 +158,7 @@ export function Header({
                 ))}
               </div>
             </div>
+            {navLink("/poradnik", "Poradnik")}
             {navLink("/o-nas", "O nas")}
             {navLink("/kontakt", "Kontakt")}
             <Button href={`tel:${settings.phone.replace(/\s/g, "")}`}>

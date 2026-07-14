@@ -1,4 +1,4 @@
-import type { BreadcrumbItem, FaqItem, LandingPage, Service, Settings } from "./airtable.types";
+import type { BreadcrumbItem, FaqItem, GuideArticle, LandingPage, Service, Settings } from "./airtable.types";
 import { absoluteAssetUrl } from "./assets";
 import { siteUrl } from "./metadata";
 
@@ -91,5 +91,27 @@ export function landingPageJsonLd(page: LandingPage) {
     name: page.metaTitle || page.heroTitle,
     description: page.metaDescription,
     url: `${siteUrl}/kampanie/${page.slug}`,
+  };
+}
+
+export function articleJsonLd(article: GuideArticle) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    description: article.excerpt,
+    image: article.imageUrl,
+    datePublished: article.publishedAt,
+    author: {
+      "@type": "Organization",
+      name: "Automation Minds",
+      url: siteUrl,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Automation Minds",
+      url: siteUrl,
+    },
+    mainEntityOfPage: `${siteUrl}/poradnik/${article.slug}`,
   };
 }

@@ -1,24 +1,14 @@
 "use client";
 
+import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import type { CaseStudy } from "@/lib/airtable.types";
-import {
-  Calculator,
-  Factory,
-  TrendingUp,
-  Users,
-  type LucideIcon,
-} from "lucide-react";
+import { caseStudyPath, getCaseStudyIcon } from "@/lib/case-study-icons";
+import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
-
-const iconMap: Record<string, LucideIcon> = {
-  "trending-up": TrendingUp,
-  users: Users,
-  calculator: Calculator,
-  factory: Factory,
-};
 
 export function TabbedCases({
   subtitle,
@@ -34,17 +24,22 @@ export function TabbedCases({
 
   if (!current) return null;
 
-  const Icon = iconMap[current.icon] ?? TrendingUp;
+  const Icon = getCaseStudyIcon(current.icon);
+  const paragraphs = current.body
+    .split("\n\n")
+    .map((paragraph) => paragraph.trim())
+    .filter(Boolean);
+  const preview = paragraphs[0] ?? current.body;
 
   return (
-    <section className="bg-surface py-20 lg:py-28">
+    <section id="case-studies" className="bg-surface py-20 lg:py-28">
       <Container>
         <SectionHeading subtitle={subtitle} title={title} className="mb-12" />
         <div className="grid gap-8 lg:grid-cols-12">
           <div className="lg:col-span-4">
             <ul className="space-y-2">
               {cases.map((item, index) => {
-                const ItemIcon = iconMap[item.icon] ?? TrendingUp;
+                const ItemIcon = getCaseStudyIcon(item.icon);
                 return (
                   <li key={item.id}>
                     <button
@@ -65,21 +60,30 @@ export function TabbedCases({
             </ul>
           </div>
           <div className="overflow-hidden rounded-2xl bg-white shadow-lg lg:col-span-8">
-            <div className="relative aspect-[16/9]">
+            <Link
+              href={caseStudyPath(current.slug)}
+              className="group relative block aspect-[16/9]"
+            >
               <Image
                 src={current.imageUrl}
-                alt={current.title}
+                alt={current.imageAlt}
                 fill
-                className="object-cover"
+                className="object-cover transition duration-300 group-hover:scale-[1.02]"
                 sizes="(max-width: 1024px) 100vw, 66vw"
               />
-            </div>
+            </Link>
             <div className="p-8">
               <div className="mb-3 flex items-center gap-2 text-brand">
                 <Icon className="h-5 w-5" />
                 <h3 className="text-xl font-semibold text-dark">{current.title}</h3>
               </div>
-              <p className="leading-relaxed text-muted">{current.body}</p>
+              <p className="leading-relaxed text-muted">{preview}</p>
+              <div className="mt-6">
+                <Button href={caseStudyPath(current.slug)}>
+                  Zobacz case study
+                  <ArrowUpRight className="h-4 w-4" />
+                </Button>
+              </div>
             </div>
           </div>
         </div>

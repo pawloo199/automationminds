@@ -1,7 +1,7 @@
 @media (max-width: 639px) {
   .tileStack {
     gap: 0;
-    padding-bottom: 5rem;
+    padding-bottom: 1rem;
   }
 
   .tileStackItem {
