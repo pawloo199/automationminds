@@ -5,7 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { ContactModal } from "@/components/forms/ContactModal";
 import type { HeroSlide } from "@/lib/airtable.types";
 import { cn } from "@/lib/cn";
-import { ArrowRight, ChevronDown, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
 
@@ -132,6 +132,7 @@ export function HeroSlider({
 
   return (
     <section
+      id="hero"
       className="relative min-h-[90vh] overflow-hidden bg-dark touch-pan-y md:touch-auto"
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
@@ -315,13 +316,6 @@ export function HeroSlider({
           </div>
         </>
       ) : null}
-
-      <div className="pointer-events-none absolute bottom-24 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-2 text-white/45 lg:flex">
-        <span className="text-[10px] font-semibold uppercase tracking-[0.3em]">
-          Przewiń
-        </span>
-        <ChevronDown className="hero-scroll-hint h-4 w-4" aria-hidden />
-      </div>
 
       <ContactModal
         open={contactModalOpen}

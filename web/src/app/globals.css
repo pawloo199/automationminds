@@ -106,19 +106,6 @@ body {
     }
   }
 
-  @keyframes hero-scroll-hint {
-    0%,
-    100% {
-      transform: translate3d(0, 0, 0);
-      opacity: 0.4;
-    }
-
-    50% {
-      transform: translate3d(0, 0.35rem, 0);
-      opacity: 1;
-    }
-  }
-
   .hero-content-enter {
     animation: hero-content-enter 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
   }
@@ -126,10 +113,6 @@ body {
   .hero-ken-burns {
     animation: hero-ken-burns 18s ease-out forwards;
     will-change: transform;
-  }
-
-  .hero-scroll-hint {
-    animation: hero-scroll-hint 2.4s ease-in-out infinite;
   }
 
   .hero-grid__accent {
@@ -167,7 +150,6 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .hero-content-enter,
   .hero-ken-burns,
-  .hero-scroll-hint,
   .hero-grid__accent {
     animation: none !important;
   }

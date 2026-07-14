@@ -63,105 +63,91 @@ export function Footer({
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-brand/10 bg-white">
+    <footer className="border-t border-brand/10 bg-surface">
       <Container className="py-16 lg:py-20">
-        <div className="rounded-3xl border border-brand/10 bg-surface/60 p-8 lg:p-10">
-          <div className="grid gap-10 lg:grid-cols-12 lg:gap-12">
-            <div className="lg:col-span-5">
-              <Link href="/" className="inline-flex items-center">
-                <Image
-                  src={settings?.logoColorUrl || "/images/logo-color.png"}
-                  alt={siteName}
-                  width={180}
-                  height={36}
-                  className="h-9 w-auto"
-                />
-              </Link>
-              <p className="mt-5 max-w-md text-sm leading-relaxed text-muted">
-                {settings?.metaDescription ||
-                  "Automatyzacja procesów biznesowych i rozwiązania AI dla firm w całej Polsce."}
-              </p>
-              <div className="mt-6 flex flex-wrap gap-3">
-                <Button href="/kontakt" className="text-sm">
-                  Bezpłatna konsultacja
-                </Button>
-                <Button
-                  href="/poradnik"
-                  variant="secondary"
-                  className="text-sm"
-                >
-                  Poradnik
-                </Button>
-              </div>
+        <div className="grid gap-10 lg:grid-cols-12 lg:gap-12">
+          <div className="lg:col-span-5">
+            <Link href="/" className="inline-flex items-center">
+              <Image
+                src={settings?.logoColorUrl || "/images/logo-color.png"}
+                alt={siteName}
+                width={180}
+                height={36}
+                className="h-9 w-auto"
+              />
+            </Link>
+            <p className="mt-5 max-w-md text-sm leading-relaxed text-muted">
+              {settings?.metaDescription ||
+                "Automatyzacja procesów biznesowych i rozwiązania AI dla firm w całej Polsce."}
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <Button href="/kontakt" className="text-sm">
+                Bezpłatna konsultacja
+              </Button>
+              <Button href="/poradnik" variant="secondary" className="text-sm">
+                Poradnik
+              </Button>
             </div>
+          </div>
 
-            <div className="grid gap-8 sm:grid-cols-2 lg:col-span-7 lg:grid-cols-3">
-              <FooterColumn title="Nawigacja">
-                {mainNav.map((item) => (
-                  <FooterLink key={item.href} href={item.href}>
-                    {item.label}
-                  </FooterLink>
-                ))}
-                <FooterLink href="/#case-studies">Case studies</FooterLink>
-                <FooterLink href="/polityka-prywatnosci">
-                  Polityka prywatności
+          <div className="grid gap-8 sm:grid-cols-2 lg:col-span-7 lg:grid-cols-3">
+            <FooterColumn title="Nawigacja">
+              {mainNav.map((item) => (
+                <FooterLink key={item.href} href={item.href}>
+                  {item.label}
                 </FooterLink>
-              </FooterColumn>
+              ))}
+              <FooterLink href="/#case-studies">Case studies</FooterLink>
+              <FooterLink href="/polityka-prywatnosci">
+                Polityka prywatności
+              </FooterLink>
+            </FooterColumn>
 
-              <FooterColumn title="Usługi">
-                <ul className="space-y-2.5">
-                  {services.map((service) => (
-                    <li key={service.id}>
-                      <FooterLink href={`/uslugi/${service.slug}`}>
-                        {service.menuLabel}
-                      </FooterLink>
-                    </li>
-                  ))}
-                </ul>
-              </FooterColumn>
+            <FooterColumn title="Usługi">
+              <ul className="space-y-2.5">
+                {services.map((service) => (
+                  <li key={service.id}>
+                    <FooterLink href={`/uslugi/${service.slug}`}>
+                      {service.menuLabel}
+                    </FooterLink>
+                  </li>
+                ))}
+              </ul>
+            </FooterColumn>
 
-              <FooterColumn title="Kontakt">
-                <div className="rounded-2xl border border-brand/10 bg-white p-4">
-                  {settings?.phone ? (
-                    <a
-                      href={phoneHref}
-                      className="flex items-start gap-3 text-sm text-dark transition hover:text-brand"
-                    >
-                      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand/10 text-brand">
-                        <Phone className="h-4 w-4" aria-hidden />
-                      </span>
-                      <span className="pt-1">{settings.phone}</span>
-                    </a>
-                  ) : null}
-                  {settings?.email ? (
-                    <a
-                      href={`mailto:${settings.email}`}
-                      className="mt-3 flex items-start gap-3 text-sm text-dark transition hover:text-brand"
-                    >
-                      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand/10 text-brand">
-                        <Mail className="h-4 w-4" aria-hidden />
-                      </span>
-                      <span className="break-all pt-1">{settings.email}</span>
-                    </a>
-                  ) : null}
-                  {settings?.address ? (
-                    <p className="mt-3 flex items-start gap-3 text-sm text-muted">
-                      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand/10 text-brand">
-                        <MapPin className="h-4 w-4" aria-hidden />
-                      </span>
-                      <span className="pt-1">{settings.address}</span>
-                    </p>
-                  ) : null}
-                </div>
-                <p className="text-sm text-muted">
-                  Odpowiadamy zwykle w ciągu jednego dnia roboczego.
+            <FooterColumn title="Kontakt">
+              {settings?.phone ? (
+                <a
+                  href={phoneHref}
+                  className="flex items-start gap-3 text-sm text-dark transition hover:text-brand"
+                >
+                  <Phone className="mt-0.5 h-4 w-4 shrink-0 text-brand/70" />
+                  <span>{settings.phone}</span>
+                </a>
+              ) : null}
+              {settings?.email ? (
+                <a
+                  href={`mailto:${settings.email}`}
+                  className="flex items-start gap-3 text-sm text-dark transition hover:text-brand"
+                >
+                  <Mail className="mt-0.5 h-4 w-4 shrink-0 text-brand/70" />
+                  <span className="break-all">{settings.email}</span>
+                </a>
+              ) : null}
+              {settings?.address ? (
+                <p className="flex items-start gap-3 text-sm text-muted">
+                  <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-brand/70" />
+                  <span>{settings.address}</span>
                 </p>
-              </FooterColumn>
-            </div>
+              ) : null}
+              <p className="text-sm text-muted">
+                Odpowiadamy zwykle w ciągu jednego dnia roboczego.
+              </p>
+            </FooterColumn>
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col gap-4 border-t border-brand/10 pt-8 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-12 flex flex-col gap-4 border-t border-brand/10 pt-8 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-sm text-muted">
             © {year} {siteName}. Wszelkie prawa zastrzeżone.
           </p>
