@@ -1,8 +1,36 @@
 import type { Metadata } from "next";
 import { truncateDescription } from "./truncate";
 
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://automationminds.net";
+const CANONICAL_SITE_URL = "https://automationminds.net";
+
+function resolveSiteUrl(): string {
+  const raw = (process.env.NEXT_PUBLIC_SITE_URL ?? "").trim().replace(/\/$/, "");
+  if (!raw) return CANONICAL_SITE_URL;
+
+  try {
+    const parsed = new URL(raw);
+    // Produkcja i sitemap/canonical nigdy nie powinny wskazywać na *.vercel.app
+    // ani localhost — GSC odrzuca obce domeny.
+    if (
+      parsed.hostname === "automationminds.net" ||
+      parsed.hostname === "www.automationminds.net"
+    ) {
+      return "https://automationminds.net";
+    }
+    if (
+      process.env.VERCEL_ENV === "production" ||
+      parsed.hostname.endsWith(".vercel.app") ||
+      parsed.hostname === "localhost"
+    ) {
+      return CANONICAL_SITE_URL;
+    }
+    return `${parsed.protocol}//${parsed.host}`;
+  } catch {
+    return CANONICAL_SITE_URL;
+  }
+}
+
+const siteUrl = resolveSiteUrl();
 
 const defaultOgImage = "/opengraph-image";
 
