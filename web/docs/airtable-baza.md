@@ -142,6 +142,8 @@ Jedna lub więcej rekordów — używany jest pierwszy.
 | Order | Number |
 | Published | Checkbox |
 
+**Uwaga:** tabela `CitySilos` zasila wyłącznie listę linków na stronie głównej i `/o-nas`. Pełne treści podstron lokalnych (`/automatyzacja-{slug}`) żyją w kodzie: `web/src/lib/city-pages/`. Każdy `Href` musi mieć odpowiadający slug w contentcie.
+
 ### Tools
 
 _Tabela nieużywana — sekcja usunięta ze strony głównej. Rekordy można skasować skryptem `remove-home-benefits-tools.ts`._

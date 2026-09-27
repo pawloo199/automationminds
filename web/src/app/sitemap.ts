@@ -1,5 +1,6 @@
 import { getCaseStudies, getLandingPages, getServices } from "@/lib/airtable";
 import { caseStudyPath } from "@/lib/case-study-icons";
+import { getAllCityPages, cityPath } from "@/lib/city-pages";
 import { getGuideArticles, guideArticlePath } from "@/lib/guide-articles";
 import { siteUrl } from "@/lib/metadata";
 import type { MetadataRoute } from "next";
@@ -11,12 +12,14 @@ function parseDate(value: string | undefined): Date {
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const [services, landingPages, caseStudies, guideArticles] = await Promise.all([
-    getServices(),
-    getLandingPages(),
-    getCaseStudies("home"),
-    Promise.resolve(getGuideArticles()),
-  ]);
+  const [services, landingPages, caseStudies, guideArticles, cityPages] =
+    await Promise.all([
+      getServices(),
+      getLandingPages(),
+      getCaseStudies("home"),
+      Promise.resolve(getGuideArticles()),
+      Promise.resolve(getAllCityPages()),
+    ]);
 
   const staticPages = ["", "/o-nas", "/poradnik", "/kontakt", "/polityka-prywatnosci"].map(
     (path) => ({
@@ -57,11 +60,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }));
 
+  const citySeoPages = cityPages.map((city) => ({
+    url: `${siteUrl}${cityPath(city.slug)}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
   return [
     ...staticPages,
     ...servicePages,
     ...campaignPages,
     ...caseStudyPages,
     ...guidePages,
+    ...citySeoPages,
   ];
 }

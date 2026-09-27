@@ -33,6 +33,7 @@ Strona: [http://localhost:3000](http://localhost:3000)
 | `AIRTABLE_BASE_ID` | ID bazy Airtable |
 | `REVALIDATE_SECRET` | Sekret do `/api/revalidate` |
 | `NEXT_PUBLIC_SITE_URL` | URL produkcyjny |
+| `NEXT_PUBLIC_GTM_ID` | ID kontenera Google Tag Manager (np. `GTM-W6MNT2HV`) |
 
 ## Airtable CMS
 
@@ -63,6 +64,7 @@ npm run migrate -- --seed  # zapisuje mocki do Airtable
 | `/o-nas` | O nas |
 | `/kontakt` | Kontakt |
 | `/uslugi/[slug]` | Podstrony usług (9 szt.) |
+| `/automatyzacja-{miasto}` | Silosy lokalne SEO (46 miast) |
 | `/polityka-prywatnosci` | Polityka prywatności |
 
 ## Skrypty

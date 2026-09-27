@@ -1,4 +1,8 @@
 import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
+import {
+  GoogleTagManager,
+  GoogleTagManagerNoscript,
+} from "@/components/analytics/GoogleTagManager";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { getSettings } from "@/lib/airtable";
 import {
@@ -43,7 +47,11 @@ export default async function RootLayout({
 
   return (
     <html lang="pl">
+      <head>
+        <GoogleTagManager />
+      </head>
       <body className={`${spaceGrotesk.variable} antialiased`}>
+        <GoogleTagManagerNoscript />
         <JsonLd
           data={[
             organizationJsonLd(settings),

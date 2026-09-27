@@ -75,6 +75,7 @@ function pathsFromRecord(
   const serviceSlug = str(fields.ServiceSlug);
   const landingSlug = str(fields.LandingSlug);
   const context = str(fields.Context);
+  const href = str(fields.Href);
 
   switch (tableName) {
     case "Settings":
@@ -85,7 +86,7 @@ function pathsFromRecord(
     case "FeatureTiles":
       return ["/", "/o-nas"];
     case "CitySilos":
-      return ["/", "/o-nas"];
+      return unique(["/", "/o-nas", href].filter(Boolean));
     case "ListItems":
       return [pageSlugToPath(pageSlug)];
     case "PageSections":

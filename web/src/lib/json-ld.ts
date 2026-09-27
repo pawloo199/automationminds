@@ -1,4 +1,13 @@
-import type { BreadcrumbItem, FaqItem, GuideArticle, LandingPage, Service, Settings } from "./airtable.types";
+import type {
+  BreadcrumbItem,
+  FaqItem,
+  GuideArticle,
+  LandingPage,
+  Service,
+  Settings,
+} from "./airtable.types";
+import type { CityPageContent } from "./city-pages/types";
+import { cityPath } from "./city-pages/types";
 import { absoluteAssetUrl } from "./assets";
 import { siteUrl } from "./metadata";
 
@@ -113,5 +122,30 @@ export function articleJsonLd(article: GuideArticle) {
       url: siteUrl,
     },
     mainEntityOfPage: `${siteUrl}/poradnik/${article.slug}`,
+  };
+}
+
+/** Service schema for city SEO pages — areaServed only, no fake local address. */
+export function cityServiceJsonLd(city: CityPageContent) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: `Automatyzacja procesów biznesowych — ${city.name}`,
+    description: city.metaDescription,
+    url: `${siteUrl}${cityPath(city.slug)}`,
+    serviceType: "Automatyzacja procesów biznesowych",
+    areaServed: {
+      "@type": "City",
+      name: city.name,
+      containedInPlace: {
+        "@type": "AdministrativeArea",
+        name: city.voivodeship,
+      },
+    },
+    provider: {
+      "@type": "Organization",
+      name: "Automation Minds",
+      url: siteUrl,
+    },
   };
 }
