@@ -1,6 +1,7 @@
 "use client";
 
 import { ContactFormStepsLazy } from "@/components/forms/ContactFormStepsLazy";
+import { CONSULTATION_OFFER } from "@/lib/consultation-offer";
 import { cn } from "@/lib/cn";
 import { X } from "lucide-react";
 import { useEffect, useId, useRef, useState } from "react";
@@ -10,8 +11,8 @@ export function ContactModal({
   onClose,
   sourcePage = "/",
   services = [],
-  title = "Bezpłatna konsultacja",
-  subtitle = "Zostaw dane kontaktowe — odezwiemy się wkrótce.",
+  title = CONSULTATION_OFFER.modalTitle,
+  subtitle = CONSULTATION_OFFER.modalSubtitle,
 }: {
   open: boolean;
   onClose: () => void;

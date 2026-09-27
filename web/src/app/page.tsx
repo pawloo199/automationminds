@@ -1,4 +1,5 @@
 import { SiteLayout } from "@/components/layout/SiteLayout";
+import { ContactSection } from "@/components/sections/ContactSection";
 import { FaqAccordion } from "@/components/sections/FaqAccordion";
 import { FeatureGrid } from "@/components/sections/FeatureGrid";
 import { GuideArticlesSection } from "@/components/sections/GuideArticlesSection";
@@ -8,11 +9,20 @@ import { StatsRow } from "@/components/sections/StatsRow";
 import { TabbedCases } from "@/components/sections/TabbedCases";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { getHomePageData, getServices } from "@/lib/airtable";
+import type { HeroSlide } from "@/lib/airtable.types";
+import { CONSULTATION_OFFER } from "@/lib/consultation-offer";
 import { faqPageJsonLd } from "@/lib/json-ld";
 import { buildMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
 
 export const revalidate = 60;
+
+/** Stały hero pod Ads: jeden slajd z CTA konsultacji, bez rotacji obietnic. */
+function getStaticHomeHero(slides: HeroSlide[]): HeroSlide[] {
+  const conversionSlide =
+    slides.find((slide) => slide.buttonOpensModal) ?? slides[0];
+  return conversionSlide ? [conversionSlide] : [];
+}
 
 export async function generateMetadata(): Promise<Metadata> {
   const data = await getHomePageData();
@@ -24,12 +34,13 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function HomePage() {
   const [data, services] = await Promise.all([getHomePageData(), getServices()]);
+  const heroSlides = getStaticHomeHero(data.heroSlides);
 
   return (
     <SiteLayout transparentHeader>
       <JsonLd data={faqPageJsonLd(data.faq)} />
       <HeroSlider
-        slides={data.heroSlides}
+        slides={heroSlides}
         phone={data.settings.phone}
         services={services.map((service) => ({
           id: service.id,
@@ -103,6 +114,15 @@ export default async function HomePage() {
           buttonLink={data.guideHeader.buttonLink}
         />
       ) : null}
+      <ContactSection
+        subtitle={CONSULTATION_OFFER.formSubtitle}
+        title={CONSULTATION_OFFER.formTitle}
+        body={CONSULTATION_OFFER.formBody}
+        highlights={CONSULTATION_OFFER.formHighlights}
+        sourcePage="/"
+        redirectOnSuccess
+        sectionId="formularz"
+      />
     </SiteLayout>
   );
 }

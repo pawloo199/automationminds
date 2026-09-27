@@ -1,62 +1,459 @@
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import { Container } from "@/components/ui/Container";
 import { getSettings } from "@/lib/airtable";
-import { buildMetadata } from "@/lib/metadata";
+import { buildMetadata, siteUrl } from "@/lib/metadata";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = buildMetadata({
   title: "Polityka prywatności — Automation Minds",
-  description: "Polityka prywatności serwisu Automation Minds — RODO.",
+  description:
+    "Polityka prywatności serwisu Automation Minds — zasady przetwarzania danych osobowych, cookies i prawa użytkowników (RODO).",
   path: "/polityka-prywatnosci",
 });
 
 export default async function PrivacyPage() {
   const settings = await getSettings();
+  const siteName = settings.siteName || "Automation Minds";
+  const email = settings.email || "kontakt@automationminds.net";
+  const phone = settings.phone || "";
+  const address = settings.address || "Polska";
+  const lastUpdated = "27 września 2026 r.";
 
   return (
     <SiteLayout>
       <section className="py-24">
         <Container>
-          <h1 className="text-4xl font-bold text-dark">Polityka prywatności</h1>
-          <div className="prose prose-neutral mt-8 max-w-3xl">
+          <h1 className="text-4xl font-bold tracking-tight text-dark">
+            Polityka prywatności
+          </h1>
+          <p className="mt-3 text-sm text-muted">
+            Ostatnia aktualizacja: {lastUpdated}
+          </p>
+
+          <div className="prose prose-neutral mt-10 max-w-3xl prose-headings:scroll-mt-24 prose-h2:mt-12 prose-h2:text-2xl prose-h3:mt-8 prose-h3:text-lg prose-p:leading-relaxed prose-li:leading-relaxed">
             <p>
-              Niniejsza polityka prywatności opisuje zasady przetwarzania danych
-              osobowych użytkowników serwisu {settings.siteName} dostępnego pod
-              adresem wskazanym w stopce strony.
+              Niniejsza Polityka prywatności określa zasady przetwarzania danych
+              osobowych oraz wykorzystywania plików cookies i podobnych
+              technologii w serwisie internetowym {siteName} dostępnym pod
+              adresem{" "}
+              <a href={siteUrl}>{siteUrl.replace(/^https?:\/\//, "")}</a>{" "}
+              („Serwis”).
             </p>
-            <h2>Administrator danych</h2>
             <p>
-              Administratorem danych osobowych jest {settings.siteName}. Kontakt
-              z administratorem: {settings.email}, tel. {settings.phone},{" "}
-              {settings.address}.
+              Dbamy o ochronę prywatności osób korzystających z Serwisu.
+              Przetwarzamy dane osobowe zgodnie z Rozporządzeniem Parlamentu
+              Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r.
+              („RODO”), ustawą o ochronie danych osobowych oraz — w zakresie
+              cookies i podobnych technologii — z przepisami ustawy Prawo
+              telekomunikacyjne / ePrivacy, w brzmieniu obowiązującym.
             </p>
-            <h2>Cele i podstawy przetwarzania</h2>
+
+            <h2>1. Administrator danych</h2>
+            <p>Administratorem danych osobowych jest:</p>
+            <ul>
+              <li>
+                <strong>{siteName}</strong>
+              </li>
+              <li>Adres korespondencyjny / siedziba: {address}</li>
+              <li>
+                E-mail: <a href={`mailto:${email}`}>{email}</a>
+              </li>
+              {phone ? <li>Telefon: {phone}</li> : null}
+            </ul>
             <p>
-              Dane podane w formularzu kontaktowym przetwarzamy w celu
-              nawiązania kontaktu, udzielenia odpowiedzi na zapytania oraz
-              przygotowania oferty — na podstawie art. 6 ust. 1 lit. b RODO
-              (działania przed zawarciem umowy) oraz art. 6 ust. 1 lit. f RODO
-              (prawnie uzasadniony interes administratora).
+              W sprawach związanych z ochroną danych osobowych prosimy o kontakt
+              na adres e-mail wskazany powyżej. Odpowiadamy bez zbędnej zwłoki,
+              nie później niż w terminie miesiąca od otrzymania żądania — z
+              możliwością przedłużenia zgodnie z art. 12 RODO.
             </p>
-            <h2>Okres przechowywania</h2>
+
+            <h2>2. Zakres stosowania</h2>
+            <p>Polityka dotyczy danych osobowych przetwarzanych w związku z:</p>
+            <ul>
+              <li>korzystaniem z Serwisu (w tym podstron usług, kampanii i miast),</li>
+              <li>
+                wypełnianiem formularzy kontaktowych i umawianiem bezpłatnej
+                konsultacji,
+              </li>
+              <li>kontaktem telefonicznym lub e-mailowym zainicjowanym przez użytkownika,</li>
+              <li>
+                pomiarem ruchu, analityką oraz — za zgodą — marketingiem i
+                reklamą (w tym Google Ads / Google Tag Manager),
+              </li>
+              <li>zapewnieniem bezpieczeństwa i prawidłowego działania Serwisu.</li>
+            </ul>
+
+            <h2>3. Jakie dane przetwarzamy</h2>
+            <h3>3.1. Dane podawane w formularzach</h3>
             <p>
-              Dane przechowujemy przez czas niezbędny do realizacji kontaktu i
-              ewentualnego zawarcia umowy, a następnie przez okres wymagany
-              przepisami prawa lub do momentu wniesienia skutecznego sprzeciwu.
+              W zależności od wariantu formularza możemy przetwarzać m.in.:
             </p>
-            <h2>Prawa osoby, której dane dotyczą</h2>
+            <ul>
+              <li>imię i nazwisko,</li>
+              <li>adres e-mail,</li>
+              <li>numer telefonu,</li>
+              <li>nazwę firmy,</li>
+              <li>treść wiadomości / opis potrzeb,</li>
+              <li>
+                opcjonalnie: liczbę pracowników, branżę, zainteresowanie
+                usługami, dodatkowe uwagi,
+              </li>
+              <li>
+                informację o udzieleniu zgody na przetwarzanie danych w celu
+                kontaktu.
+              </li>
+            </ul>
+
+            <h3>3.2. Dane techniczne i nawigacyjne</h3>
             <p>
-              Przysługuje Ci prawo dostępu do danych, ich sprostowania,
-              usunięcia, ograniczenia przetwarzania, przenoszenia danych oraz
-              wniesienia sprzeciwu. Masz także prawo wniesienia skargi do
-              Prezesa Urzędu Ochrony Danych Osobowych.
+              Przy korzystaniu z Serwisu automatycznie mogą być przetwarzane
+              m.in.:
             </p>
-            <h2>Pliki cookies i analityka</h2>
+            <ul>
+              <li>adres IP,</li>
+              <li>data i czas żądania,</li>
+              <li>typ i wersja przeglądarki oraz systemu operacyjnego,</li>
+              <li>rozdzielczość ekranu / informacje o urządzeniu,</li>
+              <li>adres URL odwiedzanej strony oraz strona odsyłająca (referrer),</li>
+              <li>identyfikatory plików cookies lub podobnych technologii.</li>
+            </ul>
+
+            <h3>3.3. Dane marketingowe (UTM / kampanie)</h3>
             <p>
-              Serwis może wykorzystywać pliki cookies oraz narzędzia analityczne
-              (np. Google Analytics) w celu pomiaru ruchu i optymalizacji
-              kampanii marketingowych. Możesz zarządzać cookies w ustawieniach
-              przeglądarki.
+              Jeśli trafisz do Serwisu z kampanii reklamowej lub linku
+              oznaczonego parametrami UTM, możemy zapisać m.in.:{" "}
+              <em>utm_source</em>, <em>utm_medium</em>, <em>utm_campaign</em>,{" "}
+              <em>utm_term</em>, <em>utm_content</em> oraz stronę źródłową
+              formularza — w celu analizy skuteczności działań marketingowych i
+              jakości zapytań.
+            </p>
+
+            <h2>4. Cele i podstawy prawne przetwarzania</h2>
+            <p>Przetwarzamy dane w następujących celach:</p>
+
+            <h3>4.1. Odpowiedź na zapytanie i działania przedumowne</h3>
+            <p>
+              <strong>Cel:</strong> kontakt zwrotny, umówienie i przeprowadzenie
+              bezpłatnej konsultacji, przygotowanie informacji o ofercie / wyceny.
+              <br />
+              <strong>Podstawa:</strong> art. 6 ust. 1 lit. b RODO (działania na
+              żądanie osoby, której dane dotyczą, przed zawarciem umowy) oraz —
+              w zakresie niezbędnym — art. 6 ust. 1 lit. f RODO (prawnie
+              uzasadniony interes administratora polegający na obsłudze zapytań
+              B2B).
+            </p>
+
+            <h3>4.2. Zgoda na kontakt (jeśli wymagana w formularzu)</h3>
+            <p>
+              <strong>Cel:</strong> potwierdzenie dobrowolnej zgody na
+              przetwarzanie danych w celu nawiązania kontaktu.
+              <br />
+              <strong>Podstawa:</strong> art. 6 ust. 1 lit. a RODO. Zgodę można
+              wycofać w dowolnym momencie; wycofanie nie wpływa na zgodność z
+              prawem przetwarzania przed jej wycofaniem.
+            </p>
+
+            <h3>4.3. Analityka i ulepszanie Serwisu</h3>
+            <p>
+              <strong>Cel:</strong> pomiar ruchu, analiza sposobu korzystania z
+              Serwisu, poprawa treści i użyteczności.
+              <br />
+              <strong>Podstawa:</strong> art. 6 ust. 1 lit. a RODO (zgoda
+              wyrażona poprzez baner cookies / Consent Mode) albo — wyłącznie w
+              zakresie cookies niezbędnych i analogicznych technologii
+              technicznych — art. 6 ust. 1 lit. f RODO.
+            </p>
+
+            <h3>4.4. Marketing i reklama (w tym remarketing)</h3>
+            <p>
+              <strong>Cel:</strong> pomiar skuteczności kampanii, optymalizacja
+              reklam, ewentualne wyświetlanie reklam dopasowanych do
+              zainteresowań (np. poprzez Google Ads / Google Tag Manager), o ile
+              wyrazisz na to zgodę.
+              <br />
+              <strong>Podstawa:</strong> art. 6 ust. 1 lit. a RODO.
+            </p>
+
+            <h3>4.5. Bezpieczeństwo i dochodzenie roszczeń</h3>
+            <p>
+              <strong>Cel:</strong> zapewnienie bezpieczeństwa Serwisu,
+              zapobieganie nadużyciom, ustalenie, dochodzenie lub obrona
+              roszczeń.
+              <br />
+              <strong>Podstawa:</strong> art. 6 ust. 1 lit. f RODO (prawnie
+              uzasadniony interes administratora).
+            </p>
+
+            <h3>4.6. Obowiązki prawne</h3>
+            <p>
+              <strong>Cel:</strong> wypełnienie obowiązków wynikających z
+              przepisów prawa (np. podatkowych lub rachunkowych), jeżeli
+              dojdzie do zawarcia umowy.
+              <br />
+              <strong>Podstawa:</strong> art. 6 ust. 1 lit. c RODO.
+            </p>
+
+            <h2>5. Odbiorcy danych</h2>
+            <p>
+              Dane mogą być przekazywane zaufanym podmiotom przetwarzającym je w
+              naszym imieniu na podstawie umów powierzenia (art. 28 RODO) lub —
+              w określonych przypadkach — niezależnym administratorom, w
+              szczególności:
+            </p>
+            <ul>
+              <li>
+                dostawcy hostingu i infrastruktury (m.in. Vercel Inc.) —
+                utrzymanie Serwisu,
+              </li>
+              <li>
+                dostawcy narzędzi CRM / baz danych (m.in. Airtable) — obsługa
+                zapytań z formularzy,
+              </li>
+              <li>
+                dostawcy analityki i reklamy (m.in. Google Ireland Limited /
+                Google LLC — Google Tag Manager, Google Analytics, Google Ads) —
+                wyłącznie w zakresie wynikającym z Twoich zgód cookies,
+              </li>
+              <li>
+                dostawcy poczty e-mail / komunikacji i narzędzi biurowych —
+                kontakt z klientem,
+              </li>
+              <li>
+                podmioty świadczące usługi księgowe, prawne lub IT — w zakresie
+                niezbędnym,
+              </li>
+              <li>
+                organy państwowe — wyłącznie gdy obowiązek wynika z przepisów
+                prawa.
+              </li>
+            </ul>
+            <p>
+              Nie sprzedajemy danych osobowych. Listę kategorii odbiorców
+              aktualizujemy wraz ze zmianą narzędzi wykorzystywanych w Serwisie.
+            </p>
+
+            <h2>6. Przekazywanie danych poza EOG</h2>
+            <p>
+              Część dostawców (w szczególności z grupy Google oraz Vercel) może
+              przetwarzać dane na terytorium państw spoza Europejskiego Obszaru
+              Gospodarczego (EOG), w tym w Stanach Zjednoczonych. W takich
+              przypadkach stosujemy mechanizmy przewidziane w RODO, w
+              szczególności:
+            </p>
+            <ul>
+              <li>
+                decyzję stwierdzającą odpowiedni stopień ochrony (jeśli
+                dotyczy), lub
+              </li>
+              <li>
+                standardowe klauzule umowne (SCC) zatwierdzone przez Komisję
+                Europejską oraz dodatkowe środki ochronne wymagane przez
+                dostawcę / ocenę transferu.
+              </li>
+            </ul>
+            <p>
+              Szczegóły transferów opisują także polityki prywatności
+              poszczególnych dostawców.
+            </p>
+
+            <h2>7. Okres przechowywania danych</h2>
+            <p>Dane przechowujemy nie dłużej, niż jest to niezbędne:</p>
+            <ul>
+              <li>
+                <strong>zapytania z formularzy / konsultacje</strong> — przez
+                czas obsługi zapytania oraz do 24 miesięcy od ostatniego
+                kontaktu (chyba że wcześniej wniesiesz skuteczny sprzeciw lub
+                żądanie usunięcia, a nie zachodzą podstawy do dalszego
+                przechowywania), a w razie zawarcia umowy — przez czas trwania
+                umowy i okres przedawnienia roszczeń,
+              </li>
+              <li>
+                <strong>dane księgowe / umowne</strong> — przez okres wymagany
+                przepisami prawa (zazwyczaj do 5 lat podatkowych, o ile dotyczy),
+              </li>
+              <li>
+                <strong>dane analityczne i marketingowe z cookies</strong> —
+                zgodnie z okresem ważności danej technologii oraz do czasu
+                wycofania zgody lub jej wygaśnięcia; szczegóły kategorii cookies
+                dostępne są w banerze zgód / panelu preferencji,
+              </li>
+              <li>
+                <strong>logi techniczne bezpieczeństwa</strong> — przez okres
+                uzasadniony celem (zwykle do 12 miesięcy), chyba że dłuższy
+                okres jest potrzebny do wyjaśnienia incydentu.
+              </li>
+            </ul>
+
+            <h2>8. Prawa osób, których dane dotyczą</h2>
+            <p>Przysługują Ci następujące prawa:</p>
+            <ul>
+              <li>dostęp do danych (art. 15 RODO),</li>
+              <li>sprostowanie danych (art. 16 RODO),</li>
+              <li>
+                usunięcie danych — „prawo do bycia zapomnianym” (art. 17 RODO),
+              </li>
+              <li>ograniczenie przetwarzania (art. 18 RODO),</li>
+              <li>przenoszenie danych (art. 20 RODO) — gdy ma zastosowanie,</li>
+              <li>
+                sprzeciw wobec przetwarzania opartego na art. 6 ust. 1 lit. f
+                RODO (art. 21 RODO),
+              </li>
+              <li>
+                wycofanie zgody w dowolnym momencie (art. 7 ust. 3 RODO), gdy
+                przetwarzanie odbywa się na podstawie zgody,
+              </li>
+              <li>
+                wniesienie skargi do Prezesa Urzędu Ochrony Danych Osobowych
+                (ul. Stawki 2, 00-193 Warszawa,{" "}
+                <a
+                  href="https://uodo.gov.pl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  uodo.gov.pl
+                </a>
+                ).
+              </li>
+            </ul>
+            <p>
+              Aby skorzystać z praw, napisz na adres{" "}
+              <a href={`mailto:${email}`}>{email}</a>. W celu weryfikacji
+              tożsamości możemy poprosić o dodatkowe informacje.
+            </p>
+
+            <h2>9. Dobrowolność podania danych</h2>
+            <p>
+              Podanie danych w formularzu kontaktowym jest dobrowolne, jednak
+              niezbędne do obsługi zapytania i umówienia konsultacji. Brak
+              podania danych uniemożliwia kontakt zwrotny w sprawach, których
+              dotyczy formularz.
+            </p>
+            <p>
+              Korzystanie z Serwisu bez wyrażenia zgód marketingowych /
+              analitycznych jest możliwe — wówczas ładujemy wyłącznie
+              technologie niezbędne do działania strony (zgodnie z ustawieniami
+              Consent Mode / banera zgód).
+            </p>
+
+            <h2>10. Pliki cookies i podobne technologie</h2>
+            <h3>10.1. Czym są cookies</h3>
+            <p>
+              Cookies to niewielkie pliki tekstowe zapisywane na urządzeniu
+              użytkownika. Wykorzystujemy także technologie pokrewne (np.
+              localStorage, piksele, tagi w Google Tag Manager), łącznie zwane
+              dalej „cookies”.
+            </p>
+
+            <h3>10.2. Rodzaje cookies</h3>
+            <ul>
+              <li>
+                <strong>Niezbędne</strong> — wymagane do działania Serwisu,
+                bezpieczeństwa i zapamiętania wyboru zgód.
+              </li>
+              <li>
+                <strong>Analityczne / statystyczne</strong> — pomagają zrozumieć,
+                jak korzystasz z Serwisu (np. Google Analytics za pośrednictwem
+                GTM).
+              </li>
+              <li>
+                <strong>Marketingowe / reklamowe</strong> — służą pomiarowi
+                kampanii i (opcjonalnie) personalizacji reklam (np. Google Ads).
+              </li>
+            </ul>
+
+            <h3>10.3. Zarządzanie zgodami (Consent Mode)</h3>
+            <p>
+              Przy pierwszej wizycie (oraz przy ponownej zmianie preferencji)
+              możesz zarządzać zgodami poprzez baner cookies. Stosujemy
+              mechanizm zgodny z Google Consent Mode v2 — tagi Google
+              dostosowują zakres działania do Twoich wyborów (m.in.{" "}
+              <em>ad_storage</em>, <em>analytics_storage</em>,{" "}
+              <em>ad_user_data</em>, <em>ad_personalization</em>).
+            </p>
+            <p>
+              Zgodę możesz zmienić lub wycofać w dowolnym momencie poprzez
+              panel preferencji cookies dostępny w Serwisie albo ustawienia
+              przeglądarki. Ograniczenie cookies niezbędnych może wpłynąć na
+              działanie niektórych funkcji strony.
+            </p>
+
+            <h3>10.4. Google Tag Manager i narzędzia Google</h3>
+            <p>
+              W Serwisie wdrożony jest Google Tag Manager (GTM), który może
+              uruchamiać tagi analityczne i reklamowe zgodnie z Twoimi zgodami.
+              Szczegóły przetwarzania przez Google opisuje polityka prywatności
+              Google:{" "}
+              <a
+                href="https://policies.google.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                policies.google.com/privacy
+              </a>
+              .
+            </p>
+
+            <h2>11. Profilowanie i zautomatyzowane decyzje</h2>
+            <p>
+              Nie podejmujemy wobec Ciebie decyzji wywołujących skutki prawne
+              w sposób wyłącznie zautomatyzowany (art. 22 RODO). W zakresie
+              marketingu — wyłącznie za zgodą — możemy korzystać z narzędzi
+              reklamowych, które tworzą segmenty odbiorców lub mierząc konwersje
+              (np. wysłanie formularza). Nie służy to scoringowi kredytowemu ani
+              automatycznej odmowie świadczenia usług.
+            </p>
+
+            <h2>12. Bezpieczeństwo danych</h2>
+            <p>
+              Stosujemy środki techniczne i organizacyjne adekwatne do ryzyka,
+              m.in. szyfrowanie połączeń (HTTPS), ograniczenie dostępu do danych
+              do osób upoważnionych, powierzenie przetwarzania sprawdzonym
+              dostawcom oraz minimalizację zakresu zbieranych danych.
+            </p>
+            <p>
+              Żaden system nie gwarantuje pełnego bezpieczeństwa. W razie
+              naruszenia ochrony danych mogących powodować wysokie ryzyko dla
+              praw lub wolności powiadomimy Cię i właściwy organ zgodnie z
+              obowiązującymi przepisami.
+            </p>
+
+            <h2>13. Linki zewnętrzne</h2>
+            <p>
+              Serwis może zawierać odnośniki do stron trzecich. Nie odpowiadamy
+              za polityki prywatności ani praktyki tych serwisów. Zachęcamy do
+              zapoznania się z ich dokumentami przed podaniem danych.
+            </p>
+
+            <h2>14. Dzieci</h2>
+            <p>
+              Serwis jest skierowany do przedsiębiorców i osób pełnoletnich
+              działających w imieniu firm. Nie zbieramy świadomie danych dzieci.
+              Jeżeli podejrzewasz, że dziecko przekazało nam dane, skontaktuj
+              się z nami — niezwłocznie je usuniemy.
+            </p>
+
+            <h2>15. Zmiany Polityki prywatności</h2>
+            <p>
+              Polityka może być aktualizowana m.in. w razie zmiany przepisów,
+              narzędzi lub zakresu przetwarzania. Nowa wersja obowiązuje od daty
+              publikacji w Serwisie (wskazanej jako „Ostatnia aktualizacja”). W
+              przypadku istotnych zmian możemy dodatkowo poinformować
+              użytkowników w sposób widoczny w Serwisie.
+            </p>
+
+            <h2>16. Kontakt</h2>
+            <p>
+              W sprawach prywatności i ochrony danych osobowych:
+              <br />
+              E-mail: <a href={`mailto:${email}`}>{email}</a>
+              {phone ? (
+                <>
+                  <br />
+                  Telefon: {phone}
+                </>
+              ) : null}
+              <br />
+              Adres: {address}
             </p>
           </div>
         </Container>

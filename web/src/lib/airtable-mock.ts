@@ -12,6 +12,7 @@ import type {
   Service,
   Settings,
 } from "./airtable.types";
+import { CONSULTATION_OFFER } from "./consultation-offer";
 import { getLatestGuideArticles } from "./guide-articles-mock";
 
 const sectionDefaults = {
@@ -134,39 +135,14 @@ export const mockCitySilos: CitySilo[] = [
 export const mockHeroSlides: HeroSlide[] = [
   {
     id: "1",
-    subtitle: "Zwiększ efektywność Twojej firmy",
-    title: "Zautomatyzujemy nawet 80% zadań wykonywanych w Twojej firmie",
-    description:
-      "Automatyzujemy powtarzalne zadania i wdrażamy AI, by Twój zespół pracował efektywniej.",
+    subtitle: CONSULTATION_OFFER.heroSubtitle,
+    title: CONSULTATION_OFFER.heroTitle,
+    description: CONSULTATION_OFFER.heroDescription,
     imageUrl: "/images/migrated/hero-1.jpg",
-    buttonText: "Skorzystaj z bezpłatnej konsultacji",
+    buttonText: CONSULTATION_OFFER.cta,
     buttonLink: "/kontakt",
     buttonOpensModal: true,
     order: 1,
-  },
-  {
-    id: "2",
-    subtitle: "Pomagamy automatyzować i mierzyć procesy",
-    title: "Pomagamy automatyzować i mierzyć procesy",
-    description:
-      "Analizujemy procesy, wdrażamy narzędzia i mierzymy efekty na każdym etapie.",
-    imageUrl: "/images/migrated/hero-2.jpg",
-    buttonText: "Dowiedz się więcej",
-    buttonLink: "/o-nas",
-    buttonOpensModal: false,
-    order: 2,
-  },
-  {
-    id: "3",
-    subtitle: "Sztuczna inteligencja w Twojej firmie",
-    title: "Customowe rozwiązania AI",
-    description:
-      "Tworzymy rozwiązania AI dopasowane do procesów i celów Twojej firmy.",
-    imageUrl: "/images/migrated/hero-3.jpg",
-    buttonText: "Sprawdź",
-    buttonLink: "/uslugi/automatyzacja-oraz-ai-w-niestandardowych-procesach",
-    buttonOpensModal: false,
-    order: 3,
   },
 ];
 

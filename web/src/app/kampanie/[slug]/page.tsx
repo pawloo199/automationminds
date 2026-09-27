@@ -10,6 +10,7 @@ import {
   getLandingPages,
   getServiceBySlug,
 } from "@/lib/airtable";
+import { CONSULTATION_OFFER } from "@/lib/consultation-offer";
 import {
   breadcrumbJsonLd,
   landingPageJsonLd,
@@ -139,9 +140,10 @@ export default async function CampaignPage({
       ) : null}
       {page.formEnabled ? (
         <ContactSection
-          subtitle="Skontaktuj się z nami"
-          title="Umów bezpłatną konsultację 30 min"
-          body="Opowiedz o swoich procesach — pokażemy, co można zautomatyzować."
+          subtitle={CONSULTATION_OFFER.formSubtitle}
+          title={CONSULTATION_OFFER.formTitle}
+          body={CONSULTATION_OFFER.formBody}
+          highlights={CONSULTATION_OFFER.formHighlights}
           sourcePage={`/kampanie/${slug}`}
           redirectOnSuccess
           sectionId="formularz"
