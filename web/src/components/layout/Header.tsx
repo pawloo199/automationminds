@@ -162,6 +162,7 @@ export function Header({
             href={`tel:${settings.phone.replace(/\s/g, "")}`}
             variant={isSolid ? "primary" : "outline-white"}
             className="text-sm"
+            data-track-location="header"
           >
             {settings.phone}
           </Button>
@@ -256,6 +257,7 @@ export function Header({
               <a
                 href={`tel:${settings.phone.replace(/\s/g, "")}`}
                 onClick={closeMobileMenu}
+                data-track-location="header_mobile"
                 className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand px-6 py-4 text-base font-semibold text-white shadow-lg shadow-brand/25 transition hover:bg-brand-dark"
               >
                 <Phone className="h-5 w-5" aria-hidden />

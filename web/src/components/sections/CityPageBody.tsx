@@ -164,7 +164,13 @@ export function CityPageBody({
               ))}
             </ul>
             <div className="mt-10 text-center">
-              <Button href="/kontakt" variant="secondary">
+              <Button
+                href="/kontakt"
+                variant="secondary"
+                data-track="consultation"
+                data-track-method="link"
+                data-track-location="city_page"
+              >
                 Porozmawiaj o automatyzacji w Twojej firmie
               </Button>
             </div>

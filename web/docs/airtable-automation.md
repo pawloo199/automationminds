@@ -90,6 +90,8 @@ Odpowiedź (wymagana przez skrypt):
 
 Bez `tableName` (lub z `full=true`) — pełna rewalidacja wszystkich URL.
 
+Przy każdej niepustej rewalidacji CMS odświeżane jest także **`/sitemap.xml`** (dynamiczna mapa witryny dla Google Search Console).
+
 ## Ręczny test (curl)
 
 ```bash

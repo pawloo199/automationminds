@@ -208,6 +208,9 @@ export function HeroSlider({
                     type="button"
                     onClick={() => setContactModalOpen(true)}
                     className="group w-full px-8 py-4 text-base sm:w-auto md:px-10 md:py-[1.125rem] md:text-lg"
+                    data-track="consultation"
+                    data-track-method="modal"
+                    data-track-location="hero"
                   >
                     {slide.buttonText}
                     <ArrowRight
@@ -219,6 +222,9 @@ export function HeroSlider({
                   <Button
                     href={slide.buttonLink}
                     className="group w-full px-8 py-4 text-base sm:w-auto md:px-10 md:py-[1.125rem] md:text-lg"
+                    data-track="consultation"
+                    data-track-method="link"
+                    data-track-location="hero"
                   >
                     {slide.buttonText}
                     <ArrowRight
@@ -232,6 +238,7 @@ export function HeroSlider({
                     href={`tel:${phone.replace(/\s/g, "")}`}
                     variant="outline-white"
                     className="w-full px-8 py-4 text-base sm:w-auto md:px-10 md:py-[1.125rem] md:text-lg"
+                    data-track-location="hero"
                   >
                     {phone}
                   </Button>

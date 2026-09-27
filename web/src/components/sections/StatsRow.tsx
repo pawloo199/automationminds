@@ -156,11 +156,19 @@ export function StatsRow({
                   <ContactCtaModalButton
                     label={section.buttonText}
                     sourcePage={sourcePage}
+                    trackLocation="scale"
                     services={services}
                     className="group w-full px-10 py-[1.125rem] text-base sm:w-auto md:text-lg"
                   />
                 ) : (
-                  <Button href={section.buttonLink}>{section.buttonText}</Button>
+                  <Button
+                    href={section.buttonLink}
+                    data-track="consultation"
+                    data-track-method="link"
+                    data-track-location="scale"
+                  >
+                    {section.buttonText}
+                  </Button>
                 )}
               </div>
             ) : null}

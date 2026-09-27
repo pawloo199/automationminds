@@ -617,6 +617,35 @@ export const getCaseStudyBySlug = cache(
   },
 );
 
+/** Wszystkie opublikowane case studies (unikalne slugi) — pod sitemap. */
+export const getPublishedCaseStudiesForSitemap = cache(
+  async (): Promise<CaseStudy[]> => {
+    if (!isConfigured()) return mockCaseStudies;
+
+    try {
+      const records = (await getBase()(TABLES.caseStudies)
+        .select({
+          filterByFormula: "AND({Published} = TRUE(), {Slug} != '')",
+          sort: [{ field: "Order", direction: "asc" }],
+        })
+        .all());
+      const items = records.map((r) =>
+        mapCaseStudy({ id: r.id, fields: r.fields }),
+      );
+      const bySlug = new Map<string, CaseStudy>();
+      for (const item of items) {
+        if (item.slug && !bySlug.has(item.slug)) {
+          bySlug.set(item.slug, item);
+        }
+      }
+      const unique = [...bySlug.values()];
+      return unique.length > 0 ? unique : mockCaseStudies;
+    } catch {
+      return mockCaseStudies;
+    }
+  },
+);
+
 export const getCitySilos = cache(async (): Promise<CitySilo[]> => {
   if (!isConfigured()) return mockCitySilos;
 

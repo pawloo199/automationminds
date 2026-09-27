@@ -3,6 +3,7 @@ import { Container } from "@/components/ui/Container";
 import { getSettings } from "@/lib/airtable";
 import { buildMetadata, siteUrl } from "@/lib/metadata";
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 
 export const metadata: Metadata = buildMetadata({
   title: "Polityka prywatności — Automation Minds",
@@ -11,6 +12,32 @@ export const metadata: Metadata = buildMetadata({
   path: "/polityka-prywatnosci",
 });
 
+function PurposeBlock({
+  title,
+  purpose,
+  basis,
+}: {
+  title: string;
+  purpose: ReactNode;
+  basis: ReactNode;
+}) {
+  return (
+    <>
+      <h3>{title}</h3>
+      <div className="legal-meta">
+        <p>
+          <span className="legal-meta-label">Cel</span>
+          <span>{purpose}</span>
+        </p>
+        <p>
+          <span className="legal-meta-label">Podstawa</span>
+          <span>{basis}</span>
+        </p>
+      </div>
+    </>
+  );
+}
+
 export default async function PrivacyPage() {
   const settings = await getSettings();
   const siteName = settings.siteName || "Automation Minds";
@@ -18,26 +45,34 @@ export default async function PrivacyPage() {
   const phone = settings.phone || "";
   const address = settings.address || "Polska";
   const lastUpdated = "27 września 2026 r.";
+  const host = siteUrl.replace(/^https?:\/\//, "");
 
   return (
     <SiteLayout>
-      <section className="py-24">
+      <section className="bg-gradient-to-b from-surface/80 to-white py-16 sm:py-24">
         <Container>
-          <h1 className="text-4xl font-bold tracking-tight text-dark">
-            Polityka prywatności
-          </h1>
-          <p className="mt-3 text-sm text-muted">
-            Ostatnia aktualizacja: {lastUpdated}
-          </p>
+          <div className="max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand">
+              Dokument prawny
+            </p>
+            <h1 className="mt-3 text-3xl font-bold tracking-tight text-dark sm:text-4xl lg:text-[2.75rem]">
+              Polityka prywatności
+            </h1>
+            <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted">
+              Zasady przetwarzania danych osobowych oraz wykorzystywania plików
+              cookies w serwisie {siteName}.
+            </p>
+            <p className="mt-4 inline-flex rounded-full border border-brand/15 bg-white px-3.5 py-1.5 text-xs font-medium text-muted shadow-sm">
+              Ostatnia aktualizacja: {lastUpdated}
+            </p>
+          </div>
 
-          <div className="prose prose-neutral mt-10 max-w-3xl prose-headings:scroll-mt-24 prose-h2:mt-12 prose-h2:text-2xl prose-h3:mt-8 prose-h3:text-lg prose-p:leading-relaxed prose-li:leading-relaxed">
+          <article className="legal-doc mx-auto mt-12 max-w-3xl sm:mt-14">
             <p>
               Niniejsza Polityka prywatności określa zasady przetwarzania danych
               osobowych oraz wykorzystywania plików cookies i podobnych
               technologii w serwisie internetowym {siteName} dostępnym pod
-              adresem{" "}
-              <a href={siteUrl}>{siteUrl.replace(/^https?:\/\//, "")}</a>{" "}
-              („Serwis”).
+              adresem <a href={siteUrl}>{host}</a> („Serwis”).
             </p>
             <p>
               Dbamy o ochronę prywatności osób korzystających z Serwisu.
@@ -50,16 +85,16 @@ export default async function PrivacyPage() {
 
             <h2>1. Administrator danych</h2>
             <p>Administratorem danych osobowych jest:</p>
-            <ul>
-              <li>
+            <div className="legal-card">
+              <p>
                 <strong>{siteName}</strong>
-              </li>
-              <li>Adres korespondencyjny / siedziba: {address}</li>
-              <li>
+              </p>
+              <p>Adres korespondencyjny / siedziba: {address}</p>
+              <p>
                 E-mail: <a href={`mailto:${email}`}>{email}</a>
-              </li>
-              {phone ? <li>Telefon: {phone}</li> : null}
-            </ul>
+              </p>
+              {phone ? <p>Telefon: {phone}</p> : null}
+            </div>
             <p>
               W sprawach związanych z ochroną danych osobowych prosimy o kontakt
               na adres e-mail wskazany powyżej. Odpowiadamy bez zbędnej zwłoki,
@@ -70,17 +105,24 @@ export default async function PrivacyPage() {
             <h2>2. Zakres stosowania</h2>
             <p>Polityka dotyczy danych osobowych przetwarzanych w związku z:</p>
             <ul>
-              <li>korzystaniem z Serwisu (w tym podstron usług, kampanii i miast),</li>
+              <li>
+                korzystaniem z Serwisu (w tym podstron usług, kampanii i miast)
+              </li>
               <li>
                 wypełnianiem formularzy kontaktowych i umawianiem bezpłatnej
-                konsultacji,
+                konsultacji
               </li>
-              <li>kontaktem telefonicznym lub e-mailowym zainicjowanym przez użytkownika,</li>
+              <li>
+                kontaktem telefonicznym lub e-mailowym zainicjowanym przez
+                użytkownika
+              </li>
               <li>
                 pomiarem ruchu, analityką oraz — za zgodą — marketingiem i
-                reklamą (w tym Google Ads / Google Tag Manager),
+                reklamą (w tym Google Ads / Google Tag Manager)
               </li>
-              <li>zapewnieniem bezpieczeństwa i prawidłowego działania Serwisu.</li>
+              <li>
+                zapewnieniem bezpieczeństwa i prawidłowego działania Serwisu
+              </li>
             </ul>
 
             <h2>3. Jakie dane przetwarzamy</h2>
@@ -89,18 +131,18 @@ export default async function PrivacyPage() {
               W zależności od wariantu formularza możemy przetwarzać m.in.:
             </p>
             <ul>
-              <li>imię i nazwisko,</li>
-              <li>adres e-mail,</li>
-              <li>numer telefonu,</li>
-              <li>nazwę firmy,</li>
-              <li>treść wiadomości / opis potrzeb,</li>
+              <li>imię i nazwisko</li>
+              <li>adres e-mail</li>
+              <li>numer telefonu</li>
+              <li>nazwę firmy</li>
+              <li>treść wiadomości / opis potrzeb</li>
               <li>
                 opcjonalnie: liczbę pracowników, branżę, zainteresowanie
-                usługami, dodatkowe uwagi,
+                usługami, dodatkowe uwagi
               </li>
               <li>
                 informację o udzieleniu zgody na przetwarzanie danych w celu
-                kontaktu.
+                kontaktu
               </li>
             </ul>
 
@@ -110,12 +152,14 @@ export default async function PrivacyPage() {
               m.in.:
             </p>
             <ul>
-              <li>adres IP,</li>
-              <li>data i czas żądania,</li>
-              <li>typ i wersja przeglądarki oraz systemu operacyjnego,</li>
-              <li>rozdzielczość ekranu / informacje o urządzeniu,</li>
-              <li>adres URL odwiedzanej strony oraz strona odsyłająca (referrer),</li>
-              <li>identyfikatory plików cookies lub podobnych technologii.</li>
+              <li>adres IP</li>
+              <li>data i czas żądania</li>
+              <li>typ i wersja przeglądarki oraz systemu operacyjnego</li>
+              <li>rozdzielczość ekranu / informacje o urządzeniu</li>
+              <li>
+                adres URL odwiedzanej strony oraz strona odsyłająca (referrer)
+              </li>
+              <li>identyfikatory plików cookies lub podobnych technologii</li>
             </ul>
 
             <h3>3.3. Dane marketingowe (UTM / kampanie)</h3>
@@ -131,67 +175,41 @@ export default async function PrivacyPage() {
             <h2>4. Cele i podstawy prawne przetwarzania</h2>
             <p>Przetwarzamy dane w następujących celach:</p>
 
-            <h3>4.1. Odpowiedź na zapytanie i działania przedumowne</h3>
-            <p>
-              <strong>Cel:</strong> kontakt zwrotny, umówienie i przeprowadzenie
-              bezpłatnej konsultacji, przygotowanie informacji o ofercie / wyceny.
-              <br />
-              <strong>Podstawa:</strong> art. 6 ust. 1 lit. b RODO (działania na
-              żądanie osoby, której dane dotyczą, przed zawarciem umowy) oraz —
-              w zakresie niezbędnym — art. 6 ust. 1 lit. f RODO (prawnie
-              uzasadniony interes administratora polegający na obsłudze zapytań
-              B2B).
-            </p>
+            <PurposeBlock
+              title="4.1. Odpowiedź na zapytanie i działania przedumowne"
+              purpose="Kontakt zwrotny, umówienie i przeprowadzenie bezpłatnej konsultacji, przygotowanie informacji o ofercie / wyceny."
+              basis="Art. 6 ust. 1 lit. b RODO (działania na żądanie osoby, której dane dotyczą, przed zawarciem umowy) oraz — w zakresie niezbędnym — art. 6 ust. 1 lit. f RODO (prawnie uzasadniony interes administratora polegający na obsłudze zapytań B2B)."
+            />
 
-            <h3>4.2. Zgoda na kontakt (jeśli wymagana w formularzu)</h3>
-            <p>
-              <strong>Cel:</strong> potwierdzenie dobrowolnej zgody na
-              przetwarzanie danych w celu nawiązania kontaktu.
-              <br />
-              <strong>Podstawa:</strong> art. 6 ust. 1 lit. a RODO. Zgodę można
-              wycofać w dowolnym momencie; wycofanie nie wpływa na zgodność z
-              prawem przetwarzania przed jej wycofaniem.
-            </p>
+            <PurposeBlock
+              title="4.2. Zgoda na kontakt (jeśli wymagana w formularzu)"
+              purpose="Potwierdzenie dobrowolnej zgody na przetwarzanie danych w celu nawiązania kontaktu."
+              basis="Art. 6 ust. 1 lit. a RODO. Zgodę można wycofać w dowolnym momencie; wycofanie nie wpływa na zgodność z prawem przetwarzania przed jej wycofaniem."
+            />
 
-            <h3>4.3. Analityka i ulepszanie Serwisu</h3>
-            <p>
-              <strong>Cel:</strong> pomiar ruchu, analiza sposobu korzystania z
-              Serwisu, poprawa treści i użyteczności.
-              <br />
-              <strong>Podstawa:</strong> art. 6 ust. 1 lit. a RODO (zgoda
-              wyrażona poprzez baner cookies / Consent Mode) albo — wyłącznie w
-              zakresie cookies niezbędnych i analogicznych technologii
-              technicznych — art. 6 ust. 1 lit. f RODO.
-            </p>
+            <PurposeBlock
+              title="4.3. Analityka i ulepszanie Serwisu"
+              purpose="Pomiar ruchu, analiza sposobu korzystania z Serwisu, poprawa treści i użyteczności."
+              basis="Art. 6 ust. 1 lit. a RODO (zgoda wyrażona poprzez baner cookies / Consent Mode) albo — wyłącznie w zakresie cookies niezbędnych i analogicznych technologii technicznych — art. 6 ust. 1 lit. f RODO."
+            />
 
-            <h3>4.4. Marketing i reklama (w tym remarketing)</h3>
-            <p>
-              <strong>Cel:</strong> pomiar skuteczności kampanii, optymalizacja
-              reklam, ewentualne wyświetlanie reklam dopasowanych do
-              zainteresowań (np. poprzez Google Ads / Google Tag Manager), o ile
-              wyrazisz na to zgodę.
-              <br />
-              <strong>Podstawa:</strong> art. 6 ust. 1 lit. a RODO.
-            </p>
+            <PurposeBlock
+              title="4.4. Marketing i reklama (w tym remarketing)"
+              purpose="Pomiar skuteczności kampanii, optymalizacja reklam, ewentualne wyświetlanie reklam dopasowanych do zainteresowań (np. poprzez Google Ads / Google Tag Manager), o ile wyrazisz na to zgodę."
+              basis="Art. 6 ust. 1 lit. a RODO."
+            />
 
-            <h3>4.5. Bezpieczeństwo i dochodzenie roszczeń</h3>
-            <p>
-              <strong>Cel:</strong> zapewnienie bezpieczeństwa Serwisu,
-              zapobieganie nadużyciom, ustalenie, dochodzenie lub obrona
-              roszczeń.
-              <br />
-              <strong>Podstawa:</strong> art. 6 ust. 1 lit. f RODO (prawnie
-              uzasadniony interes administratora).
-            </p>
+            <PurposeBlock
+              title="4.5. Bezpieczeństwo i dochodzenie roszczeń"
+              purpose="Zapewnienie bezpieczeństwa Serwisu, zapobieganie nadużyciom, ustalenie, dochodzenie lub obrona roszczeń."
+              basis="Art. 6 ust. 1 lit. f RODO (prawnie uzasadniony interes administratora)."
+            />
 
-            <h3>4.6. Obowiązki prawne</h3>
-            <p>
-              <strong>Cel:</strong> wypełnienie obowiązków wynikających z
-              przepisów prawa (np. podatkowych lub rachunkowych), jeżeli
-              dojdzie do zawarcia umowy.
-              <br />
-              <strong>Podstawa:</strong> art. 6 ust. 1 lit. c RODO.
-            </p>
+            <PurposeBlock
+              title="4.6. Obowiązki prawne"
+              purpose="Wypełnienie obowiązków wynikających z przepisów prawa (np. podatkowych lub rachunkowych), jeżeli dojdzie do zawarcia umowy."
+              basis="Art. 6 ust. 1 lit. c RODO."
+            />
 
             <h2>5. Odbiorcy danych</h2>
             <p>
@@ -203,28 +221,28 @@ export default async function PrivacyPage() {
             <ul>
               <li>
                 dostawcy hostingu i infrastruktury (m.in. Vercel Inc.) —
-                utrzymanie Serwisu,
+                utrzymanie Serwisu
               </li>
               <li>
                 dostawcy narzędzi CRM / baz danych (m.in. Airtable) — obsługa
-                zapytań z formularzy,
+                zapytań z formularzy
               </li>
               <li>
                 dostawcy analityki i reklamy (m.in. Google Ireland Limited /
                 Google LLC — Google Tag Manager, Google Analytics, Google Ads) —
-                wyłącznie w zakresie wynikającym z Twoich zgód cookies,
+                wyłącznie w zakresie wynikającym z Twoich zgód cookies
               </li>
               <li>
                 dostawcy poczty e-mail / komunikacji i narzędzi biurowych —
-                kontakt z klientem,
+                kontakt z klientem
               </li>
               <li>
                 podmioty świadczące usługi księgowe, prawne lub IT — w zakresie
-                niezbędnym,
+                niezbędnym
               </li>
               <li>
                 organy państwowe — wyłącznie gdy obowiązek wynika z przepisów
-                prawa.
+                prawa
               </li>
             </ul>
             <p>
@@ -248,7 +266,7 @@ export default async function PrivacyPage() {
               <li>
                 standardowe klauzule umowne (SCC) zatwierdzone przez Komisję
                 Europejską oraz dodatkowe środki ochronne wymagane przez
-                dostawcę / ocenę transferu.
+                dostawcę / ocenę transferu
               </li>
             </ul>
             <p>
@@ -260,47 +278,47 @@ export default async function PrivacyPage() {
             <p>Dane przechowujemy nie dłużej, niż jest to niezbędne:</p>
             <ul>
               <li>
-                <strong>zapytania z formularzy / konsultacje</strong> — przez
+                <strong>Zapytania z formularzy / konsultacje</strong> — przez
                 czas obsługi zapytania oraz do 24 miesięcy od ostatniego
                 kontaktu (chyba że wcześniej wniesiesz skuteczny sprzeciw lub
                 żądanie usunięcia, a nie zachodzą podstawy do dalszego
                 przechowywania), a w razie zawarcia umowy — przez czas trwania
-                umowy i okres przedawnienia roszczeń,
+                umowy i okres przedawnienia roszczeń
               </li>
               <li>
-                <strong>dane księgowe / umowne</strong> — przez okres wymagany
-                przepisami prawa (zazwyczaj do 5 lat podatkowych, o ile dotyczy),
+                <strong>Dane księgowe / umowne</strong> — przez okres wymagany
+                przepisami prawa (zazwyczaj do 5 lat podatkowych, o ile dotyczy)
               </li>
               <li>
-                <strong>dane analityczne i marketingowe z cookies</strong> —
+                <strong>Dane analityczne i marketingowe z cookies</strong> —
                 zgodnie z okresem ważności danej technologii oraz do czasu
                 wycofania zgody lub jej wygaśnięcia; szczegóły kategorii cookies
-                dostępne są w banerze zgód / panelu preferencji,
+                dostępne są w banerze zgód / panelu preferencji
               </li>
               <li>
-                <strong>logi techniczne bezpieczeństwa</strong> — przez okres
+                <strong>Logi techniczne bezpieczeństwa</strong> — przez okres
                 uzasadniony celem (zwykle do 12 miesięcy), chyba że dłuższy
-                okres jest potrzebny do wyjaśnienia incydentu.
+                okres jest potrzebny do wyjaśnienia incydentu
               </li>
             </ul>
 
             <h2>8. Prawa osób, których dane dotyczą</h2>
             <p>Przysługują Ci następujące prawa:</p>
             <ul>
-              <li>dostęp do danych (art. 15 RODO),</li>
-              <li>sprostowanie danych (art. 16 RODO),</li>
+              <li>dostęp do danych (art. 15 RODO)</li>
+              <li>sprostowanie danych (art. 16 RODO)</li>
               <li>
-                usunięcie danych — „prawo do bycia zapomnianym” (art. 17 RODO),
+                usunięcie danych — „prawo do bycia zapomnianym” (art. 17 RODO)
               </li>
-              <li>ograniczenie przetwarzania (art. 18 RODO),</li>
-              <li>przenoszenie danych (art. 20 RODO) — gdy ma zastosowanie,</li>
+              <li>ograniczenie przetwarzania (art. 18 RODO)</li>
+              <li>przenoszenie danych (art. 20 RODO) — gdy ma zastosowanie</li>
               <li>
                 sprzeciw wobec przetwarzania opartego na art. 6 ust. 1 lit. f
-                RODO (art. 21 RODO),
+                RODO (art. 21 RODO)
               </li>
               <li>
                 wycofanie zgody w dowolnym momencie (art. 7 ust. 3 RODO), gdy
-                przetwarzanie odbywa się na podstawie zgody,
+                przetwarzanie odbywa się na podstawie zgody
               </li>
               <li>
                 wniesienie skargi do Prezesa Urzędu Ochrony Danych Osobowych
@@ -312,7 +330,7 @@ export default async function PrivacyPage() {
                 >
                   uodo.gov.pl
                 </a>
-                ).
+                )
               </li>
             </ul>
             <p>
@@ -348,16 +366,16 @@ export default async function PrivacyPage() {
             <ul>
               <li>
                 <strong>Niezbędne</strong> — wymagane do działania Serwisu,
-                bezpieczeństwa i zapamiętania wyboru zgód.
+                bezpieczeństwa i zapamiętania wyboru zgód
               </li>
               <li>
                 <strong>Analityczne / statystyczne</strong> — pomagają zrozumieć,
                 jak korzystasz z Serwisu (np. Google Analytics za pośrednictwem
-                GTM).
+                GTM)
               </li>
               <li>
                 <strong>Marketingowe / reklamowe</strong> — służą pomiarowi
-                kampanii i (opcjonalnie) personalizacji reklam (np. Google Ads).
+                kampanii i (opcjonalnie) personalizacji reklam (np. Google Ads)
               </li>
             </ul>
 
@@ -395,10 +413,10 @@ export default async function PrivacyPage() {
 
             <h2>11. Profilowanie i zautomatyzowane decyzje</h2>
             <p>
-              Nie podejmujemy wobec Ciebie decyzji wywołujących skutki prawne
-              w sposób wyłącznie zautomatyzowany (art. 22 RODO). W zakresie
+              Nie podejmujemy wobec Ciebie decyzji wywołujących skutki prawne w
+              sposób wyłącznie zautomatyzowany (art. 22 RODO). W zakresie
               marketingu — wyłącznie za zgodą — możemy korzystać z narzędzi
-              reklamowych, które tworzą segmenty odbiorców lub mierząc konwersje
+              reklamowych, które tworzą segmenty odbiorców lub mierzą konwersje
               (np. wysłanie formularza). Nie służy to scoringowi kredytowemu ani
               automatycznej odmowie świadczenia usług.
             </p>
@@ -442,20 +460,15 @@ export default async function PrivacyPage() {
             </p>
 
             <h2>16. Kontakt</h2>
-            <p>
-              W sprawach prywatności i ochrony danych osobowych:
-              <br />
-              E-mail: <a href={`mailto:${email}`}>{email}</a>
-              {phone ? (
-                <>
-                  <br />
-                  Telefon: {phone}
-                </>
-              ) : null}
-              <br />
-              Adres: {address}
-            </p>
-          </div>
+            <p>W sprawach prywatności i ochrony danych osobowych:</p>
+            <div className="legal-card">
+              <p>
+                E-mail: <a href={`mailto:${email}`}>{email}</a>
+              </p>
+              {phone ? <p>Telefon: {phone}</p> : null}
+              <p>Adres: {address}</p>
+            </div>
+          </article>
         </Container>
       </section>
     </SiteLayout>

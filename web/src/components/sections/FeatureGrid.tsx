@@ -193,6 +193,7 @@ export function FeatureGrid({
             <ContactCtaModalButton
               label={buttonText}
               sourcePage={sourcePage}
+              trackLocation="areas"
               services={services}
               className="group w-full px-10 py-[1.125rem] text-base sm:w-auto md:text-lg"
             />

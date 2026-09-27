@@ -1,4 +1,5 @@
 import { createAirtableBase } from "./airtable-client";
+import { SITEMAP_ROUTE } from "./sitemap";
 
 const STATIC_PAGES = [
   "/",
@@ -159,12 +160,16 @@ async function fetchAllDynamicPaths(): Promise<string[]> {
     const caseStudies = await base("CaseStudies")
       .select({
         fields: ["Slug"],
-        filterByFormula: "AND({Published} = TRUE(), {Context} = 'home')",
+        filterByFormula: "AND({Published} = TRUE(), {Slug} != '')",
       })
       .all();
+    const seen = new Set<string>();
     for (const record of caseStudies) {
       const slug = str(record.fields.Slug);
-      if (slug) paths.push(`/case-studies/${slug}`);
+      if (slug && !seen.has(slug)) {
+        seen.add(slug);
+        paths.push(`/case-studies/${slug}`);
+      }
     }
   } catch {
     // ignore
@@ -173,6 +178,11 @@ async function fetchAllDynamicPaths(): Promise<string[]> {
   const { getGuideArticles } = await import("./guide-articles");
   for (const article of getGuideArticles()) {
     paths.push(`/poradnik/${article.slug}`);
+  }
+
+  const { getAllCityPages, cityPath } = await import("./city-pages");
+  for (const city of getAllCityPages()) {
+    paths.push(cityPath(city.slug));
   }
 
   return paths;
@@ -186,8 +196,15 @@ export async function getAllRevalidatePaths(): Promise<string[]> {
     "/kampanie",
     "/case-studies",
     "/poradnik",
+    SITEMAP_ROUTE,
     ...dynamic,
   ]);
+}
+
+/** Każda zmiana CMS odświeża też /sitemap.xml (ISR + Search Console). */
+function withSitemap(paths: string[]): string[] {
+  if (paths.length === 0) return paths;
+  return unique([...paths, SITEMAP_ROUTE]);
 }
 
 export type RevalidatePlan = {
@@ -222,7 +239,7 @@ export async function resolveRevalidatePlan(options: {
     const fields = await fetchRecordFields(tableName, recordId);
     if (fields) {
       return {
-        paths: pathsFromRecord(tableName, fields),
+        paths: withSitemap(pathsFromRecord(tableName, fields)),
         mode: "targeted",
         tableName,
         recordId,
@@ -231,7 +248,7 @@ export async function resolveRevalidatePlan(options: {
   }
 
   return {
-    paths: pathsForTableOnly(tableName),
+    paths: withSitemap(pathsForTableOnly(tableName)),
     mode: "targeted",
     tableName,
     recordId,
@@ -242,6 +259,11 @@ export function applyRevalidatePath(
   path: string,
   revalidate: (path: string, type?: "layout" | "page") => void,
 ): void {
+  if (path === SITEMAP_ROUTE) {
+    revalidate(SITEMAP_ROUTE);
+    return;
+  }
+
   if (path === "/uslugi" || path === "/kampanie" || path === "/case-studies" || path === "/poradnik") {
     revalidate(path, "layout");
     return;

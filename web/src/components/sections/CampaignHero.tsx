@@ -38,7 +38,14 @@ export function CampaignHero({
           </h1>
           {ctaText && ctaLink ? (
             <div className="mt-8">
-              <Button href={ctaLink}>{ctaText}</Button>
+              <Button
+                href={ctaLink}
+                data-track="consultation"
+                data-track-method={ctaLink.startsWith("#") ? "anchor" : "link"}
+                data-track-location="campaign_hero"
+              >
+                {ctaText}
+              </Button>
             </div>
           ) : null}
         </div>

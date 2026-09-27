@@ -81,7 +81,13 @@ export function Footer({
                 "Automatyzacja procesów biznesowych i rozwiązania AI dla firm w całej Polsce."}
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <Button href="/kontakt" className="text-sm">
+              <Button
+                href="/kontakt"
+                className="text-sm"
+                data-track="consultation"
+                data-track-method="link"
+                data-track-location="footer"
+              >
                 Bezpłatna konsultacja
               </Button>
               <Button href="/poradnik" variant="secondary" className="text-sm">
@@ -119,6 +125,7 @@ export function Footer({
               {settings?.phone ? (
                 <a
                   href={phoneHref}
+                  data-track-location="footer"
                   className="flex items-start gap-3 text-sm text-dark transition hover:text-brand"
                 >
                   <Phone className="mt-0.5 h-4 w-4 shrink-0 text-brand/70" />

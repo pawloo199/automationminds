@@ -8,11 +8,13 @@ import { useState } from "react";
 export function ContactCtaModalButton({
   label,
   sourcePage = "/",
+  trackLocation = "cta",
   services = [],
   className,
 }: {
   label: string;
   sourcePage?: string;
+  trackLocation?: string;
   services?: { id: string; menuLabel: string }[];
   className?: string;
 }) {
@@ -24,6 +26,9 @@ export function ContactCtaModalButton({
         type="button"
         onClick={() => setOpen(true)}
         className={className}
+        data-track="consultation"
+        data-track-method="modal"
+        data-track-location={trackLocation}
       >
         {label}
         <ArrowRight

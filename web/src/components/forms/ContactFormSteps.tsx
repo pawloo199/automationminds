@@ -108,7 +108,10 @@ export function ContactFormSteps({
       const result = (await response.json()) as { submissionId?: string };
       if (!result.submissionId) throw new Error("Missing submission id");
 
-      trackLeadConversion();
+      trackLeadConversion({
+        formName: "contact_form_steps",
+        sourcePage,
+      });
       setSubmissionId(result.submissionId);
       setStep(2);
       setStatus("idle");

@@ -1,3 +1,4 @@
+import { AnalyticsClickListener } from "@/components/analytics/AnalyticsClickListener";
 import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import {
   GoogleTagManager,
@@ -60,6 +61,7 @@ export default async function RootLayout({
           ]}
         />
         <GoogleAnalytics />
+        <AnalyticsClickListener />
         {children}
         <Analytics />
         <SpeedInsights />
