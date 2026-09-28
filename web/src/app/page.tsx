@@ -11,6 +11,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { getHomePageData, getServices } from "@/lib/airtable";
 import type { HeroSlide } from "@/lib/airtable.types";
 import { CONSULTATION_OFFER } from "@/lib/consultation-offer";
+import { getCityCoverageSearchIndex } from "@/lib/city-pages";
 import { faqPageJsonLd } from "@/lib/json-ld";
 import { buildMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
@@ -33,7 +34,11 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function HomePage() {
-  const [data, services] = await Promise.all([getHomePageData(), getServices()]);
+  const [data, services, searchableCities] = await Promise.all([
+    getHomePageData(),
+    getServices(),
+    Promise.resolve(getCityCoverageSearchIndex()),
+  ]);
   const heroSlides = getStaticHomeHero(data.heroSlides);
 
   return (
@@ -82,6 +87,7 @@ export default async function HomePage() {
           section={data.conversation}
           stats={data.stats}
           cities={data.citySilos}
+          searchableCities={searchableCities}
           sourcePage="/"
           services={services.map((service) => ({
             id: service.id,

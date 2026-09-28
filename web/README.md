@@ -64,7 +64,7 @@ npm run migrate -- --seed  # zapisuje mocki do Airtable
 | `/o-nas` | O nas |
 | `/kontakt` | Kontakt |
 | `/uslugi/[slug]` | Podstrony usług (9 szt.) |
-| `/automatyzacja-{miasto}` | Silosy lokalne SEO (46 miast) |
+| `/automatyzacja-{miasto}` | Silosy lokalne SEO (67 miast; grid na homepage = kuratorowane CitySilos + wyszukiwarka) |
 | `/polityka-prywatnosci` | Polityka prywatności |
 | `/sitemap.xml` | Dynamiczna mapa witryny (ISR + revalidate z Airtable) |
 

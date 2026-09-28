@@ -700,7 +700,7 @@ export function getMockHomePageData(): HomePageData {
       citiesSubtitle: "Zasięg w całym kraju",
       citiesTitle: "Automatyzacja tam, gdzie działa Twoja firma",
       citiesBody:
-        "Pracujemy z firmami w całej Polsce — od aglomeracji po mniejsze rynki lokalne. Dla każdego miasta dobieramy rozwiązania dopasowane do Twojego regionu i branży.",
+        "Pracujemy z firmami w całej Polsce — od aglomeracji po mniejsze rynki lokalne. Poniżej wybrane miasta; wpisz nazwę w wyszukiwarce, aby znaleźć każdą lokalną stronę automatyzacji.",
     }),
     citySilos: mockCitySilos,
     caseStudiesHeader: withSectionDefaults({

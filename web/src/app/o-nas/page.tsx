@@ -13,6 +13,7 @@ import {
   getSettings,
 } from "@/lib/airtable";
 import { breadcrumbJsonLd } from "@/lib/json-ld";
+import { getCityCoverageSearchIndex } from "@/lib/city-pages";
 import { buildMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
 
@@ -30,13 +31,15 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function AboutPage() {
-  const [homeData, listItems, featureTiles, settings, banner] = await Promise.all([
-    getHomePageData(),
-    getListItems("o-nas"),
-    getFeatureTiles(),
-    getSettings(),
-    getPageSection("o-nas", "banner"),
-  ]);
+  const [homeData, listItems, featureTiles, settings, banner, searchableCities] =
+    await Promise.all([
+      getHomePageData(),
+      getListItems("o-nas"),
+      getFeatureTiles(),
+      getSettings(),
+      getPageSection("o-nas", "banner"),
+      Promise.resolve(getCityCoverageSearchIndex()),
+    ]);
 
   const breadcrumbs = [
     { label: "Strona główna", href: "/" },
@@ -90,6 +93,7 @@ export default async function AboutPage() {
           section={homeData.conversation}
           stats={settings}
           cities={homeData.citySilos}
+          searchableCities={searchableCities}
         />
       ) : null}
     </SiteLayout>

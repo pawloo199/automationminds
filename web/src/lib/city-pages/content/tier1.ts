@@ -284,7 +284,14 @@ export const tier1Cities: CityPageContent[] = [
       "automatyzacja-raportow",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
-    nearbyCitySlugs: ["legnica", "walbrzych", "jelenia-gora", "opole"],
+    nearbyCitySlugs: [
+      "legnica",
+      "walbrzych",
+      "olesnica",
+      "olawa",
+      "trzebnica",
+      "sroda-slaska",
+    ],
   },
   {
     slug: "lodz",

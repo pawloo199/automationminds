@@ -142,7 +142,7 @@ Jedna lub więcej rekordów — używany jest pierwszy.
 | Order | Number |
 | Published | Checkbox |
 
-**Uwaga:** tabela `CitySilos` zasila wyłącznie listę linków na stronie głównej i `/o-nas`. Pełne treści podstron lokalnych (`/automatyzacja-{slug}`) żyją w kodzie: `web/src/lib/city-pages/`. Każdy `Href` musi mieć odpowiadający slug w contentcie.
+**Uwaga:** tabela `CitySilos` zasila wyłącznie **kuratorowany grid** na stronie głównej i `/o-nas` (ok. 46 głównych miast). Pełne treści podstron lokalnych (`/automatyzacja-{slug}`) żyją w kodzie: `web/src/lib/city-pages/` (obecnie 67, w tym siedziby powiatów Dolnego Śląska). Wyszukiwarka w sekcji zasięgu filtruje cały katalog z kodu — **nie dodawaj** wszystkich powiatów/gmin do Airtable CitySilos. Każdy `Href` w CitySilos musi mieć odpowiadający slug w contentcie.
 
 ### Tools
 

@@ -185,7 +185,14 @@ export const zachodCentrumCities: CityPageContent[] = [
       "automatyzacja-raportow",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
-    nearbyCitySlugs: ["wroclaw", "lubin", "walbrzych", "jelenia-gora", "opole"],
+    nearbyCitySlugs: [
+      "wroclaw",
+      "lubin",
+      "jawor",
+      "zlotoryja",
+      "polkowice",
+      "swidnica",
+    ],
   },
   {
     slug: "walbrzych",
@@ -278,7 +285,14 @@ export const zachodCentrumCities: CityPageContent[] = [
       "automatyzacja-raportow",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
-    nearbyCitySlugs: ["jelenia-gora", "legnica", "wroclaw", "lubin"],
+    nearbyCitySlugs: [
+      "jelenia-gora",
+      "swidnica",
+      "dzierzoniow",
+      "kamienna-gora",
+      "klodzko",
+      "legnica",
+    ],
   },
   {
     slug: "jelenia-gora",
@@ -371,7 +385,14 @@ export const zachodCentrumCities: CityPageContent[] = [
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-raportow",
     ],
-    nearbyCitySlugs: ["walbrzych", "legnica", "wroclaw", "lubin"],
+    nearbyCitySlugs: [
+      "walbrzych",
+      "kamienna-gora",
+      "lwowek-slaski",
+      "luban",
+      "zgorzelec",
+      "boleslawiec",
+    ],
   },
   {
     slug: "lubin",
@@ -464,7 +485,14 @@ export const zachodCentrumCities: CityPageContent[] = [
       "automatyzacja-raportow",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
     ],
-    nearbyCitySlugs: ["legnica", "walbrzych", "wroclaw", "jelenia-gora"],
+    nearbyCitySlugs: [
+      "legnica",
+      "polkowice",
+      "glogow",
+      "zlotoryja",
+      "wroclaw",
+      "jawor",
+    ],
   },
   {
     slug: "kalisz",

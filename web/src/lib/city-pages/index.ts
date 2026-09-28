@@ -1,4 +1,5 @@
 import { mockCitySilos } from "@/lib/airtable-mock";
+import { dolnySlaskPowiatCities } from "./content/dolny-slask";
 import { polnocWschodCities } from "./content/polnoc-wschod";
 import { slaskCities } from "./content/slask";
 import { tier1Cities } from "./content/tier1";
@@ -10,6 +11,7 @@ const allCities: CityPageContent[] = [
   ...slaskCities,
   ...polnocWschodCities,
   ...zachodCentrumCities,
+  ...dolnySlaskPowiatCities,
 ];
 
 const bySlug = new Map(allCities.map((city) => [city.slug, city]));
@@ -27,20 +29,11 @@ function assertCityPagesIntegrity() {
   const expected = mockCitySilos.map((city) =>
     city.href.replace(/^\/automatyzacja-/, ""),
   );
+  // CitySilos = kuratorowany grid na homepage; katalog SEO może być większy.
   const missing = expected.filter((slug) => !bySlug.has(slug));
-  const orphan = allCities
-    .map((city) => city.slug)
-    .filter((slug) => !expected.includes(slug));
 
-  if (missing.length > 0 || orphan.length > 0) {
-    throw new Error(
-      [
-        missing.length ? `Missing city pages for: ${missing.join(", ")}` : "",
-        orphan.length ? `Orphan city pages: ${orphan.join(", ")}` : "",
-      ]
-        .filter(Boolean)
-        .join(" | "),
-    );
+  if (missing.length > 0) {
+    throw new Error(`Missing city pages for CitySilos: ${missing.join(", ")}`);
   }
 
   for (const city of allCities) {
@@ -64,6 +57,22 @@ assertCityPagesIntegrity();
 
 export function getAllCityPages(): CityPageContent[] {
   return allCities;
+}
+
+/** Lekki indeks pod wyszukiwarkę zasięgu na homepage / o-nas. */
+export function getCityCoverageSearchIndex(): {
+  id: string;
+  name: string;
+  href: string;
+}[] {
+  return allCities
+    .slice()
+    .sort((a, b) => a.name.localeCompare(b.name, "pl"))
+    .map((city) => ({
+      id: city.slug,
+      name: city.name,
+      href: cityPath(city.slug),
+    }));
 }
 
 export function getCityPage(slug: string): CityPageContent | null {

@@ -1,12 +1,15 @@
 import { ContactCtaModalButton } from "@/components/forms/ContactCtaModalButton";
+import {
+  CityCoverageSearch,
+  type CityCoverageItem,
+} from "@/components/sections/CityCoverageSearch";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import type { CitySilo, Settings } from "@/lib/airtable.types";
 import { cn } from "@/lib/cn";
-import { ArrowUpRight, MapPin } from "lucide-react";
+import { MapPin } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 
 type StatConfig = {
   value: string;
@@ -41,6 +44,7 @@ export function StatsRow({
   section,
   stats,
   cities,
+  searchableCities = [],
   sourcePage = "/",
   services = [],
   useModalCta = false,
@@ -58,7 +62,10 @@ export function StatsRow({
     citiesBody?: string;
   };
   stats: Settings;
+  /** Kuratorowany grid (CitySilos) — widok domyślny bez wyszukiwania. */
   cities: CitySilo[];
+  /** Pełny katalog SEO (wszystkie /automatyzacja-*). */
+  searchableCities?: CityCoverageItem[];
   sourcePage?: string;
   services?: { id: string; menuLabel: string }[];
   useModalCta?: boolean;
@@ -96,7 +103,16 @@ export function StatsRow({
     section.citiesTitle?.trim() || "Automatyzacja tam, gdzie działa Twoja firma";
   const citiesBody =
     section.citiesBody?.trim() ||
-    "Pracujemy z firmami w całej Polsce — od aglomeracji po mniejsze rynki lokalne. Dla każdego miasta dobieramy rozwiązania dopasowane do Twojego regionu i branży.";
+    "Pracujemy z firmami w całej Polsce — od aglomeracji po mniejsze rynki lokalne. Wpisz miasto w wyszukiwarce, aby znaleźć lokalną stronę automatyzacji.";
+
+  const featuredCities: CityCoverageItem[] = cities.map((city) => ({
+    id: city.id,
+    name: city.name,
+    href: city.href,
+  }));
+
+  const catalog =
+    searchableCities.length > 0 ? searchableCities : featuredCities;
 
   return (
     <section className="relative overflow-hidden py-20 lg:py-28">
@@ -183,7 +199,7 @@ export function StatsRow({
               </div>
             </div>
 
-            {cities.length > 0 ? (
+            {featuredCities.length > 0 ? (
               <div className="mt-12 border-t border-brand/15 pt-10 lg:mt-16 lg:pt-12">
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand">
@@ -196,27 +212,10 @@ export function StatsRow({
                 <p className="mt-4 max-w-3xl text-sm leading-relaxed text-muted sm:text-base">
                   {citiesBody}
                 </p>
-                <ul className="mt-6 grid grid-cols-2 gap-x-4 gap-y-1 sm:mt-8 sm:gap-x-8 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
-                  {cities.map((city) => (
-                    <li key={city.id}>
-                      <Link
-                        href={city.href}
-                        className="group flex w-full items-center gap-2 py-2.5 text-sm font-medium text-dark transition-colors duration-200 hover:text-brand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/40 focus-visible:ring-offset-2 sm:gap-3 sm:py-2"
-                        aria-label={`Automatyzacja w mieście ${city.name}`}
-                      >
-                        <MapPin
-                          className="h-3.5 w-3.5 shrink-0 text-brand/50"
-                          aria-hidden
-                        />
-                        <span className="min-w-0 truncate">{city.name}</span>
-                        <ArrowUpRight
-                          className="ml-auto hidden h-3.5 w-3.5 shrink-0 text-brand/40 transition-all duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-brand/80 sm:block sm:opacity-0 sm:group-hover:opacity-100"
-                          aria-hidden
-                        />
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
+                <CityCoverageSearch
+                  featuredCities={featuredCities}
+                  searchableCities={catalog}
+                />
               </div>
             ) : null}
           </div>
