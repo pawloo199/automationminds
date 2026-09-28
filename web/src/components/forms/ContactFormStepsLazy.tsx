@@ -17,11 +17,21 @@ export function ContactFormStepsLazy({
   sourcePage = "/",
   services = [],
   onComplete,
+  redirectOnSuccess = false,
 }: {
   sourcePage?: string;
   services?: { id: string; menuLabel: string }[];
   onComplete?: () => void;
+  redirectOnSuccess?: boolean;
 }) {
+  function handleComplete() {
+    if (redirectOnSuccess) {
+      window.location.href = "/dziekujemy";
+      return;
+    }
+    onComplete?.();
+  }
+
   return (
     <Suspense
       fallback={
@@ -31,7 +41,7 @@ export function ContactFormStepsLazy({
       <ContactFormSteps
         sourcePage={sourcePage}
         services={services}
-        onComplete={onComplete}
+        onComplete={handleComplete}
       />
     </Suspense>
   );

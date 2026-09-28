@@ -1,9 +1,10 @@
+import { ContactFormStepsLazy } from "@/components/forms/ContactFormStepsLazy";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { getServices } from "@/lib/airtable";
 import { Check } from "lucide-react";
-import { ContactFormLazy } from "../forms/ContactFormLazy";
 
-export function ContactSection({
+export async function ContactSection({
   subtitle,
   title,
   body,
@@ -20,6 +21,8 @@ export function ContactSection({
   redirectOnSuccess?: boolean;
   sectionId?: string;
 }) {
+  const services = await getServices();
+
   return (
     <section className="py-20 lg:py-28" id={sectionId}>
       <Container>
@@ -47,10 +50,14 @@ export function ContactSection({
               </ul>
             ) : null}
           </div>
-          <div className="rounded-2xl border border-brand/10 bg-white p-8 shadow-lg">
-            <ContactFormLazy
+          <div className="rounded-2xl border border-brand/10 bg-white p-6 shadow-lg sm:p-8">
+            <ContactFormStepsLazy
               sourcePage={sourcePage}
               redirectOnSuccess={redirectOnSuccess}
+              services={services.map((service) => ({
+                id: service.id,
+                menuLabel: service.menuLabel,
+              }))}
             />
           </div>
         </div>

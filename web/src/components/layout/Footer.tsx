@@ -13,6 +13,9 @@ const mainNav = [
   { href: "/kontakt", label: "Kontakt" },
 ] as const;
 
+const FOOTER_ABOUT =
+  "Pomagamy firmom w całej Polsce skracać czas pracy zespołów przez automatyzację procesów i wdrożenia AI. Łączymy systemy, porządkujemy przepływy danych i budujemy rozwiązania, które realnie odciążają biuro, sprzedaż, produkcję oraz obsługę klienta — zdalnie, w mierzalnych etapach.";
+
 function FooterLink({
   href,
   children,
@@ -23,7 +26,7 @@ function FooterLink({
   return (
     <Link
       href={href}
-      className="inline-flex text-sm leading-snug text-muted transition hover:text-brand"
+      className="block text-sm leading-snug text-muted transition hover:text-brand"
     >
       {children}
     </Link>
@@ -44,8 +47,21 @@ function FooterColumn({
       <h2 className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
         {title}
       </h2>
-      <div className="mt-5 space-y-2.5">{children}</div>
+      <div className="mt-5 flex flex-col gap-2.5">{children}</div>
     </div>
+  );
+}
+
+function EmailWithSoftBreak({ email }: { email: string }) {
+  const at = email.indexOf("@");
+  if (at === -1) return <span className="min-w-0">{email}</span>;
+
+  return (
+    <span className="min-w-0 break-words">
+      {email.slice(0, at)}
+      <wbr />
+      {email.slice(at)}
+    </span>
   );
 }
 
@@ -65,8 +81,8 @@ export function Footer({
   return (
     <footer className="border-t border-brand/10 bg-surface">
       <Container className="py-16 lg:py-20">
-        <div className="grid gap-10 lg:grid-cols-12 lg:gap-12">
-          <div className="lg:col-span-5">
+        <div className="grid gap-10 lg:grid-cols-12 lg:gap-10 xl:gap-12">
+          <div className="lg:col-span-4">
             <Link href="/" className="inline-flex items-center">
               <Image
                 src={settings?.logoColorUrl || "/images/logo-color.png"}
@@ -76,9 +92,8 @@ export function Footer({
                 className="h-9 w-auto"
               />
             </Link>
-            <p className="mt-5 max-w-md text-sm leading-relaxed text-muted">
-              {settings?.metaDescription ||
-                "Automatyzacja procesów biznesowych i rozwiązania AI dla firm w całej Polsce."}
+            <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted lg:max-w-none">
+              {FOOTER_ABOUT}
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button
@@ -96,7 +111,7 @@ export function Footer({
             </div>
           </div>
 
-          <div className="grid gap-8 sm:grid-cols-2 lg:col-span-7 lg:grid-cols-3">
+          <div className="grid gap-8 sm:grid-cols-2 lg:col-span-8 lg:grid-cols-3 lg:gap-8">
             <FooterColumn title="Nawigacja">
               {mainNav.map((item) => (
                 <FooterLink key={item.href} href={item.href}>
@@ -110,7 +125,7 @@ export function Footer({
             </FooterColumn>
 
             <FooterColumn title="Usługi">
-              <ul className="space-y-2.5">
+              <ul className="flex flex-col gap-2.5">
                 {services.map((service) => (
                   <li key={service.id}>
                     <FooterLink href={`/uslugi/${service.slug}`}>
@@ -121,7 +136,7 @@ export function Footer({
               </ul>
             </FooterColumn>
 
-            <FooterColumn title="Kontakt">
+            <FooterColumn title="Kontakt" className="sm:col-span-2 lg:col-span-1">
               {settings?.phone ? (
                 <a
                   href={phoneHref}
@@ -138,7 +153,7 @@ export function Footer({
                   className="flex items-start gap-3 text-sm text-dark transition hover:text-brand"
                 >
                   <Mail className="mt-0.5 h-4 w-4 shrink-0 text-brand/70" />
-                  <span className="break-all">{settings.email}</span>
+                  <EmailWithSoftBreak email={settings.email} />
                 </a>
               ) : null}
               {settings?.address ? (

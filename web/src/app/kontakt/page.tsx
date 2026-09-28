@@ -1,10 +1,10 @@
-import { ContactFormLazy } from "@/components/forms/ContactFormLazy";
+import { ContactFormStepsLazy } from "@/components/forms/ContactFormStepsLazy";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import { PageBanner } from "@/components/sections/PageBanner";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { Container } from "@/components/ui/Container";
-import { getPageSection, getSettings } from "@/lib/airtable";
+import { getPageSection, getServices, getSettings } from "@/lib/airtable";
 import { breadcrumbJsonLd, localBusinessJsonLd } from "@/lib/json-ld";
 import { buildMetadata } from "@/lib/metadata";
 import { sanitizeSimpleHtml } from "@/lib/sanitize";
@@ -26,11 +26,12 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function ContactPage() {
-  const [banner, sidebar, formHeader, settings] = await Promise.all([
+  const [banner, sidebar, formHeader, settings, services] = await Promise.all([
     getPageSection("kontakt", "banner"),
     getPageSection("kontakt", "contact-sidebar"),
     getPageSection("kontakt", "contact-form"),
     getSettings(),
+    getServices(),
   ]);
 
   const breadcrumbs = [
@@ -80,7 +81,14 @@ export default async function ContactPage() {
                   {formHeader.title}
                 </h2>
               ) : null}
-              <ContactFormLazy sourcePage="/kontakt" />
+              <ContactFormStepsLazy
+                sourcePage="/kontakt"
+                redirectOnSuccess
+                services={services.map((service) => ({
+                  id: service.id,
+                  menuLabel: service.menuLabel,
+                }))}
+              />
             </div>
           </div>
         </Container>
