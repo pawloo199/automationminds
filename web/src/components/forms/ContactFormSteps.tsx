@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/Button";
-import { trackLeadConversion } from "@/lib/analytics";
+import { trackConsultationComplete, trackLeadConversion } from "@/lib/analytics";
 import {
   EMPLOYEE_COUNT_OPTIONS,
   INDUSTRY_OPTIONS,
@@ -147,6 +147,10 @@ export function ContactFormSteps({
 
       if (!response.ok) throw new Error("Request failed");
 
+      trackConsultationComplete({
+        formName: "contact_form_steps",
+        sourcePage,
+      });
       setStep("done");
       setStatus("idle");
       onComplete?.();

@@ -52,8 +52,8 @@ export function trackConsultationClick(details: {
 }
 
 /**
- * Wysłanie formularza konsultacji — główna konwersja leadowa.
- * Event `generate_lead` jest rekomendowany przez GA4; `consultation_submit` ułatwia filtr w GTM.
+ * Etap 1 formularza — dane kontaktowe + zgoda (rekord w Airtable).
+ * W Ads: niższa wartość; eventy `generate_lead` + `consultation_submit`.
  */
 export function trackLeadConversion(details: {
   formName?: string;
@@ -97,4 +97,25 @@ export function trackLeadConversion(details: {
       });
     }
   }
+}
+
+/**
+ * Etap 2 formularza — uzupełnione dane (bez „Pomiń”).
+ * W Ads: wyższa wartość, główna konwersja do optymalizacji.
+ */
+export function trackConsultationComplete(details: {
+  formName?: string;
+  sourcePage?: string;
+} = {}) {
+  const formName = details.formName || "contact_form_steps";
+  const sourcePage = details.sourcePage || currentPath();
+
+  pushDataLayer({
+    event: "consultation_complete",
+    event_category: "contact",
+    event_label: "form_step2_complete",
+    form_name: formName,
+    source_page: sourcePage,
+    page_path: currentPath(),
+  });
 }
