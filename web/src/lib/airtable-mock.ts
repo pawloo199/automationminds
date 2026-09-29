@@ -499,7 +499,7 @@ const rawMockServices = [
     introBody:
       "Automatyzujemy fakturowanie, raportowanie i integracje z systemami finansowymi.",
     introImageUrl:
-      "https://images.unsplash.com/photo-1554224155-8d04ac66d8a9?w=1200&q=80",
+      "https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=1200&q=80",
     introButtonText: "Bezpłatna konsultacja",
     introButtonLink: "/kontakt",
     tabsSubtitle: "Case Studies",
