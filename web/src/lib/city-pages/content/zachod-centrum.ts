@@ -92,7 +92,14 @@ export const zachodCentrumCities: CityPageContent[] = [
       "automatyzacja-dla-sprzedazy-i-marketingu",
       "automatyzacja-raportow",
     ],
-    nearbyCitySlugs: ["wroclaw", "legnica", "katowice", "kalisz"],
+    nearbyCitySlugs: [
+      "nysa",
+      "brzeg",
+      "kedzierzyn-kozle",
+      "strzelce-opolskie",
+      "kluczbork",
+      "wroclaw",
+    ],
   },
   {
     slug: "legnica",
