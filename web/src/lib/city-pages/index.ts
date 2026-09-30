@@ -1,17 +1,23 @@
 import { mockCitySilos } from "@/lib/airtable-mock";
 import { dolnySlaskPowiatCities } from "./content/dolny-slask";
+import { mazowszePowiatCities } from "./content/mazowsze";
 import { polnocWschodCities } from "./content/polnoc-wschod";
 import { slaskCities } from "./content/slask";
+import { slaskPowiatCities } from "./content/slask-powiaty";
 import { tier1Cities } from "./content/tier1";
+import { wielkopolskaPowiatCities } from "./content/wielkopolska";
 import { zachodCentrumCities } from "./content/zachod-centrum";
 import { cityPath, type CityPageContent } from "./types";
 
 const allCities: CityPageContent[] = [
   ...tier1Cities,
   ...slaskCities,
+  ...slaskPowiatCities,
   ...polnocWschodCities,
   ...zachodCentrumCities,
   ...dolnySlaskPowiatCities,
+  ...mazowszePowiatCities,
+  ...wielkopolskaPowiatCities,
 ];
 
 const bySlug = new Map(allCities.map((city) => [city.slug, city]));

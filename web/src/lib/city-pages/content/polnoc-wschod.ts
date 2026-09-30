@@ -1115,7 +1115,7 @@ export const polnocWschodCities: CityPageContent[] = [
       "automatyzacja-dla-hr",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
-    nearbyCitySlugs: ["warszawa", "plock", "kielce", "lublin"],
+    nearbyCitySlugs: ["warszawa", "kozienice", "bialobrzegi", "szydlowiec", "kielce"],
   },
   {
     slug: "plock",
@@ -1208,6 +1208,6 @@ export const polnocWschodCities: CityPageContent[] = [
       "automatyzacja-dla-hr",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
     ],
-    nearbyCitySlugs: ["warszawa", "radom", "bydgoszcz", "torun"],
+    nearbyCitySlugs: ["warszawa", "gostynin", "sierpc", "sochaczew", "plonsk"],
   },
 ];

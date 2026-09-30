@@ -92,7 +92,7 @@ export const slaskCities: CityPageContent[] = [
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-raportow",
     ],
-    nearbyCitySlugs: ["katowice", "myslowice", "dabrowa-gornicza", "bielsko-biala", "tychy"],
+    nearbyCitySlugs: ["katowice", "bedzin", "dabrowa-gornicza", "zawiercie", "myslowice"],
   },
   {
     slug: "gliwice",
@@ -185,7 +185,7 @@ export const slaskCities: CityPageContent[] = [
       "automatyzacja-raportow",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
-    nearbyCitySlugs: ["zabrze", "katowice", "rybnik", "opole", "chorzow"],
+    nearbyCitySlugs: ["zabrze", "katowice", "tarnowskie-gory", "raciborz", "chorzow"],
   },
   {
     slug: "zabrze",
@@ -371,7 +371,7 @@ export const slaskCities: CityPageContent[] = [
       "automatyzacja-raportow",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
-    nearbyCitySlugs: ["katowice", "bielsko-biala", "myslowice", "sosnowiec", "czestochowa"],
+    nearbyCitySlugs: ["katowice", "bierun", "pszczyna", "mikolow", "myslowice"],
   },
   {
     slug: "chorzow",
@@ -650,7 +650,7 @@ export const slaskCities: CityPageContent[] = [
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
     ],
-    nearbyCitySlugs: ["gliwice", "opole", "katowice", "zabrze", "czestochowa"],
+    nearbyCitySlugs: ["gliwice", "wodzislaw-slaski", "raciborz", "katowice", "zabrze"],
   },
   {
     slug: "ruda-slaska",
@@ -836,7 +836,7 @@ export const slaskCities: CityPageContent[] = [
       "automatyzacja-w-produkcji-i-uslugach",
       "automatyzacja-raportow",
     ],
-    nearbyCitySlugs: ["tychy", "katowice", "czestochowa", "krakow", "myslowice"],
+    nearbyCitySlugs: ["tychy", "cieszyn", "zywiec", "pszczyna", "katowice"],
   },
   {
     slug: "myslowice",
@@ -1022,6 +1022,6 @@ export const slaskCities: CityPageContent[] = [
       "automatyzacja-dla-hr",
       "automatyzacja-dla-sprzedazy-i-marketingu",
     ],
-    nearbyCitySlugs: ["katowice", "dabrowa-gornicza", "bielsko-biala", "kielce", "tychy"],
+    nearbyCitySlugs: ["klobuck", "lubliniec", "myszkow", "zawiercie", "katowice"],
   },
 ];

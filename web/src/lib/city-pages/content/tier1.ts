@@ -98,7 +98,7 @@ export const tier1Cities: CityPageContent[] = [
       "automatyzacja-dla-hr",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
     ],
-    nearbyCitySlugs: ["radom", "plock", "lodz", "bialystok"],
+    nearbyCitySlugs: ["pruszkow", "piaseczno", "legionowo", "wolomin", "radom", "plock"],
   },
   {
     slug: "krakow",
@@ -477,7 +477,15 @@ export const tier1Cities: CityPageContent[] = [
       "automatyzacja-dla-hr",
       "automatyzacja-w-produkcji-i-uslugach",
     ],
-    nearbyCitySlugs: ["kalisz", "konin", "ostrow-wielkopolski", "lodz"],
+    nearbyCitySlugs: [
+      "gniezno",
+      "sroda-wielkopolska",
+      "wrzesnia",
+      "oborniki",
+      "szamotuly",
+      "kalisz",
+      "konin",
+    ],
   },
   {
     slug: "gdansk",
@@ -759,10 +767,10 @@ export const tier1Cities: CityPageContent[] = [
     nearbyCitySlugs: [
       "sosnowiec",
       "gliwice",
-      "zabrze",
+      "tarnowskie-gory",
+      "mikolow",
+      "bedzin",
       "tychy",
-      "chorzow",
-      "dabrowa-gornicza",
     ],
   },
 ];

@@ -585,7 +585,14 @@ export const zachodCentrumCities: CityPageContent[] = [
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-dla-sprzedazy-i-marketingu",
     ],
-    nearbyCitySlugs: ["poznan", "konin", "ostrow-wielkopolski", "pila", "lodz"],
+    nearbyCitySlugs: [
+      "ostrow-wielkopolski",
+      "pleszew",
+      "jarocin",
+      "krotoszyn",
+      "konin",
+      "poznan",
+    ],
   },
   {
     slug: "konin",
@@ -678,7 +685,14 @@ export const zachodCentrumCities: CityPageContent[] = [
       "automatyzacja-w-produkcji-i-uslugach",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
     ],
-    nearbyCitySlugs: ["poznan", "kalisz", "lodz", "ostrow-wielkopolski", "pila"],
+    nearbyCitySlugs: [
+      "slupca",
+      "kolo",
+      "turek",
+      "wrzesnia",
+      "kalisz",
+      "poznan",
+    ],
   },
   {
     slug: "ostrow-wielkopolski",
@@ -771,7 +785,14 @@ export const zachodCentrumCities: CityPageContent[] = [
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-dla-sprzedazy-i-marketingu",
     ],
-    nearbyCitySlugs: ["kalisz", "konin", "poznan", "piotrkow-trybunalski", "lodz"],
+    nearbyCitySlugs: [
+      "kalisz",
+      "kepno",
+      "ostrzeszow",
+      "krotoszyn",
+      "pleszew",
+      "konin",
+    ],
   },
   {
     slug: "pila",
@@ -864,7 +885,14 @@ export const zachodCentrumCities: CityPageContent[] = [
       "automatyzacja-dla-logistyki",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
-    nearbyCitySlugs: ["poznan", "koszalin", "szczecin", "kalisz", "konin"],
+    nearbyCitySlugs: [
+      "chodziez",
+      "czarnkow",
+      "wagrowiec",
+      "zlotow",
+      "poznan",
+      "koszalin",
+    ],
   },
   {
     slug: "koszalin",
