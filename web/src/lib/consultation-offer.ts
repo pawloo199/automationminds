@@ -10,7 +10,7 @@ export const CONSULTATION_OFFER = {
   formBody:
     "Krótka rozmowa bez zobowiązań. Dowiesz się, co warto zautomatyzować najpierw i jak wygląda współpraca zdalna.",
   formHighlights: [
-    "30 minut rozmowy o Waszych procesach i wąskich gardłach",
+    "30 minut rozmowy o waszych procesach i wąskich gardłach",
     "Wskazanie 1–2 obszarów z najszybszym zwrotem z automatyzacji",
     "Oddzwonimy w ciągu 1 dnia roboczego",
   ],

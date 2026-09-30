@@ -10,6 +10,7 @@ import type {
 import type { CityPageContent } from "./city-pages/types";
 import { cityPath } from "./city-pages/types";
 import { absoluteAssetUrl } from "./assets";
+import { COMPANY } from "./company";
 import { siteUrl } from "./metadata";
 
 export function organizationJsonLd(settings: Settings) {
@@ -212,6 +213,55 @@ export function guideCategoryJsonLd(
     },
     mainEntity: guideItemList(articles),
   };
+}
+
+export function contactPageJsonLd(settings: Settings, faq: GuideFaqItem[]) {
+  const url = `${siteUrl}/kontakt`;
+  return [
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "@id": `${url}#page`,
+      name: "Kontakt i bezpłatna konsultacja",
+      url,
+      inLanguage: "pl-PL",
+      mainEntity: { "@id": `${siteUrl}/#organization` },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": `${siteUrl}/#organization`,
+      name: settings.siteName || "Automation Minds",
+      legalName: COMPANY.legalName,
+      url: siteUrl,
+      logo: absoluteAssetUrl(settings.logoColorUrl),
+      email: settings.email || undefined,
+      telephone: settings.phone || undefined,
+      taxID: COMPANY.nip,
+      vatID: `PL${COMPANY.nip}`,
+      identifier: [
+        { "@type": "PropertyValue", propertyID: "KRS", value: COMPANY.krs },
+        { "@type": "PropertyValue", propertyID: "REGON", value: COMPANY.regon },
+      ],
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: COMPANY.street,
+        postalCode: COMPANY.postalCode,
+        addressLocality: COMPANY.city,
+        addressCountry: COMPANY.country,
+      },
+      areaServed: { "@type": "Country", name: "Polska" },
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "sales",
+        telephone: settings.phone || undefined,
+        email: settings.email || undefined,
+        areaServed: "PL",
+        availableLanguage: ["pl"],
+      },
+    },
+    guideFaqJsonLd(faq),
+  ];
 }
 
 /** Service schema for city SEO pages — areaServed only, no fake local address. */

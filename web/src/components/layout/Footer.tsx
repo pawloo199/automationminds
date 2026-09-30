@@ -3,6 +3,7 @@ import { Container } from "@/components/ui/Container";
 import type { Service, Settings } from "@/lib/airtable.types";
 import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
 import type { ReactNode } from "react";
+import { COMPANY, COMPANY_ADDRESS_LINE } from "@/lib/company";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -199,9 +200,14 @@ export function Footer({
             <ArrowUpRight className="h-4 w-4" aria-hidden />
           </Link>
         </div>
-        <p className="mt-4 max-w-3xl text-xs leading-relaxed text-muted">
-          Administratorem danych z formularzy kontaktowych jest {siteName}. Dane
-          przetwarzamy w celu odpowiedzi na zapytania — szczegóły w{" "}
+        <p className="mt-4 text-xs leading-relaxed text-muted">
+          {COMPANY.legalName}, {COMPANY_ADDRESS_LINE}. KRS {COMPANY.krs}, NIP{" "}
+          {COMPANY.nip}, REGON {COMPANY.regon}, kapitał zakładowy{" "}
+          {COMPANY.shareCapital}.
+        </p>
+        <p className="mt-2 max-w-3xl text-xs leading-relaxed text-muted">
+          Administratorem danych z formularzy kontaktowych jest {COMPANY.legalName}. Dane
+          przetwarzamy w celu odpowiedzi na zapytania, szczegóły w{" "}
           <Link
             href="/polityka-prywatnosci"
             className="text-brand underline-offset-2 hover:underline"

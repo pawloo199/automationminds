@@ -193,7 +193,7 @@ export function ContactFormSteps({
       <div className="py-4 text-center">
         <p className="text-base font-semibold text-dark">Dziękujemy!</p>
         <p className="mt-2 text-sm text-muted">
-          Otrzymaliśmy Twoje dane. Skontaktujemy się wkrótce.
+          Otrzymaliśmy twoje zgłoszenie. Oddzwonimy w ciągu jednego dnia roboczego.
         </p>
       </div>
     );
@@ -219,6 +219,7 @@ export function ContactFormSteps({
                 required
                 minLength={2}
                 placeholder="Imię*"
+                aria-label="Imię"
                 autoComplete="given-name"
                 className={fieldClass}
               />
@@ -232,6 +233,7 @@ export function ContactFormSteps({
                 required
                 minLength={2}
                 placeholder="Nazwisko*"
+                aria-label="Nazwisko"
                 autoComplete="family-name"
                 className={fieldClass}
               />
@@ -247,6 +249,7 @@ export function ContactFormSteps({
               name="email"
               required
               placeholder="E-mail*"
+                aria-label="Adres e-mail"
               autoComplete="email"
               className={fieldClass}
             />
@@ -262,6 +265,7 @@ export function ContactFormSteps({
               required
               minLength={7}
               placeholder="Telefon*"
+                aria-label="Numer telefonu"
               autoComplete="tel"
               className={fieldClass}
             />
@@ -276,6 +280,7 @@ export function ContactFormSteps({
               required
               minLength={2}
               placeholder="Firma*"
+                aria-label="Nazwa firmy"
               autoComplete="organization"
               className={fieldClass}
             />
