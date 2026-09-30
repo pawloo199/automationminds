@@ -195,12 +195,12 @@ export default async function ContactPage() {
                     .join("")}
                 </span>
                 <p className="text-sm leading-relaxed text-white/85">
-                  Z tobą porozmawia{" "}
+                  Konsultację przeprowadzi{" "}
                   <strong className="font-semibold text-white">
                     {author.name}
                   </strong>
-                  , {author.jobTitle}. Prowadzi wdrożenia na co dzień, więc od
-                  razu powie, co jest wykonalne i ile może potrwać.
+                  , {author.jobTitle}. W trakcie rozmowy podpowie, co jest
+                  wykonalne, ile może potrwać i ile kosztować.
                 </p>
               </div>
             </div>
