@@ -5,10 +5,11 @@ import { ArticleFaq } from "@/components/guide/ArticleSections";
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import { CityCoverageSearch } from "@/components/sections/CityCoverageSearch";
 import { ContactSection } from "@/components/sections/ContactSection";
-import {
-  ServiceExample,
-  ServiceMidCta,
-} from "@/components/services/ServiceSections";
+import { AutomationFlow } from "@/components/home/AutomationFlow";
+import { LiveTicker } from "@/components/home/LiveTicker";
+import { ScrollWords } from "@/components/home/ScrollWords";
+import { Spotlight } from "@/components/home/Spotlight";
+import { TimeCalculator } from "@/components/home/TimeCalculator";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Container } from "@/components/ui/Container";
 import { getSettings } from "@/lib/airtable";
@@ -38,8 +39,20 @@ export const metadata: Metadata = buildMetadata({
   ogImage: C.hero.imageUrl,
 });
 
+function servicesCountLabel(count: number) {
+  const last = count % 10;
+  const lastTwo = count % 100;
+  const word =
+    count === 1
+      ? "usługa"
+      : last >= 2 && last <= 4 && !(lastTwo >= 12 && lastTwo <= 14)
+        ? "usługi"
+        : "usług";
+  return `${count} ${word}`;
+}
+
 /** Liczba usług pokazywanych na kafelku grupy na stronie głównej. */
-const SERVICES_PER_GROUP = 4;
+const SERVICES_PER_GROUP = 6;
 
 export default async function HomePage() {
   const settings = await getSettings();
@@ -77,25 +90,30 @@ export default async function HomePage() {
           className="absolute -right-1/4 top-0 h-[70%] w-[55%] bg-[radial-gradient(circle_at_center,rgba(109,81,253,0.28),transparent_68%)]"
           aria-hidden
         />
+        <div
+          className="home-aurora pointer-events-none absolute -bottom-40 left-1/3 h-[28rem] w-[28rem] rounded-full bg-brand/25 blur-3xl"
+          aria-hidden
+        />
         <div className="hero-grid" aria-hidden>
           <div className="hero-grid__base" />
           <div className="hero-grid__accent" />
         </div>
 
-        <Container className="relative z-10 pb-14 pt-24 lg:pb-20 lg:pt-36">
+        <Container className="relative z-10 pb-10 pt-24 lg:pb-12 lg:pt-28">
           <div className="grid items-start gap-10 lg:grid-cols-12 lg:gap-x-12 lg:gap-y-0">
             <div className="lg:col-span-7 lg:row-start-1 lg:pt-6">
               <p className="inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.22em] text-brand-light sm:text-sm">
                 <span className="h-px w-10 bg-brand" aria-hidden />
                 {C.hero.eyebrow}
               </p>
-              <h1 className="mt-5 text-[2.1rem] font-bold leading-[1.08] tracking-tight sm:mt-6 sm:text-5xl lg:text-[3.4rem]">
-                {C.hero.title}
+              <h1 className="mt-5 text-[2.1rem] font-bold leading-[1.08] tracking-tight sm:mt-6 sm:text-5xl lg:text-[3.15rem]">
+                {C.hero.title.slice(0, C.hero.title.length - C.hero.titleHighlight.length)}
+                <span className="about-gradient-text">{C.hero.titleHighlight}</span>
               </h1>
-              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80">
+              <p className="mt-5 max-w-2xl text-lg leading-relaxed text-white/80">
                 {C.hero.lead}
               </p>
-              <ul className="mt-8 space-y-3">
+              <ul className="mt-7 space-y-2.5">
                 {C.hero.bullets.map((bullet) => (
                   <li key={bullet} className="flex items-start gap-3 text-base">
                     <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand text-white">
@@ -105,7 +123,7 @@ export default async function HomePage() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a
                   href="#konsultacja"
                   data-track="consultation"
@@ -154,7 +172,7 @@ export default async function HomePage() {
                 </a>
               </p>
             </div>
-            <dl className="grid grid-cols-2 gap-x-6 gap-y-5 border-t border-white/10 pt-8 sm:grid-cols-4 lg:col-span-7 lg:row-start-2 lg:mt-12">
+            <dl className="grid grid-cols-2 gap-x-6 gap-y-5 border-t border-white/10 pt-8 sm:grid-cols-4 lg:col-span-7 lg:row-start-2 lg:mt-8">
               {C.hero.facts.map((fact) => (
                 <div key={fact.label}>
                   <dt className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white/45">
@@ -168,28 +186,37 @@ export default async function HomePage() {
             </dl>
           </div>
         </Container>
+        <div className="relative z-10">
+          <LiveTicker events={C.ticker} />
+        </div>
       </section>
 
       {/* Narzędzia */}
       <section
         aria-label="Narzędzia, z którymi pracujemy"
-        className="border-b border-brand/10 bg-white py-6"
+        className="about-marquee overflow-hidden border-b border-brand/10 bg-white py-6"
       >
-        <Container className="flex flex-col items-center gap-4 lg:flex-row lg:gap-8">
-          <p className="shrink-0 text-xs font-semibold uppercase tracking-[0.2em] text-muted">
-            Pracujemy na narzędziach, które znasz
-          </p>
-          <ul className="flex flex-wrap justify-center gap-2 lg:justify-start">
-            {C.tools.map((tool) => (
-              <li
-                key={tool}
-                className="rounded-full border border-brand/15 bg-surface px-3.5 py-1.5 text-sm font-medium text-dark"
-              >
-                {tool}
-              </li>
-            ))}
-          </ul>
-        </Container>
+        <p className="mb-4 text-center text-xs font-semibold uppercase tracking-[0.2em] text-muted">
+          Pracujemy na narzędziach, które znasz
+        </p>
+        <div className="about-marquee-track [mask-image:linear-gradient(to_right,transparent,#000_8%,#000_92%,transparent)]">
+          {[0, 1].map((copy) => (
+            <ul
+              key={copy}
+              className="flex shrink-0 items-center gap-3 pr-3"
+              aria-hidden={copy === 1 ? true : undefined}
+            >
+              {C.tools.map((tool) => (
+                <li
+                  key={`${copy}-${tool}`}
+                  className="whitespace-nowrap rounded-full border border-brand/15 bg-surface px-5 py-2 text-sm font-semibold text-dark"
+                >
+                  {tool}
+                </li>
+              ))}
+            </ul>
+          ))}
+        </div>
       </section>
 
       {/* Problemy */}
@@ -226,80 +253,151 @@ export default async function HomePage() {
         </Container>
       </section>
 
+      {/* Manifest i schemat przepływu */}
+      <section
+        id="jak-to-dziala"
+        aria-labelledby="flow-tytul"
+        className="relative scroll-mt-24 overflow-hidden bg-dark py-20 text-white lg:py-32"
+      >
+        <div className="about-grid-bg absolute inset-0" aria-hidden />
+        <div
+          className="home-aurora pointer-events-none absolute -left-40 top-20 h-[30rem] w-[30rem] rounded-full bg-brand/20 blur-3xl"
+          aria-hidden
+        />
+        <Container className="relative">
+          <ScrollWords
+            text={C.manifesto}
+            className="max-w-5xl text-3xl font-bold leading-[1.2] tracking-tight sm:text-4xl lg:text-5xl"
+          />
+          <div className="mt-20 grid gap-6 lg:mt-28 lg:grid-cols-12">
+            <Reveal className="lg:col-span-7">
+              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-brand-light">
+                Jak to działa
+              </p>
+              <h2
+                id="flow-tytul"
+                className="mt-4 text-3xl font-bold leading-tight tracking-tight sm:text-4xl"
+              >
+                {C.flow.title}
+              </h2>
+            </Reveal>
+            <Reveal className="lg:col-span-5 lg:pt-10">
+              <p className="text-lg leading-relaxed text-white/70">{C.flow.lead}</p>
+            </Reveal>
+          </div>
+          <div className="mt-10">
+            <AutomationFlow scenarios={C.flow.scenarios} />
+          </div>
+        </Container>
+      </section>
+
       {/* Usługi */}
       <section
         id="uslugi"
         aria-labelledby="uslugi-tytul"
-        className="relative scroll-mt-24 overflow-hidden bg-dark py-20 text-white lg:py-28"
+        className="scroll-mt-24 py-20 lg:py-28"
       >
-        <div className="about-grid-bg absolute inset-0" aria-hidden />
-        <Container className="relative">
+        <Container>
           <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
             <Reveal className="max-w-3xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-brand-light">
+              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-brand">
                 Usługi
               </p>
               <h2
                 id="uslugi-tytul"
-                className="mt-4 text-3xl font-bold leading-tight tracking-tight sm:text-4xl"
+                className="mt-4 text-3xl font-bold leading-tight tracking-tight text-dark sm:text-4xl"
               >
                 {C.services.title}
               </h2>
-              <p className="mt-5 text-lg leading-relaxed text-white/70">{C.services.lead}</p>
+              <p className="mt-5 text-lg leading-relaxed text-muted">{C.services.lead}</p>
             </Reveal>
             <Link
               href={SERVICES_HUB_PATH}
-              className="inline-flex shrink-0 items-center gap-2 self-start rounded-full border border-white/25 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10 lg:self-auto"
+              className="inline-flex shrink-0 items-center gap-2 self-start rounded-full bg-dark px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand lg:self-auto"
             >
               Wszystkie usługi
               <ArrowRight className="h-4 w-4" aria-hidden />
             </Link>
           </div>
-          <div className="mt-12 grid gap-5 md:grid-cols-2">
+          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-12">
             {groups.map(({ group, services }, index) => {
               const Icon = group.icon;
+              const dark = index === 1 || index === 2;
               return (
                 <Reveal
                   key={group.id}
                   delay={(index % 2) * 80}
-                  className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur-sm sm:p-8"
+                  className={index === 1 || index === 2 ? "lg:col-span-7" : "lg:col-span-5"}
                 >
-                  <div className="flex items-start gap-4">
-                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-brand text-white">
-                      <Icon className="h-6 w-6" aria-hidden />
-                    </span>
-                    <div>
-                      <h3 className="text-xl font-bold">{group.name}</h3>
-                      <p className="mt-1 text-sm leading-relaxed text-white/65">
-                        {group.description}
-                      </p>
+                  <Spotlight
+                    className={
+                      dark
+                        ? "h-full overflow-hidden rounded-3xl bg-dark p-6 text-white sm:p-8"
+                        : "h-full overflow-hidden rounded-3xl border border-brand/10 bg-surface p-6 text-dark sm:p-8"
+                    }
+                  >
+                    <div className="flex items-start justify-between gap-4">
+                      <span
+                        className={
+                          dark
+                            ? "flex h-12 w-12 items-center justify-center rounded-2xl bg-brand text-white"
+                            : "flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-brand shadow-sm"
+                        }
+                      >
+                        <Icon className="h-6 w-6" aria-hidden />
+                      </span>
+                      <span
+                        className={
+                          dark
+                            ? "rounded-full border border-white/15 px-3 py-1 text-xs font-semibold text-white/70"
+                            : "rounded-full border border-brand/15 bg-white px-3 py-1 text-xs font-semibold text-brand"
+                        }
+                      >
+                        {servicesCountLabel(services.length)}
+                      </span>
                     </div>
-                  </div>
-                  <ul className="mt-6 grid gap-1 sm:grid-cols-2">
-                    {services.slice(0, SERVICES_PER_GROUP).map((service) => (
-                      <li key={service.slug}>
-                        <Link
-                          href={servicePath(service.slug)}
-                          className="group flex items-center justify-between gap-2 rounded-xl px-3 py-2.5 text-sm font-medium text-white/90 transition hover:bg-white/[0.06] hover:text-white"
-                        >
-                          {service.name}
-                          <ArrowUpRight
-                            className="h-4 w-4 shrink-0 text-brand-light/60 transition group-hover:text-brand-light"
-                            aria-hidden
-                          />
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                  {services.length > SERVICES_PER_GROUP ? (
-                    <Link
-                      href={`${SERVICES_HUB_PATH}#${group.id}`}
-                      className="mt-4 inline-flex items-center gap-1.5 px-3 text-sm font-semibold text-brand-light hover:text-white"
-                    >
-                      Wszystkie usługi w grupie ({services.length})
-                      <ArrowRight className="h-4 w-4" aria-hidden />
-                    </Link>
-                  ) : null}
+                    <h3 className="mt-6 text-2xl font-bold">
+                      <Link
+                        href={`${SERVICES_HUB_PATH}#${group.id}`}
+                        className="hover:underline"
+                      >
+                        {group.name}
+                      </Link>
+                    </h3>
+                    <p className={dark ? "mt-2 text-white/65" : "mt-2 text-muted"}>
+                      {group.description}
+                    </p>
+                    <ul className="mt-6 flex flex-wrap gap-2">
+                      {services.slice(0, SERVICES_PER_GROUP).map((service) => (
+                        <li key={service.slug}>
+                          <Link
+                            href={servicePath(service.slug)}
+                            className={
+                              dark
+                                ? "inline-flex items-center gap-1.5 rounded-full border border-white/15 px-3.5 py-2 text-sm font-medium text-white/90 transition hover:border-brand-light hover:bg-white/[0.06]"
+                                : "inline-flex items-center gap-1.5 rounded-full border border-brand/15 bg-white px-3.5 py-2 text-sm font-medium text-dark transition hover:border-brand hover:text-brand"
+                            }
+                          >
+                            {service.name}
+                            <ArrowUpRight className="h-3.5 w-3.5 opacity-60" aria-hidden />
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                    {services.length > SERVICES_PER_GROUP ? (
+                      <Link
+                        href={`${SERVICES_HUB_PATH}#${group.id}`}
+                        className={
+                          dark
+                            ? "mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-light hover:text-white"
+                            : "mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-brand hover:text-brand-dark"
+                        }
+                      >
+                        Wszystkie w tej grupie ({services.length})
+                        <ArrowRight className="h-4 w-4" aria-hidden />
+                      </Link>
+                    ) : null}
+                  </Spotlight>
                 </Reveal>
               );
             })}
@@ -307,13 +405,37 @@ export default async function HomePage() {
         </Container>
       </section>
 
-      <ServiceExample example={C.example} />
+      {/* Kalkulator */}
+      <section
+        id="kalkulator"
+        aria-labelledby="kalkulator-tytul"
+        className="scroll-mt-24 bg-surface py-20 lg:py-28"
+      >
+        <Container>
+          <Reveal className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-brand">
+              Kalkulator
+            </p>
+            <h2
+              id="kalkulator-tytul"
+              className="mt-4 text-3xl font-bold leading-tight tracking-tight text-dark sm:text-4xl"
+            >
+              {C.calculator.title}
+            </h2>
+            <p className="mt-5 text-lg leading-relaxed text-muted">{C.calculator.lead}</p>
+          </Reveal>
+          <div className="mt-12">
+            <TimeCalculator />
+          </div>
+        </Container>
+      </section>
+
 
       {/* Jak zaczynamy */}
       <section
         id="jak-zaczynamy"
         aria-labelledby="jak-zaczynamy-tytul"
-        className="scroll-mt-24 border-y border-brand/10 bg-surface py-20 lg:py-28"
+        className="scroll-mt-24 py-20 lg:py-28"
       >
         <Container>
           <Reveal className="max-w-3xl">
@@ -422,8 +544,6 @@ export default async function HomePage() {
           </div>
         </Container>
       </section>
-
-      <ServiceMidCta title={C.midCta.title} body={C.midCta.body} phone={settings.phone} />
 
       {/* FAQ */}
       <section id="faq" aria-label="Najczęstsze pytania" className="scroll-mt-24 py-20 lg:py-28">

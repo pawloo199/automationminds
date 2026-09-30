@@ -1,5 +1,4 @@
 import type { GuideFaqItem } from "./airtable.types";
-import type { ServiceContent } from "./services/types";
 
 /**
  * Treść strony głównej. Strona jest też landing page kampanii Google Ads
@@ -16,6 +15,8 @@ export const HOME_CONTENT = {
       "https://tkwurcvdccuuc86o.public.blob.vercel-storage.com/automatyzacje-procesow-ai.webp",
     eyebrow: "Automatyzacja procesów i AI dla firm",
     title: "Automatyzacja procesów biznesowych i AI, które odciążają twój zespół",
+    /** Fragment tytułu wyróżniony gradientem (musi być końcówką `title`). */
+    titleHighlight: "które odciążają twój zespół",
     lead: "Przejmujemy powtarzalną pracę: przepisywanie danych, faktury, raporty i obsługę zapytań. Łączymy narzędzia, których już używacie, i wdrażamy AI tam, gdzie się opłaca.",
     bullets: [
       "Bezpłatna konsultacja 30 min i wskazanie, od czego zacząć",
@@ -30,6 +31,63 @@ export const HOME_CONTENT = {
     ],
     formTitle: "Umów bezpłatną konsultację",
     formBody: "Zostaw kontakt, a oddzwonimy w ciągu 1 dnia roboczego. Rozmowa trwa około 30 minut i do niczego nie zobowiązuje.",
+  },
+  ticker: [
+    "Faktura z KSeF zaksięgowana",
+    "Nowe zapytanie przypisane do handlowca",
+    "Raport tygodniowy wysłany do zarządu",
+    "Umowa odczytana przez AI",
+    "Przypomnienie o płatności wysłane",
+    "Konta dla nowej osoby utworzone",
+    "Etykieta kurierska wygenerowana",
+    "Dane klienta uzupełnione po NIP",
+    "Zgłoszenie przekazane do serwisu",
+    "Oferta przygotowana z cennika",
+  ],
+  manifesto:
+    "Automatyzujemy to, co powtarzalne, żeby twój zespół miał czas na to, czego nie zrobi żaden automat: rozmowy z klientami, decyzje i rozwój firmy.",
+  flow: {
+    title: "Zobacz, jak dane przepływają same",
+    lead: "Automatyzacja łączy miejsca, z których przychodzą informacje, z systemami, w których są potrzebne. AI czyta, ocenia i porządkuje po drodze. Wybierz przykład.",
+    scenarios: [
+      {
+        id: "sprzedaz",
+        label: "Sprzedaż",
+        sources: ["Formularz na stronie", "E-mail", "Reklama Lead Ads", "Telefon"],
+        hubLines: ["Ocena i przydział", "zapytania"],
+        targets: ["CRM", "Handlowiec", "Klient", "Raport lejka"],
+        caption:
+          "Zapytanie z dowolnego kanału trafia do CRM w kilka minut. AI ocenia jego priorytet, automat przypisuje handlowca, a klient od razu dostaje potwierdzenie.",
+        href: "/uslugi/automatyzacja-sprzedazy",
+        linkLabel: "Automatyzacja sprzedaży",
+      },
+      {
+        id: "finanse",
+        label: "Finanse",
+        sources: ["KSeF", "Faktura PDF", "Wyciąg bankowy", "Zamówienia"],
+        hubLines: ["Odczyt i sprawdzenie", "dokumentów"],
+        targets: ["Księgowość", "Akceptacja", "Przypomnienia", "Dashboard"],
+        caption:
+          "Faktury z KSeF i maili są odczytywane i porównywane z zamówieniami. Osoba odpowiedzialna akceptuje je jednym kliknięciem, a płatności pilnują się same.",
+        href: "/uslugi/automatyzacja-dla-ksiegowosci",
+        linkLabel: "Automatyzacja finansów",
+      },
+      {
+        id: "obsluga",
+        label: "Obsługa klienta",
+        sources: ["Formularz", "E-mail", "Messenger", "Telefon"],
+        hubLines: ["Kategoria i szkic", "odpowiedzi"],
+        targets: ["Helpdesk", "Właściwa osoba", "Status dla klienta", "Raport"],
+        caption:
+          "Zgłoszenia ze wszystkich kanałów trafiają w jedno miejsce. AI rozpoznaje temat i przygotowuje szkic odpowiedzi, a klient na bieżąco wie, co dzieje się z jego sprawą.",
+        href: "/uslugi/automatyzacja-w-obsludze-klienta",
+        linkLabel: "Automatyzacja obsługi klienta",
+      },
+    ],
+  },
+  calculator: {
+    title: "Policz, ile kosztuje cię powtarzalna praca",
+    lead: "Ustaw trzy wartości i zobacz, ile godzin i pieniędzy zespół przeznacza na zadania, które mogłyby dziać się same.",
   },
   tools: [
     "Make",
@@ -79,38 +137,6 @@ export const HOME_CONTENT = {
     title: "Co możemy zautomatyzować w twojej firmie",
     lead: "Zaczynamy od diagnozy, a potem wdrażamy rozwiązania w obszarach, które zabierają najwięcej czasu. Każdą usługę opisujemy szczegółowo na osobnej stronie.",
   },
-  example: {
-    title: "Tydzień w firmie przed automatyzacją i po niej",
-    lead: "Przykład małej firmy B2B, która sprzedaje usługi i obsługuje kilkudziesięciu klientów miesięcznie. Tak zmieniają się codzienne zadania biura.",
-    rows: [
-      {
-        label: "Zapytania od klientów",
-        before: "Maile w kilku skrzynkach, odpowiedź zależy od tego, kto zauważy wiadomość.",
-        after: "Każde zapytanie w CRM, przypisane do osoby, z automatycznym potwierdzeniem dla klienta.",
-      },
-      {
-        label: "Faktury kosztowe",
-        before: "Pobieranie PDF-ów z maili i przepisywanie danych do programu.",
-        after: "Faktury z KSeF i maili trafiają do akceptacji i księgowości automatycznie.",
-      },
-      {
-        label: "Przypomnienia o płatnościach",
-        before: "Wysyłane ręcznie, gdy ktoś znajdzie chwilę.",
-        after: "Wysyłane automatycznie przed terminem i po nim.",
-      },
-      {
-        label: "Raport dla zarządu",
-        before: "Piątkowe zbieranie danych z CRM, faktur i arkuszy.",
-        after: "Dashboard z aktualnymi liczbami, dostępny w każdej chwili.",
-      },
-      {
-        label: "Nowa osoba w zespole",
-        before: "Kilka dni czekania na dostępy i ciągłe pytania do kolegów.",
-        after: "Lista zadań wdrożeniowych i asystent AI, który zna firmowe procedury.",
-      },
-    ],
-    note: "Nie trzeba zmieniać wszystkiego naraz. Najczęściej zaczynamy od jednego obszaru i dokładamy kolejne, gdy pierwszy działa.",
-  } satisfies ServiceContent["example"],
   steps: {
     title: "Jak zaczynamy współpracę",
     lead: "Od pierwszej rozmowy do działającego rozwiązania prowadzimy cię krok po kroku. Na każdym etapie wiesz, ile to kosztuje i co dostaniesz.",
@@ -153,10 +179,6 @@ export const HOME_CONTENT = {
         body: "Projektujemy bazy i struktury danych tak, żeby automatyzacje i AI działały dziś i przy kolejnych wdrożeniach.",
       },
     ],
-  },
-  midCta: {
-    title: "Sprawdźmy, co da się zautomatyzować u ciebie",
-    body: "W 30 minut przejdziemy przez wasze procesy i powiemy wprost, co warto zautomatyzować najpierw, a czego nie ruszać.",
   },
   faq: [
     {
