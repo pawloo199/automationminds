@@ -123,7 +123,12 @@ export interface GuideArticle {
   body: string;
   imageUrl: string;
   imageAlt: string;
+  /** Nazwa kategorii głównej (chip, okruszki, articleSection). */
   category: string;
+  /** Slug kategorii głównej. */
+  categorySlug: string;
+  /** Wszystkie kategorie artykułu, główna na początku. */
+  categorySlugs: string[];
   publishedAt: string;
   updatedAt: string;
   /** Wyliczane z liczby słów treści. */

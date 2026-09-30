@@ -16,7 +16,7 @@ export default defineArticle({
   ],
   excerpt:
     "Sztuczna inteligencja nie zastąpi dobrze poukładanych procesów, ale potrafi przyspieszyć sortowanie zgłoszeń, notatki ze spotkań, pracę z dokumentami i szukanie odpowiedzi w firmowej wiedzy. Pokazujemy, gdzie zacząć.",
-  category: "AI",
+  categories: ["ai-w-firmie"],
   publishedAt: "2026-05-01",
   updatedAt: "2026-09-30",
   imageUrl:

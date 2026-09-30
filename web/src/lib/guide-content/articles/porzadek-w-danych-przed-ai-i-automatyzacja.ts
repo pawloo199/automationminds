@@ -16,7 +16,7 @@ export default defineArticle({
   ],
   excerpt:
     "Firmy chcą wdrażać AI i automatyzacje, a potem okazuje się, że najwięcej pracy wymaga sprzątanie danych. Wyjaśniamy bez żargonu, czym jest struktura danych, jakie błędy spotykamy najczęściej i jak je naprawić.",
-  category: "Dane",
+  categories: ["dane-i-cyfryzacja", "ai-w-firmie"],
   publishedAt: "2026-08-10",
   updatedAt: "2026-09-30",
   imageUrl:

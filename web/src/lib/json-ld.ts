@@ -165,22 +165,52 @@ export function guideFaqJsonLd(items: GuideFaqItem[]) {
   );
 }
 
+function guideItemList(articles: GuideArticle[]) {
+  return {
+    "@type": "ItemList",
+    numberOfItems: articles.length,
+    itemListElement: articles.map((article, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      url: `${siteUrl}/poradnik/${article.slug}`,
+      name: article.title,
+    })),
+  };
+}
+
 export function guideIndexJsonLd(articles: GuideArticle[]) {
   return {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
+    "@id": `${siteUrl}/poradnik#collection`,
     name: "Poradnik o automatyzacji procesów w firmie",
     url: `${siteUrl}/poradnik`,
     inLanguage: "pl-PL",
-    mainEntity: {
-      "@type": "ItemList",
-      itemListElement: articles.map((article, index) => ({
-        "@type": "ListItem",
-        position: index + 1,
-        url: `${siteUrl}/poradnik/${article.slug}`,
-        name: article.title,
-      })),
+    isPartOf: { "@type": "WebSite", url: siteUrl, name: "Automation Minds" },
+    mainEntity: guideItemList(articles),
+  };
+}
+
+export function guideCategoryJsonLd(
+  category: { slug: string; title: string; metaDescription: string; name: string },
+  articles: GuideArticle[],
+) {
+  const url = `${siteUrl}/poradnik/kategoria/${category.slug}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": `${url}#collection`,
+    name: category.title,
+    description: category.metaDescription,
+    url,
+    inLanguage: "pl-PL",
+    about: { "@type": "Thing", name: category.name },
+    isPartOf: {
+      "@type": "CollectionPage",
+      "@id": `${siteUrl}/poradnik#collection`,
+      url: `${siteUrl}/poradnik`,
     },
+    mainEntity: guideItemList(articles),
   };
 }
 

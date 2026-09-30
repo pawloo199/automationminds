@@ -15,7 +15,7 @@ export default defineArticle({
   ],
   excerpt:
     "Audyt procesów to najprostszy sposób, żeby dowiedzieć się, co w firmie warto zautomatyzować, zanim wydasz pieniądze na narzędzia. Pokazujemy, jak wygląda krok po kroku i co powinno leżeć na stole po jego zakończeniu.",
-  category: "Strategia",
+  categories: ["audyt-i-koszty", "automatyzacja-procesow"],
   publishedAt: "2026-06-29",
   updatedAt: "2026-09-30",
   imageUrl:

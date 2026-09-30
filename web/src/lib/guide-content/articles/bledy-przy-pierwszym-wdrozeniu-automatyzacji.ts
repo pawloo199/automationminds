@@ -15,7 +15,7 @@ export default defineArticle({
   ],
   excerpt:
     "Pierwsze wdrożenie automatyzacji ustawia nastawienie firmy na lata. Jeśli skończy się chaosem, kolejny projekt będzie trudno obronić. Oto siedem błędów, które widzimy najczęściej, i sposoby, żeby ich uniknąć.",
-  category: "Wdrożenia",
+  categories: ["automatyzacja-procesow", "audyt-i-koszty"],
   publishedAt: "2026-04-10",
   updatedAt: "2026-09-30",
   imageUrl:

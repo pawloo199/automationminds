@@ -16,7 +16,7 @@ export default defineArticle({
   ],
   excerpt:
     "Pytanie o cenę pada na każdej pierwszej rozmowie i trudno na nie odpowiedzieć bez poznania procesu. Pokazujemy, z czego składa się koszt automatyzacji, co go podnosi, a co obniża, i jak czytać wycenę, żeby porównywać oferty uczciwie.",
-  category: "Na start",
+  categories: ["audyt-i-koszty", "automatyzacja-procesow"],
   publishedAt: "2026-09-28",
   updatedAt: "2026-09-30",
   imageUrl:

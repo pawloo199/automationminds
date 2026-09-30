@@ -15,7 +15,7 @@ export default defineArticle({
   ],
   excerpt:
     "Gdy sprzedaż i księgowość pracują na tych samych danych, znika przepisywanie, spada liczba błędów na fakturach, a handlowiec widzi, czy klient zapłacił. Pokazujemy, jak to poukładać.",
-  category: "Integracje",
+  categories: ["narzedzia-i-integracje", "automatyzacja-procesow"],
   publishedAt: "2026-05-28",
   updatedAt: "2026-09-30",
   imageUrl:

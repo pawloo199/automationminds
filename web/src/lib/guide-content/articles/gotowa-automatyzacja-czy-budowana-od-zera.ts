@@ -15,7 +15,7 @@ export default defineArticle({
   ],
   excerpt:
     "Obsługa zapytań, faktury, onboarding, raporty. Te same problemy wracają w firmach z różnych branż. Pokazujemy, kiedy warto sięgnąć po sprawdzone rozwiązanie dopasowane do firmy, a kiedy lepiej zaprojektować wszystko od początku.",
-  category: "Wdrożenia",
+  categories: ["automatyzacja-procesow", "audyt-i-koszty", "narzedzia-i-integracje"],
   publishedAt: "2026-09-21",
   updatedAt: "2026-09-30",
   imageUrl:

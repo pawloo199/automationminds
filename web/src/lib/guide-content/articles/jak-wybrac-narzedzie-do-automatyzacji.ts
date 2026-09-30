@@ -17,7 +17,7 @@ export default defineArticle({
   ],
   excerpt:
     "Make, Zapier, n8n, Power Automate, a może własny kod? Pokazujemy, czym te narzędzia się różnią, gdzie kryją się koszty i jak wybrać platformę, która nie zablokuje firmy za rok.",
-  category: "Narzędzia",
+  categories: ["narzedzia-i-integracje"],
   publishedAt: "2026-06-08",
   updatedAt: "2026-09-30",
   imageUrl:

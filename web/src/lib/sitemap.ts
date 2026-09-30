@@ -5,7 +5,13 @@ import {
 } from "@/lib/airtable";
 import { caseStudyPath } from "@/lib/case-study-icons";
 import { cityPath, getAllCityPages } from "@/lib/city-pages";
-import { getGuideArticles, guideArticlePath } from "@/lib/guide-articles";
+import {
+  getGuideArticles,
+  getGuideCategoriesWithCounts,
+  getGuideCategoryUpdatedAt,
+  guideArticlePath,
+  guideCategoryPath,
+} from "@/lib/guide-articles";
 import { siteUrl } from "@/lib/metadata";
 import type { MetadataRoute } from "next";
 
@@ -76,6 +82,14 @@ export async function buildSitemapEntries(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }));
 
+  const guideCategoryPages: MetadataRoute.Sitemap =
+    getGuideCategoriesWithCounts().map((category) => ({
+      url: `${siteUrl}${guideCategoryPath(category.slug)}`,
+      lastModified: parseDate(getGuideCategoryUpdatedAt(category.slug)),
+      changeFrequency: "weekly",
+      priority: 0.65,
+    }));
+
   const citySeoPages: MetadataRoute.Sitemap = cityPages.map((city) => ({
     url: `${siteUrl}${cityPath(city.slug)}`,
     lastModified: now,
@@ -88,6 +102,7 @@ export async function buildSitemapEntries(): Promise<MetadataRoute.Sitemap> {
     ...servicePages,
     ...campaignPages,
     ...caseStudyPages,
+    ...guideCategoryPages,
     ...guidePages,
     ...citySeoPages,
   ];

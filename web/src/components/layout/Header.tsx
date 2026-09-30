@@ -10,13 +10,17 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
+export type HeaderGuideCategory = { slug: string; name: string };
+
 export function Header({
   settings,
   services,
+  guideCategories = [],
   transparent = false,
 }: {
   settings: Settings;
   services: Service[];
+  guideCategories?: HeaderGuideCategory[];
   transparent?: boolean;
 }) {
   const pathname = usePathname();
@@ -24,6 +28,9 @@ export function Header({
   const [mobileOpen, setMobileOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const [guideOpen, setGuideOpen] = useState(false);
+  const [mobileGuideOpen, setMobileGuideOpen] = useState(false);
+  const isGuideActive = pathname.startsWith("/poradnik");
 
   useEffect(() => {
     let ticking = false;
@@ -43,12 +50,15 @@ export function Header({
   useEffect(() => {
     setMobileOpen(false);
     setMobileServicesOpen(false);
+    setMobileGuideOpen(false);
+    setGuideOpen(false);
   }, [pathname]);
 
   useEffect(() => {
     if (!mobileOpen) {
       document.body.style.overflow = "";
       setMobileServicesOpen(false);
+      setMobileGuideOpen(false);
       return;
     }
 
@@ -63,6 +73,7 @@ export function Header({
   const closeMobileMenu = () => {
     setMobileOpen(false);
     setMobileServicesOpen(false);
+    setMobileGuideOpen(false);
   };
 
   const desktopNavLink = (href: string, label: string) => (
@@ -152,7 +163,65 @@ export function Header({
               </div>
             ) : null}
           </div>
-          {desktopNavLink("/poradnik", "Poradnik")}
+          {guideCategories.length > 0 ? (
+            <div
+              className="relative"
+              onMouseEnter={() => setGuideOpen(true)}
+              onMouseLeave={() => setGuideOpen(false)}
+              onFocus={() => setGuideOpen(true)}
+              onBlur={(event) => {
+                if (!event.currentTarget.contains(event.relatedTarget)) {
+                  setGuideOpen(false);
+                }
+              }}
+            >
+              <Link
+                href="/poradnik"
+                aria-haspopup="true"
+                aria-expanded={guideOpen}
+                className={cn(
+                  "flex items-center gap-1 text-sm font-medium transition",
+                  isGuideActive
+                    ? "text-brand"
+                    : isSolid
+                      ? "text-dark hover:text-brand"
+                      : "text-white/90 hover:text-white",
+                )}
+              >
+                Poradnik
+                <ChevronDown className="h-4 w-4" aria-hidden />
+              </Link>
+              {guideOpen ? (
+                <div className="absolute left-0 top-full z-50 w-72 pt-2">
+                  <div className="rounded-2xl border border-brand/10 bg-white p-2 shadow-xl">
+                    <Link
+                      href="/poradnik"
+                      className="block rounded-xl px-4 py-3 text-sm font-semibold text-brand hover:bg-surface"
+                    >
+                      Wszystkie artykuły
+                    </Link>
+                    {guideCategories.map((category) => {
+                      const href = `/poradnik/kategoria/${category.slug}`;
+                      return (
+                        <Link
+                          key={category.slug}
+                          href={href}
+                          className={cn(
+                            "block rounded-xl px-4 py-3 text-sm hover:bg-surface",
+                            pathname === href ? "text-brand" : "text-dark",
+                          )}
+                        >
+                          {category.name}
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </div>
+              ) : null}
+            </div>
+          ) : (
+            desktopNavLink("/poradnik", "Poradnik")
+          )}
           {desktopNavLink("/o-nas", "O nas")}
           {desktopNavLink("/kontakt", "Kontakt")}
         </nav>
@@ -248,7 +317,68 @@ export function Header({
                 </div>
               </div>
 
-              {mobileNavLink("/poradnik", "Poradnik")}
+              {guideCategories.length > 0 ? (
+                <div className="rounded-xl">
+                  <button
+                    type="button"
+                    onClick={() => setMobileGuideOpen((value) => !value)}
+                    aria-expanded={mobileGuideOpen}
+                    className={cn(
+                      "flex min-h-12 w-full items-center justify-between rounded-xl px-4 text-base font-semibold transition",
+                      mobileGuideOpen || isGuideActive
+                        ? "bg-brand/10 text-brand"
+                        : "text-dark hover:bg-surface",
+                    )}
+                  >
+                    <span>Poradnik</span>
+                    <ChevronDown
+                      className={cn(
+                        "h-5 w-5 shrink-0 transition-transform duration-200",
+                        mobileGuideOpen && "rotate-180",
+                      )}
+                      aria-hidden
+                    />
+                  </button>
+                  <div
+                    className={cn(
+                      "grid transition-[grid-template-rows] duration-200",
+                      mobileGuideOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]",
+                    )}
+                  >
+                    <div className="overflow-hidden">
+                      <ul className="space-y-1 px-2 pb-2 pt-1">
+                        {[
+                          { href: "/poradnik", label: "Wszystkie artykuły" },
+                          ...guideCategories.map((category) => ({
+                            href: `/poradnik/kategoria/${category.slug}`,
+                            label: category.name,
+                          })),
+                        ].map((item) => {
+                          const isActive = pathname === item.href;
+                          return (
+                            <li key={item.href}>
+                              <Link
+                                href={item.href}
+                                onClick={closeMobileMenu}
+                                className={cn(
+                                  "flex min-h-11 items-center rounded-lg px-4 py-2.5 text-[15px] leading-snug transition",
+                                  isActive
+                                    ? "bg-brand/10 font-medium text-brand"
+                                    : "text-muted hover:bg-surface hover:text-dark",
+                                )}
+                              >
+                                {item.label}
+                              </Link>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                mobileNavLink("/poradnik", "Poradnik")
+              )}
               {mobileNavLink("/o-nas", "O nas")}
               {mobileNavLink("/kontakt", "Kontakt")}
             </nav>

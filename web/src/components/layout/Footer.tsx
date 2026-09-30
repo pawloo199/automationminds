@@ -68,9 +68,11 @@ function EmailWithSoftBreak({ email }: { email: string }) {
 export function Footer({
   settings,
   services = [],
+  guideCategories = [],
 }: {
   settings?: Settings;
   services?: Service[];
+  guideCategories?: { slug: string; name: string }[];
 }) {
   const siteName = settings?.siteName || "Automation Minds";
   const phoneHref = settings?.phone
@@ -122,6 +124,22 @@ export function Footer({
               <FooterLink href="/polityka-prywatnosci">
                 Polityka prywatności
               </FooterLink>
+              {guideCategories.length > 0 ? (
+                <>
+                  <h3 className="mt-4 text-xs font-semibold uppercase tracking-[0.2em] text-brand">
+                    Tematy Poradnika
+                  </h3>
+                  <ul className="flex flex-col gap-2.5">
+                    {guideCategories.map((category) => (
+                      <li key={category.slug}>
+                        <FooterLink href={`/poradnik/kategoria/${category.slug}`}>
+                          {category.name}
+                        </FooterLink>
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              ) : null}
             </FooterColumn>
 
             <FooterColumn title="Usługi">

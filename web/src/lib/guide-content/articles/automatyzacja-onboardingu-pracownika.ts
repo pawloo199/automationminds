@@ -15,7 +15,7 @@ export default defineArticle({
   ],
   excerpt:
     "Pierwsze dni w nowej pracy często mijają na czekaniu na laptopa i dostępy. Pokazujemy, jak poukładać onboarding tak, żeby pilnował się sam, bez wdrażania drogiego systemu HR.",
-  category: "HR",
+  categories: ["automatyzacja-procesow"],
   publishedAt: "2026-05-20",
   updatedAt: "2026-09-30",
   imageUrl:

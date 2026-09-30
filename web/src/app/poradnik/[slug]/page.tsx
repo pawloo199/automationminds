@@ -23,6 +23,7 @@ import {
   getGuideArticles,
   getRelatedGuideArticles,
   guideArticlePath,
+  guideCategoryPath,
 } from "@/lib/guide-articles";
 import { extractHeadings } from "@/lib/guide-content/body";
 import {
@@ -107,6 +108,7 @@ export default async function GuideArticlePage({
   const breadcrumbs = [
     { label: "Strona główna", href: "/" },
     { label: "Poradnik", href: "/poradnik" },
+    { label: article.category, href: guideCategoryPath(article.categorySlug) },
     { label: article.title },
   ];
 
@@ -132,9 +134,12 @@ export default async function GuideArticlePage({
           <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[minmax(0,1fr)_17rem]">
             <article className="min-w-0 max-w-3xl">
               <div className="mb-8 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted">
-                <span className="rounded-full bg-brand/10 px-3 py-1 font-semibold uppercase tracking-wide text-brand">
+                <Link
+                  href={guideCategoryPath(article.categorySlug)}
+                  className="rounded-full bg-brand/10 px-3 py-1 font-semibold uppercase tracking-wide text-brand transition hover:bg-brand hover:text-white"
+                >
                   {article.category}
-                </span>
+                </Link>
                 <a href="#autor" className="font-medium text-dark hover:text-brand">
                   {article.author.name}
                 </a>
@@ -219,7 +224,14 @@ export default async function GuideArticlePage({
                 </li>
               ))}
             </ul>
-            <div className="mt-8">
+            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3">
+              <Link
+                href={guideCategoryPath(article.categorySlug)}
+                className="inline-flex items-center gap-1 text-sm font-semibold text-brand hover:underline"
+              >
+                Więcej w temacie: {article.category}
+                <ArrowUpRight className="h-4 w-4" />
+              </Link>
               <Link
                 href="/poradnik"
                 className="inline-flex items-center gap-1 text-sm font-semibold text-brand hover:underline"

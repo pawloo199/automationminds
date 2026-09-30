@@ -16,7 +16,7 @@ export default defineArticle({
   ],
   excerpt:
     "Airtable potrafi zastąpić kilka arkuszy i drogich programów naraz, jeśli jest dobrze zaprojektowany. Pokazujemy sześć zastosowań, które sprawdzają się w małych i średnich firmach, razem z automatyzacjami, które na nich działają.",
-  category: "Narzędzia",
+  categories: ["airtable", "narzedzia-i-integracje", "dane-i-cyfryzacja"],
   publishedAt: "2026-08-24",
   updatedAt: "2026-09-30",
   imageUrl:

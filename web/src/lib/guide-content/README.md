@@ -3,6 +3,14 @@
 Każdy artykuł to osobny plik w `articles/`, dodany do listy w `index.ts`.
 Szablon strony: `src/app/poradnik/[slug]/page.tsx`.
 
+## Kategorie (tematy)
+
+Kategorie są zdefiniowane w `categories.ts` (nazwa, H1, meta, opis, FAQ, powiązane usługi, CTA, `inMenu`).
+Każdy artykuł ma pole `categories`: pierwsza pozycja to kategoria główna (chip na karcie, okruszki),
+kolejne dodają artykuł do innych tematów. Strona kategorii: `/poradnik/kategoria/[slug]`,
+w menu Poradnika, stopce i sitemapie pojawia się automatycznie, gdy ma co najmniej jeden artykuł.
+Nową kategorię dodawaj dopiero wtedy, gdy będą w niej minimum 3 artykuły, żeby nie tworzyć pustych stron.
+
 ## Pola, które wpływają na SEO
 
 - `title`: H1, pytanie lub obietnica z frazą główną.

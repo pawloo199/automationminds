@@ -15,7 +15,7 @@ export default defineArticle({
   ],
   excerpt:
     "Zaoszczędzone godziny to tylko część zwrotu z automatyzacji. Pokazujemy, jak policzyć ROI przed wdrożeniem, jakie koszty doliczyć i które wskaźniki śledzić, żeby wynik obronił się przed zarządem.",
-  category: "Strategia",
+  categories: ["audyt-i-koszty"],
   publishedAt: "2026-04-22",
   updatedAt: "2026-09-30",
   imageUrl:
