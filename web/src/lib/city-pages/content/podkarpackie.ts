@@ -165,7 +165,7 @@ export const podkarpackiePowiatCities: CityPageContent[] = [
         id: "prz-2",
         question: "Czy integrujecie polskie systemy?",
         answer:
-          "Łączymy to, do czego jest bezpieczny dostęp. Dobieramy metodę pod Wasz stack.",
+          "Łączymy to, do czego jest bezpieczny dostęp. Dobieramy metodę pod wasz stack.",
       },
       {
         id: "prz-3",
@@ -270,7 +270,7 @@ export const podkarpackiePowiatCities: CityPageContent[] = [
         id: "tar-4",
         question: "Czy zdalnie?",
         answer:
-          "Tak. Współpraca zdalna to standard dla całej Polski, także dla Waszego zespołu.",
+          "Tak. Współpraca zdalna to standard dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -363,7 +363,7 @@ export const podkarpackiePowiatCities: CityPageContent[] = [
         id: "lan-4",
         question: "Czy musicie być w Łańcucie?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -456,7 +456,7 @@ export const podkarpackiePowiatCities: CityPageContent[] = [
         id: "kol-4",
         question: "Czy zdalnie?",
         answer:
-          "Tak. Współpraca zdalna to standard dla całej Polski, także dla Waszego zespołu.",
+          "Tak. Współpraca zdalna to standard dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -549,7 +549,7 @@ export const podkarpackiePowiatCities: CityPageContent[] = [
         id: "str-4",
         question: "Czy musicie być w Strzyżowie?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -642,7 +642,7 @@ export const podkarpackiePowiatCities: CityPageContent[] = [
         id: "rop-4",
         question: "Czy zdalnie?",
         answer:
-          "Tak. Współpraca zdalna to standard dla całej Polski, także dla Waszego zespołu.",
+          "Tak. Współpraca zdalna to standard dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -735,7 +735,7 @@ export const podkarpackiePowiatCities: CityPageContent[] = [
         id: "lez-4",
         question: "Czy musicie być w Leżajsku?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -822,7 +822,7 @@ export const podkarpackiePowiatCities: CityPageContent[] = [
         id: "mie-3",
         question: "Jak łączycie się z ERP?",
         answer:
-          "Przez API, pliki wymiany lub integratory, zależnie od Waszego stacku.",
+          "Przez API, pliki wymiany lub integratory, zależnie od waszego stacku.",
       },
       {
         id: "mie-4",
@@ -921,7 +921,7 @@ export const podkarpackiePowiatCities: CityPageContent[] = [
         id: "deb-4",
         question: "Czy zdalnie?",
         answer:
-          "Tak. Współpraca zdalna to standard dla całej Polski, także dla Waszego zespołu.",
+          "Tak. Współpraca zdalna to standard dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -1008,7 +1008,7 @@ export const podkarpackiePowiatCities: CityPageContent[] = [
         id: "stw-3",
         question: "Jak łączycie się z ERP?",
         answer:
-          "Przez API, pliki wymiany lub integratory, zależnie od Waszego stacku.",
+          "Przez API, pliki wymiany lub integratory, zależnie od waszego stacku.",
       },
       {
         id: "stw-4",
@@ -1107,7 +1107,7 @@ export const podkarpackiePowiatCities: CityPageContent[] = [
         id: "nis-4",
         question: "Czy zdalnie?",
         answer:
-          "Tak. Współpraca zdalna to standard dla całej Polski, także dla Waszego zespołu.",
+          "Tak. Współpraca zdalna to standard dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -1200,7 +1200,7 @@ export const podkarpackiePowiatCities: CityPageContent[] = [
         id: "jas-4",
         question: "Czy musicie być w Jaśle?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -1293,7 +1293,7 @@ export const podkarpackiePowiatCities: CityPageContent[] = [
         id: "jar-4",
         question: "Czy musicie być w Jarosławiu?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -1386,7 +1386,7 @@ export const podkarpackiePowiatCities: CityPageContent[] = [
         id: "prw-4",
         question: "Czy zdalnie?",
         answer:
-          "Tak. Współpraca zdalna to standard dla całej Polski, także dla Waszego zespołu.",
+          "Tak. Współpraca zdalna to standard dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -1479,7 +1479,7 @@ export const podkarpackiePowiatCities: CityPageContent[] = [
         id: "lub-4",
         question: "Czy zdalnie?",
         answer:
-          "Tak. Współpraca zdalna to standard dla całej Polski, także dla Waszego zespołu.",
+          "Tak. Współpraca zdalna to standard dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -1572,7 +1572,7 @@ export const podkarpackiePowiatCities: CityPageContent[] = [
         id: "san-4",
         question: "Czy musicie być w Sanoku?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -1665,7 +1665,7 @@ export const podkarpackiePowiatCities: CityPageContent[] = [
         id: "brz-4",
         question: "Czy zdalnie?",
         answer:
-          "Tak. Współpraca zdalna to standard dla całej Polski, także dla Waszego zespołu.",
+          "Tak. Współpraca zdalna to standard dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -1758,7 +1758,7 @@ export const podkarpackiePowiatCities: CityPageContent[] = [
         id: "ust-4",
         question: "Czy musicie być w Ustrzykach Dolnych?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [

@@ -277,7 +277,7 @@ export const tier1Cities: CityPageContent[] = [
         id: "poz-2",
         question: "Czy integrujecie Comarch / Insert / inne systemy PL?",
         answer:
-          "Łączymy to, do czego jest bezpieczny dostęp (API, eksporty, webhooki). Dobieramy metodę pod Wasz stack, nie pod „modne narzędzie”.",
+          "Łączymy to, do czego jest bezpieczny dostęp (API, eksporty, webhooki). Dobieramy metodę pod wasz stack, nie pod „modne narzędzie”.",
       },
       {
         id: "poz-3",
@@ -417,7 +417,7 @@ export const tier1Cities: CityPageContent[] = [
     regionCluster: "zachodniopomorskie",
     metaTitle: "Automatyzacja procesów w Szczecinie | Automation Minds",
     metaDescription:
-      "Automatyzacja biznesowa dla firm z Szczecina: produkcja, handel przygraniczny, logistyka i biuro. Zdalne wdrożenia, bezpłatna konsultacja.",
+      "Automatyzacja biznesowa dla firm ze Szczecina: produkcja, handel przygraniczny, logistyka i biuro. Zdalne wdrożenia, bezpłatna konsultacja.",
     heroTitle: "Automatyzacja procesów w Szczecinie",
     heroLead:
       "Porządkujemy operacje firm z Pomorza Zachodniego: od magazynu i produkcji po rozliczenia z partnerami z Niemiec.",
@@ -484,7 +484,7 @@ export const tier1Cities: CityPageContent[] = [
         id: "szcz-3",
         question: "Czy pomagacie przy integracji z partnerami z Niemiec?",
         answer:
-          "Pomagamy w przepływie danych i statusów po Waszej stronie. Format wymiany dopasowujemy do tego, co partner akceptuje.",
+          "Pomagamy w przepływie danych i statusów po waszej stronie. Format wymiany dopasowujemy do tego, co partner akceptuje.",
       },
       {
         id: "szcz-4",

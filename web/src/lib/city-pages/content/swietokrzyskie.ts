@@ -78,7 +78,7 @@ export const swietokrzyskiePowiatCities: CityPageContent[] = [
         id: "ost-3",
         question: "Jak łączycie się z ERP?",
         answer:
-          "Przez API, pliki wymiany lub integratory, zależnie od Waszego stacku.",
+          "Przez API, pliki wymiany lub integratory, zależnie od waszego stacku.",
       },
       {
         id: "ost-4",
@@ -177,7 +177,7 @@ export const swietokrzyskiePowiatCities: CityPageContent[] = [
         id: "sta-4",
         question: "Czy zdalnie?",
         answer:
-          "Tak. Współpraca zdalna to standard dla całej Polski, także dla Waszego zespołu.",
+          "Tak. Współpraca zdalna to standard dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -270,7 +270,7 @@ export const swietokrzyskiePowiatCities: CityPageContent[] = [
         id: "ska-4",
         question: "Czy musicie być w Skarżysku-Kamiennej?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -363,7 +363,7 @@ export const swietokrzyskiePowiatCities: CityPageContent[] = [
         id: "kon-4",
         question: "Czy zdalnie?",
         answer:
-          "Tak. Współpraca zdalna to standard dla całej Polski, także dla Waszego zespołu.",
+          "Tak. Współpraca zdalna to standard dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -456,7 +456,7 @@ export const swietokrzyskiePowiatCities: CityPageContent[] = [
         id: "jed-4",
         question: "Czy musicie być w Jędrzejowie?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -474,10 +474,10 @@ export const swietokrzyskiePowiatCities: CityPageContent[] = [
     nameLocative: "Włoszczowie",
     voivodeship: "świętokrzyskie",
     regionCluster: "swietokrzyskie",
-    metaTitle: "Automatyzacja procesów w Włoszczowie | Automation Minds",
+    metaTitle: "Automatyzacja procesów we Włoszczowie | Automation Minds",
     metaDescription:
       "Automatyzacja dla firm z Włoszczowy: handel, produkcja i usługi zachodniego pierścienia Kielc. Zdalne wdrożenia.",
-    heroTitle: "Automatyzacja procesów w Włoszczowie",
+    heroTitle: "Automatyzacja procesów we Włoszczowie",
     heroLead:
       "Odciążamy włoszczowskie biura, gdy lokalny rynek wymaga sprawnych statusów bez rozrostu etatów.",
     introParagraphs: [
@@ -549,7 +549,7 @@ export const swietokrzyskiePowiatCities: CityPageContent[] = [
         id: "wlo-4",
         question: "Czy zdalnie?",
         answer:
-          "Tak. Współpraca zdalna to standard dla całej Polski, także dla Waszego zespołu.",
+          "Tak. Współpraca zdalna to standard dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -642,7 +642,7 @@ export const swietokrzyskiePowiatCities: CityPageContent[] = [
         id: "bus-4",
         question: "Czy musicie być w Busku-Zdroju?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -735,7 +735,7 @@ export const swietokrzyskiePowiatCities: CityPageContent[] = [
         id: "pin-4",
         question: "Czy musicie być w Pińczowie?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -828,7 +828,7 @@ export const swietokrzyskiePowiatCities: CityPageContent[] = [
         id: "san-4",
         question: "Czy musicie być w Sandomierzu?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -921,7 +921,7 @@ export const swietokrzyskiePowiatCities: CityPageContent[] = [
         id: "opa-4",
         question: "Czy musicie być w Opatowie?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -1014,7 +1014,7 @@ export const swietokrzyskiePowiatCities: CityPageContent[] = [
         id: "stz-4",
         question: "Czy musicie być w Staszowie?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -1107,7 +1107,7 @@ export const swietokrzyskiePowiatCities: CityPageContent[] = [
         id: "kaz-4",
         question: "Czy musicie być w Kazimierzy Wielkiej?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [

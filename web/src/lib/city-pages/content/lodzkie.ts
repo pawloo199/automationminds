@@ -177,7 +177,7 @@ export const lodzkiePowiatCities: CityPageContent[] = [
         id: "zgi-4",
         question: "Czy zdalnie?",
         answer:
-          "Tak. Współpraca zdalna to standard dla całej Polski, także dla Waszego zespołu.",
+          "Tak. Współpraca zdalna to standard dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -264,13 +264,13 @@ export const lodzkiePowiatCities: CityPageContent[] = [
         id: "brz-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "brz-4",
         question: "Czy musicie być w Brzezinach?",
         answer:
-          "Nie. Standardem jest praca zdalna. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Nie. Standardem jest praca zdalna. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
     ],
     relatedServiceSlugs: [
@@ -345,7 +345,7 @@ export const lodzkiePowiatCities: CityPageContent[] = [
         id: "las-1",
         question: "Czy średnia firma może zacząć?",
         answer:
-          "Tak. Zaczynamy od jednego procesu. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Tak. Zaczynamy od jednego procesu. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "las-2",
@@ -357,7 +357,7 @@ export const lodzkiePowiatCities: CityPageContent[] = [
         id: "las-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "las-4",
@@ -450,7 +450,7 @@ export const lodzkiePowiatCities: CityPageContent[] = [
         id: "zdw-3",
         question: "Ile trwa etap?",
         answer:
-          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "zdw-4",
@@ -630,7 +630,7 @@ export const lodzkiePowiatCities: CityPageContent[] = [
         id: "kut-2",
         question: "Czy wymieniacie WMS?",
         answer:
-          "Zwykle nie. Budujemy warstwę obok. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Zwykle nie. Budujemy warstwę obok. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "kut-3",
@@ -642,7 +642,7 @@ export const lodzkiePowiatCities: CityPageContent[] = [
         id: "kut-4",
         question: "Czy musicie być w Kutnie?",
         answer:
-          "Nie. Standardem jest praca zdalna. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Nie. Standardem jest praca zdalna. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
     ],
     relatedServiceSlugs: [
@@ -723,7 +723,7 @@ export const lodzkiePowiatCities: CityPageContent[] = [
         id: "lec-2",
         question: "Czy trudne w utrzymaniu?",
         answer:
-          "Projektujemy pod prostotę. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Projektujemy pod prostotę. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "lec-3",
@@ -909,13 +909,13 @@ export const lodzkiePowiatCities: CityPageContent[] = [
         id: "ski-2",
         question: "Czy integrujecie polskie systemy księgowe i CRM?",
         answer:
-          "Łączymy to, do czego jest bezpieczny dostęp. Dobieramy metodę pod Wasz stack.",
+          "Łączymy to, do czego jest bezpieczny dostęp. Dobieramy metodę pod wasz stack.",
       },
       {
         id: "ski-3",
         question: "Czy potrzebujemy biura projektu w Skierniewicach?",
         answer:
-          "Nie. Pracujemy zdalnie i hybrydowo. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Nie. Pracujemy zdalnie i hybrydowo. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "ski-4",
@@ -1089,7 +1089,7 @@ export const lodzkiePowiatCities: CityPageContent[] = [
         id: "tom-1",
         question: "Czy średnia firma może zacząć?",
         answer:
-          "Tak. Zaczynamy od jednego procesu. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Tak. Zaczynamy od jednego procesu. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "tom-2",
@@ -1101,7 +1101,7 @@ export const lodzkiePowiatCities: CityPageContent[] = [
         id: "tom-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "tom-4",
@@ -1287,7 +1287,7 @@ export const lodzkiePowiatCities: CityPageContent[] = [
         id: "rad-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "rad-4",
@@ -1386,7 +1386,7 @@ export const lodzkiePowiatCities: CityPageContent[] = [
         id: "bel-4",
         question: "Czy pracujecie stacjonarnie w Bełchatowie?",
         answer:
-          "Nie. Standardem jest współpraca zdalna. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Nie. Standardem jest współpraca zdalna. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
     ],
     relatedServiceSlugs: [
@@ -1554,7 +1554,7 @@ export const lodzkiePowiatCities: CityPageContent[] = [
         id: "sie-1",
         question: "Czy średnia firma może zacząć?",
         answer:
-          "Tak. Zaczynamy od jednego procesu. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Tak. Zaczynamy od jednego procesu. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "sie-2",
@@ -1566,7 +1566,7 @@ export const lodzkiePowiatCities: CityPageContent[] = [
         id: "sie-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "sie-4",
@@ -1653,7 +1653,7 @@ export const lodzkiePowiatCities: CityPageContent[] = [
         id: "wie-2",
         question: "Czy trudne w utrzymaniu?",
         answer:
-          "Projektujemy pod prostotę. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Projektujemy pod prostotę. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "wie-3",

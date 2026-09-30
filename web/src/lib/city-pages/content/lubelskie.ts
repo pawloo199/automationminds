@@ -177,7 +177,7 @@ export const lubelskiePowiatCities: CityPageContent[] = [
         id: "lub-4",
         question: "Czy zdalnie?",
         answer:
-          "Tak. Współpraca zdalna to standard dla całej Polski, także dla Waszego zespołu.",
+          "Tak. Współpraca zdalna to standard dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -264,7 +264,7 @@ export const lubelskiePowiatCities: CityPageContent[] = [
         id: "lec-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "lec-4",
@@ -357,7 +357,7 @@ export const lubelskiePowiatCities: CityPageContent[] = [
         id: "kra-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "kra-4",
@@ -537,13 +537,13 @@ export const lubelskiePowiatCities: CityPageContent[] = [
         id: "pul-2",
         question: "Czy musicie być na terenie zakładu?",
         answer:
-          "Standardem jest współpraca zdalna. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Standardem jest współpraca zdalna. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "pul-3",
         question: "Jak łączycie się z ERP?",
         answer:
-          "Przez API, pliki wymiany lub integratory, zależnie od Waszego stacku.",
+          "Przez API, pliki wymiany lub integratory, zależnie od waszego stacku.",
       },
       {
         id: "pul-4",
@@ -630,13 +630,13 @@ export const lubelskiePowiatCities: CityPageContent[] = [
         id: "bia-2",
         question: "Czy integrujecie polskie systemy?",
         answer:
-          "Łączymy to, do czego jest bezpieczny dostęp. Dobieramy metodę pod Wasz stack.",
+          "Łączymy to, do czego jest bezpieczny dostęp. Dobieramy metodę pod wasz stack.",
       },
       {
         id: "bia-3",
         question: "Czy potrzebujemy biura projektu w Białej Podlaskiej?",
         answer:
-          "Nie. Pracujemy zdalnie i hybrydowo. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Nie. Pracujemy zdalnie i hybrydowo. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "bia-4",
@@ -816,7 +816,7 @@ export const lubelskiePowiatCities: CityPageContent[] = [
         id: "par-2",
         question: "Czy trudne w utrzymaniu?",
         answer:
-          "Projektujemy pod prostotę. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Projektujemy pod prostotę. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "par-3",
@@ -903,7 +903,7 @@ export const lubelskiePowiatCities: CityPageContent[] = [
         id: "luk-1",
         question: "Czy średnia firma może zacząć?",
         answer:
-          "Tak. Zaczynamy od jednego procesu. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Tak. Zaczynamy od jednego procesu. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "luk-2",
@@ -915,7 +915,7 @@ export const lubelskiePowiatCities: CityPageContent[] = [
         id: "luk-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "luk-4",
@@ -1032,10 +1032,10 @@ export const lubelskiePowiatCities: CityPageContent[] = [
     nameLocative: "Włodawie",
     voivodeship: "lubelskie",
     regionCluster: "lubelskie",
-    metaTitle: "Automatyzacja procesów w Włodawie | Automation Minds",
+    metaTitle: "Automatyzacja procesów we Włodawie | Automation Minds",
     metaDescription:
       "Automatyzacja dla firm ze Włodawy: handel, usługi i produkcja przy wschodniej granicy. Konsultacja 30 min.",
-    heroTitle: "Automatyzacja procesów w Włodawie",
+    heroTitle: "Automatyzacja procesów we Włodawie",
     heroLead:
       "Spinamy włodawskie procesy, gdy odległość od Lublina nie może spowalniać biura.",
     introParagraphs: [
@@ -1182,7 +1182,7 @@ export const lubelskiePowiatCities: CityPageContent[] = [
         id: "zam-1",
         question: "Czy średnia firma może zacząć?",
         answer:
-          "Tak. Zaczynamy od jednego procesu. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Tak. Zaczynamy od jednego procesu. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "zam-2",
@@ -1194,7 +1194,7 @@ export const lubelskiePowiatCities: CityPageContent[] = [
         id: "zam-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "zam-4",
@@ -1281,7 +1281,7 @@ export const lubelskiePowiatCities: CityPageContent[] = [
         id: "tom-2",
         question: "Czy trudne w utrzymaniu?",
         answer:
-          "Projektujemy pod prostotę. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Projektujemy pod prostotę. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "tom-3",
@@ -1380,13 +1380,13 @@ export const lubelskiePowiatCities: CityPageContent[] = [
         id: "bil-3",
         question: "Czy musicie być w Biłgoraju?",
         answer:
-          "Nie. Standardem jest współpraca zdalna. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Nie. Standardem jest współpraca zdalna. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "bil-4",
         question: "Jak zacząć?",
         answer:
-          "Bezpłatna konsultacja 30 minut. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Bezpłatna konsultacja 30 minut. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
     ],
     relatedServiceSlugs: [
@@ -1746,13 +1746,13 @@ export const lubelskiePowiatCities: CityPageContent[] = [
         id: "che-2",
         question: "Czy integrujecie polskie systemy księgowe i CRM?",
         answer:
-          "Łączymy to, do czego jest bezpieczny dostęp. Dobieramy metodę pod Wasz stack.",
+          "Łączymy to, do czego jest bezpieczny dostęp. Dobieramy metodę pod wasz stack.",
       },
       {
         id: "che-3",
         question: "Czy potrzebujemy biura projektu w Chełmie?",
         answer:
-          "Nie. Pracujemy zdalnie i hybrydowo. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Nie. Pracujemy zdalnie i hybrydowo. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "che-4",

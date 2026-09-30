@@ -159,7 +159,7 @@ export const wielkopolskaPowiatCities: CityPageContent[] = [
         id: "sro-1",
         question: "Czy automatyzujecie awizacje?",
         answer:
-          "Tak. To częsty pierwszy etap To częsty start u firm z Środy Wielkopolskiej.",
+          "Tak. To częsty pierwszy etap To częsty start u firm ze Środy Wielkopolskiej.",
       },
       {
         id: "sro-2",
@@ -383,7 +383,7 @@ export const wielkopolskaPowiatCities: CityPageContent[] = [
     regionCluster: "wielkopolska",
     metaTitle: "Automatyzacja procesów w Szamotułach | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm z Szamotuł: produkcja, handel i usługi północno-zachodniego pierścienia Poznania. Konsultacja 30 min.",
+      "Automatyzacja dla firm ze Szamotuł: produkcja, handel i usługi północno-zachodniego pierścienia Poznania. Konsultacja 30 min.",
     heroTitle: "Automatyzacja procesów w Szamotułach",
     heroLead:
       "Odciążamy szamotulskie biura, gdy lokalny handel i produkcja mnożą dokumenty bez dokładania etatów.",
@@ -438,7 +438,7 @@ export const wielkopolskaPowiatCities: CityPageContent[] = [
         id: "sza-1",
         question: "Czy to dla firm rodzinnych?",
         answer:
-          "Tak. Często tam zwrot jest najszybszy To częsty start u firm z Szamotuł.",
+          "Tak. Często tam zwrot jest najszybszy To częsty start u firm ze Szamotuł.",
       },
       {
         id: "sza-2",
@@ -450,7 +450,7 @@ export const wielkopolskaPowiatCities: CityPageContent[] = [
         id: "sza-3",
         question: "Jak wyceniacie?",
         answer:
-          "Po analizie: jasny zakres. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Po analizie: jasny zakres. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "sza-4",
@@ -660,10 +660,10 @@ export const wielkopolskaPowiatCities: CityPageContent[] = [
     nameLocative: "Wrześni",
     voivodeship: "wielkopolskie",
     regionCluster: "wielkopolska",
-    metaTitle: "Automatyzacja procesów w Wrześni | Automation Minds",
+    metaTitle: "Automatyzacja procesów we Wrześni | Automation Minds",
     metaDescription:
       "Automatyzacja dla firm z Wrześni: produkcja, automotive-adjacent, handel i logistyka. Zdalne wdrożenia.",
-    heroTitle: "Automatyzacja procesów w Wrześni",
+    heroTitle: "Automatyzacja procesów we Wrześni",
     heroLead:
       "Pomagamy wrzesińskim zakładom i dostawcom spiąć produkcję z biurem, gdy terminy odbiorców nie wybaczą chaosu w danych.",
     introParagraphs: [
@@ -723,7 +723,7 @@ export const wielkopolskaPowiatCities: CityPageContent[] = [
         id: "wrz-2",
         question: "Czy wymieniacie MES?",
         answer:
-          "Nie z marszu. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Nie z marszu. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "wrz-3",
@@ -996,25 +996,25 @@ export const wielkopolskaPowiatCities: CityPageContent[] = [
         id: "les-1",
         question: "Czy automatyzacja jest tylko dla dużych firm?",
         answer:
-          "Nie. Często startujemy u rosnących MŚP. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Nie. Często startujemy u rosnących MŚP. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "les-2",
         question: "Czy musicie być na miejscu?",
         answer:
-          "Nie. Model zdalny i hybrydowy. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Nie. Model zdalny i hybrydowy. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "les-3",
         question: "Czy integrujecie CRM i ERP?",
         answer:
-          "Tak, gdy jest bezpieczny dostęp do danych. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Tak, gdy jest bezpieczny dostęp do danych. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "les-4",
         question: "Od czego zacząć?",
         answer:
-          "Od leadów, faktur albo statusów produkcji. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Od leadów, faktur albo statusów produkcji. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
     ],
     relatedServiceSlugs: [

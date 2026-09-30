@@ -72,7 +72,7 @@ export const lubuskiePowiatCities: CityPageContent[] = [
         id: "zgo-2",
         question: "Czy integrujecie polskie systemy księgowe i CRM?",
         answer:
-          "Łączymy to, do czego jest bezpieczny dostęp. Dobieramy metodę pod Wasz stack.",
+          "Łączymy to, do czego jest bezpieczny dostęp. Dobieramy metodę pod wasz stack.",
       },
       {
         id: "zgo-3",
@@ -264,13 +264,13 @@ export const lubuskiePowiatCities: CityPageContent[] = [
         id: "kro-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy prostym zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy prostym zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "kro-4",
         question: "Czy zdalnie?",
         answer:
-          "Tak. Współpraca zdalna to standard dla całej Polski, także dla Waszego zespołu.",
+          "Tak. Współpraca zdalna to standard dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -345,7 +345,7 @@ export const lubuskiePowiatCities: CityPageContent[] = [
         id: "mie-1",
         question: "Czy to dla średnich firm logistycznych?",
         answer:
-          "Tak. Awizacje to częsty pierwszy etap. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Tak. Awizacje to częsty pierwszy etap. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "mie-2",
@@ -357,13 +357,13 @@ export const lubuskiePowiatCities: CityPageContent[] = [
         id: "mie-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "mie-4",
         question: "Czy musicie być w Międzyrzeczu?",
         answer:
-          "Nie. Pracujemy zdalnie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Nie. Pracujemy zdalnie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
     ],
     relatedServiceSlugs: [
@@ -450,7 +450,7 @@ export const lubuskiePowiatCities: CityPageContent[] = [
         id: "nso-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy prostym zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy prostym zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "nso-4",
@@ -537,13 +537,13 @@ export const lubuskiePowiatCities: CityPageContent[] = [
         id: "slu-2",
         question: "Czy musicie być na miejscu?",
         answer:
-          "Nie. Standardem jest praca zdalna. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Nie. Standardem jest praca zdalna. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "slu-3",
         question: "Czy trudne w utrzymaniu?",
         answer:
-          "Projektujemy pod prostotę utrzymania przez Wasz zespół.",
+          "Projektujemy pod prostotę utrzymania przez wasz zespół.",
       },
       {
         id: "slu-4",
@@ -624,7 +624,7 @@ export const lubuskiePowiatCities: CityPageContent[] = [
         id: "stk-1",
         question: "Czy mała firma może zacząć?",
         answer:
-          "Tak. Często tam zwrot jest najszybszy. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Tak. Często tam zwrot jest najszybszy. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "stk-2",
@@ -636,7 +636,7 @@ export const lubuskiePowiatCities: CityPageContent[] = [
         id: "stk-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "stk-4",
@@ -717,7 +717,7 @@ export const lubuskiePowiatCities: CityPageContent[] = [
         id: "sul-1",
         question: "Czy średnia firma może zacząć?",
         answer:
-          "Tak. Zaczynamy od jednego procesu. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Tak. Zaczynamy od jednego procesu. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "sul-2",
@@ -822,7 +822,7 @@ export const lubuskiePowiatCities: CityPageContent[] = [
         id: "swi-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "swi-4",
@@ -846,10 +846,10 @@ export const lubuskiePowiatCities: CityPageContent[] = [
     nameLocative: "Wschowie",
     voivodeship: "lubuskie",
     regionCluster: "lubuskie",
-    metaTitle: "Automatyzacja procesów w Wschowie | Automation Minds",
+    metaTitle: "Automatyzacja procesów we Wschowie | Automation Minds",
     metaDescription:
       "Automatyzacja dla firm ze Wschowy: produkcja, handel i usługi na styku Lubuskiego i Wielkopolski. Umów konsultację.",
-    heroTitle: "Automatyzacja procesów w Wschowie",
+    heroTitle: "Automatyzacja procesów we Wschowie",
     heroLead:
       "Spinamy wschowskie procesy produkcyjne i handlowe, gdy klienci z Leszna i regionu wymagają sprawnych statusów.",
     introParagraphs: [
@@ -909,7 +909,7 @@ export const lubuskiePowiatCities: CityPageContent[] = [
         id: "wsc-2",
         question: "Czy trudne w utrzymaniu?",
         answer:
-          "Projektujemy pod prostotę. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Projektujemy pod prostotę. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "wsc-3",
@@ -996,7 +996,7 @@ export const lubuskiePowiatCities: CityPageContent[] = [
         id: "zag-1",
         question: "Czy mała firma może zacząć?",
         answer:
-          "Tak. Zaczynamy od jednego procesu. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Tak. Zaczynamy od jednego procesu. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "zag-2",
@@ -1101,13 +1101,13 @@ export const lubuskiePowiatCities: CityPageContent[] = [
         id: "zar-3",
         question: "Czy musicie być w Żarach?",
         answer:
-          "Nie. Standardem jest współpraca zdalna. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Nie. Standardem jest współpraca zdalna. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "zar-4",
         question: "Jak zacząć?",
         answer:
-          "Bezpłatna konsultacja 30 minut. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Bezpłatna konsultacja 30 minut. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
     ],
     relatedServiceSlugs: [

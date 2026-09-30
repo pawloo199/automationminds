@@ -165,13 +165,13 @@ export const kujawskoPomorskiePowiatCities: CityPageContent[] = [
         id: "swi-2",
         question: "Czy musicie być na terenie zakładu?",
         answer:
-          "Standardem jest współpraca zdalna. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Standardem jest współpraca zdalna. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "swi-3",
         question: "Jak łączycie się z ERP?",
         answer:
-          "Przez API, pliki wymiany lub integratory, zależnie od Waszego stacku.",
+          "Przez API, pliki wymiany lub integratory, zależnie od waszego stacku.",
       },
       {
         id: "swi-4",
@@ -264,13 +264,13 @@ export const kujawskoPomorskiePowiatCities: CityPageContent[] = [
         id: "tuc-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "tuc-4",
         question: "Czy musicie być w Tucholi?",
         answer:
-          "Nie. Standardem jest praca zdalna. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Nie. Standardem jest praca zdalna. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
     ],
     relatedServiceSlugs: [
@@ -438,7 +438,7 @@ export const kujawskoPomorskiePowiatCities: CityPageContent[] = [
         id: "che-1",
         question: "Czy mała firma może zacząć?",
         answer:
-          "Tak. Zaczynamy od jednego procesu. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Tak. Zaczynamy od jednego procesu. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "che-2",
@@ -450,7 +450,7 @@ export const kujawskoPomorskiePowiatCities: CityPageContent[] = [
         id: "che-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "che-4",
@@ -636,7 +636,7 @@ export const kujawskoPomorskiePowiatCities: CityPageContent[] = [
         id: "wab-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "wab-4",
@@ -729,7 +729,7 @@ export const kujawskoPomorskiePowiatCities: CityPageContent[] = [
         id: "bro-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "bro-4",
@@ -816,7 +816,7 @@ export const kujawskoPomorskiePowiatCities: CityPageContent[] = [
         id: "ryp-2",
         question: "Czy trudne w utrzymaniu?",
         answer:
-          "Projektujemy pod prostotę. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Projektujemy pod prostotę. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "ryp-3",
@@ -846,10 +846,10 @@ export const kujawskoPomorskiePowiatCities: CityPageContent[] = [
     nameLocative: "Włocławku",
     voivodeship: "kujawsko-pomorskie",
     regionCluster: "kujawy",
-    metaTitle: "Automatyzacja procesów w Włocławku | Automation Minds",
+    metaTitle: "Automatyzacja procesów we Włocławku | Automation Minds",
     metaDescription:
       "Automatyzacja dla firm z Włocławka: produkcja, handel, logistyka i usługi nad Wisłą. Konsultacja 30 min.",
-    heroTitle: "Automatyzacja procesów w Włocławku",
+    heroTitle: "Automatyzacja procesów we Włocławku",
     heroLead:
       "Wspieramy włocławskie firmy w porządkowaniu sprzedaży, produkcji i finansów, bez rozrastania biurokracji.",
     introParagraphs: [
@@ -909,13 +909,13 @@ export const kujawskoPomorskiePowiatCities: CityPageContent[] = [
         id: "wlo-2",
         question: "Czy integrujecie polskie systemy księgowe i CRM?",
         answer:
-          "Łączymy to, do czego jest bezpieczny dostęp. Dobieramy metodę pod Wasz stack.",
+          "Łączymy to, do czego jest bezpieczny dostęp. Dobieramy metodę pod wasz stack.",
       },
       {
         id: "wlo-3",
         question: "Czy potrzebujemy biura projektu we Włocławku?",
         answer:
-          "Nie. Pracujemy zdalnie i hybrydowo. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Nie. Pracujemy zdalnie i hybrydowo. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "wlo-4",
@@ -1101,7 +1101,7 @@ export const kujawskoPomorskiePowiatCities: CityPageContent[] = [
         id: "rad-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy prostym zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy prostym zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "rad-4",
@@ -1188,7 +1188,7 @@ export const kujawskoPomorskiePowiatCities: CityPageContent[] = [
         id: "lip-2",
         question: "Czy trudne w utrzymaniu?",
         answer:
-          "Projektujemy pod prostotę. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Projektujemy pod prostotę. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "lip-3",
@@ -1368,7 +1368,7 @@ export const kujawskoPomorskiePowiatCities: CityPageContent[] = [
         id: "zni-1",
         question: "Czy średnia firma może zacząć?",
         answer:
-          "Tak. Zaczynamy od jednego procesu. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Tak. Zaczynamy od jednego procesu. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "zni-2",
@@ -1380,7 +1380,7 @@ export const kujawskoPomorskiePowiatCities: CityPageContent[] = [
         id: "zni-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "zni-4",

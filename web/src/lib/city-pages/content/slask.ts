@@ -16,7 +16,7 @@ export const slaskCities: CityPageContent[] = [
       "Pomagamy sosnowieckim firmom logistycznym i przemysłowym spiąć magazyn, transport i biuro, bez ręcznego przepisywania statusów.",
     introParagraphs: [
       "Sosnowiec leży na skrzyżowaniu dróg i kolei aglomeracji śląskiej, więc tu często spotyka się magazyny, centra dystrybucyjne i zakłady produkcyjne. Automatyzacja procesów w Sosnowcu ma sens tam, gdzie awizacje, stany magazynowe i faktury żyją w osobnych systemach, a koordynacja opiera się na telefonach między zmianami.",
-      "Obsługujemy firmy z Sosnowca zdalnie i hybrydowo: mapujemy przepływ od przyjęcia towaru po rozliczenie z klientem, wdrażamy w krótkich etapach i testujemy na Waszych danych. Nie otwieramy lokalnego biura. Liczy się stabilność procesu, nie adres w centrum miasta.",
+      "Obsługujemy firmy z Sosnowca zdalnie i hybrydowo: mapujemy przepływ od przyjęcia towaru po rozliczenie z klientem, wdrażamy w krótkich etapach i testujemy na waszych danych. Nie otwieramy lokalnego biura. Liczy się stabilność procesu, nie adres w centrum miasta.",
     ],
     localContext:
       "W Sosnowcu widać silny nacisk na przepustowość magazynów i terminowość dostaw do całej aglomeracji. Typowe wąskie gardła to ręczne awizacje dostaw, brak jednej „prawdy” o stanie między WMS a ERP oraz opóźnione faktury, gdy operacja nie zdąży przekazać danych do księgowości. Firmy usługowe dla przemysłu dodatkowo toną w protokołach z terenu i zleceniach serwisowych.",
@@ -344,7 +344,7 @@ export const slaskCities: CityPageContent[] = [
         id: "tyc-1",
         question: "Czy rozumiecie wymagania procesów automotive?",
         answer:
-          "Tak. Pracujemy na realnych obiegach jakości, reklamacji i logistyki dostawców. Nie zastępujemy systemów klienta, tylko spinamy to, co u Was już działa.",
+          "Tak. Pracujemy na realnych obiegach jakości, reklamacji i logistyki dostawców. Nie zastępujemy systemów klienta, tylko spinamy to, co u was już działa.",
       },
       {
         id: "tyc-2",
@@ -530,7 +530,7 @@ export const slaskCities: CityPageContent[] = [
         id: "dab-1",
         question: "Czy automatyzacja BHP w Dąbrowie Górniczej ma sens prawnie?",
         answer:
-          "Automatyzujemy obieg i przypomnienia, treść procedur i decyzje nadal należą do Was. Dajemy audytowalny ślad i terminy, nie zastępujemy odpowiedzialności pracodawcy.",
+          "Automatyzujemy obieg i przypomnienia, treść procedur i decyzje nadal należą do was. Dajemy audytowalny ślad i terminy, nie zastępujemy odpowiedzialności pracodawcy.",
       },
       {
         id: "dab-2",
@@ -629,7 +629,7 @@ export const slaskCities: CityPageContent[] = [
         id: "ryb-2",
         question: "Czy przepływy spełnią wymagania audytu?",
         answer:
-          "Projektujemy przepływy z historią decyzji, rolami i archiwum. Szczegóły compliance ustalamy z Waszymi procedurami i audytorem.",
+          "Projektujemy przepływy z historią decyzji, rolami i archiwum. Szczegóły compliance ustalamy z waszymi procedurami i audytorem.",
       },
       {
         id: "ryb-3",
@@ -641,7 +641,7 @@ export const slaskCities: CityPageContent[] = [
         id: "ryb-4",
         question: "Jakie narzędzia stosujecie?",
         answer:
-          "Dobieramy stack do Waszego środowiska: Make, Power Automate, integracje API, czasem elementy AI, ważniejsza od marki jest stabilność procesu.",
+          "Dobieramy stack do waszego środowiska: Make, Power Automate, integracje API, czasem elementy AI, ważniejsza od marki jest stabilność procesu.",
       },
     ],
     relatedServiceSlugs: [
@@ -728,7 +728,7 @@ export const slaskCities: CityPageContent[] = [
         id: "rud-3",
         question: "Czy pracujecie z Insert / Comarch / innymi polskimi ERP?",
         answer:
-          "Integrujemy to, do czego jest bezpieczny dostęp. API, eksporty, webhooki. Metodę dobieramy po analizie Waszego stacku.",
+          "Integrujemy to, do czego jest bezpieczny dostęp. API, eksporty, webhooki. Metodę dobieramy po analizie waszego stacku.",
       },
       {
         id: "rud-4",

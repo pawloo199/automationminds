@@ -252,7 +252,7 @@ export const slaskPowiatCities: CityPageContent[] = [
         id: "cie-1",
         question: "Czy pomagacie przy dokumentach dla partnerów z Czech?",
         answer:
-          "Pomagamy w przepływie danych i statusów po Waszej stronie.",
+          "Pomagamy w przepływie danych i statusów po waszej stronie.",
       },
       {
         id: "cie-2",
@@ -810,7 +810,7 @@ export const slaskPowiatCities: CityPageContent[] = [
         id: "rac-1",
         question: "Czy pomagacie przy dokumentach eksportowych?",
         answer:
-          "W zakresie kompletowania i statusów po Waszej stronie.",
+          "W zakresie kompletowania i statusów po waszej stronie.",
       },
       {
         id: "rac-2",

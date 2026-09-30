@@ -59,7 +59,7 @@ export const zachodCentrumCities: CityPageContent[] = [
       },
     ],
     howWeWork:
-      "W Opolu zaczynamy od bezpłatnej konsultacji 30 minut. Wybieramy proces o najwyższym koszcie chaosu, proponujemy zakres i wdrażamy zdalnie, z testami na Waszych danych i szkoleniem osób odpowiedzialnych za wyjątki. Spotkanie na miejscu to opcja projektowa, nie standard.",
+      "W Opolu zaczynamy od bezpłatnej konsultacji 30 minut. Wybieramy proces o najwyższym koszcie chaosu, proponujemy zakres i wdrażamy zdalnie, z testami na waszych danych i szkoleniem osób odpowiedzialnych za wyjątki. Spotkanie na miejscu to opcja projektowa, nie standard.",
     faq: [
       {
         id: "opl-1",
@@ -771,7 +771,7 @@ export const zachodCentrumCities: CityPageContent[] = [
         id: "ost-2",
         question: "Czy integrujecie systemy magazynowe?",
         answer:
-          "Tak. Tam, gdzie API lub eksporty na to pozwalają; dopasowujemy do Waszego stacku.",
+          "Tak. Tam, gdzie API lub eksporty na to pozwalają; dopasowujemy do waszego stacku.",
       },
       {
         id: "ost-3",
@@ -871,7 +871,7 @@ export const zachodCentrumCities: CityPageContent[] = [
         id: "pil-2",
         question: "Czy obsługujecie pliki CAD i wersje rysunków?",
         answer:
-          "Pomagamy w obiegu metadanych i powiadomieniach; integracja plików zależy od Waszego sposobu pracy.",
+          "Pomagamy w obiegu metadanych i powiadomieniach; integracja plików zależy od waszego sposobu pracy.",
       },
       {
         id: "pil-3",
@@ -977,7 +977,7 @@ export const zachodCentrumCities: CityPageContent[] = [
         id: "kos-3",
         question: "Czy integrujecie sklepy i CRM?",
         answer:
-          "Tak. Przez API i sprawdzone integratory, dopasowane do Waszych narzędzi.",
+          "Tak. Przez API i sprawdzone integratory, dopasowane do waszych narzędzi.",
       },
       {
         id: "kos-4",
@@ -1019,7 +1019,7 @@ export const zachodCentrumCities: CityPageContent[] = [
       "Pracujemy ze stargardzkimi zespołami zdalnie. Nie obiecujemy filii w mieście, obiecujemy mniej ręcznego telefonowania i przepisywania numerów listów przewozowych.",
     ],
     localContext:
-      "Firmy w regionie często obsługują klientów z Szczecina, Berlina i całej Polski. Widać rozjazd między systemem magazynowym a tym, co wie biuro i klient. Ręczne kompletowanie dokumentów wysyłkowych i opóźnione fakturowanie po odbiorze to codzienność wielu MŚP.",
+      "Firmy w regionie często obsługują klientów ze Szczecina, Berlina i całej Polski. Widać rozjazd między systemem magazynowym a tym, co wie biuro i klient. Ręczne kompletowanie dokumentów wysyłkowych i opóźnione fakturowanie po odbiorze to codzienność wielu MŚP.",
     whyHere:
       "W Stargardzie automatyzacja daje przewagę operacyjną: szybsza awizacja, mniej błędów w adresach i terminach, lepsza przewidywalność dla odbiorcy. To argument w negocjacjach z większymi klientami logistycznymi.",
     focusIndustries: [
@@ -1171,7 +1171,7 @@ export const zachodCentrumCities: CityPageContent[] = [
         id: "tar-2",
         question: "Czy przepływy spełnią wymogi audytu?",
         answer:
-          "Projektujemy z audytowalnym śladem działań; szczegóły dopasowujemy do Waszych procedur.",
+          "Projektujemy z audytowalnym śladem działań; szczegóły dopasowujemy do waszych procedur.",
       },
       {
         id: "tar-3",
@@ -1371,7 +1371,7 @@ export const zachodCentrumCities: CityPageContent[] = [
         id: "pio-2",
         question: "Czy integrujecie systemy przewoźników?",
         answer:
-          "Tam, gdzie API lub pliki na to pozwalają. Budujemy warstwę statusów po Waszej stronie.",
+          "Tam, gdzie API lub pliki na to pozwalają. Budujemy warstwę statusów po waszej stronie.",
       },
       {
         id: "pio-3",

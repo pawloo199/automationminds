@@ -177,7 +177,7 @@ export const podlaskiePowiatCities: CityPageContent[] = [
         id: "aug-4",
         question: "Czy musicie być w Augustowie?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -270,7 +270,7 @@ export const podlaskiePowiatCities: CityPageContent[] = [
         id: "sej-4",
         question: "Czy zdalnie?",
         answer:
-          "Tak. Współpraca zdalna to standard dla całej Polski, także dla Waszego zespołu.",
+          "Tak. Współpraca zdalna to standard dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -363,7 +363,7 @@ export const podlaskiePowiatCities: CityPageContent[] = [
         id: "gra-4",
         question: "Czy musicie być w Grajewie?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -456,7 +456,7 @@ export const podlaskiePowiatCities: CityPageContent[] = [
         id: "kol-4",
         question: "Czy zdalnie?",
         answer:
-          "Tak. Współpraca zdalna to standard dla całej Polski, także dla Waszego zespołu.",
+          "Tak. Współpraca zdalna to standard dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -549,7 +549,7 @@ export const podlaskiePowiatCities: CityPageContent[] = [
         id: "sok-4",
         question: "Czy musicie być w Sokółce?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -642,7 +642,7 @@ export const podlaskiePowiatCities: CityPageContent[] = [
         id: "mon-4",
         question: "Czy zdalnie?",
         answer:
-          "Tak. Współpraca zdalna to standard dla całej Polski, także dla Waszego zespołu.",
+          "Tak. Współpraca zdalna to standard dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -735,7 +735,7 @@ export const podlaskiePowiatCities: CityPageContent[] = [
         id: "bie-4",
         question: "Czy musicie być w Bielsku Podlaskim?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -822,7 +822,7 @@ export const podlaskiePowiatCities: CityPageContent[] = [
         id: "haj-3",
         question: "Czy musicie być w Hajnówce?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
       {
         id: "haj-4",
@@ -921,7 +921,7 @@ export const podlaskiePowiatCities: CityPageContent[] = [
         id: "wys-4",
         question: "Czy musicie być w Wysokiem Mazowieckim?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -1014,7 +1014,7 @@ export const podlaskiePowiatCities: CityPageContent[] = [
         id: "zam-4",
         question: "Czy musicie być w Zambrowie?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -1107,7 +1107,7 @@ export const podlaskiePowiatCities: CityPageContent[] = [
         id: "sie-4",
         question: "Czy zdalnie?",
         answer:
-          "Tak. Współpraca zdalna to standard dla całej Polski, także dla Waszego zespołu.",
+          "Tak. Współpraca zdalna to standard dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [

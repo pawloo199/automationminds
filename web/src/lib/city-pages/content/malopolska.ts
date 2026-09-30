@@ -177,7 +177,7 @@ export const malopolskaPowiatCities: CityPageContent[] = [
         id: "mys-4",
         question: "Czy zdalnie?",
         answer:
-          "Tak. Współpraca zdalna to standard dla całej Polski, także dla Waszego zespołu.",
+          "Tak. Współpraca zdalna to standard dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -264,13 +264,13 @@ export const malopolskaPowiatCities: CityPageContent[] = [
         id: "chr-3",
         question: "Ile trwa etap?",
         answer:
-          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "chr-4",
         question: "Czy musicie być w Chrzanowie?",
         answer:
-          "Nie. Standardem jest praca zdalna. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Nie. Standardem jest praca zdalna. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
     ],
     relatedServiceSlugs: [
@@ -357,7 +357,7 @@ export const malopolskaPowiatCities: CityPageContent[] = [
         id: "olk-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "olk-4",
@@ -444,13 +444,13 @@ export const malopolskaPowiatCities: CityPageContent[] = [
         id: "pro-2",
         question: "Czy to dla MŚP?",
         answer:
-          "Tak. Zaczynamy od jednego procesu. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Tak. Zaczynamy od jednego procesu. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "pro-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy prostym zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy prostym zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "pro-4",
@@ -636,7 +636,7 @@ export const malopolskaPowiatCities: CityPageContent[] = [
         id: "osw-3",
         question: "Jak łączycie się z ERP?",
         answer:
-          "Przez API, pliki wymiany lub integratory, zależnie od Waszego stacku.",
+          "Przez API, pliki wymiany lub integratory, zależnie od waszego stacku.",
       },
       {
         id: "osw-4",
@@ -903,7 +903,7 @@ export const malopolskaPowiatCities: CityPageContent[] = [
         id: "boc-1",
         question: "Czy średnia firma może zacząć?",
         answer:
-          "Tak. Zaczynamy od jednego procesu. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Tak. Zaczynamy od jednego procesu. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "boc-2",
@@ -915,7 +915,7 @@ export const malopolskaPowiatCities: CityPageContent[] = [
         id: "boc-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "boc-4",
@@ -1095,7 +1095,7 @@ export const malopolskaPowiatCities: CityPageContent[] = [
         id: "dab-2",
         question: "Czy trudne w utrzymaniu?",
         answer:
-          "Projektujemy pod prostotę. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Projektujemy pod prostotę. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "dab-3",
@@ -1194,7 +1194,7 @@ export const malopolskaPowiatCities: CityPageContent[] = [
         id: "nta-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "nta-4",
@@ -1281,7 +1281,7 @@ export const malopolskaPowiatCities: CityPageContent[] = [
         id: "zak-2",
         question: "Czy musicie być na miejscu?",
         answer:
-          "Standardem jest współpraca zdalna. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Standardem jest współpraca zdalna. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "zak-3",
@@ -1461,7 +1461,7 @@ export const malopolskaPowiatCities: CityPageContent[] = [
         id: "gor-1",
         question: "Czy średnia firma może zacząć?",
         answer:
-          "Tak. Zaczynamy od jednego procesu. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Tak. Zaczynamy od jednego procesu. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "gor-2",
@@ -1473,13 +1473,13 @@ export const malopolskaPowiatCities: CityPageContent[] = [
         id: "gor-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "gor-4",
         question: "Czy musicie być w Gorlicach?",
         answer:
-          "Nie. Standardem jest praca zdalna. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Nie. Standardem jest praca zdalna. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
     ],
     relatedServiceSlugs: [

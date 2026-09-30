@@ -59,7 +59,7 @@ export const polnocWschodCities: CityPageContent[] = [
       },
     ],
     howWeWork:
-      "W Gdyni zaczynamy od bezpłatnej konsultacji 30 minut. Potem mapujemy 1–2 procesy o najwyższym koszcie chaosu, wdrażamy zdalnie i testujemy na Waszych danych. Jeśli trzeba zebrać wiedzę od zmiany portowej, robimy to w dogodnych oknach, bez wymogu stałej obecności na miejscu.",
+      "W Gdyni zaczynamy od bezpłatnej konsultacji 30 minut. Potem mapujemy 1–2 procesy o najwyższym koszcie chaosu, wdrażamy zdalnie i testujemy na waszych danych. Jeśli trzeba zebrać wiedzę od zmiany portowej, robimy to w dogodnych oknach, bez wymogu stałej obecności na miejscu.",
     faq: [
       {
         id: "gdy-1",
@@ -116,7 +116,7 @@ export const polnocWschodCities: CityPageContent[] = [
       "Odciążamy bydgoskie zespoły produkcyjne, handlowe i IT, gdy zamówienia, produkcja i księgowość nie gadają ze sobą w jednym tempie.",
     introParagraphs: [
       "Bydgoszcz łączy silny przemysł przetwórczy z rosnącym sektorem IT i usług dla biznesu. Automatyzacja procesów w Bydgoszczy zwykle zaczyna się od luk między ERP a codzienną pracą biura: ręczne potwierdzenia zamówień, Excel jako „system planowania” i maile zamiast obiegu akceptacji.",
-      "Współpracujemy z bydgoskimi firmami zdalnie: najpierw wskazujemy proces z najszybszym zwrotem, potem wdrażamy bez budowania kolejnego działu automatyzacji u Was na miejscu.",
+      "Współpracujemy z bydgoskimi firmami zdalnie: najpierw wskazujemy proces z najszybszym zwrotem, potem wdrażamy bez budowania kolejnego działu automatyzacji u was na miejscu.",
     ],
     localContext:
       "Lokalny rynek to m.in. produkcja, maszyny, chemia i coraz więcej firm technologicznych obsługujących klientów w całej Polsce. W praktyce widać presję na koszty operacyjne, rotację w administracji i brak spójnych reguł między sprzedażą a logistyką wewnętrzną.",
@@ -377,7 +377,7 @@ export const polnocWschodCities: CityPageContent[] = [
         id: "gru-3",
         question: "Jak wygląda współpraca z firmami z Torunia i Bydgoszczy?",
         answer:
-          "Ten sam model zdalny. Dobieramy proces pod Waszą skalę, nie kopiujemy rozwiązań korporacyjnych.",
+          "Ten sam model zdalny. Dobieramy proces pod waszą skalę, nie kopiujemy rozwiązań korporacyjnych.",
       },
       {
         id: "gru-4",
@@ -931,7 +931,7 @@ export const polnocWschodCities: CityPageContent[] = [
       },
     ],
     howWeWork:
-      "Z firmami z Rzeszowa pracujemy online: konsultacja, mapowanie procesu, wdrożenie i testy na Waszych danych. W projektach wrażliwych na compliance omawiamy dostępy i zakres danych przed pierwszą linią kodu integracji.",
+      "Z firmami z Rzeszowa pracujemy online: konsultacja, mapowanie procesu, wdrożenie i testy na waszych danych. W projektach wrażliwych na compliance omawiamy dostępy i zakres danych przed pierwszą linią kodu integracji.",
     faq: [
       {
         id: "rze-1",

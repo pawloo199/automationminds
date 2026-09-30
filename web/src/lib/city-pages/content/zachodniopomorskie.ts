@@ -78,7 +78,7 @@ export const zachodniopomorskiePowiatCities: CityPageContent[] = [
         id: "pol-3",
         question: "Jak łączycie się z ERP?",
         answer:
-          "Przez API, pliki wymiany lub integratory, zależnie od Waszego stacku.",
+          "Przez API, pliki wymiany lub integratory, zależnie od waszego stacku.",
       },
       {
         id: "pol-4",
@@ -177,7 +177,7 @@ export const zachodniopomorskiePowiatCities: CityPageContent[] = [
         id: "gol-4",
         question: "Czy zdalnie?",
         answer:
-          "Tak. Współpraca zdalna to standard dla całej Polski, także dla Waszego zespołu.",
+          "Tak. Współpraca zdalna to standard dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -264,7 +264,7 @@ export const zachodniopomorskiePowiatCities: CityPageContent[] = [
         id: "gry-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "gry-4",
@@ -351,13 +351,13 @@ export const zachodniopomorskiePowiatCities: CityPageContent[] = [
         id: "pyr-2",
         question: "Czy to dla MŚP?",
         answer:
-          "Tak. Zaczynamy od jednego procesu. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Tak. Zaczynamy od jednego procesu. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "pyr-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy prostym zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy prostym zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "pyr-4",
@@ -444,7 +444,7 @@ export const zachodniopomorskiePowiatCities: CityPageContent[] = [
         id: "mys-2",
         question: "Czy trudne w utrzymaniu?",
         answer:
-          "Projektujemy pod prostotę. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Projektujemy pod prostotę. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "mys-3",
@@ -537,7 +537,7 @@ export const zachodniopomorskiePowiatCities: CityPageContent[] = [
         id: "swi-2",
         question: "Czy musicie być na miejscu?",
         answer:
-          "Standardem jest współpraca zdalna. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Standardem jest współpraca zdalna. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "swi-3",
@@ -636,7 +636,7 @@ export const zachodniopomorskiePowiatCities: CityPageContent[] = [
         id: "kam-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy prostym zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy prostym zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "kam-4",
@@ -723,7 +723,7 @@ export const zachodniopomorskiePowiatCities: CityPageContent[] = [
         id: "grf-2",
         question: "Czy trudne w utrzymaniu?",
         answer:
-          "Projektujemy pod prostotę. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Projektujemy pod prostotę. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "grf-3",
@@ -816,7 +816,7 @@ export const zachodniopomorskiePowiatCities: CityPageContent[] = [
         id: "kol-2",
         question: "Czy musicie być na miejscu?",
         answer:
-          "Standardem jest współpraca zdalna. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Standardem jest współpraca zdalna. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "kol-3",
@@ -1002,7 +1002,7 @@ export const zachodniopomorskiePowiatCities: CityPageContent[] = [
         id: "swd-2",
         question: "Czy trudne w utrzymaniu?",
         answer:
-          "Projektujemy pod prostotę. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Projektujemy pod prostotę. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "swd-3",
@@ -1089,7 +1089,7 @@ export const zachodniopomorskiePowiatCities: CityPageContent[] = [
         id: "dra-1",
         question: "Czy średnia firma może zacząć?",
         answer:
-          "Tak. Zaczynamy od jednego procesu. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Tak. Zaczynamy od jednego procesu. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "dra-2",
@@ -1101,7 +1101,7 @@ export const zachodniopomorskiePowiatCities: CityPageContent[] = [
         id: "dra-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "dra-4",
@@ -1287,7 +1287,7 @@ export const zachodniopomorskiePowiatCities: CityPageContent[] = [
         id: "bia-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "bia-4",
@@ -1473,7 +1473,7 @@ export const zachodniopomorskiePowiatCities: CityPageContent[] = [
         id: "szc-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "szc-4",
@@ -1554,7 +1554,7 @@ export const zachodniopomorskiePowiatCities: CityPageContent[] = [
         id: "wal-1",
         question: "Czy średnia firma może zacząć?",
         answer:
-          "Tak. Zaczynamy od jednego procesu. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Tak. Zaczynamy od jednego procesu. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "wal-2",
@@ -1566,13 +1566,13 @@ export const zachodniopomorskiePowiatCities: CityPageContent[] = [
         id: "wal-3",
         question: "Ile trwa?",
         answer:
-          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Kilka tygodni przy wąskim zakresie. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
       {
         id: "wal-4",
         question: "Czy musicie być w Wałczu?",
         answer:
-          "Nie. Standardem jest praca zdalna. Zakres ustalamy po krótkiej diagnozie Waszego procesu.",
+          "Nie. Standardem jest praca zdalna. Zakres ustalamy po krótkiej diagnozie waszego procesu.",
       },
     ],
     relatedServiceSlugs: [

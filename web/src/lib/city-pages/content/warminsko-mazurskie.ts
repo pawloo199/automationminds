@@ -177,7 +177,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
         id: "ost-4",
         question: "Czy musicie być w Ostródzie?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -270,7 +270,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
         id: "ila-4",
         question: "Czy zdalnie?",
         answer:
-          "Tak. Współpraca zdalna to standard dla całej Polski, także dla Waszego zespołu.",
+          "Tak. Współpraca zdalna to standard dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -363,7 +363,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
         id: "nml-4",
         question: "Czy musicie być w Nowym Mieście Lubawskim?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -456,7 +456,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
         id: "bra-4",
         question: "Czy musicie być w Braniewie?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -549,7 +549,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
         id: "lid-4",
         question: "Czy zdalnie?",
         answer:
-          "Tak. Współpraca zdalna to standard dla całej Polski, także dla Waszego zespołu.",
+          "Tak. Współpraca zdalna to standard dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -642,7 +642,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
         id: "bar-4",
         question: "Czy zdalnie?",
         answer:
-          "Tak. Współpraca zdalna to standard dla całej Polski, także dla Waszego zespołu.",
+          "Tak. Współpraca zdalna to standard dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -735,7 +735,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
         id: "szc-4",
         question: "Czy musicie być w Szczytnie?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -828,7 +828,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
         id: "nid-4",
         question: "Czy zdalnie?",
         answer:
-          "Tak. Współpraca zdalna to standard dla całej Polski, także dla Waszego zespołu.",
+          "Tak. Współpraca zdalna to standard dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -921,7 +921,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
         id: "dzi-4",
         question: "Czy zdalnie?",
         answer:
-          "Tak. Współpraca zdalna to standard dla całej Polski, także dla Waszego zespołu.",
+          "Tak. Współpraca zdalna to standard dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -1014,7 +1014,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
         id: "mra-4",
         question: "Czy musicie być w Mrągowie?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -1107,7 +1107,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
         id: "ket-4",
         question: "Czy musicie być w Kętrzynie?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -1200,7 +1200,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
         id: "giz-4",
         question: "Czy musicie być w Giżycku?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -1293,7 +1293,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
         id: "pis-4",
         question: "Czy musicie być w Piszu?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -1380,7 +1380,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
         id: "elk-3",
         question: "Jak łączycie się z ERP?",
         answer:
-          "Przez API, pliki wymiany lub integratory, zależnie od Waszego stacku.",
+          "Przez API, pliki wymiany lub integratory, zależnie od waszego stacku.",
       },
       {
         id: "elk-4",
@@ -1479,7 +1479,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
         id: "ole-4",
         question: "Czy musicie być w Olecku?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -1572,7 +1572,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
         id: "gol-4",
         question: "Czy zdalnie?",
         answer:
-          "Tak. Współpraca zdalna to standard dla całej Polski, także dla Waszego zespołu.",
+          "Tak. Współpraca zdalna to standard dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [
@@ -1665,7 +1665,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
         id: "weg-4",
         question: "Czy musicie być w Węgorzewie?",
         answer:
-          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla Waszego zespołu.",
+          "Nie. Standardem jest współpraca zdalna dla całej Polski, także dla waszego zespołu.",
       },
     ],
     relatedServiceSlugs: [

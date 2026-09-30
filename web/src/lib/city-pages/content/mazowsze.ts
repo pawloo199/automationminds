@@ -60,7 +60,7 @@ export const mazowszePowiatCities: CityPageContent[] = [
       },
     ],
     howWeWork:
-      "Z firmami z Pruszkowa zaczynamy od bezpłatnej konsultacji 30 minut. Potem mapujemy proces o najwyższym koszcie chaosu i wdrażamy zdalnie, z testami na Waszych danych.",
+      "Z firmami z Pruszkowa zaczynamy od bezpłatnej konsultacji 30 minut. Potem mapujemy proces o najwyższym koszcie chaosu i wdrażamy zdalnie, z testami na waszych danych.",
     faq: [
       {
         id: "pru-1",
@@ -165,7 +165,7 @@ export const mazowszePowiatCities: CityPageContent[] = [
         id: "pia-2",
         question: "Czy integrujecie sklep, WMS i księgowość?",
         answer:
-          "Gdy dane są dostępne cyfrowo, tak. Dobieramy metodę do Waszego stacku.",
+          "Gdy dane są dostępne cyfrowo, tak. Dobieramy metodę do waszego stacku.",
       },
       {
         id: "pia-3",
@@ -1839,7 +1839,7 @@ export const mazowszePowiatCities: CityPageContent[] = [
         id: "mak-2",
         question: "Czy to skomplikowane w utrzymaniu?",
         answer:
-          "Projektujemy pod prostotę i szkolimy Wasz zespół.",
+          "Projektujemy pod prostotę i szkolimy wasz zespół.",
       },
       {
         id: "mak-3",
@@ -3080,7 +3080,7 @@ export const mazowszePowiatCities: CityPageContent[] = [
     regionCluster: "mazowsze",
     metaTitle: "Automatyzacja procesów w Szydłowcu | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm z Szydłowca: produkcja kamienia, handel i usługi. Zdalne wdrożenia.",
+      "Automatyzacja dla firm ze Szydłowca: produkcja kamienia, handel i usługi. Zdalne wdrożenia.",
     heroTitle: "Automatyzacja procesów w Szydłowcu",
     heroLead:
       "Wspieramy szydłowieckie firmy produkcyjne i handlowe, gdy specyfikacje zamówień i dokumenty nie mogą tonąć w mailach.",
