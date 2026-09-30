@@ -93,7 +93,7 @@ export default async function HomePage() {
           aria-hidden
         />
         <div
-          className="absolute -right-1/4 top-0 h-[70%] w-[55%] bg-[radial-gradient(circle_at_center,rgba(109,81,253,0.28),transparent_68%)]"
+          className="absolute -right-1/4 top-0 hidden h-[70%] lg:block w-[55%] bg-[radial-gradient(circle_at_center,rgba(109,81,253,0.28),transparent_68%)]"
           aria-hidden
         />
         <div
@@ -105,23 +105,24 @@ export default async function HomePage() {
           <div className="hero-grid__accent" />
         </div>
 
-        <Container className="relative z-10 pb-10 pt-24 lg:pb-12 lg:pt-28">
+        <Container className="relative z-10 pb-10 pt-[5.5rem] sm:pt-24 lg:pb-12 lg:pt-28">
           <div className="grid items-start gap-10 lg:grid-cols-12 lg:gap-x-12 lg:gap-y-0">
-            <div className="lg:col-span-7 lg:row-start-1 lg:pt-6">
-              <p className="inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.22em] text-brand-light sm:text-sm">
+            <div className="flex flex-col lg:col-span-7 lg:row-start-1 lg:pt-6">
+              <p className="hidden items-center gap-3 text-xs font-semibold uppercase tracking-[0.22em] text-brand-light sm:inline-flex sm:text-sm">
                 <span className="h-px w-10 bg-brand" aria-hidden />
                 {C.hero.eyebrow}
               </p>
-              <h1 className="mt-5 text-[2.1rem] font-bold leading-[1.08] tracking-tight sm:mt-6 sm:text-5xl lg:text-[3.15rem]">
+              <h1 className="text-[1.95rem] font-bold leading-[1.1] tracking-tight sm:mt-6 sm:text-5xl lg:text-[3.15rem]">
                 {C.hero.title.slice(0, C.hero.title.length - C.hero.titleHighlight.length)}
                 <span className="about-gradient-text">{C.hero.titleHighlight}</span>
               </h1>
-              <p className="mt-5 max-w-2xl text-lg leading-relaxed text-white/80">
+              <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/80 sm:mt-5 sm:text-lg">
                 {C.hero.lead}
               </p>
-              <ul className="mt-7 space-y-2.5">
+              {/* Na telefonie przyciski są przed listą korzyści, żeby mieściły się w pierwszym ekranie. */}
+              <ul className="order-last mt-7 space-y-2.5 lg:order-none">
                 {C.hero.bullets.map((bullet) => (
-                  <li key={bullet} className="flex items-start gap-3 text-base">
+                  <li key={bullet} className="flex items-start gap-3 text-sm sm:text-base">
                     <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand text-white">
                       <Check className="h-3.5 w-3.5" aria-hidden />
                     </span>
@@ -129,7 +130,7 @@ export default async function HomePage() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <div className="mt-6 grid gap-2.5 sm:mt-8 sm:flex sm:gap-3">
                 <a
                   href="#konsultacja"
                   data-track="consultation"
@@ -143,7 +144,7 @@ export default async function HomePage() {
                 <a
                   href={phoneHref}
                   data-track-location="hero"
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-7 py-4 text-base font-semibold text-white transition hover:bg-white/10"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 bg-white/5 px-7 py-3.5 text-base font-semibold text-white backdrop-blur-sm transition hover:bg-white/10 sm:py-4"
                 >
                   <Phone className="h-4 w-4" aria-hidden />
                   Zadzwoń: {settings.phone}
