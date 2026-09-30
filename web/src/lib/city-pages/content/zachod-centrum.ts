@@ -89,7 +89,7 @@ export const zachodCentrumCities: CityPageContent[] = [
     relatedServiceSlugs: [
       "doradztwo-i-optymalizacja-procesow-biznesowych",
       "automatyzacja-dla-ksiegowosci",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-raportow",
     ],
     nearbyCitySlugs: [
@@ -387,7 +387,7 @@ export const zachodCentrumCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-w-obsludze-klienta",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-raportow",
@@ -590,7 +590,7 @@ export const zachodCentrumCities: CityPageContent[] = [
       "automatyzacja-w-produkcji-i-uslugach",
       "automatyzacja-dla-logistyki",
       "automatyzacja-dla-ksiegowosci",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
     ],
     nearbyCitySlugs: [
       "ostrow-wielkopolski",
@@ -790,7 +790,7 @@ export const zachodCentrumCities: CityPageContent[] = [
       "automatyzacja-dla-logistyki",
       "automatyzacja-w-produkcji-i-uslugach",
       "automatyzacja-dla-ksiegowosci",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
     ],
     nearbyCitySlugs: [
       "kalisz",
@@ -888,7 +888,7 @@ export const zachodCentrumCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-w-produkcji-i-uslugach",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-dla-logistyki",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
@@ -987,7 +987,7 @@ export const zachodCentrumCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-w-obsludze-klienta",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-raportow",
@@ -1290,7 +1290,7 @@ export const zachodCentrumCities: CityPageContent[] = [
       "automatyzacja-w-produkcji-i-uslugach",
       "automatyzacja-dla-hr",
       "automatyzacja-dla-ksiegowosci",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
     ],
     nearbyCitySlugs: [
       "limanowa",
@@ -1395,7 +1395,7 @@ export const zachodCentrumCities: CityPageContent[] = [
     relatedServiceSlugs: [
       "automatyzacja-dla-logistyki",
       "automatyzacja-dla-ksiegowosci",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
     nearbyCitySlugs: [

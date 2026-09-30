@@ -29,7 +29,7 @@ export default defineArticle({
   ],
   relatedServiceSlugs: [
     "automatyzacja-dla-ksiegowosci",
-    "automatyzacja-dla-sprzedazy-i-marketingu",
+    "automatyzacja-sprzedazy",
   ],
   relatedArticleSlugs: [
     "5-procesow-do-automatyzacji-w-malej-firmie",
@@ -87,7 +87,7 @@ export default defineArticle({
     "Jeśli to twoja pierwsza integracja, przejrzyj też listę [7 błędów przy pierwszym wdrożeniu automatyzacji](/poradnik/bledy-przy-pierwszym-wdrozeniu-automatyzacji). Większość z nich dotyczy właśnie wyjątków i testów, o których pisaliśmy wyżej.",
     "## Czy to się opłaca?",
     "Policz, ile faktur wystawiacie miesięcznie i ile minut zajmuje jedna, łącznie z dopytywaniem handlowca. Dolicz czas na korekty i telefon do klienta, który nie zapłacił, bo nikt mu nie przypomniał. Przy kilkudziesięciu fakturach miesięcznie wynik bywa zaskakujący. Dokładną metodę opisujemy w artykule [jak mierzyć ROI automatyzacji](/poradnik/jak-mierzyc-roi-automatyzacji).",
-    "Jeśli oprócz faktur chcesz poukładać cały proces od pierwszego zapytania klienta, zajrzyj do tekstu o [automatyzacji obsługi leadów](/poradnik/automatyzacja-obslugi-leadow-sprzedazowych) albo na stronę [automatyzacji sprzedaży i marketingu](/uslugi/automatyzacja-dla-sprzedazy-i-marketingu).",
+    "Jeśli oprócz faktur chcesz poukładać cały proces od pierwszego zapytania klienta, zajrzyj do tekstu o [automatyzacji obsługi leadów](/poradnik/automatyzacja-obslugi-leadow-sprzedazowych) albo na stronę [automatyzacji sprzedaży](/uslugi/automatyzacja-sprzedazy).",
   ].join("\n\n"),
   faq: [
     {

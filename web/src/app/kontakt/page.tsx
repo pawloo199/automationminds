@@ -4,7 +4,12 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { Container } from "@/components/ui/Container";
-import { getServices, getSettings } from "@/lib/airtable";
+import { getSettings } from "@/lib/airtable";
+import {
+  CONTACT_FORM_SERVICE_OPTIONS,
+  getPublishedServices,
+  servicePath,
+} from "@/lib/services/catalog";
 import type { GuideFaqItem } from "@/lib/airtable.types";
 import { COMPANY, COMPANY_ADDRESS_LINE } from "@/lib/company";
 import { CONSULTATION_OFFER } from "@/lib/consultation-offer";
@@ -104,10 +109,8 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function ContactPage() {
-  const [settings, services] = await Promise.all([
-    getSettings(),
-    getServices(),
-  ]);
+  const settings = await getSettings();
+  const services = getPublishedServices();
   const author = defaultGuideAuthor;
   const phoneHref = `tel:${settings.phone.replace(/\s/g, "")}`;
   const breadcrumbs = [
@@ -167,10 +170,7 @@ export default async function ContactPage() {
               <ContactFormStepsLazy
                 sourcePage="/kontakt"
                 redirectOnSuccess
-                services={services.map((service) => ({
-                  id: service.id,
-                  menuLabel: service.menuLabel,
-                }))}
+                services={CONTACT_FORM_SERVICE_OPTIONS}
               />
             </div>
             <div className="text-white lg:col-span-6 lg:col-start-1 lg:row-start-2">
@@ -304,12 +304,12 @@ export default async function ContactPage() {
               </h2>
               <ul className="mt-6 grid gap-3 sm:grid-cols-2">
                 {services.map((service) => (
-                  <li key={service.id}>
+                  <li key={service.slug}>
                     <Link
-                      href={`/uslugi/${service.slug}`}
+                      href={servicePath(service.slug)}
                       className="group flex h-full items-center justify-between gap-3 rounded-xl bg-white px-4 py-3 text-sm font-medium text-dark shadow-sm transition hover:text-brand"
                     >
-                      {service.menuLabel}
+                      {service.name}
                       <ArrowUpRight
                         className="h-4 w-4 shrink-0 text-brand/50 transition group-hover:text-brand"
                         aria-hidden

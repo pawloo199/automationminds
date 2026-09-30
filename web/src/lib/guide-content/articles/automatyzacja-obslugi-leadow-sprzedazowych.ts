@@ -30,7 +30,7 @@ export default defineArticle({
     "Rozmowa z klientem zostaje przy człowieku. Automat ma sprawić, że handlowiec ma na nią więcej czasu.",
   ],
   relatedServiceSlugs: [
-    "automatyzacja-dla-sprzedazy-i-marketingu",
+    "automatyzacja-sprzedazy",
     "automatyzacja-raportow",
   ],
   relatedArticleSlugs: [
@@ -91,7 +91,7 @@ export default defineArticle({
     "Droga klienta nie kończy się na wygranej szansie. Gdy handlowiec oznaczy sprzedaż w CRM, może automatycznie powstać faktura, a informacja o płatności wrócić do handlowca. Opisujemy to w artykule o [integracji CRM z systemem do fakturowania](/poradnik/integracja-crm-z-fakturowaniem). Obsługa leadów i faktury to zresztą dwa z pięciu procesów, które najczęściej polecamy na start. Pozostałe znajdziesz w tekście [co zautomatyzować w małej firmie](/poradnik/5-procesow-do-automatyzacji-w-malej-firmie).",
     "## Od czego zacząć",
     "Zacznij od jednego źródła leadów, zwykle formularza na stronie, i jednej ścieżki: zapis w CRM, potwierdzenie dla klienta, zadanie dla handlowca, przypomnienie po kilku godzinach. Kiedy to działa stabilnie, dołóż kolejne kanały, scoring i follow-up.",
-    "Jeśli chcesz od razu zaprojektować całą drogę klienta, od reklamy przez pierwszą rozmowę po fakturę, zobacz, jak pracujemy przy [automatyzacji sprzedaży i marketingu](/uslugi/automatyzacja-dla-sprzedazy-i-marketingu).",
+    "Jeśli chcesz od razu zaprojektować całą drogę klienta, od reklamy przez pierwszą rozmowę po fakturę, zobacz, jak pracujemy przy [automatyzacji sprzedaży](/uslugi/automatyzacja-sprzedazy).",
   ].join("\n\n"),
   faq: [
     {

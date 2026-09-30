@@ -89,7 +89,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-dla-logistyki",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-w-obsludze-klienta",
       "automatyzacja-raportow",
     ],
@@ -183,7 +183,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
     relatedServiceSlugs: [
       "automatyzacja-w-produkcji-i-uslugach",
       "automatyzacja-dla-ksiegowosci",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
     nearbyCitySlugs: ["ilawa", "elblag", "olsztyn", "nowe-miasto-lubawskie", "gdansk"],
@@ -274,7 +274,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-dla-hr",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -369,7 +369,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
     relatedServiceSlugs: [
       "automatyzacja-w-produkcji-i-uslugach",
       "automatyzacja-dla-ksiegowosci",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
     nearbyCitySlugs: ["ilawa", "ostroda", "dzialdowo", "torun", "olsztyn"],
@@ -461,7 +461,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-dla-logistyki",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-w-obsludze-klienta",
       "automatyzacja-raportow",
     ],
@@ -553,7 +553,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-dla-hr",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -647,7 +647,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-w-obsludze-klienta",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
     ],
@@ -834,7 +834,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
     relatedServiceSlugs: [
       "automatyzacja-w-produkcji-i-uslugach",
       "automatyzacja-dla-ksiegowosci",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
     nearbyCitySlugs: ["szczytno", "dzialdowo", "olsztyn", "mlawa", "ostroda"],
@@ -926,7 +926,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-dla-logistyki",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-w-obsludze-klienta",
       "automatyzacja-raportow",
     ],
@@ -1019,7 +1019,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-w-obsludze-klienta",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
     ],
@@ -1111,7 +1111,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-dla-hr",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -1205,7 +1205,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-w-obsludze-klienta",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
     ],
@@ -1299,7 +1299,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
     relatedServiceSlugs: [
       "automatyzacja-w-produkcji-i-uslugach",
       "automatyzacja-dla-ksiegowosci",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
     nearbyCitySlugs: ["gizycko", "mragowo", "elk", "szczytno", "olsztyn"],
@@ -1485,7 +1485,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
     relatedServiceSlugs: [
       "automatyzacja-w-produkcji-i-uslugach",
       "automatyzacja-dla-ksiegowosci",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
     nearbyCitySlugs: ["elk", "goldap", "suwalki", "gizycko", "olsztyn"],
@@ -1577,7 +1577,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-w-obsludze-klienta",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
     ],
@@ -1670,7 +1670,7 @@ export const warminskoMazurskiePowiatCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-w-obsludze-klienta",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
     ],

@@ -89,7 +89,7 @@ export const polnocWschodCities: CityPageContent[] = [
     relatedServiceSlugs: [
       "automatyzacja-dla-logistyki",
       "automatyzacja-w-obsludze-klienta",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
     ],
     nearbyCitySlugs: [
@@ -189,7 +189,7 @@ export const polnocWschodCities: CityPageContent[] = [
     relatedServiceSlugs: [
       "automatyzacja-w-produkcji-i-uslugach",
       "automatyzacja-dla-ksiegowosci",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
     nearbyCitySlugs: [
@@ -288,7 +288,7 @@ export const polnocWschodCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-w-obsludze-klienta",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-raportow",
       "automatyzacja-w-produkcji-i-uslugach",
     ],
@@ -680,7 +680,7 @@ export const polnocWschodCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-dla-hr",
       "automatyzacja-w-obsludze-klienta",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
@@ -775,7 +775,7 @@ export const polnocWschodCities: CityPageContent[] = [
     relatedServiceSlugs: [
       "automatyzacja-dla-logistyki",
       "automatyzacja-dla-ksiegowosci",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-w-obsludze-klienta",
     ],
     nearbyCitySlugs: ["augustow", "sejny", "grajewo", "bialystok", "olsztyn"],
@@ -867,7 +867,7 @@ export const polnocWschodCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-dla-hr",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-w-obsludze-klienta",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
     ],
@@ -1052,7 +1052,7 @@ export const polnocWschodCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-w-produkcji-i-uslugach",
       "automatyzacja-raportow",
       "doradztwo-i-optymalizacja-procesow-biznesowych",

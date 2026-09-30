@@ -182,7 +182,7 @@ export const podkarpackiePowiatCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-dla-logistyki",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-w-obsludze-klienta",
       "automatyzacja-raportow",
     ],
@@ -276,7 +276,7 @@ export const podkarpackiePowiatCities: CityPageContent[] = [
     relatedServiceSlugs: [
       "automatyzacja-w-produkcji-i-uslugach",
       "automatyzacja-dla-ksiegowosci",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
     nearbyCitySlugs: ["stalowa-wola", "nisko", "mielec", "rzeszow", "debica"],
@@ -367,7 +367,7 @@ export const podkarpackiePowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-dla-hr",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -462,7 +462,7 @@ export const podkarpackiePowiatCities: CityPageContent[] = [
     relatedServiceSlugs: [
       "automatyzacja-w-produkcji-i-uslugach",
       "automatyzacja-dla-ksiegowosci",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
     nearbyCitySlugs: ["rzeszow", "mielec", "lancut", "stalowa-wola", "ropczyce"],
@@ -647,7 +647,7 @@ export const podkarpackiePowiatCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-dla-logistyki",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-w-obsludze-klienta",
       "automatyzacja-raportow",
     ],
@@ -741,7 +741,7 @@ export const podkarpackiePowiatCities: CityPageContent[] = [
     relatedServiceSlugs: [
       "automatyzacja-w-produkcji-i-uslugach",
       "automatyzacja-dla-ksiegowosci",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
     nearbyCitySlugs: ["lancut", "nisko", "stalowa-wola", "jaroslaw", "rzeszow"],
@@ -1111,7 +1111,7 @@ export const podkarpackiePowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-dla-hr",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -1298,7 +1298,7 @@ export const podkarpackiePowiatCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-dla-logistyki",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-w-obsludze-klienta",
       "automatyzacja-raportow",
     ],
@@ -1390,7 +1390,7 @@ export const podkarpackiePowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-dla-hr",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -1484,7 +1484,7 @@ export const podkarpackiePowiatCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-w-obsludze-klienta",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
     ],
@@ -1578,7 +1578,7 @@ export const podkarpackiePowiatCities: CityPageContent[] = [
     relatedServiceSlugs: [
       "automatyzacja-w-produkcji-i-uslugach",
       "automatyzacja-dla-ksiegowosci",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
     nearbyCitySlugs: ["krosno", "brzozow", "ustrzyki-dolne", "przemysl", "rzeszow"],
@@ -1671,7 +1671,7 @@ export const podkarpackiePowiatCities: CityPageContent[] = [
     relatedServiceSlugs: [
       "automatyzacja-w-produkcji-i-uslugach",
       "automatyzacja-dla-ksiegowosci",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
     nearbyCitySlugs: ["krosno", "sanok", "strzyzow", "rzeszow", "ustrzyki-dolne"],
@@ -1763,7 +1763,7 @@ export const podkarpackiePowiatCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-w-obsludze-klienta",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
     ],

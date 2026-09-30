@@ -8,7 +8,8 @@ import { IntroSection } from "@/components/sections/IntroSection";
 import { StatsRow } from "@/components/sections/StatsRow";
 import { TabbedCases } from "@/components/sections/TabbedCases";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { getHomePageData, getServices } from "@/lib/airtable";
+import { getHomePageData } from "@/lib/airtable";
+import { CONTACT_FORM_SERVICE_OPTIONS } from "@/lib/services/catalog";
 import type { HeroSlide } from "@/lib/airtable.types";
 import { CONSULTATION_OFFER } from "@/lib/consultation-offer";
 import { getCityCoverageSearchIndex } from "@/lib/city-pages";
@@ -34,9 +35,8 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function HomePage() {
-  const [data, services, searchableCities] = await Promise.all([
+  const [data, searchableCities] = await Promise.all([
     getHomePageData(),
-    getServices(),
     Promise.resolve(getCityCoverageSearchIndex()),
   ]);
   const heroSlides = getStaticHomeHero(data.heroSlides);
@@ -47,10 +47,7 @@ export default async function HomePage() {
       <HeroSlider
         slides={heroSlides}
         phone={data.settings.phone}
-        services={services.map((service) => ({
-          id: service.id,
-          menuLabel: service.menuLabel,
-        }))}
+        services={CONTACT_FORM_SERVICE_OPTIONS}
       />
       {data.intro ? (
         <IntroSection
@@ -62,10 +59,7 @@ export default async function HomePage() {
           buttonLink={data.intro.buttonLink}
           listItems={data.listItems.slice(0, 4).map((item) => item.text)}
           sourcePage="/"
-          services={services.map((service) => ({
-            id: service.id,
-            menuLabel: service.menuLabel,
-          }))}
+          services={CONTACT_FORM_SERVICE_OPTIONS}
         />
       ) : null}
       {data.areasHeader ? (
@@ -76,10 +70,7 @@ export default async function HomePage() {
           buttonText={data.areasHeader.buttonText}
           buttonLink={data.areasHeader.buttonLink}
           sourcePage="/"
-          services={services.map((service) => ({
-            id: service.id,
-            menuLabel: service.menuLabel,
-          }))}
+          services={CONTACT_FORM_SERVICE_OPTIONS}
         />
       ) : null}
       {data.conversation ? (
@@ -89,10 +80,7 @@ export default async function HomePage() {
           cities={data.citySilos}
           searchableCities={searchableCities}
           sourcePage="/"
-          services={services.map((service) => ({
-            id: service.id,
-            menuLabel: service.menuLabel,
-          }))}
+          services={CONTACT_FORM_SERVICE_OPTIONS}
           useModalCta
         />
       ) : null}

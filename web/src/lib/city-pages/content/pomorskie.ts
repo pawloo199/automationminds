@@ -89,7 +89,7 @@ export const pomorskiePowiatCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-w-obsludze-klienta",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
     ],
@@ -182,7 +182,7 @@ export const pomorskiePowiatCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-dla-logistyki",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-w-obsludze-klienta",
       "automatyzacja-raportow",
     ],
@@ -274,7 +274,7 @@ export const pomorskiePowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-dla-hr",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -369,7 +369,7 @@ export const pomorskiePowiatCities: CityPageContent[] = [
     relatedServiceSlugs: [
       "automatyzacja-w-produkcji-i-uslugach",
       "automatyzacja-dla-ksiegowosci",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
     nearbyCitySlugs: ["gdynia", "puck", "gdansk", "kartuzy", "sopot"],
@@ -461,7 +461,7 @@ export const pomorskiePowiatCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-w-obsludze-klienta",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
     ],
@@ -553,7 +553,7 @@ export const pomorskiePowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-dla-hr",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -740,7 +740,7 @@ export const pomorskiePowiatCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-dla-logistyki",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-w-obsludze-klienta",
       "automatyzacja-raportow",
     ],
@@ -834,7 +834,7 @@ export const pomorskiePowiatCities: CityPageContent[] = [
     relatedServiceSlugs: [
       "automatyzacja-w-produkcji-i-uslugach",
       "automatyzacja-dla-ksiegowosci",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
     nearbyCitySlugs: ["tczew", "nowy-dwor-gdanski", "sztum", "kwidzyn", "gdansk"],
@@ -1111,7 +1111,7 @@ export const pomorskiePowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-dla-hr",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -1204,7 +1204,7 @@ export const pomorskiePowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-dla-hr",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -1298,7 +1298,7 @@ export const pomorskiePowiatCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-w-obsludze-klienta",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
     ],
@@ -1392,7 +1392,7 @@ export const pomorskiePowiatCities: CityPageContent[] = [
     relatedServiceSlugs: [
       "automatyzacja-w-produkcji-i-uslugach",
       "automatyzacja-dla-ksiegowosci",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
     nearbyCitySlugs: ["slupsk", "koscierzyna", "lebork", "chojnice", "czluchow"],
@@ -1484,7 +1484,7 @@ export const pomorskiePowiatCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-dla-logistyki",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-w-obsludze-klienta",
       "automatyzacja-raportow",
     ],
@@ -1576,7 +1576,7 @@ export const pomorskiePowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-dla-hr",
       "doradztwo-i-optymalizacja-procesow-biznesowych",

@@ -274,7 +274,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-dla-logistyki",
       "automatyzacja-w-produkcji-i-uslugach",
       "automatyzacja-raportow",
@@ -370,7 +370,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
       "doradztwo-i-optymalizacja-procesow-biznesowych",
       "automatyzacja-w-obsludze-klienta",
       "automatyzacja-raportow",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
     ],
     nearbyCitySlugs: ["wroclaw", "milicz", "trzebnica", "olawa", "strzelin"],
   },
@@ -1018,7 +1018,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-dla-logistyki",
       "automatyzacja-dla-ksiegowosci",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -1391,7 +1391,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-w-obsludze-klienta",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-dla-ksiegowosci",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
@@ -1578,7 +1578,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
     relatedServiceSlugs: [
       "automatyzacja-w-produkcji-i-uslugach",
       "automatyzacja-dla-logistyki",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
     nearbyCitySlugs: ["olawa", "zabkowice-slaskie", "dzierzoniow", "wroclaw", "olesnica"],
@@ -1670,7 +1670,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-dla-ksiegowosci",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-raportow",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
@@ -1950,7 +1950,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
     relatedServiceSlugs: [
       "automatyzacja-w-obsludze-klienta",
       "automatyzacja-w-produkcji-i-uslugach",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
     nearbyCitySlugs: ["jelenia-gora", "luban", "boleslawiec", "kamienna-gora", "zgorzelec"],

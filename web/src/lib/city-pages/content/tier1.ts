@@ -93,7 +93,7 @@ export const tier1Cities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-dla-hr",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
@@ -389,7 +389,7 @@ export const tier1Cities: CityPageContent[] = [
     relatedServiceSlugs: [
       "automatyzacja-dla-logistyki",
       "automatyzacja-w-produkcji-i-uslugach",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-dla-ksiegowosci",
     ],
     nearbyCitySlugs: [
@@ -488,7 +488,7 @@ export const tier1Cities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-dla-hr",
       "automatyzacja-w-produkcji-i-uslugach",
@@ -591,7 +591,7 @@ export const tier1Cities: CityPageContent[] = [
     relatedServiceSlugs: [
       "automatyzacja-dla-logistyki",
       "automatyzacja-w-obsludze-klienta",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
     ],
     nearbyCitySlugs: [
@@ -692,7 +692,7 @@ export const tier1Cities: CityPageContent[] = [
       "automatyzacja-dla-logistyki",
       "automatyzacja-w-produkcji-i-uslugach",
       "automatyzacja-dla-ksiegowosci",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
     ],
     nearbyCitySlugs: [
       "police",

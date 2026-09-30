@@ -460,7 +460,7 @@ export const slaskCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-w-obsludze-klienta",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-dla-hr",
     ],
@@ -831,7 +831,7 @@ export const slaskCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-w-obsludze-klienta",
       "automatyzacja-w-produkcji-i-uslugach",
       "automatyzacja-raportow",
@@ -1020,7 +1020,7 @@ export const slaskCities: CityPageContent[] = [
       "automatyzacja-w-obsludze-klienta",
       "automatyzacja-w-produkcji-i-uslugach",
       "automatyzacja-dla-hr",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
     ],
     nearbyCitySlugs: ["klobuck", "lubliniec", "myszkow", "zawiercie", "katowice"],
   },

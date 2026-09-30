@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
-import type { Service, Settings } from "@/lib/airtable.types";
+import type { Settings } from "@/lib/airtable.types";
+import { SERVICE_GROUPS, SERVICES_HUB_PATH } from "@/lib/services/catalog";
 import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
 import type { ReactNode } from "react";
 import { COMPANY, COMPANY_ADDRESS_LINE } from "@/lib/company";
@@ -9,13 +10,14 @@ import Link from "next/link";
 
 const mainNav = [
   { href: "/", label: "Start" },
+  { href: "/uslugi", label: "Usługi" },
   { href: "/o-nas", label: "O nas" },
   { href: "/poradnik", label: "Poradnik" },
   { href: "/kontakt", label: "Kontakt" },
 ] as const;
 
 const FOOTER_ABOUT =
-  "Pomagamy firmom w całej Polsce skracać czas pracy zespołów przez automatyzację procesów i wdrożenia AI. Łączymy systemy, porządkujemy przepływy danych i budujemy rozwiązania, które realnie odciążają biuro, sprzedaż, produkcję oraz obsługę klienta — zdalnie, w mierzalnych etapach.";
+  "Pomagamy firmom w całej Polsce skracać czas pracy zespołów przez automatyzację procesów i wdrożenia AI. Łączymy systemy, porządkujemy przepływy danych i budujemy rozwiązania, które realnie odciążają biuro, sprzedaż, produkcję oraz obsługę klienta. Pracujemy zdalnie, w mierzalnych etapach.";
 
 function FooterLink({
   href,
@@ -68,11 +70,9 @@ function EmailWithSoftBreak({ email }: { email: string }) {
 
 export function Footer({
   settings,
-  services = [],
   guideCategories = [],
 }: {
   settings?: Settings;
-  services?: Service[];
   guideCategories?: { slug: string; name: string }[];
 }) {
   const siteName = settings?.siteName || "Automation Minds";
@@ -145,13 +145,22 @@ export function Footer({
 
             <FooterColumn title="Usługi">
               <ul className="flex flex-col gap-2.5">
-                {services.map((service) => (
-                  <li key={service.id}>
-                    <FooterLink href={`/uslugi/${service.slug}`}>
-                      {service.menuLabel}
+                {SERVICE_GROUPS.map((group) => (
+                  <li key={group.id}>
+                    <FooterLink href={`${SERVICES_HUB_PATH}#${group.id}`}>
+                      {group.name}
                     </FooterLink>
                   </li>
                 ))}
+                <li>
+                  <Link
+                    href={SERVICES_HUB_PATH}
+                    className="inline-flex items-center gap-1 text-sm font-semibold text-brand transition hover:gap-2"
+                  >
+                    Wszystkie usługi
+                    <ArrowUpRight className="h-4 w-4" aria-hidden />
+                  </Link>
+                </li>
               </ul>
             </FooterColumn>
 

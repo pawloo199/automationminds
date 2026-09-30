@@ -1,9 +1,10 @@
 import type {
   GuideAuthor,
   GuideFaqItem,
-  Service,
 } from "@/lib/airtable.types";
 import type { GuideHeading } from "@/lib/guide-content/body";
+import { servicePath } from "@/lib/services/catalog";
+import type { ServiceCatalogEntry } from "@/lib/services/types";
 import { ArrowUpRight, ChevronDown, ListChecks } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -183,7 +184,11 @@ export function ArticleAuthor({ author }: { author: GuideAuthor }) {
   );
 }
 
-export function ArticleServices({ services }: { services: Service[] }) {
+export function ArticleServices({
+  services,
+}: {
+  services: ServiceCatalogEntry[];
+}) {
   if (services.length === 0) return null;
   return (
     <section aria-labelledby="jak-mozemy-pomoc" className="mt-14">
@@ -196,14 +201,14 @@ export function ArticleServices({ services }: { services: Service[] }) {
       <div className="mt-6 grid gap-4 sm:grid-cols-2">
         {services.map((service) => (
           <Link
-            key={service.id}
-            href={`/uslugi/${service.slug}`}
+            key={service.slug}
+            href={servicePath(service.slug)}
             className="group flex flex-col justify-between rounded-2xl border border-brand/10 bg-white p-5 transition hover:border-brand/30 hover:shadow-md"
           >
             <div>
-              <p className="font-semibold text-dark">{service.menuLabel}</p>
+              <p className="font-semibold text-dark">{service.name}</p>
               <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-muted">
-                {service.introBody}
+                {service.menuDescription}
               </p>
             </div>
             <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand">

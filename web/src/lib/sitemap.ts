@@ -13,6 +13,8 @@ import {
   guideCategoryPath,
 } from "@/lib/guide-articles";
 import { siteUrl } from "@/lib/metadata";
+import { SERVICE_CONTENT } from "@/lib/services/content";
+import { getPublishedServices, servicePath } from "@/lib/services/catalog";
 import type { MetadataRoute } from "next";
 
 function parseDate(value: string | undefined): Date {
@@ -41,6 +43,7 @@ export async function buildSitemapEntries(): Promise<MetadataRoute.Sitemap> {
 
   const staticPages: MetadataRoute.Sitemap = [
     "",
+    "/uslugi",
     "/o-nas",
     "/poradnik",
     "/kontakt",
@@ -52,9 +55,12 @@ export async function buildSitemapEntries(): Promise<MetadataRoute.Sitemap> {
     priority: path === "" ? 1 : path === "/kontakt" ? 0.85 : 0.8,
   }));
 
-  const servicePages: MetadataRoute.Sitemap = services.map((service) => ({
-    url: `${siteUrl}/uslugi/${service.slug}`,
-    lastModified: parseDate(service.updatedAt),
+  const servicePages: MetadataRoute.Sitemap = getPublishedServices().map((entry) => ({
+    url: `${siteUrl}${servicePath(entry.slug)}`,
+    lastModified: parseDate(
+      SERVICE_CONTENT[entry.slug]?.updatedAt ??
+        services.find((service) => service.slug === entry.slug)?.updatedAt,
+    ),
     changeFrequency: "weekly",
     priority: 0.75,
   }));

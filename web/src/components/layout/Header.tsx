@@ -2,9 +2,15 @@
 
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
-import type { Service, Settings } from "@/lib/airtable.types";
+import type { Settings } from "@/lib/airtable.types";
 import { cn } from "@/lib/cn";
-import { ChevronDown, Menu, Phone, X } from "lucide-react";
+import { CONSULTATION_OFFER } from "@/lib/consultation-offer";
+import {
+  getPublishedServicesByGroup,
+  servicePath,
+  SERVICES_HUB_PATH,
+} from "@/lib/services/catalog";
+import { ArrowRight, ChevronDown, Menu, Phone, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -12,14 +18,27 @@ import { useEffect, useState } from "react";
 
 export type HeaderGuideCategory = { slug: string; name: string };
 
+const SERVICE_MENU = getPublishedServicesByGroup();
+
+/**
+ * Układ kolumn mega menu: doradztwo i AI w jednej kolumnie, dane w drugiej,
+ * automatyzacja procesów (najwięcej pozycji) na dwóch kolumnach.
+ */
+const MEGA_MENU_COLUMNS = [["doradztwo", "ai"], ["dane"], ["automatyzacja"]]
+  .map((ids) =>
+    SERVICE_MENU.filter((entry) => ids.includes(entry.group.id)).map((entry) => ({
+      ...entry,
+      wide: entry.group.id === "automatyzacja",
+    })),
+  )
+  .filter((column) => column.length > 0);
+
 export function Header({
   settings,
-  services,
   guideCategories = [],
   transparent = false,
 }: {
   settings: Settings;
-  services: Service[];
   guideCategories?: HeaderGuideCategory[];
   transparent?: boolean;
 }) {
@@ -31,6 +50,7 @@ export function Header({
   const [guideOpen, setGuideOpen] = useState(false);
   const [mobileGuideOpen, setMobileGuideOpen] = useState(false);
   const isGuideActive = pathname.startsWith("/poradnik");
+  const isServicesActive = pathname.startsWith(SERVICES_HUB_PATH);
 
   useEffect(() => {
     let ticking = false;
@@ -52,7 +72,17 @@ export function Header({
     setMobileServicesOpen(false);
     setMobileGuideOpen(false);
     setGuideOpen(false);
+    setServicesOpen(false);
   }, [pathname]);
+
+  useEffect(() => {
+    if (!servicesOpen) return;
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setServicesOpen(false);
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [servicesOpen]);
 
   useEffect(() => {
     if (!mobileOpen) {
@@ -68,7 +98,7 @@ export function Header({
     };
   }, [mobileOpen]);
 
-  const isSolid = scrolled || !transparent || mobileOpen;
+  const isSolid = scrolled || !transparent || mobileOpen || servicesOpen;
 
   const closeMobileMenu = () => {
     setMobileOpen(false);
@@ -133,35 +163,137 @@ export function Header({
         <nav className="hidden items-center gap-8 lg:flex">
           {desktopNavLink("/", "Start")}
           <div
-            className="relative"
+            className="flex h-[72px] items-center"
             onMouseEnter={() => setServicesOpen(true)}
             onMouseLeave={() => setServicesOpen(false)}
+            onFocus={() => setServicesOpen(true)}
+            onBlur={(event) => {
+              if (!event.currentTarget.contains(event.relatedTarget)) {
+                setServicesOpen(false);
+              }
+            }}
           >
-            <button
-              type="button"
+            <Link
+              href={SERVICES_HUB_PATH}
+              aria-haspopup="true"
+              aria-expanded={servicesOpen}
+              aria-controls="mega-menu-uslugi"
               className={cn(
-                "flex items-center gap-1 text-sm font-medium",
-                isSolid ? "text-dark hover:text-brand" : "text-white/90 hover:text-white",
+                "flex items-center gap-1 text-sm font-medium transition",
+                isServicesActive
+                  ? "text-brand"
+                  : isSolid
+                    ? "text-dark hover:text-brand"
+                    : "text-white/90 hover:text-white",
               )}
             >
               Usługi
-              <ChevronDown className="h-4 w-4" />
-            </button>
-            {servicesOpen ? (
-              <div className="absolute left-0 top-full z-50 w-80 pt-2">
-                <div className="rounded-2xl border border-brand/10 bg-white p-2 shadow-xl">
-                  {services.map((service) => (
-                    <Link
-                      key={service.id}
-                      href={`/uslugi/${service.slug}`}
-                      className="block rounded-xl px-4 py-3 text-sm text-dark hover:bg-surface"
+              <ChevronDown
+                className={cn(
+                  "h-4 w-4 transition-transform duration-200",
+                  servicesOpen && "rotate-180",
+                )}
+                aria-hidden
+              />
+            </Link>
+            <div
+              id="mega-menu-uslugi"
+              className={cn(
+                "absolute inset-x-0 top-full z-50 border-t border-brand/10 bg-white shadow-2xl shadow-dark/10 transition duration-200",
+                servicesOpen
+                  ? "visible translate-y-0 opacity-100"
+                  : "invisible -translate-y-1 opacity-0",
+              )}
+            >
+              <Container className="py-8">
+                <div className="grid grid-cols-4 gap-x-8 gap-y-8">
+                  {MEGA_MENU_COLUMNS.map((column) => (
+                    <div
+                      key={column.map((entry) => entry.group.id).join("-")}
+                      className={cn(
+                        "space-y-8",
+                        column.some((entry) => entry.wide) && "col-span-2",
+                      )}
                     >
-                      {service.menuLabel}
-                    </Link>
+                      {column.map(({ group, services: groupServices, wide }) => {
+                        const Icon = group.icon;
+                        return (
+                          <div key={group.id}>
+                            <Link
+                              href={`${SERVICES_HUB_PATH}#${group.id}`}
+                              className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-brand hover:text-brand-dark"
+                            >
+                              <Icon className="h-4 w-4" aria-hidden />
+                              {group.name}
+                            </Link>
+                            <ul
+                              className={cn(
+                                "mt-3 grid gap-x-6 gap-y-0.5",
+                                wide && "grid-cols-2",
+                              )}
+                            >
+                              {groupServices.map((service) => {
+                                const href = servicePath(service.slug);
+                                return (
+                                  <li key={service.slug}>
+                                    <Link
+                                      href={href}
+                                      className={cn(
+                                        "-mx-3 block rounded-xl px-3 py-2 transition hover:bg-surface",
+                                        pathname === href && "bg-brand/5",
+                                      )}
+                                    >
+                                      <span
+                                        className={cn(
+                                          "block text-sm font-semibold leading-snug",
+                                          pathname === href ? "text-brand" : "text-dark",
+                                        )}
+                                      >
+                                        {service.menuLabel}
+                                      </span>
+                                      <span className="mt-0.5 line-clamp-2 block text-xs leading-snug text-muted">
+                                        {service.menuDescription}
+                                      </span>
+                                    </Link>
+                                  </li>
+                                );
+                              })}
+                            </ul>
+                          </div>
+                        );
+                      })}
+                    </div>
                   ))}
                 </div>
-              </div>
-            ) : null}
+                <div className="mt-8 flex items-center justify-between gap-6 rounded-2xl bg-surface px-6 py-4">
+                  <p className="text-sm text-dark">
+                    <span className="font-semibold">Nie wiesz, od czego zacząć?</span>{" "}
+                    <span className="text-muted">
+                      {CONSULTATION_OFFER.durationLabel}. Wskażemy, co zautomatyzować najpierw.
+                    </span>
+                  </p>
+                  <div className="flex shrink-0 items-center gap-6">
+                    <Link
+                      href={SERVICES_HUB_PATH}
+                      className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand transition-all hover:gap-2.5"
+                    >
+                      Wszystkie usługi
+                      <ArrowRight className="h-4 w-4" aria-hidden />
+                    </Link>
+                    <Link
+                      href="/kontakt"
+                      data-track="consultation"
+                      data-track-method="link"
+                      data-track-location="mega_menu"
+                      className="inline-flex items-center gap-2 rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-brand-dark"
+                    >
+                      Umów konsultację
+                      <ArrowRight className="h-4 w-4" aria-hidden />
+                    </Link>
+                  </div>
+                </div>
+              </Container>
+            </div>
           </div>
           {guideCategories.length > 0 ? (
             <div
@@ -290,29 +422,44 @@ export function Header({
                   )}
                 >
                   <div className="overflow-hidden">
-                    <ul className="space-y-1 px-2 pb-2 pt-1">
-                      {services.map((service) => {
-                        const href = `/uslugi/${service.slug}`;
-                        const isActive = pathname === href;
-
-                        return (
-                          <li key={service.id}>
-                            <Link
-                              href={href}
-                              onClick={closeMobileMenu}
-                              className={cn(
-                                "flex min-h-11 items-center rounded-lg px-4 py-2.5 text-[15px] leading-snug transition",
-                                isActive
-                                  ? "bg-brand/10 font-medium text-brand"
-                                  : "text-muted hover:bg-surface hover:text-dark",
-                              )}
-                            >
-                              {service.menuLabel}
-                            </Link>
-                          </li>
-                        );
-                      })}
-                    </ul>
+                    <div className="space-y-4 px-2 pb-3 pt-2">
+                      <Link
+                        href={SERVICES_HUB_PATH}
+                        onClick={closeMobileMenu}
+                        className="flex min-h-11 items-center rounded-lg px-4 py-2.5 text-[15px] font-semibold text-brand hover:bg-surface"
+                      >
+                        Wszystkie usługi
+                      </Link>
+                      {SERVICE_MENU.map(({ group, services: groupServices }) => (
+                        <div key={group.id}>
+                          <p className="px-4 text-xs font-semibold uppercase tracking-[0.18em] text-muted">
+                            {group.name}
+                          </p>
+                          <ul className="mt-1 space-y-1">
+                            {groupServices.map((service) => {
+                              const href = servicePath(service.slug);
+                              const isActive = pathname === href;
+                              return (
+                                <li key={service.slug}>
+                                  <Link
+                                    href={href}
+                                    onClick={closeMobileMenu}
+                                    className={cn(
+                                      "flex min-h-11 items-center rounded-lg px-4 py-2.5 text-[15px] leading-snug transition",
+                                      isActive
+                                        ? "bg-brand/10 font-medium text-brand"
+                                        : "text-dark hover:bg-surface",
+                                    )}
+                                  >
+                                    {service.menuLabel}
+                                  </Link>
+                                </li>
+                              );
+                            })}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>

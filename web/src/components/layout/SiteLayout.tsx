@@ -1,7 +1,7 @@
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { MobileCallFab } from "@/components/layout/MobileCallFab";
-import { getServices, getSettings } from "@/lib/airtable";
+import { getSettings } from "@/lib/airtable";
 import { getGuideCategoriesWithCounts } from "@/lib/guide-articles";
 import { cn } from "@/lib/cn";
 import type { ReactNode } from "react";
@@ -13,10 +13,7 @@ export async function SiteLayout({
   children: ReactNode;
   transparentHeader?: boolean;
 }) {
-  const [settings, services] = await Promise.all([
-    getSettings(),
-    getServices(),
-  ]);
+  const settings = await getSettings();
 
   const guideCategories = getGuideCategoriesWithCounts()
     .filter((category) => category.inMenu)
@@ -26,7 +23,6 @@ export async function SiteLayout({
     <>
       <Header
         settings={settings}
-        services={services}
         guideCategories={guideCategories}
         transparent={transparentHeader}
       />
@@ -34,7 +30,6 @@ export async function SiteLayout({
       <MobileCallFab phone={settings.phone} />
       <Footer
         settings={settings}
-        services={services}
         guideCategories={guideCategories}
       />
     </>

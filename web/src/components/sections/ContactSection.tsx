@@ -1,10 +1,10 @@
 import { ContactFormStepsLazy } from "@/components/forms/ContactFormStepsLazy";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { getServices } from "@/lib/airtable";
+import { CONTACT_FORM_SERVICE_OPTIONS } from "@/lib/services/catalog";
 import { Check } from "lucide-react";
 
-export async function ContactSection({
+export function ContactSection({
   subtitle,
   title,
   body,
@@ -21,10 +21,8 @@ export async function ContactSection({
   redirectOnSuccess?: boolean;
   sectionId?: string;
 }) {
-  const services = await getServices();
-
   return (
-    <section className="py-20 lg:py-28" id={sectionId}>
+    <section className="scroll-mt-24 py-20 lg:py-28" id={sectionId}>
       <Container>
         <div className="grid gap-12 lg:grid-cols-2">
           <div>
@@ -54,10 +52,7 @@ export async function ContactSection({
             <ContactFormStepsLazy
               sourcePage={sourcePage}
               redirectOnSuccess={redirectOnSuccess}
-              services={services.map((service) => ({
-                id: service.id,
-                menuLabel: service.menuLabel,
-              }))}
+              services={CONTACT_FORM_SERVICE_OPTIONS}
             />
           </div>
         </div>

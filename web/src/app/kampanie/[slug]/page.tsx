@@ -8,14 +8,13 @@ import { Button } from "@/components/ui/Button";
 import {
   getLandingPageBySlug,
   getLandingPages,
-  getServiceBySlug,
 } from "@/lib/airtable";
 import { CONSULTATION_OFFER } from "@/lib/consultation-offer";
 import {
   breadcrumbJsonLd,
   landingPageJsonLd,
-  serviceJsonLd,
 } from "@/lib/json-ld";
+import { resolvePublishedService, servicePath } from "@/lib/services/catalog";
 import { buildMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -56,8 +55,8 @@ export default async function CampaignPage({
   if (!page) notFound();
 
   const relatedService = page.relatedServiceSlug
-    ? await getServiceBySlug(page.relatedServiceSlug)
-    : null;
+    ? resolvePublishedService(page.relatedServiceSlug)
+    : undefined;
 
   const breadcrumbs = [
     { label: "Strona główna", href: "/" },
@@ -68,7 +67,6 @@ export default async function CampaignPage({
   const jsonLd = [
     landingPageJsonLd(page),
     breadcrumbJsonLd(breadcrumbs),
-    ...(relatedService ? [serviceJsonLd(relatedService)] : []),
   ];
 
   return (
@@ -128,10 +126,10 @@ export default async function CampaignPage({
           <Container className="text-center">
             <p className="text-sm text-muted">Powiązana usługa</p>
             <h2 className="mt-2 text-xl font-bold text-dark">
-              {relatedService.title}
+              {relatedService.name}
             </h2>
             <div className="mt-6">
-              <Button href={`/uslugi/${relatedService.slug}`}>
+              <Button href={servicePath(relatedService.slug)}>
                 Zobacz szczegóły usługi
               </Button>
             </div>

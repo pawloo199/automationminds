@@ -331,3 +331,80 @@ export function cityServiceJsonLd(city: CityPageContent) {
     },
   };
 }
+
+/** Service schema dla stron usług w nowym szablonie. */
+export function serviceDetailJsonLd(
+  entry: { slug: string; name: string; group: string },
+  content: {
+    metaDescription: string;
+    primaryKeyword: string;
+    hero: { imageUrl: string };
+    scope: { items: { title: string; body: string }[] };
+  },
+  groupName: string,
+) {
+  const url = `${siteUrl}/uslugi/${entry.slug}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${url}#service`,
+    name: entry.name,
+    serviceType: content.primaryKeyword,
+    category: groupName,
+    description: content.metaDescription,
+    url,
+    image: content.hero.imageUrl,
+    inLanguage: "pl-PL",
+    areaServed: { "@type": "Country", name: "Polska" },
+    audience: {
+      "@type": "BusinessAudience",
+      name: "Małe i średnie firmy",
+    },
+    provider: {
+      "@type": "Organization",
+      "@id": `${siteUrl}/#organization`,
+      name: "Automation Minds",
+      url: siteUrl,
+    },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: `Zakres usługi: ${entry.name}`,
+      itemListElement: content.scope.items.map((item) => ({
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: item.title,
+          description: item.body,
+        },
+      })),
+    },
+  };
+}
+
+/** Strona /uslugi: lista wszystkich opublikowanych usług. */
+export function servicesHubJsonLd(
+  services: { slug: string; name: string; menuDescription: string }[],
+) {
+  const url = `${siteUrl}/uslugi`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": `${url}#collection`,
+    name: "Usługi Automation Minds",
+    url,
+    inLanguage: "pl-PL",
+    isPartOf: { "@type": "WebSite", url: siteUrl, name: "Automation Minds" },
+    about: { "@id": `${siteUrl}/#organization` },
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: services.length,
+      itemListElement: services.map((service, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        url: `${siteUrl}/uslugi/${service.slug}`,
+        name: service.name,
+        description: service.menuDescription,
+      })),
+    },
+  };
+}

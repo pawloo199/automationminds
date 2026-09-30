@@ -12,8 +12,7 @@ import { ContactSection } from "@/components/sections/ContactSection";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { Container } from "@/components/ui/Container";
-import { getServices } from "@/lib/airtable";
-import type { Service } from "@/lib/airtable.types";
+import { getServicesBySlugs } from "@/lib/services";
 import { CONSULTATION_OFFER } from "@/lib/consultation-offer";
 import {
   getGuideArticles,
@@ -71,10 +70,7 @@ export default async function GuideCategoryPage({
   const articles = getGuideArticlesByCategory(slug);
   if (!category || articles.length === 0) notFound();
 
-  const services = await getServices();
-  const relatedServices = category.relatedServiceSlugs
-    .map((serviceSlug) => services.find((s) => s.slug === serviceSlug))
-    .filter((service): service is Service => Boolean(service));
+  const relatedServices = getServicesBySlugs(category.relatedServiceSlugs);
   const categories = getGuideCategoriesWithCounts();
   const [featured, ...rest] = articles;
 

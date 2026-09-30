@@ -67,7 +67,7 @@ export const guideCategories: GuideCategory[] = [
     ],
     relatedServiceSlugs: [
       "doradztwo-i-optymalizacja-procesow-biznesowych",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-dla-hr",
     ],
@@ -281,7 +281,7 @@ export const guideCategories: GuideCategory[] = [
     relatedServiceSlugs: [
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
       "automatyzacja-dla-ksiegowosci",
-      "automatyzacja-dla-sprzedazy-i-marketingu",
+      "automatyzacja-sprzedazy",
     ],
     cta: {
       title: "Nie wiesz, jakie narzędzie wybrać albo jak połączyć systemy?",

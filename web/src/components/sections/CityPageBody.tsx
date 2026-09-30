@@ -2,21 +2,9 @@ import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { cityPath, type CityPageContent } from "@/lib/city-pages/types";
+import { resolvePublishedService, servicePath } from "@/lib/services/catalog";
 import { ArrowUpRight, MapPin } from "lucide-react";
 import Link from "next/link";
-
-const SERVICE_LABELS: Record<string, string> = {
-  "doradztwo-i-optymalizacja-procesow-biznesowych":
-    "Doradztwo i optymalizacja procesów",
-  "automatyzacja-dla-sprzedazy-i-marketingu": "Automatyzacja sprzedaży i marketingu",
-  "automatyzacja-dla-hr": "Automatyzacja HR",
-  "automatyzacja-dla-ksiegowosci": "Automatyzacja księgowości",
-  "automatyzacja-raportow": "Automatyzacja raportów",
-  "automatyzacja-w-obsludze-klienta": "Automatyzacja obsługi klienta",
-  "automatyzacja-w-produkcji-i-uslugach": "Automatyzacja w produkcji",
-  "automatyzacja-dla-logistyki": "Automatyzacja logistyki",
-  "automatyzacja-oraz-ai-w-niestandardowych-procesach": "Automatyzacja i AI custom",
-};
 
 export function CityPageBody({
   city,
@@ -126,13 +114,16 @@ export function CityPageBody({
               className="mb-10"
             />
             <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {city.relatedServiceSlugs.map((slug) => (
-                <li key={slug}>
+              {city.relatedServiceSlugs
+                .map((slug) => resolvePublishedService(slug))
+                .filter((service) => service !== undefined)
+                .map((service) => (
+                <li key={service.slug}>
                   <Link
-                    href={`/uslugi/${slug}`}
+                    href={servicePath(service.slug)}
                     className="group flex items-center justify-between gap-3 rounded-2xl border border-brand/10 bg-white px-5 py-4 text-sm font-medium text-dark shadow-sm transition hover:border-brand/30 hover:text-brand"
                   >
-                    <span>{SERVICE_LABELS[slug] ?? slug}</span>
+                    <span>{service.name}</span>
                     <ArrowUpRight className="h-4 w-4 shrink-0 text-brand/50 transition group-hover:text-brand" />
                   </Link>
                 </li>

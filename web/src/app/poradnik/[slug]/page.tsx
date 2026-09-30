@@ -14,8 +14,8 @@ import { PageBanner } from "@/components/sections/PageBanner";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { Container } from "@/components/ui/Container";
-import { getServices, getSettings } from "@/lib/airtable";
-import type { Service } from "@/lib/airtable.types";
+import { getSettings } from "@/lib/airtable";
+import { getServicesBySlugs } from "@/lib/services";
 import { CONSULTATION_OFFER } from "@/lib/consultation-offer";
 import {
   formatGuideDate,
@@ -89,13 +89,8 @@ export default async function GuideArticlePage({
   const article = getGuideArticleBySlug(slug);
   if (!article) notFound();
 
-  const [services, settings] = await Promise.all([
-    getServices(),
-    getSettings(),
-  ]);
-  const relatedServices = (article.relatedServiceSlugs ?? [])
-    .map((serviceSlug) => services.find((s) => s.slug === serviceSlug))
-    .filter((service): service is Service => Boolean(service));
+  const settings = await getSettings();
+  const relatedServices = getServicesBySlugs(article.relatedServiceSlugs ?? []);
   const relatedArticles = getRelatedGuideArticles(article);
   const cta = article.cta ?? DEFAULT_CTA;
   const faq = article.faq ?? [];

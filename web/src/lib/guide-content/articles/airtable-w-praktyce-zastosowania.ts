@@ -30,7 +30,7 @@ export default defineArticle({
   ],
   relatedServiceSlugs: [
     "automatyzacja-oraz-ai-w-niestandardowych-procesach",
-    "automatyzacja-dla-sprzedazy-i-marketingu",
+    "automatyzacja-sprzedazy",
     "automatyzacja-dla-hr",
     "automatyzacja-w-produkcji-i-uslugach",
   ],
@@ -87,7 +87,7 @@ export default defineArticle({
     "> [Z praktyki]\n> Zanim zbudujesz bazę, narysuj na kartce tabele i strzałki między nimi. Jeśli rysunek jest czytelny dla osoby spoza projektu, struktura jest dobra. Jeśli trzeba go długo tłumaczyć, warto go uprościć.",
     "## Jak zacząć",
     "Wybierz jedno zastosowanie z listy, które najbardziej boli, i zacznij od niego. Najczęściej jest to baza, na której pracuje najwięcej osób albo od której zależą pieniądze, np. zlecenia czy CRM. Rejestr terminów to z kolei dobry wybór, jeśli chcesz szybko zobaczyć efekt przy małym nakładzie. Zaprojektuj strukturę, przenieś dane, uruchom z zespołem i dopiero wtedy dodawaj automatyzacje. Po kilku tygodniach zobaczysz, czy baza się przyjęła, i będziesz wiedzieć, co rozbudować.",
-    "Airtable to narzędzie, z którym pracujemy szczególnie często. Projektujemy w nim bazy, przenosimy dane z arkuszy i budujemy automatyzacje, które na nich działają, od CRM przez zlecenia po HR. Takie wdrożenia prowadzimy przy [automatyzacji oraz AI w niestandardowych procesach](/uslugi/automatyzacja-oraz-ai-w-niestandardowych-procesach), a w zależności od obszaru także przy [automatyzacji sprzedaży i marketingu](/uslugi/automatyzacja-dla-sprzedazy-i-marketingu), [automatyzacji dla HR](/uslugi/automatyzacja-dla-hr) czy [automatyzacji w produkcji i usługach](/uslugi/automatyzacja-w-produkcji-i-uslugach).",
+    "Airtable to narzędzie, z którym pracujemy szczególnie często. Projektujemy w nim bazy, przenosimy dane z arkuszy i budujemy automatyzacje, które na nich działają, od CRM przez zlecenia po HR. Takie wdrożenia prowadzimy przy [automatyzacji oraz AI w niestandardowych procesach](/uslugi/automatyzacja-oraz-ai-w-niestandardowych-procesach), a w zależności od obszaru także przy [automatyzacji sprzedaży](/uslugi/automatyzacja-sprzedazy), [automatyzacji dla HR](/uslugi/automatyzacja-dla-hr) czy [automatyzacji w produkcji i usługach](/uslugi/automatyzacja-w-produkcji-i-uslugach).",
   ].join("\n\n"),
   faq: [
     {

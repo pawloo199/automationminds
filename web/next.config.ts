@@ -4,6 +4,16 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ["lucide-react"],
   },
+  async redirects() {
+    // Usługi rozdzielone na osobne strony (patrz SERVICE_REDIRECTS w src/lib/services/catalog.ts).
+    return [
+      {
+        source: "/uslugi/automatyzacja-dla-sprzedazy-i-marketingu",
+        destination: "/uslugi/automatyzacja-sprzedazy",
+        permanent: true,
+      },
+    ];
+  },
   images: {
     formats: ["image/avif", "image/webp"],
     remotePatterns: [

@@ -30,7 +30,7 @@ export default defineArticle({
   ],
   relatedServiceSlugs: [
     "doradztwo-i-optymalizacja-procesow-biznesowych",
-    "automatyzacja-dla-sprzedazy-i-marketingu",
+    "automatyzacja-sprzedazy",
     "automatyzacja-dla-ksiegowosci",
     "automatyzacja-w-obsludze-klienta",
   ],
@@ -57,7 +57,7 @@ export default defineArticle({
     "W tym procesie automatyzacja robi kilka prostych rzeczy, które razem zmieniają dużo:",
     "- zbiera zapytania ze wszystkich źródeł w jednym miejscu, np. w CRM takim jak Pipedrive czy HubSpot, a na początek nawet we wspólnym arkuszu,\n- od razu wysyła klientowi potwierdzenie, że wiadomość dotarła i kiedy może spodziewać się odpowiedzi,\n- przypisuje zapytanie do konkretnej osoby według prostych reguł, np. rodzaju usługi albo regionu,\n- przypomina, gdy nikt nie odpisał w ciągu kilku godzin, a po dłuższej ciszy powiadamia właściciela.",
     "Efekt jest prosty do sprawdzenia: żadne zapytanie nie ginie, a klient dostaje reakcję w minutę, a nie następnego dnia. Przy usługach, w których klient pyta kilka firm naraz, szybka odpowiedź często decyduje o tym, kto dostanie zlecenie.",
-    "Takie połączenia buduje się zwykle w narzędziach typu Make, Zapier albo n8n. Sama konfiguracja nie jest trudna. Trudniejsze okazują się szczegóły: duplikaty, gdy ten sam klient pisze dwa razy, spam z formularza, zapytania bez numeru telefonu. Więcej o tym piszemy w artykule o [automatyzacji obsługi leadów sprzedażowych](/poradnik/automatyzacja-obslugi-leadow-sprzedazowych), a jak to wygląda u nas w praktyce, pokazujemy na stronie [automatyzacja sprzedaży i marketingu](/uslugi/automatyzacja-dla-sprzedazy-i-marketingu).",
+    "Takie połączenia buduje się zwykle w narzędziach typu Make, Zapier albo n8n. Sama konfiguracja nie jest trudna. Trudniejsze okazują się szczegóły: duplikaty, gdy ten sam klient pisze dwa razy, spam z formularza, zapytania bez numeru telefonu. Więcej o tym piszemy w artykule o [automatyzacji obsługi leadów sprzedażowych](/poradnik/automatyzacja-obslugi-leadow-sprzedazowych), a jak to wygląda u nas w praktyce, pokazujemy na stronie [automatyzacja sprzedaży](/uslugi/automatyzacja-sprzedazy).",
     "## 2. Faktury, płatności i dokumenty kosztowe",
     "Faktury to klasyka. Handlowiec zamyka sprzedaż, a potem ktoś przepisuje dane klienta, kwotę i termin płatności do programu do fakturowania. Przy dziesięciu fakturach miesięcznie to drobiazg. Przy stu robi się z tego kilka dni pracy i sporo miejsca na literówkę w NIP-ie.",
     "Od 2026 roku faktury w Polsce stopniowo przechodzą przez Krajowy System e-Faktur (KSeF), więc wiele firm i tak musi uporządkować ten obszar. To dobry moment, żeby przy okazji pozbyć się ręcznego przepisywania.",
