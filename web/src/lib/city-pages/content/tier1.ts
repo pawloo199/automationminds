@@ -4,107 +4,6 @@ import { wroclaw } from "./tier-a/wroclaw";
 
 export const tier1Cities: CityPageContent[] = [
   warszawa,
-  {
-    slug: "krakow",
-    name: "Kraków",
-    nameGenitive: "Krakowa",
-    nameLocative: "Krakowie",
-    voivodeship: "małopolskie",
-    regionCluster: "malopolska",
-    metaTitle: "Automatyzacja procesów w Krakowie | Automation Minds",
-    metaDescription:
-      "Automatyzacja dla firm z Krakowa: IT, shared services, HR i sprzedaż. Zdalne wdrożenia, bezpłatna konsultacja, mierzalne efekty w procesach.",
-    heroTitle: "Automatyzacja procesów w Krakowie",
-    heroLead:
-      "Pomagamy krakowskim firmom IT, SSC i usługom B2B odzyskać czas zespołu: od ticketów po raporty dla klienta.",
-    introParagraphs: [
-      "Kraków od lat przyciąga centra usług, software house’y i firmy outsourcingowe. Automatyzacja procesów w Krakowie najczęściej dotyczy tego, co dzieje się „między” narzędziami: Jira, HRIS, CRM, billing i skrzynka mailowa klienta. Gdy te światy nie gadają ze sobą, rosną godziny niebillowane i ryzyko SLA.",
-      "Współpracujemy z zespołami z Krakowa zdalnie: najpierw diagnoza wąskich gardeł, potem wdrożenie w krótkich sprintach. Celem nie jest kolejna platforma „na pokaz”, tylko mniej ręcznego klepania i czytelniejszy status pracy.",
-    ],
-    localContext:
-      "Lokalny rynek opiera się na dużej liczbie projektów dla klientów zagranicznych i wysokiej rotacji juniorów. Procesy rekrutacji, onboardingu i ewidencji czasu pracy szybko stają się wąskim gardłem. Równolegle działy delivery walczą z ręcznym raportowaniem statusów do klienta i dublowaniem danych między PM a finansami.",
-    whyHere:
-      "W Krakowie automatyzacja zwraca się, gdy chroni marżę projektową i jakość relacji z klientem. Zamiast dokładać etaty do „ogarniania chaosu”, spajamy powtarzalne kroki w stabilny przepływ, z kontrolą wyjątków, a nie ich ukrywaniem.",
-    focusIndustries: [
-      {
-        title: "Software house’y i product IT",
-        body: "Automatyzujemy statusy projektów, handoffy między zespołami i raportowanie czasu, żeby delivery nie tonęło w administracji.",
-      },
-      {
-        title: "Shared services i BPO",
-        body: "Standaryzujemy obsługę zgłoszeń i kontrolę jakości, gdy wolumen rośnie szybciej niż możliwość dokształcania nowych osób.",
-      },
-      {
-        title: "Turystyka biznesowa i hospitality",
-        body: "Porządkujemy rezerwacje, faktury i komunikację z gośćmi, szczególnie przy sezonowych skokach obciążenia.",
-      },
-      {
-        title: "Edukacja i usługi szkoleniowe",
-        body: "Spinamy zapisy, płatności i wysyłkę materiałów, żeby biuro nie goniło Exceli przed każdym kursem.",
-      },
-    ],
-    focusProcesses: [
-      {
-        title: "Tickety i eskalacje",
-        body: "Reguły priorytetów, SLA i powiadomień zamiast „kto pierwszy zobaczy maila”.",
-      },
-      {
-        title: "Rekrutacja i onboarding IT",
-        body: "Od aplikacji po checklistę sprzętu i dostępów, jeden tor widoczny dla HR, team leadów i IT.",
-      },
-      {
-        title: "Billing i rozliczenia projektów",
-        body: "Mniej ręcznego zbierania godzin i statusów przed wystawieniem faktury klientowi.",
-      },
-      {
-        title: "Raportowanie dla klienta",
-        body: "Cykl statusów i KPI budowany z narzędzi źródłowych, nie z cotygodniowego kopiowania do slajdów.",
-      },
-    ],
-    howWeWork:
-      "Z krakowskimi firmami pracujemy głównie online: warsztat mapowania, propozycja zakresu, wdrożenie i testy. Dajemy jasny backlog zmian, żebyście wiedzieli, co rusza w pierwszej kolejności, a co zostaje na kolejną iterację. Bezpłatna konsultacja wystarcza, by ocenić, czy w ogóle warto startować.",
-    faq: [
-      {
-        id: "krk-1",
-        question: "Czy automatyzacja w Krakowie ma sens dla małego software house’u?",
-        answer:
-          "Tak. Zwłaszcza przy rosnącej liczbie klientów i juniorów. Zaczynamy od jednego procesu (np. onboarding albo raportowanie), bez wielkiego programu transformacji.",
-      },
-      {
-        id: "krk-2",
-        question: "Czy musicie być na miejscu w Krakowie?",
-        answer:
-          "Nie. Obsługujemy firmy z Krakowa zdalnie i hybrydowo. Spotkania na żywo są opcją projektową, nie wymogiem.",
-      },
-      {
-        id: "krk-3",
-        question: "Jak łączycie się z Jira, HubSpotem albo systemem HR?",
-        answer:
-          "Przez API, webhooki i sprawdzone integratory. Jeśli dane są dostępne cyfrowo, niemal zawsze da się zbudować bezpieczny przepływ.",
-      },
-      {
-        id: "krk-4",
-        question: "Czy automatyzacja zastąpi PM-ów i HR w Krakowie?",
-        answer:
-          "Nie. Zdejmuje powtarzalną robotę, żeby ludzie zajmowali się decyzjami, klientem i jakością delivery, nie przepisywaniem statusów.",
-      },
-    ],
-    relatedServiceSlugs: [
-      "automatyzacja-dla-hr",
-      "automatyzacja-raportow",
-      "automatyzacja-w-obsludze-klienta",
-      "doradztwo-i-optymalizacja-procesow-biznesowych",
-    ],
-    nearbyCitySlugs: [
-      "wieliczka",
-      "myslenice",
-      "bochnia",
-      "chrzanow",
-      "olkusz",
-      "oswiecim",
-      "tarnow",
-    ],
-  },
   wroclaw,
   {
     slug: "lodz",
@@ -507,5 +406,6 @@ export const tier1Cities: CityPageContent[] = [
       "swinoujscie",
       "pyrzyce",
     ],
+  
   },
 ];
