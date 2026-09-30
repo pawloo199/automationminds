@@ -6,6 +6,7 @@ import { lubelskiePowiatCities } from "./content/lubelskie";
 import { lubuskiePowiatCities } from "./content/lubuskie";
 import { slaskieCities } from "./content/regions/slaskie";
 import { malopolskieCities } from "./content/regions/malopolskie";
+import { wielkopolskieCities } from "./content/regions/wielkopolskie";
 import { mazowieckieCities } from "./content/regions/mazowieckie";
 import { opolskiePowiatCities } from "./content/opolskie";
 import { podkarpackiePowiatCities } from "./content/podkarpackie";
@@ -15,7 +16,6 @@ import { pomorskiePowiatCities } from "./content/pomorskie";
 import { swietokrzyskiePowiatCities } from "./content/swietokrzyskie";
 import { tier1Cities } from "./content/tier1";
 import { warminskoMazurskiePowiatCities } from "./content/warminsko-mazurskie";
-import { wielkopolskaPowiatCities } from "./content/wielkopolska";
 import { zachodCentrumCities } from "./content/zachod-centrum";
 import { zachodniopomorskiePowiatCities } from "./content/zachodniopomorskie";
 import { cityPath, type CityPageContent } from "./types";
@@ -27,9 +27,9 @@ const allCities: CityPageContent[] = [
   ...zachodCentrumCities,
   ...dolnoslaskieCities,
   ...mazowieckieCities,
+  ...wielkopolskieCities,
   ...malopolskieCities,
   ...slaskieCities,
-  ...wielkopolskaPowiatCities,
   ...opolskiePowiatCities,
   ...lubuskiePowiatCities,
   ...pomorskiePowiatCities,
