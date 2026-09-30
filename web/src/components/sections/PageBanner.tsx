@@ -4,15 +4,17 @@ import Image from "next/image";
 export function PageBanner({
   title,
   imageUrl,
+  imageAlt,
 }: {
   title: string;
   imageUrl: string;
+  imageAlt?: string;
 }) {
   return (
     <section className="relative flex min-h-[50vh] items-center justify-center overflow-hidden bg-dark">
       <Image
         src={imageUrl}
-        alt={title}
+        alt={imageAlt ?? title}
         fill
         className="object-cover"
         sizes="100vw"

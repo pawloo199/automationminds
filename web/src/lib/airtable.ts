@@ -23,7 +23,7 @@ import type {
 } from "./airtable.types";
 import {
   getLatestGuideArticles,
-} from "./guide-articles-mock";
+} from "./guide-content";
 import {
   getMockCaseStudiesForService,
   getMockHomePageData,

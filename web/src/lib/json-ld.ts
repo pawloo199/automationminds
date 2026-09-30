@@ -2,6 +2,7 @@ import type {
   BreadcrumbItem,
   FaqItem,
   GuideArticle,
+  GuideFaqItem,
   LandingPage,
   Service,
   Settings,
@@ -103,25 +104,83 @@ export function landingPageJsonLd(page: LandingPage) {
   };
 }
 
-export function articleJsonLd(article: GuideArticle) {
+export function articleJsonLd(article: GuideArticle, logoPath: string) {
+  const url = `${siteUrl}/poradnik/${article.slug}`;
+  const organization = {
+    "@type": "Organization",
+    "@id": `${siteUrl}/#organization`,
+    name: "Automation Minds",
+    url: siteUrl,
+    logo: { "@type": "ImageObject", url: absoluteAssetUrl(logoPath) },
+  };
+
   return {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
+    "@id": `${url}#article`,
     headline: article.title,
-    description: article.excerpt,
-    image: article.imageUrl,
+    description: article.metaDescription,
+    image: {
+      "@type": "ImageObject",
+      url: article.imageUrl,
+      caption: article.imageAlt,
+    },
     datePublished: article.publishedAt,
+    dateModified: article.updatedAt,
+    inLanguage: "pl-PL",
+    articleSection: article.category,
+    keywords: [article.primaryKeyword, ...(article.secondaryKeywords ?? [])]
+      .filter(Boolean)
+      .join(", ") || undefined,
+    wordCount: article.wordCount,
+    timeRequired: `PT${article.readTimeMinutes}M`,
     author: {
-      "@type": "Organization",
-      name: "Automation Minds",
-      url: siteUrl,
+      "@type": "Person",
+      name: article.author.name,
+      jobTitle: article.author.jobTitle,
+      description: article.author.bio,
+      image: article.author.imageUrl,
+      sameAs: article.author.linkedinUrl ? [article.author.linkedinUrl] : undefined,
+      worksFor: { "@id": `${siteUrl}/#organization` },
     },
-    publisher: {
-      "@type": "Organization",
-      name: "Automation Minds",
-      url: siteUrl,
+    publisher: organization,
+    isPartOf: {
+      "@type": "Blog",
+      name: "Poradnik Automation Minds",
+      url: `${siteUrl}/poradnik`,
     },
-    mainEntityOfPage: `${siteUrl}/poradnik/${article.slug}`,
+    mainEntityOfPage: { "@type": "WebPage", "@id": url },
+  };
+}
+
+export function guideFaqJsonLd(items: GuideFaqItem[]) {
+  return faqPageJsonLd(
+    items.map((item, index) => ({
+      id: String(index),
+      question: item.question,
+      answer: item.answer,
+      order: index,
+      keywords: "",
+    })),
+  );
+}
+
+export function guideIndexJsonLd(articles: GuideArticle[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Poradnik o automatyzacji procesów w firmie",
+    url: `${siteUrl}/poradnik`,
+    inLanguage: "pl-PL",
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: articles.map((article, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        url: `${siteUrl}/poradnik/${article.slug}`,
+        name: article.title,
+      })),
+    },
   };
 }
 

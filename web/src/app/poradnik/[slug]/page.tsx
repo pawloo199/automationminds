@@ -1,24 +1,50 @@
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import { ArticleBody } from "@/components/guide/ArticleBody";
+import {
+  ArticleAuthor,
+  ArticleFaq,
+  ArticleServices,
+  ArticleSummary,
+  ArticleTocMobile,
+  ArticleTocSidebar,
+  FAQ_HEADING,
+} from "@/components/guide/ArticleSections";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBanner } from "@/components/sections/PageBanner";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { Container } from "@/components/ui/Container";
+import { getServices, getSettings } from "@/lib/airtable";
+import type { Service } from "@/lib/airtable.types";
+import { CONSULTATION_OFFER } from "@/lib/consultation-offer";
 import {
   formatGuideDate,
   getGuideArticleBySlug,
   getGuideArticles,
+  getRelatedGuideArticles,
   guideArticlePath,
 } from "@/lib/guide-articles";
-import { articleJsonLd, breadcrumbJsonLd } from "@/lib/json-ld";
+import { extractHeadings } from "@/lib/guide-content/body";
+import {
+  articleJsonLd,
+  breadcrumbJsonLd,
+  guideFaqJsonLd,
+} from "@/lib/json-ld";
 import { buildMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
-import { ArrowUpRight, Clock } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Clock } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
 export const revalidate = 60;
+
+const BRAND_SUFFIX = " | Automation Minds";
+const MAX_TITLE_LENGTH = 60;
+
+const DEFAULT_CTA = {
+  title: "Chcesz wiedzieć, co da się zautomatyzować u ciebie?",
+  body: "Opowiedz nam, jak dziś wygląda praca w twojej firmie. Na 30-minutowej rozmowie wskażemy procesy, od których warto zacząć, i powiemy, ile pracy to realnie zdejmie z zespołu.",
+};
 
 export async function generateStaticParams() {
   const articles = getGuideArticles();
@@ -34,11 +60,22 @@ export async function generateMetadata({
   const article = getGuideArticleBySlug(slug);
   if (!article) return {};
 
+  const withBrand = `${article.metaTitle}${BRAND_SUFFIX}`;
+
   return buildMetadata({
-    title: `${article.metaTitle ?? article.title} — Poradnik`,
-    description: article.metaDescription ?? article.excerpt,
+    title:
+      withBrand.length <= MAX_TITLE_LENGTH ? withBrand : article.metaTitle,
+    description: article.metaDescription,
     path: guideArticlePath(slug),
     ogImage: article.imageUrl,
+    article: {
+      publishedTime: article.publishedAt,
+      modifiedTime: article.updatedAt,
+      authors: [article.author.name],
+      section: article.category,
+      tags: [article.primaryKeyword, ...(article.secondaryKeywords ?? [])]
+        .filter((tag): tag is string => Boolean(tag)),
+    },
   });
 }
 
@@ -51,10 +88,21 @@ export default async function GuideArticlePage({
   const article = getGuideArticleBySlug(slug);
   if (!article) notFound();
 
-  const allArticles = getGuideArticles();
-  const relatedArticles = allArticles
-    .filter((item) => item.slug !== slug)
-    .slice(0, 3);
+  const [services, settings] = await Promise.all([
+    getServices(),
+    getSettings(),
+  ]);
+  const relatedServices = (article.relatedServiceSlugs ?? [])
+    .map((serviceSlug) => services.find((s) => s.slug === serviceSlug))
+    .filter((service): service is Service => Boolean(service));
+  const relatedArticles = getRelatedGuideArticles(article);
+  const cta = article.cta ?? DEFAULT_CTA;
+  const faq = article.faq ?? [];
+  const headings = [
+    ...extractHeadings(article.body),
+    ...(faq.length > 0 ? [FAQ_HEADING] : []),
+  ];
+  const isUpdated = article.updatedAt !== article.publishedAt;
 
   const breadcrumbs = [
     { label: "Strona główna", href: "/" },
@@ -65,33 +113,84 @@ export default async function GuideArticlePage({
   return (
     <SiteLayout>
       <JsonLd
-        data={[articleJsonLd(article), breadcrumbJsonLd(breadcrumbs)]}
+        data={[
+          articleJsonLd(article, settings.logoColorUrl),
+          breadcrumbJsonLd(breadcrumbs),
+          ...(faq.length > 0 ? [guideFaqJsonLd(faq)] : []),
+        ]}
       />
-      <PageBanner title={article.title} imageUrl={article.imageUrl} />
+      <PageBanner
+        title={article.title}
+        imageUrl={article.imageUrl}
+        imageAlt={article.imageAlt}
+      />
       <Container className="py-4">
         <Breadcrumbs items={breadcrumbs} />
       </Container>
-      <section className="py-12 lg:py-16">
+      <section className="pb-12 pt-4 lg:pb-16">
         <Container>
-          <div className="mx-auto max-w-3xl">
-            <div className="mb-8 flex flex-wrap items-center gap-3 text-sm text-muted">
-              <span className="rounded-full bg-brand/10 px-3 py-1 font-semibold uppercase tracking-wide text-brand">
-                {article.category}
-              </span>
-              <time dateTime={article.publishedAt}>
-                {formatGuideDate(article.publishedAt)}
-              </time>
-              <span className="inline-flex items-center gap-1">
-                <Clock className="h-4 w-4" aria-hidden />
-                {article.readTimeMinutes} min czytania
-              </span>
-            </div>
-            <p className="text-lg font-medium leading-relaxed text-dark sm:text-xl">
-              {article.excerpt}
-            </p>
-            <div className="mt-8 border-t border-brand/10 pt-8">
-              <ArticleBody body={article.body} />
-            </div>
+          <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[minmax(0,1fr)_17rem]">
+            <article className="min-w-0 max-w-3xl">
+              <div className="mb-8 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted">
+                <span className="rounded-full bg-brand/10 px-3 py-1 font-semibold uppercase tracking-wide text-brand">
+                  {article.category}
+                </span>
+                <a href="#autor" className="font-medium text-dark hover:text-brand">
+                  {article.author.name}
+                </a>
+                <span>
+                  {isUpdated ? "Aktualizacja: " : null}
+                  <time dateTime={isUpdated ? article.updatedAt : article.publishedAt}>
+                    {formatGuideDate(
+                      isUpdated ? article.updatedAt : article.publishedAt,
+                    )}
+                  </time>
+                </span>
+                <span className="inline-flex items-center gap-1">
+                  <Clock className="h-4 w-4" aria-hidden />
+                  {article.readTimeMinutes} min czytania
+                </span>
+              </div>
+              <p className="text-lg font-medium leading-relaxed text-dark sm:text-xl">
+                {article.excerpt}
+              </p>
+              <div className="mt-8 space-y-4">
+                {article.summary?.length ? (
+                  <ArticleSummary items={article.summary} />
+                ) : null}
+                <ArticleTocMobile headings={headings} />
+              </div>
+              <div className="mt-10">
+                <ArticleBody body={article.body} cta={cta} />
+              </div>
+              {faq.length > 0 ? <ArticleFaq items={faq} /> : null}
+              <ArticleServices services={relatedServices} />
+              <ArticleAuthor author={article.author} />
+            </article>
+            <aside className="hidden lg:block">
+              <div className="sticky top-28 space-y-4">
+                <ArticleTocSidebar headings={headings} />
+                <div className="rounded-2xl bg-dark p-5 text-white">
+                  <p className="text-sm font-semibold leading-snug">
+                    {CONSULTATION_OFFER.durationLabel}
+                  </p>
+                  <p className="mt-2 text-sm leading-relaxed text-white/75">
+                    Pokażemy, które procesy w twojej firmie warto zautomatyzować
+                    najpierw.
+                  </p>
+                  <Link
+                    href="#kontakt"
+                    data-track="consultation"
+                    data-track-location="guide_sidebar"
+                    data-track-method="anchor"
+                    className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-light hover:text-white"
+                  >
+                    Umów rozmowę
+                    <ArrowRight className="h-4 w-4" aria-hidden />
+                  </Link>
+                </div>
+              </div>
+            </aside>
           </div>
         </Container>
       </section>
@@ -111,6 +210,9 @@ export default async function GuideArticlePage({
                         {item.category}
                       </p>
                       <p className="mt-2 font-medium text-dark">{item.title}</p>
+                      <p className="mt-2 line-clamp-2 text-sm text-muted">
+                        {item.excerpt}
+                      </p>
                     </div>
                     <ArrowUpRight className="h-4 w-4 text-brand/50 transition group-hover:text-brand" />
                   </Link>
@@ -130,9 +232,10 @@ export default async function GuideArticlePage({
         </section>
       ) : null}
       <ContactSection
-        subtitle="Masz pytania?"
-        title="Porozmawiajmy o automatyzacji w Twojej firmie"
-        body="Opowiedz o swoich procesach — pokażemy, od czego warto zacząć."
+        subtitle={CONSULTATION_OFFER.formSubtitle}
+        title={cta.title}
+        body={cta.body}
+        highlights={CONSULTATION_OFFER.formHighlights}
         sourcePage={guideArticlePath(slug)}
         redirectOnSuccess
       />

@@ -94,19 +94,54 @@ export interface CaseStudy {
   order: number;
 }
 
+export interface GuideAuthor {
+  id: string;
+  name: string;
+  jobTitle: string;
+  bio: string;
+  imageUrl?: string;
+  linkedinUrl?: string;
+}
+
+export interface GuideFaqItem {
+  question: string;
+  answer: string;
+}
+
 export interface GuideArticle {
   id: string;
   slug: string;
+  /** H1 artykułu. */
   title: string;
+  /** Lead pod nagłówkiem i opis na kartach listy. */
   excerpt: string;
+  /**
+   * Treść w uproszczonym markdownie: `##`/`###`, listy `-` i `1.`,
+   * ramki `>`, tabele `|`, `**pogrubienie**`, `[link](/sciezka)`,
+   * `[[CTA]]` (wezwanie do kontaktu w treści).
+   */
   body: string;
   imageUrl: string;
   imageAlt: string;
   category: string;
   publishedAt: string;
+  updatedAt: string;
+  /** Wyliczane z liczby słów treści. */
   readTimeMinutes: number;
-  metaTitle?: string;
-  metaDescription?: string;
+  wordCount: number;
+  metaTitle: string;
+  metaDescription: string;
+  /** Fraza główna, pod którą optymalizujemy artykuł. */
+  primaryKeyword?: string;
+  secondaryKeywords?: string[];
+  author: GuideAuthor;
+  /** Punkty sekcji „W skrócie”. */
+  summary?: string[];
+  faq?: GuideFaqItem[];
+  relatedServiceSlugs?: string[];
+  relatedArticleSlugs?: string[];
+  /** Tekst CTA w treści i sekcji kontaktowej pod artykułem. */
+  cta?: { title: string; body: string };
 }
 
 export interface FaqItem {

@@ -13,7 +13,7 @@ import type {
   Settings,
 } from "./airtable.types";
 import { CONSULTATION_OFFER } from "./consultation-offer";
-import { getLatestGuideArticles } from "./guide-articles-mock";
+import { getLatestGuideArticles } from "./guide-content";
 
 const sectionDefaults = {
   imageAlt: "",

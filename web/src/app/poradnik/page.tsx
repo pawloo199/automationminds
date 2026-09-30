@@ -5,7 +5,7 @@ import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { getGuideArticles } from "@/lib/guide-articles";
-import { breadcrumbJsonLd } from "@/lib/json-ld";
+import { breadcrumbJsonLd, guideIndexJsonLd } from "@/lib/json-ld";
 import { buildMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
 
@@ -13,9 +13,9 @@ export const revalidate = 60;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildMetadata({
-    title: "Poradnik — automatyzacja procesów biznesowych",
+    title: "Poradnik o automatyzacji procesów w firmie | Automation Minds",
     description:
-      "Artykuły o automatyzacji, integracjach, AI i wdrożeniach w firmach. Praktyczna wiedza od zespołu Automation Minds.",
+      "Jak zautomatyzować procesy w firmie, dobrać narzędzia, połączyć systemy i sensownie użyć AI. Praktyczne artykuły z wdrożeń Automation Minds.",
     path: "/poradnik",
   });
 }
@@ -29,18 +29,22 @@ export default async function GuideIndexPage() {
 
   return (
     <SiteLayout>
-      <JsonLd data={[breadcrumbJsonLd(breadcrumbs)]} />
+      <JsonLd
+        data={[breadcrumbJsonLd(breadcrumbs), guideIndexJsonLd(articles)]}
+      />
       <section className="bg-surface py-16 lg:py-20">
         <Container>
           <Breadcrumbs items={breadcrumbs} />
           <SectionHeading
             subtitle="Poradnik"
-            title="Wiedza o automatyzacji procesów"
+            title="Poradnik o automatyzacji procesów w firmie"
             className="mb-4"
+            as="h1"
           />
           <p className="mx-auto max-w-2xl text-center text-muted">
-            Praktyczne artykuły o wdrożeniach, narzędziach i usprawnianiu
-            codziennej pracy zespołu.
+            Piszemy o tym, co widzimy przy wdrożeniach: które procesy warto
+            zautomatyzować najpierw, jak połączyć systemy, ile to kosztuje i
+            gdzie AI rzeczywiście odciąża zespół.
           </p>
         </Container>
       </section>

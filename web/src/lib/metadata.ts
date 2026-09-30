@@ -40,12 +40,21 @@ export function buildMetadata({
   path = "",
   noIndex = false,
   ogImage,
+  article,
 }: {
   title: string;
   description: string;
   path?: string;
   noIndex?: boolean;
   ogImage?: string;
+  /** Włącza Open Graph typu `article` (artykuły Poradnika). */
+  article?: {
+    publishedTime: string;
+    modifiedTime: string;
+    authors: string[];
+    section?: string;
+    tags?: string[];
+  };
 }): Metadata {
   const canonical = `${siteUrl}${path || "/"}`;
   const shortDescription = truncateDescription(description);
@@ -63,8 +72,10 @@ export function buildMetadata({
       url: canonical,
       siteName: "Automation Minds",
       locale: "pl_PL",
-      type: "website",
       images: [{ url: imageUrl, width: 1200, height: 630, alt: title }],
+      ...(article
+        ? { type: "article" as const, ...article }
+        : { type: "website" as const }),
     },
     twitter: {
       card: "summary_large_image",

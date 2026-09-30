@@ -6,12 +6,14 @@ export function SectionHeading({
   body,
   align = "center",
   className,
+  as: Heading = "h2",
 }: {
   subtitle?: string;
   title: string;
   body?: string;
   align?: "left" | "center";
   className?: string;
+  as?: "h1" | "h2";
 }) {
   return (
     <div
@@ -25,9 +27,9 @@ export function SectionHeading({
           {subtitle}
         </p>
       ) : null}
-      <h2 className="text-3xl font-bold tracking-tight text-dark sm:text-4xl">
+      <Heading className="text-3xl font-bold tracking-tight text-dark sm:text-4xl">
         {title}
-      </h2>
+      </Heading>
       {body ? (
         <p className="mt-4 text-base leading-relaxed text-muted">{body}</p>
       ) : null}

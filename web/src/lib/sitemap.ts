@@ -71,7 +71,7 @@ export async function buildSitemapEntries(): Promise<MetadataRoute.Sitemap> {
 
   const guidePages: MetadataRoute.Sitemap = guideArticles.map((item) => ({
     url: `${siteUrl}${guideArticlePath(item.slug)}`,
-    lastModified: parseDate(item.publishedAt),
+    lastModified: parseDate(item.updatedAt),
     changeFrequency: "monthly",
     priority: 0.6,
   }));
