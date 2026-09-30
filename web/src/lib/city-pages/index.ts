@@ -1,5 +1,5 @@
 import { mockCitySilos } from "@/lib/airtable-mock";
-import { dolnySlaskPowiatCities } from "./content/dolny-slask";
+import { dolnoslaskieCities } from "./content/regions/dolnoslaskie";
 import { kujawskoPomorskiePowiatCities } from "./content/kujawsko-pomorskie";
 import { lodzkiePowiatCities } from "./content/lodzkie";
 import { lubelskiePowiatCities } from "./content/lubelskie";
@@ -28,7 +28,7 @@ const allCities: CityPageContent[] = [
   ...slaskPowiatCities,
   ...polnocWschodCities,
   ...zachodCentrumCities,
-  ...dolnySlaskPowiatCities,
+  ...dolnoslaskieCities,
   ...mazowszePowiatCities,
   ...wielkopolskaPowiatCities,
   ...opolskiePowiatCities,
