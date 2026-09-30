@@ -10,12 +10,18 @@ import { ToolsStrip } from "@/components/sections/ToolsStrip";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { Container } from "@/components/ui/Container";
-import { getHomePageData, getSettings } from "@/lib/airtable";
-import { getCityCoverageSearchIndex } from "@/lib/city-pages";
+import { getSettings } from "@/lib/airtable";
+import {
+  CITY_HUB_PATH,
+  cityPath,
+  getCityCoverageSearchIndex,
+  getCityPage,
+} from "@/lib/city-pages";
 import { cn } from "@/lib/cn";
 import { COMPANY } from "@/lib/company";
 import { CONSULTATION_OFFER } from "@/lib/consultation-offer";
 import { defaultGuideAuthor } from "@/lib/guide-content/authors";
+import { HOME_CONTENT } from "@/lib/home-content";
 import { aboutPageJsonLd, breadcrumbJsonLd } from "@/lib/json-ld";
 import { buildMetadata } from "@/lib/metadata";
 import {
@@ -182,16 +188,12 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function AboutPage() {
-  const [settings, homeData] = await Promise.all([
-    getSettings(),
-    getHomePageData(),
-  ]);
+  const settings = await getSettings();
   const author = defaultGuideAuthor;
-  const featuredCities: CityCoverageItem[] = homeData.citySilos.map((city) => ({
-    id: city.id,
-    name: city.name,
-    href: city.href,
-  }));
+  const featuredCities: CityCoverageItem[] = HOME_CONTENT.cities.featuredSlugs
+    .map((slug) => getCityPage(slug))
+    .filter((city) => city !== null)
+    .map((city) => ({ id: city.slug, name: city.name, href: cityPath(city.slug) }));
   const searchableCities = getCityCoverageSearchIndex();
   const breadcrumbs = [
     { label: "Strona główna", href: "/" },
@@ -625,6 +627,13 @@ export default async function AboutPage() {
                 searchableCities={searchableCities}
               />
             </div>
+            <Link
+              href={CITY_HUB_PATH}
+              className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-brand hover:gap-3"
+            >
+              Wszystkie województwa i miasta
+              <ArrowUpRight className="h-4 w-4" aria-hidden />
+            </Link>
           </Container>
         </section>
       ) : null}

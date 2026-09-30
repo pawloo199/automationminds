@@ -307,27 +307,61 @@ export function aboutPageJsonLd(settings: Settings, author: GuideAuthor) {
   ];
 }
 
-/** Service schema for city SEO pages — areaServed only, no fake local address. */
+/** Service schema dla stron miast: tylko areaServed, bez fikcyjnego lokalnego adresu. */
 export function cityServiceJsonLd(city: CityPageContent) {
+  const url = `${siteUrl}${cityPath(city.slug)}`;
   return {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: `Automatyzacja procesów biznesowych — ${city.name}`,
+    "@id": `${url}#service`,
+    name: `Automatyzacja procesów biznesowych: ${city.name}`,
     description: city.metaDescription,
-    url: `${siteUrl}${cityPath(city.slug)}`,
+    url,
     serviceType: "Automatyzacja procesów biznesowych",
+    inLanguage: "pl-PL",
     areaServed: {
       "@type": "City",
       name: city.name,
       containedInPlace: {
         "@type": "AdministrativeArea",
-        name: city.voivodeship,
+        name: `województwo ${city.voivodeship}`,
+        containedInPlace: { "@type": "Country", name: "Polska" },
       },
     },
     provider: {
       "@type": "Organization",
+      "@id": `${siteUrl}/#organization`,
       name: "Automation Minds",
       url: siteUrl,
+    },
+  };
+}
+
+/** Strony zbiorcze silosu miast (Polska, województwo): lista podstron. */
+export function placesCollectionJsonLd(
+  page: { path: string; name: string; description: string },
+  items: { name: string; path: string }[],
+) {
+  const url = `${siteUrl}${page.path}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": `${url}#collection`,
+    name: page.name,
+    description: page.description,
+    url,
+    inLanguage: "pl-PL",
+    isPartOf: { "@type": "WebSite", url: siteUrl, name: "Automation Minds" },
+    about: { "@id": `${siteUrl}/#organization` },
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: items.length,
+      itemListElement: items.map((item, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: item.name,
+        url: `${siteUrl}${item.path}`,
+      })),
     },
   };
 }

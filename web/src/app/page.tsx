@@ -14,7 +14,12 @@ import { TimeCalculator } from "@/components/home/TimeCalculator";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Container } from "@/components/ui/Container";
 import { getSettings } from "@/lib/airtable";
-import { cityPath, getCityCoverageSearchIndex, getCityPage } from "@/lib/city-pages";
+import {
+  CITY_HUB_PATH,
+  cityPath,
+  getCityCoverageSearchIndex,
+  getCityPage,
+} from "@/lib/city-pages";
 import { CONSULTATION_OFFER } from "@/lib/consultation-offer";
 import { defaultGuideAuthor } from "@/lib/guide-content/authors";
 import { getLatestGuideArticles } from "@/lib/guide-content";
@@ -597,6 +602,13 @@ export default async function HomePage() {
                 searchableCities={searchableCities}
               />
             </div>
+            <Link
+              href={CITY_HUB_PATH}
+              className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-brand hover:gap-3"
+            >
+              Wszystkie województwa i miasta
+              <ArrowUpRight className="h-4 w-4" aria-hidden />
+            </Link>
           </Container>
         </section>
       ) : null}

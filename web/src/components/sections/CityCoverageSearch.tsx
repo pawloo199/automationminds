@@ -60,7 +60,7 @@ export function CityCoverageSearch({
       .filter((city) => {
         const name = normalizeSearch(city.name);
         const slug = normalizeSearch(
-          city.href.replace(/^\/automatyzacja-/, "").replace(/-/g, " "),
+          city.href.replace(/^.*\//, "").replace(/-/g, " "),
         );
         return name.includes(normalizedQuery) || slug.includes(normalizedQuery);
       })

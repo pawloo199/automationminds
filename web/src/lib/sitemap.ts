@@ -3,7 +3,13 @@ import {
   getPublishedCaseStudiesForSitemap,
 } from "@/lib/airtable";
 import { caseStudyPath } from "@/lib/case-study-icons";
-import { cityPath, getAllCityPages } from "@/lib/city-pages";
+import {
+  CITY_HUB_PATH,
+  cityPath,
+  getAllCityPages,
+  voivodeshipPath,
+  VOIVODESHIPS,
+} from "@/lib/city-pages";
 import {
   getGuideArticles,
   getGuideCategoriesWithCounts,
@@ -91,6 +97,16 @@ export async function buildSitemapEntries(): Promise<MetadataRoute.Sitemap> {
       priority: 0.65,
     }));
 
+  const regionPages: MetadataRoute.Sitemap = [
+    { url: `${siteUrl}${CITY_HUB_PATH}`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    ...VOIVODESHIPS.map((v) => ({
+      url: `${siteUrl}${voivodeshipPath(v.slug)}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.75,
+    })),
+  ];
+
   const citySeoPages: MetadataRoute.Sitemap = cityPages.map((city) => ({
     url: `${siteUrl}${cityPath(city.slug)}`,
     lastModified: now,
@@ -105,6 +121,7 @@ export async function buildSitemapEntries(): Promise<MetadataRoute.Sitemap> {
     ...caseStudyPages,
     ...guideCategoryPages,
     ...guidePages,
+    ...regionPages,
     ...citySeoPages,
   ];
 }

@@ -20,6 +20,7 @@ import { wielkopolskaPowiatCities } from "./content/wielkopolska";
 import { zachodCentrumCities } from "./content/zachod-centrum";
 import { zachodniopomorskiePowiatCities } from "./content/zachodniopomorskie";
 import { cityPath, type CityPageContent } from "./types";
+import { getVoivodeshipByName, VOIVODESHIPS } from "./voivodeships";
 
 const allCities: CityPageContent[] = [
   ...tier1Cities,
@@ -66,7 +67,14 @@ function assertCityPagesIntegrity() {
     throw new Error(`Missing city pages for CitySilos: ${missing.join(", ")}`);
   }
 
+  const voivodeshipSlugs = new Set(VOIVODESHIPS.map((v) => v.slug));
   for (const city of allCities) {
+    if (!getVoivodeshipByName(city.voivodeship)) {
+      throw new Error(`City ${city.slug}: unknown voivodeship "${city.voivodeship}"`);
+    }
+    if (voivodeshipSlugs.has(city.slug)) {
+      throw new Error(`City slug "${city.slug}" collides with a voivodeship slug`);
+    }
     if (city.introParagraphs.length < 2) {
       throw new Error(`City ${city.slug}: need at least 2 intro paragraphs`);
     }
@@ -122,3 +130,22 @@ export function getNearbyCities(
 
 export { cityPath };
 export type { CityPageContent };
+
+/** Miasta województwa, alfabetycznie. */
+export function getCitiesByVoivodeship(name: string): CityPageContent[] {
+  return allCities
+    .filter((city) => city.voivodeship === name)
+    .sort((a, b) => a.name.localeCompare(b.name, "pl"));
+}
+
+export function getCityVoivodeship(city: CityPageContent) {
+  return getVoivodeshipByName(city.voivodeship)!;
+}
+
+export { CITY_HUB_PATH } from "./types";
+export {
+  getVoivodeship,
+  voivodeshipLabel,
+  voivodeshipPath,
+  VOIVODESHIPS,
+} from "./voivodeships";

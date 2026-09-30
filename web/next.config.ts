@@ -17,6 +17,12 @@ const nextConfig: NextConfig = {
         destination: "/uslugi/automatyzacja-w-produkcji",
         permanent: true,
       },
+      // Strony miast przeniesione z /automatyzacja-{miasto} do silosu /automatyzacja-procesow/{miasto}.
+      {
+        source: "/automatyzacja-:city((?!procesow)[^/]+)",
+        destination: "/automatyzacja-procesow/:city",
+        permanent: true,
+      },
     ];
   },
   images: {
