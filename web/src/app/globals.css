@@ -305,3 +305,96 @@ body {
 .legal-doc .legal-card p + p {
   margin-top: 0.5rem;
 }
+
+/* ---------- Strona O nas ---------- */
+.about-grid-bg {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse at 70% 40%, #000 20%, transparent 75%);
+}
+
+.about-gradient-text {
+  background: linear-gradient(100deg, var(--brand-light) 0%, #ffffff 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.about-marquee-track {
+  display: flex;
+  width: max-content;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes about-flow-dash {
+    to {
+      stroke-dashoffset: -48;
+    }
+  }
+
+  @keyframes about-node-pulse {
+    0%,
+    100% {
+      opacity: 0.35;
+      r: 5;
+    }
+
+    50% {
+      opacity: 1;
+      r: 7;
+    }
+  }
+
+  @keyframes about-marquee {
+    to {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+
+  @keyframes about-float {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    50% {
+      transform: translate3d(0, -8px, 0);
+    }
+  }
+
+  .about-flow-line {
+    animation: about-flow-dash 2.4s linear infinite;
+  }
+
+  .about-flow-pulse {
+    animation: about-node-pulse 2.4s ease-in-out infinite;
+  }
+
+  .about-float {
+    animation: about-float 7s ease-in-out infinite;
+  }
+
+  .about-marquee-track {
+    animation: about-marquee 38s linear infinite;
+  }
+
+  .about-marquee:hover .about-marquee-track {
+    animation-play-state: paused;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translate3d(0, 1.75rem, 0);
+    transition:
+      opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    transition-delay: var(--reveal-delay, 0ms);
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}

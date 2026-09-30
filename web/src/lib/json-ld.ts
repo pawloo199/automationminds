@@ -2,6 +2,7 @@ import type {
   BreadcrumbItem,
   FaqItem,
   GuideArticle,
+  GuideAuthor,
   GuideFaqItem,
   LandingPage,
   Service,
@@ -215,6 +216,54 @@ export function guideCategoryJsonLd(
   };
 }
 
+/** Pełny opis organizacji (strony Kontakt i O nas). */
+export function organizationDetailsJsonLd(settings: Settings) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": `${siteUrl}/#organization`,
+    name: settings.siteName || "Automation Minds",
+    legalName: COMPANY.legalName,
+    url: siteUrl,
+    logo: absoluteAssetUrl(settings.logoColorUrl),
+    email: settings.email || undefined,
+    telephone: settings.phone || undefined,
+    foundingDate: COMPANY.foundingYear,
+    foundingLocation: { "@type": "Place", name: COMPANY.city },
+    taxID: COMPANY.nip,
+    vatID: `PL${COMPANY.nip}`,
+    identifier: [
+      { "@type": "PropertyValue", propertyID: "KRS", value: COMPANY.krs },
+      { "@type": "PropertyValue", propertyID: "REGON", value: COMPANY.regon },
+    ],
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: COMPANY.street,
+      postalCode: COMPANY.postalCode,
+      addressLocality: COMPANY.city,
+      addressCountry: COMPANY.country,
+    },
+    areaServed: { "@type": "Country", name: "Polska" },
+    knowsAbout: [
+      "automatyzacja procesów biznesowych",
+      "wdrożenia sztucznej inteligencji",
+      "Airtable",
+      "projektowanie baz danych",
+      "cyfryzacja danych",
+      "integracje systemów",
+      "audyt procesów",
+    ],
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "sales",
+      telephone: settings.phone || undefined,
+      email: settings.email || undefined,
+      areaServed: "PL",
+      availableLanguage: ["pl"],
+    },
+  };
+}
+
 export function contactPageJsonLd(settings: Settings, faq: GuideFaqItem[]) {
   const url = `${siteUrl}/kontakt`;
   return [
@@ -227,40 +276,34 @@ export function contactPageJsonLd(settings: Settings, faq: GuideFaqItem[]) {
       inLanguage: "pl-PL",
       mainEntity: { "@id": `${siteUrl}/#organization` },
     },
+    organizationDetailsJsonLd(settings),
+    guideFaqJsonLd(faq),
+  ];
+}
+
+export function aboutPageJsonLd(settings: Settings, author: GuideAuthor) {
+  const url = `${siteUrl}/o-nas`;
+  return [
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "@id": `${siteUrl}/#organization`,
-      name: settings.siteName || "Automation Minds",
-      legalName: COMPANY.legalName,
-      url: siteUrl,
-      logo: absoluteAssetUrl(settings.logoColorUrl),
-      email: settings.email || undefined,
-      telephone: settings.phone || undefined,
-      taxID: COMPANY.nip,
-      vatID: `PL${COMPANY.nip}`,
-      identifier: [
-        { "@type": "PropertyValue", propertyID: "KRS", value: COMPANY.krs },
-        { "@type": "PropertyValue", propertyID: "REGON", value: COMPANY.regon },
-      ],
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: COMPANY.street,
-        postalCode: COMPANY.postalCode,
-        addressLocality: COMPANY.city,
-        addressCountry: COMPANY.country,
-      },
-      areaServed: { "@type": "Country", name: "Polska" },
-      contactPoint: {
-        "@type": "ContactPoint",
-        contactType: "sales",
-        telephone: settings.phone || undefined,
-        email: settings.email || undefined,
-        areaServed: "PL",
-        availableLanguage: ["pl"],
-      },
+      "@type": "AboutPage",
+      "@id": `${url}#page`,
+      name: "O nas",
+      url,
+      inLanguage: "pl-PL",
+      mainEntity: { "@id": `${siteUrl}/#organization` },
     },
-    guideFaqJsonLd(faq),
+    organizationDetailsJsonLd(settings),
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      name: author.name,
+      jobTitle: author.jobTitle,
+      description: author.bio,
+      image: author.imageUrl,
+      sameAs: author.linkedinUrl ? [author.linkedinUrl] : undefined,
+      worksFor: { "@id": `${siteUrl}/#organization` },
+    },
   ];
 }
 

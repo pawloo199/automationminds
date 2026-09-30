@@ -12,6 +12,8 @@ export const COMPANY = {
   nip: "8952245316",
   regon: "522766130",
   shareCapital: "5 000 zł",
+  /** Rok rejestracji spółki (KRS, rejestracja VAT 2022). */
+  foundingYear: "2022",
 } as const;
 
 export const COMPANY_ADDRESS_LINE = `${COMPANY.street}, ${COMPANY.postalCode} ${COMPANY.city}`;
