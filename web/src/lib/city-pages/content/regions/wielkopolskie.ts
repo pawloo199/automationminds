@@ -49,7 +49,7 @@ export const wielkopolskieCities: CityPageContent[] = [
     economy: {
       title: "Czym żyje poznański biznes",
       paragraphs: [
-        "Międzynarodowe Targi Poznańskie od stu lat przyciągają wystawców i gości z całego świata, a wokół nich działa rynek firm eventowych, wykonawców stoisk, hoteli i usług.",
+        "Międzynarodowe Targi Poznańskie od stu lat przyciągają wystawców i gości z całego świata, a wokół nich działa rynek organizatorów wydarzeń, wykonawców stoisk, hoteli i usług.",
         "Fabryka samochodów dostawczych, zakłady spożywcze i producenci z wielu branż tworzą silne zaplecze przemysłowe. Obok nich rośnie sektor centrów usług biznesowych i firm IT.",
         "Położenie w połowie drogi między Berlinem a Warszawą uczyniło z okolic Poznania zagłębie logistyczne i jedno z centrów polskiego e-commerce.",
       ],
@@ -115,16 +115,16 @@ export const wielkopolskieCities: CityPageContent[] = [
       ],
     },
     industries: [
-      ["Dostawcy przemysłu lotniczego", "Dokumentacja techniczna, atesty i identyfikowalność partii."],
-      ["Przetwórstwo spożywcze", "Dostawy, partie i dokumenty jakości."],
-      ["Produkcja w strefie", "Zlecenia, materiały i wysyłki."],
-      ["Handel", "Zamówienia, stany i faktury."],
+      ["Dostawcy przemysłu lotniczego", "Dokumentacja techniczna, atesty i numery partii zebrane dla każdego zlecenia w jednym miejscu."],
+      ["Przetwórstwo spożywcze", "Przyjęcie surowca, partie produkcyjne i dokumenty jakości bez papierowych kart i arkuszy."],
+      ["Produkcja w strefie ekonomicznej", "Zlecenia, stany materiałów i terminy wysyłek widoczne dla biura, hali i handlowców."],
+      ["Handel hurtowy", "Zamówienia od sklepów z południowej Wielkopolski, stany i faktury spięte z magazynem."],
     ],
     processes: [
-      ["Dokumentacja partii", "Atesty i dokumenty zebrane w jednym miejscu dla każdej partii."],
-      ["Zamówienia od odbiorców", "Zamówienia z portali i maili trafiają do systemu."],
-      ["Raport jakości", "Wyniki kontroli składane w raport automatycznie."],
-      ["Faktury", "Wysyłka uruchamia fakturę."],
+      ["Dokumentacja partii", "Atesty, protokoły i dane partii składane automatycznie, gotowe do wysyłki z towarem."],
+      ["Zamówienia od odbiorców", "Zamówienia z portali i maili dużych klientów trafiają do systemu bez przepisywania."],
+      ["Raport jakości dla klienta", "Wyniki kontroli zebrane z produkcji i przesłane odbiorcy w uzgodnionym formacie."],
+      ["Faktura po wysyłce", "Potwierdzone wydanie uruchamia fakturę i powiadomienie dla klienta."],
     ],
     faq: [
       ["Czy pracujecie z dostawcami kaliskiego przemysłu lotniczego?", "Tak. Porządkujemy dokumentację techniczną, atesty i identyfikowalność partii, tak żeby komplet dokumentów dla odbiorcy powstawał z danych, które już są w systemach."],
@@ -153,7 +153,7 @@ export const wielkopolskieCities: CityPageContent[] = [
     localContext:
       "Konińskie firmy usługowe i produkcyjne wchodzą na nowe rynki. Więcej klientów oznacza więcej ofert i dokumentów przy tym samym zespole.",
     whyHere:
-      "W Koninie automatyzacja pomaga firmom obsłużyć nowych klientów bez rozbudowy biura, co ma znaczenie w czasie transformacji regionu.",
+      "W Koninie automatyzacja pomaga firmom obsłużyć nowych klientów bez rozbudowy biura, co w czasie transformacji regionu bardzo się przydaje.",
     economy: {
       title: "Czym żyje koniński biznes",
       paragraphs: [
@@ -162,16 +162,16 @@ export const wielkopolskieCities: CityPageContent[] = [
       ],
     },
     industries: [
-      ["Usługi dla energetyki", "Karty pracy, protokoły i rozliczenia."],
-      ["Przemysł metalowy", "Zlecenia, atesty i wysyłki."],
-      ["Logistyka przy A2", "Awizacje i dokumenty przewozowe."],
-      ["Handel i usługi", "Zamówienia, zapisy i faktury."],
+      ["Usługi dla energetyki", "Karty pracy, protokoły odbioru i rozliczenia zleceń prowadzone bez papieru."],
+      ["Przemysł aluminiowy i metalowy", "Zlecenia, atesty i dokumenty wysyłkowe tworzone z danych produkcji."],
+      ["Logistyka przy A2", "Awizacje, sloty i dokumenty przewozowe w magazynach między Poznaniem a Łodzią."],
+      ["Handel i usługi", "Zamówienia, zapisy klientów i faktury dla mieszkańców wschodniej Wielkopolski."],
     ],
     processes: [
-      ["Oferty dla nowych klientów", "Zapytanie zamienia się w ofertę z szablonu."],
-      ["Karta pracy", "Dane z terenu trafiają do biura bez papieru."],
-      ["Rozliczenia", "Protokół uruchamia fakturę."],
-      ["Raport", "Przychody według klientów i zleceń."],
+      ["Oferta dla nowego klienta", "Zapytanie z formularza zamienia się w ofertę z szablonu w kilka minut."],
+      ["Karta pracy z terenu", "Brygada wpisuje godziny i materiały w telefonie, a biuro widzi je od razu."],
+      ["Rozliczenie zlecenia", "Podpisany protokół uruchamia fakturę i zestawienie dla klienta."],
+      ["Przychody według klientów", "Raport pokazuje, którzy nowi klienci już przynoszą zysk."],
     ],
     faq: [
       ["Nasza firma z Konina pracowała głównie dla energetyki. Jak automatyzacja pomoże w zmianie?", "Przy nowych klientach rośnie liczba zapytań, ofert i dokumentów. Automatyzujemy ofertowanie, rozliczenia i przypomnienia, żeby obsłużyć więcej klientów tym samym zespołem."],
@@ -215,10 +215,10 @@ export const wielkopolskieCities: CityPageContent[] = [
       ["Handel hurtowy", "Zamówienia od sklepów, stany i faktury spięte z magazynem."],
     ],
     processes: [
-      ["Zamówienia", "Zamówienie z maila trafia do systemu."],
-      ["Zlecenia transportowe", "Zlecenie trafia do planu z terminem."],
-      ["Dokumenty", "Dokumenty przewozowe z danych zlecenia."],
-      ["Rozliczenia", "Zamknięty kurs uruchamia fakturę."],
+      ["Przyjęcie zamówienia", "AI odczytuje zamówienie z maila lub PDF i przygotowuje je w systemie do sprawdzenia."],
+      ["Planowanie kursów", "Zlecenia transportowe trafiają do planu z terminem, kierowcą i pojazdem."],
+      ["Dokumenty przewozowe", "Listy przewozowe i dokumenty dla odbiorcy tworzone z danych zlecenia."],
+      ["Rozliczenie kursu", "Zamknięty kurs uruchamia fakturę i trafia do raportu floty."],
     ],
     faq: [
       ["Czy pracujecie z przewoźnikami z Ostrowa Wielkopolskiego?", "Tak. Automatyzujemy zlecenia transportowe, dokumenty przewozowe i rozliczenia kursów, tak żeby zamknięty kurs od razu uruchamiał fakturę."],
@@ -256,16 +256,16 @@ export const wielkopolskieCities: CityPageContent[] = [
       ],
     },
     industries: [
-      ["Elektronika i oświetlenie", "Zlecenia, raporty jakości i dokumentacja."],
-      ["Produkcja w strefie", "Zamówienia, materiały i wysyłki."],
-      ["Przemysł drzewny", "Zamówienia i terminy."],
-      ["Handel i usługi", "Zamówienia, zapisy i faktury."],
+      ["Oświetlenie i elektronika", "Zlecenia, raporty jakości i dokumentacja dostaw dla dużych zakładów produkcyjnych."],
+      ["Produkcja w strefie ekonomicznej", "Zamówienia, stany materiałów i terminy wysyłek w jednym przepływie."],
+      ["Przemysł drzewny", "Zamówienia z wymiarami, terminy produkcji i wysyłki do odbiorców w kraju."],
+      ["Handel i usługi", "Zamówienia, zapisy klientów i faktury dla firm z północnej Wielkopolski."],
     ],
     processes: [
-      ["Zamówienia", "Zamówienie z maila trafia do systemu."],
-      ["Raport jakości", "Wyniki kontroli składane w raport automatycznie."],
-      ["Wysyłki", "Dokumenty i faktura z danych zlecenia."],
-      ["Raport produkcji", "Wykonanie planu liczone automatycznie."],
+      ["Zamówienia od odbiorców", "Zamówienie z maila lub portalu trafia do systemu po automatycznym odczycie."],
+      ["Raport jakości", "Wyniki kontroli z hali składane w raport dla odbiorcy bez ręcznego liczenia."],
+      ["Wysyłka i dokumenty", "Zakończone zlecenie uruchamia dokumenty wysyłkowe i fakturę."],
+      ["Wykonanie planu", "Codzienny raport produkcji pokazuje, co jest zrobione, a co się opóźnia."],
     ],
     faq: [
       ["Czy pracujecie z dostawcami zakładów produkujących oświetlenie w Pile?", "Tak. Zamówienia, raporty jakości i dokumentacja dostaw to procesy, które automatyzujemy u dostawców dużych zakładów."],
@@ -296,16 +296,16 @@ export const wielkopolskieCities: CityPageContent[] = [
     whyHere:
       "W Lesznie automatyzacja przejmuje przepisywanie zamówień i przygotowanie dokumentów.",
     industries: [
-      ["Produkcja", "Zlecenia, materiały i wysyłki."],
-      ["Logistyka przy S5", "Awizacje i dokumenty."],
-      ["Przetwórstwo spożywcze", "Dostawy, partie i dokumenty."],
-      ["Handel i usługi", "Zamówienia, zapisy i faktury."],
+      ["Produkcja", "Zlecenia, materiały i wysyłki dla odbiorców z Poznania, Wrocławia i zagranicy."],
+      ["Logistyka przy S5", "Awizacje, statusy dostaw i dokumenty przewozowe w firmach transportowych."],
+      ["Przetwórstwo spożywcze", "Dostawy od gospodarstw z regionu, partie i dokumenty jakości."],
+      ["Handel i usługi", "Zamówienia, zapisy klientów i faktury dla mieszkańców południowo-zachodniej Wielkopolski."],
     ],
     processes: [
-      ["Zamówienia", "Zamówienie z maila trafia do systemu."],
-      ["Status dla klienta", "Klient dostaje informację o statusie."],
-      ["Dokumenty", "Dokumenty wysyłkowe i faktura."],
-      ["Raport", "Sprzedaż i należności."],
+      ["Przyjęcie zamówienia", "Zamówienie z maila odczytane przez AI i przygotowane w systemie do akceptacji."],
+      ["Status dla klienta", "Klient dostaje informację o realizacji i terminie dostawy bez dzwonienia."],
+      ["Dokumenty wysyłki", "Dokumenty przewozowe i faktura tworzone z danych zlecenia."],
+      ["Raport należności", "Lista zaległych płatności z automatycznymi przypomnieniami dla klientów."],
     ],
     faq: [
       ["Czy pracujecie z zakładami z Leszna obsługującymi klientów z Poznania i Wrocławia?", "Tak. Automatyzujemy zamówienia, statusy i dokumenty, żeby klient z metropolii dostawał odpowiedź tak szybko, jak oczekuje."],
@@ -336,16 +336,16 @@ export const wielkopolskieCities: CityPageContent[] = [
     whyHere:
       "W Gnieźnie automatyzacja przejmuje powtarzalną pracę biurową, a zespół zajmuje się klientami.",
     industries: [
-      ["Produkcja", "Zlecenia, materiały i wysyłki."],
-      ["Logistyka", "Awizacje i dokumenty."],
-      ["Turystyka", "Rezerwacje grup i płatności."],
-      ["Handel", "Zamówienia i faktury."],
+      ["Dostawcy przemysłu", "Zamówienia i dokumentacja dla zakładów z Poznania i Wrześni."],
+      ["Logistyka przy S5", "Awizacje, statusy i dokumenty przewozowe w magazynach wokół miasta."],
+      ["Turystyka historyczna", "Rezerwacje grup, przewodników i noclegów w pierwszej stolicy Polski."],
+      ["Handel", "Zamówienia od sklepów i klientów, stany magazynowe i faktury."],
     ],
     processes: [
-      ["Zamówienia", "Zamówienie z maila trafia do systemu."],
-      ["Rezerwacje grup", "Zapytanie, oferta i zaliczka."],
-      ["Dokumenty", "Dokumenty wysyłkowe z danych zlecenia."],
-      ["Faktury", "Faktura tworzona automatycznie."],
+      ["Harmonogram od odbiorcy", "Zmiany w planie dostaw klienta trafiają do produkcji bez przepisywania."],
+      ["Rezerwacja grupy", "Zapytanie, oferta, zaliczka i lista uczestników w jednym przepływie."],
+      ["Dokumenty wysyłkowe", "Etykiety i dokumenty tworzone z danych zamówienia."],
+      ["Faktura i przypomnienie", "Faktura po wydaniu, przypomnienie o płatności przed terminem."],
     ],
     faq: [
       ["Czy pracujecie z gnieźnieńskimi dostawcami zakładów z Poznania i Wrześni?", "Tak. Harmonogramy, zamówienia i dokumentacja dla odbiorców to częste wdrożenia u dostawców."],
@@ -376,10 +376,10 @@ export const wielkopolskieCities: CityPageContent[] = [
     whyHere:
       "We Wrześni automatyzacja pozwala obsłużyć rosnącą liczbę zamówień i wymagania odbiorcy bez rozbudowy biura.",
     industries: [
-      ["Dostawcy motoryzacji", "Harmonogramy, raporty jakości i dokumentacja."],
-      ["Logistyka przy A2", "Awizacje, sloty i dokumenty."],
-      ["Usługi dla przemysłu", "Zlecenia, protokoły i rozliczenia."],
-      ["Handel i usługi lokalne", "Zamówienia, zapisy i faktury."],
+      ["Dostawcy motoryzacji", "Harmonogramy dostaw, raporty jakości i dokumentacja partii dla fabryki samochodów."],
+      ["Logistyka przy A2", "Awizacje, sloty i dokumenty przewozowe w magazynach obsługujących przemysł."],
+      ["Usługi dla przemysłu", "Zlecenia serwisowe, protokoły i rozliczenia z dużym odbiorcą."],
+      ["Handel i usługi lokalne", "Zamówienia, zapisy klientów i faktury dla rosnącej liczby mieszkańców."],
     ],
     processes: [
       ["Harmonogram dostaw", "Zmiany od odbiorcy aktualizują plan bez przepisywania."],
@@ -416,16 +416,16 @@ export const wielkopolskieCities: CityPageContent[] = [
     whyHere:
       "W Środzie Wielkopolskiej automatyzacja porządkuje dostawy i rozliczenia, żeby sezon przebiegał bez chaosu.",
     industries: [
-      ["Przetwórstwo spożywcze", "Dostawy surowca i rozliczenia."],
-      ["Rolnictwo", "Zamówienia, dostawy i terminy."],
-      ["Logistyka przy A2", "Awizacje i dokumenty."],
-      ["Handel i usługi", "Zamówienia i faktury."],
+      ["Cukrownictwo i przetwórstwo", "Dostawy buraków, harmonogramy odbiorów i rozliczenia z plantatorami."],
+      ["Gospodarstwa rolne", "Zamówienia środków produkcji, dostawy i terminy płatności."],
+      ["Logistyka przy A2", "Awizacje i dokumenty przewozowe dla firm transportowych."],
+      ["Handel i usługi", "Zamówienia, zapisy i faktury dla mieszkańców powiatu średzkiego."],
     ],
     processes: [
-      ["Przyjęcie dostawy", "Dostawa zapisana raz trafia do rozliczeń."],
-      ["Rozliczenia z dostawcami", "Zestawienia tworzone automatycznie."],
-      ["Harmonogram odbiorów", "Terminy z automatycznymi przypomnieniami."],
-      ["Faktury", "Faktura z danych dostawy lub sprzedaży."],
+      ["Harmonogram odbiorów", "Terminy dostaw dla plantatorów i przewoźników z automatycznymi przypomnieniami."],
+      ["Przyjęcie dostawy", "Ważenie i jakość zapisane raz trafiają prosto do rozliczeń."],
+      ["Rozliczenie dostawcy", "Zestawienie dostaw i kwot do zapłaty przygotowane automatycznie."],
+      ["Faktura sprzedaży", "Faktura tworzona z danych wydania lub dostawy."],
     ],
     faq: [
       ["Czy pracujecie z firmami obsługującymi kampanię cukrowniczą w Środzie Wielkopolskiej?", "Tak. Harmonogramy dostaw, przyjęcia i rozliczenia z plantatorami i przewoźnikami dobrze się automatyzują."],
@@ -456,10 +456,10 @@ export const wielkopolskieCities: CityPageContent[] = [
     whyHere:
       "W Śremie automatyzacja zbiera zamówienia w jednym miejscu i przygotowuje dokumenty.",
     industries: [
-      ["Produkcja", "Zlecenia i wysyłki."],
-      ["Przetwórstwo", "Dostawy i partie."],
-      ["Handel", "Zamówienia i faktury."],
-      ["Usługi", "Zapisy i przypomnienia."],
+      ["Produkcja", "Zlecenia, materiały i wysyłki dla klientów z Poznania i całej Wielkopolski."],
+      ["Przetwórstwo", "Dostawy surowca, partie i dokumenty jakości bez papierowych kart."],
+      ["Handel", "Zamówienia od sklepów, stany i faktury spięte z magazynem."],
+      ["Usługi dla mieszkańców", "Zapisy, przypomnienia o wizytach i płatności online."],
     ],
     processes: [
       ["Zamówienia od klientów z Poznania", "Zamówienia z maila i formularza trafiają do jednej listy z terminem realizacji."],
@@ -496,10 +496,10 @@ export const wielkopolskieCities: CityPageContent[] = [
     whyHere:
       "W Obornikach automatyzacja przejmuje przepisywanie zamówień i przygotowanie dokumentów.",
     industries: [
-      ["Produkcja", "Zlecenia i wysyłki."],
-      ["Przetwórstwo spożywcze", "Dostawy i partie."],
-      ["Logistyka", "Awizacje i dokumenty."],
-      ["Handel", "Zamówienia i faktury."],
+      ["Produkcja", "Zlecenia i wysyłki dla klientów z Poznania i północnej Wielkopolski."],
+      ["Przetwórstwo spożywcze", "Przyjęcie surowca, partie i dokumenty jakości w jednym przepływie."],
+      ["Transport przy S11", "Zlecenia, dokumenty przewozowe i statusy dostaw dla klientów."],
+      ["Handel", "Zamówienia, stany magazynowe i faktury bez przepisywania."],
     ],
     processes: [
       ["Zamówienia z północy regionu", "Zamówienia od klientów z Obornik, Poznania i okolic zebrane w jednym widoku."],
@@ -536,10 +536,10 @@ export const wielkopolskieCities: CityPageContent[] = [
     whyHere:
       "W Szamotułach automatyzacja zbiera zamówienia i dostawy w jednym miejscu.",
     industries: [
-      ["Produkcja", "Zlecenia i wysyłki."],
-      ["Przetwórstwo", "Dostawy i partie."],
-      ["Rolnictwo", "Rozliczenia i dokumenty."],
-      ["Handel", "Zamówienia i faktury."],
+      ["Produkcja", "Zlecenia, materiały i wysyłki dla odbiorców z Poznania i kraju."],
+      ["Przetwórstwo spożywcze", "Dostawy od rolników, partie i dokumenty jakości."],
+      ["Skup i handel rolny", "Rozliczenia z dostawcami, sprzedaż i terminy płatności."],
+      ["Handel i usługi", "Zamówienia, zapisy klientów i faktury dla mieszkańców powiatu."],
     ],
     processes: [
       ["Skup i dostawy od rolników", "Dostawy zapisane raz, z ilością i jakością, widoczne w rozliczeniach."],
@@ -576,16 +576,16 @@ export const wielkopolskieCities: CityPageContent[] = [
     whyHere:
       "W Nowym Tomyślu automatyzacja porządkuje sprzedaż zagraniczną i wysyłki.",
     industries: [
-      ["Wikliniarstwo i rękodzieło", "Zamówienia, wysyłki i sprzedaż internetowa."],
-      ["Produkcja", "Zlecenia i wysyłki."],
-      ["Logistyka przy A2", "Awizacje i dokumenty."],
-      ["Handel", "Zamówienia i faktury."],
+      ["Wikliniarstwo i rękodzieło", "Zamówienia z kraju i zagranicy, sprzedaż internetowa i wysyłki."],
+      ["Produkcja", "Zlecenia, materiały i wysyłki dla odbiorców z Polski i Niemiec."],
+      ["Logistyka przy A2", "Awizacje, dokumenty przewozowe i statusy dostaw na trasie do granicy."],
+      ["Handel", "Zamówienia, stany magazynowe i faktury w kilku walutach."],
     ],
     processes: [
-      ["Zamówienia z wielu kanałów", "Zamówienia w jednym miejscu ze wspólnym stanem."],
-      ["Faktury eksportowe", "Faktury w walucie i języku klienta."],
-      ["Wysyłki", "Etykieta i powiadomienie."],
-      ["Pytania klientów", "Asystent AI odpowiada w kilku językach."],
+      ["Zamówienia z wielu kanałów", "Zamówienia ze sklepu, platform i od hurtowni w jednym miejscu ze wspólnym stanem."],
+      ["Faktury eksportowe", "Faktury w walucie i języku klienta tworzone z danych zamówienia."],
+      ["Wysyłki zagraniczne", "Etykieta kuriera i dokumenty tworzone przy pakowaniu."],
+      ["Pytania klientów", "Asystent AI odpowiada po niemiecku i angielsku o dostępność i wysyłkę."],
     ],
     faq: [
       ["Czy automatyzujecie sprzedaż wyrobów z wikliny za granicę?", "Tak. Zamówienia z kilku kanałów, faktury w walucie klienta i dokumenty wysyłkowe mogą powstawać automatycznie."],
@@ -656,10 +656,10 @@ export const wielkopolskieCities: CityPageContent[] = [
     whyHere:
       "W Wolsztynie automatyzacja porządkuje zamówienia, rozliczenia i rezerwacje w jednym miejscu.",
     industries: [
-      ["Produkcja", "Zlecenia i wysyłki."],
-      ["Przetwórstwo", "Dostawy i partie."],
-      ["Rolnictwo", "Rozliczenia i dokumenty."],
-      ["Turystyka", "Rezerwacje i płatności."],
+      ["Produkcja", "Zlecenia, materiały i wysyłki dla klientów z Poznania i regionu."],
+      ["Przetwórstwo spożywcze", "Dostawy od gospodarstw, partie i dokumenty jakości."],
+      ["Rolnictwo", "Rozliczenia dostaw, zamówienia środków produkcji i terminy płatności."],
+      ["Turystyka nad jeziorami", "Rezerwacje noclegów, zaliczki i pytania gości w sezonie."],
     ],
     processes: [
       ["Zamówienia od stałych odbiorców", "Powtarzalne zamówienia przygotowywane automatycznie do potwierdzenia."],
@@ -696,10 +696,10 @@ export const wielkopolskieCities: CityPageContent[] = [
     whyHere:
       "W Międzychodzie automatyzacja porządkuje zamówienia i rezerwacje.",
     industries: [
-      ["Przemysł drzewny", "Zamówienia i terminy."],
-      ["Produkcja", "Zlecenia i wysyłki."],
-      ["Turystyka", "Rezerwacje i pytania gości."],
-      ["Handel", "Zamówienia i faktury."],
+      ["Przemysł drzewny", "Zamówienia tarcicy i wyrobów z wymiarami, terminy produkcji i wysyłki."],
+      ["Produkcja", "Zlecenia i wysyłki dla odbiorców z regionu i kraju."],
+      ["Turystyka na pojezierzu", "Rezerwacje ośrodków, zaliczki i pytania gości."],
+      ["Handel", "Zamówienia, stany i faktury dla mieszkańców powiatu."],
     ],
     processes: [
       ["Zamówienie tarcicy i wyrobów", "Zamówienie z wymiarami i ilością trafia prosto do planu produkcji."],
@@ -736,10 +736,10 @@ export const wielkopolskieCities: CityPageContent[] = [
     whyHere:
       "W Kościanie automatyzacja porządkuje dostawy i rozliczenia w sezonie.",
     industries: [
-      ["Przetwórstwo spożywcze", "Dostawy surowca i rozliczenia."],
-      ["Rolnictwo", "Zamówienia i terminy."],
-      ["Produkcja", "Zlecenia i wysyłki."],
-      ["Logistyka", "Awizacje i dokumenty."],
+      ["Cukrownictwo i przetwórstwo", "Dostawy buraków, harmonogramy odbiorów i rozliczenia z plantatorami."],
+      ["Rolnictwo", "Zamówienia środków produkcji, dostawy i terminy płatności."],
+      ["Produkcja", "Zlecenia i wysyłki dla odbiorców z Poznania i Leszna."],
+      ["Logistyka przy S5", "Awizacje i dokumenty przewozowe na trasie Poznań–Wrocław."],
     ],
     processes: [
       ["Harmonogram dostaw buraków", "Terminy dostaw dla plantatorów i przewoźników z automatycznymi przypomnieniami."],
@@ -776,10 +776,10 @@ export const wielkopolskieCities: CityPageContent[] = [
     whyHere:
       "W Gostyniu automatyzacja łączy dostawy, jakość i rozliczenia w jeden przepływ.",
     industries: [
-      ["Mleczarstwo", "Dostawy, jakość i rozliczenia z dostawcami."],
-      ["Przetwórstwo", "Partie i wysyłki."],
-      ["Rolnictwo", "Dokumenty i terminy."],
-      ["Handel", "Zamówienia i faktury."],
+      ["Mleczarstwo", "Odbiory mleka, wyniki jakości i rozliczenia z gospodarstwami."],
+      ["Przetwórstwo spożywcze", "Partie, zamówienia sieci i wysyłki."],
+      ["Rolnictwo", "Dokumenty, terminy i rozliczenia dostaw."],
+      ["Handel", "Zamówienia od sklepów i hurtowni, stany i faktury."],
     ],
     processes: [
       ["Odbiór mleka od dostawców", "Ilości i wyniki jakości zapisane raz, widoczne w rozliczeniach."],
@@ -816,10 +816,10 @@ export const wielkopolskieCities: CityPageContent[] = [
     whyHere:
       "W Rawiczu automatyzacja porządkuje dostawy, zamówienia i dokumenty.",
     industries: [
-      ["Przetwórstwo mięsne", "Dostawy, partie i dokumenty."],
-      ["Produkcja", "Zlecenia i wysyłki."],
-      ["Logistyka przy S5", "Awizacje i dokumenty."],
-      ["Rolnictwo", "Rozliczenia."],
+      ["Przetwórstwo mięsne", "Przyjęcia, partie, dokumenty weterynaryjne i zamówienia sieci."],
+      ["Produkcja", "Zlecenia i wysyłki dla odbiorców z Wrocławia i Poznania."],
+      ["Logistyka przy S5", "Awizacje i dokumenty przewozowe."],
+      ["Rolnictwo", "Rozliczenia dostaw i terminy płatności."],
     ],
     processes: [
       ["Przyjęcie żywca i surowca", "Dane z przyjęcia zapisane raz, z dokumentami i numerami partii."],
@@ -829,7 +829,7 @@ export const wielkopolskieCities: CityPageContent[] = [
     ],
     faq: [
       ["Czy pracujecie z zakładami mięsnymi z Rawicza?", "Tak. Porządkujemy przyjęcia, partie, zamówienia odbiorców i dokumenty wysyłkowe."],
-      ["Czy pomagacie w identyfikowalności partii?", "Tak. Układamy dane tak, żeby każda partia miała komplet informacji w jednym miejscu, gotowy na kontrolę."],
+      ["Czy pomagacie w identyfikowalności partii?", "Tak. Układamy dane tak, żeby każda partia miała komplet informacji w jednym miejscu, na wypadek kontroli."],
       ["Czy przyjeżdżacie do Rawicza?", "Z Wrocławia mamy blisko, więc warsztat na miejscu organizujemy bez problemu. Większość pracy robimy zdalnie."],
       ["Ile kosztuje wdrożenie w zakładzie z Rawicza?", "Wycenę pierwszego etapu dostajecie po bezpłatnej konsultacji, zanim zaczniemy pracę."],
     ],
@@ -856,10 +856,10 @@ export const wielkopolskieCities: CityPageContent[] = [
     whyHere:
       "W Jarocinie automatyzacja przejmuje przepisywanie zamówień i przygotowanie dokumentów.",
     industries: [
-      ["Produkcja", "Zlecenia i wysyłki."],
-      ["Przetwórstwo", "Dostawy i partie."],
-      ["Wydarzenia", "Zgłoszenia, bilety i rozliczenia."],
-      ["Handel", "Zamówienia i faktury."],
+      ["Produkcja", "Zlecenia, materiały i wysyłki dla odbiorców z całej Polski."],
+      ["Przetwórstwo spożywcze", "Dostawy surowca, partie i dokumenty jakości."],
+      ["Organizacja wydarzeń", "Zgłoszenia wykonawców, bilety, umowy i rozliczenia."],
+      ["Handel", "Zamówienia, stany i faktury dla sklepów z regionu."],
     ],
     processes: [
       ["Zamówienia od odbiorców", "Zamówienie z maila odczytane i przygotowane w systemie do akceptacji."],
@@ -896,10 +896,10 @@ export const wielkopolskieCities: CityPageContent[] = [
     whyHere:
       "W Krotoszynie automatyzacja porządkuje zamówienia i dokumenty.",
     industries: [
-      ["Produkcja", "Zlecenia i wysyłki."],
-      ["Przetwórstwo", "Dostawy i partie."],
-      ["Handel", "Zamówienia i faktury."],
-      ["Usługi", "Zapisy i rozliczenia."],
+      ["Produkcja dla większych zakładów", "Harmonogramy, zamówienia i dokumentacja dla odbiorców z regionu."],
+      ["Przetwórstwo", "Dostawy surowca, partie i dokumenty jakości."],
+      ["Handel", "Zamówienia od sklepów, stany i faktury."],
+      ["Usługi", "Zgłoszenia, terminy i rozliczenia z klientami."],
     ],
     processes: [
       ["Zamówienia od większych zakładów", "Harmonogramy i zamówienia odbiorców trafiają do systemu automatycznie."],
@@ -936,10 +936,10 @@ export const wielkopolskieCities: CityPageContent[] = [
     whyHere:
       "W Pleszewie automatyzacja zbiera zamówienia i dostawy w jednym miejscu.",
     industries: [
-      ["Produkcja", "Zlecenia i wysyłki."],
-      ["Rolnictwo", "Rozliczenia i dokumenty."],
-      ["Przetwórstwo", "Dostawy i partie."],
-      ["Handel", "Zamówienia i faktury."],
+      ["Produkcja", "Zlecenia, materiały i wysyłki w firmach rodzinnych."],
+      ["Rolnictwo", "Rozliczenia dostaw, dokumenty i terminy płatności."],
+      ["Przetwórstwo", "Dostawy surowca, partie i sprzedaż do sklepów."],
+      ["Handel", "Zamówienia z telefonu i maila, stany i faktury."],
     ],
     processes: [
       ["Zamówienia w firmie rodzinnej", "Zamówienia z telefonu, maila i komunikatorów w jednej liście."],
@@ -1016,16 +1016,16 @@ export const wielkopolskieCities: CityPageContent[] = [
     whyHere:
       "W Ostrzeszowie automatyzacja przenosi zamówienia z wieloma pozycjami do systemu i przygotowuje dokumenty eksportowe.",
     industries: [
-      ["Szczotki i pędzle", "Zamówienia z wieloma indeksami i wysyłki."],
-      ["Meble", "Zamówienia z wariantami i produkcja."],
-      ["Eksport", "Faktury i dokumenty w walucie klienta."],
-      ["Handel", "Zamówienia i stany."],
+      ["Szczotki i pędzle", "Zamówienia z wieloma indeksami, stany i wysyłki do sieci i hurtowni."],
+      ["Meble", "Zamówienia z wariantami, zlecenia produkcyjne i wysyłki."],
+      ["Eksport", "Faktury i dokumenty wysyłkowe w walucie i języku klienta."],
+      ["Handel", "Zamówienia od sklepów i stany magazynowe."],
     ],
     processes: [
-      ["Zamówienia od sieci", "Zamówienie z pliku lub portalu trafia do systemu."],
-      ["Faktury eksportowe", "Faktury w walucie i języku klienta."],
-      ["Stany magazynowe", "Powiadomienie o brakach indeksów."],
-      ["Wysyłki", "Dokumenty i etykiety z danych zamówienia."],
+      ["Zamówienia od sieci", "Zamówienie z pliku lub portalu trafia do systemu z pełną listą indeksów."],
+      ["Faktury eksportowe", "Faktury w walucie klienta tworzone z danych zamówienia."],
+      ["Stany indeksów", "Powiadomienie, gdy kończy się popularny produkt."],
+      ["Wysyłki", "Dokumenty i etykiety tworzone przy pakowaniu."],
     ],
     faq: [
       ["Czy pracujecie z producentami szczotek i pędzli z Ostrzeszowa?", "Tak. Zamówienia z wieloma indeksami, stany, faktury eksportowe i wysyłki to typowy zakres."],
@@ -1056,10 +1056,10 @@ export const wielkopolskieCities: CityPageContent[] = [
     whyHere:
       "W Kole automatyzacja przejmuje przepisywanie zamówień i przygotowanie dokumentów.",
     industries: [
-      ["Ceramika", "Zamówienia, produkcja i wysyłki."],
-      ["Przetwórstwo", "Dostawy i partie."],
-      ["Logistyka przy A2", "Awizacje i dokumenty."],
-      ["Handel", "Zamówienia i faktury."],
+      ["Ceramika i porcelana", "Zamówienia z wieloma pozycjami, produkcja i wysyłki."],
+      ["Przetwórstwo spożywcze", "Dostawy surowca, partie i dokumenty jakości."],
+      ["Logistyka przy A2", "Awizacje, dokumenty przewozowe i statusy dostaw."],
+      ["Handel", "Zamówienia, stany i faktury dla klientów z regionu."],
     ],
     processes: [
       ["Zamówienia hurtowe na ceramikę", "Zamówienia z wieloma pozycjami trafiają do systemu bez przepisywania."],
@@ -1096,10 +1096,10 @@ export const wielkopolskieCities: CityPageContent[] = [
     whyHere:
       "W Słupcy automatyzacja zbiera zamówienia i dostawy w jednym miejscu.",
     industries: [
-      ["Rolnictwo", "Rozliczenia i dokumenty."],
-      ["Przetwórstwo", "Dostawy i partie."],
-      ["Produkcja", "Zlecenia i wysyłki."],
-      ["Logistyka", "Awizacje i dokumenty."],
+      ["Dostawcy przemysłu", "Zlecenia i dokumentacja dla zakładów z Wrześni i Konina."],
+      ["Rolnictwo", "Rozliczenia dostaw, dokumenty i terminy płatności."],
+      ["Przetwórstwo", "Dostawy surowca, partie i sprzedaż."],
+      ["Logistyka przy A2", "Awizacje i dokumenty przewozowe."],
     ],
     processes: [
       ["Zlecenia od zakładów z Wrześni", "Zlecenia i harmonogramy odbiorcy trafiają do planu bez przepisywania."],
@@ -1136,10 +1136,10 @@ export const wielkopolskieCities: CityPageContent[] = [
     whyHere:
       "W Turku automatyzacja przyspiesza oferty i rozliczenia.",
     industries: [
-      ["Produkcja", "Zlecenia i wysyłki."],
-      ["Włókiennictwo", "Zamówienia i terminy."],
-      ["Usługi dla energetyki", "Karty pracy i rozliczenia."],
-      ["Handel", "Zamówienia i faktury."],
+      ["Produkcja", "Zlecenia, materiały i wysyłki dla odbiorców z kraju."],
+      ["Włókiennictwo", "Zamówienia z rozmiarami i kolorami, terminy i wysyłki."],
+      ["Usługi dla energetyki", "Karty pracy, protokoły i rozliczenia zleceń."],
+      ["Handel", "Zamówienia, stany i faktury dla sklepów z regionu."],
     ],
     processes: [
       ["Zapytania od nowych klientów", "Zapytanie zamienia się w ofertę z szablonu w kilka minut."],
@@ -1176,10 +1176,10 @@ export const wielkopolskieCities: CityPageContent[] = [
     whyHere:
       "W Chodzieży automatyzacja porządkuje zamówienia i wysyłki.",
     industries: [
-      ["Porcelana", "Zamówienia z wieloma wzorami, produkcja i wysyłki."],
-      ["Przetwórstwo", "Dostawy i partie."],
-      ["Handel", "Zamówienia i faktury."],
-      ["Turystyka", "Rezerwacje."],
+      ["Porcelana", "Zamówienia z wieloma wzorami, produkcja, sprzedaż internetowa i eksport."],
+      ["Przetwórstwo", "Dostawy surowca, partie i dokumenty jakości."],
+      ["Handel", "Zamówienia od sklepów i hurtowni, stany i faktury."],
+      ["Turystyka", "Rezerwacje noclegów i pytania gości w sezonie."],
     ],
     processes: [
       ["Zamówienia z wieloma wzorami", "Zamówienia hurtowni i sieci trafiają do systemu z pełną listą pozycji."],
@@ -1216,10 +1216,10 @@ export const wielkopolskieCities: CityPageContent[] = [
     whyHere:
       "W Czarnkowie automatyzacja zbiera zamówienia w jednym miejscu i pilnuje płatności.",
     industries: [
-      ["Rolnictwo", "Rozliczenia i dokumenty."],
-      ["Przetwórstwo", "Dostawy i partie."],
-      ["Produkcja", "Zlecenia i wysyłki."],
-      ["Handel", "Zamówienia i faktury."],
+      ["Handel dla rolnictwa", "Zamówienia pasz, nawozów i części z odroczonymi płatnościami."],
+      ["Przetwórstwo", "Dostawy surowca, partie i sprzedaż."],
+      ["Produkcja", "Zlecenia i wysyłki dla odbiorców z Piły i Poznania."],
+      ["Usługi", "Zapisy, terminy i przypomnienia dla klientów."],
     ],
     processes: [
       ["Zamówienia od gospodarstw", "Zamówienia pasz, nawozów czy części zebrane w jednej liście."],
@@ -1256,10 +1256,10 @@ export const wielkopolskieCities: CityPageContent[] = [
     whyHere:
       "W Wągrowcu automatyzacja porządkuje zamówienia i rezerwacje.",
     industries: [
-      ["Produkcja", "Zlecenia i wysyłki."],
-      ["Przetwórstwo", "Dostawy i partie."],
-      ["Turystyka", "Rezerwacje i płatności."],
-      ["Handel", "Zamówienia i faktury."],
+      ["Produkcja", "Zlecenia, materiały i wysyłki dla klientów z Poznania i regionu."],
+      ["Przetwórstwo spożywcze", "Dostawy surowca, partie i dokumenty jakości."],
+      ["Turystyka nad jeziorami", "Rezerwacje ośrodków, zaliczki i pytania gości."],
+      ["Handel", "Zamówienia, stany i faktury."],
     ],
     processes: [
       ["Zamówienia", "Zamówienie z maila odczytane i przygotowane do akceptacji."],
@@ -1296,10 +1296,10 @@ export const wielkopolskieCities: CityPageContent[] = [
     whyHere:
       "W Złotowie automatyzacja zbiera zamówienia w jednym miejscu i przygotowuje dokumenty.",
     industries: [
-      ["Rolnictwo", "Rozliczenia i dokumenty."],
-      ["Przetwórstwo", "Dostawy i partie."],
-      ["Przemysł drzewny", "Zamówienia i terminy."],
-      ["Handel", "Zamówienia i faktury."],
+      ["Przemysł drzewny", "Zamówienia z wymiarami, terminy produkcji i wysyłki."],
+      ["Rolnictwo", "Rozliczenia dostaw, zamówienia i terminy płatności."],
+      ["Przetwórstwo", "Dostawy surowca, partie i sprzedaż do sklepów."],
+      ["Handel", "Zamówienia i faktury dla klientów z Piły i Pomorza."],
     ],
     processes: [
       ["Zamówienia drewna i wyrobów", "Zamówienia z wymiarami trafiają do planu produkcji."],
@@ -1310,7 +1310,7 @@ export const wielkopolskieCities: CityPageContent[] = [
     faq: [
       ["Czy pracujecie z zakładami drzewnymi z okolic Złotowa?", "Tak. Zamówienia z wymiarami, zlecenia i wysyłki."],
       ["Czy firma rodzinna ze Złotowa może zacząć małym krokiem?", "Tak. Zaczynamy od jednego procesu, żeby szybko odczuć efekt przy niewielkim koszcie."],
-      ["Czy odległość od dużych miast ma znaczenie?", "Nie. Pracujemy zdalnie, więc lokalizacja nie wpływa na zakres ani tempo projektu."],
+      ["Czy odległość od dużych miast przeszkadza we współpracy?", "Nie. Pracujemy zdalnie, więc lokalizacja nie wpływa na zakres ani tempo projektu."],
       ["Ile kosztuje pierwszy etap?", "Wycenę dostajecie po bezpłatnej konsultacji."],
     ],
     services: ["automatyzacja-dla-ksiegowosci", "automatyzacja-sprzedazy", "automatyzacja-w-produkcji", "cyfryzacja-danych-i-dokumentow"],
