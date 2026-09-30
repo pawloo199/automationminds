@@ -30,8 +30,8 @@ export default defineArticle({
     "Przy danych osobowych sprawdź, gdzie narzędzie przetwarza dane i czy dostawca podpisze umowę powierzenia.",
   ],
   relatedServiceSlugs: [
+    "integracje-systemow",
     "doradztwo-i-optymalizacja-procesow-biznesowych",
-    "automatyzacja-oraz-ai-w-niestandardowych-procesach",
   ],
   relatedArticleSlugs: [
     "5-procesow-do-automatyzacji-w-malej-firmie",
@@ -68,7 +68,7 @@ export default defineArticle({
     "### Power Automate",
     "Jeśli firma pracuje głównie na narzędziach Microsoftu, Power Automate często jest już w pakiecie albo kosztuje niewiele. Świetnie obsługuje pocztę w Outlooku, zatwierdzanie dokumentów w Teams, pliki w SharePoincie. Dobrze sprawdza się np. przy [automatyzacji onboardingu](/poradnik/automatyzacja-onboardingu-pracownika), gdy konta pracowników i tak zakłada się w Microsoft 365. Ma też moduł do automatyzacji pracy na komputerze (tzw. RPA), przydatny przy starych programach bez możliwości integracji.",
     "### A może własny kod?",
-    "Czasem żadna platforma nie pasuje. Tak bywa przy nietypowych systemach, bardzo dużych ilościach danych albo gdy integracja jest sercem biznesu. Wtedy lepiej napisać własną integrację przez API. Kosztuje więcej na starcie, ale daje pełną kontrolę. Takie projekty prowadzimy przy usłudze [automatyzacja oraz AI w niestandardowych procesach](/uslugi/automatyzacja-oraz-ai-w-niestandardowych-procesach).",
+    "Czasem żadna platforma nie pasuje. Tak bywa przy nietypowych systemach, bardzo dużych ilościach danych albo gdy integracja jest sercem biznesu. Wtedy lepiej napisać własną integrację przez API. Kosztuje więcej na starcie, ale daje pełną kontrolę. Takie połączenia budujemy przy [integracjach systemów](/uslugi/integracje-systemow).",
     "[[CTA]]",
     "## Ukryte koszty, o których nikt nie mówi na demo",
     "Cena z cennika to dopiero początek. Przy porównywaniu narzędzi policz pełny koszt w perspektywie roku:",

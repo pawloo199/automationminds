@@ -215,7 +215,7 @@ export const mockFeatureTilesAreas: FeatureTile[] = [
     icon: "lightbulb",
     title: "Consulting AI",
     body: "Strategia i wdrożenie AI w organizacji.",
-    href: "/uslugi/doradztwo-i-optymalizacja-procesow-biznesowych",
+    href: "/uslugi/strategia-wdrozenia-ai",
     order: 2,
   },
   {
@@ -224,7 +224,7 @@ export const mockFeatureTilesAreas: FeatureTile[] = [
     icon: "trending-up",
     title: "Sprzedaż",
     body: "Automatyzacja lejka i pracy handlowców.",
-    href: "/uslugi/automatyzacja-dla-sprzedazy-i-marketingu",
+    href: "/uslugi/automatyzacja-sprzedazy",
     order: 3,
   },
   {
@@ -233,7 +233,7 @@ export const mockFeatureTilesAreas: FeatureTile[] = [
     icon: "megaphone",
     title: "Marketing",
     body: "Mniej ręcznej pracy w kampaniach i raportach.",
-    href: "/uslugi/automatyzacja-dla-sprzedazy-i-marketingu",
+    href: "/uslugi/automatyzacja-marketingu",
     order: 4,
   },
   {
@@ -269,7 +269,7 @@ export const mockFeatureTilesAreas: FeatureTile[] = [
     icon: "database",
     title: "CRM",
     body: "Wdrożenia i integracje narzędzi CRM.",
-    href: "/uslugi/automatyzacja-w-obsludze-klienta",
+    href: "/uslugi/integracje-systemow",
     order: 8,
   },
 ];
@@ -824,7 +824,7 @@ export const mockLandingPages: LandingPage[] = [
     primaryCtaText: "Umów bezpłatną konsultację",
     primaryCtaLink: "#formularz",
     socialProof: "80% procesów można zautomatyzować · 1542+ automatyzacji dziennie",
-    relatedServiceSlug: "automatyzacja-dla-sprzedazy-i-marketingu",
+    relatedServiceSlug: "automatyzacja-sprzedazy",
     formEnabled: true,
     noIndex: false,
     updatedAt: new Date().toISOString(),

@@ -29,8 +29,8 @@ export default defineArticle({
     "Zespół, który będzie korzystał z automatyzacji, musi być w projekcie od początku, a nie dowiadywać się o nim w dniu startu.",
   ],
   relatedServiceSlugs: [
+    "audyt-procesow-biznesowych",
     "doradztwo-i-optymalizacja-procesow-biznesowych",
-    "automatyzacja-oraz-ai-w-niestandardowych-procesach",
   ],
   relatedArticleSlugs: [
     "od-czego-zaczac-mapowanie-procesow",

@@ -187,7 +187,7 @@ export const zachodCentrumCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-logistyki",
       "automatyzacja-raportow",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -287,7 +287,7 @@ export const zachodCentrumCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-raportow",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -487,7 +487,7 @@ export const zachodCentrumCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-logistyki",
       "automatyzacja-raportow",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
@@ -587,7 +587,7 @@ export const zachodCentrumCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-logistyki",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-sprzedazy",
@@ -689,7 +689,7 @@ export const zachodCentrumCities: CityPageContent[] = [
     relatedServiceSlugs: [
       "automatyzacja-raportow",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
     ],
     nearbyCitySlugs: [
@@ -788,7 +788,7 @@ export const zachodCentrumCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-dla-logistyki",
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-sprzedazy",
     ],
@@ -887,7 +887,7 @@ export const zachodCentrumCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-sprzedazy",
       "automatyzacja-dla-logistyki",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -1088,7 +1088,7 @@ export const zachodCentrumCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-dla-logistyki",
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-w-obsludze-klienta",
     ],
@@ -1187,7 +1187,7 @@ export const zachodCentrumCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-raportow",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
@@ -1287,7 +1287,7 @@ export const zachodCentrumCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-hr",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-sprzedazy",

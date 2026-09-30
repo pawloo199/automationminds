@@ -28,7 +28,7 @@ export default defineArticle({
     "Liczy się czas, który zespół faktycznie wykorzysta na inne zadania, a nie teoretyczne godziny na papierze.",
   ],
   relatedServiceSlugs: [
-    "doradztwo-i-optymalizacja-procesow-biznesowych",
+    "audyt-procesow-biznesowych",
     "automatyzacja-raportow",
   ],
   relatedArticleSlugs: [

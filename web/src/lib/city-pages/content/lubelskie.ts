@@ -88,7 +88,7 @@ export const lubelskiePowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-sprzedazy",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -367,7 +367,7 @@ export const lubelskiePowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-logistyki",
       "automatyzacja-raportow",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -460,7 +460,7 @@ export const lubelskiePowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-sprzedazy",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -553,7 +553,7 @@ export const lubelskiePowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-raportow",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
       "automatyzacja-dla-logistyki",
@@ -832,7 +832,7 @@ export const lubelskiePowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-sprzedazy",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -1204,7 +1204,7 @@ export const lubelskiePowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-sprzedazy",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -1297,7 +1297,7 @@ export const lubelskiePowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-logistyki",
       "automatyzacja-raportow",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -1390,7 +1390,7 @@ export const lubelskiePowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-logistyki",
       "automatyzacja-raportow",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -1483,7 +1483,7 @@ export const lubelskiePowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-sprzedazy",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -1576,7 +1576,7 @@ export const lubelskiePowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-logistyki",
       "automatyzacja-raportow",
       "doradztwo-i-optymalizacja-procesow-biznesowych",

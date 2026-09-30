@@ -29,8 +29,9 @@ export default defineArticle({
     "Zacznij od pilotażu na jednym przypadku, z próbką prawdziwych danych i jasną miarą jakości.",
   ],
   relatedServiceSlugs: [
-    "automatyzacja-oraz-ai-w-niestandardowych-procesach",
-    "automatyzacja-w-obsludze-klienta",
+    "szkolenia-ai-dla-zespolow",
+    "asystent-ai-na-firmowej-wiedzy",
+    "strategia-wdrozenia-ai",
   ],
   relatedArticleSlugs: [
     "rodo-a-automatyzacja-procesow",
@@ -88,7 +89,7 @@ export default defineArticle({
     "Taki pilotaż trwa zwykle kilka tygodni i daje odpowiedź opartą na faktach, a nie na wrażeniach z demo. Wyniki od razu przydadzą się też do oceny opłacalności, którą opisujemy w artykule [jak mierzyć ROI automatyzacji](/poradnik/jak-mierzyc-roi-automatyzacji). Jeśli wypadnie źle, straciliście niewiele. Jeśli dobrze, macie gotowy wzór na kolejne zastosowania. Cały proces, od wyboru zastosowania po decyzję o kolejnych krokach, rozpisujemy w artykule [wdrożenie AI w małej i średniej firmie. Plan na 90 dni](/poradnik/wdrozenie-ai-w-malej-i-sredniej-firmie). O innych pułapkach pierwszych wdrożeń piszemy w tekście [7 błędów przy pierwszym wdrożeniu automatyzacji](/poradnik/bledy-przy-pierwszym-wdrozeniu-automatyzacji).",
     "## AI dalej potrzebuje procesu",
     "Firmy, które mają z AI realne korzyści, rzadko zaczynały od pytania „co możemy zrobić z AI?”. Zaczynały od pytania „co zabiera nam najwięcej czasu?”, a AI okazywało się jednym z elementów odpowiedzi. Często obok zwykłej automatyzacji bez żadnej sztucznej inteligencji. Jeśli nie wiesz, które procesy w twojej firmie są dobrymi kandydatami, zacznij od artykułu [co zautomatyzować w małej firmie](/poradnik/5-procesow-do-automatyzacji-w-malej-firmie).",
-    "Przepływy z AI projektujemy i wdrażamy przy [automatyzacji oraz AI w niestandardowych procesach](/uslugi/automatyzacja-oraz-ai-w-niestandardowych-procesach), a sortowanie zgłoszeń i szkice odpowiedzi najczęściej przy [automatyzacji obsługi klienta](/uslugi/automatyzacja-w-obsludze-klienta).",
+    "Zespoły uczymy pracy z AI na [szkoleniach z AI](/uslugi/szkolenia-ai-dla-zespolow), asystentów budujemy przy usłudze [asystent AI na firmowej wiedzy](/uslugi/asystent-ai-na-firmowej-wiedzy), a sortowanie zgłoszeń i szkice odpowiedzi najczęściej przy [automatyzacji obsługi klienta](/uslugi/automatyzacja-w-obsludze-klienta).",
   ].join("\n\n"),
   faq: [
     {

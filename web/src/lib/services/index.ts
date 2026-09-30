@@ -17,7 +17,7 @@ export function getServiceContent(slug: string) {
   return SERVICE_CONTENT[slug];
 }
 
-/** Usługi z tej samej grupy oraz wskazane ręcznie, bez bieżącej. */
+/** Usługi powiązane: wskazane ręcznie i z tej samej grupy, bez bieżącej. */
 export function getRelatedServices(slug: string, limit = 4) {
   const entry = getCatalogEntry(slug);
   if (!entry) return [];
@@ -26,11 +26,12 @@ export function getRelatedServices(slug: string, limit = 4) {
   const sameGroup = published.filter(
     (service) => service.group === entry.group && service.slug !== slug,
   );
+  // Najpierw usługi wskazane ręcznie (często z innych grup), potem z tej samej grupy.
   const picked = [
-    ...sameGroup,
     ...manual
       .map((related) => published.find((service) => service.slug === related))
       .filter((service): service is ServiceCatalogEntry => Boolean(service)),
+    ...sameGroup,
   ];
   const unique = picked.filter(
     (service, index) =>

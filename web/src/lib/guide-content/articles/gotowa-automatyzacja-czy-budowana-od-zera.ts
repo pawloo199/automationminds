@@ -28,8 +28,8 @@ export default defineArticle({
     "Najczęściej najlepszy wynik daje połączenie: sprawdzony rdzeń i dopasowanie szczegółów do firmy.",
   ],
   relatedServiceSlugs: [
-    "doradztwo-i-optymalizacja-procesow-biznesowych",
     "automatyzacja-oraz-ai-w-niestandardowych-procesach",
+    "integracje-systemow",
   ],
   relatedArticleSlugs: [
     "5-procesow-do-automatyzacji-w-malej-firmie",

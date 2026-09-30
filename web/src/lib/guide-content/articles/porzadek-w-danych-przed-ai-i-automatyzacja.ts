@@ -29,8 +29,9 @@ export default defineArticle({
     "Porządek w danych warto zrobić przed wdrożeniem, a nie w trakcie. Oszczędza to czas i budżet całego projektu.",
   ],
   relatedServiceSlugs: [
-    "automatyzacja-oraz-ai-w-niestandardowych-procesach",
-    "doradztwo-i-optymalizacja-procesow-biznesowych",
+    "porzadkowanie-i-strukturyzowanie-danych",
+    "przygotowanie-danych-pod-ai",
+    "strategia-wdrozenia-ai",
   ],
   relatedArticleSlugs: [
     "cyfryzacja-danych-w-firmie",
@@ -86,7 +87,7 @@ export default defineArticle({
     "Po takim porządku raporty sprzedaży pokazują prawdziwą liczbę klientów, a automatyzacje, np. przypomnienia o płatnościach czy oferty dla stałych klientów, trafiają do właściwych osób. To przykład, ale schemat powtarza się w wielu firmach handlowych. Takie zestawienia, zbudowane na uporządkowanych danych, opisujemy na stronie [automatyzacja raportów](/uslugi/automatyzacja-raportow).",
     "## Ile czasu to zajmuje",
     "Zależy od skali i stanu danych. Uporządkowanie bazy klientów w małej firmie to zwykle kilka dni pracy. Połączenie danych z kilku systemów, z ustaleniem źródeł prawdy i identyfikatorów, kilka tygodni. W obu przypadkach jest to czas, który i tak trzeba by poświęcić w trakcie wdrożenia, tylko wtedy kosztowałby więcej, bo blokowałby pozostałe prace.",
-    "Ocena jakości danych to stały element [audytu procesów](/poradnik/audyt-procesow-w-firmie), który prowadzimy przed wdrożeniami. Projektowanie baz i struktur danych to obszar, w którym mamy szczególnie duże doświadczenie: porządkujemy istniejące dane i budujemy nowe bazy pod automatyzacje i AI. Takie projekty prowadzimy przy usłudze [automatyzacja oraz AI w niestandardowych procesach](/uslugi/automatyzacja-oraz-ai-w-niestandardowych-procesach).",
+    "Ocena jakości danych to stały element [audytu procesów](/poradnik/audyt-procesow-w-firmie), który prowadzimy przed wdrożeniami. Projektowanie baz i struktur danych to obszar, w którym mamy szczególnie duże doświadczenie: porządkujemy istniejące dane i budujemy nowe bazy pod automatyzacje i AI. Takie projekty prowadzimy przy [porządkowaniu i strukturyzowaniu danych](/uslugi/porzadkowanie-i-strukturyzowanie-danych) oraz [przygotowaniu danych pod AI](/uslugi/przygotowanie-danych-pod-ai).",
   ].join("\n\n"),
   faq: [
     {

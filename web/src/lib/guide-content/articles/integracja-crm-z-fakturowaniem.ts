@@ -28,6 +28,7 @@ export default defineArticle({
     "Obowiązkowy KSeF to dobry moment, żeby przy okazji uporządkować cały obieg faktur.",
   ],
   relatedServiceSlugs: [
+    "integracje-systemow",
     "automatyzacja-dla-ksiegowosci",
     "automatyzacja-sprzedazy",
   ],

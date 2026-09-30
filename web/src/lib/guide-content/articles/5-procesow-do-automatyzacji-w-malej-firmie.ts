@@ -29,7 +29,7 @@ export default defineArticle({
     "Nie automatyzuj procesu, którego nikt nie potrafi opisać. Najpierw trzeba go uporządkować, inaczej przyspieszysz bałagan.",
   ],
   relatedServiceSlugs: [
-    "doradztwo-i-optymalizacja-procesow-biznesowych",
+    "audyt-procesow-biznesowych",
     "automatyzacja-sprzedazy",
     "automatyzacja-dla-ksiegowosci",
     "automatyzacja-w-obsludze-klienta",

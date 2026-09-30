@@ -2,9 +2,6 @@ import { ArticleCard } from "@/components/guide/ArticleCard";
 import { ArticleFaq } from "@/components/guide/ArticleSections";
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import { ContactSection } from "@/components/sections/ContactSection";
-import { IntroSection } from "@/components/sections/IntroSection";
-import { PageBanner } from "@/components/sections/PageBanner";
-import { ProcessSteps } from "@/components/sections/ProcessSteps";
 import {
   ServiceCard,
   ServiceExample,
@@ -18,13 +15,12 @@ import {
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { Container } from "@/components/ui/Container";
-import { getProcessSteps, getServiceBySlug, getSettings } from "@/lib/airtable";
+import { getSettings } from "@/lib/airtable";
 import { CONSULTATION_OFFER } from "@/lib/consultation-offer";
 import {
   breadcrumbJsonLd,
   guideFaqJsonLd,
   serviceDetailJsonLd,
-  serviceJsonLd,
 } from "@/lib/json-ld";
 import { buildMetadata } from "@/lib/metadata";
 import {
@@ -59,21 +55,13 @@ export async function generateMetadata({
   if (!entry || entry.status === "planned") return {};
 
   const content = getServiceContent(slug);
-  if (content) {
-    return buildMetadata({
-      title: content.metaTitle,
-      description: content.metaDescription,
-      path: `/uslugi/${slug}`,
-      ogImage: content.hero.imageUrl,
-    });
-  }
+  if (!content) return {};
 
-  const service = await getServiceBySlug(slug);
   return buildMetadata({
-    title: service?.metaTitle || `${entry.name} | Automation Minds`,
-    description: service?.metaDescription || entry.menuDescription,
+    title: content.metaTitle,
+    description: content.metaDescription,
     path: `/uslugi/${slug}`,
-    ogImage: service?.ogImageUrl,
+    ogImage: content.hero.imageUrl,
   });
 }
 
@@ -94,8 +82,8 @@ export default async function ServicePage({
   if (!entry || entry.status === "planned") notFound();
 
   const content = getServiceContent(slug);
-  if (content) return <ServiceTemplate entry={entry} content={content} />;
-  return <LegacyServiceTemplate entry={entry} />;
+  if (!content) notFound();
+  return <ServiceTemplate entry={entry} content={content} />;
 }
 
 async function ServiceTemplate({
@@ -296,68 +284,6 @@ async function ServiceTemplate({
         title={content.contact.title}
         body={content.contact.body}
         highlights={content.contact.highlights}
-        sourcePage={`/uslugi/${entry.slug}`}
-      />
-    </SiteLayout>
-  );
-}
-
-/** Stary szablon (treść z Airtable) do czasu przepisania usługi na nowy. */
-async function LegacyServiceTemplate({ entry }: { entry: ServiceCatalogEntry }) {
-  const [service, processSteps] = await Promise.all([
-    getServiceBySlug(entry.slug),
-    getProcessSteps(entry.slug),
-  ]);
-  if (!service) notFound();
-
-  const breadcrumbs = serviceBreadcrumbs(entry);
-  const relatedServices = getRelatedServices(entry.slug, 3);
-
-  return (
-    <SiteLayout>
-      <JsonLd
-        data={[
-          serviceJsonLd(service),
-          breadcrumbJsonLd(breadcrumbs.filter((item) => !item.href?.includes("#"))),
-        ]}
-      />
-      <PageBanner title={entry.name} imageUrl={service.bannerImageUrl} />
-      <Container className="py-4">
-        <Breadcrumbs items={breadcrumbs} />
-      </Container>
-      <IntroSection
-        subtitle={service.introSubtitle}
-        title={service.introTitle}
-        body={service.introBody}
-        imageUrl={service.introImageUrl}
-        buttonText={service.introButtonText}
-        buttonLink={service.introButtonLink}
-      />
-      <ProcessSteps
-        subtitle={service.processSubtitle}
-        title={service.processTitle}
-        steps={processSteps}
-      />
-      {relatedServices.length > 0 ? (
-        <section className="bg-surface py-16 lg:py-20">
-          <Container>
-            <h2 className="text-2xl font-bold text-dark sm:text-3xl">
-              Powiązane usługi
-            </h2>
-            <ul className="mt-8 grid gap-5 md:grid-cols-3">
-              {relatedServices.map((related) => (
-                <li key={related.slug}>
-                  <ServiceCard service={related} showGroup />
-                </li>
-              ))}
-            </ul>
-          </Container>
-        </section>
-      ) : null}
-      <ContactSection
-        subtitle={CONSULTATION_OFFER.formSubtitle}
-        title="Porozmawiajmy o twoim projekcie"
-        body="Wypełnij formularz, a oddzwonimy w ciągu jednego dnia roboczego."
         sourcePage={`/uslugi/${entry.slug}`}
       />
     </SiteLayout>

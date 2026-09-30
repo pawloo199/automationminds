@@ -88,7 +88,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-logistyki",
       "automatyzacja-raportow",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -181,7 +181,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-logistyki",
       "automatyzacja-raportow",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -276,7 +276,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
     relatedServiceSlugs: [
       "automatyzacja-sprzedazy",
       "automatyzacja-dla-logistyki",
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-raportow",
     ],
     nearbyCitySlugs: ["zgorzelec", "luban", "legnica", "lwowek-slaski", "jelenia-gora"],
@@ -461,7 +461,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-dla-logistyki",
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-raportow",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
@@ -553,7 +553,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-raportow",
       "automatyzacja-dla-hr",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -832,7 +832,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-logistyki",
       "automatyzacja-raportow",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -925,7 +925,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-raportow",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -1111,7 +1111,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-raportow",
       "automatyzacja-w-obsludze-klienta",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -1205,7 +1205,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "doradztwo-i-optymalizacja-procesow-biznesowych",
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-raportow",
     ],
@@ -1297,7 +1297,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-raportow",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -1483,7 +1483,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-logistyki",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-raportow",
@@ -1576,7 +1576,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-logistyki",
       "automatyzacja-sprzedazy",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -1856,7 +1856,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-dla-logistyki",
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-w-obsludze-klienta",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
@@ -1949,7 +1949,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-w-obsludze-klienta",
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-sprzedazy",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],

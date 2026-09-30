@@ -1,7 +1,6 @@
 import {
   getLandingPages,
   getPublishedCaseStudiesForSitemap,
-  getServices,
 } from "@/lib/airtable";
 import { caseStudyPath } from "@/lib/case-study-icons";
 import { cityPath, getAllCityPages } from "@/lib/city-pages";
@@ -25,14 +24,13 @@ function parseDate(value: string | undefined): Date {
 
 /**
  * Buduje kompletną listę URL-i do /sitemap.xml.
- * Źródła: strony statyczne, Airtable (usługi, kampanie, case studies),
- * poradnik (kod) oraz silosy miast (kod).
+ * Źródła: strony statyczne, Airtable (kampanie, case studies),
+ * usługi, poradnik i silosy miast (kod).
  * Wywoływane przy każdym generowaniu mapy oraz przy rewalidacji CMS.
  */
 export async function buildSitemapEntries(): Promise<MetadataRoute.Sitemap> {
-  const [services, landingPages, caseStudies, guideArticles, cityPages] =
+  const [landingPages, caseStudies, guideArticles, cityPages] =
     await Promise.all([
-      getServices(),
       getLandingPages(),
       getPublishedCaseStudiesForSitemap(),
       Promise.resolve(getGuideArticles()),
@@ -57,10 +55,7 @@ export async function buildSitemapEntries(): Promise<MetadataRoute.Sitemap> {
 
   const servicePages: MetadataRoute.Sitemap = getPublishedServices().map((entry) => ({
     url: `${siteUrl}${servicePath(entry.slug)}`,
-    lastModified: parseDate(
-      SERVICE_CONTENT[entry.slug]?.updatedAt ??
-        services.find((service) => service.slug === entry.slug)?.updatedAt,
-    ),
+    lastModified: parseDate(SERVICE_CONTENT[entry.slug]?.updatedAt),
     changeFrequency: "weekly",
     priority: 0.75,
   }));

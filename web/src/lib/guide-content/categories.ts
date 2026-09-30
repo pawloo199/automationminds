@@ -69,7 +69,7 @@ export const guideCategories: GuideCategory[] = [
       "doradztwo-i-optymalizacja-procesow-biznesowych",
       "automatyzacja-sprzedazy",
       "automatyzacja-dla-ksiegowosci",
-      "automatyzacja-dla-hr",
+      "integracje-systemow",
     ],
     cta: {
       title: "Chcesz wiedzieć, który proces zautomatyzować najpierw?",
@@ -110,8 +110,10 @@ export const guideCategories: GuideCategory[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-oraz-ai-w-niestandardowych-procesach",
-      "automatyzacja-w-obsludze-klienta",
+      "strategia-wdrozenia-ai",
+      "asystent-ai-na-firmowej-wiedzy",
+      "ai-w-obsludze-dokumentow",
+      "szkolenia-ai-dla-zespolow",
     ],
     cta: {
       title: "Chcesz sprawdzić, gdzie AI odciąży twój zespół?",
@@ -152,8 +154,9 @@ export const guideCategories: GuideCategory[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-oraz-ai-w-niestandardowych-procesach",
-      "doradztwo-i-optymalizacja-procesow-biznesowych",
+      "wdrozenia-airtable",
+      "projektowanie-baz-danych",
+      "migracja-danych",
     ],
     cta: {
       title: "Chcesz przenieść firmę z arkuszy do Airtable?",
@@ -194,8 +197,9 @@ export const guideCategories: GuideCategory[] = [
       },
     ],
     relatedServiceSlugs: [
-      "doradztwo-i-optymalizacja-procesow-biznesowych",
-      "automatyzacja-oraz-ai-w-niestandardowych-procesach",
+      "porzadkowanie-i-strukturyzowanie-danych",
+      "cyfryzacja-danych-i-dokumentow",
+      "przygotowanie-danych-pod-ai",
       "automatyzacja-raportow",
     ],
     cta: {
@@ -237,6 +241,7 @@ export const guideCategories: GuideCategory[] = [
       },
     ],
     relatedServiceSlugs: [
+      "audyt-procesow-biznesowych",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
       "automatyzacja-raportow",
     ],
@@ -279,9 +284,9 @@ export const guideCategories: GuideCategory[] = [
       },
     ],
     relatedServiceSlugs: [
+      "integracje-systemow",
+      "migracja-danych",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
-      "automatyzacja-dla-ksiegowosci",
-      "automatyzacja-sprzedazy",
     ],
     cta: {
       title: "Nie wiesz, jakie narzędzie wybrać albo jak połączyć systemy?",

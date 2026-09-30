@@ -287,7 +287,7 @@ export const tier1Cities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-logistyki",
       "automatyzacja-raportow",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -388,7 +388,7 @@ export const tier1Cities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-dla-logistyki",
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-sprzedazy",
       "automatyzacja-dla-ksiegowosci",
     ],
@@ -491,7 +491,7 @@ export const tier1Cities: CityPageContent[] = [
       "automatyzacja-sprzedazy",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-dla-hr",
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
     ],
     nearbyCitySlugs: [
       "gniezno",
@@ -690,7 +690,7 @@ export const tier1Cities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-dla-logistyki",
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-sprzedazy",
     ],
@@ -789,7 +789,7 @@ export const tier1Cities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-logistyki",
       "automatyzacja-dla-hr",
       "automatyzacja-raportow",

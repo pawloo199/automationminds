@@ -29,8 +29,9 @@ export default defineArticle({
     "Airtable ma wbudowane automatyzacje i dobrze łączy się z innymi systemami, więc często staje się pierwszym krokiem do automatyzacji całej firmy.",
   ],
   relatedServiceSlugs: [
-    "automatyzacja-oraz-ai-w-niestandardowych-procesach",
-    "doradztwo-i-optymalizacja-procesow-biznesowych",
+    "wdrozenia-airtable",
+    "projektowanie-baz-danych",
+    "migracja-danych",
   ],
   relatedArticleSlugs: [
     "airtable-w-praktyce-zastosowania",
@@ -78,11 +79,11 @@ export default defineArticle({
     "## Przykład: firma serwisowa przechodzi z arkusza na bazę",
     "Weźmy firmę serwisową, która prowadzi zlecenia w arkuszu z kilkunastoma kolumnami. W tym samym wierszu są dane klienta, adres, opis usterki, przypisany technik, termin, użyte części i status. Każdy technik ma swoją kopię na telefonie, a biuro co wieczór scala zmiany.",
     "Po przejściu na Airtable dane dzielą się na kilka tabel: klienci, urządzenia u klientów, zlecenia, technicy i części. Zlecenie łączy się z klientem i urządzeniem, więc od razu widać historię napraw danego sprzętu. Technik ma na telefonie widok tylko swoich zleceń na dziś i formularz do zamknięcia zlecenia ze zdjęciem. Biuro widzi w kalendarzu obłożenie techników i listę zleceń gotowych do zafakturowania.",
-    "Nikt już niczego nie scala wieczorem. A kiedy baza działa, można dodać automatyzacje: SMS do klienta dzień przed wizytą, protokół w PDF po zakończeniu zlecenia, przypomnienie o przeglądzie po roku. Ten scenariusz jest przykładowy, ale bardzo typowy dla firm, które pracują w terenie. Więcej takich zastosowań w branży usługowej opisujemy na stronie [automatyzacja w produkcji i usługach](/uslugi/automatyzacja-w-produkcji-i-uslugach).",
+    "Nikt już niczego nie scala wieczorem. A kiedy baza działa, można dodać automatyzacje: SMS do klienta dzień przed wizytą, protokół w PDF po zakończeniu zlecenia, przypomnienie o przeglądzie po roku. Ten scenariusz jest przykładowy, ale bardzo typowy dla firm, które pracują w terenie. Więcej takich zastosowań w branży usługowej opisujemy na stronie [automatyzacja dla firm usługowych](/uslugi/automatyzacja-dla-firm-uslugowych).",
     "## Baza danych jako pierwszy krok do automatyzacji",
     "Jest jeszcze jeden powód, dla którego firmy przechodzą z arkuszy na bazy danych, nawet jeśli arkusz „jakoś działa”. Automatyzacja i AI potrzebują uporządkowanych danych. Trudno zautomatyzować wysyłkę przypomnień, jeśli daty zapisane są na pięć sposobów, a klient raz ma NIP, a raz nie.",
     "Dlatego przeniesienie danych do dobrze zaprojektowanej bazy to często pierwszy etap szerszego projektu. Najpierw porządek, potem automatyzacje: przypomnienia, raporty, połączenie z programem do faktur, obsługa zapytań. Jeśli chcesz zobaczyć, od których procesów warto zacząć, zajrzyj do artykułu [co zautomatyzować w małej firmie](/poradnik/5-procesow-do-automatyzacji-w-malej-firmie). A jeśli zastanawiasz się, czy dobrać do tego Make, Zapiera czy n8n, pomoże tekst [jak wybrać narzędzie do automatyzacji](/poradnik/jak-wybrac-narzedzie-do-automatyzacji).",
-    "Z Airtable pracujemy od lat i projektujemy w nim bazy dla firm z różnych branż, zwykle razem z automatyzacjami, które na nich działają. Takie projekty prowadzimy przy [automatyzacji oraz AI w niestandardowych procesach](/uslugi/automatyzacja-oraz-ai-w-niestandardowych-procesach).",
+    "Z Airtable pracujemy od lat i projektujemy w nim bazy dla firm z różnych branż, zwykle razem z automatyzacjami, które na nich działają. Takie projekty prowadzimy przy [wdrożeniach Airtable](/uslugi/wdrozenia-airtable), a przeniesienie danych z arkuszy przy [migracji danych](/uslugi/migracja-danych).",
   ].join("\n\n"),
   faq: [
     {

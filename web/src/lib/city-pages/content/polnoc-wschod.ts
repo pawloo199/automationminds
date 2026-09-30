@@ -187,7 +187,7 @@ export const polnocWschodCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-sprzedazy",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -290,7 +290,7 @@ export const polnocWschodCities: CityPageContent[] = [
       "automatyzacja-w-obsludze-klienta",
       "automatyzacja-sprzedazy",
       "automatyzacja-raportow",
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
     ],
     nearbyCitySlugs: [
       "bydgoszcz",
@@ -387,7 +387,7 @@ export const polnocWschodCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-raportow",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -487,7 +487,7 @@ export const polnocWschodCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-hr",
       "automatyzacja-w-obsludze-klienta",
       "automatyzacja-raportow",
@@ -959,7 +959,7 @@ export const polnocWschodCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-raportow",
       "automatyzacja-dla-hr",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
@@ -1053,7 +1053,7 @@ export const polnocWschodCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-sprzedazy",
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-raportow",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
@@ -1152,7 +1152,7 @@ export const polnocWschodCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-dla-hr",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -1245,7 +1245,7 @@ export const polnocWschodCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-raportow",
       "automatyzacja-dla-hr",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",

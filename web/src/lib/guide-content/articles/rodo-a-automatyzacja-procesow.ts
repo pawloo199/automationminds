@@ -30,7 +30,7 @@ export default defineArticle({
   ],
   relatedServiceSlugs: [
     "doradztwo-i-optymalizacja-procesow-biznesowych",
-    "automatyzacja-oraz-ai-w-niestandardowych-procesach",
+    "strategia-wdrozenia-ai",
   ],
   relatedArticleSlugs: [
     "jak-wybrac-narzedzie-do-automatyzacji",

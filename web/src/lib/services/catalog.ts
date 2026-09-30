@@ -1,4 +1,5 @@
 import {
+  ArrowRightLeft,
   BarChart3,
   Bot,
   BrainCircuit,
@@ -9,11 +10,15 @@ import {
   Database,
   Factory,
   FileScan,
+  GraduationCap,
   Headphones,
+  ListChecks,
   Megaphone,
+  MessageSquareText,
   Plug,
   Puzzle,
   ScanLine,
+  Sparkles,
   Table2,
   TrendingUp,
   Truck,
@@ -36,19 +41,19 @@ export const SERVICE_GROUPS: ServiceGroup[] = [
   {
     id: "doradztwo",
     name: "Doradztwo i strategia",
-    description: "Audyt, mapowanie procesów i plan wdrożenia AI.",
+    description: "Audyt, mapowanie procesów, strategia AI i szkolenia.",
     icon: Compass,
   },
   {
     id: "ai",
     name: "Sztuczna inteligencja",
-    description: "Asystenci i narzędzia AI pracujące na danych firmy.",
+    description: "Asystenci, agenci i chatboty AI pracujący na danych firmy.",
     icon: BrainCircuit,
   },
   {
     id: "dane",
     name: "Dane i cyfryzacja",
-    description: "Porządek w danych, bazy Airtable i raporty.",
+    description: "Porządek w danych, bazy danych, cyfryzacja i raporty.",
     icon: Database,
   },
   {
@@ -68,16 +73,16 @@ export const SERVICE_CATALOG: ServiceCatalogEntry[] = [
     menuDescription: "Sprawdzamy, gdzie zespół traci czas i co opłaca się zautomatyzować.",
     group: "doradztwo",
     icon: ClipboardCheck,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "doradztwo-i-optymalizacja-procesow-biznesowych",
     name: "Mapowanie i optymalizacja procesów",
-    menuLabel: "Mapowanie i optymalizacja procesów",
+    menuLabel: "Mapowanie procesów",
     menuDescription: "Rozrysowujemy procesy i usuwamy zbędne kroki przed automatyzacją.",
     group: "doradztwo",
     icon: Waypoints,
-    status: "legacy",
+    status: "live",
   },
   {
     slug: "strategia-wdrozenia-ai",
@@ -86,7 +91,16 @@ export const SERVICE_CATALOG: ServiceCatalogEntry[] = [
     menuDescription: "Wybieramy zastosowania AI z realnym zwrotem i prowadzimy wdrożenie.",
     group: "doradztwo",
     icon: Compass,
-    status: "planned",
+    status: "live",
+  },
+  {
+    slug: "szkolenia-ai-dla-zespolow",
+    name: "Szkolenia z AI dla zespołów",
+    menuLabel: "Szkolenia z AI",
+    menuDescription: "Praktyczne warsztaty z AI na zadaniach waszego zespołu.",
+    group: "doradztwo",
+    icon: GraduationCap,
+    status: "live",
   },
 
   // Sztuczna inteligencja
@@ -97,7 +111,7 @@ export const SERVICE_CATALOG: ServiceCatalogEntry[] = [
     menuDescription: "Odpowiada na pytania zespołu na podstawie waszych dokumentów.",
     group: "ai",
     icon: Bot,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "ai-w-obsludze-dokumentow",
@@ -106,7 +120,25 @@ export const SERVICE_CATALOG: ServiceCatalogEntry[] = [
     menuDescription: "Odczyt faktur, umów i zamówień bez ręcznego przepisywania.",
     group: "ai",
     icon: FileScan,
-    status: "planned",
+    status: "live",
+  },
+  {
+    slug: "agenci-ai",
+    name: "Agenci AI w procesach firmy",
+    menuLabel: "Agenci AI",
+    menuDescription: "Wykonują wieloetapowe zadania, a człowiek zatwierdza decyzje.",
+    group: "ai",
+    icon: Sparkles,
+    status: "live",
+  },
+  {
+    slug: "chatbot-ai-dla-firmy",
+    name: "Chatbot AI dla firmy",
+    menuLabel: "Chatbot AI dla klientów",
+    menuDescription: "Odpowiada klientom na stronie i w Messengerze o każdej porze.",
+    group: "ai",
+    icon: MessageSquareText,
+    status: "live",
   },
   {
     slug: "automatyzacja-oraz-ai-w-niestandardowych-procesach",
@@ -115,7 +147,7 @@ export const SERVICE_CATALOG: ServiceCatalogEntry[] = [
     menuDescription: "Rozwiązania budowane pod wasz proces, gdy gotowe narzędzia nie wystarczą.",
     group: "ai",
     icon: Puzzle,
-    status: "legacy",
+    status: "live",
   },
 
   // Dane i cyfryzacja
@@ -125,8 +157,26 @@ export const SERVICE_CATALOG: ServiceCatalogEntry[] = [
     menuLabel: "Porządkowanie danych",
     menuDescription: "Jedna wersja prawdy zamiast kilku arkuszy z różnymi liczbami.",
     group: "dane",
+    icon: ListChecks,
+    status: "live",
+  },
+  {
+    slug: "projektowanie-baz-danych",
+    name: "Projektowanie baz danych",
+    menuLabel: "Projektowanie baz danych",
+    menuDescription: "Struktura danych, która rośnie razem z firmą.",
+    group: "dane",
     icon: Database,
-    status: "planned",
+    status: "live",
+  },
+  {
+    slug: "przygotowanie-danych-pod-ai",
+    name: "Przygotowanie danych pod AI",
+    menuLabel: "Przygotowanie danych pod AI",
+    menuDescription: "Dokumenty i dane uporządkowane tak, żeby AI z nich korzystało.",
+    group: "dane",
+    icon: BrainCircuit,
+    status: "live",
   },
   {
     slug: "cyfryzacja-danych-i-dokumentow",
@@ -135,7 +185,16 @@ export const SERVICE_CATALOG: ServiceCatalogEntry[] = [
     menuDescription: "Z papieru i skanów do uporządkowanej bazy, którą da się przeszukać.",
     group: "dane",
     icon: ScanLine,
-    status: "planned",
+    status: "live",
+  },
+  {
+    slug: "migracja-danych",
+    name: "Migracja danych",
+    menuLabel: "Migracja danych",
+    menuDescription: "Przeniesienie danych do nowego systemu bez utraty historii.",
+    group: "dane",
+    icon: ArrowRightLeft,
+    status: "live",
   },
   {
     slug: "wdrozenia-airtable",
@@ -144,7 +203,7 @@ export const SERVICE_CATALOG: ServiceCatalogEntry[] = [
     menuDescription: "Bazy, widoki i aplikacje w Airtable dopasowane do waszej pracy.",
     group: "dane",
     icon: Table2,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "automatyzacja-raportow",
@@ -153,14 +212,14 @@ export const SERVICE_CATALOG: ServiceCatalogEntry[] = [
     menuDescription: "Raporty, które aktualizują się same i pokazują to, co ważne.",
     group: "dane",
     icon: BarChart3,
-    status: "legacy",
+    status: "live",
   },
 
   // Automatyzacja procesów
   {
     slug: "automatyzacja-sprzedazy",
     name: "Automatyzacja sprzedaży",
-    menuLabel: "Automatyzacja sprzedaży",
+    menuLabel: "Sprzedaż",
     menuDescription: "Leady, oferty i follow-upy bez przepisywania i zapominania.",
     group: "automatyzacja",
     icon: TrendingUp,
@@ -169,11 +228,11 @@ export const SERVICE_CATALOG: ServiceCatalogEntry[] = [
   {
     slug: "automatyzacja-marketingu",
     name: "Automatyzacja marketingu",
-    menuLabel: "Automatyzacja marketingu",
+    menuLabel: "Marketing",
     menuDescription: "Kampanie, segmentacja i raporty z kanałów w jednym przepływie.",
     group: "automatyzacja",
     icon: Megaphone,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "automatyzacja-dla-ksiegowosci",
@@ -182,7 +241,7 @@ export const SERVICE_CATALOG: ServiceCatalogEntry[] = [
     menuDescription: "Faktury, KSeF, płatności i rozrachunki bez ręcznego przepisywania.",
     group: "automatyzacja",
     icon: Calculator,
-    status: "legacy",
+    status: "live",
   },
   {
     slug: "automatyzacja-dla-hr",
@@ -191,7 +250,7 @@ export const SERVICE_CATALOG: ServiceCatalogEntry[] = [
     menuDescription: "Rekrutacja, onboarding i dokumenty pracownicze w jednym procesie.",
     group: "automatyzacja",
     icon: Users,
-    status: "legacy",
+    status: "live",
   },
   {
     slug: "automatyzacja-w-obsludze-klienta",
@@ -200,7 +259,7 @@ export const SERVICE_CATALOG: ServiceCatalogEntry[] = [
     menuDescription: "Zgłoszenia trafiają do właściwej osoby, a klient dostaje odpowiedź szybciej.",
     group: "automatyzacja",
     icon: Headphones,
-    status: "legacy",
+    status: "live",
   },
   {
     slug: "automatyzacja-w-produkcji",
@@ -209,7 +268,7 @@ export const SERVICE_CATALOG: ServiceCatalogEntry[] = [
     menuDescription: "Zlecenia, stany i raporty zmianowe bez papierowych kart.",
     group: "automatyzacja",
     icon: Factory,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "automatyzacja-dla-firm-uslugowych",
@@ -218,17 +277,7 @@ export const SERVICE_CATALOG: ServiceCatalogEntry[] = [
     menuDescription: "Zlecenia, terminy, protokoły i rozliczenia w jednym przepływie.",
     group: "automatyzacja",
     icon: Briefcase,
-    status: "planned",
-  },
-  {
-    // Strona przejściowa do czasu uruchomienia dwóch osobnych usług powyżej.
-    slug: "automatyzacja-w-produkcji-i-uslugach",
-    name: "Automatyzacja w produkcji i usługach",
-    menuLabel: "Produkcja i usługi",
-    menuDescription: "Zlecenia, harmonogramy i raporty bez papierowych kart.",
-    group: "automatyzacja",
-    icon: Factory,
-    status: "legacy",
+    status: "live",
   },
   {
     slug: "automatyzacja-dla-logistyki",
@@ -237,7 +286,7 @@ export const SERVICE_CATALOG: ServiceCatalogEntry[] = [
     menuDescription: "Zamówienia, wysyłki i statusy przesyłek bez ręcznego pilnowania.",
     group: "automatyzacja",
     icon: Truck,
-    status: "legacy",
+    status: "live",
   },
   {
     slug: "integracje-systemow",
@@ -246,13 +295,14 @@ export const SERVICE_CATALOG: ServiceCatalogEntry[] = [
     menuDescription: "Łączymy CRM, ERP, sklep i księgowość, żeby dane płynęły same.",
     group: "automatyzacja",
     icon: Plug,
-    status: "planned",
+    status: "live",
   },
 ];
 
 /** Stare adresy usług przeniesione na nowe (301, patrz next.config.ts). */
 export const SERVICE_REDIRECTS: Record<string, string> = {
   "automatyzacja-dla-sprzedazy-i-marketingu": "automatyzacja-sprzedazy",
+  "automatyzacja-w-produkcji-i-uslugach": "automatyzacja-w-produkcji",
 };
 
 export const SERVICES_HUB_PATH = "/uslugi";

@@ -28,8 +28,8 @@ export default defineArticle({
     "Dla małej lub średniej firmy audyt trwa zwykle od kilku dni do kilku tygodni i angażuje zespół tylko na kilka godzin.",
   ],
   relatedServiceSlugs: [
+    "audyt-procesow-biznesowych",
     "doradztwo-i-optymalizacja-procesow-biznesowych",
-    "automatyzacja-oraz-ai-w-niestandardowych-procesach",
   ],
   relatedArticleSlugs: [
     "od-czego-zaczac-mapowanie-procesow",

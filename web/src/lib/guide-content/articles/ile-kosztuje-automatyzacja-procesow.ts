@@ -29,8 +29,8 @@ export default defineArticle({
     "Porównując oferty, sprawdzaj, co jest w cenie: testy, dokumentacja, szkolenie, okres opieki po starcie.",
   ],
   relatedServiceSlugs: [
+    "audyt-procesow-biznesowych",
     "doradztwo-i-optymalizacja-procesow-biznesowych",
-    "automatyzacja-oraz-ai-w-niestandardowych-procesach",
   ],
   relatedArticleSlugs: [
     "jak-mierzyc-roi-automatyzacji",
@@ -90,7 +90,7 @@ export default defineArticle({
     "Projekty z AI mają kilka dodatkowych elementów kosztowych. Pilotaż, w którym sprawdza się jakość wyników na prawdziwych danych, jest tu praktycznie obowiązkowy. Dochodzą opłaty za korzystanie z modelu, liczone od ilości przetworzonego tekstu, i często większa praca przy przygotowaniu danych. W zamian AI obsługuje zadania, których zwykła automatyzacja nie zrobi, np. rozumienie treści maili czy odczyt nietypowych dokumentów. Plan takiego wdrożenia opisujemy w artykule [wdrożenie AI w małej i średniej firmie](/poradnik/wdrozenie-ai-w-malej-i-sredniej-firmie).",
     "## Jak dostać rzetelną wycenę",
     "Najszybsza droga do wiarygodnej wyceny to krótka rozmowa, na której opiszesz proces, systemy i skalę. Po niej wykonawca powinien umieć powiedzieć, czy potrzebny jest audyt, czy od razu da się wycenić wdrożenie, i jaki model rozliczenia ma sens.",
-    "Tak wygląda pierwsza rozmowa przy [doradztwie i optymalizacji procesów](/uslugi/doradztwo-i-optymalizacja-procesow-biznesowych). Po niej wiesz, jaki zakres proponujemy, z czego będzie się składać wycena i czego się spodziewać. Przy nietypowych systemach i projektach z AI zakres ustalamy przy usłudze [automatyzacja oraz AI w niestandardowych procesach](/uslugi/automatyzacja-oraz-ai-w-niestandardowych-procesach).",
+    "Tak wygląda pierwsza rozmowa przed [audytem procesów](/uslugi/audyt-procesow-biznesowych). Po niej wiesz, jaki zakres proponujemy, z czego będzie się składać wycena i czego się spodziewać. Przy nietypowych systemach i projektach z AI zakres ustalamy przy usłudze [automatyzacja oraz AI w niestandardowych procesach](/uslugi/automatyzacja-oraz-ai-w-niestandardowych-procesach).",
   ].join("\n\n"),
   faq: [
     {

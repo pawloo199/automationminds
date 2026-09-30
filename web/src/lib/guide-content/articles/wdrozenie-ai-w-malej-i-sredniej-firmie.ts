@@ -29,9 +29,9 @@ export default defineArticle({
     "Największe ryzyko to nie technologia, tylko wybór złego zastosowania i brak porządku w danych.",
   ],
   relatedServiceSlugs: [
-    "automatyzacja-oraz-ai-w-niestandardowych-procesach",
-    "doradztwo-i-optymalizacja-procesow-biznesowych",
-    "automatyzacja-w-obsludze-klienta",
+    "strategia-wdrozenia-ai",
+    "asystent-ai-na-firmowej-wiedzy",
+    "agenci-ai",
   ],
   relatedArticleSlugs: [
     "ai-w-codziennej-pracy-zespolu",
@@ -94,7 +94,7 @@ export default defineArticle({
     "Koszt zależy od zastosowania i tego, ile pracy wymagają dane. Na budżet składają się: diagnoza, przygotowanie danych, budowa przepływu i pilotaż, a potem koszty stałe, czyli opłaty za korzystanie z modelu AI i platformy do automatyzacji oraz utrzymanie. Przy jednym zastosowaniu w małej firmie koszty stałe są zwykle niewielkie. Więcej o tym, z czego składa się wycena, piszemy w artykule [ile kosztuje automatyzacja procesów w małej firmie](/poradnik/ile-kosztuje-automatyzacja-procesow).",
     "## Z kim przejść te 90 dni",
     "Plan da się przeprowadzić samodzielnie, jeśli w firmie jest osoba z czasem i doświadczeniem w automatyzacji. Najczęściej jednak małe i średnie firmy korzystają z pomocy z zewnątrz przy diagnozie i budowie pierwszego rozwiązania, a potem przejmują utrzymanie albo zostają z partnerem na stałe.",
-    "Takie wdrożenia prowadzimy od diagnozy po uruchomienie, przy [automatyzacji oraz AI w niestandardowych procesach](/uslugi/automatyzacja-oraz-ai-w-niestandardowych-procesach) i [doradztwie i optymalizacji procesów](/uslugi/doradztwo-i-optymalizacja-procesow-biznesowych). Jeśli pierwszym zastosowaniem ma być obsługa zgłoszeń klientów, zajrzyj też na stronę [automatyzacja w obsłudze klienta](/uslugi/automatyzacja-w-obsludze-klienta).",
+    "Takie wdrożenia prowadzimy od diagnozy po uruchomienie. Opisujemy je na stronie [strategia i wdrożenie AI w firmie](/uslugi/strategia-wdrozenia-ai). Jeśli pierwszym zastosowaniem ma być obsługa zgłoszeń klientów, zajrzyj też na stronę [automatyzacja w obsłudze klienta](/uslugi/automatyzacja-w-obsludze-klienta).",
   ].join("\n\n"),
   faq: [
     {

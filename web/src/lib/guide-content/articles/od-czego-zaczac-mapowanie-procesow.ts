@@ -30,6 +30,7 @@ export default defineArticle({
   ],
   relatedServiceSlugs: [
     "doradztwo-i-optymalizacja-procesow-biznesowych",
+    "audyt-procesow-biznesowych",
   ],
   relatedArticleSlugs: [
     "5-procesow-do-automatyzacji-w-malej-firmie",

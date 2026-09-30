@@ -88,7 +88,7 @@ export const slaskCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-dla-logistyki",
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-raportow",
     ],
@@ -273,7 +273,7 @@ export const slaskCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-hr",
       "automatyzacja-raportow",
       "automatyzacja-dla-ksiegowosci",
@@ -366,7 +366,7 @@ export const slaskCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-logistyki",
       "automatyzacja-raportow",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
@@ -552,7 +552,7 @@ export const slaskCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-logistyki",
       "automatyzacja-dla-hr",
       "automatyzacja-raportow",
@@ -645,7 +645,7 @@ export const slaskCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-raportow",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
@@ -738,7 +738,7 @@ export const slaskCities: CityPageContent[] = [
       },
     ],
     relatedServiceSlugs: [
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-hr",
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-dla-logistyki",
@@ -833,7 +833,7 @@ export const slaskCities: CityPageContent[] = [
     relatedServiceSlugs: [
       "automatyzacja-sprzedazy",
       "automatyzacja-w-obsludze-klienta",
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-raportow",
     ],
     nearbyCitySlugs: ["tychy", "cieszyn", "zywiec", "pszczyna", "katowice"],
@@ -1018,7 +1018,7 @@ export const slaskCities: CityPageContent[] = [
     ],
     relatedServiceSlugs: [
       "automatyzacja-w-obsludze-klienta",
-      "automatyzacja-w-produkcji-i-uslugach",
+      "automatyzacja-w-produkcji",
       "automatyzacja-dla-hr",
       "automatyzacja-sprzedazy",
     ],

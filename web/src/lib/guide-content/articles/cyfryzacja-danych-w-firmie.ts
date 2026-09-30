@@ -28,8 +28,9 @@ export default defineArticle({
     "Dobrze scyfryzowane dane to warunek każdej automatyzacji i każdego wdrożenia AI.",
   ],
   relatedServiceSlugs: [
-    "doradztwo-i-optymalizacja-procesow-biznesowych",
-    "automatyzacja-oraz-ai-w-niestandardowych-procesach",
+    "cyfryzacja-danych-i-dokumentow",
+    "porzadkowanie-i-strukturyzowanie-danych",
+    "projektowanie-baz-danych",
   ],
   relatedArticleSlugs: [
     "porzadek-w-danych-przed-ai-i-automatyzacja",
@@ -84,7 +85,7 @@ export default defineArticle({
     "Po pierwszym obszarze przychodzi kolejny, a na uporządkowanych danych zaczynają działać automatyzacje: przypomnienia o terminach, raporty, połączenie z fakturowaniem. Jeśli nie wiesz, od którego obszaru zacząć, pomoże [audyt procesów](/poradnik/audyt-procesow-w-firmie), w którym przyglądamy się także danym.",
     "## Cyfryzacja jako fundament automatyzacji i AI",
     "Firmy często chcą zacząć od automatyzacji albo AI i dopiero w trakcie odkrywają, że dane są w rozsypce. Wtedy projekt się wydłuża, a część budżetu idzie na sprzątanie. Cyfryzacja zrobiona wcześniej, z myślą o tym, co będzie działo się z danymi potem, oszczędza tę pracę.",
-    "Digitalizacja, projektowanie baz i struktur danych to obszar, w którym mamy szczególnie duże doświadczenie. Takie projekty prowadzimy przy [doradztwie i optymalizacji procesów](/uslugi/doradztwo-i-optymalizacja-procesow-biznesowych), a gdy dane mają od razu zasilać automatyzacje lub AI, przy usłudze [automatyzacja oraz AI w niestandardowych procesach](/uslugi/automatyzacja-oraz-ai-w-niestandardowych-procesach).",
+    "Digitalizacja, projektowanie baz i struktur danych to obszar, w którym mamy szczególnie duże doświadczenie. Szczegóły znajdziesz na stronach [cyfryzacja danych i dokumentów](/uslugi/cyfryzacja-danych-i-dokumentow) oraz [projektowanie baz danych](/uslugi/projektowanie-baz-danych).",
   ].join("\n\n"),
   faq: [
     {

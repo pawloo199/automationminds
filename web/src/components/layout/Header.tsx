@@ -20,18 +20,6 @@ export type HeaderGuideCategory = { slug: string; name: string };
 
 const SERVICE_MENU = getPublishedServicesByGroup();
 
-/**
- * Układ kolumn mega menu: doradztwo i AI w jednej kolumnie, dane w drugiej,
- * automatyzacja procesów (najwięcej pozycji) na dwóch kolumnach.
- */
-const MEGA_MENU_COLUMNS = [["doradztwo", "ai"], ["dane"], ["automatyzacja"]]
-  .map((ids) =>
-    SERVICE_MENU.filter((entry) => ids.includes(entry.group.id)).map((entry) => ({
-      ...entry,
-      wide: entry.group.id === "automatyzacja",
-    })),
-  )
-  .filter((column) => column.length > 0);
 
 export function Header({
   settings,
@@ -206,64 +194,50 @@ export function Header({
               )}
             >
               <Container className="py-8">
-                <div className="grid grid-cols-4 gap-x-8 gap-y-8">
-                  {MEGA_MENU_COLUMNS.map((column) => (
-                    <div
-                      key={column.map((entry) => entry.group.id).join("-")}
-                      className={cn(
-                        "space-y-8",
-                        column.some((entry) => entry.wide) && "col-span-2",
-                      )}
-                    >
-                      {column.map(({ group, services: groupServices, wide }) => {
-                        const Icon = group.icon;
-                        return (
-                          <div key={group.id}>
-                            <Link
-                              href={`${SERVICES_HUB_PATH}#${group.id}`}
-                              className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-brand hover:text-brand-dark"
-                            >
-                              <Icon className="h-4 w-4" aria-hidden />
+                <div className="grid grid-cols-4 gap-x-8">
+                  {SERVICE_MENU.map(({ group, services: groupServices }) => {
+                    const Icon = group.icon;
+                    return (
+                      <div key={group.id}>
+                        <Link
+                          href={`${SERVICES_HUB_PATH}#${group.id}`}
+                          className="group/heading flex items-start gap-3 rounded-xl p-2 -m-2 transition hover:bg-surface"
+                        >
+                          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand/10 text-brand">
+                            <Icon className="h-[18px] w-[18px]" aria-hidden />
+                          </span>
+                          <span>
+                            <span className="block text-sm font-bold text-dark group-hover/heading:text-brand">
                               {group.name}
-                            </Link>
-                            <ul
-                              className={cn(
-                                "mt-3 grid gap-x-6 gap-y-0.5",
-                                wide && "grid-cols-2",
-                              )}
-                            >
-                              {groupServices.map((service) => {
-                                const href = servicePath(service.slug);
-                                return (
-                                  <li key={service.slug}>
-                                    <Link
-                                      href={href}
-                                      className={cn(
-                                        "-mx-3 block rounded-xl px-3 py-2 transition hover:bg-surface",
-                                        pathname === href && "bg-brand/5",
-                                      )}
-                                    >
-                                      <span
-                                        className={cn(
-                                          "block text-sm font-semibold leading-snug",
-                                          pathname === href ? "text-brand" : "text-dark",
-                                        )}
-                                      >
-                                        {service.menuLabel}
-                                      </span>
-                                      <span className="mt-0.5 line-clamp-2 block text-xs leading-snug text-muted">
-                                        {service.menuDescription}
-                                      </span>
-                                    </Link>
-                                  </li>
-                                );
-                              })}
-                            </ul>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  ))}
+                            </span>
+                            <span className="mt-0.5 block text-xs leading-snug text-muted">
+                              {group.description}
+                            </span>
+                          </span>
+                        </Link>
+                        <ul className="mt-4 space-y-0.5 border-l border-brand/10 pl-3">
+                          {groupServices.map((service) => {
+                            const href = servicePath(service.slug);
+                            const isActive = pathname === href;
+                            return (
+                              <li key={service.slug}>
+                                <Link
+                                  href={href}
+                                  title={service.menuDescription}
+                                  className={cn(
+                                    "block rounded-lg px-3 py-1.5 text-sm leading-snug transition hover:bg-surface hover:text-brand",
+                                    isActive ? "bg-brand/5 font-semibold text-brand" : "text-dark",
+                                  )}
+                                >
+                                  {service.menuLabel}
+                                </Link>
+                              </li>
+                            );
+                          })}
+                        </ul>
+                      </div>
+                    );
+                  })}
                 </div>
                 <div className="mt-8 flex items-center justify-between gap-6 rounded-2xl bg-surface px-6 py-4">
                   <p className="text-sm text-dark">

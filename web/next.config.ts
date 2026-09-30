@@ -12,6 +12,11 @@ const nextConfig: NextConfig = {
         destination: "/uslugi/automatyzacja-sprzedazy",
         permanent: true,
       },
+      {
+        source: "/uslugi/automatyzacja-w-produkcji-i-uslugach",
+        destination: "/uslugi/automatyzacja-w-produkcji",
+        permanent: true,
+      },
     ];
   },
   images: {
