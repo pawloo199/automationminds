@@ -174,6 +174,7 @@ export const slaskieCities: CityPageContent[] = [
       ["Zgłoszenia wystawców", "Formularz, wycena i umowa w jednym przepływie."],
     ],
     faq: [
+      ["Czy firma z Sosnowca może zacząć od automatyzacji przypomnień o płatnościach?", "Tak. To częsty pierwszy krok, bo szybko poprawia płynność, a wdrożenie jest niewielkie."],
       ["Czy pracujecie z hurtowniami z Sosnowca?", "Tak. Automatyzujemy zamówienia, stany i przypomnienia o należnościach."],
       ["Czy automatyzujecie obsługę wystawców targowych?", "Tak. Zgłoszenia, wyceny, umowy i faktury mogą działać w jednym przepływie."],
       ["Czy lokalizacja w Sosnowcu wpływa na tempo projektu?", "Nie. Pracujemy zdalnie, więc zakres i terminy dla firmy z Sosnowca są takie same jak dla firm z największych miast."],

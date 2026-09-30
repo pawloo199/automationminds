@@ -3,6 +3,7 @@ import { slaskieRegion } from "./content/regions/slaskie";
 import { malopolskieRegion } from "./content/regions/malopolskie";
 import { wielkopolskieRegion } from "./content/regions/wielkopolskie";
 import { pomorskieRegion } from "./content/regions/pomorskie";
+import { zachodniopomorskieRegion } from "./content/regions/zachodniopomorskie";
 import { mazowieckieRegion } from "./content/regions/mazowieckie";
 import { CITY_HUB_PATH } from "./types";
 
@@ -30,6 +31,7 @@ export type VoivodeshipDetails = Pick<Voivodeship, "intro" | "industries" | "faq
 
 const DETAILS: Record<string, VoivodeshipDetails> = {
   mazowieckie: mazowieckieRegion,
+  "zachodniopomorskie": zachodniopomorskieRegion,
   "pomorskie": pomorskieRegion,
   "wielkopolskie": wielkopolskieRegion,
   "malopolskie": malopolskieRegion,

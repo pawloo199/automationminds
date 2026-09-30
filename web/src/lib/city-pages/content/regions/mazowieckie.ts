@@ -1088,6 +1088,7 @@ export const mazowieckieCities: CityPageContent[] = [
       ["Raport miesięczny", "Sprzedaż, koszty i należności w jednym widoku."],
     ],
     faq: [
+      ["Czy pracujecie z przewoźnikami z Wyszkowa obsługującymi trasę S8?", "Tak. Zlecenia transportowe, dokumenty przewozowe i rozliczenia kursów mogą działać w jednym przepływie."],
       ["Czy pracujecie z zakładami produkcyjnymi?", "Tak. Automatyzujemy zamówienia, raporty i dokumenty."],
       ["Czy lokalizacja w Wyszkowie wpływa na tempo projektu?", "Nie. Pracujemy zdalnie, więc zakres i terminy dla firmy z Wyszkowa są takie same jak dla firm z największych miast."],
       ["Który proces w Wyszkowie warto zautomatyzować najpierw?", "Ten, który zabiera najwięcej czasu i powtarza się codziennie, najczęściej zamówienia, faktury albo raporty. Wybieramy go razem na konsultacji."],
@@ -1367,6 +1368,7 @@ export const mazowieckieCities: CityPageContent[] = [
       ["Dokumenty wysyłkowe", "Dokumenty i faktury tworzone z danych zamówienia."],
     ],
     faq: [
+      ["Czy obsługujecie firmy przy trasie S7 w Białobrzegach?", "Tak. Zamówienia, rezerwacje i płatności w firmach usługowych i handlowych przy trasie."],
       ["Czy pracujecie ze skupami owoców?", "Tak. Automatyzujemy przyjęcie dostaw, rozliczenia i dokumenty sprzedaży."],
       ["Czy musimy spotykać się osobiście, skoro jesteśmy w Białobrzegach?", "Nie. Większość projektów prowadzimy zdalnie. Warsztat w Białobrzegach proponujemy tylko wtedy, gdy wyraźnie przyspiesza pracę."],
       ["Kiedy firma z Białobrzegów zobaczy pierwszy efekt?", "Zwykle po kilku tygodniach, gdy pierwszy proces zaczyna działać na waszych danych."],
