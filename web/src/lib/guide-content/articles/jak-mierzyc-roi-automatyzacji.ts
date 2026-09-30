@@ -52,7 +52,7 @@ export default defineArticle({
     "Czas najlepiej mierzyć, a nie szacować. Wystarczy prosta tabelka, w której przez dwa tygodnie osoby wykonujące proces notują, ile zajęło każde wykonanie. Szacunki „z głowy” są zwykle zaniżone, bo ludzie nie liczą przerw na szukanie informacji i poprawki.",
     "> [Z praktyki]\n> Koszt godziny pracy to nie pensja netto podzielona przez godziny. Dolicz składki, urlopy, sprzęt i biuro. Jeśli nie masz dokładnych danych, zapytaj księgowość o pełny koszt zatrudnienia na danym stanowisku.",
     "## Krok 2. Policz wszystkie koszty",
-    "Koszty automatyzacji dzielą się na jednorazowe i stałe. Najczęściej pomijany jest drugi rodzaj.",
+    "Koszty automatyzacji dzielą się na jednorazowe i stałe. Najczęściej pomijany jest drugi rodzaj. Szczegółowo o tym, z czego składa się wycena, piszemy w artykule [ile kosztuje automatyzacja procesów](/poradnik/ile-kosztuje-automatyzacja-procesow).",
     "| Rodzaj | Co obejmuje |\n|---|---|\n| Jednorazowe | Analiza procesu, budowa przepływu, testy, szkolenie zespołu, okres równoległego działania |\n| Stałe (miesięczne) | Abonamenty narzędzi, opłaty za operacje lub użycie modeli AI, serwer, utrzymanie i drobne zmiany |\n| Ukryte | Czas pracowników na testy i odbiór, ewentualna przesiadka na inne narzędzie w przyszłości |",
     "Utrzymanie jest realne. Systemy się aktualizują, ktoś zmienia pole w CRM, dostawca wycofuje stary sposób połączenia. Automatyzacja bez nikogo, kto nad nią czuwa, prędzej czy później przestaje działać, często po cichu. Jak wybór narzędzia wpływa na te koszty, piszemy w artykule [jak wybrać narzędzie do automatyzacji](/poradnik/jak-wybrac-narzedzie-do-automatyzacji).",
     "## Krok 3. Policz korzyści, nie tylko godziny",

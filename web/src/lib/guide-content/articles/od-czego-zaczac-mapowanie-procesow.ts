@@ -89,7 +89,7 @@ export default defineArticle({
     "## Najczęstsze błędy przy mapowaniu",
     "- Mapowanie procedury zamiast rzeczywistości, bez udziału osób wykonujących proces.\n- Zbyt duży zakres, przez który warsztat kończy się bez wniosków.\n- Zbyt duża szczegółowość na starcie: kliknięcia w systemie zamiast kroków.\n- Brak decyzji na koniec, przez co mapa nie prowadzi do żadnej zmiany.\n- Mapa zrobiona raz i nigdy nieaktualizowana.",
     "## Kiedy warto zaprosić kogoś z zewnątrz",
-    "Wewnętrzny warsztat ma jedną słabość: uczestnicy są zbyt blisko procesu. Rzeczy, które robią od lat, wydają się oczywiste, a obejścia przestały być widoczne. Osoba z zewnątrz zadaje pytania, których nikt w firmie już nie zadaje, i łatwiej jej zauważyć, że trzy kroki robią to samo.",
+    "Wewnętrzny warsztat ma jedną słabość: uczestnicy są zbyt blisko procesu. Rzeczy, które robią od lat, wydają się oczywiste, a obejścia przestały być widoczne. Osoba z zewnątrz zadaje pytania, których nikt w firmie już nie zadaje, i łatwiej jej zauważyć, że trzy kroki robią to samo. Mapowanie jest też częścią szerszego [audytu procesów](/poradnik/audyt-procesow-w-firmie), w którym przyglądamy się również systemom i danym.",
     "Mapowanie to pierwszy etap prawie każdego projektu, który prowadzimy przy [doradztwie i optymalizacji procesów](/uslugi/doradztwo-i-optymalizacja-procesow-biznesowych). Po jednym warsztacie firma ma mapę stanu obecnego, listę wąskich gardeł i konkretną decyzję, od czego zacząć.",
   ].join("\n\n"),
   faq: [

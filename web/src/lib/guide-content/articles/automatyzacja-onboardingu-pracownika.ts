@@ -57,7 +57,7 @@ export default defineArticle({
     "### 2. Ustal, co uruchamia proces",
     "Najlepszym punktem startu jest jedno zdarzenie, które zawsze się pojawia: podpisanie umowy, wpis w systemie kadrowym albo wypełnienie formularza „nowy pracownik” przez przełożonego. Od tego momentu wszystko dzieje się według planu.",
     "### 3. Przygotuj szablony według stanowisk",
-    "Handlowiec potrzebuje CRM, programista repozytorium kodu, księgowa programu finansowego. Zamiast jednej listy dla wszystkich lepiej mieć kilka szablonów: wspólną część dla każdego i dodatki dla konkretnych ról.",
+    "Handlowiec potrzebuje CRM, programista repozytorium kodu, księgowa programu finansowego. Zamiast jednej listy dla wszystkich lepiej mieć kilka szablonów: wspólną część dla każdego i dodatki dla konkretnych ról. Takie szablony dobrze sprawdzają się w bazie w Airtable, razem z rekrutacją, o czym piszemy w artykule [Airtable w praktyce](/poradnik/airtable-w-praktyce-zastosowania).",
     "### 4. Połącz narzędzia",
     "Tu zaczyna się właściwa automatyzacja. Najczęściej łączymy:",
     "- system kadrowy lub formularz, z którego przychodzi informacja o nowej osobie,\n- Google Workspace albo Microsoft 365, gdzie zakładają się konto pocztowe i dostęp do plików,\n- komunikator (Slack lub Teams), w którym nowa osoba trafia do właściwych kanałów,\n- narzędzie do zadań, np. Asana, ClickUp, Trello albo Jira, gdzie powstaje lista zadań z terminami,\n- kalendarz, w którym planują się spotkania i szkolenia.",
