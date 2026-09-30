@@ -27,6 +27,9 @@ export type TownInput = {
   services: string[];
   howWeWork?: string;
   economy?: { title: string; paragraphs: string[] };
+  /** Przykład „przed i po” (duże miasta). Wiersze: [etap, ręcznie, po automatyzacji]. */
+  example?: { title: string; lead: string; rows: [string, string, string][] };
+  heroImage?: { url: string; alt: string };
 };
 
 export function town(input: TownInput): CityPageContent {
@@ -59,6 +62,18 @@ export function town(input: TownInput): CityPageContent {
     relatedServiceSlugs: input.services,
     nearbyCitySlugs: input.nearbyCitySlugs,
     economy: input.economy,
+    ...(input.example
+      ? {
+          tier: "A" as const,
+          example: {
+            title: input.example.title,
+            lead: input.example.lead,
+            rows: input.example.rows.map(([label, before, after]) => ({ label, before, after })),
+            note: "To przykład ilustracyjny. Zakres zawsze ustalamy po rozmowie o waszym procesie.",
+          },
+        }
+      : {}),
+    heroImage: input.heroImage,
   };
 }
 

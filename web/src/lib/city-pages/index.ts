@@ -5,14 +5,13 @@ import { lodzkiePowiatCities } from "./content/lodzkie";
 import { lubelskiePowiatCities } from "./content/lubelskie";
 import { lubuskiePowiatCities } from "./content/lubuskie";
 import { malopolskaPowiatCities } from "./content/malopolska";
+import { slaskieCities } from "./content/regions/slaskie";
 import { mazowieckieCities } from "./content/regions/mazowieckie";
 import { opolskiePowiatCities } from "./content/opolskie";
 import { podkarpackiePowiatCities } from "./content/podkarpackie";
 import { podlaskiePowiatCities } from "./content/podlaskie";
 import { polnocWschodCities } from "./content/polnoc-wschod";
 import { pomorskiePowiatCities } from "./content/pomorskie";
-import { slaskCities } from "./content/slask";
-import { slaskPowiatCities } from "./content/slask-powiaty";
 import { swietokrzyskiePowiatCities } from "./content/swietokrzyskie";
 import { tier1Cities } from "./content/tier1";
 import { warminskoMazurskiePowiatCities } from "./content/warminsko-mazurskie";
@@ -24,12 +23,11 @@ import { getVoivodeshipByName, VOIVODESHIPS } from "./voivodeships";
 
 const allCities: CityPageContent[] = [
   ...tier1Cities,
-  ...slaskCities,
-  ...slaskPowiatCities,
   ...polnocWschodCities,
   ...zachodCentrumCities,
   ...dolnoslaskieCities,
   ...mazowieckieCities,
+  ...slaskieCities,
   ...wielkopolskaPowiatCities,
   ...opolskiePowiatCities,
   ...lubuskiePowiatCities,

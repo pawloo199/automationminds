@@ -1,4 +1,5 @@
 import type { CityFaq, CityFocusItem } from "./types";
+import { slaskieRegion } from "./content/regions/slaskie";
 import { mazowieckieRegion } from "./content/regions/mazowieckie";
 import { CITY_HUB_PATH } from "./types";
 
@@ -26,6 +27,7 @@ export type VoivodeshipDetails = Pick<Voivodeship, "intro" | "industries" | "faq
 
 const DETAILS: Record<string, VoivodeshipDetails> = {
   mazowieckie: mazowieckieRegion,
+  slaskie: slaskieRegion,
 };
 
 const BASE_VOIVODESHIPS: Voivodeship[] = [
