@@ -17,7 +17,7 @@ export function ToolsStrip({
   const wide = tools.length > 12;
 
   return (
-    <section aria-labelledby="narzedzia-tytul" className="border-b border-brand/10 bg-white py-12 lg:py-14">
+    <section aria-labelledby="narzedzia-tytul" className="border-y border-brand/10 bg-white py-12 lg:py-14">
       <Container>
         <div className="grid gap-8 lg:grid-cols-12 lg:items-center lg:gap-12">
           <div className="lg:col-span-3">

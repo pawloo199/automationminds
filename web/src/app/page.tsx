@@ -192,8 +192,6 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <ToolsStrip tools={C.tools} />
-
       {/* Problemy */}
       <section aria-labelledby="problemy-tytul" className="py-20 lg:py-28">
         <Container>
@@ -519,6 +517,8 @@ export default async function HomePage() {
           </div>
         </Container>
       </section>
+
+      <ToolsStrip tools={C.tools} />
 
       {/* FAQ */}
       <section id="faq" aria-label="Najczęstsze pytania" className="scroll-mt-24 py-20 lg:py-28">

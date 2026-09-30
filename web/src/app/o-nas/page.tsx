@@ -282,12 +282,6 @@ export default async function AboutPage() {
         </Container>
       </section>
 
-      <ToolsStrip
-        tools={TOOLS}
-        title="Narzędzia, z którymi pracujemy na co dzień"
-        body="Dobieramy je do skali firmy i łączymy tak, żeby dane przepływały między nimi same."
-      />
-
       {/* Kim jesteśmy */}
       <section aria-labelledby="kim-jestesmy" className="py-20 lg:py-28">
         <Container>
@@ -598,6 +592,12 @@ export default async function AboutPage() {
           </div>
         </Container>
       </section>
+
+      <ToolsStrip
+        tools={TOOLS}
+        title="Narzędzia, z którymi pracujemy na co dzień"
+        body="Dobieramy je do skali firmy i łączymy tak, żeby dane przepływały między nimi same."
+      />
 
       {/* Zasięg */}
       {featuredCities.length > 0 ? (
