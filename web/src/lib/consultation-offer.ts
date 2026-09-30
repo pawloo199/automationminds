@@ -4,7 +4,7 @@ export const CONSULTATION_OFFER = {
   durationLabel: "Bezpłatna konsultacja 30 min",
   modalTitle: "Umów bezpłatną konsultację 30 min",
   modalSubtitle:
-    "Omówimy procesy w firmie i wskażemy 1–2 obszary z najszybszym zwrotem. Oddzwonimy w ciągu 1 dnia roboczego — bez zobowiązań.",
+    "Omówimy procesy w firmie i wskażemy 1–2 obszary z najszybszym zwrotem. Oddzwonimy w ciągu 1 dnia roboczego, bez zobowiązań.",
   formSubtitle: "Bezpłatna konsultacja 30 min",
   formTitle: "Umów bezpłatną konsultację 30 min",
   formBody:

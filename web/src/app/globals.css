@@ -96,23 +96,8 @@ body {
     }
   }
 
-  @keyframes hero-ken-burns {
-    from {
-      transform: scale3d(1, 1, 1);
-    }
-
-    to {
-      transform: scale3d(1.06, 1.06, 1);
-    }
-  }
-
   .hero-content-enter {
     animation: hero-content-enter 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
-  }
-
-  .hero-ken-burns {
-    animation: hero-ken-burns 18s ease-out forwards;
-    will-change: transform;
   }
 
   .hero-grid__accent {
