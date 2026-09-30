@@ -1,4 +1,5 @@
 import { fromCity, inCity, type CityPageContent } from "../types";
+import type { VoivodeshipDetails } from "../voivodeships";
 
 type Pair = [title: string, body: string];
 
@@ -58,5 +59,25 @@ export function town(input: TownInput): CityPageContent {
     relatedServiceSlugs: input.services,
     nearbyCitySlugs: input.nearbyCitySlugs,
     economy: input.economy,
+  };
+}
+
+/** Zwięzły zapis rozbudowanej treści województwa. */
+export function region(input: {
+  slug: string;
+  intro: string[];
+  industries: Pair[];
+  faq: Pair[];
+  heroImage?: { url: string; alt: string };
+}): VoivodeshipDetails {
+  return {
+    intro: input.intro,
+    industries: input.industries.map(([title, body]) => ({ title, body })),
+    faq: input.faq.map(([question, answer], index) => ({
+      id: `${input.slug}-woj-${index + 1}`,
+      question,
+      answer,
+    })),
+    heroImage: input.heroImage,
   };
 }

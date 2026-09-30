@@ -5,7 +5,7 @@ import { lodzkiePowiatCities } from "./content/lodzkie";
 import { lubelskiePowiatCities } from "./content/lubelskie";
 import { lubuskiePowiatCities } from "./content/lubuskie";
 import { malopolskaPowiatCities } from "./content/malopolska";
-import { mazowszePowiatCities } from "./content/mazowsze";
+import { mazowieckieCities } from "./content/regions/mazowieckie";
 import { opolskiePowiatCities } from "./content/opolskie";
 import { podkarpackiePowiatCities } from "./content/podkarpackie";
 import { podlaskiePowiatCities } from "./content/podlaskie";
@@ -29,7 +29,7 @@ const allCities: CityPageContent[] = [
   ...polnocWschodCities,
   ...zachodCentrumCities,
   ...dolnoslaskieCities,
-  ...mazowszePowiatCities,
+  ...mazowieckieCities,
   ...wielkopolskaPowiatCities,
   ...opolskiePowiatCities,
   ...lubuskiePowiatCities,

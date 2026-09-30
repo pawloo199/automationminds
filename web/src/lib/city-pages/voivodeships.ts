@@ -1,4 +1,5 @@
 import type { CityFaq, CityFocusItem } from "./types";
+import { mazowieckieRegion } from "./content/regions/mazowieckie";
 import { CITY_HUB_PATH } from "./types";
 
 export type Voivodeship = {
@@ -20,7 +21,14 @@ export type Voivodeship = {
   heroImage?: { url: string; alt: string };
 };
 
-export const VOIVODESHIPS: Voivodeship[] = [
+/** Rozbudowana treść województwa, trzymana obok treści jego miast (content/regions). */
+export type VoivodeshipDetails = Pick<Voivodeship, "intro" | "industries" | "faq" | "heroImage">;
+
+const DETAILS: Record<string, VoivodeshipDetails> = {
+  mazowieckie: mazowieckieRegion,
+};
+
+const BASE_VOIVODESHIPS: Voivodeship[] = [
   {
     slug: "dolnoslaskie",
     name: "dolnośląskie",
@@ -245,6 +253,11 @@ export const VOIVODESHIPS: Voivodeship[] = [
     relatedServiceSlugs: ["automatyzacja-dla-logistyki", "automatyzacja-dla-firm-uslugowych", "integracje-systemow"],
   },
 ];
+
+export const VOIVODESHIPS: Voivodeship[] = BASE_VOIVODESHIPS.map((v) => ({
+  ...v,
+  ...DETAILS[v.slug],
+}));
 
 const byName = new Map(VOIVODESHIPS.map((v) => [v.name, v]));
 const bySlug = new Map(VOIVODESHIPS.map((v) => [v.slug, v]));
