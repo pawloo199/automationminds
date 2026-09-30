@@ -92,7 +92,14 @@ export const polnocWschodCities: CityPageContent[] = [
       "automatyzacja-dla-sprzedazy-i-marketingu",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
     ],
-    nearbyCitySlugs: ["gdansk", "szczecin", "olsztyn", "bydgoszcz"],
+    nearbyCitySlugs: [
+      "gdansk",
+      "sopot",
+      "wejherowo",
+      "puck",
+      "pruszcz-gdanski",
+      "kartuzy",
+    ],
   },
   {
     slug: "bydgoszcz",
@@ -185,7 +192,14 @@ export const polnocWschodCities: CityPageContent[] = [
       "automatyzacja-dla-sprzedazy-i-marketingu",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
-    nearbyCitySlugs: ["torun", "grudziadz", "gdansk", "warszawa"],
+    nearbyCitySlugs: [
+      "torun",
+      "naklo-nad-notecia",
+      "swiecie",
+      "inowroclaw",
+      "znin",
+      "tuchola",
+    ],
   },
   {
     slug: "torun",
@@ -278,7 +292,14 @@ export const polnocWschodCities: CityPageContent[] = [
       "automatyzacja-raportow",
       "automatyzacja-w-produkcji-i-uslugach",
     ],
-    nearbyCitySlugs: ["bydgoszcz", "grudziadz", "inowroclaw", "warszawa"],
+    nearbyCitySlugs: [
+      "bydgoszcz",
+      "chelmno",
+      "aleksandrow-kujawski",
+      "golub-dobrzyn",
+      "inowroclaw",
+      "grudziadz",
+    ],
   },
   {
     slug: "grudziadz",
@@ -371,7 +392,14 @@ export const polnocWschodCities: CityPageContent[] = [
       "automatyzacja-raportow",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
-    nearbyCitySlugs: ["torun", "bydgoszcz", "warszawa", "gdansk"],
+    nearbyCitySlugs: [
+      "swiecie",
+      "chelmno",
+      "torun",
+      "wabrzezno",
+      "bydgoszcz",
+      "brodnica",
+    ],
   },
   {
     slug: "inowroclaw",
@@ -464,7 +492,14 @@ export const polnocWschodCities: CityPageContent[] = [
       "automatyzacja-w-obsludze-klienta",
       "automatyzacja-raportow",
     ],
-    nearbyCitySlugs: ["torun", "bydgoszcz", "warszawa", "krakow"],
+    nearbyCitySlugs: [
+      "mogilno",
+      "znin",
+      "radziejow",
+      "bydgoszcz",
+      "torun",
+      "wloclawek",
+    ],
   },
   {
     slug: "olsztyn",
@@ -557,7 +592,7 @@ export const polnocWschodCities: CityPageContent[] = [
       "automatyzacja-raportow",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
-    nearbyCitySlugs: ["gdansk", "gdynia", "bialystok", "warszawa"],
+    nearbyCitySlugs: ["ostroda", "szczytno", "mragowo", "elblag", "elk", "ketrzyn"],
   },
   {
     slug: "bialystok",
@@ -650,7 +685,7 @@ export const polnocWschodCities: CityPageContent[] = [
       "automatyzacja-w-obsludze-klienta",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
     ],
-    nearbyCitySlugs: ["suwalki", "warszawa", "olsztyn", "lublin"],
+    nearbyCitySlugs: ["sokolka", "bielsk-podlaski", "monki", "lomza", "hajnowka", "suwalki"],
   },
   {
     slug: "suwalki",
@@ -743,7 +778,7 @@ export const polnocWschodCities: CityPageContent[] = [
       "automatyzacja-dla-sprzedazy-i-marketingu",
       "automatyzacja-w-obsludze-klienta",
     ],
-    nearbyCitySlugs: ["bialystok", "olsztyn", "warszawa", "gdansk"],
+    nearbyCitySlugs: ["augustow", "sejny", "grajewo", "bialystok", "olsztyn"],
   },
   {
     slug: "lublin",
@@ -836,7 +871,7 @@ export const polnocWschodCities: CityPageContent[] = [
       "automatyzacja-w-obsludze-klienta",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
     ],
-    nearbyCitySlugs: ["rzeszow", "warszawa", "bialystok", "kielce"],
+    nearbyCitySlugs: ["swidnik", "pulawy", "krasnik", "lubartow", "chelm", "zamosc"],
   },
   {
     slug: "rzeszow",
@@ -929,7 +964,7 @@ export const polnocWschodCities: CityPageContent[] = [
       "automatyzacja-dla-hr",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
     ],
-    nearbyCitySlugs: ["krakow", "lublin", "kielce", "warszawa"],
+    nearbyCitySlugs: ["lancut", "mielec", "debica", "stalowa-wola", "krosno", "przemysl"],
   },
   {
     slug: "kielce",
@@ -1022,7 +1057,14 @@ export const polnocWschodCities: CityPageContent[] = [
       "automatyzacja-raportow",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
-    nearbyCitySlugs: ["radom", "warszawa", "rzeszow", "krakow"],
+    nearbyCitySlugs: [
+      "starachowice",
+      "skarzysko-kamienna",
+      "ostrowiec-swietokrzyski",
+      "jedrzejow",
+      "busko-zdroj",
+      "sandomierz",
+    ],
   },
   {
     slug: "radom",

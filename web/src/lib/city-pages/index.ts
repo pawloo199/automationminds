@@ -1,14 +1,24 @@
 import { mockCitySilos } from "@/lib/airtable-mock";
 import { dolnySlaskPowiatCities } from "./content/dolny-slask";
+import { kujawskoPomorskiePowiatCities } from "./content/kujawsko-pomorskie";
+import { lodzkiePowiatCities } from "./content/lodzkie";
+import { lubelskiePowiatCities } from "./content/lubelskie";
 import { lubuskiePowiatCities } from "./content/lubuskie";
+import { malopolskaPowiatCities } from "./content/malopolska";
 import { mazowszePowiatCities } from "./content/mazowsze";
 import { opolskiePowiatCities } from "./content/opolskie";
+import { podkarpackiePowiatCities } from "./content/podkarpackie";
+import { podlaskiePowiatCities } from "./content/podlaskie";
 import { polnocWschodCities } from "./content/polnoc-wschod";
+import { pomorskiePowiatCities } from "./content/pomorskie";
 import { slaskCities } from "./content/slask";
 import { slaskPowiatCities } from "./content/slask-powiaty";
+import { swietokrzyskiePowiatCities } from "./content/swietokrzyskie";
 import { tier1Cities } from "./content/tier1";
+import { warminskoMazurskiePowiatCities } from "./content/warminsko-mazurskie";
 import { wielkopolskaPowiatCities } from "./content/wielkopolska";
 import { zachodCentrumCities } from "./content/zachod-centrum";
+import { zachodniopomorskiePowiatCities } from "./content/zachodniopomorskie";
 import { cityPath, type CityPageContent } from "./types";
 
 const allCities: CityPageContent[] = [
@@ -22,6 +32,16 @@ const allCities: CityPageContent[] = [
   ...wielkopolskaPowiatCities,
   ...opolskiePowiatCities,
   ...lubuskiePowiatCities,
+  ...pomorskiePowiatCities,
+  ...malopolskaPowiatCities,
+  ...lodzkiePowiatCities,
+  ...zachodniopomorskiePowiatCities,
+  ...kujawskoPomorskiePowiatCities,
+  ...lubelskiePowiatCities,
+  ...podkarpackiePowiatCities,
+  ...podlaskiePowiatCities,
+  ...swietokrzyskiePowiatCities,
+  ...warminskoMazurskiePowiatCities,
 ];
 
 const bySlug = new Map(allCities.map((city) => [city.slug, city]));

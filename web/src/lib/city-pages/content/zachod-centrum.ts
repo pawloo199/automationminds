@@ -992,7 +992,14 @@ export const zachodCentrumCities: CityPageContent[] = [
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-raportow",
     ],
-    nearbyCitySlugs: ["szczecin", "stargard", "pila", "poznan"],
+    nearbyCitySlugs: [
+      "bialogard",
+      "kolobrzeg",
+      "slawno",
+      "szczecinek",
+      "swidwin",
+      "stargard",
+    ],
   },
   {
     slug: "stargard",
@@ -1085,7 +1092,14 @@ export const zachodCentrumCities: CityPageContent[] = [
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-w-obsludze-klienta",
     ],
-    nearbyCitySlugs: ["szczecin", "koszalin", "pila", "poznan"],
+    nearbyCitySlugs: [
+      "szczecin",
+      "goleniow",
+      "pyrzyce",
+      "choszczno",
+      "gryfino",
+      "police",
+    ],
   },
   {
     slug: "tarnow",
@@ -1178,7 +1192,14 @@ export const zachodCentrumCities: CityPageContent[] = [
       "doradztwo-i-optymalizacja-procesow-biznesowych",
       "automatyzacja-oraz-ai-w-niestandardowych-procesach",
     ],
-    nearbyCitySlugs: ["krakow", "nowy-sacz", "katowice", "piotrkow-trybunalski"],
+    nearbyCitySlugs: [
+      "brzesko",
+      "bochnia",
+      "dabrowa-tarnowska",
+      "krakow",
+      "nowy-sacz",
+      "gorlice",
+    ],
   },
   {
     slug: "nowy-sacz",
@@ -1271,7 +1292,14 @@ export const zachodCentrumCities: CityPageContent[] = [
       "automatyzacja-dla-ksiegowosci",
       "automatyzacja-dla-sprzedazy-i-marketingu",
     ],
-    nearbyCitySlugs: ["krakow", "tarnow", "katowice", "piotrkow-trybunalski"],
+    nearbyCitySlugs: [
+      "limanowa",
+      "gorlice",
+      "nowy-targ",
+      "tarnow",
+      "bochnia",
+      "krakow",
+    ],
   },
   {
     slug: "piotrkow-trybunalski",
@@ -1370,6 +1398,13 @@ export const zachodCentrumCities: CityPageContent[] = [
       "automatyzacja-dla-sprzedazy-i-marketingu",
       "doradztwo-i-optymalizacja-procesow-biznesowych",
     ],
-    nearbyCitySlugs: ["lodz", "kalisz", "ostrow-wielkopolski", "konin", "krakow", "poznan"],
+    nearbyCitySlugs: [
+      "belchatow",
+      "radomsko",
+      "opoczno",
+      "tomaszow-mazowiecki",
+      "pabianice",
+      "lodz",
+    ],
   },
 ];
