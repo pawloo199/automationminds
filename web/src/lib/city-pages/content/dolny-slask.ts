@@ -11,13 +11,13 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
     regionCluster: "dolny-slask",
     metaTitle: "Automatyzacja procesów w Głogowie | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm z Głogowa — przemysł miedziowy, produkcja i logistyka. Zdalne wdrożenia procesów biurowych i operacyjnych. Konsultacja 30 min.",
+      "Automatyzacja dla firm z Głogowa: przemysł miedziowy, produkcja i logistyka. Zdalne wdrożenia procesów biurowych i operacyjnych. Konsultacja 30 min.",
     heroTitle: "Automatyzacja procesów w Głogowie",
     heroLead:
-      "Porządkujemy przepływy danych u producentów i dostawców z Głogowa — tam, gdzie hala, magazyn i biuro muszą mówić tym samym językiem.",
+      "Porządkujemy przepływy danych u producentów i dostawców z Głogowa, tam, gdzie hala, magazyn i biuro muszą mówić tym samym językiem.",
     introParagraphs: [
       "Głogów to silny ośrodek przemysłowy Dolnego Śląska z głębokim zapleczem miedziowym, hutniczym i produkcyjnym. Automatyzacja procesów w Głogowie zwykle nie zaczyna się od robotów na linii, lecz od tego, jak zgłoszenia awarii, zamówienia części i statusy zleceń wędrują między zmianami a biurem.",
-      "Współpracujemy z głogowskimi firmami zdalnie: mapujemy krytyczny przepływ, wdrażamy wąski zakres z mierzalnym efektem i szkolimy osoby, które realnie zamykają temat w systemie — nie tylko w Excelu na dysku wspólnym.",
+      "Współpracujemy z głogowskimi firmami zdalnie: mapujemy krytyczny przepływ, wdrażamy wąski zakres z mierzalnym efektem i szkolimy osoby, które realnie zamykają temat w systemie, nie tylko w Excelu na dysku wspólnym.",
     ],
     localContext:
       "W regionie głogowskim dominują procesy ciągłe i wielozmianowe. Biura muszą raportować do centrali, audytorów i klientów B2B, podczas gdy operacje reagują na awarie w czasie rzeczywistym. Typowy ból to rozjazd między raportem zmianowym a tym, co widzi planowanie czy zaopatrzenie.",
@@ -60,25 +60,25 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
       },
     ],
     howWeWork:
-      "Z firmami z Głogowa startujemy od procesu krytycznego dla ciągłości — zwykle zgłoszeń serwisowych albo statusów produkcji. Wdrażamy zdalnie, testujemy na realnych scenariuszach awaryjnych i zostawiamy zespół z jasną instrukcją. Bezpłatna konsultacja 30 minut pozwala ocenić sens startu bez zobowiązań.",
+      "Z firmami z Głogowa startujemy od procesu krytycznego dla ciągłości. Zwykle zgłoszeń serwisowych albo statusów produkcji. Wdrażamy zdalnie, testujemy na realnych scenariuszach awaryjnych i zostawiamy zespół z jasną instrukcją. Bezpłatna konsultacja 30 minut pozwala ocenić sens startu bez zobowiązań.",
     faq: [
       {
         id: "glo-1",
         question: "Czy automatyzacja w Głogowie ma sens tylko dla dużych zakładów?",
         answer:
-          "Nie. Często pracujemy z mniejszymi dostawcami serwisu, logistyki i produkcji — tam, gdzie biuro nie nadąża za tempem hali.",
+          "Nie. Często pracujemy z mniejszymi dostawcami serwisu, logistyki i produkcji, tam, gdzie biuro nie nadąża za tempem hali.",
       },
       {
         id: "glo-2",
         question: "Czy musicie być na terenie zakładu?",
         answer:
-          "Standardem jest współpraca zdalna. Wizytę planujemy, gdy realnie pomaga mapowaniu — nie jako domyślny koszt.",
+          "Standardem jest współpraca zdalna. Wizytę planujemy, gdy realnie pomaga mapowaniu, nie jako domyślny koszt.",
       },
       {
         id: "glo-3",
         question: "Jak łączycie się z ERP?",
         answer:
-          "Przez API, pliki wymiany lub integratory — zależnie od tego, co system i IT akceptują.",
+          "Przez API, pliki wymiany lub integratory, zależnie od tego, co system i IT akceptują.",
       },
       {
         id: "glo-4",
@@ -104,10 +104,10 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
     regionCluster: "dolny-slask",
     metaTitle: "Automatyzacja procesów w Świdnicy | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm ze Świdnicy — produkcja, automotive-adjacent i MŚP. Zdalne wdrożenia HR, logistyki i raportów. Umów konsultację.",
+      "Automatyzacja dla firm ze Świdnicy, produkcja, automotive-adjacent i MŚP. Zdalne wdrożenia HR, logistyki i raportów. Umów konsultację.",
     heroTitle: "Automatyzacja procesów w Świdnicy",
     heroLead:
-      "Pomagamy świdnickim firmom spiąć produkcję, magazyn i biuro — bez dokładania kolejnych arkuszy na wszelki wypadek.",
+      "Pomagamy świdnickim firmom spiąć produkcję, magazyn i biuro, bez dokładania kolejnych arkuszy na wszelki wypadek.",
     introParagraphs: [
       "Świdnica to jeden z ważniejszych ośrodków przemysłowych południa Dolnego Śląska: produkcja, dostawcy automotive-adjacent i gęsta sieć MŚP. Automatyzacja procesów w Świdnicy często odpowiada na pytanie, dlaczego handlowiec obiecuje termin, którego planowanie już nie widzi.",
       "Pracujemy zdalnie ze świdnickimi zespołami: wybieramy jeden proces o wysokim koszcie ręcznej pracy, wdrażamy przepływ i mierzymy efekt zanim skalujemy kolejne obszary.",
@@ -159,7 +159,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
         id: "swi-1",
         question: "Czy automatyzujecie procesy produkcyjne w Świdnicy?",
         answer:
-          "Tak — szczególnie przepływy danych między halą, planowaniem i biurem, bez wymiany całego MES z marszu.",
+          "Tak. Szczególnie przepływy danych między halą, planowaniem i biurem, bez wymiany całego MES z marszu.",
       },
       {
         id: "swi-2",
@@ -177,7 +177,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
         id: "swi-4",
         question: "Czy integrujecie ERP i arkusze?",
         answer:
-          "Tak — łączymy to, czym już pracujecie, zamiast wymuszać nowy stack.",
+          "Tak. Łączymy to, czym już pracujecie, zamiast wymuszać nowy stack.",
       },
     ],
     relatedServiceSlugs: [
@@ -197,13 +197,13 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
     regionCluster: "dolny-slask",
     metaTitle: "Automatyzacja procesów w Bolesławcu | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm z Bolesławca — ceramika, produkcja i eksport. Porządkujemy zamówienia, magazyn i raporty. Konsultacja 30 min.",
+      "Automatyzacja dla firm z Bolesławca: ceramika, produkcja i eksport. Porządkujemy zamówienia, magazyn i raporty. Konsultacja 30 min.",
     heroTitle: "Automatyzacja procesów w Bolesławcu",
     heroLead:
-      "Spinamy zamówienia, produkcję i wysyłkę u firm z Bolesławca — szczególnie tam, gdzie sezon i eksport nie wybaczają chaosu w danych.",
+      "Spinamy zamówienia, produkcję i wysyłkę u firm z Bolesławca, szczególnie tam, gdzie sezon i eksport nie wybaczają chaosu w danych.",
     introParagraphs: [
       "Bolesławiec kojarzy się z ceramiką, ale lokalna gospodarka to też produkcja, handel eksportowy i logistyka. Automatyzacja procesów w Bolesławcu często zaczyna się od zamówień: statusy u klienta, w magazynie i u produkcji żyją w trzech miejscach.",
-      "Pomagamy bolesławieckim zespołom budować przepływy, które przetrwają szczyt sezonu i wymagania partnerów zagranicznych — zdalnie, bez udawania lokalnego oddziału.",
+      "Pomagamy bolesławieckim zespołom budować przepływy, które przetrwają szczyt sezonu i wymagania partnerów zagranicznych, zdalnie, bez udawania lokalnego oddziału.",
     ],
     localContext:
       "Firmy z powiatu bolesławieckiego łączą produkcję rzemieślniczą i przemysłową z ekspozycją na eksport. Bólem są ręczne aktualizacje stanów, opóźnione fakturowanie i brak jednej prawdy o realizacji zamówienia.",
@@ -252,7 +252,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
         id: "bol-1",
         question: "Czy automatyzacja w Bolesławcu ma sens dla mniejszej manufaktury?",
         answer:
-          "Tak — zwłaszcza gdy rośnie liczba kanałów sprzedaży i eksport zaczyna generować chaos w statusach.",
+          "Tak. Zwłaszcza gdy rośnie liczba kanałów sprzedaży i eksport zaczyna generować chaos w statusach.",
       },
       {
         id: "bol-2",
@@ -270,7 +270,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
         id: "bol-4",
         question: "Jak szybko widać efekt?",
         answer:
-          "Przy wąskim zakresie — często w ciągu kilku tygodni od startu wdrożenia.",
+          "Przy wąskim zakresie. Często w ciągu kilku tygodni od startu wdrożenia.",
       },
     ],
     relatedServiceSlugs: [
@@ -290,10 +290,10 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
     regionCluster: "dolny-slask",
     metaTitle: "Automatyzacja procesów w Oleśnicy | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm z Oleśnicy — pierścień Wrocławia, produkcja i usługi B2B. Zdalne wdrożenia procesów. Umów konsultację.",
+      "Automatyzacja dla firm z Oleśnicy: pierścień Wrocławia, produkcja i usługi B2B. Zdalne wdrożenia procesów. Umów konsultację.",
     heroTitle: "Automatyzacja procesów w Oleśnicy",
     heroLead:
-      "Wspieramy oleśnickie firmy z pierścienia Wrocławia — gdy tempo aglomeracji wyprzedza ręczne procesy biurowe.",
+      "Wspieramy oleśnickie firmy z pierścienia Wrocławia, gdy tempo aglomeracji wyprzedza ręczne procesy biurowe.",
     introParagraphs: [
       "Oleśnica leży w strefie oddziaływania Wrocławia: produkcja, logistyka i usługi B2B rosną szybciej niż etaty w back-office. Automatyzacja procesów w Oleśnicy to często odpowiedź na przeciążone skrzynki, dublowane Excela i nieaktualne statusy dla klientów z aglomeracji.",
       "Pracujemy zdalnie z lokalnymi zespołami: porządkujemy jeden krytyczny przepływ, wdrażamy go i zostawiamy mierzalny efekt przed kolejnym etapem.",
@@ -301,7 +301,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
     localContext:
       "Powiat oleśnicki łączy lokalnych producentów z firmami usługowymi obsługującymi rynek wrocławski. Typowe problemy: opóźnione potwierdzenia zamówień, ręczne raporty dla centrali i brak śladu decyzji w procesie zakupowym.",
     whyHere:
-      "W Oleśnicy automatyzacja pozwala rosnąć bez proporcjonalnego wzrostu chaosu administracyjnego — szczególnie przy obsłudze klientów z większej aglomeracji.",
+      "W Oleśnicy automatyzacja pozwala rosnąć bez proporcjonalnego wzrostu chaosu administracyjnego, szczególnie przy obsłudze klientów z większej aglomeracji.",
     focusIndustries: [
       {
         title: "Produkcja lokalna",
@@ -345,23 +345,23 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
         id: "ole-1",
         question: "Czy obsługujecie firmy z Oleśnicy zdalnie?",
         answer:
-          "Tak — to standard. Spotkania na miejscu tylko gdy wnoszą wartość.",
+          "Tak. To standard. Spotkania na miejscu tylko gdy wnoszą wartość.",
       },
       {
         id: "ole-2",
         question: "Czy automatyzacja pomaga firmom podwykonawczym Wrocławia?",
         answer:
-          "Tak — zwłaszcza przy statusach zleceń, protokołach i rozliczeniach.",
+          "Tak. Zwłaszcza przy statusach zleceń, protokołach i rozliczeniach.",
       },
       {
         id: "ole-3",
         question: "Jakie systemy łączycie?",
         answer:
-          "ERP, CRM, arkusze, formularze i narzędzia biurowe — zależnie od tego, czym już pracujecie.",
+          "ERP, CRM, arkusze, formularze i narzędzia biurowe, zależnie od tego, czym już pracujecie.",
       },
       {
         id: "ole-4",
-        question: "Czy to rozwiązanie tylko dla dużych?",
+        question: "Czy to tylko dla dużych firm?",
         answer:
           "Nie. Najczęściej pracujemy z MŚP, które urosły szybciej niż procesy.",
       },
@@ -383,10 +383,10 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
     regionCluster: "dolny-slask",
     metaTitle: "Automatyzacja procesów w Oławie | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm z Oławy — produkcja, logistyka i pierścień Wrocławia. Zdalne wdrożenia procesów operacyjnych. Konsultacja 30 min.",
+      "Automatyzacja dla firm z Oławy: produkcja, logistyka i pierścień Wrocławia. Zdalne wdrożenia procesów operacyjnych. Konsultacja 30 min.",
     heroTitle: "Automatyzacja procesów w Oławie",
     heroLead:
-      "Porządkujemy procesy oławskich firm produkcyjnych i logistycznych — gdy lokalizacja przy Wrocławiu oznacza tempo, którego Excel nie dogania.",
+      "Porządkujemy procesy oławskich firm produkcyjnych i logistycznych, gdy lokalizacja przy Wrocławiu oznacza tempo, którego Excel nie dogania.",
     introParagraphs: [
       "Oława to dynamiczny ośrodek na południowo-wschodnim skraju aglomeracji wrocławskiej: produkcja, magazyny i usługi dla większych odbiorców. Automatyzacja procesów w Oławie często zaczyna się od rozjazdu między planem produkcji a tym, co widzi magazyn lub klient.",
       "Współpracujemy zdalnie: wybieramy wąski zakres, wdrażamy przepływ i mierzymy, czy zespół faktycznie przestaje gonić statusy telefonami.",
@@ -438,19 +438,19 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
         id: "ola-1",
         question: "Czy automatyzacja w Oławie obejmuje logistykę?",
         answer:
-          "Tak — awizacje, statusy i komunikację z klientem traktujemy jako pełnoprawny proces biznesowy.",
+          "Tak. Awizacje, statusy i komunikację z klientem traktujemy jako pełnoprawny proces biznesowy.",
       },
       {
         id: "ola-2",
         question: "Czy potrzebujemy dużego IT?",
         answer:
-          "Nie. Dobieramy rozwiązania możliwe do utrzymania przez lokalny zespół.",
+          "Nie. Dobieramy narzędzia możliwe do utrzymania przez lokalny zespół.",
       },
       {
         id: "ola-3",
         question: "Jak łączycie produkcję z biurem?",
         answer:
-          "Przez integracje, formularze i reguły — bez wymiany całego ERP.",
+          "Przez integracje, formularze i reguły, bez wymiany całego ERP.",
       },
       {
         id: "ola-4",
@@ -476,13 +476,13 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
     regionCluster: "dolny-slask",
     metaTitle: "Automatyzacja procesów w Dzierżoniowie | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm z Dzierżoniowa — produkcja, elektronika i MŚP. Zdalne wdrożenia procesów jakości, HR i raportów.",
+      "Automatyzacja dla firm z Dzierżoniowa: produkcja, elektronika i MŚP. Zdalne wdrożenia procesów jakości, HR i raportów.",
     heroTitle: "Automatyzacja procesów w Dzierżoniowie",
     heroLead:
-      "Pomagamy dzierżoniowskim zakładom i MŚP domknąć procesy jakości, zleceń i raportowania — bez dokładania kolejnej warstwy Exceli.",
+      "Pomagamy dzierżoniowskim zakładom i MŚP domknąć procesy jakości, zleceń i raportowania, bez dokładania kolejnej warstwy Exceli.",
     introParagraphs: [
       "Dzierżoniów i powiat to produkcja, elektronika oraz firmy usługowe obsługujące przemysł południa regionu. Automatyzacja procesów w Dzierżoniowie często dotyczy dokumentacji jakości, statusów naprawy lub montażu i obiegu informacji między zmianami.",
-      "Pracujemy zdalnie: najpierw proces o najwyższym ryzyku błędu, potem skalowanie. Bez obietnicy lokalnego biura — z obietnicą działającego przepływu.",
+      "Pracujemy zdalnie: najpierw proces o najwyższym ryzyku błędu, potem skalowanie. Bez obietnicy lokalnego biura, z obietnicą działającego przepływu.",
     ],
     localContext:
       "Lokalne firmy łączą wymagania jakościowe klientów przemysłowych z ograniczeniami kadrowymi MŚP. Typowy ból: protokoły w PDF-ach, ręczne śledzenie NCR i raporty składane na wczoraj.",
@@ -531,7 +531,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
         id: "dzi-1",
         question: "Czy automatyzujecie dokumentację jakości w Dzierżoniowie?",
         answer:
-          "Tak — to jeden z najczęstszych startów w lokalnych zakładach.",
+          "Tak. To jeden z najczęstszych startów w lokalnych zakładach.",
       },
       {
         id: "dzi-2",
@@ -569,10 +569,10 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
     regionCluster: "dolny-slask",
     metaTitle: "Automatyzacja procesów w Zgorzelcu | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm ze Zgorzelca — transport cross-border, handel i produkcja. Zdalne wdrożenia logistyki i dokumentów. Konsultacja 30 min.",
+      "Automatyzacja dla firm ze Zgorzelca, transport cross-border, handel i produkcja. Zdalne wdrożenia logistyki i dokumentów. Konsultacja 30 min.",
     heroTitle: "Automatyzacja procesów w Zgorzelcu",
     heroLead:
-      "Porządkujemy procesy firm ze Zgorzelca działających na styku Polski i Niemiec — transport, dokumenty i statusy zleceń bez ręcznego chaosu.",
+      "Porządkujemy procesy firm ze Zgorzelca działających na styku Polski i Niemiec, transport, dokumenty i statusy zleceń bez ręcznego chaosu.",
     introParagraphs: [
       "Zgorzelec to ośrodek pogranicza: transport, handel, produkcja i usługi z ekspozycją na klientów po obu stronach Nysy. Automatyzacja procesów w Zgorzelcu często dotyczy dokumentów przewozowych, statusów zleceń i komunikacji z partnerami zagranicznymi.",
       "Współpracujemy zdalnie: budujemy przepływy, które nie giną między skrzynkami a dają dyspozytorowi jeden aktualny obraz.",
@@ -624,13 +624,13 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
         id: "zgo-1",
         question: "Czy automatyzacja w Zgorzelcu obejmuje procesy cross-border?",
         answer:
-          "Tak — szczególnie statusy, dokumenty i komunikację z partnerami po obu stronach granicy.",
+          "Tak. Szczególnie statusy, dokumenty i komunikację z partnerami po obu stronach granicy.",
       },
       {
         id: "zgo-2",
         question: "Czy integrujecie systemy TMS lub ERP?",
         answer:
-          "Jeśli udostępniają API lub pliki — tak, w stabilnym, prostym wariancie.",
+          "Jeśli udostępniają API lub pliki, tak, w stabilnym, prostym wariancie.",
       },
       {
         id: "zgo-3",
@@ -662,13 +662,13 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
     regionCluster: "dolny-slask",
     metaTitle: "Automatyzacja procesów w Kłodzku | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm z Kłodzka — Kotlina Kłodzka, turystyka, usługi i MŚP. Zdalne wdrożenia rezerwacji, HR i finansów.",
+      "Automatyzacja dla firm z Kłodzka: Kotlina Kłodzka, turystyka, usługi i MŚP. Zdalne wdrożenia rezerwacji, HR i finansów.",
     heroTitle: "Automatyzacja procesów w Kłodzku",
     heroLead:
-      "Pomagamy kłodzkim firmom ogarnąć sezonowość Kotliny: rezerwacje, obsługa gości, finanse i zaplecze — bez chaosu w szczycie.",
+      "Pomagamy kłodzkim firmom ogarnąć sezonowość Kotliny: rezerwacje, obsługa gości, finanse i zaplecze, bez chaosu w szczycie.",
     introParagraphs: [
       "Kłodzko jest centrum Kotliny Kłodzkiej: turystyka uzdrowiskowa, usługi, handel i lokalna produkcja. Automatyzacja procesów w Kłodzku często oznacza połączenie sezonowych szczytów z ciągłą pracą back-office, które nie mogą się wykluczać.",
-      "Pracujemy zdalnie z hotelami, klinikami, MŚP i dostawcami usług: budujemy przepływy, które działają w sezonie i poza nim — bez fałszywej obietnicy stacjonarnego oddziału.",
+      "Pracujemy zdalnie z hotelami, klinikami, MŚP i dostawcami usług: budujemy przepływy, które działają w sezonie i poza nim, bez fałszywej obietnicy stacjonarnego oddziału.",
     ],
     localContext:
       "Powiat kłodzki łączy obiekty turystyczne z firmami usługowymi i rzemiosłem. Typowy ból to ręczne rezerwacje, opóźnione rozliczenia sezonowe i brak jednego obrazu obsadzenia oraz kosztów.",
@@ -711,19 +711,19 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
       },
     ],
     howWeWork:
-      "Z Kłodzka startujemy przed szczytem lub tuż po — mapujemy proces generujący najwięcej ręcznej pracy, wdrażamy zdalnie i testujemy na realnym kalendarzu. Konsultacja 30 minut.",
+      "Z Kłodzka startujemy przed szczytem lub tuż po, mapujemy proces generujący najwięcej ręcznej pracy, wdrażamy zdalnie i testujemy na realnym kalendarzu. Konsultacja 30 minut.",
     faq: [
       {
         id: "klo-1",
         question: "Czy automatyzacja w Kłodzku ma sens poza sezonem?",
         answer:
-          "Tak — poza sezonem budujemy fundament, w sezonie zbieracie efekty.",
+          "Tak. Poza sezonem budujemy fundament, w sezonie zbieracie efekty.",
       },
       {
         id: "klo-2",
         question: "Czy łączycie systemy hotelowe?",
         answer:
-          "Jeśli udostępniają integracje lub eksporty — tak, w prostym wariancie.",
+          "Jeśli udostępniają integracje lub eksporty, tak, w prostym wariancie.",
       },
       {
         id: "klo-3",
@@ -755,10 +755,10 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
     regionCluster: "dolny-slask",
     metaTitle: "Automatyzacja procesów w Polkowicach | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm z Polkowic — ekosystem produkcyjny, dostawcy i logistyka. Zdalne wdrożenia jakości i raportów. Konsultacja 30 min.",
+      "Automatyzacja dla firm z Polkowic: łańcuch produkcyjny, dostawcy i logistyka. Zdalne wdrożenia jakości i raportów. Konsultacja 30 min.",
     heroTitle: "Automatyzacja procesów w Polkowicach",
     heroLead:
-      "Spinamy procesy dostawców i zakładów z Polkowic — gdy wymagania dużego ekosystemu produkcyjnego spotykają ograniczenia MŚP.",
+      "Spinamy procesy dostawców i zakładów z Polkowic, gdy wymagania dużego łańcucha produkcyjnego spotykają ograniczenia MŚP.",
     introParagraphs: [
       "Polkowice to ośrodek mocno związany z produkcją i łańcuchem dostaw dużych inwestorów regionu. Automatyzacja procesów w Polkowicach często dotyczy dokumentacji jakości, statusów dostaw i raportowania, którego oczekuje klient przemysłowy.",
       "Pomagamy lokalnym dostawcom i zakładom budować przepływy, które spełniają oczekiwania odbiorcy bez dokładania etatów do przepisywania danych między systemami.",
@@ -816,7 +816,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
         id: "pol-2",
         question: "Czy integrujecie się z systemami odbiorcy?",
         answer:
-          "Gdzie to możliwe i bezpieczne — tak; czasem wystarczy uporządkowany eksport i checklisty.",
+          "Gdzie to możliwe i bezpieczne, tak; czasem wystarczy uporządkowany eksport i checklisty.",
       },
       {
         id: "pol-3",
@@ -848,10 +848,10 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
     regionCluster: "dolny-slask",
     metaTitle: "Automatyzacja procesów w Jaworze | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm z Jawora — produkcja, okolice Legnicy i MŚP. Zdalne wdrożenia procesów operacyjnych i biurowych.",
+      "Automatyzacja dla firm z Jawora: produkcja, okolice Legnicy i MŚP. Zdalne wdrożenia procesów operacyjnych i biurowych.",
     heroTitle: "Automatyzacja procesów w Jaworze",
     heroLead:
-      "Wspieramy jaworskie firmy produkcyjne i usługowe — gdy lokalny rynek wymaga tempa Legnicy, a zespół back-office jest ograniczony.",
+      "Wspieramy jaworskie firmy produkcyjne i usługowe, gdy lokalny rynek wymaga tempa Legnicy, a zespół back-office jest ograniczony.",
     introParagraphs: [
       "Jawor leży w przemysłowym pasie między Legnicą a Wałbrzychem: produkcja, usługi dla zakładów i lokalny handel B2B. Automatyzacja procesów w Jaworze często dotyczy statusów zleceń, protokołów i zatwierdzeń, które dziś żyją w skrzynkach mailowych.",
       "Pracujemy zdalnie z lokalnymi MŚP: wybieramy jeden proces, wdrażamy go i mierzymy, zanim idziemy dalej.",
@@ -903,7 +903,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
         id: "jaw-1",
         question: "Czy automatyzacja w Jaworze ma sens dla małej firmy?",
         answer:
-          "Tak — zwłaszcza gdy właściciel i biuro toną w statusach i dokumentach.",
+          "Tak. Zwłaszcza gdy właściciel i biuro toną w statusach i dokumentach.",
       },
       {
         id: "jaw-2",
@@ -915,7 +915,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
         id: "jaw-3",
         question: "Jak wygląda współpraca zdalna?",
         answer:
-          "Warsztaty online, wdrożenie, testy i szkolenie — z jasnym zakresem.",
+          "Warsztaty online, wdrożenie, testy i szkolenie, z jasnym zakresem.",
       },
       {
         id: "jaw-4",
@@ -941,10 +941,10 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
     regionCluster: "dolny-slask",
     metaTitle: "Automatyzacja procesów w Lubaniu | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm z Lubania — pogranicze, produkcja i usługi. Zdalne wdrożenia logistyki, sprzedaży i back-office.",
+      "Automatyzacja dla firm z Lubania: pogranicze, produkcja i usługi. Zdalne wdrożenia logistyki, sprzedaży i back-office.",
     heroTitle: "Automatyzacja procesów w Lubaniu",
     heroLead:
-      "Porządkujemy procesy lubańskich firm na styku produkcji, handlu i pogranicza — mniej ręcznego klejenia statusów, więcej przewidywalności.",
+      "Porządkujemy procesy lubańskich firm na styku produkcji, handlu i pogranicza, mniej ręcznego klejenia statusów, więcej przewidywalności.",
     introParagraphs: [
       "Lubań to ośrodek zachodniego pogranicza Dolnego Śląska: produkcja, handel i usługi z ekspozycją na klientów regionalnych oraz zagranicznych. Automatyzacja procesów w Lubaniu często zaczyna się od zamówień i dokumentów, które giną między działami.",
       "Współpracujemy zdalnie: budujemy wąski, działający przepływ i dopiero potem rozszerzamy zakres.",
@@ -1034,10 +1034,10 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
     regionCluster: "dolny-slask",
     metaTitle: "Automatyzacja procesów w Kamiennej Górze | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm z Kamiennej Góry — produkcja, tekstylia i Kotlina Jeleniogórska. Zdalne wdrożenia procesów. Konsultacja 30 min.",
+      "Automatyzacja dla firm z Kamiennej Góry: produkcja, tekstylia i Kotlina Jeleniogórska. Zdalne wdrożenia procesów. Konsultacja 30 min.",
     heroTitle: "Automatyzacja procesów w Kamiennej Górze",
     heroLead:
-      "Pomagamy firmom z Kamiennej Góry spiąć produkcję, magazyn i biuro — gdy tradycyjne branże spotykają nowoczesne wymagania klientów.",
+      "Pomagamy firmom z Kamiennej Góry spiąć produkcję, magazyn i biuro, gdy tradycyjne branże spotykają nowoczesne wymagania klientów.",
     introParagraphs: [
       "Kamienna Góra to ośrodek z historią tekstylną i produkcyjną, dziś mocno związany też z regionem jeleniogórskim. Automatyzacja procesów w Kamiennej Górze często dotyczy zleceń produkcyjnych, jakości i raportowania, które wciąż żyją w arkuszach.",
       "Pracujemy zdalnie z lokalnymi zakładami i MŚP: porządkujemy krytyczny przepływ i budujemy nawyk pracy na aktualnych danych.",
@@ -1095,7 +1095,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
         id: "kam-2",
         question: "Czy integrujecie stare systemy?",
         answer:
-          "Tam, gdzie da się bezpiecznie — tak; czasem zaczynamy od formularzy i reguł.",
+          "Tam, gdzie da się bezpiecznie, tak; czasem zaczynamy od formularzy i reguł.",
       },
       {
         id: "kam-3",
@@ -1127,10 +1127,10 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
     regionCluster: "dolny-slask",
     metaTitle: "Automatyzacja procesów w Ząbkowicach Śląskich | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm z Ząbkowic Śląskich — produkcja, usługi i południe Dolnego Śląska. Zdalne wdrożenia procesów. Umów konsultację.",
+      "Automatyzacja dla firm z Ząbkowic Śląskich: produkcja, usługi i południe Dolnego Śląska. Zdalne wdrożenia procesów. Umów konsultację.",
     heroTitle: "Automatyzacja procesów w Ząbkowicach Śląskich",
     heroLead:
-      "Porządkujemy procesy ząbkowickich MŚP i zakładów — gdy lokalny rynek wymaga dokumentacji i tempa, a zespół jest ograniczony.",
+      "Porządkujemy procesy ząbkowickich MŚP i zakładów, gdy lokalny rynek wymaga dokumentacji i tempa, a zespół jest ograniczony.",
     introParagraphs: [
       "Ząbkowice Śląskie to siedziba powiatu na południu województwa: produkcja, usługi i handel lokalny. Automatyzacja procesów w Ząbkowicach Śląskich często odpowiada na chaos w zleceniach, protokołach i rozliczeniach.",
       "Współpracujemy zdalnie: wybieramy jeden proces o wysokim koszcie ręcznej pracy i wdrażamy go do stanu, w którym zespół przestaje gonić statusy.",
@@ -1182,7 +1182,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
         id: "zab-1",
         question: "Czy automatyzacja w Ząbkowicach Śląskich ma sens dla małej firmy?",
         answer:
-          "Tak — zwłaszcza gdy właściciel jest jednocześnie biurem i sprzedażą.",
+          "Tak. Zwłaszcza gdy właściciel jest jednocześnie biurem i sprzedażą.",
       },
       {
         id: "zab-2",
@@ -1198,7 +1198,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
       },
       {
         id: "zab-4",
-        question: "Czy utrzymujecie rozwiązania?",
+        question: "Czy utrzymujecie wdrożenia?",
         answer:
           "Przekazujemy dokumentację; kolejne etapy planujemy wspólnie.",
       },
@@ -1220,10 +1220,10 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
     regionCluster: "dolny-slask",
     metaTitle: "Automatyzacja procesów w Złotoryi | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm ze Złotoryi — okolice Legnicy, produkcja i usługi. Zdalne wdrożenia procesów operacyjnych. Konsultacja 30 min.",
+      "Automatyzacja dla firm ze Złotoryi, okolice Legnicy, produkcja i usługi. Zdalne wdrożenia procesów operacyjnych. Konsultacja 30 min.",
     heroTitle: "Automatyzacja procesów w Złotoryi",
     heroLead:
-      "Pomagamy złotoryjskim firmom uporządkować zlecenia, dokumenty i raporty — w cieniu dużego hubu legnickiego, bez chaosu w back-office.",
+      "Pomagamy złotoryjskim firmom uporządkować zlecenia, dokumenty i raporty, w cieniu dużego hubu legnickiego, bez chaosu w back-office.",
     introParagraphs: [
       "Złotoryja leży w strefie oddziaływania Legnicy i przemysłu miedziowego: lokalna produkcja, usługi i handel B2B. Automatyzacja procesów w Złotoryi często dotyczy obiegu dokumentów i statusów, które dziś giną między telefonami a Excelami.",
       "Pracujemy zdalnie: budujemy prosty, utrzymywalny przepływ i mierzymy efekt zanim skalujemy.",
@@ -1275,7 +1275,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
         id: "zlo-1",
         question: "Czy automatyzacja w Złotoryi jest dla małych firm?",
         answer:
-          "Tak — to nasz najczęstszy profil w powiecie.",
+          "Tak. To nasz najczęstszy profil w powiecie.",
       },
       {
         id: "zlo-2",
@@ -1293,7 +1293,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
         id: "zlo-4",
         question: "Jak szybko widać efekt?",
         answer:
-          "Przy wąskim zakresie — zwykle w kilka tygodni.",
+          "Przy wąskim zakresie. Zwykle w kilka tygodni.",
       },
     ],
     relatedServiceSlugs: [
@@ -1313,10 +1313,10 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
     regionCluster: "dolny-slask",
     metaTitle: "Automatyzacja procesów w Trzebnicy | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm z Trzebnicy — pierścień Wrocławia, usługi i handel. Zdalne wdrożenia procesów obsługi i back-office.",
+      "Automatyzacja dla firm z Trzebnicy: pierścień Wrocławia, usługi i handel. Zdalne wdrożenia procesów obsługi i back-office.",
     heroTitle: "Automatyzacja procesów w Trzebnicy",
     heroLead:
-      "Wspieramy trzebnickie firmy z północnego pierścienia Wrocławia — gdy rosnący popyt wyprzedza ręczne procesy biurowe.",
+      "Wspieramy trzebnickie firmy z północnego pierścienia Wrocławia, gdy rosnący popyt wyprzedza ręczne procesy biurowe.",
     introParagraphs: [
       "Trzebnica to ośrodek usługowo-handlowy w strefie dojazdowej Wrocławia. Automatyzacja procesów w Trzebnicy często zaczyna się od obsługi klienta, grafików i rozliczeń, które w szczytach generują kolejkę maili i telefonów.",
       "Pracujemy zdalnie z lokalnymi MŚP: porządkujemy jeden proces, wdrażamy go i zostawiamy zespół z jasną instrukcją.",
@@ -1368,7 +1368,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
         id: "trz-1",
         question: "Czy automatyzacja w Trzebnicy pomaga firmom usługowym?",
         answer:
-          "Tak — to jeden z najczęstszych scenariuszy w powiecie.",
+          "Tak. To jeden z najczęstszych scenariuszy w powiecie.",
       },
       {
         id: "trz-2",
@@ -1386,7 +1386,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
         id: "trz-4",
         question: "Czy pracujecie zdalnie z Trzebnicy?",
         answer:
-          "Tak — to standard.",
+          "Tak. To standard.",
       },
     ],
     relatedServiceSlugs: [
@@ -1406,10 +1406,10 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
     regionCluster: "dolny-slask",
     metaTitle: "Automatyzacja procesów w Wołowie | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm z Wołowa — produkcja, okolice Odry i MŚP. Zdalne wdrożenia procesów operacyjnych i finansowych.",
+      "Automatyzacja dla firm z Wołowa: produkcja, okolice Odry i MŚP. Zdalne wdrożenia procesów operacyjnych i finansowych.",
     heroTitle: "Automatyzacja procesów w Wołowie",
     heroLead:
-      "Porządkujemy procesy wołowskich firm produkcyjnych i usługowych — mniej ręcznego statusowania, więcej kontroli nad realizacją.",
+      "Porządkujemy procesy wołowskich firm produkcyjnych i usługowych, mniej ręcznego statusowania, więcej kontroli nad realizacją.",
     introParagraphs: [
       "Wołów to siedziba powiatu nad Odrą: produkcja, usługi i firmy pracujące na rynek regionalny oraz wrocławski. Automatyzacja procesów w Wołowie często dotyczy zleceń, magazynu i rozliczeń, które dziś żyją w arkuszach.",
       "Współpracujemy zdalnie: wdrażamy wąski zakres z mierzalnym efektem i szkolimy osoby odpowiedzialne za domykanie spraw.",
@@ -1461,7 +1461,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
         id: "wol-1",
         question: "Czy automatyzacja w Wołowie obejmuje magazyn?",
         answer:
-          "Tak — to częsty punkt startu.",
+          "Tak. To częsty punkt startu.",
       },
       {
         id: "wol-2",
@@ -1473,7 +1473,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
         id: "wol-3",
         question: "Jak wygląda szkolenie?",
         answer:
-          "Krótkie, praktyczne — pod osoby, które realnie pracują w procesie.",
+          "Krótkie, praktyczne, pod osoby, które realnie pracują w procesie.",
       },
       {
         id: "wol-4",
@@ -1499,10 +1499,10 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
     regionCluster: "dolny-slask",
     metaTitle: "Automatyzacja procesów w Strzelinie | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm ze Strzelina — kamień, produkcja i południe regionu. Zdalne wdrożenia procesów jakości i logistyki.",
+      "Automatyzacja dla firm ze Strzelina, kamień, produkcja i południe regionu. Zdalne wdrożenia procesów jakości i logistyki.",
     heroTitle: "Automatyzacja procesów w Strzelinie",
     heroLead:
-      "Pomagamy strzelińskim firmom spiąć produkcję, dokumenty i dostawy — gdy branża kamieniarska i lokalny przemysł nie wybaczają chaosu w danych.",
+      "Pomagamy strzelińskim firmom spiąć produkcję, dokumenty i dostawy, gdy branża kamieniarska i lokalny przemysł nie wybaczają chaosu w danych.",
     introParagraphs: [
       "Strzelin kojarzy się z kamieniem i produkcją lokalną, ale to też siedziba powiatu z siecią MŚP usługowych. Automatyzacja procesów w Strzelinie często dotyczy zleceń, protokołów jakości i logistyki dostaw na place lub do klientów B2B.",
       "Pracujemy zdalnie: budujemy przepływ od zapytania do realizacji z historią dokumentów, bez ginących wersji w mailach.",
@@ -1554,7 +1554,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
         id: "str-1",
         question: "Czy automatyzacja w Strzelinie ma sens w branży kamieniarskiej?",
         answer:
-          "Tak — szczególnie przy wycenach, zmianach specyfikacji i protokołach odbioru.",
+          "Tak. Szczególnie przy wycenach, zmianach specyfikacji i protokołach odbioru.",
       },
       {
         id: "str-2",
@@ -1592,10 +1592,10 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
     regionCluster: "dolny-slask",
     metaTitle: "Automatyzacja procesów w Górze | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm z Góry — rolnictwo, usługi i północ Dolnego Śląska. Zdalne wdrożenia procesów back-office i sprzedaży.",
+      "Automatyzacja dla firm z Góry: rolnictwo, usługi i północ Dolnego Śląska. Zdalne wdrożenia procesów back-office i sprzedaży.",
     heroTitle: "Automatyzacja procesów w Górze",
     heroLead:
-      "Wspieramy firmy z Góry i powiatu — gdy sezonowość rolnictwa i lokalne usługi wymagają porządku w dokumentach oraz rozliczeniach.",
+      "Wspieramy firmy z Góry i powiatu, gdy sezonowość rolnictwa i lokalne usługi wymagają porządku w dokumentach oraz rozliczeniach.",
     introParagraphs: [
       "Góra to siedziba powiatu na północy Dolnego Śląska: rolnictwo, przetwórstwo, handel i usługi lokalne. Automatyzacja procesów w Górze często oznacza połączenie sezonowych szczytów z ciągłą pracą biura, które nie może tonąć w papierach.",
       "Pracujemy zdalnie z lokalnymi MŚP: porządkujemy krytyczny przepływ i budujemy prosty system pracy na aktualnych danych.",
@@ -1647,7 +1647,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
         id: "gor-1",
         question: "Czy automatyzacja w Górze ma sens dla firm sezonowych?",
         answer:
-          "Tak — poza sezonem budujemy fundament, w sezonie zbieracie efekt.",
+          "Tak. Poza sezonem budujemy fundament, w sezonie zbieracie efekt.",
       },
       {
         id: "gor-2",
@@ -1659,7 +1659,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
         id: "gor-3",
         question: "Czy potrzebujemy IT na miejscu?",
         answer:
-          "Nie. Dobieramy rozwiązania możliwe do utrzymania samodzielnie.",
+          "Nie. Dobieramy narzędzia możliwe do utrzymania samodzielnie.",
       },
       {
         id: "gor-4",
@@ -1685,10 +1685,10 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
     regionCluster: "dolny-slask",
     metaTitle: "Automatyzacja procesów w Miliczu | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm z Milicza — Stawy Milickie, turystyka i spożywcze. Zdalne wdrożenia rezerwacji, HR i finansów.",
+      "Automatyzacja dla firm z Milicza: Stawy Milickie, turystyka i spożywcze. Zdalne wdrożenia rezerwacji, HR i finansów.",
     heroTitle: "Automatyzacja procesów w Miliczu",
     heroLead:
-      "Pomagamy milickim firmom ogarnąć sezonowość turystyki i lokalnego biznesu — rezerwacje, obsługa i rozliczenia bez ręcznego chaosu.",
+      "Pomagamy milickim firmom ogarnąć sezonowość turystyki i lokalnego biznesu, rezerwacje, obsługa i rozliczenia bez ręcznego chaosu.",
     introParagraphs: [
       "Milicz to serce regionu Stawów Milickich: turystyka, gastronomia, przetwórstwo i lokalne usługi. Automatyzacja procesów w Miliczu często dotyczy rezerwacji, grafików oraz rozliczeń, które w sezonie rosną szybciej niż zespół.",
       "Współpracujemy zdalnie: budujemy przepływy działające w szczycie i poza sezonem, bez udawania lokalnego oddziału.",
@@ -1740,25 +1740,25 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
         id: "mil-1",
         question: "Czy automatyzacja w Miliczu jest tylko dla hoteli?",
         answer:
-          "Nie — wspieramy też gastronomię, handel i lokalne usługi.",
+          "Nie. Wspieramy też gastronomię, handel i lokalne usługi.",
       },
       {
         id: "mil-2",
         question: "Czy łączycie systemy rezerwacyjne?",
         answer:
-          "Jeśli pozwalają na integrację lub eksport — tak.",
+          "Jeśli pozwalają na integrację lub eksport, tak.",
       },
       {
         id: "mil-3",
         question: "Czy warto wdrażać poza sezonem?",
         answer:
-          "Tak — wtedy jest czas na spokojne testy.",
+          "Tak. Wtedy jest czas na spokojne testy.",
       },
       {
         id: "mil-4",
         question: "Jak szybko widać efekt?",
         answer:
-          "Przy wąskim zakresie — jeszcze przed kolejnym szczytem.",
+          "Przy wąskim zakresie, jeszcze przed kolejnym szczytem.",
       },
     ],
     relatedServiceSlugs: [
@@ -1778,10 +1778,10 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
     regionCluster: "dolny-slask",
     metaTitle: "Automatyzacja procesów w Środzie Śląskiej | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm ze Środy Śląskiej — pierścień Wrocławia, logistyka i MŚP. Zdalne wdrożenia procesów. Konsultacja 30 min.",
+      "Automatyzacja dla firm ze Środy Śląskiej, pierścień Wrocławia, logistyka i MŚP. Zdalne wdrożenia procesów. Konsultacja 30 min.",
     heroTitle: "Automatyzacja procesów w Środzie Śląskiej",
     heroLead:
-      "Porządkujemy procesy firm ze Środy Śląskiej — gdy bliskość Wrocławia oznacza tempo logistyki i usług, którego Excel nie dogania.",
+      "Porządkujemy procesy firm ze Środy Śląskiej, gdy bliskość Wrocławia oznacza tempo logistyki i usług, którego Excel nie dogania.",
     introParagraphs: [
       "Środa Śląska leży w zachodnim pierścieniu Wrocławia: logistyka, produkcja i usługi dla aglomeracji. Automatyzacja procesów w Środzie Śląskiej często dotyczy awizacji, statusów zleceń i komunikacji z klientami z Wrocławia.",
       "Pracujemy zdalnie z lokalnymi MŚP: wdrażamy wąski zakres i mierzymy, czy zespół przestaje gonić statusy telefonami.",
@@ -1833,13 +1833,13 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
         id: "sro-1",
         question: "Czy automatyzacja w Środzie Śląskiej obejmuje logistykę?",
         answer:
-          "Tak — to częsty punkt startu w powiecie.",
+          "Tak. To częsty punkt startu w powiecie.",
       },
       {
         id: "sro-2",
         question: "Czy pracujecie z firmami podwykonawczymi Wrocławia?",
         answer:
-          "Tak — szczególnie przy statusach i dokumentach.",
+          "Tak. Szczególnie przy statusach i dokumentach.",
       },
       {
         id: "sro-3",
@@ -1871,10 +1871,10 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
     regionCluster: "dolny-slask",
     metaTitle: "Automatyzacja procesów w Lwówku Śląskim | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm z Lwówka Śląskiego — Pogórze, kamień, turystyka i MŚP. Zdalne wdrożenia procesów. Umów konsultację.",
+      "Automatyzacja dla firm z Lwówka Śląskiego: Pogórze, kamień, turystyka i MŚP. Zdalne wdrożenia procesów. Umów konsultację.",
     heroTitle: "Automatyzacja procesów w Lwówku Śląskim",
     heroLead:
-      "Pomagamy firmom z Lwówka Śląskiego połączyć produkcję, turystykę i usługi — mniej chaosu w dokumentach, więcej kontroli nad sezonem i zleceniami.",
+      "Pomagamy firmom z Lwówka Śląskiego połączyć produkcję, turystykę i usługi, mniej chaosu w dokumentach, więcej kontroli nad sezonem i zleceniami.",
     introParagraphs: [
       "Lwówek Śląski to siedziba powiatu na Pogórzu: kamień, lokalna produkcja, turystyka i usługi. Automatyzacja procesów w Lwówku Śląskim często dotyczy zleceń, rezerwacji i dokumentów, które w sezonie generują przeciążenie biura.",
       "Współpracujemy zdalnie: budujemy prosty przepływ od zapytania do realizacji i szkolimy osoby, które domykają tematy na co dzień.",
@@ -1926,7 +1926,7 @@ export const dolnySlaskPowiatCities: CityPageContent[] = [
         id: "lwo-1",
         question: "Czy automatyzacja w Lwówku Śląskim łączy turystykę i produkcję?",
         answer:
-          "Tak — dobieramy zakres do realnego modelu firmy, bez uniwersalnego szablonu.",
+          "Tak. Dobieramy zakres do realnego modelu firmy, bez uniwersalnego szablonu.",
       },
       {
         id: "lwo-2",

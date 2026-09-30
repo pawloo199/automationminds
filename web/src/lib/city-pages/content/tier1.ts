@@ -10,18 +10,18 @@ export const tier1Cities: CityPageContent[] = [
     regionCluster: "mazowsze",
     metaTitle: "Automatyzacja procesów w Warszawie | Automation Minds",
     metaDescription:
-      "Automatyzacja procesów biznesowych dla firm z Warszawy — sprzedaż, finanse, HR i AI. Bezpłatna konsultacja 30 min, praca zdalna i hybrydowa.",
+      "Automatyzacja procesów biznesowych dla firm z Warszawy: sprzedaż, finanse, HR i AI. Bezpłatna konsultacja 30 min, praca zdalna i hybrydowa.",
     heroTitle: "Automatyzacja procesów w Warszawie",
     heroLead:
-      "Odciążamy zespoły korporacji, SSC i szybko rosnących firm z aglomeracji warszawskiej — bez budowania kolejnego działu IT.",
+      "Odciążamy zespoły korporacji, SSC i szybko rosnących firm z aglomeracji warszawskiej, bez budowania kolejnego działu IT.",
     introParagraphs: [
       "Warszawa koncentruje centra usług wspólnych, spółki holdingowe i firmy technologiczne, w których powtarzalna praca rozjeżdża się między Excelami, CRM-ami i systemami finansowymi. Automatyzacja procesów w Warszawie ma sens wtedy, gdy skraca czas zamknięcia miesiąca, przyspiesza obsługę leadów albo spina dane z kilku narzędzi w jeden wiarygodny obraz.",
-      "Pracujemy z warszawskimi zespołami zdalnie i hybrydowo: mapujemy procesy na warsztatach online, wdrażamy w krótkich iteracjach i mierzymy efekt na żywych danych. Nie zakładamy lokalnego biura — liczy się tempo i jakość rozwiązania, a nie adres na Mokotowie.",
+      "Pracujemy z warszawskimi zespołami zdalnie i hybrydowo: mapujemy procesy na warsztatach online, wdrażamy w krótkich iteracjach i mierzymy efekt na żywych danych. Nie budujemy lokalnego biura. Liczy się tempo i jakość wdrożenia, a nie adres na Mokotowie.",
     ],
     localContext:
       "Na rynku warszawskim widać jednocześnie presję na koszty operacyjne i wysoką rotację specjalistów. Firmy często mają już licencje na Make, Power Automate, HubSpot czy SAP, ale procesy nadal „żyją” w skrzynkach mailowych i ręcznych checklistach. Typowe wąskie gardła to uzgadnianie danych między sprzedażą a finansami, onboarding pracowników kontraktowych oraz raportowanie KPI dla zarządu.",
     whyHere:
-      "Automatyzacja w Warszawie opłaca się szczególnie tam, gdzie jedna godzina pracy specjalisty jest droga, a błąd w procesie generuje koszt reputacyjny — przy klientach korporacyjnych, audytach i SLA. Zaczynamy od obszarów z najszybszym zwrotem, zamiast od wielkiego programu transformacji.",
+      "Automatyzacja w Warszawie opłaca się szczególnie tam, gdzie jedna godzina pracy specjalisty jest droga, a błąd w procesie generuje koszt reputacyjny, przy klientach korporacyjnych, audytach i SLA. Zaczynamy od obszarów z najszybszym zwrotem, zamiast od wielkiego programu transformacji.",
     focusIndustries: [
       {
         title: "Centra usług wspólnych i back-office",
@@ -33,7 +33,7 @@ export const tier1Cities: CityPageContent[] = [
       },
       {
         title: "Fintech i usługi profesjonalne",
-        body: "Budujemy przepływy pod compliance i raportowanie — z jasnym śladem, kto zatwierdził co i kiedy.",
+        body: "Budujemy przepływy pod compliance i raportowanie, z jasnym śladem, kto zatwierdził co i kiedy.",
       },
       {
         title: "E-commerce i marketplace’y",
@@ -43,7 +43,7 @@ export const tier1Cities: CityPageContent[] = [
     focusProcesses: [
       {
         title: "Lejek leadów i kwalifikacja",
-        body: "Od formularza po zadanie w CRM — z regułami przypisania i przypomnieniami, które nie zależą od „kogoś z zespołu”.",
+        body: "Od formularza po zadanie w CRM, z regułami przypisania i przypomnieniami, które nie zależą od „kogoś z zespołu”.",
       },
       {
         title: "Obieg dokumentów i akceptacji",
@@ -51,7 +51,7 @@ export const tier1Cities: CityPageContent[] = [
       },
       {
         title: "Raporty zarządcze",
-        body: "Dashboardy odświeżane automatycznie z systemów źródłowych — bez cotygodniowego składania Excela na Mokotowie o 22:00.",
+        body: "Dashboardy odświeżane automatycznie z systemów źródłowych, bez cotygodniowego składania Excela na Mokotowie o 22:00.",
       },
       {
         title: "Onboarding i offboarding",
@@ -59,37 +59,37 @@ export const tier1Cities: CityPageContent[] = [
       },
     ],
     howWeWork:
-      "Z firmami z Warszawy zaczynamy od bezpłatnej konsultacji 30 minut. Potem mapujemy 1–2 procesy o najwyższym koszcie chaosu, proponujemy zakres i wdrażamy zdalnie — z testami na Waszych danych i szkoleniem zespołu. Jeśli projekt wymaga warsztatu na miejscu, dogadujemy to osobno; standardem jest sprawna współpraca online.",
+      "Z warszawskimi firmami najpierw robimy bezpłatną konsultację 30 minut. Potem mapujemy 1–2 procesy o najwyższym koszcie chaosu, proponujemy zakres i wdrażamy zdalnie, z testami na Waszych danych i szkoleniem zespołu. Jeśli projekt wymaga warsztatu na miejscu, dogadujemy to osobno; standardem jest sprawna współpraca online.",
     faq: [
       {
         id: "waw-1",
         question: "Czy automatyzacja procesów w Warszawie wymaga lokalnego zespołu IT?",
         answer:
-          "Nie. Projektujemy i wdrażamy rozwiązania end-to-end, a po uruchomieniu zostawiamy dokumentację i przeszkolony zespół. Lokalne IT może być partnerem, ale nie jest warunkiem startu.",
+          "Nie. Projektujemy i wdrażamy procesy end-to-end, a po uruchomieniu zostawiamy dokumentację i przeszkolony zespół. Lokalne IT może być partnerem, ale nie jest warunkiem startu.",
       },
       {
         id: "waw-2",
         question: "Jak szybko widać efekty u firm z aglomeracji warszawskiej?",
         answer:
-          "Prostsze przepływy — np. leady do CRM albo obiegi faktur — często działają w kilka tygodni. Szersze projekty planujemy etapami, z pierwszymi oszczędzeniami jeszcze w trakcie wdrożenia.",
+          "Prostsze przepływy, np. leady do CRM albo obiegi faktur, często działają w kilka tygodni. Szersze projekty planujemy etapami, z pierwszymi oszczędzeniami jeszcze w trakcie wdrożenia.",
       },
       {
         id: "waw-3",
         question: "Czy pracujecie tylko stacjonarnie w Warszawie?",
         answer:
-          "Nie utrzymujemy oddziału „pod każdy adres”. Obsługujemy firmy z Warszawy zdalnie i hybrydowo — tak samo jak klientów z innych miast w Polsce.",
+          "Nie utrzymujemy oddziału „pod każdy adres”. Obsługujemy firmy z Warszawy zdalnie i hybrydowo, tak samo jak klientów z innych miast w Polsce.",
       },
       {
         id: "waw-4",
         question: "Ile kosztuje automatyzacja dla warszawskiej firmy?",
         answer:
-          "Koszt zależy od liczby integracji i złożoności logiki. Po analizie dostajecie przejrzystą wycenę i priorytety — często startujemy od jednego modułu, zamiast od pełnego programu.",
+          "Koszt zależy od liczby integracji i złożoności logiki. Po analizie dostajecie przejrzystą wycenę i priorytety. Często startujemy od jednego modułu, zamiast od pełnego programu.",
       },
       {
         id: "waw-5",
         question: "Jakie narzędzia najczęściej wdrażacie w Warszawie?",
         answer:
-          "Dobieramy stack do tego, czego już używacie: od Make i Power Automate po API, HubSpot, Pipedrive i rozwiązania AI. Ważniejsza od marki narzędzia jest stabilność procesu.",
+          "Dobieramy stack do tego, czego już używacie: od Make i Power Automate po API, HubSpot, Pipedrive i narzędzia AI. Ważniejsza od marki narzędzia jest stabilność procesu.",
       },
     ],
     relatedServiceSlugs: [
@@ -109,18 +109,18 @@ export const tier1Cities: CityPageContent[] = [
     regionCluster: "malopolska",
     metaTitle: "Automatyzacja procesów w Krakowie | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm z Krakowa — IT, shared services, HR i sprzedaż. Zdalne wdrożenia, bezpłatna konsultacja, mierzalne usprawnienia procesów.",
+      "Automatyzacja dla firm z Krakowa: IT, shared services, HR i sprzedaż. Zdalne wdrożenia, bezpłatna konsultacja, mierzalne efekty w procesach.",
     heroTitle: "Automatyzacja procesów w Krakowie",
     heroLead:
-      "Pomagamy krakowskim firmom IT, SSC i usługom B2B odzyskać czas zespołu — od ticketów po raporty dla klienta.",
+      "Pomagamy krakowskim firmom IT, SSC i usługom B2B odzyskać czas zespołu: od ticketów po raporty dla klienta.",
     introParagraphs: [
       "Kraków od lat przyciąga centra usług, software house’y i firmy outsourcingowe. Automatyzacja procesów w Krakowie najczęściej dotyczy tego, co dzieje się „między” narzędziami: Jira, HRIS, CRM, billing i skrzynka mailowa klienta. Gdy te światy nie gadają ze sobą, rosną godziny niebillowane i ryzyko SLA.",
       "Współpracujemy z zespołami z Krakowa zdalnie: najpierw diagnoza wąskich gardeł, potem wdrożenie w krótkich sprintach. Celem nie jest kolejna platforma „na pokaz”, tylko mniej ręcznego klepania i czytelniejszy status pracy.",
     ],
     localContext:
-      "Lokalny rynek charakteryzuje się dużą liczbą projektów dla klientów zagranicznych i wysoką rotacją juniorów. Procesy rekrutacji, onboardingu i ewidencji czasu pracy szybko stają się wąskim gardłem. Równolegle działy delivery walczą z ręcznym raportowaniem statusów do klienta i dublowaniem danych między PM a finansami.",
+      "Lokalny rynek opiera się na dużej liczbie projektów dla klientów zagranicznych i wysokiej rotacji juniorów. Procesy rekrutacji, onboardingu i ewidencji czasu pracy szybko stają się wąskim gardłem. Równolegle działy delivery walczą z ręcznym raportowaniem statusów do klienta i dublowaniem danych między PM a finansami.",
     whyHere:
-      "W Krakowie automatyzacja zwraca się, gdy chroni marżę projektową i jakość relacji z klientem. Zamiast dokładać etaty do „ogarniania chaosu”, spajamy powtarzalne kroki w stabilny przepływ — z kontrolą wyjątków, a nie ich ukrywaniem.",
+      "W Krakowie automatyzacja zwraca się, gdy chroni marżę projektową i jakość relacji z klientem. Zamiast dokładać etaty do „ogarniania chaosu”, spajamy powtarzalne kroki w stabilny przepływ, z kontrolą wyjątków, a nie ich ukrywaniem.",
     focusIndustries: [
       {
         title: "Software house’y i product IT",
@@ -132,7 +132,7 @@ export const tier1Cities: CityPageContent[] = [
       },
       {
         title: "Turystyka biznesowa i hospitality",
-        body: "Porządkujemy rezerwacje, faktury i komunikację z gośćmi — szczególnie przy sezonowych skokach obciążenia.",
+        body: "Porządkujemy rezerwacje, faktury i komunikację z gośćmi, szczególnie przy sezonowych skokach obciążenia.",
       },
       {
         title: "Edukacja i usługi szkoleniowe",
@@ -146,7 +146,7 @@ export const tier1Cities: CityPageContent[] = [
       },
       {
         title: "Rekrutacja i onboarding IT",
-        body: "Od aplikacji po checklistę sprzętu i dostępów — jeden tor widoczny dla HR, team leadów i IT.",
+        body: "Od aplikacji po checklistę sprzętu i dostępów, jeden tor widoczny dla HR, team leadów i IT.",
       },
       {
         title: "Billing i rozliczenia projektów",
@@ -158,13 +158,13 @@ export const tier1Cities: CityPageContent[] = [
       },
     ],
     howWeWork:
-      "Z krakowskimi firmami pracujemy głównie online: warsztat mapowania, propozycja zakresu, wdrożenie i testy. Dajemy jasny backlog usprawnień, żebyście wiedzieli, co rusza w pierwszej kolejności, a co zostaje na kolejną iterację. Bezpłatna konsultacja wystarcza, by ocenić, czy w ogóle warto startować.",
+      "Z krakowskimi firmami pracujemy głównie online: warsztat mapowania, propozycja zakresu, wdrożenie i testy. Dajemy jasny backlog zmian, żebyście wiedzieli, co rusza w pierwszej kolejności, a co zostaje na kolejną iterację. Bezpłatna konsultacja wystarcza, by ocenić, czy w ogóle warto startować.",
     faq: [
       {
         id: "krk-1",
         question: "Czy automatyzacja w Krakowie ma sens dla małego software house’u?",
         answer:
-          "Tak — zwłaszcza przy rosnącej liczbie klientów i juniorów. Zaczynamy od jednego procesu (np. onboarding albo raportowanie), bez wielkiego programu transformacji.",
+          "Tak. Zwłaszcza przy rosnącej liczbie klientów i juniorów. Zaczynamy od jednego procesu (np. onboarding albo raportowanie), bez wielkiego programu transformacji.",
       },
       {
         id: "krk-2",
@@ -182,7 +182,7 @@ export const tier1Cities: CityPageContent[] = [
         id: "krk-4",
         question: "Czy automatyzacja zastąpi PM-ów i HR w Krakowie?",
         answer:
-          "Nie. Zdejmuje powtarzalną robotę, żeby ludzie zajmowali się decyzjami, klientem i jakością delivery — nie przepisywaniem statusów.",
+          "Nie. Zdejmuje powtarzalną robotę, żeby ludzie zajmowali się decyzjami, klientem i jakością delivery, nie przepisywaniem statusów.",
       },
     ],
     relatedServiceSlugs: [
@@ -202,16 +202,16 @@ export const tier1Cities: CityPageContent[] = [
     regionCluster: "dolny-slask",
     metaTitle: "Automatyzacja procesów we Wrocławiu | Automation Minds",
     metaDescription:
-      "Automatyzacja biznesowa dla firm z Wrocławia — produkcja, logistyka, SSC i sprzedaż. Zdalne wdrożenia AI i integracji. Umów konsultację.",
+      "Automatyzacja biznesowa dla firm z Wrocławia: produkcja, logistyka, SSC i sprzedaż. Zdalne wdrożenia AI i integracji. Umów konsultację.",
     heroTitle: "Automatyzacja procesów we Wrocławiu",
     heroLead:
       "Spinamy procesy firm z Dolnego Śląska tak, by produkcja, magazyn i biuro pracowały na tych samych danych.",
     introParagraphs: [
       "Wrocław łączy przemysł, logistykę i nowoczesne usługi. Automatyzacja procesów we Wrocławiu często zaczyna się od pytania: dlaczego status zlecenia w hali różni się od tego, co widzi handlowiec albo księgowość. Gdy dane nie płyną, rosną przestoje, poprawki i frustracja zespołu.",
-      "Pomagamy wrocławskim firmom budować przepływy między ERP, Excelami operacyjnymi i narzędziami biurowymi — zdalnie, w tempie dopasowanym do produkcji i sezonowości. Cel jest prosty: mniej ręcznego uzgadniania, więcej przewidywalności.",
+      "Pomagamy wrocławskim firmom budować przepływy między ERP, Excelami operacyjnymi i narzędziami biurowymi, zdalnie, w tempie dopasowanym do produkcji i sezonowości. Cel jest prosty: mniej ręcznego uzgadniania, więcej przewidywalności.",
     ],
     localContext:
-      "Region dolnośląski mocno stoi produkcją, automotive-adjacent i centrami usług. Firmy mają zwykle solidny ERP, ale „ostatnią milę” procesu — od zgłoszenia reklamacji po aktualizację CRM — nadal ogarniają ludzie między systemami. Dochodzi do tego presja na raportowanie jakości i terminów dla klientów z Niemiec i Skandynawii.",
+      "Region dolnośląski mocno stoi produkcją, automotive-adjacent i centrami usług. Firmy mają zwykle solidny ERP, ale „ostatnią milę” procesu: od zgłoszenia reklamacji po aktualizację CRM, nadal ogarniają ludzie między systemami. Dochodzi do tego presja na raportowanie jakości i terminów dla klientów z Niemiec i Skandynawii.",
     whyHere:
       "We Wrocławiu automatyzacja chroni ciągłość operacji: mniej przestojów wynikających z braku informacji i szybsza reakcja na odchylenia. To inwestycja w spokój operacyjny, nie w kolejny dashboard „dla samego dashboardu”.",
     focusIndustries: [
@@ -235,11 +235,11 @@ export const tier1Cities: CityPageContent[] = [
     focusProcesses: [
       {
         title: "Status zlecenia produkcyjnego",
-        body: "Jedna prawda o postępie — widoczna dla planowania, sprzedaży i klienta.",
+        body: "Jedna prawda o postępie, widoczna dla planowania, sprzedaży i klienta.",
       },
       {
         title: "Reklamacje i jakość",
-        body: "Od zgłoszenia po zamknięcie z dokumentacją — bez ginących wątków między działami.",
+        body: "Od zgłoszenia po zamknięcie z dokumentacją, bez ginących wątków między działami.",
       },
       {
         title: "Zakupy i zatwierdzenia",
@@ -251,19 +251,19 @@ export const tier1Cities: CityPageContent[] = [
       },
     ],
     howWeWork:
-      "Z firmami z Wrocławia startujemy od rozmowy o realnym procesie — nie o liście narzędzi. Potem proponujemy wąski zakres z mierzalnym efektem i wdrażamy zdalnie. Jeśli potrzebny jest warsztat przy linii produkcyjnej, planujemy go celowo; na co dzień wystarcza współpraca online.",
+      "Z firmami z Wrocławia startujemy od rozmowy o realnym procesie, nie o liście narzędzi. Potem proponujemy wąski zakres z mierzalnym efektem i wdrażamy zdalnie. Jeśli potrzebny jest warsztat przy linii produkcyjnej, planujemy go celowo; na co dzień wystarcza współpraca online.",
     faq: [
       {
         id: "wro-1",
         question: "Czy automatyzujecie procesy produkcyjne we Wrocławiu?",
         answer:
-          "Tak — szczególnie przepływy danych między halą, planowaniem i biurem. Nie zastępujemy systemu MES „z marszu”; spajamy to, co już macie, i domykamy dziury informacyjne.",
+          "Tak. Szczególnie przepływy danych między halą, planowaniem i biurem. Nie zastępujemy systemu MES „z marszu”; spajamy to, co już macie, i domykamy dziury informacyjne.",
       },
       {
         id: "wro-2",
         question: "Czy obsługa firm z Wrocławia jest tylko zdalna?",
         answer:
-          "Standardem jest model zdalny i hybrydowy. Spotkania na miejscu ustalamy, gdy realnie pomagają wdrożeniu — nie jako domyślny koszt.",
+          "Standardem jest model zdalny i hybrydowy. Spotkania na miejscu ustalamy, gdy realnie pomagają wdrożeniu, nie jako domyślny koszt.",
       },
       {
         id: "wro-3",
@@ -302,16 +302,16 @@ export const tier1Cities: CityPageContent[] = [
     regionCluster: "lodzkie",
     metaTitle: "Automatyzacja procesów w Łodzi | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm z Łodzi — produkcja, logistyka, e-commerce i biuro. Integracje, AI, bezpłatna konsultacja. Współpraca zdalna w całej Polsce.",
+      "Automatyzacja dla firm z Łodzi: produkcja, logistyka, e-commerce i biuro. Integracje, AI, bezpłatna konsultacja. Współpraca zdalna w całej Polsce.",
     heroTitle: "Automatyzacja procesów w Łodzi",
     heroLead:
-      "Porządkujemy procesy łódzkich firm produkcyjnych, logistycznych i e-commerce — od magazynu po fakturę.",
+      "Porządkujemy procesy łódzkich firm produkcyjnych, logistycznych i e-commerce: od magazynu po fakturę.",
     introParagraphs: [
       "Łódź odbudowała pozycję jako hub logistyczno-produkcyjny z rosnącym e-commerce. Automatyzacja procesów w Łodzi często dotyczy tego, co dzieje się między WMS, sklepem, kurierem i księgowością. Gdy te ogniwa łączy człowiek z Excelami, każdy wzrost zamówień boli podwójnie.",
       "Dla firm z Łodzi wdrażamy przepływy, które skalują obsługę bez proporcjonalnego wzrostu etatów. Pracujemy zdalnie: szybka diagnoza, konkretny zakres, testy na realnych zamówieniach i dokumentach.",
     ],
     localContext:
-      "Lokalne firmy mocno czują sezonowość i presję terminów dostaw. W praktyce widać ręczne przepisywanie SKU, opóźnione faktury do marketplace’ów i chaos w reklamacjach. Do tego dochodzą procesy HR w firmach z wielozmianową produkcją — wnioski i listy obecności rzadko żyją w jednym systemie.",
+      "Lokalne firmy mocno czują sezonowość i presję terminów dostaw. W praktyce widać ręczne przepisywanie SKU, opóźnione faktury do marketplace’ów i chaos w reklamacjach. Do tego dochodzą procesy HR w firmach z wielozmianową produkcją, wnioski i listy obecności rzadko żyją w jednym systemie.",
     whyHere:
       "W Łodzi automatyzacja broni marży przy skokach wolumenu. Zamiast „jakoś dociągniemy sezon”, budujemy procesy, które nie rozsypują się przy piątym kurierze i trzecim kanale sprzedaży.",
     focusIndustries: [
@@ -329,13 +329,13 @@ export const tier1Cities: CityPageContent[] = [
       },
       {
         title: "Usługi B2B dla sieci",
-        body: "Usprawniamy obiegi umów, rozliczeń i raportów dla większych odbiorców.",
+        body: "Skracamy obiegi umów, rozliczeń i raportów dla większych odbiorców.",
       },
     ],
     focusProcesses: [
       {
         title: "Ścieżka zamówienia end-to-end",
-        body: "Od koszyka po fakturę i status u klienta — z mniejszą liczbą ręcznych przepisywań.",
+        body: "Od koszyka po fakturę i status u klienta, z mniejszą liczbą ręcznych przepisywań.",
       },
       {
         title: "Reklamacje i zwroty",
@@ -347,7 +347,7 @@ export const tier1Cities: CityPageContent[] = [
       },
       {
         title: "Obecność i wnioski HR",
-        body: "Prostsze ścieżki dla zmian produkcyjnych — bez papieru krążącego między brygadzistami.",
+        body: "Prostsze ścieżki dla zmian produkcyjnych, bez papieru krążącego między brygadzistami.",
       },
     ],
     howWeWork:
@@ -357,7 +357,7 @@ export const tier1Cities: CityPageContent[] = [
         id: "ldz-1",
         question: "Czy pomagacie firmom e-commerce z Łodzi?",
         answer:
-          "Tak. Często zaczynamy od statusów zamówień, zwrotów i integracji z kurierami lub marketplace’ami — tam zwrot z automatyzacji widać najszybciej.",
+          "Tak. Często zaczynamy od statusów zamówień, zwrotów i integracji z kurierami lub marketplace’ami, tam zwrot z automatyzacji widać najszybciej.",
       },
       {
         id: "ldz-2",
@@ -369,7 +369,7 @@ export const tier1Cities: CityPageContent[] = [
         id: "ldz-3",
         question: "Jak długo trwa pierwsze wdrożenie?",
         answer:
-          "Prostsze przepływy bywają gotowe w kilka tygodni. Przy wielu systemach planujemy etapy — z działającym pierwszym efektem po drodze.",
+          "Prostsze przepływy bywają gotowe w kilka tygodni. Przy wielu systemach planujemy etapy, z działającym pierwszym efektem po drodze.",
       },
       {
         id: "ldz-4",
@@ -395,22 +395,22 @@ export const tier1Cities: CityPageContent[] = [
     regionCluster: "wielkopolska",
     metaTitle: "Automatyzacja procesów w Poznaniu | Automation Minds",
     metaDescription:
-      "Automatyzacja procesów dla firm z Poznania — handel, produkcja, finanse i HR. Integracje systemów, AI, konsultacja bez zobowiązań.",
+      "Automatyzacja procesów dla firm z Poznania: handel, produkcja, finanse i HR. Integracje systemów, AI, konsultacja bez zobowiązań.",
     heroTitle: "Automatyzacja procesów w Poznaniu",
     heroLead:
-      "Wspieramy wielkopolskie firmy w porządkowaniu sprzedaży, finansów i operacji — bez rozrastania biurokracji.",
+      "Wspieramy wielkopolskie firmy w porządkowaniu sprzedaży, finansów i operacji, bez rozrastania biurokracji.",
     introParagraphs: [
       "Poznań to rynek firm handlowych, produkcyjnych i usługowych z silną kulturą „musi działać”. Automatyzacja procesów w Poznaniu sprawdza się, gdy zamiast dokładania procedur dokładamy przepływ: dane lecą same, a ludzie zajmują się wyjątkami i decyzjami.",
-      "Pracujemy z poznanskimi zespołami zdalnie — od mapy procesu po działające integracje. Unikamy wdrożeń „na pokaz”; liczy się mniej ręcznej pracy w miesiąc i mniej błędów w dokumentach.",
+      "Pracujemy z poznanskimi zespołami zdalnie: od mapy procesu po działające integracje. Unikamy wdrożeń „na pokaz”; liczy się mniej ręcznej pracy w miesiąc i mniej błędów w dokumentach.",
     ],
     localContext:
-      "W Wielkopolsce widać dużo firm rodzinnych rosnących do skali wielooddziałowej oraz eksporterów. Typowy obraz: solidny system finansowo-księgowy, CRM „niedokończony” i operacje żyjące w arkuszach. Problemem bywa też rozliczanie przedstawicieli, rabatów i zwrotów — wszystko, co sprzedaż obieca, a finanse muszą domknąć.",
+      "W Wielkopolsce widać dużo firm rodzinnych rosnących do skali wielooddziałowej oraz eksporterów. Typowy obraz: solidny system finansowo-księgowy, CRM „niedokończony” i operacje żyjące w arkuszach. Problemem bywa też rozliczanie przedstawicieli, rabatów i zwrotów, wszystko, co sprzedaż obieca, a finanse muszą domknąć.",
     whyHere:
       "W Poznaniu automatyzacja pomaga rosnąć bez proporcjonalnego wzrostu administracji. To szczególnie ważne przy ekspansji produktowej i nowych kanałach B2B, gdzie ręczny model szybko się wysyca.",
     focusIndustries: [
       {
         title: "Handel B2B i dystrybucja",
-        body: "Usprawniamy zamówienia, limity kredytowe i statusy dostaw widoczne dla handlu i klienta.",
+        body: "Łączymy zamówienia, limity kredytowe i statusy dostaw widoczne dla handlu i klienta.",
       },
       {
         title: "Produkcja spożywcza i przemysł lekki",
@@ -444,7 +444,7 @@ export const tier1Cities: CityPageContent[] = [
       },
     ],
     howWeWork:
-      "Z firmami z Poznania zaczynamy od konkretnego bólu — zwykle sprzedaży, finansów albo serwisu. Po konsultacji proponujemy etap, który da mierzalny efekt, i wdrażamy go zdalnie. Rozszerzenia planujemy dopiero, gdy pierwszy przepływ działa stabilnie.",
+      "W Poznaniu startujemy od konkretnego bólu. Zwykle sprzedaży, finansów albo serwisu. Po konsultacji proponujemy etap, który da mierzalny efekt, i wdrażamy go zdalnie. Rozszerzenia planujemy dopiero, gdy pierwszy przepływ działa stabilnie.",
     faq: [
       {
         id: "poz-1",
@@ -468,7 +468,7 @@ export const tier1Cities: CityPageContent[] = [
         id: "poz-4",
         question: "Od czego zwykle zaczynacie?",
         answer:
-          "Od procesu z największym chaosem lub kosztem błędów — często obiegu faktur, zamówień B2B albo leadów sprzedażowych.",
+          "Od procesu z największym chaosem lub kosztem błędów, często obiegu faktur, zamówień B2B albo leadów sprzedażowych.",
       },
     ],
     relatedServiceSlugs: [
@@ -488,13 +488,13 @@ export const tier1Cities: CityPageContent[] = [
     regionCluster: "trojmiasto",
     metaTitle: "Automatyzacja procesów w Gdańsku | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm z Gdańska i Trójmiasta — logistyka, IT, e-commerce i obsługa klienta. Zdalne wdrożenia, konsultacja 30 min.",
+      "Automatyzacja dla firm z Gdańska i Trójmiasta: logistyka, IT, e-commerce i obsługa klienta. Zdalne wdrożenia, konsultacja 30 min.",
     heroTitle: "Automatyzacja procesów w Gdańsku",
     heroLead:
-      "Pomagamy firmom z Trójmiasta spiąć logistykę, sprzedaż i support — zanim sezon albo kontrakt wyczerpie zespół.",
+      "Pomagamy firmom z Trójmiasta spiąć logistykę, sprzedaż i support, zanim sezon albo kontrakt wyczerpie zespół.",
     introParagraphs: [
       "Gdańsk i Trójmiasto żyją portem, logistyką, IT i turystyką biznesową. Automatyzacja procesów w Gdańsku zwykle zaczyna się tam, gdzie status przesyłki, zgłoszenia klienta i faktura nie spotykają się w jednym miejscu. Ręczna synchronizacja działa do pierwszego skoku wolumenu.",
-      "Wdrażamy rozwiązania dla gdańskich firm zdalnie: mapujemy procesy, łączymy systemy i uczymy zespół obsługi wyjątków. Nie budujemy „oddziału nad Motławą” — budujemy działające przepływy.",
+      "Wdrażamy automatyzacje dla gdańskich firm zdalnie: mapujemy procesy, łączymy systemy i uczymy zespół obsługi wyjątków. Nie budujemy „oddziału nad Motławą”. Budujemy działające przepływy.",
     ],
     localContext:
       "Lokalny biznes mocno zależy od łańcuchów dostaw i klientów zagranicznych. W praktyce widać ręczne statusy kontenerów/przesyłek, rozproszoną komunikację z agentami oraz support e-commerce pracujący na kilku skrzynkach naraz. Firmy IT z kolei toną w onboardingu kontraktorów i raportowaniu dla klientów.",
@@ -511,7 +511,7 @@ export const tier1Cities: CityPageContent[] = [
       },
       {
         title: "IT i shared services",
-        body: "Usprawniamy tickety, onboarding i raportowanie czasu / SLA.",
+        body: "Upraszczamy tickety, onboarding i raportowanie czasu oraz SLA.",
       },
       {
         title: "Turystyka i MICE",
@@ -533,7 +533,7 @@ export const tier1Cities: CityPageContent[] = [
       },
       {
         title: "Lead i oferta B2B",
-        body: "Od zapytania po zadanie dla handlowca — z przypomnieniami i czystym CRM.",
+        body: "Od zapytania po zadanie dla handlowca, z przypomnieniami i czystym CRM.",
       },
     ],
     howWeWork:
@@ -543,7 +543,7 @@ export const tier1Cities: CityPageContent[] = [
         id: "gda-1",
         question: "Czy obsługujecie też Gdynię i Sopot w ramach Trójmiasta?",
         answer:
-          "Tak — model jest ten sam: zdalna i hybrydowa współpraca z firmami z całego Trójmiasta. Osobne strony pomagają dopasować kontekst lokalny.",
+          "Tak. Model jest ten sam: zdalna i hybrydowa współpraca z firmami z całego Trójmiasta. Osobne strony pomagają dopasować kontekst lokalny.",
       },
       {
         id: "gda-2",
@@ -581,22 +581,22 @@ export const tier1Cities: CityPageContent[] = [
     regionCluster: "zachodniopomorskie",
     metaTitle: "Automatyzacja procesów w Szczecinie | Automation Minds",
     metaDescription:
-      "Automatyzacja biznesowa dla firm z Szczecina — produkcja, handel przygraniczny, logistyka i biuro. Zdalne wdrożenia, bezpłatna konsultacja.",
+      "Automatyzacja biznesowa dla firm z Szczecina: produkcja, handel przygraniczny, logistyka i biuro. Zdalne wdrożenia, bezpłatna konsultacja.",
     heroTitle: "Automatyzacja procesów w Szczecinie",
     heroLead:
-      "Porządkujemy operacje firm z Pomorza Zachodniego — od magazynu i produkcji po rozliczenia z partnerami z Niemiec.",
+      "Porządkujemy operacje firm z Pomorza Zachodniego: od magazynu i produkcji po rozliczenia z partnerami z Niemiec.",
     introParagraphs: [
-      "Szczecin żyje przemysłem, portem, handlem przygranicznym i usługami. Automatyzacja procesów w Szczecinie często rozwiązuje problem dwóch światów: polskiego obiegu dokumentów i oczekiwań partnerów z rynku niemieckiego co do statusów, terminów i jakości danych.",
+      "Szczecin żyje przemysłem, portem, handlem przygranicznym i usługami. Automatyzacja procesów w Szczecinie często zamyka problem dwóch światów: polskiego obiegu dokumentów i oczekiwań partnerów z rynku niemieckiego co do statusów, terminów i jakości danych.",
       "Współpracujemy ze szczecińskimi firmami zdalnie. Zaczynamy od procesu, który generuje najwięcej maili „na gwałt”, i budujemy przepływ, który da się utrzymać bez bohaterskiej pracy biura.",
     ],
     localContext:
-      "Firmy w regionie często łączą produkcję lub handel z eksportem. Widać ręczne tłumaczenie statusów, rozjazd wersji dokumentów i opóźnienia w fakturowaniu po dostawie. Przy mniejszej puli specjalistów IT automatyzacja musi być prosta w utrzymaniu — nie „projekt dla projektów”.",
+      "Firmy w regionie często łączą produkcję lub handel z eksportem. Widać ręczne tłumaczenie statusów, rozjazd wersji dokumentów i opóźnienia w fakturowaniu po dostawie. Przy mniejszej puli specjalistów IT automatyzacja musi być prosta w utrzymaniu, nie „projekt dla projektów”.",
     whyHere:
       "W Szczecinie automatyzacja daje przewagę w relacjach eksportowych: szybsza odpowiedź, mniej błędów w dokumentach, lepsza przewidywalność. To argument biznesowy, nie tylko oszczędność godzin.",
     focusIndustries: [
       {
         title: "Produkcja i stoczniowo-przemysłowe łańcuchy",
-        body: "Usprawniamy statusy zleceń, zakupy i komunikację między działami technicznymi a biurem.",
+        body: "Spinamy statusy zleceń, zakupy i komunikację między działami technicznymi a biurem.",
       },
       {
         title: "Handel i eksport",
@@ -636,13 +636,13 @@ export const tier1Cities: CityPageContent[] = [
         id: "szcz-1",
         question: "Czy automatyzacja w Szczecinie opłaca się mniejszej firmie?",
         answer:
-          "Tak — szczególnie przy eksporcie i rosnącej liczbie dokumentów. Zaczynamy wąsko, żeby zwrot był widoczny szybko.",
+          "Tak. Szczególnie przy eksporcie i rosnącej liczbie dokumentów. Zaczynamy wąsko, żeby zwrot był widoczny szybko.",
       },
       {
         id: "szcz-2",
         question: "Czy potrzebujemy własnego programisty?",
         answer:
-          "Nie. Dobieramy rozwiązania możliwe do utrzymania przez zespół biznesowy, z jasną dokumentacją.",
+          "Nie. Dobieramy narzędzia możliwe do utrzymania przez zespół biznesowy, z jasną dokumentacją.",
       },
       {
         id: "szcz-3",
@@ -674,13 +674,13 @@ export const tier1Cities: CityPageContent[] = [
     regionCluster: "slask",
     metaTitle: "Automatyzacja procesów w Katowicach | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm z Katowic i Górnego Śląska — produkcja, logistyka, HR i finanse. Zdalne wdrożenia, mierzalny efekt, konsultacja gratis.",
+      "Automatyzacja dla firm z Katowic i Górnego Śląska: produkcja, logistyka, HR i finanse. Zdalne wdrożenia, mierzalny efekt, konsultacja gratis.",
     heroTitle: "Automatyzacja procesów w Katowicach",
     heroLead:
       "Wspieramy śląskie firmy przemysłowe i usługowe w spięciu hali, magazynu i biura jednym przepływem danych.",
     introParagraphs: [
-      "Katowice są sercem aglomeracji, w której produkcja, logistyka i usługi B2B sąsiadują na co dzień. Automatyzacja procesów w Katowicach zwykle dotyczy synchronizacji między zakładami, magazynami i centralą — tam, gdzie Excel przestaje być „tymczasowym” rozwiązaniem.",
-      "Dla firm z Katowic wdrażamy integracje i automatyzacje zdalnie, z szacunkiem do pracy zmianowej. Najpierw porządek w procesie, potem narzędzie — żeby nie automatyzować chaosu.",
+      "Katowice są sercem aglomeracji, w której produkcja, logistyka i usługi B2B sąsiadują na co dzień. Automatyzacja procesów w Katowicach zwykle dotyczy synchronizacji między zakładami, magazynami i centralą, tam, gdzie Excel przestaje być „tymczasowym” narzędziem.",
+      "Dla firm z Katowic wdrażamy integracje i automatyzacje zdalnie, z szacunkiem do pracy zmianowej. Najpierw porządek w procesie, potem narzędzie, żeby nie automatyzować chaosu.",
     ],
     localContext:
       "Na Górnym Śląsku widać grupy kapitałowe z wieloma lokalizacjami, firmy przemysłowe modernizujące park maszynowy oraz rosnące usługi dla przemysłu. Typowe problemy: różne „prawdy” o stanach, ręczne raporty z zakładów do centrali i HR rozproszony między zmianami. Do tego dochodzi presja na bezpieczeństwo danych i audytowalność.",
@@ -689,7 +689,7 @@ export const tier1Cities: CityPageContent[] = [
     focusIndustries: [
       {
         title: "Przemysł i utrzymanie ruchu",
-        body: "Porządkujemy zgłoszenia awarii, części i statusy prac — z historią dla audytu i planowania.",
+        body: "Porządkujemy zgłoszenia awarii, części i statusy prac, z historią dla audytu i planowania.",
       },
       {
         title: "Logistyka regionalna",
@@ -711,7 +711,7 @@ export const tier1Cities: CityPageContent[] = [
       },
       {
         title: "Zgłoszenia utrzymania ruchu",
-        body: "Kolejka, priorytety i części w jednym torze — mniej przestojów z powodu braku informacji.",
+        body: "Kolejka, priorytety i części w jednym torze, mniej przestojów z powodu braku informacji.",
       },
       {
         title: "Obieg faktur i zamówień",
@@ -723,13 +723,13 @@ export const tier1Cities: CityPageContent[] = [
       },
     ],
     howWeWork:
-      "Z katowickimi firmami zaczynamy od procesu, który najbardziej psuje koordynację między lokalizacjami. Wdrażamy zdalnie, testujemy na jednej lokalizacji, potem skalujemy. Bezpłatna konsultacja pomaga ustalić, czy problem da się rozwiązać automatyzacją, czy najpierw trzeba uprościć zasady gry.",
+      "Z katowickimi firmami zaczynamy od procesu, który najbardziej psuje koordynację między lokalizacjami. Wdrażamy zdalnie, testujemy na jednej lokalizacji, potem skalujemy. Bezpłatna konsultacja pomaga ustalić, czy automatyzacja tu pomoże, czy najpierw trzeba uprościć zasady gry.",
     faq: [
       {
         id: "ktw-1",
         question: "Czy automatyzujecie procesy w całej aglomeracji śląskiej?",
         answer:
-          "Tak — Katowice, Sosnowiec, Gliwice, Zabrze i inne miasta regionu obsługujemy w tym samym modelu zdalnym/hybrydowym, z treściami dopasowanymi lokalnie.",
+          "Tak. Katowice, Sosnowiec, Gliwice, Zabrze i inne miasta regionu obsługujemy w tym samym modelu zdalnym/hybrydowym, z treściami dopasowanymi lokalnie.",
       },
       {
         id: "ktw-2",

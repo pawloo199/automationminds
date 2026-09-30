@@ -10,13 +10,13 @@ export const slaskCities: CityPageContent[] = [
     regionCluster: "slask",
     metaTitle: "Automatyzacja procesów w Sosnowcu | Automation Minds",
     metaDescription:
-      "Automatyzacja procesów dla firm z Sosnowca — logistyka, magazyny, produkcja i finanse. Obsługujemy zdalnie, bezpłatna konsultacja 30 min.",
+      "Automatyzacja procesów dla firm z Sosnowca: logistyka, magazyny, produkcja i finanse. Obsługujemy zdalnie, bezpłatna konsultacja 30 min.",
     heroTitle: "Automatyzacja procesów w Sosnowcu",
     heroLead:
-      "Pomagamy sosnowieckim firmom logistycznym i przemysłowym spiąć magazyn, transport i biuro — bez ręcznego przepisywania statusów.",
+      "Pomagamy sosnowieckim firmom logistycznym i przemysłowym spiąć magazyn, transport i biuro, bez ręcznego przepisywania statusów.",
     introParagraphs: [
       "Sosnowiec leży na skrzyżowaniu dróg i kolei aglomeracji śląskiej, więc tu często spotyka się magazyny, centra dystrybucyjne i zakłady produkcyjne. Automatyzacja procesów w Sosnowcu ma sens tam, gdzie awizacje, stany magazynowe i faktury żyją w osobnych systemach, a koordynacja opiera się na telefonach między zmianami.",
-      "Obsługujemy firmy z Sosnowca zdalnie i hybrydowo: mapujemy przepływ od przyjęcia towaru po rozliczenie z klientem, wdrażamy w krótkich etapach i testujemy na Waszych danych. Nie otwieramy lokalnego biura — liczy się stabilność procesu, nie adres w centrum miasta.",
+      "Obsługujemy firmy z Sosnowca zdalnie i hybrydowo: mapujemy przepływ od przyjęcia towaru po rozliczenie z klientem, wdrażamy w krótkich etapach i testujemy na Waszych danych. Nie otwieramy lokalnego biura. Liczy się stabilność procesu, nie adres w centrum miasta.",
     ],
     localContext:
       "W Sosnowcu widać silny nacisk na przepustowość magazynów i terminowość dostaw do całej aglomeracji. Typowe wąskie gardła to ręczne awizacje dostaw, brak jednej „prawdy” o stanie między WMS a ERP oraz opóźnione faktury, gdy operacja nie zdąży przekazać danych do księgowości. Firmy usługowe dla przemysłu dodatkowo toną w protokołach z terenu i zleceniach serwisowych.",
@@ -25,7 +25,7 @@ export const slaskCities: CityPageContent[] = [
     focusIndustries: [
       {
         title: "Magazyny i centra dystrybucyjne",
-        body: "Spinamy przyjęcia, kompletację i wyjścia z powiadomieniami dla klienta — zamiast ręcznych maili „towar już jedzie”.",
+        body: "Spinamy przyjęcia, kompletację i wyjścia z powiadomieniami dla klienta, zamiast ręcznych maili „towar już jedzie”.",
       },
       {
         title: "Transport i spedycja regionalna",
@@ -33,7 +33,7 @@ export const slaskCities: CityPageContent[] = [
       },
       {
         title: "Produkcja i obróbka metali",
-        body: "Zlecenia, partie i dokumentacja jakości między halą a biurem — mniej przestojów z powodu braku informacji.",
+        body: "Zlecenia, partie i dokumentacja jakości między halą a biurem, mniej przestojów z powodu braku informacji.",
       },
       {
         title: "Usługi utrzymania ruchu",
@@ -43,7 +43,7 @@ export const slaskCities: CityPageContent[] = [
     focusProcesses: [
       {
         title: "Awizacja i przyjęcie dostawy",
-        body: "Od zapytania transportowego po potwierdzenie rampy — z regułami wyjątków i archiwum.",
+        body: "Od zapytania transportowego po potwierdzenie rampy, z regułami wyjątków i archiwum.",
       },
       {
         title: "Synchronizacja stanów magazynowych",
@@ -59,19 +59,19 @@ export const slaskCities: CityPageContent[] = [
       },
     ],
     howWeWork:
-      "Z firmami z Sosnowca zaczynamy od bezpłatnej konsultacji 30 minut i jednego procesu o najwyższym koszcie opóźnień — często awizacji albo domknięcia zlecenia. Wdrażamy zdalnie, angażując osoby z magazynu i biura w krótkie sesje online. Po stabilnym pilocie rozszerzamy zakres na kolejne lokalizacje w regionie.",
+      "W Sosnowcu zaczynamy od bezpłatnej konsultacji 30 minut i jednego procesu o najwyższym koszcie opóźnień, często awizacji albo domknięcia zlecenia. Wdrażamy zdalnie, angażując osoby z magazynu i biura w krótkie sesje online. Po stabilnym pilocie rozszerzamy zakres na kolejne lokalizacje w regionie.",
     faq: [
       {
         id: "sos-1",
         question: "Czy automatyzacja procesów w Sosnowcu wymaga obecności na magazynie?",
         answer:
-          "Nie na co dzień. Warsztaty i testy robimy online; jeśli trzeba zobaczyć rampę czy proces fizyczny, umawiamy krótką wizytę operacyjną, ale wdrożenie i utrzymanie rozwiązania prowadzimy zdalnie.",
+          "Nie na co dzień. Warsztaty i testy robimy online; jeśli trzeba zobaczyć rampę czy proces fizyczny, umawiamy krótką wizytę operacyjną, ale wdrożenie i utrzymanie wdrożenia prowadzimy zdalnie.",
       },
       {
         id: "sos-2",
         question: "Czy obsługujecie firmy z całej aglomeracji, nie tylko z Sosnowca?",
         answer:
-          "Tak. Model jest ten sam dla całego Górnego Śląska — pracujemy zdalnie, a strona pod Sosnowiec pomaga dopasować język do lokalnego kontekstu logistycznego.",
+          "Tak. Model jest ten sam dla całego Górnego Śląska, pracujemy zdalnie, a strona pod Sosnowiec pomaga dopasować język do lokalnego kontekstu logistycznego.",
       },
       {
         id: "sos-3",
@@ -103,16 +103,16 @@ export const slaskCities: CityPageContent[] = [
     regionCluster: "slask",
     metaTitle: "Automatyzacja procesów w Gliwicach | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm z Gliwic — IT, uczelnie, R&D i usługi B2B. Zdalne wdrożenia, integracje i AI. Bezpłatna konsultacja procesów.",
+      "Automatyzacja dla firm z Gliwic: IT, uczelnie, R&D i usługi B2B. Zdalne wdrożenia, integracje i AI. Bezpłatna konsultacja procesów.",
     heroTitle: "Automatyzacja procesów w Gliwicach",
     heroLead:
-      "Wspieramy gliwickie zespoły technologiczne i usługowe w odzyskaniu czasu z administracji — od rekrutacji po raporty dla klienta.",
+      "Wspieramy gliwickie zespoły technologiczne i usługowe w odzyskaniu czasu z administracji: od rekrutacji po raporty dla klienta.",
     introParagraphs: [
-      "Gliwice łączą silne środowisko akademickie, firmy IT i centra badawcze z klasycznym przemysłem regionu. Automatyzacja procesów w Gliwicach często dotyczy miejsc, gdzie Jira, CRM, system HR i skrzynka mailowa nie tworzą spójnej historii pracy — szczególnie przy projektach dla klientów zagranicznych.",
-      "Obsługujemy firmy z Gliwic zdalnie: najpierw diagnoza wąskich gardeł, potem wdrożenie w iteracjach z mierzalnym efektem. Nie budujemy „oddziału przy Rybnickiej” — budujemy przepływy, które zespół realnie używa po szkoleniu.",
+      "Gliwice łączą silne środowisko akademickie, firmy IT i centra badawcze z klasycznym przemysłem regionu. Automatyzacja procesów w Gliwicach często dotyczy miejsc, gdzie Jira, CRM, system HR i skrzynka mailowa nie tworzą spójnej historii pracy, szczególnie przy projektach dla klientów zagranicznych.",
+      "Obsługujemy firmy z Gliwic zdalnie: najpierw diagnoza wąskich gardeł, potem wdrożenie w iteracjach z mierzalnym efektem. Nie budujemy „oddziału przy Rybnickiej”. Budujemy przepływy, które zespół realnie używa po szkoleniu.",
     ],
     localContext:
-      "Lokalny rynek ma dużo specjalistów technicznych, ale procesy operacyjne często nadal opierają się na ręcznym raportowaniu statusów, onboardingu kontraktorów i zbieraniu danych do grantów czy audytów. Software house’y i firmy usługowe walczą z niebillowanymi godzinami administracji, a jednostki naukowe — z obiegiem wniosków i rozliczeń projektowych.",
+      "Lokalny rynek ma dużo specjalistów technicznych, ale procesy operacyjne często nadal opierają się na ręcznym raportowaniu statusów, onboardingu kontraktorów i zbieraniu danych do grantów czy audytów. Software house’y i firmy usługowe walczą z niebillowanymi godzinami administracji, a jednostki naukowe, z obiegiem wniosków i rozliczeń projektowych.",
     whyHere:
       "W Gliwicach automatyzacja chroni marżę projektową i tempo delivery. Zamiast dokładać koordynatorów do przepisywania statusów, spinamy powtarzalne kroki w jeden audytowalny tor z jasnymi wyjątkami.",
     focusIndustries: [
@@ -126,7 +126,7 @@ export const slaskCities: CityPageContent[] = [
       },
       {
         title: "Edukacja i szkolenia B2B",
-        body: "Zapisy, certyfikaty i faktury po szkoleniu — jeden przepływ zamiast ręcznych list uczestników.",
+        body: "Zapisy, certyfikaty i faktury po szkoleniu, jeden przepływ zamiast ręcznych list uczestników.",
       },
       {
         title: "Usługi profesjonalne",
@@ -136,7 +136,7 @@ export const slaskCities: CityPageContent[] = [
     focusProcesses: [
       {
         title: "Onboarding specjalistów IT",
-        body: "Checklisty dostępów, sprzętu i szkoleń spięte z HR i administracją — widoczne dla team leada.",
+        body: "Checklisty dostępów, sprzętu i szkoleń spięte z HR i administracją, widoczne dla team leada.",
       },
       {
         title: "Raportowanie statusu projektu",
@@ -144,7 +144,7 @@ export const slaskCities: CityPageContent[] = [
       },
       {
         title: "Rekrutacja techniczna",
-        body: "Od aplikacji po feedback i decyzję — mniej kandydatów „zawieszonych” między etapami.",
+        body: "Od aplikacji po feedback i decyzję, mniej kandydatów „zawieszonych” między etapami.",
       },
       {
         title: "Obieg wniosków wewnętrznych",
@@ -158,7 +158,7 @@ export const slaskCities: CityPageContent[] = [
         id: "gli-1",
         question: "Czy automatyzacja w Gliwicach ma sens dla małego software house’u?",
         answer:
-          "Tak — szczególnie przy rosnącej liczbie klientów. Zaczynamy od jednego procesu, np. onboardingu lub raportów, bez wielomiesięcznego programu transformacji.",
+          "Tak. Szczególnie przy rosnącej liczbie klientów. Zaczynamy od jednego procesu, np. onboardingu lub raportów, bez wielomiesięcznego programu transformacji.",
       },
       {
         id: "gli-2",
@@ -174,9 +174,9 @@ export const slaskCities: CityPageContent[] = [
       },
       {
         id: "gli-4",
-        question: "Czy wdrażacie rozwiązania AI w niestandardowych procesach?",
+        question: "Czy wdrażacie automatyzacje AI w niestandardowych procesach?",
         answer:
-          "Tak, gdy reguły są zbyt zmienne na sztywną automatyzację — np. triaż zgłoszeń lub ekstrakcja danych z dokumentów. Zawsze z kontrolą jakości i audytem.",
+          "Tak, gdy reguły są zbyt zmienne na sztywną automatyzację, np. triaż zgłoszeń lub ekstrakcja danych z dokumentów. Zawsze z kontrolą jakości i audytem.",
       },
     ],
     relatedServiceSlugs: [
@@ -196,12 +196,12 @@ export const slaskCities: CityPageContent[] = [
     regionCluster: "slask",
     metaTitle: "Automatyzacja procesów w Zabrzu | Automation Minds",
     metaDescription:
-      "Automatyzacja procesów biznesowych dla firm z Zabrza — przemysł, utrzymanie ruchu, HR i finanse. Współpraca zdalna, mierzalne efekty.",
+      "Automatyzacja procesów biznesowych dla firm z Zabrza: przemysł, utrzymanie ruchu, HR i finanse. Współpraca zdalna, mierzalne efekty.",
     heroTitle: "Automatyzacja procesów w Zabrzu",
     heroLead:
-      "Pomagamy zabrzańskim zakładom i usługom przemysłowym połączyć halę produkcyjną z biurem — bez ręcznych raportów po każdej zmianie.",
+      "Pomagamy zabrzańskim zakładom i usługom przemysłowym połączyć halę produkcyjną z biurem, bez ręcznych raportów po każdej zmianie.",
     introParagraphs: [
-      "Zabrze ma długą tradycję przemysłową i dziś łączy produkcję z nowoczesnymi usługami dla biznesu. Automatyzacja procesów w Zabrzu najczęściej dotyczy utrzymania ruchu, jakości i logistyki wewnętrznej — tam, gdzie papierowe protokoły i Excel na stanowisku brygady wciąż decydują o tempie reakcji.",
+      "Zabrze ma długą tradycję przemysłową i dziś łączy produkcję z nowoczesnymi usługami dla biznesu. Automatyzacja procesów w Zabrzu najczęściej dotyczy utrzymania ruchu, jakości i logistyki wewnętrznej, tam, gdzie papierowe protokoły i Excel na stanowisku brygady wciąż decydują o tempie reakcji.",
       "Obsługujemy firmy z Zabrza zdalnie, z uwzględnieniem pracy wielozmianowej. Mapujemy procesy online, wdrażamy etapami i zostawiamy dokumentację, żeby zespół mógł obsłużyć wyjątki bez stałej obecności konsultanta.",
     ],
     localContext:
@@ -245,13 +245,13 @@ export const slaskCities: CityPageContent[] = [
       },
     ],
     howWeWork:
-      "Z zabrzańskimi firmami zaczynamy od procesu, który najbardziej generuje przestoje lub błędy w danych — często utrzymanie ruchu albo raport zmiany. Wdrażamy zdalnie, testujemy na jednej linii lub hali, potem rozszerzamy. Bezpłatna konsultacja pomaga ustalić priorytety bez zobowiązań.",
+      "U zabrzańskich firm bierzemy najpierw proces, który najbardziej generuje przestoje lub błędy w danych, często utrzymanie ruchu albo raport zmiany. Wdrażamy zdalnie, testujemy na jednej linii lub hali, potem rozszerzamy. Bezpłatna konsultacja pomaga ustalić priorytety bez zobowiązań.",
     faq: [
       {
         id: "zab-1",
         question: "Czy da się automatyzować procesy przy pracy trzyzmianowej?",
         answer:
-          "Tak. Projektujemy przepływy tak, by każda zmiana widziała ten sam status i historię — powiadomienia i formularze dostosowujemy do realiów hali.",
+          "Tak. Projektujemy przepływy tak, by każda zmiana widziała ten sam status i historię, powiadomienia i formularze dostosowujemy do realiów hali.",
       },
       {
         id: "zab-2",
@@ -263,13 +263,13 @@ export const slaskCities: CityPageContent[] = [
         id: "zab-3",
         question: "Czy integrujecie się z systemami MES lub ERP?",
         answer:
-          "Tak, przez dostępne API, pliki lub middleware — bez destabilizowania produkcji. Zakres integracji ustalamy po analizie.",
+          "Tak, przez dostępne API, pliki lub middleware, bez destabilizowania produkcji. Zakres integracji ustalamy po analizie.",
       },
       {
         id: "zab-4",
         question: "Jak szybko widać efekt?",
         answer:
-          "Pierwsze usprawnienia, np. kolejka zgłoszeń UR, często dają mierzalny skrót czasu reakcji w kilka tygodni od startu pilotażu.",
+          "Pierwsze zmiany, np. kolejka zgłoszeń UR, często dają mierzalny skrót czasu reakcji w kilka tygodni od startu pilotażu.",
       },
     ],
     relatedServiceSlugs: [
@@ -289,16 +289,16 @@ export const slaskCities: CityPageContent[] = [
     regionCluster: "slask",
     metaTitle: "Automatyzacja procesów w Tychach | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm z Tychów — automotive, łańcuch dostaw, jakość i HR. Obsługa zdalna, wdrożenia etapami, konsultacja bez opłat.",
+      "Automatyzacja dla firm z Tychów: automotive, łańcuch dostaw, jakość i HR. Obsługa zdalna, wdrożenia etapami, konsultacja bez opłat.",
     heroTitle: "Automatyzacja procesów w Tychach",
     heroLead:
       "Wspieramy tychowskie firmy motoryzacyjne i dostawców OEM w spięciu jakości, logistyki i administracji jednym spójnym przepływem.",
     introParagraphs: [
-      "Tychy kojarzą się z motoryzacyjnym sercem regionu — produkcją, dostawcami tier i logistyką just-in-time. Automatyzacja procesów w Tychach dotyczy miejsc, gdzie wymagania jakościowe, terminy dostaw i dokumentacja PPAP nie mogą opierać się wyłącznie na mailach i arkuszach między halą a biurem jakości.",
-      "Obsługujemy firmy z Tychów zdalnie: porządkujemy reguły, integrujemy systemy i wdrażamy w krótkich sprintach. Nie twierdzimy, że mamy biuro w Tychach — mamy doświadczenie w procesach automotive i pracy z zespołami rozproszonymi.",
+      "Tychy kojarzą się z motoryzacyjnym sercem regionu, produkcją, dostawcami tier i logistyką just-in-time. Automatyzacja procesów w Tychach dotyczy miejsc, gdzie wymagania jakościowe, terminy dostaw i dokumentacja PPAP nie mogą opierać się wyłącznie na mailach i arkuszach między halą a biurem jakości.",
+      "Obsługujemy firmy z Tychów zdalnie: porządkujemy reguły, integrujemy systemy i wdrażamy w krótkich sprintach. Nie twierdzimy, że mamy biuro w Tychach, mamy doświadczenie w procesach automotive i pracy z zespołami rozproszonymi.",
     ],
     localContext:
-      "Lokalny ekosystem automotive wymaga ścisłej synchronizacji z odbiorcami końcowymi i presji na zero defektów. Firmy walczą z ręcznym zbieraniem danych jakościowych, opóźnionymi eskalacjami niezgodności oraz HR przy sezonowych szczytach produkcji. Dostawcy mniejszej skali często nie mają zasobów na dedykowany dział digitalizacji, a procesy i tak muszą spełniać standardy klienta.",
+      "Lokalna branża automotive wymaga ścisłej synchronizacji z odbiorcami końcowymi i presji na zero defektów. Firmy walczą z ręcznym zbieraniem danych jakościowych, opóźnionymi eskalacjami niezgodności oraz HR przy sezonowych szczytach produkcji. Dostawcy mniejszej skali często nie mają zasobów na osobny dział digitalizacji, a procesy i tak muszą spełniać standardy klienta.",
     whyHere:
       "W Tychach automatyzacja chroni kontrakty i reputację dostawcy: szybsza reakcja na niezgodność, mniej błędów w dokumentacji wysyłkowej i przewidywalne raporty dla klienta OEM.",
     focusIndustries: [
@@ -322,7 +322,7 @@ export const slaskCities: CityPageContent[] = [
     focusProcesses: [
       {
         title: "Obsługa niezgodności jakościowych",
-        body: "Od wykrycia po działania korygujące i raport do klienta — z terminami i odpowiedzialnościami.",
+        body: "Od wykrycia po działania korygujące i raport do klienta, z terminami i odpowiedzialnościami.",
       },
       {
         title: "Potwierdzenia dostaw i awizacje",
@@ -330,7 +330,7 @@ export const slaskCities: CityPageContent[] = [
       },
       {
         title: "Dokumentacja wysyłkowa",
-        body: "Komplet dokumentów przed wyjazdem auta — mniej zatrzymań na bramie odbiorcy.",
+        body: "Komplet dokumentów przed wyjazdem auta, mniej zatrzymań na bramie odbiorcy.",
       },
       {
         title: "Raportowanie KPI dla klienta",
@@ -338,13 +338,13 @@ export const slaskCities: CityPageContent[] = [
       },
     ],
     howWeWork:
-      "Z firmami z Tychów zaczynamy od procesu krytycznego dla klienta — często jakości lub logistyki wyjścia. Analizę i wdrożenie prowadzimy zdalnie, angażując jakość, produkcję i IT w uzgodnione punkty kontrolne. Bezpłatna konsultacja pozwala ocenić, czy zacząć od integracji, czy od uproszczenia reguł.",
+      "W Tychach zaczynamy od procesu krytycznego dla klienta, często jakości lub logistyki wyjścia. Analizę i wdrożenie prowadzimy zdalnie, angażując jakość, produkcję i IT w uzgodnione punkty kontrolne. Bezpłatna konsultacja pozwala ocenić, czy zacząć od integracji, czy od uproszczenia reguł.",
     faq: [
       {
         id: "tyc-1",
         question: "Czy rozumiecie wymagania procesów automotive?",
         answer:
-          "Tak — pracujemy na realnych obiegach jakości, reklamacji i logistyki dostawców. Nie zastępujemy systemów klienta, tylko spinamy to, co u Was już działa.",
+          "Tak. Pracujemy na realnych obiegach jakości, reklamacji i logistyki dostawców. Nie zastępujemy systemów klienta, tylko spinamy to, co u Was już działa.",
       },
       {
         id: "tyc-2",
@@ -356,13 +356,13 @@ export const slaskCities: CityPageContent[] = [
         id: "tyc-3",
         question: "Czy obsługujecie mniejszych dostawców tier 2/3?",
         answer:
-          "Tak. Właśnie u nich automatyzacja często daje najszybszy zwrot — mniej ręcznej pracy przy tych samych wymaganiach co u większych graczy.",
+          "Tak. Właśnie u nich automatyzacja często daje najszybszy zwrot, mniej ręcznej pracy przy tych samych wymaganiach co u większych graczy.",
       },
       {
         id: "tyc-4",
         question: "Jak wygląda współpraca zdalna z Tychami?",
         answer:
-          "Spotkania online, wspólny backlog, testy na środowisku klienta. Jeśli potrzebna krótka wizyta na hali, umawiamy ją celowo — nie jako codzienność.",
+          "Spotkania online, wspólny backlog, testy na środowisku klienta. Jeśli potrzebna krótka wizyta na hali, umawiamy ją celowo, nie jako codzienność.",
       },
     ],
     relatedServiceSlugs: [
@@ -382,12 +382,12 @@ export const slaskCities: CityPageContent[] = [
     regionCluster: "slask",
     metaTitle: "Automatyzacja procesów w Chorzowie | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm z Chorzowa — usługi, handel, obsługa klienta i back-office. Praca zdalna z całą Polską, bezpłatna konsultacja.",
+      "Automatyzacja dla firm z Chorzowa: usługi, handel, obsługa klienta i back-office. Praca zdalna z całą Polską, bezpłatna konsultacja.",
     heroTitle: "Automatyzacja procesów w Chorzowie",
     heroLead:
-      "Pomagamy chorzowskim firmom usługowym i handlowym odzyskać czas biura — od leadów po faktury i obsługę klienta.",
+      "Pomagamy chorzowskim firmom usługowym i handlowym odzyskać czas biura: od leadów po faktury i obsługę klienta.",
     introParagraphs: [
-      "Chorzów to mix usług lokalnych, handlu i firm wspierających aglomerację — często mniejszych, ale szybko rosnących. Automatyzacja procesów w Chorzowie zaczyna się tam, gdzie właściciel lub office manager wciąż spina sprzedaż, księgowość i support w jednym Excelu i kilku skrzynkach mailowych.",
+      "Chorzów to mix usług lokalnych, handlu i firm wspierających aglomerację, często mniejszych, ale szybko rosnących. Automatyzacja procesów w Chorzowie zaczyna się tam, gdzie właściciel lub office manager wciąż spina sprzedaż, księgowość i support w jednym Excelu i kilku skrzynkach mailowych.",
       "Obsługujemy firmy z Chorzowa zdalnie: bez obietnicy lokalnego oddziału, za to z jasnym planem wdrożenia i szkoleniem zespołu. Skupiamy się na procesach, które da się zmierzyć w tygodniach, nie latach.",
     ],
     localContext:
@@ -397,7 +397,7 @@ export const slaskCities: CityPageContent[] = [
     focusIndustries: [
       {
         title: "Usługi lokalne i B2B",
-        body: "Oferty, umowy i fakturowanie po zakończeniu usługi — jeden tor zamiast chaosu w mailach.",
+        body: "Oferty, umowy i fakturowanie po zakończeniu usługi, jeden tor zamiast chaosu w mailach.",
       },
       {
         title: "Handel detaliczny i e-commerce regionalny",
@@ -415,7 +415,7 @@ export const slaskCities: CityPageContent[] = [
     focusProcesses: [
       {
         title: "Lejek sprzedaży i follow-up",
-        body: "Od zapytania po ofertę i przypomnienie — z przypisaniem do handlowca i historią kontaktu.",
+        body: "Od zapytania po ofertę i przypomnienie, z przypisaniem do handlowca i historią kontaktu.",
       },
       {
         title: "Obsługa reklamacji i zgłoszeń",
@@ -427,17 +427,17 @@ export const slaskCities: CityPageContent[] = [
       },
       {
         title: "Onboarding klienta usługowego",
-        body: "Checklisty danych, umów i dostępów — szybszy start współpracy bez dziesięciu maili wstecz.",
+        body: "Checklisty danych, umów i dostępów, szybszy start współpracy bez dziesięciu maili wstecz.",
       },
     ],
     howWeWork:
-      "Z chorzowskimi firmami zaczynamy od bezpłatnej konsultacji i jednego procesu o największym bólu — często obsługi klienta albo fakturowania. Wdrażamy zdalnie, w języku zrozumiałym dla właściciela, nie tylko dla IT. Po działającym pilocie planujemy kolejne kroki według budżetu i priorytetu.",
+      "W Chorzowie zaczynamy od bezpłatnej konsultacji i jednego procesu o największym bólu, często obsługi klienta albo fakturowania. Wdrażamy zdalnie, w języku zrozumiałym dla właściciela, nie tylko dla IT. Po działającym pilocie planujemy kolejne kroki według budżetu i priorytetu.",
     faq: [
       {
         id: "cho-1",
         question: "Czy automatyzacja w Chorzowie jest dla małych firm?",
         answer:
-          "Tak — często właśnie tam zwrot jest najszybszy, bo każda zaoszczędzona godzina właściciela widać od razu na wyniku.",
+          "Tak. Często właśnie tam zwrot jest najszybszy, bo każda zaoszczędzona godzina właściciela widać od razu na wyniku.",
       },
       {
         id: "cho-2",
@@ -449,13 +449,13 @@ export const slaskCities: CityPageContent[] = [
         id: "cho-3",
         question: "Czy pracujecie stacjonarnie w Chorzowie?",
         answer:
-          "Nie utrzymujemy biura w Chorzowie. Obsługujemy firmy z Chorzowa zdalnie — tak samo skutecznie jak klientów z innych miast.",
+          "Nie utrzymujemy biura w Chorzowie. Obsługujemy firmy z Chorzowa zdalnie, tak samo skutecznie jak klientów z innych miast.",
       },
       {
         id: "cho-4",
         question: "Ile kosztuje start?",
         answer:
-          "Konsultacja wstępna jest bezpłatna. Wycena zależy od zakresu — po analizie proponujemy etap z przejrzystą ceną, często zaczynamy od jednego modułu.",
+          "Konsultacja wstępna jest bezpłatna. Wycena zależy od zakresu, po analizie proponujemy etap z przejrzystą ceną, często zaczynamy od jednego modułu.",
       },
     ],
     relatedServiceSlugs: [
@@ -475,13 +475,13 @@ export const slaskCities: CityPageContent[] = [
     regionCluster: "slask",
     metaTitle: "Automatyzacja w Dąbrowie Górniczej | Automation Minds",
     metaDescription:
-      "Automatyzacja procesów dla firm z Dąbrowy Górniczej — przemysł, hutnictwo, logistyka i HR. Zdalne wdrożenia, mierzalne usprawnienia.",
+      "Automatyzacja procesów dla firm z Dąbrowy Górniczej: przemysł, hutnictwo, logistyka i HR. Zdalne wdrożenia, mierzalne efekty.",
     heroTitle: "Automatyzacja procesów w Dąbrowie Górniczej",
     heroLead:
-      "Wspieramy dąbrowskie zakłady i firmy okołoprzemysłowe w łączeniu produkcji, BHP i administracji — bez ręcznego przenoszenia danych między zmianami.",
+      "Wspieramy dąbrowskie zakłady i firmy okołoprzemysłowe w łączeniu produkcji, BHP i administracji, bez ręcznego przenoszenia danych między zmianami.",
     introParagraphs: [
       "Dąbrowa Górnicza łączy ciężki przemysł, logistykę surowców i rosnące usługi dla zakładów. Automatyzacja procesów w Dąbrowie Górniczej dotyczy miejsc, gdzie bezpieczeństwo, terminy dostaw surowców i raportowanie do centrali muszą iść szybciej niż pozwala na to papierowy obieg.",
-      "Obsługujemy firmy z Dąbrowy Górniczej zdalnie, z szacunkiem do pracy w trudnych warunkach operacyjnych. Najpierw porządek w procesie i odpowiedzialnościach, potem integracja — żeby nie utrwalać chaosu w nowym narzędziu.",
+      "Obsługujemy firmy z Dąbrowy Górniczej zdalnie, z szacunkiem do pracy w trudnych warunkach operacyjnych. Najpierw porządek w procesie i odpowiedzialnościach, potem integracja, żeby nie utrwalać chaosu w nowym narzędziu.",
     ],
     localContext:
       "Lokalny biznes operuje często w modelu wielozmianowym z presją na ciągłość produkcji. Widać ręczne protokoły BHP, opóźnione zgłoszenia incydentów, rozproszone zamówienia na materiały oraz HR tonące w dokumentacji zatrudnienia przy rotacji. Grupy kapitałowe wymagają raportów, które lokalnie składają się wieczorami z kilku źródeł.",
@@ -508,7 +508,7 @@ export const slaskCities: CityPageContent[] = [
     focusProcesses: [
       {
         title: "Zgłoszenia incydentów BHP",
-        body: "Od zgłoszenia po analizę i działania — z powiadomieniami i śladem decyzji.",
+        body: "Od zgłoszenia po analizę i działania, z powiadomieniami i śladem decyzji.",
       },
       {
         title: "Zamówienia materiałów produkcyjnych",
@@ -530,25 +530,25 @@ export const slaskCities: CityPageContent[] = [
         id: "dab-1",
         question: "Czy automatyzacja BHP w Dąbrowie Górniczej ma sens prawnie?",
         answer:
-          "Automatyzujemy obieg i przypomnienia — treść procedur i decyzje nadal należą do Was. Zapewniamy audytowalny ślad i terminy, nie zastępujemy odpowiedzialności pracodawcy.",
+          "Automatyzujemy obieg i przypomnienia, treść procedur i decyzje nadal należą do Was. Dajemy audytowalny ślad i terminy, nie zastępujemy odpowiedzialności pracodawcy.",
       },
       {
         id: "dab-2",
         question: "Czy pracujecie z firmami jednozakładowymi?",
         answer:
-          "Tak. Nie wymagamy struktury korporacyjnej — ważne, że proces da się opisać i zmierzyć efekt.",
+          "Tak. Nie wymagamy struktury korporacyjnej, ważne, że proces da się opisać i zmierzyć efekt.",
       },
       {
         id: "dab-3",
         question: "Czy musicie być na terenie zakładu?",
         answer:
-          "Standardem jest współpraca zdalna. Wizyta operacyjna może pomóc na starcie, ale nie jest warunkiem utrzymania rozwiązania.",
+          "Standardem jest współpraca zdalna. Wizyta operacyjna może pomóc na starcie, ale nie jest warunkiem utrzymania wdrożenia.",
       },
       {
         id: "dab-4",
         question: "Jak łączycie się ze starymi systemami?",
         answer:
-          "Przez eksporty, API lub warstwę pośrednią — dobór metody zależy od tego, co już macie i co można bezpiecznie dotknąć.",
+          "Przez eksporty, API lub warstwę pośrednią, dobór metody zależy od tego, co już macie i co można bezpiecznie dotknąć.",
       },
     ],
     relatedServiceSlugs: [
@@ -568,16 +568,16 @@ export const slaskCities: CityPageContent[] = [
     regionCluster: "slask",
     metaTitle: "Automatyzacja procesów w Rybniku | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm z Rybnika — energetyka, przemysł, usługi i finanse. Obsługa zdalna firm ze Śląska, bezpłatna konsultacja 30 min.",
+      "Automatyzacja dla firm z Rybnika: energetyka, przemysł, usługi i finanse. Obsługa zdalna firm ze Śląska, bezpłatna konsultacja 30 min.",
     heroTitle: "Automatyzacja procesów w Rybniku",
     heroLead:
-      "Pomagamy rybnickim firmom energetycznym i przemysłowym uporządkować obiegi zgłoszeń, konserwacji i raportowania — zanim rośnie koszt przestoju.",
+      "Pomagamy rybnickim firmom energetycznym i przemysłowym uporządkować obiegi zgłoszeń, konserwacji i raportowania, zanim rośnie koszt przestoju.",
     introParagraphs: [
-      "Rybnik to ważny ośrodek energetyki i przemysłu południowego Śląska, z rosnącymi usługami B2B wokół infrastruktury. Automatyzacja procesów w Rybniku często dotyczy planowania prac konserwacyjnych, obiegu zleceń i raportów wymaganych przez audyt lub kontrahenta — obszarów, gdzie ręczna koordynacja generuje opóźnienia i ryzyko.",
-      "Obsługujemy firmy z Rybnika zdalnie: mapujemy procesy online, wdrażamy etapami i mierzymy efekt na czasie reakcji i jakości danych. Nie posiadamy lokalnego biura — współpracujemy z zespołami z całej Polski w tym samym modelu.",
+      "Rybnik to ważny ośrodek energetyki i przemysłu południowego Śląska, z rosnącymi usługami B2B wokół infrastruktury. Automatyzacja procesów w Rybniku często dotyczy planowania prac konserwacyjnych, obiegu zleceń i raportów wymaganych przez audyt lub kontrahenta, obszarów, gdzie ręczna koordynacja generuje opóźnienia i ryzyko.",
+      "Obsługujemy firmy z Rybnika zdalnie: mapujemy procesy online, wdrażamy etapami i mierzymy efekt na czasie reakcji i jakości danych. Nie mamy lokalnego biura, współpracujemy z zespołami z całej Polski w tym samym modelu.",
     ],
     localContext:
-      "W Rybniku widać duże podmioty infrastrukturalne oraz mniejszych wykonawców i dostawców. Typowe problemy to rozproszone zgłoszenia awarii, ręczne harmonogramy przeglądów, opóźnione przekazanie protokołu do fakturowania oraz finanse czekające na dane z terenu. Presja regulacyjna i terminy kontraktów wymagają audytowalności, której Excel nie zawsze zapewnia.",
+      "W Rybniku widać duże podmioty infrastrukturalne oraz mniejszych wykonawców i dostawców. Typowe problemy to rozproszone zgłoszenia awarii, ręczne harmonogramy przeglądów, opóźnione przekazanie protokołu do fakturowania oraz finanse czekające na dane z terenu. Presja regulacyjna i terminy kontraktów wymagają audytowalności, której Excel nie zawsze daje.",
     whyHere:
       "W Rybniku automatyzacja skraca czas od zgłoszenia do domknięcia pracy i poprawia wiarygodność raportów. To mniej przestojów infrastruktury i mniej sporów z klientem o status zlecenia.",
     focusIndustries: [
@@ -587,7 +587,7 @@ export const slaskCities: CityPageContent[] = [
       },
       {
         title: "Wykonawstwo przemysłowe",
-        body: "Zlecenia, materiały i rozliczenie po odbiorze — widoczne dla biura i brygady.",
+        body: "Zlecenia, materiały i rozliczenie po odbiorze, widoczne dla biura i brygady.",
       },
       {
         title: "Usługi utrzymania infrastruktury",
@@ -623,11 +623,11 @@ export const slaskCities: CityPageContent[] = [
         id: "ryb-1",
         question: "Czy automatyzacja w Rybniku dotyczy tylko dużych firm?",
         answer:
-          "Nie. Mniejsi wykonawcy często zyskują najwięcej — bo jedna osoba w biurze nie musi już „pamiętać o wszystkim” w głowie.",
+          "Nie. Mniejsi wykonawcy często zyskują najwięcej, bo jedna osoba w biurze nie musi już „pamiętać o wszystkim” w głowie.",
       },
       {
         id: "ryb-2",
-        question: "Czy rozwiązania spełnią wymagania audytu?",
+        question: "Czy przepływy spełnią wymagania audytu?",
         answer:
           "Projektujemy przepływy z historią decyzji, rolami i archiwum. Szczegóły compliance ustalamy z Waszymi procedurami i audytorem.",
       },
@@ -635,13 +635,13 @@ export const slaskCities: CityPageContent[] = [
         id: "ryb-3",
         question: "Czy obsługujecie firmy z Rybnika zdalnie?",
         answer:
-          "Tak — to nasz standard. Hybrydowe spotkania są możliwe, ale nie wymagamy stałej obecności na miejscu.",
+          "Tak. To nasz standard. Hybrydowe spotkania są możliwe, ale nie wymagamy stałej obecności na miejscu.",
       },
       {
         id: "ryb-4",
         question: "Jakie narzędzia stosujecie?",
         answer:
-          "Dobieramy stack do Waszego środowiska: Make, Power Automate, integracje API, czasem elementy AI — ważniejsza od marki jest stabilność procesu.",
+          "Dobieramy stack do Waszego środowiska: Make, Power Automate, integracje API, czasem elementy AI, ważniejsza od marki jest stabilność procesu.",
       },
     ],
     relatedServiceSlugs: [
@@ -661,13 +661,13 @@ export const slaskCities: CityPageContent[] = [
     regionCluster: "slask",
     metaTitle: "Automatyzacja procesów w Rudzie Śląskiej | AM",
     metaDescription:
-      "Automatyzacja dla firm z Rudy Śląskiej — produkcja, podwykonawcy, HR i magazyn. Zdalna współpraca, wdrożenia krok po kroku, konsultacja gratis.",
+      "Automatyzacja dla firm z Rudy Śląskiej: produkcja, podwykonawcy, HR i magazyn. Zdalna współpraca, wdrożenia krok po kroku, konsultacja gratis.",
     heroTitle: "Automatyzacja procesów w Rudzie Śląskiej",
     heroLead:
-      "Wspieramy rudzkie zakłady i firmy okołoprodukcyjne w spięciu magazynu, produkcji i kadr — bez codziennego przepisywania danych między działami.",
+      "Wspieramy rudzkie zakłady i firmy okołoprodukcyjne w spięciu magazynu, produkcji i kadr, bez codziennego przepisywania danych między działami.",
     introParagraphs: [
-      "Ruda Śląska to gęsta tkanka małych i średnich producentów, podwykonawców i usług dla przemysłu aglomeracji. Automatyzacja procesów w Rudzie Śląskiej najczęściej zaczyna się od magazynu części, zleceń produkcyjnych i HR przy rotacji — tam, gdzie jedna osoba w biurze spina trzy zmiany na hali.",
-      "Obsługujemy firmy z Rudy Śląskiej zdalnie: prosty język, konkretny zakres pierwszego etapu i szkolenie ludzi, którzy realnie klikają w proces. Nie obiecujemy lokalnego oddziału — obiecujemy działający przepływ.",
+      "Ruda Śląska to gęsta tkanka małych i średnich producentów, podwykonawców i usług dla przemysłu aglomeracji. Automatyzacja procesów w Rudzie Śląskiej najczęściej zaczyna się od magazynu części, zleceń produkcyjnych i HR przy rotacji, tam, gdzie jedna osoba w biurze spina trzy zmiany na hali.",
+      "Obsługujemy firmy z Rudy Śląskiej zdalnie: prosty język, konkretny zakres pierwszego etapu i szkolenie ludzi, którzy realnie klikają w proces. Nie obiecujemy lokalnego oddziału, obiecujemy działający przepływ.",
     ],
     localContext:
       "Lokalne firmy często rosną organicznie: najpierw produkcja, potem „dokładamy Excela”. Widać brak synchronizacji stanów, ręczne listy obecności przekładane do kadr, opóźnione faktury gdy magazyn nie zdąży potwierdzić wydań oraz serwis maszyn bez centralnej historii napraw. Współpraca z większymi odbiorcami wymaga coraz szybszych potwierdzeń i dokumentacji.",
@@ -706,21 +706,21 @@ export const slaskCities: CityPageContent[] = [
       },
       {
         title: "Rekrutacja na stanowiska produkcyjne",
-        body: "Od ogłoszenia po umowę i szkolenie wstępne — krótszy czas obsady linii.",
+        body: "Od ogłoszenia po umowę i szkolenie wstępne, krótszy czas obsady linii.",
       },
     ],
     howWeWork:
-      "Z firmami z Rudy Śląskiej zaczynamy od jednego procesu, który najbardziej blokuje codzienną pracę — często magazyn albo domknięcie zlecenia. Wdrażamy zdalnie, z krótkimi spotkaniami dopasowanymi do grafiku produkcji. Bezpłatna konsultacja wystarczy, by wskazać sensowny pierwszy krok.",
+      "Z firmami z Rudy Śląskiej zaczynamy od jednego procesu, który najbardziej blokuje codzienną pracę, często magazyn albo domknięcie zlecenia. Wdrażamy zdalnie, z krótkimi spotkaniami dopasowanymi do grafiku produkcji. Bezpłatna konsultacja wystarczy, by wskazać sensowny pierwszy krok.",
     faq: [
       {
         id: "rud-1",
         question: "Czy ma producent z Rudy Śląskiej stać na automatyzację?",
         answer:
-          "Często tak — bo zaczynamy od małego zakresu z szybkim zwrotem, a nie od wielomiesięcznego programu IT.",
+          "Często tak, bo zaczynamy od małego zakresu z szybkim zwrotem, a nie od wielomiesięcznego programu IT.",
       },
       {
         id: "rud-2",
-        question: "Czy potrzebujemy dedykowanego programisty?",
+        question: "Czy potrzebujemy osobnego programisty?",
         answer:
           "Nie. Projektujemy i wdrażamy my; po uruchomieniu zostawiamy dokumentację i przeszkolony zespół obsługi wyjątków.",
       },
@@ -728,13 +728,13 @@ export const slaskCities: CityPageContent[] = [
         id: "rud-3",
         question: "Czy pracujecie z Insert / Comarch / innymi polskimi ERP?",
         answer:
-          "Integrujemy to, do czego jest bezpieczny dostęp — API, eksporty, webhooki. Metodę dobieramy po analizie Waszego stacku.",
+          "Integrujemy to, do czego jest bezpieczny dostęp. API, eksporty, webhooki. Metodę dobieramy po analizie Waszego stacku.",
       },
       {
         id: "rud-4",
         question: "Czy obsługujecie Rudę Śląską zdalnie?",
         answer:
-          "Tak. To standard naszej pracy z firmami ze Śląska i całej Polski — bez wymogu lokalnego biura wdrożeniowego.",
+          "Tak. To standard naszej pracy z firmami ze Śląska i całej Polski, bez wymogu lokalnego biura wdrożeniowego.",
       },
     ],
     relatedServiceSlugs: [
@@ -754,13 +754,13 @@ export const slaskCities: CityPageContent[] = [
     regionCluster: "slask",
     metaTitle: "Automatyzacja procesów w Bielsku-Białej | AM",
     metaDescription:
-      "Automatyzacja dla firm z Bielska-Białej — produkcja, turystyka, handel i usługi. Zdalne wdrożenia, integracje systemów, konsultacja 30 min.",
+      "Automatyzacja dla firm z Bielska-Białej: produkcja, turystyka, handel i usługi. Zdalne wdrożenia, integracje systemów, konsultacja 30 min.",
     heroTitle: "Automatyzacja procesów w Bielsku-Białej",
     heroLead:
-      "Pomagamy bielskim producentom, hotelom i firmom usługowym połączyć sezonowość z porządnym back-office — bez ręcznego chaosu przy szczycie.",
+      "Pomagamy bielskim producentom, hotelom i firmom usługowym połączyć sezonowość z porządnym back-office, bez ręcznego chaosu przy szczycie.",
     introParagraphs: [
       "Bielsko-Biała łączy silny sektor produkcyjny i odzieżowy z turystyką górską i usługami dla regionu. Automatyzacja procesów w Bielsku-Białej ma sens tam, gdzie sezon turystyczny albo kolekcja produktowa generuje skok zamówień, a biuro nadal obsługuje rezerwacje, produkcję i faktury tymi samymi ręcznymi metodami.",
-      "Obsługujemy firmy z Bielska-Białej zdalnie: projektujemy przepływy odporne na wahania obciążenia i wdrażamy je etapami. Nie twierdzimy, że mamy biuro przy Rynku — współpracujemy online z taką samą starannością jak z klientami z dużych aglomeracji.",
+      "Obsługujemy firmy z Bielska-Białej zdalnie: projektujemy przepływy odporne na wahania obciążenia i wdrażamy je etapami. Nie twierdzimy, że mamy biuro przy Rynku, współpracujemy online z taką samą starannością jak z klientami z dużych aglomeracji.",
     ],
     localContext:
       "Lokalnie widać producentów eksportujących, hotele i pensjonaty oraz handel i usługi B2B. Typowe wąskie gardła to ręczne potwierdzenia rezerwacji, brak spięcia e-commerce z magazynem, opóźnione oferty dla klientów zagranicznych oraz HR przy sezonowym dokładaniu etatów. Turystyka i produkcja często dzielą ten sam problem: brak jednego widoku obciążenia zespołu.",
@@ -787,7 +787,7 @@ export const slaskCities: CityPageContent[] = [
     focusProcesses: [
       {
         title: "Rezerwacja i rozliczenie pobytu",
-        body: "Od booking po FV i raport obłożenia — mniej ręcznych wpisów w kilku systemach.",
+        body: "Od booking po FV i raport obłożenia, mniej ręcznych wpisów w kilku systemach.",
       },
       {
         title: "Zamówienie produkcyjne i termin realizacji",
@@ -803,13 +803,13 @@ export const slaskCities: CityPageContent[] = [
       },
     ],
     howWeWork:
-      "Z bielskimi firmami zaczynamy od procesu, który najbardziej boli przy szczycie — turystyka, sprzedaż albo produkcja. Wdrażamy zdalnie przed sezonem lub przed launch kolekcji, żeby zespół zdążył się przeszkolić. Bezpłatna konsultacja pomaga ustalić realny harmonogram.",
+      "Z bielskimi firmami zaczynamy od procesu, który najbardziej boli przy szczycie, turystyka, sprzedaż albo produkcja. Wdrażamy zdalnie przed sezonem lub przed launch kolekcji, żeby zespół zdążył się przeszkolić. Bezpłatna konsultacja pomaga ustalić realny harmonogram.",
     faq: [
       {
         id: "bie-1",
         question: "Czy automatyzacja w Bielsku-Białej pomoże hotelowi sezonowemu?",
         answer:
-          "Tak — szczególnie przy rezerwacjach, fakturach i komunikacji z gościem. Cel to mniej ręcznej pracy recepcji w szczycie, nie zastąpienie ludzkiej obsługi.",
+          "Tak. Szczególnie przy rezerwacjach, fakturach i komunikacji z gościem. Cel to mniej ręcznej pracy recepcji w szczycie, nie zastąpienie ludzkiej obsługi.",
       },
       {
         id: "bie-2",
@@ -821,13 +821,13 @@ export const slaskCities: CityPageContent[] = [
         id: "bie-3",
         question: "Czy pracujecie z producentami odzieży?",
         answer:
-          "Tak — obiegi zleceń, próbek i terminów to częsty pierwszy etap u klientów z branży.",
+          "Tak. Obiegi zleceń, próbek i terminów to częsty pierwszy etap u klientów z branży.",
       },
       {
         id: "bie-4",
         question: "Czy obsługujecie Bielsko-Białą zdalnie?",
         answer:
-          "Tak. Obsługujemy firmy z Bielska-Białej zdalnie i hybrydowo — bez lokalnego oddziału Automation Minds.",
+          "Tak. Obsługujemy firmy z Bielska-Białej zdalnie i hybrydowo, bez lokalnego oddziału Automation Minds.",
       },
     ],
     relatedServiceSlugs: [
@@ -847,13 +847,13 @@ export const slaskCities: CityPageContent[] = [
     regionCluster: "slask",
     metaTitle: "Automatyzacja procesów w Mysłowicach | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm z Mysłowic — węzeł logistyczny, magazyny, transport i back-office. Współpraca zdalna, szybkie pilotaże, konsultacja gratis.",
+      "Automatyzacja dla firm z Mysłowic: węzeł logistyczny, magazyny, transport i back-office. Współpraca zdalna, szybkie pilotaże, konsultacja gratis.",
     heroTitle: "Automatyzacja procesów w Mysłowicach",
     heroLead:
-      "Wspieramy mysłowickie firmy transportowe i magazynowe w spięciu ramp, dokumentów i rozliczeń — zanim kolejny szczyt wolumenu wyczerpie zespół.",
+      "Wspieramy mysłowickie firmy transportowe i magazynowe w spięciu ramp, dokumentów i rozliczeń, zanim kolejny szczyt wolumenu wyczerpie zespół.",
     introParagraphs: [
-      "Mysłowice leżą przy kluczowych korytarzach transportowych aglomeracji — magazyny, firmy spedycyjne i operatorzy logistyczni spotykają się tu z produkcją i handlem. Automatyzacja procesów w Mysłowicach dotyczy awizacji, dokumentów przewozowych i rozliczeń z klientem — miejsc, gdzie jeden błąd w danych kosztuje cały dzień na rampie.",
-      "Obsługujemy firmy z Mysłowic zdalnie: krótki audyt procesu, pilotaż na jednym korytarzu operacyjnym, potem skalowanie. Nie budujemy fikcyjnej „lokalnej placówki” — budujemy przepływy, które dyspozytor i księgowość widzą tak samo.",
+      "Mysłowice leżą przy głównych korytarzach transportowych aglomeracji, magazyny, firmy spedycyjne i operatorzy logistyczni spotykają się tu z produkcją i handlem. Automatyzacja procesów w Mysłowicach dotyczy awizacji, dokumentów przewozowych i rozliczeń z klientem, miejsc, gdzie jeden błąd w danych kosztuje cały dzień na rampie.",
+      "Obsługujemy firmy z Mysłowic zdalnie: krótki audyt procesu, pilotaż na jednym korytarzu operacyjnym, potem skalowanie. Nie budujemy fikcyjnej „lokalnej placówki”. Budujemy przepływy, które dyspozytor i księgowość widzą tak samo.",
     ],
     localContext:
       "W Mysłowicach widać presję czasu okien załadunkowych, ręczne potwierdzenia CMR i listów przewozowych oraz rozliczenia opóźnione, bo brakuje podpisanych protokołów z terenu. Mniejsi operatorzy konkurują z większymi graczami wymaganiami IT klienta, nie mając wewnętrznego działu integracji. Back-office często nadgania operację wieczorem.",
@@ -884,7 +884,7 @@ export const slaskCities: CityPageContent[] = [
       },
       {
         title: "Komplet dokumentów przewozowych",
-        body: "Checklisty przed wyjazdem auta — mniej zatrzymań na granicy lub u odbiorcy.",
+        body: "Checklisty przed wyjazdem auta, mniej zatrzymań na granicy lub u odbiorcy.",
       },
       {
         title: "Rozliczenie frachtu i dopłat",
@@ -896,7 +896,7 @@ export const slaskCities: CityPageContent[] = [
       },
     ],
     howWeWork:
-      "Z mysłowickimi firmami zaczynamy od procesu, który generuje najwięcej telefonów i poprawek — często dokumentów albo awizacji. Wdrażamy zdalnie, angażując dyspozytora i księgowość w testy. Bezpłatna konsultacja 30 minut wystarczy, by ocenić pierwszy etap.",
+      "W Mysłowicach startujemy od procesu, który generuje najwięcej telefonów i poprawek, często dokumentów albo awizacji. Wdrażamy zdalnie, angażując dyspozytora i księgowość w testy. Bezpłatna konsultacja 30 minut wystarczy, by ocenić pierwszy etap.",
     faq: [
       {
         id: "mys-1",
@@ -914,7 +914,7 @@ export const slaskCities: CityPageContent[] = [
         id: "mys-3",
         question: "Czy obsługujecie Mysłowice zdalnie?",
         answer:
-          "Tak — to standard. Firmy z Mysłowic traktujemy jak resztę klientów w Polsce: zdalnie, z jasnymi terminami i dokumentacją.",
+          "Tak. To standard. Firmy z Mysłowic traktujemy jak resztę klientów w Polsce: zdalnie, z jasnymi terminami i dokumentacją.",
       },
       {
         id: "mys-4",
@@ -940,16 +940,16 @@ export const slaskCities: CityPageContent[] = [
     regionCluster: "slask",
     metaTitle: "Automatyzacja procesów w Częstochowie | Automation Minds",
     metaDescription:
-      "Automatyzacja dla firm z Częstochowy — przemysł, turystyka pielgrzymkowa, handel i usługi. Zdalne wdrożenia na Śląsku i w Polsce, konsultacja 30 min.",
+      "Automatyzacja dla firm z Częstochowy: przemysł, turystyka pielgrzymkowa, handel i usługi. Zdalne wdrożenia na Śląsku i w Polsce, konsultacja 30 min.",
     heroTitle: "Automatyzacja procesów w Częstochowie",
     heroLead:
-      "Pomagamy częstochowskim firmom przemysłowym i usługowym — także tym od turystyki pielgrzymkowej — spiąć sezonowe skoki z porządnym back-office.",
+      "Pomagamy częstochowskim firmom przemysłowym i usługowym, także tym od turystyki pielgrzymkowej, spiąć sezonowe skoki z porządnym back-office.",
     introParagraphs: [
-      "Częstochowa łączy przemysł, handel i unikalną skalę ruchu turystycznego związanego z Jasnogórą. Automatyzacja procesów w Częstochowie dotyczy hoteli i usług okołopielgrzymkowych równie mocno co zakładów produkcyjnych — w obu przypadkach ręczna obsługa szczytu szybko staje się wąskim gardłem.",
-      "Obsługujemy firmy z Częstochowy zdalnie, na terenie województwa śląskiego i całej Polski. Wdrażamy integracje i automatyzacje etapami — bez obietnicy lokalnego biura, za to z treścią dopasowaną do realiów miasta i regionu.",
+      "Częstochowa łączy przemysł, handel i unikalną skalę ruchu turystycznego związanego z Jasnogórą. Automatyzacja procesów w Częstochowie dotyczy hoteli i usług okołopielgrzymkowych równie mocno co zakładów produkcyjnych, w obu przypadkach ręczna obsługa szczytu szybko staje się wąskim gardłem.",
+      "Obsługujemy firmy z Częstochowy zdalnie, na terenie województwa śląskiego i całej Polski. Wdrażamy integracje i automatyzacje etapami, bez obietnicy lokalnego biura, za to z treścią dopasowaną do realiów miasta i regionu.",
     ],
     localContext:
-      "Lokalny rynek ma mocny przemysł przetwórczy i usługi B2B, a co roku doświadcza fal gości wymagających szybkiej rezerwacji, transportu i informacji. Typowe problemy: ręczne potwierdzenia grup pielgrzymkowych, brak spięcia rezerwacji z fakturowaniem, produkcja z opóźnionymi raportami do centrali oraz handel detaliczny bez synchronizacji stanów. Firmy często łączą sezon turystyczny z całoroczną produkcją — na tym samym zespole administracyjnym.",
+      "Lokalny rynek ma mocny przemysł przetwórczy i usługi B2B, a co roku doświadcza fal gości wymagających szybkiej rezerwacji, transportu i informacji. Typowe problemy: ręczne potwierdzenia grup pielgrzymkowych, brak spięcia rezerwacji z fakturowaniem, produkcja z opóźnionymi raportami do centrali oraz handel detaliczny bez synchronizacji stanów. Firmy często łączą sezon turystyczny z całoroczną produkcją, na tym samym zespole administracyjnym.",
     whyHere:
       "W Częstochowie automatyzacja pozwala obsłużyć szczyt pielgrzymkowy i bieżącą produkcję bez proporcjonalnego wzrostu kosztów biura. To lepsze doświadczenie gościa i stabilniejsze terminy dla klienta przemysłowego.",
     focusIndustries: [
@@ -973,7 +973,7 @@ export const slaskCities: CityPageContent[] = [
     focusProcesses: [
       {
         title: "Rezerwacja grupowa i obsługa gościa",
-        body: "Od zapytania po potwierdzenie, płatność i informację powitalną — mniej telefonów w szczycie.",
+        body: "Od zapytania po potwierdzenie, płatność i informację powitalną, mniej telefonów w szczycie.",
       },
       {
         title: "Produkcja i raport do centrali",
@@ -985,23 +985,23 @@ export const slaskCities: CityPageContent[] = [
       },
       {
         title: "Rekrutacja sezonowa",
-        body: "Szybsza obsada hotelu, transportu lub produkcji przed kluczowymi terminami w kalendarzu.",
+        body: "Szybsza obsada hotelu, transportu lub produkcji przed ważnymi terminami w kalendarzu.",
       },
     ],
     howWeWork:
-      "Z częstochowskimi firmami planujemy wdrożenia z wyprzedzeniem na sezon lub szczyt produkcyjny. Pracujemy zdalnie: konsultacja, mapowanie, pilotaż, szkolenie. Jeśli proces wymaga krótkiego spotkania na miejscu, umawiamy je celowo — standardem pozostaje efektywna współpraca online.",
+      "Z częstochowskimi firmami planujemy wdrożenia z wyprzedzeniem na sezon lub szczyt produkcyjny. Pracujemy zdalnie: konsultacja, mapowanie, pilotaż, szkolenie. Jeśli proces wymaga krótkiego spotkania na miejscu, umawiamy je celowo, standardem pozostaje efektywna współpraca online.",
     faq: [
       {
         id: "cze-1",
         question: "Czy automatyzacja w Częstochowie obejmuje hotele i biura pielgrzymkowe?",
         answer:
-          "Tak — rezerwacje, faktury i komunikacja z grupami to częsty pierwszy etap u klientów z turystyki pielgrzymkowej.",
+          "Tak. Rezerwacje, faktury i komunikacja z grupami to częsty pierwszy etap u klientów z turystyki pielgrzymkowej.",
       },
       {
         id: "cze-2",
         question: "Czy Częstochowa jest obsługiwana jako część Śląska?",
         answer:
-          "Tak — voivodeship śląskie i regionCluster „slask” odzwierciedlają nasz model treści; współpraca pozostaje zdalna jak w całej aglomeracji.",
+          "Tak. Voivodeship śląskie i regionCluster „slask” odzwierciedlają nasz model treści; współpraca pozostaje zdalna jak w całej aglomeracji.",
       },
       {
         id: "cze-3",
@@ -1013,7 +1013,7 @@ export const slaskCities: CityPageContent[] = [
         id: "cze-4",
         question: "Czy pracujecie też z firmami czysto przemysłowymi w Częstochowie?",
         answer:
-          "Tak. Produkcja, magazyn i HR to równoległy profil miasta — wdrażamy te same zasady etapowania i pomiaru efektu.",
+          "Tak. Produkcja, magazyn i HR to równoległy profil miasta, wdrażamy te same zasady etapowania i pomiaru efektu.",
       },
     ],
     relatedServiceSlugs: [

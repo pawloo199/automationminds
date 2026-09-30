@@ -65,7 +65,7 @@ export default async function CityAutomationPage({
   const nearby = getNearbyCities(city);
   const breadcrumbs = [
     { label: "Strona główna", href: "/" },
-    { label: `Automatyzacja — ${city.name}` },
+    { label: `Automatyzacja: ${city.name}` },
   ];
 
   const faqItems = city.faq.map((item) => ({
@@ -99,13 +99,13 @@ export default async function CityAutomationPage({
       <CityPageBody city={city} nearbyNames={nearby} />
       <FaqAccordion
         subtitle="Pytania lokalne"
-        title={`FAQ — automatyzacja w ${city.nameLocative}`}
+        title={`FAQ: automatyzacja w ${city.nameLocative}`}
         items={faqItems}
       />
       <ContactSection
         subtitle="Bezpłatna konsultacja"
         title={`Porozmawiajmy o automatyzacji w Twojej firmie z ${city.nameGenitive}`}
-        body="Opowiedz o procesach — wskażemy, co warto usprawnić najpierw. Pracujemy zdalnie i hybrydowo z firmami w całej Polsce."
+        body="Opowiedz o procesach, a wskażemy, co warto poprawić najpierw. Pracujemy zdalnie i hybrydowo z firmami w całej Polsce."
         sourcePage={cityPath(city.slug)}
         redirectOnSuccess
         sectionId="formularz"
