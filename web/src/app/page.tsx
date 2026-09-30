@@ -5,6 +5,7 @@ import { ArticleFaq } from "@/components/guide/ArticleSections";
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import { CityCoverageSearch } from "@/components/sections/CityCoverageSearch";
 import { ContactSection } from "@/components/sections/ContactSection";
+import { ToolsStrip } from "@/components/sections/ToolsStrip";
 import { AutomationFlow } from "@/components/home/AutomationFlow";
 import { LiveTicker } from "@/components/home/LiveTicker";
 import { ScrollWords } from "@/components/home/ScrollWords";
@@ -191,33 +192,7 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Narzędzia */}
-      <section
-        aria-label="Narzędzia, z którymi pracujemy"
-        className="about-marquee overflow-hidden border-b border-brand/10 bg-white py-6"
-      >
-        <p className="mb-4 text-center text-xs font-semibold uppercase tracking-[0.2em] text-muted">
-          Pracujemy na narzędziach, które znasz
-        </p>
-        <div className="about-marquee-track [mask-image:linear-gradient(to_right,transparent,#000_8%,#000_92%,transparent)]">
-          {[0, 1].map((copy) => (
-            <ul
-              key={copy}
-              className="flex shrink-0 items-center gap-3 pr-3"
-              aria-hidden={copy === 1 ? true : undefined}
-            >
-              {C.tools.map((tool) => (
-                <li
-                  key={`${copy}-${tool}`}
-                  className="whitespace-nowrap rounded-full border border-brand/15 bg-surface px-5 py-2 text-sm font-semibold text-dark"
-                >
-                  {tool}
-                </li>
-              ))}
-            </ul>
-          ))}
-        </div>
-      </section>
+      <ToolsStrip tools={C.tools} />
 
       {/* Problemy */}
       <section aria-labelledby="problemy-tytul" className="py-20 lg:py-28">
@@ -252,6 +227,32 @@ export default async function HomePage() {
           </ul>
         </Container>
       </section>
+
+      {/* Kalkulator */}
+      <section
+        id="kalkulator"
+        aria-labelledby="kalkulator-tytul"
+        className="scroll-mt-24 bg-surface py-20 lg:py-28"
+      >
+        <Container>
+          <Reveal className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-brand">
+              Kalkulator
+            </p>
+            <h2
+              id="kalkulator-tytul"
+              className="mt-4 text-3xl font-bold leading-tight tracking-tight text-dark sm:text-4xl"
+            >
+              {C.calculator.title}
+            </h2>
+            <p className="mt-5 text-lg leading-relaxed text-muted">{C.calculator.lead}</p>
+          </Reveal>
+          <div className="mt-12">
+            <TimeCalculator />
+          </div>
+        </Container>
+      </section>
+
 
       {/* Manifest i schemat przepływu */}
       <section
@@ -405,37 +406,11 @@ export default async function HomePage() {
         </Container>
       </section>
 
-      {/* Kalkulator */}
-      <section
-        id="kalkulator"
-        aria-labelledby="kalkulator-tytul"
-        className="scroll-mt-24 bg-surface py-20 lg:py-28"
-      >
-        <Container>
-          <Reveal className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-brand">
-              Kalkulator
-            </p>
-            <h2
-              id="kalkulator-tytul"
-              className="mt-4 text-3xl font-bold leading-tight tracking-tight text-dark sm:text-4xl"
-            >
-              {C.calculator.title}
-            </h2>
-            <p className="mt-5 text-lg leading-relaxed text-muted">{C.calculator.lead}</p>
-          </Reveal>
-          <div className="mt-12">
-            <TimeCalculator />
-          </div>
-        </Container>
-      </section>
-
-
       {/* Jak zaczynamy */}
       <section
         id="jak-zaczynamy"
         aria-labelledby="jak-zaczynamy-tytul"
-        className="scroll-mt-24 py-20 lg:py-28"
+        className="scroll-mt-24 border-y border-brand/10 bg-surface py-20 lg:py-28"
       >
         <Container>
           <Reveal className="max-w-3xl">

@@ -307,11 +307,6 @@ body {
   color: transparent;
 }
 
-.about-marquee-track {
-  display: flex;
-  width: max-content;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   @keyframes about-flow-dash {
     to {
@@ -329,12 +324,6 @@ body {
     50% {
       opacity: 1;
       r: 7;
-    }
-  }
-
-  @keyframes about-marquee {
-    to {
-      transform: translate3d(-50%, 0, 0);
     }
   }
 
@@ -359,14 +348,6 @@ body {
 
   .about-float {
     animation: about-float 7s ease-in-out infinite;
-  }
-
-  .about-marquee-track {
-    animation: about-marquee 38s linear infinite;
-  }
-
-  .about-marquee:hover .about-marquee-track {
-    animation-play-state: paused;
   }
 
   .reveal {

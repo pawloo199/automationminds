@@ -6,6 +6,7 @@ import {
   CityCoverageSearch,
   type CityCoverageItem,
 } from "@/components/sections/CityCoverageSearch";
+import { ToolsStrip } from "@/components/sections/ToolsStrip";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { Container } from "@/components/ui/Container";
@@ -281,33 +282,11 @@ export default async function AboutPage() {
         </Container>
       </section>
 
-      {/* Narzędzia */}
-      <section
-        aria-label="Narzędzia, z którymi pracujemy"
-        className="about-marquee overflow-hidden border-b border-brand/10 bg-white py-6"
-      >
-        <p className="mb-4 text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted">
-          Narzędzia, z którymi pracujemy na co dzień
-        </p>
-        <div className="about-marquee-track">
-          {[0, 1].map((copy) => (
-            <ul
-              key={copy}
-              className="flex shrink-0 items-center gap-3 pr-3"
-              aria-hidden={copy === 1 ? true : undefined}
-            >
-              {TOOLS.map((tool) => (
-                <li
-                  key={`${copy}-${tool}`}
-                  className="whitespace-nowrap rounded-full border border-brand/15 bg-surface px-5 py-2 text-sm font-semibold text-dark"
-                >
-                  {tool}
-                </li>
-              ))}
-            </ul>
-          ))}
-        </div>
-      </section>
+      <ToolsStrip
+        tools={TOOLS}
+        title="Narzędzia, z którymi pracujemy na co dzień"
+        body="Dobieramy je do skali firmy i łączymy tak, żeby dane przepływały między nimi same."
+      />
 
       {/* Kim jesteśmy */}
       <section aria-labelledby="kim-jestesmy" className="py-20 lg:py-28">
