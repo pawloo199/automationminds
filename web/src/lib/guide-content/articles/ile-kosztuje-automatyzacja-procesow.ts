@@ -20,8 +20,8 @@ export default defineArticle({
   publishedAt: "2026-09-28",
   updatedAt: "2026-09-30",
   imageUrl:
-    "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
-  imageAlt: "Płatność kartą przy terminalu jako symbol kosztów w firmie",
+    "https://images.unsplash.com/photo-1626266061368-46a8f578ddd6?w=1200&q=80",
+  imageAlt: "Liczenie kosztów na kalkulatorze przy biurku",
   summary: [
     "Koszt automatyzacji składa się z czterech części: analizy lub audytu, jednorazowego wdrożenia, abonamentów narzędzi i utrzymania.",
     "Cenę najbardziej podnoszą: liczba systemów do połączenia, liczba wyjątków, jakość danych i wymagania bezpieczeństwa.",

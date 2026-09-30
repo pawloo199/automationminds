@@ -19,8 +19,8 @@ export default defineArticle({
   publishedAt: "2026-07-27",
   updatedAt: "2026-09-30",
   imageUrl:
-    "https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=1200&q=80",
-  imageAlt: "Dokumenty papierowe i laptop na biurku w trakcie porządkowania danych",
+    "https://images.unsplash.com/photo-1768158989131-64cbff67f292?w=1200&q=80",
+  imageAlt: "Regały z kolorowymi segregatorami pełnymi dokumentów firmy",
   summary: [
     "Cyfryzacja to nie skanowanie archiwum, tylko przeniesienie danych, na których firma pracuje na co dzień, do miejsca, w którym da się je wyszukać, połączyć i wykorzystać.",
     "Zacznij od danych, które są używane codziennie i od których zależą pieniądze: klienci, zlecenia, umowy, terminy.",

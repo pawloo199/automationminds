@@ -19,8 +19,8 @@ export default defineArticle({
   publishedAt: "2026-06-29",
   updatedAt: "2026-09-30",
   imageUrl:
-    "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80",
-  imageAlt: "Zespół omawiający procesy firmy przy tablicy z notatkami",
+    "https://images.unsplash.com/photo-1623652554515-91c833e3080e?w=1200&q=80",
+  imageAlt: "Uczestnik warsztatu trzyma karteczki z opisem kroków procesu",
   summary: [
     "Audyt procesów pokazuje, gdzie firma traci czas i pieniądze, i które z tych miejsc warto zautomatyzować najpierw.",
     "Składa się z rozmów z zespołem, przeglądu narzędzi i danych, mapy wybranych procesów i listy zmian z priorytetami.",

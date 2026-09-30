@@ -20,8 +20,8 @@ export default defineArticle({
   publishedAt: "2026-08-10",
   updatedAt: "2026-09-30",
   imageUrl:
-    "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&q=80",
-  imageAlt: "Osoba pracująca przy komputerze nad uporządkowaniem danych",
+    "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=1200&q=80",
+  imageAlt: "Drewniane szuflady katalogu kartkowego jako symbol uporządkowanych danych",
   summary: [
     "Automatyzacja i AI robią dokładnie to, co wynika z danych. Jeśli dane są niespójne, wyniki też będą.",
     "Najczęstsze problemy to duplikaty, kilka informacji w jednym polu, wolny tekst zamiast list wyboru i brak jednoznacznych identyfikatorów.",

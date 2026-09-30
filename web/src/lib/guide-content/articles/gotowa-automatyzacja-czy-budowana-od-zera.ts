@@ -19,8 +19,8 @@ export default defineArticle({
   publishedAt: "2026-09-21",
   updatedAt: "2026-09-30",
   imageUrl:
-    "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1200&q=80",
-  imageAlt: "Zespół planujący wdrożenie przy stole z laptopami",
+    "https://images.unsplash.com/photo-1637094408647-0d81d08f81b5?w=1200&q=80",
+  imageAlt: "Dłonie trzymające dwa pasujące do siebie elementy układanki",
   summary: [
     "Wiele procesów w małych i średnich firmach wygląda podobnie, niezależnie od branży: obsługa zapytań, faktury i płatności, onboarding, raporty, przypomnienia o terminach.",
     "Sprawdzone rozwiązanie, dopasowane do firmy, wdraża się szybciej i taniej, bo zostało już przetestowane w innych organizacjach.",

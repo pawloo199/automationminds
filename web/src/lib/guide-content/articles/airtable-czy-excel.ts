@@ -20,8 +20,8 @@ export default defineArticle({
   publishedAt: "2026-07-13",
   updatedAt: "2026-09-30",
   imageUrl:
-    "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80",
-  imageAlt: "Zespół pracujący wspólnie przy laptopach nad danymi firmy",
+    "https://images.unsplash.com/photo-1784334312040-5b3d4cf78b88?w=1200&q=80",
+  imageAlt: "Laptop z arkuszem kalkulacyjnym pełnym danych na biurku",
   summary: [
     "Excel i Arkusze Google świetnie sprawdzają się do obliczeń i analiz. Gorzej, gdy służą jako CRM, baza zleceń czy rejestr sprzętu dla kilku osób naraz.",
     "Airtable wygląda jak arkusz, ale działa jak baza danych: rekordy łączą się ze sobą, każde pole ma określony typ, a każdy widzi tylko to, czego potrzebuje.",

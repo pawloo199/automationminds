@@ -20,8 +20,8 @@ export default defineArticle({
   publishedAt: "2026-08-24",
   updatedAt: "2026-09-30",
   imageUrl:
-    "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80",
-  imageAlt: "Jasne biuro z miejscami do pracy zespołowej",
+    "https://images.unsplash.com/photo-1787839253728-f6d42c2cfb8c?w=1200&q=80",
+  imageAlt: "Tablica zadań w widoku kanban wyświetlona na tablecie",
   summary: [
     "Airtable sprawdza się wszędzie tam, gdzie firma prowadzi listę powiązanych ze sobą rzeczy, z której korzysta kilka osób: klientów, zleceń, sprzętu, kandydatów, zamówień.",
     "Największą wartość daje w połączeniu z automatyzacjami: przypomnieniami, powiadomieniami, integracją z mailem, fakturami i formularzami.",

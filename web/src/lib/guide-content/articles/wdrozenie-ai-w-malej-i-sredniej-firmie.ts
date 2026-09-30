@@ -20,8 +20,8 @@ export default defineArticle({
   publishedAt: "2026-09-07",
   updatedAt: "2026-09-30",
   imageUrl:
-    "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1200&q=80",
-  imageAlt: "Zespół rozmawiający przy stole o planie wdrożenia",
+    "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1200&q=80",
+  imageAlt: "Rozmowa przy laptopie o planie wdrożenia w firmie",
   summary: [
     "Pierwsze 30 dni to diagnoza: gdzie AI może pomóc, jakie dane są dostępne i które zastosowanie wybrać na start.",
     "Dni 31–60 to przygotowanie danych i pilotaż jednego zastosowania obok obecnego procesu, z mierzeniem jakości.",
