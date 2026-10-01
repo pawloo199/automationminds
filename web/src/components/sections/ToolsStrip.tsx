@@ -1,5 +1,8 @@
 import { Container } from "@/components/ui/Container";
 import { cn } from "@/lib/cn";
+import { TOOLS_HUB_PATH, toolHrefByName } from "@/lib/tools/catalog";
+import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 /**
  * Statyczna „ściana” narzędzi: siatka nazw z cienkimi liniami, bez ruchu.
@@ -28,6 +31,13 @@ export function ToolsStrip({
               {title}
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-muted">{body}</p>
+            <Link
+              href={TOOLS_HUB_PATH}
+              className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand transition-all hover:gap-2.5"
+            >
+              Jak pracujemy z narzędziami
+              <ArrowUpRight className="h-4 w-4" aria-hidden />
+            </Link>
           </div>
           <ul
             className={cn(
@@ -35,14 +45,22 @@ export function ToolsStrip({
               wide ? "grid-cols-4 lg:grid-cols-8" : "grid-cols-3 sm:grid-cols-4 lg:grid-cols-6",
             )}
           >
-            {tools.map((tool) => (
-              <li
-                key={tool}
-                className="flex h-16 items-center justify-center bg-white px-2 text-center text-xs font-semibold leading-tight tracking-tight text-dark/55 transition-colors duration-300 hover:bg-surface hover:text-brand sm:text-sm lg:h-[4.5rem]"
-              >
-                {tool}
-              </li>
-            ))}
+            {tools.map((tool) => {
+              const href = toolHrefByName(tool);
+              const cell =
+                "flex h-16 items-center justify-center bg-white px-2 text-center text-xs font-semibold leading-tight tracking-tight text-dark/55 transition-colors duration-300 hover:bg-surface hover:text-brand sm:text-sm lg:h-[4.5rem]";
+              return (
+                <li key={tool} className="flex">
+                  {href ? (
+                    <Link href={href} className={cn(cell, "w-full")}>
+                      {tool}
+                    </Link>
+                  ) : (
+                    <span className={cn(cell, "w-full")}>{tool}</span>
+                  )}
+                </li>
+              );
+            })}
           </ul>
         </div>
       </Container>

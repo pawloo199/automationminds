@@ -13,6 +13,7 @@ import {
 import { ArrowRight, ChevronDown, Menu, Phone, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { TOOLS_HUB_PATH } from "@/lib/tools/catalog";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -248,6 +249,13 @@ export function Header({
                   </p>
                   <div className="flex shrink-0 items-center gap-6">
                     <Link
+                      href={TOOLS_HUB_PATH}
+                      className="inline-flex items-center gap-1.5 text-sm font-semibold text-dark transition-all hover:gap-2.5 hover:text-brand"
+                    >
+                      Narzędzia
+                      <ArrowRight className="h-4 w-4" aria-hidden />
+                    </Link>
+                    <Link
                       href={SERVICES_HUB_PATH}
                       className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand transition-all hover:gap-2.5"
                     >
@@ -403,6 +411,13 @@ export function Header({
                         className="flex min-h-11 items-center rounded-lg px-4 py-2.5 text-[15px] font-semibold text-brand hover:bg-surface"
                       >
                         Wszystkie usługi
+                      </Link>
+                      <Link
+                        href={TOOLS_HUB_PATH}
+                        onClick={closeMobileMenu}
+                        className="flex min-h-11 items-center rounded-lg px-4 py-2.5 text-[15px] font-semibold text-dark hover:bg-surface"
+                      >
+                        Narzędzia, które wdrażamy
                       </Link>
                       {SERVICE_MENU.map(({ group, services: groupServices }) => (
                         <div key={group.id}>

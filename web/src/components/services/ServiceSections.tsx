@@ -7,6 +7,7 @@ import type {
   ServiceContent,
 } from "@/lib/services/types";
 import { cn } from "@/lib/cn";
+import { toolHrefByName } from "@/lib/tools/catalog";
 import { ArrowRight, ArrowUpRight, Check, Phone, X } from "lucide-react";
 import Link from "next/link";
 import type { ReactNode } from "react";
@@ -39,7 +40,7 @@ function Eyebrow({
   );
 }
 
-function SectionTitle({
+export function SectionTitle({
   id,
   eyebrow,
   title,
@@ -362,7 +363,23 @@ export function ServiceTools({ tools }: { tools: ServiceContent["tools"] }) {
                   aria-hidden
                 />
                 <div>
-                  <p className="font-semibold text-dark">{tool.name}</p>
+                  <p className="font-semibold text-dark">
+                    {tool.name.split(", ").map((part, partIndex) => {
+                      const href = toolHrefByName(part);
+                      return (
+                        <span key={part}>
+                          {partIndex > 0 ? ", " : null}
+                          {href ? (
+                            <Link href={href} className="underline decoration-brand/30 underline-offset-4 hover:text-brand">
+                              {part}
+                            </Link>
+                          ) : (
+                            part
+                          )}
+                        </span>
+                      );
+                    })}
+                  </p>
                   <p className="mt-1 text-sm leading-relaxed text-muted">
                     {tool.note}
                   </p>
@@ -402,13 +419,13 @@ export function ServiceMidCta({
             </h2>
             <p className="mt-3 text-base leading-relaxed text-white/85">{body}</p>
           </div>
-          <div className="flex flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
+          <div className="flex shrink-0 flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
             <a
               href="#kontakt"
               data-track="consultation"
               data-track-location="service_mid_cta"
               data-track-method="anchor"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-brand transition hover:bg-white/90"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-brand transition hover:bg-white/90"
             >
               {CONSULTATION_OFFER.cta}
               <ArrowRight className="h-4 w-4" aria-hidden />
@@ -416,7 +433,7 @@ export function ServiceMidCta({
             <a
               href={`tel:${phone.replace(/\s/g, "")}`}
               data-track-location="service_mid_cta"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/40 px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-white/10"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full border border-white/40 px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-white/10"
             >
               <Phone className="h-4 w-4" aria-hidden />
               {phone}

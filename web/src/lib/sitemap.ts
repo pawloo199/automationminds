@@ -10,6 +10,7 @@ import {
   voivodeshipPath,
   VOIVODESHIPS,
 } from "@/lib/city-pages";
+import { getToolPages, TOOLS_HUB_PATH, toolPath } from "@/lib/tools/catalog";
 import {
   getGuideArticles,
   getGuideCategoriesWithCounts,
@@ -107,6 +108,16 @@ export async function buildSitemapEntries(): Promise<MetadataRoute.Sitemap> {
     })),
   ];
 
+  const toolPages: MetadataRoute.Sitemap = [
+    { url: `${siteUrl}${TOOLS_HUB_PATH}`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
+    ...getToolPages().map((tool) => ({
+      url: `${siteUrl}${toolPath(tool.slug)}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.75,
+    })),
+  ];
+
   const citySeoPages: MetadataRoute.Sitemap = cityPages.map((city) => ({
     url: `${siteUrl}${cityPath(city.slug)}`,
     lastModified: now,
@@ -121,6 +132,7 @@ export async function buildSitemapEntries(): Promise<MetadataRoute.Sitemap> {
     ...caseStudyPages,
     ...guideCategoryPages,
     ...guidePages,
+    ...toolPages,
     ...regionPages,
     ...citySeoPages,
   ];

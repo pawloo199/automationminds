@@ -442,3 +442,45 @@ export function servicesHubJsonLd(
     },
   };
 }
+
+/** Service schema dla stron narzędzi (/narzedzia/{slug}). */
+export function toolServiceJsonLd(
+  tool: { slug: string; name: string },
+  content: {
+    hero: { title: string };
+    metaDescription: string;
+    primaryKeyword: string;
+    useCases: { items: { title: string; body: string }[] };
+  },
+  categoryName: string,
+) {
+  const url = `${siteUrl}/narzedzia/${tool.slug}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${url}#service`,
+    name: content.hero.title,
+    serviceType: content.primaryKeyword,
+    category: categoryName,
+    description: content.metaDescription,
+    url,
+    inLanguage: "pl-PL",
+    areaServed: { "@type": "Country", name: "Polska" },
+    audience: { "@type": "BusinessAudience", name: "Małe i średnie firmy" },
+    about: { "@type": "SoftwareApplication", name: tool.name, applicationCategory: "BusinessApplication" },
+    provider: {
+      "@type": "Organization",
+      "@id": `${siteUrl}/#organization`,
+      name: "Automation Minds",
+      url: siteUrl,
+    },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: `Wdrożenia: ${tool.name}`,
+      itemListElement: content.useCases.items.map((item) => ({
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: item.title, description: item.body },
+      })),
+    },
+  };
+}
