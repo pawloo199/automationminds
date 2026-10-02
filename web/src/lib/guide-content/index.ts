@@ -16,6 +16,7 @@ import jakWybracNarzedzieDoAutomatyzacji from "./articles/jak-wybrac-narzedzie-d
 import odCzegoZaczacMapowanieProcesow from "./articles/od-czego-zaczac-mapowanie-procesow";
 import porzadekWDanychPrzedAiIAutomatyzacja from "./articles/porzadek-w-danych-przed-ai-i-automatyzacja";
 import rodoAAutomatyzacjaProcesow from "./articles/rodo-a-automatyzacja-procesow";
+import transformacjaCyfrowaFirmy from "./articles/transformacja-cyfrowa-firmy";
 import wdrozenieAiWMalejISredniejFirmie from "./articles/wdrozenie-ai-w-malej-i-sredniej-firmie";
 
 /** Wszystkie artykuły Poradnika, od najnowszego. */
@@ -37,6 +38,7 @@ export const guideArticles: GuideArticle[] = [
   odCzegoZaczacMapowanieProcesow,
   porzadekWDanychPrzedAiIAutomatyzacja,
   rodoAAutomatyzacjaProcesow,
+  transformacjaCyfrowaFirmy,
   wdrozenieAiWMalejISredniejFirmie,
 ].sort(
   (a, b) =>
