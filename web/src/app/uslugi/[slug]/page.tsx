@@ -12,7 +12,9 @@ import {
   ServiceSubnav,
   ServiceTools,
 } from "@/components/services/ServiceSections";
+import { ProcessLinks } from "@/components/processes/ProcessLinks";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { getProcessesForService } from "@/lib/processes";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { Container } from "@/components/ui/Container";
 import { getSettings } from "@/lib/airtable";
@@ -99,6 +101,7 @@ async function ServiceTemplate({
   const breadcrumbs = serviceBreadcrumbs(entry);
   const relatedServices = getRelatedServices(entry.slug, 3);
   const relatedArticles = getServiceRelatedArticles(entry.slug).slice(0, 3);
+  const processes = getProcessesForService(entry.slug);
   const phoneHref = `tel:${settings.phone.replace(/\s/g, "")}`;
 
   return (
@@ -237,7 +240,7 @@ async function ServiceTemplate({
         </Container>
       </section>
 
-      {relatedArticles.length > 0 || relatedServices.length > 0 ? (
+      {relatedArticles.length > 0 || relatedServices.length > 0 || processes.length > 0 ? (
         <section
           aria-labelledby="powiazane"
           className="border-t border-brand/10 bg-surface py-20 lg:py-24"
@@ -261,6 +264,7 @@ async function ServiceTemplate({
                 </div>
               </>
             ) : null}
+            <ProcessLinks processes={processes} title="Jak to wygląda w praktyce" />
             {relatedServices.length > 0 ? (
               <>
                 <h3 className="mt-14 text-sm font-semibold uppercase tracking-[0.2em] text-muted">

@@ -44,7 +44,7 @@ export const TOOLS: ToolCatalogEntry[] = [
   { slug: "n8n", name: "n8n", group: "automatyzacja", summary: "Automatyzacje i agenci AI na własnym serwerze lub w chmurze, z pełną kontrolą nad danymi." },
   { slug: "make", name: "Make", group: "automatyzacja", summary: "Wizualne scenariusze łączące setki aplikacji, dobre do złożonej logiki bez programowania." },
   { slug: "zapier", name: "Zapier", group: "automatyzacja", summary: "Najprostszy start z automatyzacją i największy wybór gotowych integracji." },
-  { slug: "power-automate", name: "Power Automate", group: "automatyzacja", summary: "Automatyzacja w ekosystemie Microsoft 365, także dla starszych aplikacji desktopowych." },
+  { slug: "power-automate", name: "Power Automate", group: "automatyzacja", summary: "Automatyzacja w Microsoft 365, także dla starszych aplikacji desktopowych." },
   { slug: "hubspot", name: "HubSpot", group: "crm", summary: "CRM z marketingiem, sprzedażą i obsługą klienta w jednej platformie." },
   { slug: "pipedrive", name: "Pipedrive", group: "crm", summary: "Prosty CRM sprzedażowy z lejkiem, który handlowcy faktycznie lubią używać." },
   { slug: "microsoft-365", name: "Microsoft 365", group: "biuro", summary: "Outlook, Teams, SharePoint i Excel połączone w uporządkowane procesy." },

@@ -484,3 +484,39 @@ export function toolServiceJsonLd(
     },
   };
 }
+
+/** Service schema dla stron procesów (/procesy/{slug}). */
+export function processServiceJsonLd(
+  slug: string,
+  content: {
+    hero: { title: string };
+    metaDescription: string;
+    primaryKeyword: string;
+    variants: { items: { name: string; description: string }[] };
+  },
+  areaName: string,
+) {
+  const url = `${siteUrl}/procesy/${slug}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${url}#service`,
+    name: content.hero.title,
+    serviceType: content.primaryKeyword,
+    category: areaName,
+    description: content.metaDescription,
+    url,
+    inLanguage: "pl-PL",
+    areaServed: { "@type": "Country", name: "Polska" },
+    audience: { "@type": "BusinessAudience", name: "Małe i średnie firmy" },
+    provider: { "@type": "Organization", "@id": `${siteUrl}/#organization`, name: "Automation Minds", url: siteUrl },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: `Warianty: ${content.hero.title}`,
+      itemListElement: content.variants.items.map((item) => ({
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: `Wariant ${item.name.toLowerCase()}`, description: item.description },
+      })),
+    },
+  };
+}

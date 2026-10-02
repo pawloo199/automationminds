@@ -5,6 +5,8 @@ import { SiteLayout } from "@/components/layout/SiteLayout";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { ServiceCard, ServiceExample, ServiceMidCta, ServiceScope } from "@/components/services/ServiceSections";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { ProcessLinks } from "@/components/processes/ProcessLinks";
+import { getProcessesForTool } from "@/lib/processes";
 import { ToolCard, ToolComparison, ToolCosts, ToolFit, ToolFlows, ToolIntro } from "@/components/tools/ToolSections";
 import { Container } from "@/components/ui/Container";
 import { getSettings } from "@/lib/airtable";
@@ -52,6 +54,7 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
   const relatedServices = getToolRelatedServices(content);
   const relatedArticles = getToolRelatedArticles(content);
   const path = toolPath(entry.slug);
+  const processes = getProcessesForTool(entry.slug);
 
   return (
     <SiteLayout>
@@ -118,6 +121,7 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
               </ul>
             </>
           ) : null}
+          <ProcessLinks processes={processes} title={`Procesy z wykorzystaniem ${entry.name}`} />
           {relatedTools.length > 0 ? (
             <>
               <h3 className="mt-14 text-sm font-semibold uppercase tracking-[0.2em] text-muted">Inne narzędzia</h3>

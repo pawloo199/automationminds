@@ -10,6 +10,7 @@ import {
   voivodeshipPath,
   VOIVODESHIPS,
 } from "@/lib/city-pages";
+import { getLiveProcesses, PROCESSES_HUB_PATH, processPath } from "@/lib/processes/catalog";
 import { getToolPages, TOOLS_HUB_PATH, toolPath } from "@/lib/tools/catalog";
 import {
   getGuideArticles,
@@ -108,6 +109,16 @@ export async function buildSitemapEntries(): Promise<MetadataRoute.Sitemap> {
     })),
   ];
 
+  const processPages: MetadataRoute.Sitemap = [
+    { url: `${siteUrl}${PROCESSES_HUB_PATH}`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
+    ...getLiveProcesses().map((process) => ({
+      url: `${siteUrl}${processPath(process.slug)}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.75,
+    })),
+  ];
+
   const toolPages: MetadataRoute.Sitemap = [
     { url: `${siteUrl}${TOOLS_HUB_PATH}`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
     ...getToolPages().map((tool) => ({
@@ -132,6 +143,7 @@ export async function buildSitemapEntries(): Promise<MetadataRoute.Sitemap> {
     ...caseStudyPages,
     ...guideCategoryPages,
     ...guidePages,
+    ...processPages,
     ...toolPages,
     ...regionPages,
     ...citySeoPages,

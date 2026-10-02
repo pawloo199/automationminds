@@ -1,0 +1,233 @@
+import type { ProcessContent } from "../types";
+
+export const obiegFakturKosztowych: ProcessContent = {
+  slug: "obieg-faktur-kosztowych",
+  metaTitle: "Automatyzacja obiegu faktur kosztowych: od KSeF do przelewu",
+  metaDescription:
+    "Jak działa zautomatyzowany obieg faktur kosztowych: pobieranie z KSeF, opis i akceptacja w Teams lub mailu, przekazanie do księgowości i płatność. Etapy, warianty, koszty.",
+  primaryKeyword: "obieg faktur kosztowych",
+  updatedAt: "2026-10-02",
+  hero: {
+    eyebrow: "Proces: finanse",
+    title: "Automatyzacja obiegu faktur kosztowych: od KSeF do przelewu",
+    lead: "Faktury kosztowe same trafiają do właściwych osób, kierownicy akceptują je jednym kliknięciem, a księgowość dostaje komplet opisanych dokumentów. Pokazujemy krok po kroku, jak taki proces wygląda i co jest potrzebne, żeby go wdrożyć.",
+    bullets: [
+      "Faktury z KSeF i maili w jednym obiegu",
+      "Akceptacja w Teams, mailu lub telefonie",
+      "Opisane koszty prosto do programu księgowego",
+    ],
+  },
+  summary: [
+    { label: "Dla kogo", value: "Firmy, w których faktury kosztowe akceptuje więcej niż jedna osoba" },
+    { label: "Czas wdrożenia", value: "Zwykle kilka tygodni, zależnie od wariantu" },
+    { label: "Narzędzia", value: "KSeF, Teams lub mail, wasz program księgowy" },
+    { label: "Po waszej stronie", value: "Osoba z finansów i kierownicy akceptujący koszty" },
+  ],
+  symptoms: {
+    title: "Po czym poznać, że obieg faktur warto zautomatyzować",
+    lead: "Jeśli rozpoznajecie u siebie dwa lub trzy z tych sygnałów, automatyzacja zwykle szybko się zwraca.",
+    items: [
+      "Księgowość rozsyła faktury mailem i czeka na odpowiedź kierowników.",
+      "Akceptacje są w mailach, na kartkach albo w komunikatorach i trudno je potem odnaleźć.",
+      "Ktoś ręcznie przepisuje opisy kosztów, projekty lub MPK do programu księgowego.",
+      "Faktury giną albo są opłacane po terminie, bo czekały w czyjejś skrzynce.",
+      "Pod koniec miesiąca trwa gonienie brakujących akceptacji i opisów.",
+      "Nie wiadomo na bieżąco, ile kosztów czeka na akceptację i ile jest do zapłaty.",
+    ],
+  },
+  flow: {
+    title: "Jak wygląda obieg faktury po automatyzacji",
+    lead: "Tak przechodzi faktura od momentu wystawienia przez dostawcę do zapłaty. Kroki oznaczone jako automatyczne dzieją się bez udziału zespołu.",
+    steps: [
+      {
+        title: "Zebranie faktury",
+        body: "System regularnie pobiera nowe faktury zakupowe z KSeF. Faktury spoza KSeF, np. od dostawców zagranicznych, zbiera z wyznaczonej skrzynki lub folderu.",
+        actor: "System",
+        automated: true,
+        tool: "KSeF, skrzynka mailowa",
+      },
+      {
+        title: "Odczyt i weryfikacja danych",
+        body: "Dane z faktur KSeF są już ustrukturyzowane. Faktury w PDF odczytuje AI. System sprawdza duplikaty, poprawność sum i to, czy rachunek dostawcy jest na białej liście podatników VAT.",
+        actor: "System",
+        automated: true,
+        tool: "AI do dokumentów",
+      },
+      {
+        title: "Przypisanie do osoby i kosztu",
+        body: "Na podstawie dostawcy, historii i ustalonych reguł system proponuje dział, MPK, projekt i kategorię kosztu oraz wybiera osobę, która powinna zaakceptować fakturę.",
+        actor: "System",
+        automated: true,
+      },
+      {
+        title: "Opis i akceptacja merytoryczna",
+        body: "Kierownik dostaje kartę faktury w Teams, mailu lub aplikacji. Sprawdza proponowany opis, poprawia go w razie potrzeby i akceptuje. Faktury powyżej ustalonego progu trafiają do drugiej osoby.",
+        actor: "Kierownik działu",
+        automated: false,
+        tool: "Teams lub mail",
+      },
+      {
+        title: "Przypomnienia i zastępstwa",
+        body: "Gdy faktura czeka zbyt długo, system przypomina o niej, a po kolejnym terminie przekazuje ją zastępcy lub przełożonemu.",
+        actor: "System",
+        automated: true,
+      },
+      {
+        title: "Kontrola formalna",
+        body: "Księgowość widzi listę zaakceptowanych faktur z opisami i zajmuje się tylko wyjątkami, które system oznaczył do sprawdzenia.",
+        actor: "Księgowość",
+        automated: false,
+      },
+      {
+        title: "Przekazanie do programu księgowego",
+        body: "Zaakceptowane i opisane faktury trafiają do programu księgowego przez integrację lub plik importu, razem z dokumentem i historią akceptacji.",
+        actor: "System",
+        automated: true,
+        tool: "Program księgowy",
+      },
+      {
+        title: "Płatność",
+        body: "System przygotowuje zestawienie faktur do zapłaty według terminów, a w wariancie rozszerzonym paczkę przelewów do importu w banku. Osoba z finansów zatwierdza płatności.",
+        actor: "Finanse",
+        automated: false,
+        tool: "Bankowość elektroniczna",
+      },
+    ],
+  },
+  example: {
+    title: "Obieg faktur przed i po automatyzacji",
+    lead: "Przykład firmy z kilkoma działami, w której faktury akceptują kierownicy, a księguje zewnętrzne biuro rachunkowe.",
+    rows: [
+      { label: "Odbiór faktury", before: "Księgowa pobiera faktury z KSeF i rozsyła je mailem do działów.", after: "Faktury pobierane automatycznie i przypisywane do właściwych osób." },
+      { label: "Opis kosztu", before: "Kierownik odpisuje na maila z opisem albo dopisuje go na wydruku.", after: "Kierownik zatwierdza opis zaproponowany przez system lub go poprawia." },
+      { label: "Akceptacja", before: "Przypomnienia telefoniczne, część faktur czeka tygodniami.", after: "Przypomnienia i zastępstwa działają same, widać, co na kogo czeka." },
+      { label: "Przekazanie do biura", before: "Paczka skanów i arkusz z opisami raz w miesiącu.", after: "Opisane faktury trafiają do biura na bieżąco, z historią akceptacji." },
+      { label: "Płatności", before: "Terminy sprawdzane ręcznie w arkuszu.", after: "Zestawienie do zapłaty według terminów, gotowe do zatwierdzenia." },
+    ],
+    note: "To przykład ilustracyjny. Zakres zawsze ustalamy po rozmowie o waszym procesie.",
+  },
+  outcomes: {
+    title: "Co się zmienia po wdrożeniu",
+    items: [
+      { title: "Koniec przepisywania", body: "Dane z faktur i opisy kosztów trafiają do programu księgowego bez ręcznego wpisywania." },
+      { title: "Krótszy czas akceptacji", body: "Kierownik akceptuje fakturę tam, gdzie i tak pracuje, a przypomnienia działają same." },
+      { title: "Pełna historia decyzji", body: "Przy każdej fakturze widać, kto, kiedy i z jakim opisem ją zaakceptował." },
+      { title: "Bieżący obraz kosztów", body: "Na bieżąco wiadomo, ile kosztów czeka na akceptację, ile jest do zapłaty i na jakie MPK idą wydatki." },
+    ],
+  },
+  implementation: {
+    title: "Jak przebiega wdrożenie",
+    lead: "Cztery etapy, po każdym wiecie, co zostało zrobione i co dalej. Przy każdym etapie piszemy, czego potrzebujemy od was.",
+    phases: [
+      {
+        title: "Przegląd procesu",
+        duration: "kilka dni",
+        body: "Rozmawiamy z osobą z finansów i jednym lub dwoma kierownikami, rysujemy obecny obieg i ustalamy, co ma się zmienić.",
+        fromYou: "Godzina rozmowy, przykładowe faktury różnego typu i lista osób akceptujących.",
+      },
+      {
+        title: "Projekt obiegu",
+        duration: "około tygodnia",
+        body: "Projektujemy zasady akceptacji, progi kwotowe, reguły przypisywania MPK i kategorii oraz sposób przekazania danych do księgowości.",
+        fromYou: "Akceptacja projektu i decyzje o progach, zastępstwach i wyjątkach.",
+      },
+      {
+        title: "Budowa i testy",
+        duration: "zwykle 2–4 tygodnie",
+        body: "Budujemy obieg na waszych narzędziach i testujemy go na prawdziwych fakturach, równolegle z dotychczasowym sposobem pracy.",
+        fromYou: "Dostępy do KSeF, poczty i programu księgowego oraz osoba, która sprawdza wyniki testów.",
+      },
+      {
+        title: "Start i opieka",
+        duration: "stale",
+        body: "Przełączamy obieg na nowy sposób pracy, szkolimy kierowników i pilnujemy działania. Dokładamy kolejne elementy, gdy pierwszy etap działa.",
+        fromYou: "Krótkie szkolenie zespołu i zgłaszanie uwag w pierwszych tygodniach.",
+      },
+    ],
+  },
+  prerequisites: {
+    title: "Co warto przygotować przed startem",
+    lead: "Lista do przejścia po pierwszej rozmowie. Nie wszystko musi być gotowe od razu, część ustalamy razem.",
+    items: [
+      "Uprawnienia do pobierania faktur z KSeF dla integracji, nadane przez osobę uprawnioną w firmie.",
+      "Adresy mailowe, na które dziś przychodzą faktury, zwłaszcza od dostawców spoza KSeF.",
+      "Lista osób, które akceptują koszty, wraz z zastępcami.",
+      "Zasady akceptacji: kto akceptuje jakie koszty i od jakiej kwoty potrzebna jest druga osoba.",
+      "Lista działów, MPK, projektów i kategorii kosztów, których używacie w opisach.",
+      "Nazwa programu księgowego i informacja, czy księgujecie u siebie, czy w biurze rachunkowym.",
+      "Kilkanaście przykładowych faktur różnego typu, w tym nietypowych.",
+      "Osoba po waszej stronie, która będzie właścicielem procesu.",
+    ],
+  },
+  variants: {
+    title: "Warianty rozwiązania",
+    lead: "Zakres dobieramy do skali firmy. Można zacząć od podstawowego wariantu i rozbudowywać go później.",
+    items: [
+      {
+        name: "Podstawowy",
+        description: "Dla firm, które chcą przede wszystkim skończyć z rozsyłaniem faktur mailem.",
+        includes: [
+          "Pobieranie faktur z KSeF i wyznaczonej skrzynki",
+          "Przypisanie faktury do osoby akceptującej",
+          "Akceptacja w mailu lub Teams z przypomnieniami",
+          "Przekazanie zaakceptowanych faktur do księgowości",
+        ],
+      },
+      {
+        name: "Rozszerzony",
+        description: "Dla firm z kilkoma działami, projektami lub MPK.",
+        includes: [
+          "Wszystko z wariantu podstawowego",
+          "Odczyt faktur spoza KSeF przez AI",
+          "Propozycje MPK, projektu i kategorii kosztu",
+          "Progi kwotowe, druga akceptacja i zastępstwa",
+          "Sprawdzanie rachunku na białej liście VAT",
+          "Zestawienie płatności i raport kosztów",
+        ],
+      },
+      {
+        name: "Pełny",
+        description: "Dla firm z zamówieniami, magazynem lub budżetami działów.",
+        includes: [
+          "Wszystko z wariantu rozszerzonego",
+          "Dopasowanie faktury do zamówienia i przyjęcia towaru",
+          "Integracja z ERP lub programem księgowym przez API",
+          "Paczki przelewów do importu w banku",
+          "Kontrola budżetów i alerty o przekroczeniu",
+        ],
+      },
+    ],
+  },
+  costFactors: {
+    title: "Od czego zależy koszt",
+    lead: "Każde wdrożenie wyceniamy osobno, przed startem. Na cenę wpływa przede wszystkim:",
+    items: [
+      "liczba źródeł faktur i to, ile z nich przychodzi spoza KSeF,",
+      "liczba poziomów akceptacji, progów i wyjątków,",
+      "sposób przekazania danych do programu księgowego: plik importu czy integracja przez API,",
+      "dopasowanie do zamówień, magazynu i budżetów,",
+      "koszty narzędzi, np. licencji platformy automatyzacji i modeli AI, zwykle niewielkie przy typowych wolumenach.",
+    ],
+  },
+  risks: {
+    title: "Na co uważamy przy wdrożeniu",
+    items: [
+      { risk: "Kierownicy nie akceptują faktur na czas.", mitigation: "Przypomnienia, zastępstwa i eskalacja do przełożonego po ustalonym terminie." },
+      { risk: "AI źle odczyta dane z faktury w PDF.", mitigation: "Sprawdzamy sumy, NIP i dostawcę, a niepewne wyniki trafiają do ręcznej weryfikacji. Faktury z KSeF nie wymagają odczytu przez AI." },
+      { risk: "Część zespołu wraca do starego sposobu pracy.", mitigation: "Jeden kanał dla faktur, krótkie szkolenie i prosta zasada: faktura bez akceptacji w obiegu nie idzie do zapłaty." },
+      { risk: "Zmiany w KSeF, banku lub programie księgowym.", mitigation: "Monitorujemy działanie obiegu i reagujemy na błędy podczas opieki po wdrożeniu." },
+    ],
+  },
+  faq: [
+    { question: "Czy musimy zmieniać program księgowy?", answer: "Nie. Obieg faktur działa przed programem księgowym i przekazuje do niego gotowe, opisane dokumenty przez integrację lub plik importu." },
+    { question: "Czy to działa, gdy księguje nas zewnętrzne biuro rachunkowe?", answer: "Tak. Zaakceptowane faktury z opisami trafiają do biura na bieżąco, w formie, którą biuro potrafi zaimportować albo w uporządkowanej paczce dokumentów." },
+    { question: "Co z fakturami spoza KSeF, np. od zagranicznych dostawców?", answer: "Zbieramy je z wyznaczonej skrzynki lub folderu, a dane odczytuje AI. Dalej przechodzą ten sam obieg co faktury z KSeF." },
+    { question: "Czy kierownik może zaakceptować fakturę w telefonie?", answer: "Tak. Karta akceptacji w Teams albo w mailu działa na telefonie, bez logowania do dodatkowego systemu." },
+    { question: "Czy można zacząć od samej akceptacji?", answer: "Tak. Wariant podstawowy często jest najlepszym startem. Kolejne elementy, takie jak AI czy paczki przelewów, dokładamy, gdy pierwszy etap działa." },
+    { question: "Na czym to działa technicznie?", answer: "Zwykle na platformie automatyzacji, takiej jak Power Automate, n8n lub Make, połączonej z KSeF, pocztą, Teams i programem księgowym. Narzędzie dobieramy do tego, czego już używacie." },
+    { question: "Ile trwa wdrożenie?", answer: "Wariant podstawowy zwykle kilka tygodni. Warianty z integracją z ERP i dopasowaniem do zamówień trwają dłużej. Dokładny plan podajemy po przeglądzie procesu." },
+  ],
+  relatedServiceSlugs: ["automatyzacja-dla-ksiegowosci", "ai-w-obsludze-dokumentow", "integracje-systemow"],
+  relatedToolSlugs: ["ksef", "power-automate", "n8n", "microsoft-365"],
+  relatedArticleSlugs: ["integracja-crm-z-fakturowaniem", "od-czego-zaczac-mapowanie-procesow", "ile-kosztuje-automatyzacja-procesow"],
+};
