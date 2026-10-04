@@ -1,0 +1,231 @@
+import type { ProcessContent } from "../types";
+
+export const obslugaReklamacji: ProcessContent = {
+  slug: "obsluga-reklamacji",
+  metaTitle: "Automatyzacja obsługi reklamacji i zwrotów",
+  metaDescription:
+    "Jak działa zautomatyzowana obsługa reklamacji i zwrotów: formularz, rejestr spraw, terminy, decyzja, komunikacja z klientem i korekta. Etapy, warianty, koszty.",
+  primaryKeyword: "obsługa reklamacji",
+  updatedAt: "2026-10-04",
+  hero: {
+    eyebrow: "Proces: obsługa klienta",
+    title: "Automatyzacja obsługi reklamacji i zwrotów",
+    lead: "Każda reklamacja trafia do jednego rejestru, ma właściciela i termin, a klient na bieżąco dostaje informacje o statusie. Zespół zajmuje się oceną zgłoszenia, a nie szukaniem maili i pilnowaniem dat. Pokazujemy krok po kroku, jak taki proces wygląda i co jest potrzebne, żeby go wdrożyć.",
+    bullets: [
+      "Jeden rejestr reklamacji z kompletem danych",
+      "Pilnowanie terminów odpowiedzi",
+      "Automatyczne powiadomienia dla klienta",
+    ],
+  },
+  summary: [
+    { label: "Dla kogo", value: "Sklepy, hurtownie, producenci i firmy serwisowe" },
+    { label: "Czas wdrożenia", value: "Zwykle kilka tygodni, zależnie od wariantu" },
+    { label: "Narzędzia", value: "Formularz, baza zgłoszeń, poczta, sklep lub ERP" },
+    { label: "Po waszej stronie", value: "Osoba odpowiedzialna za reklamacje i zasady decyzji" },
+  ],
+  symptoms: {
+    title: "Po czym poznać, że obsługę reklamacji warto zautomatyzować",
+    lead: "Jeśli rozpoznajecie u siebie dwa lub trzy z tych sygnałów, automatyzacja zwykle szybko się zwraca.",
+    items: [
+      "Reklamacje przychodzą mailem, telefonicznie i przez formularz, a każda trafia gdzie indziej.",
+      "Przy zgłoszeniu brakuje numeru zamówienia, zdjęć albo opisu i trzeba o nie dopytywać.",
+      "Nikt nie pilnuje terminów odpowiedzi, a klient przypomina się sam.",
+      "Status sprawy zna tylko osoba, która ją prowadzi.",
+      "Korekty faktur i zwroty pieniędzy czekają, bo informacja nie dotarła do księgowości.",
+      "Nie wiadomo, które produkty lub dostawcy generują najwięcej reklamacji.",
+    ],
+  },
+  flow: {
+    title: "Jak wygląda obsługa reklamacji po automatyzacji",
+    lead: "Tak przechodzi reklamacja od zgłoszenia do zamknięcia sprawy. Kroki oznaczone jako automatyczne dzieją się bez udziału zespołu.",
+    steps: [
+      {
+        title: "Zgłoszenie",
+        body: "Klient wypełnia formularz z numerem zamówienia, opisem i zdjęciami. Reklamacje przysłane mailem AI rozpoznaje i zamienia w zgłoszenie, a brakujące dane system zbiera automatyczną wiadomością.",
+        actor: "System",
+        automated: true,
+        tool: "Formularz, poczta, AI",
+      },
+      {
+        title: "Rejestracja i potwierdzenie",
+        body: "Zgłoszenie trafia do rejestru z numerem sprawy, połączone z zamówieniem i klientem. Klient dostaje potwierdzenie z numerem i informacją, co dalej.",
+        actor: "System",
+        automated: true,
+        tool: "Baza zgłoszeń, sklep lub ERP",
+      },
+      {
+        title: "Kwalifikacja i przydział",
+        body: "System rozpoznaje rodzaj sprawy, np. reklamacja, zwrot, uszkodzenie w transporcie, i przypisuje ją do właściwej osoby. Liczy termin odpowiedzi według ustalonych zasad.",
+        actor: "System",
+        automated: true,
+      },
+      {
+        title: "Ocena zgłoszenia",
+        body: "Osoba prowadząca sprawdza zdjęcia i historię zamówienia, w razie potrzeby zamawia odbiór towaru lub ekspertyzę. Przy sprawach typowych system podpowiada decyzję na podstawie zasad.",
+        actor: "Obsługa reklamacji",
+        automated: false,
+      },
+      {
+        title: "Pilnowanie terminów",
+        body: "Gdy zbliża się termin odpowiedzi, prowadzący dostaje przypomnienie, a po jego przekroczeniu sprawa trafia do przełożonego.",
+        actor: "System",
+        automated: true,
+      },
+      {
+        title: "Decyzja i odpowiedź",
+        body: "Prowadzący wybiera decyzję: naprawa, wymiana, zwrot pieniędzy lub odrzucenie z uzasadnieniem. Odpowiedź dla klienta powstaje z szablonu, a AI może przygotować jej szkic do sprawdzenia.",
+        actor: "Obsługa reklamacji",
+        automated: false,
+        tool: "Szablony, AI",
+      },
+      {
+        title: "Realizacja",
+        body: "Decyzja uruchamia kolejne kroki: zlecenie wysyłki zamiennika, zadanie dla serwisu albo prośbę o korektę faktury i zwrot pieniędzy w księgowości.",
+        actor: "System",
+        automated: true,
+        tool: "ERP, program do faktur, kurier",
+      },
+      {
+        title: "Zamknięcie i analiza",
+        body: "Sprawa zamyka się po realizacji, a klient dostaje informację końcową. Raport pokazuje liczbę reklamacji według produktów, dostawców i przyczyn oraz czas obsługi.",
+        actor: "System",
+        automated: true,
+        tool: "Raport",
+      },
+    ],
+  },
+  example: {
+    title: "Reklamacje przed i po automatyzacji",
+    lead: "Przykład sklepu internetowego z wyposażeniem domu, który obsługuje reklamacje od klientów indywidualnych i firm.",
+    rows: [
+      { label: "Zgłoszenie", before: "Mail bez numeru zamówienia i zdjęć.", after: "Formularz z wymaganymi danymi i zdjęciami." },
+      { label: "Rejestr", before: "Arkusz uzupełniany, gdy ktoś ma czas.", after: "Każda sprawa w rejestrze z numerem i właścicielem." },
+      { label: "Terminy", before: "Liczone w głowie albo wcale.", after: "Termin liczony automatycznie, z przypomnieniem." },
+      { label: "Klient", before: "Dzwoni, żeby zapytać o status.", after: "Dostaje powiadomienia na każdym etapie." },
+      { label: "Korekta i zwrot", before: "Prośba do księgowości mailem, czasem zapomniana.", after: "Zadanie dla księgowości tworzy się z decyzji." },
+    ],
+    note: "To przykład ilustracyjny. Zakres zawsze ustalamy po rozmowie o waszym procesie.",
+  },
+  outcomes: {
+    title: "Co się zmienia po wdrożeniu",
+    items: [
+      { title: "Żadna sprawa nie ginie", body: "Każda reklamacja ma numer, właściciela i termin, niezależnie od tego, którym kanałem przyszła." },
+      { title: "Terminy pod kontrolą", body: "Przypomnienia i eskalacja sprawiają, że odpowiedź wychodzi na czas." },
+      { title: "Spokojniejszy klient", body: "Klient wie, co dzieje się z jego sprawą, więc rzadziej dzwoni i pisze z pytaniami." },
+      { title: "Wiedza o przyczynach", body: "Raport pokazuje, które produkty i dostawcy sprawiają problemy, co pomaga ograniczyć reklamacje w przyszłości." },
+    ],
+  },
+  implementation: {
+    title: "Jak przebiega wdrożenie",
+    lead: "Cztery etapy, po każdym wiecie, co zostało zrobione i co dalej. Przy każdym etapie piszemy, czego potrzebujemy od was.",
+    phases: [
+      {
+        title: "Przegląd procesu",
+        duration: "kilka dni",
+        body: "Rozmawiamy z osobami, które obsługują reklamacje, spisujemy rodzaje spraw, kanały zgłoszeń, zasady decyzji i terminy.",
+        fromYou: "Godzina rozmowy, przykładowe sprawy i obecne wzory odpowiedzi.",
+      },
+      {
+        title: "Projekt formularza i rejestru",
+        duration: "około tygodnia",
+        body: "Projektujemy formularz zgłoszenia, strukturę rejestru, statusy, zasady przydziału i terminów oraz treści powiadomień dla klienta.",
+        fromYou: "Akceptacja formularza, treści wiadomości i zasad decyzji w typowych sprawach.",
+      },
+      {
+        title: "Budowa i testy",
+        duration: "zwykle 2–4 tygodnie",
+        body: "Budujemy proces i łączymy go ze sklepem lub ERP, pocztą i księgowością. Testujemy na prawdziwych zgłoszeniach.",
+        fromYou: "Dostępy do sklepu lub ERP i poczty oraz osoba, która sprawdza wyniki testów.",
+      },
+      {
+        title: "Start i opieka",
+        duration: "stale",
+        body: "Kierujemy wszystkie kanały zgłoszeń do nowego procesu, szkolimy zespół i pilnujemy działania.",
+        fromYou: "Zgłaszanie uwag i informacja o nowych rodzajach spraw.",
+      },
+    ],
+  },
+  prerequisites: {
+    title: "Co warto przygotować przed startem",
+    lead: "Lista do przejścia po pierwszej rozmowie. Nie wszystko musi być gotowe od razu, część ustalamy razem.",
+    items: [
+      "Lista kanałów, którymi przychodzą dziś reklamacje i zwroty.",
+      "Obecny regulamin reklamacji i zwrotów oraz zasady dla klientów firmowych.",
+      "Rodzaje spraw i zasady decyzji w typowych przypadkach.",
+      "Terminy odpowiedzi, które obowiązują w waszej firmie, z uwzględnieniem wymogów prawa dla konsumentów.",
+      "Informacja, gdzie są zamówienia: sklep internetowy, ERP, program do faktur.",
+      "Osoby, które obsługują reklamacje, i ich zastępcy.",
+      "Osoba po waszej stronie, która będzie właścicielem procesu.",
+    ],
+  },
+  variants: {
+    title: "Warianty rozwiązania",
+    lead: "Zakres dobieramy do skali firmy. Można zacząć od podstawowego wariantu i rozbudowywać go później.",
+    items: [
+      {
+        name: "Podstawowy",
+        description: "Dla firm, które chcą przede wszystkim mieć porządek w sprawach i terminach.",
+        includes: [
+          "Formularz zgłoszenia z wymaganymi danymi",
+          "Rejestr reklamacji z numerami spraw",
+          "Terminy i przypomnienia dla prowadzących",
+          "Potwierdzenie i informacja końcowa dla klienta",
+        ],
+      },
+      {
+        name: "Rozszerzony",
+        description: "Dla firm z większą liczbą zgłoszeń i kilkoma kanałami.",
+        includes: [
+          "Wszystko z wariantu podstawowego",
+          "Zamiana maili w zgłoszenia przez AI",
+          "Połączenie ze sklepem lub ERP po numerze zamówienia",
+          "Powiadomienia o statusie na każdym etapie",
+          "Zadania dla księgowości i magazynu po decyzji",
+        ],
+      },
+      {
+        name: "Pełny",
+        description: "Dla firm z serwisem, wieloma dostawcami lub dużym wolumenem zwrotów.",
+        includes: [
+          "Wszystko z wariantu rozszerzonego",
+          "Zamawianie odbioru towaru u kuriera",
+          "Reklamacje do dostawców i producentów",
+          "Szkice odpowiedzi przygotowywane przez AI",
+          "Raport przyczyn reklamacji i czasu obsługi",
+        ],
+      },
+    ],
+  },
+  costFactors: {
+    title: "Od czego zależy koszt",
+    lead: "Każde wdrożenie wyceniamy osobno, przed startem. Na cenę wpływa przede wszystkim:",
+    items: [
+      "liczba kanałów zgłoszeń i rodzajów spraw,",
+      "integracja ze sklepem, ERP, programem do faktur i kurierem,",
+      "zakres powiadomień i szablonów odpowiedzi,",
+      "reklamacje do dostawców i obsługa serwisu,",
+      "koszty narzędzi, np. bazy zgłoszeń, platformy automatyzacji i modeli AI.",
+    ],
+  },
+  risks: {
+    title: "Na co uważamy przy wdrożeniu",
+    items: [
+      { risk: "Sprawa przekroczy termin odpowiedzi.", mitigation: "Termin liczony automatycznie od daty zgłoszenia, przypomnienia przed terminem i eskalacja do przełożonego." },
+      { risk: "AI źle zakwalifikuje zgłoszenie z maila.", mitigation: "AI tylko proponuje rodzaj sprawy, a prowadzący może go zmienić. Niepewne przypadki trafiają do ręcznej kwalifikacji." },
+      { risk: "Automatyczna odpowiedź zabrzmi nieodpowiednio.", mitigation: "Decyzję i odpowiedź zawsze zatwierdza człowiek. Automatyczne są tylko potwierdzenia i informacje o statusie." },
+      { risk: "Dane osobowe klientów trafią w niewłaściwe miejsce.", mitigation: "Ograniczamy dostęp do rejestru, przechowujemy tylko potrzebne dane i ustalamy okres ich przechowywania zgodnie z RODO." },
+    ],
+  },
+  faq: [
+    { question: "Czy system sam decyduje o uznaniu reklamacji?", answer: "Nie. System może podpowiedzieć decyzję w typowych sprawach na podstawie waszych zasad, ale decyzję zatwierdza osoba prowadząca sprawę." },
+    { question: "Czy obsłużymy reklamacje przychodzące mailem i telefonicznie?", answer: "Tak. Maile AI zamienia w zgłoszenia, a reklamacje telefoniczne zespół wpisuje przez ten sam formularz, więc wszystkie sprawy są w jednym rejestrze." },
+    { question: "Czy to działa ze sklepem internetowym?", answer: "Tak, jeśli sklep ma API, np. Shopify, WooCommerce lub PrestaShop. Zgłoszenie łączy się wtedy z zamówieniem po numerze, a zwroty i korekty uruchamiają się z decyzji." },
+    { question: "Jak pilnujecie terminów odpowiedzi?", answer: "Termin liczy się automatycznie od daty zgłoszenia według zasad, które ustalamy z wami, z uwzględnieniem wymogów prawa dla reklamacji konsumenckich. Prowadzący dostaje przypomnienie przed terminem, a przełożony informację o przekroczeniu." },
+    { question: "Czy można obsłużyć też zwroty bez reklamacji?", answer: "Tak. Zwroty mogą przechodzić przez ten sam rejestr jako osobny rodzaj sprawy, z własnymi zasadami i terminami." },
+    { question: "Na czym to działa technicznie?", answer: "Zwykle na bazie zgłoszeń, np. w Airtable lub systemie helpdesk, połączonej przez platformę automatyzacji, taką jak Make lub n8n, ze sklepem, pocztą i księgowością. Narzędzia dobieramy do tego, czego już używacie." },
+    { question: "Ile trwa wdrożenie?", answer: "Wariant podstawowy zwykle kilka tygodni. Integracje ze sklepem, kurierem i reklamacje do dostawców wydłużają projekt. Dokładny plan podajemy po przeglądzie procesu." },
+  ],
+  relatedServiceSlugs: ["automatyzacja-w-obsludze-klienta", "ai-w-obsludze-dokumentow", "chatbot-ai-dla-firmy", "integracje-systemow"],
+  relatedToolSlugs: ["make", "n8n", "chatgpt", "google-workspace"],
+  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "rodo-a-automatyzacja-procesow", "bledy-przy-pierwszym-wdrozeniu-automatyzacji"],
+};

@@ -22,10 +22,10 @@ export const PROCESS_AREAS: ProcessArea[] = [
 export const PROCESSES: ProcessCatalogEntry[] = [
   { slug: "obieg-faktur-kosztowych", name: "Obieg i akceptacja faktur kosztowych", area: "finanse", summary: "Od pobrania faktury z KSeF lub maila, przez opis i akceptację, do księgowania i przelewu.", status: "live" },
   { slug: "przypomnienia-o-platnosciach", name: "Przypomnienia o płatnościach i windykacja", area: "finanse", summary: "Automatyczne przypomnienia przed i po terminie, eskalacja i raport należności.", status: "live" },
-  { slug: "raporty-finansowe", name: "Raporty finansowe dla zarządu", area: "finanse", summary: "Sprzedaż, koszty i płynność zbierane z kilku systemów w jeden raport.", status: "planned" },
+  { slug: "raporty-finansowe", name: "Raporty finansowe dla zarządu", area: "finanse", summary: "Sprzedaż, koszty i płynność zbierane z kilku systemów w jeden raport.", status: "live" },
   { slug: "obsluga-zapytan-i-leadow", name: "Obsługa zapytań i leadów", area: "sprzedaz", summary: "Zapytanie z formularza, maila lub reklamy trafia do CRM, do handlowca i dostaje odpowiedź.", status: "planned" },
   { slug: "ofertowanie", name: "Przygotowanie ofert", area: "sprzedaz", summary: "Oferta z szablonu, kalkulacja z cennika i przypomnienia o follow-upie.", status: "live" },
-  { slug: "obsluga-reklamacji", name: "Obsługa reklamacji i zwrotów", area: "obsluga", summary: "Zgłoszenie, decyzja, komunikacja z klientem i korekta bez gubienia spraw.", status: "planned" },
+  { slug: "obsluga-reklamacji", name: "Obsługa reklamacji i zwrotów", area: "obsluga", summary: "Zgłoszenie, decyzja, komunikacja z klientem i korekta bez gubienia spraw.", status: "live" },
   { slug: "umawianie-wizyt", name: "Umawianie wizyt i przypomnienia", area: "obsluga", summary: "Rezerwacja online, potwierdzenia, przypomnienia i przekładanie terminów.", status: "planned" },
   { slug: "onboarding-pracownika", name: "Onboarding nowego pracownika", area: "hr", summary: "Umowa, dostępy, sprzęt i szkolenia uruchamiane z jednej listy zadań.", status: "planned" },
   { slug: "wnioski-urlopowe", name: "Wnioski urlopowe i nieobecności", area: "hr", summary: "Wniosek, akceptacja przełożonego i kalendarz zespołu bez maili i arkuszy.", status: "planned" },
