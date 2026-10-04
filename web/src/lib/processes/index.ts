@@ -4,13 +4,15 @@ import { getServicesBySlugs } from "../services";
 import { getToolEntry } from "../tools/catalog";
 import { getProcessEntry, PROCESSES_HUB_PATH, processPath } from "./catalog";
 import { obiegFakturKosztowych } from "./content/obieg-faktur-kosztowych";
+import { przyjmowanieZamowien } from "./content/przyjmowanie-zamowien";
+import { przypomnieniaOPlatnosciach } from "./content/przypomnienia-o-platnosciach";
 import type { ProcessContent } from "./types";
 
 export * from "./catalog";
 export type * from "./types";
 
 const PROCESS_CONTENT: Record<string, ProcessContent> = Object.fromEntries(
-  [obiegFakturKosztowych].map((content) => [content.slug, content]),
+  [obiegFakturKosztowych, przypomnieniaOPlatnosciach, przyjmowanieZamowien].map((content) => [content.slug, content]),
 );
 
 export function getProcessContent(slug: string) {

@@ -1,0 +1,231 @@
+import type { ProcessContent } from "../types";
+
+export const przyjmowanieZamowien: ProcessContent = {
+  slug: "przyjmowanie-zamowien",
+  metaTitle: "Automatyzacja przyjmowania zamówień B2B z maili i plików",
+  metaDescription:
+    "Jak działa automatyczne przyjmowanie zamówień B2B: odczyt maili i PDF przez AI, sprawdzenie cen i stanów, zamówienie w systemie i potwierdzenie dla klienta.",
+  primaryKeyword: "automatyzacja przyjmowania zamówień",
+  updatedAt: "2026-10-04",
+  hero: {
+    eyebrow: "Proces: operacje",
+    title: "Automatyzacja przyjmowania zamówień B2B z maili i plików",
+    lead: "Zamówienia przychodzą mailem, w PDF, w Excelu i w treści wiadomości. AI odczytuje je za zespół, system sprawdza ceny i stany, a handlowiec tylko zatwierdza gotowe zamówienie. Pokazujemy krok po kroku, jak taki proces wygląda i co jest potrzebne, żeby go wdrożyć.",
+    bullets: [
+      "Zamówienia z maili, PDF i Excela odczytywane przez AI",
+      "Sprawdzenie cennika, stanów i terminów",
+      "Zamówienie w systemie i potwierdzenie dla klienta",
+    ],
+  },
+  summary: [
+    { label: "Dla kogo", value: "Hurtownie, producenci i dystrybutorzy, którzy dostają zamówienia mailem" },
+    { label: "Czas wdrożenia", value: "Zwykle kilka tygodni, zależnie od wariantu" },
+    { label: "Narzędzia", value: "Poczta, AI do dokumentów, wasz ERP lub system sprzedaży" },
+    { label: "Po waszej stronie", value: "Osoba z działu obsługi zamówień i dostęp do systemu" },
+  ],
+  symptoms: {
+    title: "Po czym poznać, że przyjmowanie zamówień warto zautomatyzować",
+    lead: "Jeśli rozpoznajecie u siebie dwa lub trzy z tych sygnałów, automatyzacja zwykle szybko się zwraca.",
+    items: [
+      "Ktoś codziennie przepisuje pozycje z maili i załączników do systemu.",
+      "Każdy klient przysyła zamówienie w innej formie i z własnymi nazwami produktów.",
+      "Błędy w indeksach lub ilościach wychodzą dopiero przy kompletacji albo u klienta.",
+      "W szczycie sezonu zamówienia czekają na wprowadzenie po kilka dni.",
+      "Klient dzwoni z pytaniem, czy zamówienie dotarło, bo nie dostał potwierdzenia.",
+      "Urlop jednej osoby oznacza zator w obsłudze zamówień.",
+    ],
+  },
+  flow: {
+    title: "Jak wygląda przyjęcie zamówienia po automatyzacji",
+    lead: "Tak przechodzi zamówienie od maila klienta do potwierdzenia. Kroki oznaczone jako automatyczne dzieją się bez udziału zespołu.",
+    steps: [
+      {
+        title: "Odbiór zamówienia",
+        body: "System monitoruje skrzynkę zamówień i rozpoznaje wiadomości, które zawierają zamówienie, w treści lub w załączniku: PDF, Excel, Word albo skan.",
+        actor: "System",
+        automated: true,
+        tool: "Poczta",
+      },
+      {
+        title: "Odczyt danych przez AI",
+        body: "AI wyciąga z zamówienia klienta, adres dostawy, pozycje, ilości, ceny podane przez klienta, numer zamówienia i oczekiwany termin.",
+        actor: "System",
+        automated: true,
+        tool: "AI do dokumentów",
+      },
+      {
+        title: "Dopasowanie produktów",
+        body: "Nazwy i kody klienta są dopasowywane do waszych indeksów na podstawie słownika, historii zamówień i opisu produktu. Każde potwierdzone dopasowanie zapisuje się na przyszłość.",
+        actor: "System",
+        automated: true,
+      },
+      {
+        title: "Sprawdzenie cen, stanów i warunków",
+        body: "System porównuje ceny z cennikiem klienta, sprawdza dostępność w magazynie i limit kredytowy. Rozbieżności są oznaczone przy konkretnej pozycji.",
+        actor: "System",
+        automated: true,
+        tool: "ERP lub system magazynowy",
+      },
+      {
+        title: "Zatwierdzenie przez opiekuna",
+        body: "Handlowiec lub osoba z obsługi zamówień widzi gotowy projekt zamówienia obok oryginału. Poprawia oznaczone pozycje i zatwierdza. Zamówienia bez rozbieżności mogą przechodzić bez tego kroku.",
+        actor: "Obsługa zamówień",
+        automated: false,
+      },
+      {
+        title: "Zamówienie w systemie",
+        body: "Zatwierdzone zamówienie trafia do ERP lub systemu sprzedaży przez integrację, z załączonym oryginałem od klienta.",
+        actor: "System",
+        automated: true,
+        tool: "ERP",
+      },
+      {
+        title: "Potwierdzenie dla klienta",
+        body: "Klient dostaje potwierdzenie z listą pozycji, terminem realizacji i informacją o brakach lub zamiennikach.",
+        actor: "System",
+        automated: true,
+        tool: "Poczta",
+      },
+      {
+        title: "Wyjątki",
+        body: "Zamówienia nieczytelne, nietypowe lub od nowych klientów trafiają do kolejki do ręcznej obsługi, z podpowiedzią, czego brakuje.",
+        actor: "Obsługa zamówień",
+        automated: false,
+      },
+    ],
+  },
+  example: {
+    title: "Przyjmowanie zamówień przed i po automatyzacji",
+    lead: "Przykład dystrybutora materiałów, który dostaje zamówienia od kilkudziesięciu stałych klientów, każdy w innej formie.",
+    rows: [
+      { label: "Odbiór", before: "Dwie osoby przeglądają wspólną skrzynkę i dzielą się mailami.", after: "Zamówienia rozpoznawane automatycznie i kolejkowane." },
+      { label: "Wprowadzenie", before: "Przepisywanie pozycji z PDF i Excela do systemu.", after: "Gotowy projekt zamówienia do sprawdzenia." },
+      { label: "Indeksy", before: "Szukanie produktu po nazwie klienta w katalogu.", after: "Dopasowanie ze słownika, który uczy się na potwierdzeniach." },
+      { label: "Kontrola", before: "Błędy wychodzą przy kompletacji.", after: "Rozbieżności cen i stanów oznaczone przed zatwierdzeniem." },
+      { label: "Potwierdzenie", before: "Wysyłane, gdy ktoś znajdzie czas.", after: "Wysyłane od razu po wprowadzeniu zamówienia." },
+    ],
+    note: "To przykład ilustracyjny. Zakres zawsze ustalamy po rozmowie o waszym procesie.",
+  },
+  outcomes: {
+    title: "Co się zmienia po wdrożeniu",
+    items: [
+      { title: "Koniec przepisywania", body: "Zespół sprawdza i zatwierdza zamówienia zamiast wpisywać je pozycja po pozycji." },
+      { title: "Mniej błędów", body: "Ceny, indeksy i stany są sprawdzane przed wprowadzeniem zamówienia, a nie przy kompletacji." },
+      { title: "Szybsze potwierdzenia", body: "Klient wie, że zamówienie dotarło i kiedy będzie zrealizowane, bez dzwonienia." },
+      { title: "Odporność na szczyty i urlopy", body: "Większa liczba zamówień nie oznacza od razu zatoru, a wiedza o produktach klientów jest zapisana w słowniku, nie w głowie jednej osoby." },
+    ],
+  },
+  implementation: {
+    title: "Jak przebiega wdrożenie",
+    lead: "Cztery etapy, po każdym wiecie, co zostało zrobione i co dalej. Przy każdym etapie piszemy, czego potrzebujemy od was.",
+    phases: [
+      {
+        title: "Przegląd procesu",
+        duration: "kilka dni",
+        body: "Rozmawiamy z osobami, które przyjmują zamówienia, zbieramy przykłady od różnych klientów i sprawdzamy, jak wprowadzić dane do waszego systemu.",
+        fromYou: "Godzina rozmowy i kilkadziesiąt przykładowych zamówień od różnych klientów.",
+      },
+      {
+        title: "Projekt i słownik produktów",
+        duration: "około tygodnia",
+        body: "Ustalamy zasady sprawdzania, wyjątki i próg, od którego zamówienie wymaga zatwierdzenia. Budujemy pierwszy słownik dopasowań z historii zamówień.",
+        fromYou: "Eksport historii zamówień i katalogu produktów oraz decyzje o wyjątkach.",
+      },
+      {
+        title: "Budowa i testy",
+        duration: "zwykle 3–5 tygodni",
+        body: "Budujemy odczyt, dopasowanie i integrację z systemem. Testujemy na prawdziwych zamówieniach równolegle z ręcznym wprowadzaniem i porównujemy wyniki.",
+        fromYou: "Dostęp testowy do systemu i osoba, która porównuje wyniki z ręcznym wprowadzeniem.",
+      },
+      {
+        title: "Start i opieka",
+        duration: "stale",
+        body: "Przełączamy przyjmowanie zamówień na nowy proces, zaczynając od wybranych klientów. Pilnujemy jakości odczytu i rozwijamy słownik.",
+        fromYou: "Zgłaszanie błędów odczytu w pierwszych tygodniach.",
+      },
+    ],
+  },
+  prerequisites: {
+    title: "Co warto przygotować przed startem",
+    lead: "Lista do przejścia po pierwszej rozmowie. Nie wszystko musi być gotowe od razu, część ustalamy razem.",
+    items: [
+      "Adres lub adresy, na które przychodzą zamówienia.",
+      "Przykładowe zamówienia od różnych klientów, w tym trudne i nietypowe.",
+      "Katalog produktów z indeksami i cenniki klientów.",
+      "Informacja, jak dziś wprowadzacie zamówienia: ERP, system sprzedaży, sklep B2B, arkusz.",
+      "Informacja, czy system ma API albo import zamówień z pliku.",
+      "Zasady: kiedy zamówienie wymaga akceptacji, co z brakami, kto obsługuje nowych klientów.",
+      "Osoba po waszej stronie, która będzie właścicielem procesu.",
+    ],
+  },
+  variants: {
+    title: "Warianty rozwiązania",
+    lead: "Zakres dobieramy do skali firmy. Można zacząć od podstawowego wariantu i rozbudowywać go później.",
+    items: [
+      {
+        name: "Podstawowy",
+        description: "Dla firm, które chcą przede wszystkim skończyć z przepisywaniem.",
+        includes: [
+          "Odbiór zamówień z wyznaczonej skrzynki",
+          "Odczyt danych przez AI z treści i załączników",
+          "Projekt zamówienia do sprawdzenia obok oryginału",
+          "Eksport do systemu przez plik importu",
+        ],
+      },
+      {
+        name: "Rozszerzony",
+        description: "Dla firm z wieloma klientami i własnymi nazwami produktów.",
+        includes: [
+          "Wszystko z wariantu podstawowego",
+          "Słownik dopasowań produktów uczący się na potwierdzeniach",
+          "Sprawdzanie cen z cennikiem klienta i stanów magazynowych",
+          "Integracja z ERP przez API",
+          "Automatyczne potwierdzenie dla klienta",
+        ],
+      },
+      {
+        name: "Pełny",
+        description: "Dla firm z dużą liczbą zamówień i kredytem kupieckim.",
+        includes: [
+          "Wszystko z wariantu rozszerzonego",
+          "Automatyczne wprowadzanie zamówień bez rozbieżności",
+          "Kontrola limitów kredytowych i zaległości",
+          "Propozycje zamienników przy brakach",
+          "Raport czasu obsługi i błędów zamówień",
+        ],
+      },
+    ],
+  },
+  costFactors: {
+    title: "Od czego zależy koszt",
+    lead: "Każde wdrożenie wyceniamy osobno, przed startem. Na cenę wpływa przede wszystkim:",
+    items: [
+      "liczba formatów zamówień i to, jak bardzo różnią się między klientami,",
+      "wielkość katalogu i to, czy klienci używają waszych indeksów, czy własnych nazw,",
+      "sposób wprowadzania danych do systemu: plik importu czy integracja przez API,",
+      "zakres kontroli: ceny, stany, limity kredytowe, zamienniki,",
+      "koszty narzędzi, np. platformy automatyzacji i modeli AI, zależne od liczby i długości zamówień.",
+    ],
+  },
+  risks: {
+    title: "Na co uważamy przy wdrożeniu",
+    items: [
+      { risk: "AI źle odczyta ilość lub produkt.", mitigation: "Porównujemy sumy i ceny z cennikiem, oznaczamy niepewne pozycje, a na starcie każde zamówienie zatwierdza człowiek." },
+      { risk: "Klient użyje nazwy produktu, której nie ma w słowniku.", mitigation: "Pozycja trafia do sprawdzenia z propozycjami dopasowania, a potwierdzony wybór zapisuje się na przyszłość." },
+      { risk: "Zamówienie trafi do systemu dwa razy.", mitigation: "Sprawdzamy numer zamówienia klienta i treść, a duplikaty zatrzymujemy przed wprowadzeniem." },
+      { risk: "Zmiana formatu zamówień u klienta.", mitigation: "AI radzi sobie z różnymi układami dokumentów, a spadek jakości odczytu wychwytujemy podczas opieki po wdrożeniu." },
+    ],
+  },
+  faq: [
+    { question: "Czy AI poradzi sobie z zamówieniami w różnych formatach?", answer: "Tak. Modele AI odczytują zamówienia z treści maila, PDF, Excela i skanów bez przygotowywania osobnego szablonu dla każdego klienta. Wyniki sprawdzamy i oznaczamy niepewne pozycje." },
+    { question: "Czy musimy zmieniać ERP?", answer: "Nie. Zamówienia trafiają do systemu, którego już używacie, przez integrację lub import z pliku." },
+    { question: "Co z klientami, którzy używają własnych nazw produktów?", answer: "Budujemy słownik dopasowań na podstawie historii zamówień. Każde potwierdzone dopasowanie zapisuje się, więc z czasem ręcznych poprawek jest coraz mniej." },
+    { question: "Czy każde zamówienie musi zatwierdzać człowiek?", answer: "Na starcie tak. Gdy jakość odczytu jest sprawdzona, zamówienia bez rozbieżności mogą przechodzić automatycznie, a człowiek obsługuje tylko wyjątki." },
+    { question: "Czy dane zamówień są bezpieczne przy użyciu AI?", answer: "Korzystamy z modeli w planach, w których dane nie służą do trenowania, i przetwarzamy tylko to, co potrzebne do zamówienia. Szczegóły ustalamy z wami przed startem." },
+    { question: "Na czym to działa technicznie?", answer: "Zwykle na platformie automatyzacji, takiej jak n8n lub Make, z modelem AI do odczytu dokumentów i integracją z waszym ERP. Narzędzia dobieramy do tego, czego już używacie." },
+    { question: "Ile trwa wdrożenie?", answer: "Wariant podstawowy zwykle kilka tygodni. Słownik produktów i integracja z ERP wydłużają projekt. Dokładny plan podajemy po przeglądzie procesu." },
+  ],
+  relatedServiceSlugs: ["ai-w-obsludze-dokumentow", "automatyzacja-sprzedazy", "automatyzacja-dla-logistyki", "integracje-systemow"],
+  relatedToolSlugs: ["n8n", "make", "chatgpt", "claude"],
+  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "porzadek-w-danych-przed-ai-i-automatyzacja", "gotowa-automatyzacja-czy-budowana-od-zera"],
+};

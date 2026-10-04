@@ -1,0 +1,232 @@
+import type { ProcessContent } from "../types";
+
+export const przypomnieniaOPlatnosciach: ProcessContent = {
+  slug: "przypomnienia-o-platnosciach",
+  metaTitle: "Automatyzacja przypomnień o płatnościach i windykacji",
+  metaDescription:
+    "Jak działają automatyczne przypomnienia o płatnościach: przed terminem, po terminie, eskalacja do handlowca i raport należności. Etapy, warianty, koszty.",
+  primaryKeyword: "automatyczne przypomnienia o płatnościach",
+  updatedAt: "2026-10-04",
+  hero: {
+    eyebrow: "Proces: finanse",
+    title: "Automatyczne przypomnienia o płatnościach i windykacja miękka",
+    lead: "Klienci dostają uprzejme przypomnienia przed terminem i po nim, handlowiec wie, kto zalega, a zarząd widzi należności bez składania arkusza. Pokazujemy krok po kroku, jak taki proces wygląda i co jest potrzebne, żeby go wdrożyć.",
+    bullets: [
+      "Przypomnienia wysyłane same, według ustalonego harmonogramu",
+      "Stan płatności na podstawie wyciągów z banku",
+      "Raport należności zawsze aktualny",
+    ],
+  },
+  summary: [
+    { label: "Dla kogo", value: "Firmy B2B, które wystawiają faktury z odroczonym terminem płatności" },
+    { label: "Czas wdrożenia", value: "Zwykle kilka tygodni, zależnie od wariantu" },
+    { label: "Narzędzia", value: "Program do faktur, bank, poczta, platforma automatyzacji" },
+    { label: "Po waszej stronie", value: "Osoba z finansów i zasady postępowania z dłużnikami" },
+  ],
+  symptoms: {
+    title: "Po czym poznać, że przypomnienia o płatnościach warto zautomatyzować",
+    lead: "Jeśli rozpoznajecie u siebie dwa lub trzy z tych sygnałów, automatyzacja zwykle szybko się zwraca.",
+    items: [
+      "Ktoś raz w tygodniu przegląda arkusz z należnościami i ręcznie pisze maile do klientów.",
+      "Przypomnienia wychodzą nieregularnie, bo zawsze jest coś pilniejszego.",
+      "Handlowiec nie wie, że jego klient zalega, i obiecuje mu kolejną dostawę.",
+      "Płatności z wyciągu trzeba ręcznie dopasowywać do faktur.",
+      "Część klientów płaci dopiero po telefonie, a nikt nie pilnuje, kiedy zadzwonić.",
+      "Zarząd pyta o stan należności, a odpowiedź wymaga kilku godzin pracy.",
+    ],
+  },
+  flow: {
+    title: "Jak wygląda proces po automatyzacji",
+    lead: "Tak przechodzi faktura sprzedażowa od wystawienia do zapłaty albo przekazania do dalszej windykacji. Kroki oznaczone jako automatyczne dzieją się bez udziału zespołu.",
+    steps: [
+      {
+        title: "Pobranie faktur i terminów",
+        body: "System regularnie pobiera wystawione faktury z programu do fakturowania lub z KSeF, razem z terminem płatności, kwotą i danymi kontaktowymi klienta.",
+        actor: "System",
+        automated: true,
+        tool: "Program do faktur, KSeF",
+      },
+      {
+        title: "Dopasowanie wpłat",
+        body: "Wpłaty z wyciągów bankowych są dopasowywane do faktur po numerze, kwocie i nadawcy. Płatności częściowe i niejasne trafiają do sprawdzenia.",
+        actor: "System",
+        automated: true,
+        tool: "Bank, plik wyciągu lub API",
+      },
+      {
+        title: "Przypomnienie przed terminem",
+        body: "Kilka dni przed terminem klient dostaje krótką wiadomość z numerem faktury, kwotą i numerem rachunku. Klienci, którzy zawsze płacą na czas, mogą być z tego wyłączeni.",
+        actor: "System",
+        automated: true,
+        tool: "Poczta",
+      },
+      {
+        title: "Przypomnienia po terminie",
+        body: "Po terminie wychodzą kolejne wiadomości według ustalonego harmonogramu, z coraz bardziej stanowczym tonem. Wpłata zatrzymuje przypomnienia od razu.",
+        actor: "System",
+        automated: true,
+        tool: "Poczta, SMS",
+      },
+      {
+        title: "Informacja dla handlowca",
+        body: "Handlowiec opiekujący się klientem dostaje powiadomienie w CRM lub Teams. Może sam zadzwonić albo wstrzymać przypomnienia, jeśli z klientem są inne ustalenia.",
+        actor: "Handlowiec",
+        automated: false,
+        tool: "CRM, Teams",
+      },
+      {
+        title: "Wezwanie do zapłaty",
+        body: "Po ustalonym czasie system przygotowuje wezwanie do zapłaty z wyliczeniem należności. Osoba z finansów sprawdza je i decyduje o wysyłce.",
+        actor: "Finanse",
+        automated: false,
+      },
+      {
+        title: "Eskalacja",
+        body: "Sprawy bez reakcji trafiają na listę do decyzji: wstrzymanie dostaw, rozmowa zarządu albo przekazanie do kancelarii lub firmy windykacyjnej.",
+        actor: "Zarząd lub finanse",
+        automated: false,
+      },
+      {
+        title: "Raport należności",
+        body: "Raport z należnościami według klientów, handlowców i wieku zadłużenia odświeża się sam i trafia do zarządu w ustalonym rytmie.",
+        actor: "System",
+        automated: true,
+        tool: "Raport, arkusz lub BI",
+      },
+    ],
+  },
+  example: {
+    title: "Należności przed i po automatyzacji",
+    lead: "Przykład hurtowni, która sprzedaje firmom z odroczonym terminem płatności i ma kilku handlowców.",
+    rows: [
+      { label: "Kontrola terminów", before: "Księgowa raz w tygodniu filtruje arkusz z fakturami.", after: "System codziennie sprawdza terminy i wpłaty." },
+      { label: "Przypomnienia", before: "Pisane ręcznie, gdy jest czas, często dopiero po kilku tygodniach.", after: "Wysyłane same przed terminem i w ustalonych odstępach po nim." },
+      { label: "Handlowiec", before: "Dowiaduje się o zaległości przypadkiem.", after: "Dostaje powiadomienie i widzi zaległości klienta w CRM." },
+      { label: "Wezwania", before: "Przygotowywane od zera w Wordzie.", after: "Gotowy projekt wezwania z wyliczeniem do zatwierdzenia." },
+      { label: "Raport", before: "Składany ręcznie na prośbę zarządu.", after: "Aktualny w każdej chwili, z podziałem na wiek należności." },
+    ],
+    note: "To przykład ilustracyjny. Zakres zawsze ustalamy po rozmowie o waszym procesie.",
+  },
+  outcomes: {
+    title: "Co się zmienia po wdrożeniu",
+    items: [
+      { title: "Regularność", body: "Każda faktura dostaje przypomnienie we właściwym momencie, niezależnie od tego, ile pracy ma dział finansów." },
+      { title: "Mniej ręcznego dopasowywania", body: "Wpłaty łączą się z fakturami same, a człowiek sprawdza tylko niejasne przypadki." },
+      { title: "Handlowcy w obrazie", body: "Osoba, która zna klienta, wie o zaległości i może zareagować rozmową, a nie tylko mailem." },
+      { title: "Bieżący obraz należności", body: "Zarząd widzi, kto zalega, od kiedy i na jaką kwotę, bez czekania na raport." },
+    ],
+  },
+  implementation: {
+    title: "Jak przebiega wdrożenie",
+    lead: "Cztery etapy, po każdym wiecie, co zostało zrobione i co dalej. Przy każdym etapie piszemy, czego potrzebujemy od was.",
+    phases: [
+      {
+        title: "Przegląd procesu",
+        duration: "kilka dni",
+        body: "Rozmawiamy z osobą z finansów i jednym z handlowców, sprawdzamy, skąd pobrać faktury i wpłaty, i spisujemy obecne zasady postępowania z dłużnikami.",
+        fromYou: "Godzina rozmowy, przykładowe wyciągi i faktury oraz obecne wzory przypomnień, jeśli są.",
+      },
+      {
+        title: "Projekt harmonogramu i treści",
+        duration: "około tygodnia",
+        body: "Ustalamy harmonogram przypomnień, treść wiadomości na każdym etapie, wyjątki dla wybranych klientów i zasady eskalacji.",
+        fromYou: "Akceptacja treści i decyzje, kiedy angażować handlowca, a kiedy zarząd.",
+      },
+      {
+        title: "Budowa i testy",
+        duration: "zwykle 2–4 tygodnie",
+        body: "Łączymy program do faktur, bank i pocztę. Przez pierwsze dni przypomnienia trafiają do was do podglądu, zanim zaczną wychodzić do klientów.",
+        fromYou: "Dostępy do programu do faktur i wyciągów oraz osoba, która sprawdza wyniki testów.",
+      },
+      {
+        title: "Start i opieka",
+        duration: "stale",
+        body: "Włączamy wysyłkę do klientów, pilnujemy działania i dopracowujemy treści na podstawie reakcji klientów.",
+        fromYou: "Zgłaszanie uwag i informacja o klientach, którzy wymagają innego podejścia.",
+      },
+    ],
+  },
+  prerequisites: {
+    title: "Co warto przygotować przed startem",
+    lead: "Lista do przejścia po pierwszej rozmowie. Nie wszystko musi być gotowe od razu, część ustalamy razem.",
+    items: [
+      "Nazwa programu do fakturowania i informacja, czy ma API albo eksport faktur.",
+      "Sposób pobierania wyciągów: plik z bankowości elektronicznej albo integracja z bankiem.",
+      "Aktualne adresy mailowe do rozliczeń u klientów, najlepiej osobne od adresów handlowych.",
+      "Przypisanie klientów do handlowców, np. w CRM lub arkuszu.",
+      "Obecne zasady: po ilu dniach przypomnienie, kiedy telefon, kiedy wezwanie i wstrzymanie dostaw.",
+      "Lista klientów, którzy mają indywidualne ustalenia i nie powinni dostawać automatycznych wiadomości.",
+      "Osoba po waszej stronie, która będzie właścicielem procesu.",
+    ],
+  },
+  variants: {
+    title: "Warianty rozwiązania",
+    lead: "Zakres dobieramy do skali firmy. Można zacząć od podstawowego wariantu i rozbudowywać go później.",
+    items: [
+      {
+        name: "Podstawowy",
+        description: "Dla firm, które chcą przede wszystkim regularnie przypominać o płatnościach.",
+        includes: [
+          "Pobieranie faktur i terminów z programu do faktur",
+          "Dopasowanie wpłat z pliku wyciągu",
+          "Przypomnienia mailowe przed terminem i po nim",
+          "Prosta lista zaległości",
+        ],
+      },
+      {
+        name: "Rozszerzony",
+        description: "Dla firm z handlowcami, którzy opiekują się klientami.",
+        includes: [
+          "Wszystko z wariantu podstawowego",
+          "Powiadomienia dla handlowców w CRM lub Teams",
+          "Wyjątki i wstrzymanie przypomnień dla wybranych klientów",
+          "Projekty wezwań do zapłaty z wyliczeniem należności",
+          "Raport należności według wieku i handlowca",
+        ],
+      },
+      {
+        name: "Pełny",
+        description: "Dla firm z dużą liczbą faktur lub kredytem kupieckim.",
+        includes: [
+          "Wszystko z wariantu rozszerzonego",
+          "Integracja z bankiem przez API",
+          "Przypomnienia SMS i zadania na telefon",
+          "Limity kredytowe i blokada zamówień dla dłużników",
+          "Przekazanie spraw do kancelarii lub firmy windykacyjnej",
+        ],
+      },
+    ],
+  },
+  costFactors: {
+    title: "Od czego zależy koszt",
+    lead: "Każde wdrożenie wyceniamy osobno, przed startem. Na cenę wpływa przede wszystkim:",
+    items: [
+      "sposób pobierania faktur: API programu do faktur, KSeF czy plik eksportu,",
+      "sposób pobierania wpłat: plik wyciągu czy integracja z bankiem,",
+      "liczba etapów przypomnień, kanałów i wyjątków,",
+      "integracja z CRM i blokadą zamówień,",
+      "koszty narzędzi, np. platformy automatyzacji i bramki SMS, zwykle niewielkie przy typowych wolumenach.",
+    ],
+  },
+  risks: {
+    title: "Na co uważamy przy wdrożeniu",
+    items: [
+      { risk: "Przypomnienie trafi do klienta, który już zapłacił.", mitigation: "Wpłaty sprawdzamy tuż przed wysyłką, a niejasne płatności wstrzymują przypomnienie do czasu wyjaśnienia." },
+      { risk: "Zbyt stanowczy ton zaszkodzi relacji z klientem.", mitigation: "Treści ustalamy z wami, pierwsze przypomnienia są uprzejme, a handlowiec może wstrzymać wysyłkę." },
+      { risk: "Klient ma indywidualne ustalenia, o których system nie wie.", mitigation: "Lista wyjątków i możliwość wyłączenia przypomnień dla klienta lub faktury jednym kliknięciem." },
+      { risk: "Dane osobowe trafią w niewłaściwe miejsce.", mitigation: "Wysyłamy tylko na adresy rozliczeniowe, ograniczamy dostęp do danych i dokumentujemy przetwarzanie zgodnie z RODO." },
+    ],
+  },
+  faq: [
+    { question: "Czy musimy zmieniać program do fakturowania?", answer: "Nie. Proces pobiera faktury z programu, którego już używacie, przez API, KSeF albo plik eksportu." },
+    { question: "Skąd system wie, że klient zapłacił?", answer: "Z wyciągów bankowych. Wpłaty są dopasowywane do faktur po numerze, kwocie i nadawcy. Gdy dopasowanie jest niepewne, sprawę sprawdza człowiek." },
+    { question: "Czy klienci nie poczują się urażeni automatycznymi przypomnieniami?", answer: "Uprzejme przypomnienie przed terminem jest w relacjach B2B standardem i często jest dobrze przyjmowane. Ton kolejnych wiadomości ustalacie sami, a dla wybranych klientów można je wyłączyć." },
+    { question: "Czy system sam wysyła wezwania do zapłaty?", answer: "Przygotowuje je z wyliczeniem należności, ale decyzję o wysyłce podejmuje człowiek. Tak samo przy przekazaniu sprawy do kancelarii." },
+    { question: "Czy da się przypominać przez SMS?", answer: "Tak, w wariancie pełnym. Potrzebna jest bramka SMS i numery telefonów do osób odpowiedzialnych za płatności." },
+    { question: "Na czym to działa technicznie?", answer: "Zwykle na platformie automatyzacji, takiej jak n8n lub Make, połączonej z programem do faktur, bankiem, pocztą i CRM. Narzędzie dobieramy do tego, czego już używacie." },
+    { question: "Ile trwa wdrożenie?", answer: "Wariant podstawowy zwykle kilka tygodni. Integracja z bankiem przez API i blokada zamówień wydłużają projekt. Dokładny plan podajemy po przeglądzie procesu." },
+  ],
+  relatedServiceSlugs: ["automatyzacja-dla-ksiegowosci", "automatyzacja-raportow", "integracje-systemow"],
+  relatedToolSlugs: ["n8n", "make", "ksef", "pipedrive"],
+  relatedArticleSlugs: ["integracja-crm-z-fakturowaniem", "rodo-a-automatyzacja-procesow", "jak-mierzyc-roi-automatyzacji"],
+};
