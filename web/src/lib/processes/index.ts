@@ -10,13 +10,15 @@ import { ofertowanie } from "./content/ofertowanie";
 import { przyjmowanieZamowien } from "./content/przyjmowanie-zamowien";
 import { przypomnieniaOPlatnosciach } from "./content/przypomnienia-o-platnosciach";
 import { raportyFinansowe } from "./content/raporty-finansowe";
+import { umawianieWizyt } from "./content/umawianie-wizyt";
+import { wnioskiUrlopowe } from "./content/wnioski-urlopowe";
 import type { ProcessContent } from "./types";
 
 export * from "./catalog";
 export type * from "./types";
 
 const PROCESS_CONTENT: Record<string, ProcessContent> = Object.fromEntries(
-  [obiegFakturKosztowych, przypomnieniaOPlatnosciach, przyjmowanieZamowien, ofertowanie, obiegUmow, raportyFinansowe, obslugaReklamacji].map((content) => [content.slug, content]),
+  [obiegFakturKosztowych, przypomnieniaOPlatnosciach, przyjmowanieZamowien, ofertowanie, obiegUmow, raportyFinansowe, obslugaReklamacji, umawianieWizyt, wnioskiUrlopowe].map((content) => [content.slug, content]),
 );
 
 export function getProcessContent(slug: string) {

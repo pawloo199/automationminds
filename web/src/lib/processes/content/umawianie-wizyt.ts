@@ -1,0 +1,232 @@
+import type { ProcessContent } from "../types";
+
+export const umawianieWizyt: ProcessContent = {
+  slug: "umawianie-wizyt",
+  metaTitle: "Automatyzacja umawiania wizyt i przypomnień dla klientów",
+  metaDescription:
+    "Jak działa zautomatyzowane umawianie wizyt: rezerwacja online, potwierdzenia, przypomnienia SMS i mail, przekładanie terminów i lista oczekujących. Etapy, warianty, koszty.",
+  primaryKeyword: "automatyzacja umawiania wizyt",
+  updatedAt: "2026-10-04",
+  hero: {
+    eyebrow: "Proces: obsługa klienta",
+    title: "Automatyzacja umawiania wizyt i przypomnień",
+    lead: "Klient sam wybiera wolny termin, dostaje potwierdzenie i przypomnienie, a gdy musi przełożyć wizytę, robi to jednym kliknięciem. Zespół przestaje umawiać terminy przez telefon i ma kalendarz, który zgadza się z rzeczywistością. Pokazujemy krok po kroku, jak taki proces wygląda i co jest potrzebne, żeby go wdrożyć.",
+    bullets: [
+      "Rezerwacja online w wolnych terminach",
+      "Przypomnienia SMS i mail przed wizytą",
+      "Przekładanie i odwoływanie bez telefonu",
+    ],
+  },
+  summary: [
+    { label: "Dla kogo", value: "Gabinety, serwisy, biura, doradcy i firmy z wizytami u klienta" },
+    { label: "Czas wdrożenia", value: "Zwykle od kilku dni do kilku tygodni, zależnie od wariantu" },
+    { label: "Narzędzia", value: "Kalendarz Google lub Outlook, narzędzie do rezerwacji, SMS" },
+    { label: "Po waszej stronie", value: "Osoba, która dziś umawia wizyty, i zasady grafiku" },
+  ],
+  symptoms: {
+    title: "Po czym poznać, że umawianie wizyt warto zautomatyzować",
+    lead: "Jeśli rozpoznajecie u siebie dwa lub trzy z tych sygnałów, automatyzacja zwykle szybko się zwraca.",
+    items: [
+      "Duża część dnia recepcji lub biura to telefony i maile w sprawie terminów.",
+      "Klienci nie przychodzą na wizyty i nie uprzedzają o tym.",
+      "Terminy są zapisane w kilku miejscach: kalendarzu, zeszycie i telefonie.",
+      "Zdarzają się podwójne rezerwacje albo wizyty bez przygotowanych informacji.",
+      "Klient, który chce przełożyć wizytę, musi dodzwonić się w godzinach pracy.",
+      "Zwolnione terminy przepadają, bo nikt nie wie, kto chciałby wcześniejszy termin.",
+    ],
+  },
+  flow: {
+    title: "Jak wygląda umawianie wizyty po automatyzacji",
+    lead: "Tak przechodzi wizyta od rezerwacji do kontaktu po jej zakończeniu. Kroki oznaczone jako automatyczne dzieją się bez udziału zespołu.",
+    steps: [
+      {
+        title: "Rezerwacja",
+        body: "Klient wybiera usługę, osobę i wolny termin na stronie, w linku z maila albo przez czat. Widzi tylko terminy, które są faktycznie dostępne w kalendarzach zespołu.",
+        actor: "Klient",
+        automated: false,
+        tool: "Narzędzie do rezerwacji, strona, czat",
+      },
+      {
+        title: "Zebranie informacji",
+        body: "Przy rezerwacji klient podaje dane potrzebne do wizyty, np. opis problemu, model urządzenia, adres albo dokumenty. Dzięki temu wizyta jest przygotowana.",
+        actor: "System",
+        automated: true,
+        tool: "Formularz",
+      },
+      {
+        title: "Zapis w kalendarzu",
+        body: "Wizyta trafia do kalendarza właściwej osoby razem z danymi klienta i blokuje termin. Dane klienta zapisują się w CRM lub bazie klientów.",
+        actor: "System",
+        automated: true,
+        tool: "Kalendarz Google lub Outlook, CRM",
+      },
+      {
+        title: "Potwierdzenie",
+        body: "Klient dostaje potwierdzenie z terminem, adresem lub linkiem do spotkania, informacją, jak się przygotować, i linkiem do zmiany terminu.",
+        actor: "System",
+        automated: true,
+        tool: "Mail, SMS",
+      },
+      {
+        title: "Przypomnienia",
+        body: "Przed wizytą klient dostaje przypomnienie, np. dzień wcześniej i kilka godzin przed. Może jednym kliknięciem potwierdzić obecność albo przełożyć wizytę.",
+        actor: "System",
+        automated: true,
+        tool: "SMS, mail",
+      },
+      {
+        title: "Zmiany i lista oczekujących",
+        body: "Gdy klient odwoła wizytę, termin wraca do puli, a osoby z listy oczekujących dostają propozycję wcześniejszego terminu.",
+        actor: "System",
+        automated: true,
+      },
+      {
+        title: "Wizyta",
+        body: "Osoba prowadząca wizytę ma w kalendarzu wszystkie informacje od klienta i historię poprzednich wizyt.",
+        actor: "Zespół",
+        automated: false,
+      },
+      {
+        title: "Po wizycie",
+        body: "Klient dostaje podsumowanie, prośbę o opinię lub propozycję kolejnego terminu. Nieobecności są zapisywane, a zasady, np. przedpłata przy kolejnej rezerwacji, uruchamiają się same.",
+        actor: "System",
+        automated: true,
+        tool: "Mail, CRM",
+      },
+    ],
+  },
+  example: {
+    title: "Umawianie wizyt przed i po automatyzacji",
+    lead: "Przykład firmy serwisowej, w której kilku techników jeździ do klientów, a terminy umawia biuro.",
+    rows: [
+      { label: "Rezerwacja", before: "Telefon do biura w godzinach pracy.", after: "Klient sam wybiera wolny termin online, także wieczorem." },
+      { label: "Informacje", before: "Technik dowiaduje się o problemie na miejscu.", after: "Opis usterki i model urządzenia są w kalendarzu przed wizytą." },
+      { label: "Przypomnienie", before: "Biuro dzwoni dzień wcześniej, jeśli zdąży.", after: "SMS z przypomnieniem i linkiem do zmiany terminu." },
+      { label: "Odwołania", before: "Klienta nie ma w domu, technik traci czas.", after: "Klient przekłada wizytę wcześniej, termin wraca do puli." },
+      { label: "Grafik", before: "Kalendarz w biurze i telefony techników.", after: "Jeden kalendarz widoczny dla biura i techników." },
+    ],
+    note: "To przykład ilustracyjny. Zakres zawsze ustalamy po rozmowie o waszym procesie.",
+  },
+  outcomes: {
+    title: "Co się zmienia po wdrożeniu",
+    items: [
+      { title: "Mniej telefonów", body: "Rezerwacje, potwierdzenia i zmiany terminów dzieją się bez udziału recepcji lub biura." },
+      { title: "Mniej nieobecności", body: "Przypomnienia i łatwe przekładanie sprawiają, że klienci rzadziej zapominają o wizycie." },
+      { title: "Przygotowane wizyty", body: "Osoba prowadząca wizytę wie wcześniej, czego dotyczy sprawa." },
+      { title: "Pełniejszy grafik", body: "Zwolnione terminy trafiają do osób z listy oczekujących zamiast przepadać." },
+    ],
+  },
+  implementation: {
+    title: "Jak przebiega wdrożenie",
+    lead: "Cztery etapy, po każdym wiecie, co zostało zrobione i co dalej. Przy każdym etapie piszemy, czego potrzebujemy od was.",
+    phases: [
+      {
+        title: "Przegląd procesu",
+        duration: "1–2 dni",
+        body: "Rozmawiamy z osobą, która dziś umawia wizyty, spisujemy rodzaje usług, czas trwania, grafiki i zasady odwołań.",
+        fromYou: "Godzina rozmowy, lista usług i grafik zespołu.",
+      },
+      {
+        title: "Wybór narzędzia i projekt",
+        duration: "kilka dni",
+        body: "Dobieramy narzędzie do rezerwacji, np. gotowe rozwiązanie albo rezerwacje w kalendarzu Google lub Microsoft Bookings, i projektujemy formularz oraz treści wiadomości.",
+        fromYou: "Decyzje o zasadach rezerwacji, odwołań i przypomnień.",
+      },
+      {
+        title: "Konfiguracja i testy",
+        duration: "zwykle 1–3 tygodnie",
+        body: "Konfigurujemy rezerwacje, łączymy je z kalendarzami, CRM i SMS, dodajemy rezerwację na stronę i testujemy na wewnętrznych wizytach.",
+        fromYou: "Dostępy do kalendarzy i strony oraz osoba, która testuje rezerwacje.",
+      },
+      {
+        title: "Start i opieka",
+        duration: "stale",
+        body: "Udostępniamy rezerwacje klientom, pilnujemy działania i dopracowujemy przypomnienia na podstawie pierwszych tygodni.",
+        fromYou: "Informacja o zmianach w grafiku i usługach.",
+      },
+    ],
+  },
+  prerequisites: {
+    title: "Co warto przygotować przed startem",
+    lead: "Lista do przejścia po pierwszej rozmowie. Nie wszystko musi być gotowe od razu, część ustalamy razem.",
+    items: [
+      "Lista usług z czasem trwania i informacją, kto je wykonuje.",
+      "Grafik pracy zespołu i zasady przerw między wizytami.",
+      "Zasady odwołań i przekładania wizyt.",
+      "Informacje, które musicie znać przed wizytą.",
+      "Kalendarz, z którego korzysta zespół: Google, Outlook albo inny.",
+      "Treść obecnych potwierdzeń i przypomnień, jeśli są.",
+      "Osoba po waszej stronie, która będzie właścicielem procesu.",
+    ],
+  },
+  variants: {
+    title: "Warianty rozwiązania",
+    lead: "Zakres dobieramy do skali firmy. Można zacząć od podstawowego wariantu i rozbudowywać go później.",
+    items: [
+      {
+        name: "Podstawowy",
+        description: "Dla małych zespołów, które chcą przede wszystkim skończyć z umawianiem przez telefon.",
+        includes: [
+          "Rezerwacja online połączona z kalendarzem",
+          "Formularz z informacjami przed wizytą",
+          "Potwierdzenie i przypomnienie mailowe",
+          "Link do przełożenia lub odwołania wizyty",
+        ],
+      },
+      {
+        name: "Rozszerzony",
+        description: "Dla firm z kilkoma osobami lub lokalizacjami.",
+        includes: [
+          "Wszystko z wariantu podstawowego",
+          "Przypomnienia SMS z potwierdzeniem obecności",
+          "Zapis klientów i historii wizyt w CRM",
+          "Lista oczekujących na wcześniejszy termin",
+          "Prośba o opinię po wizycie",
+        ],
+      },
+      {
+        name: "Pełny",
+        description: "Dla firm z wizytami w terenie lub dużą liczbą rezerwacji.",
+        includes: [
+          "Wszystko z wariantu rozszerzonego",
+          "Rezerwacje przez czat AI na stronie",
+          "Planowanie tras przy wizytach u klienta",
+          "Przedpłaty lub zadatki przy rezerwacji",
+          "Raport obłożenia i nieobecności",
+        ],
+      },
+    ],
+  },
+  costFactors: {
+    title: "Od czego zależy koszt",
+    lead: "Każde wdrożenie wyceniamy osobno, przed startem. Na cenę wpływa przede wszystkim:",
+    items: [
+      "wybór narzędzia: gotowy system rezerwacji czy rozwiązanie na waszym kalendarzu,",
+      "liczba usług, osób, lokalizacji i zasad grafiku,",
+      "integracja z CRM, stroną i płatnościami,",
+      "przypomnienia SMS i rezerwacje przez czat,",
+      "koszty narzędzi, np. abonamentu systemu rezerwacji i wiadomości SMS.",
+    ],
+  },
+  risks: {
+    title: "Na co uważamy przy wdrożeniu",
+    items: [
+      { risk: "Rezerwacja online nałoży się na termin umówiony telefonicznie.", mitigation: "Wszystkie wizyty, także telefoniczne, trafiają do tego samego kalendarza, z którego korzysta system rezerwacji." },
+      { risk: "Klienci nie będą korzystać z rezerwacji online.", mitigation: "Link do rezerwacji umieszczamy na stronie, w stopce maili i w wiadomościach, a biuro może umawiać przez ten sam system." },
+      { risk: "Przypomnienia trafią na nieaktualny numer.", mitigation: "Numer i mail klient potwierdza przy rezerwacji, a nieudane wysyłki są widoczne dla zespołu." },
+      { risk: "Dane klientów trafią do zewnętrznego narzędzia bez zabezpieczeń.", mitigation: "Wybieramy narzędzia z umową powierzenia danych i zbieramy tylko informacje potrzebne do wizyty." },
+    ],
+  },
+  faq: [
+    { question: "Czy potrzebujemy osobnego systemu do rezerwacji?", answer: "Nie zawsze. Małym zespołom często wystarczają rezerwacje w kalendarzu Google lub Microsoft Bookings. Gotowy system rezerwacji ma sens przy wielu usługach, osobach i lokalizacjach." },
+    { question: "Czy klienci mogą dalej umawiać się telefonicznie?", answer: "Tak. Biuro umawia wizyty w tym samym systemie, więc kalendarz zawsze jest jeden, a klient dostaje te same potwierdzenia i przypomnienia." },
+    { question: "Czy przypomnienia SMS są płatne?", answer: "Tak, wysyłka SMS jest zwykle rozliczana za wiadomość przez bramkę SMS. Przypomnienia mailowe nie generują takich kosztów." },
+    { question: "Czy da się połączyć rezerwacje z naszą stroną?", answer: "Tak. Rezerwację osadzamy na stronie jako widżet albo przycisk, a wizyty zapisują się w kalendarzu i CRM." },
+    { question: "Co z wizytami u klienta, w terenie?", answer: "W wariancie pełnym system uwzględnia czas dojazdu i rejon, a technik dostaje plan dnia z adresami i informacjami od klientów." },
+    { question: "Na czym to działa technicznie?", answer: "Zwykle na kalendarzu Google lub Outlook z narzędziem do rezerwacji, połączonym przez platformę automatyzacji, np. Make lub n8n, z bramką SMS i CRM. Narzędzia dobieramy do tego, czego już używacie." },
+    { question: "Ile trwa wdrożenie?", answer: "Wariant podstawowy często kilka dni. Integracje z CRM, płatnościami i planowanie tras wydłużają projekt. Dokładny plan podajemy po przeglądzie procesu." },
+  ],
+  relatedServiceSlugs: ["automatyzacja-dla-firm-uslugowych", "automatyzacja-w-obsludze-klienta", "chatbot-ai-dla-firmy"],
+  relatedToolSlugs: ["google-workspace", "microsoft-365", "make", "hubspot"],
+  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "gotowa-automatyzacja-czy-budowana-od-zera", "rodo-a-automatyzacja-procesow"],
+};

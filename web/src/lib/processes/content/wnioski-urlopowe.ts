@@ -1,0 +1,231 @@
+import type { ProcessContent } from "../types";
+
+export const wnioskiUrlopowe: ProcessContent = {
+  slug: "wnioski-urlopowe",
+  metaTitle: "Elektroniczne wnioski urlopowe i kalendarz nieobecności",
+  metaDescription:
+    "Jak działają elektroniczne wnioski urlopowe: wniosek w Teams lub formularzu, akceptacja przełożonego, saldo urlopu, kalendarz zespołu i przekazanie do kadr.",
+  primaryKeyword: "elektroniczne wnioski urlopowe",
+  updatedAt: "2026-10-04",
+  hero: {
+    eyebrow: "Proces: kadry",
+    title: "Elektroniczne wnioski urlopowe i kalendarz nieobecności",
+    lead: "Pracownik składa wniosek w Teams, formularzu lub telefonie, przełożony akceptuje go jednym kliknięciem, a urlop sam trafia do kalendarza zespołu i do kadr. Bez papierowych wniosków, maili i arkusza z urlopami. Pokazujemy krok po kroku, jak taki proces wygląda i co jest potrzebne, żeby go wdrożyć.",
+    bullets: [
+      "Wniosek i akceptacja w Teams lub mailu",
+      "Aktualne saldo urlopu widoczne dla pracownika",
+      "Kalendarz nieobecności zespołu",
+    ],
+  },
+  summary: [
+    { label: "Dla kogo", value: "Firmy, w których urlopy rozlicza się na papierze, mailem lub w arkuszu" },
+    { label: "Czas wdrożenia", value: "Zwykle kilka tygodni, zależnie od wariantu" },
+    { label: "Narzędzia", value: "Microsoft 365 lub Google Workspace, program kadrowo-płacowy" },
+    { label: "Po waszej stronie", value: "Osoba z kadr i przełożeni akceptujący wnioski" },
+  ],
+  symptoms: {
+    title: "Po czym poznać, że wnioski urlopowe warto zautomatyzować",
+    lead: "Jeśli rozpoznajecie u siebie dwa lub trzy z tych sygnałów, automatyzacja zwykle szybko się zwraca.",
+    items: [
+      "Wnioski są na papierze albo w mailach i trzeba je potem przepisywać do kadr.",
+      "Pracownicy pytają kadry, ile dni urlopu im zostało.",
+      "Przełożony dowiaduje się o nakładających się urlopach, gdy jest już za późno.",
+      "Arkusz z urlopami ma kilka wersji i nikt nie wie, która jest aktualna.",
+      "Wnioski czekają na akceptację, bo przełożony jest w delegacji.",
+      "Pod koniec roku trwa liczenie zaległych urlopów.",
+    ],
+  },
+  flow: {
+    title: "Jak wygląda wniosek urlopowy po automatyzacji",
+    lead: "Tak przechodzi wniosek od złożenia do rozliczenia w kadrach. Kroki oznaczone jako automatyczne dzieją się bez udziału zespołu.",
+    steps: [
+      {
+        title: "Złożenie wniosku",
+        body: "Pracownik wybiera rodzaj nieobecności i daty w formularzu, Teams albo w telefonie. Widzi od razu swoje saldo urlopu i nieobecności innych osób z zespołu.",
+        actor: "Pracownik",
+        automated: false,
+        tool: "Teams, Forms lub formularz",
+      },
+      {
+        title: "Sprawdzenie wniosku",
+        body: "System liczy dni robocze z uwzględnieniem świąt, sprawdza saldo i oznacza, gdy w tym samym czasie nieobecnych jest zbyt wiele osób z zespołu.",
+        actor: "System",
+        automated: true,
+      },
+      {
+        title: "Akceptacja przełożonego",
+        body: "Przełożony dostaje kartę wniosku w Teams lub mailu z informacją o saldzie i innych nieobecnościach w zespole. Akceptuje lub odrzuca jednym kliknięciem, także w telefonie.",
+        actor: "Przełożony",
+        automated: false,
+        tool: "Teams, mail",
+      },
+      {
+        title: "Zastępstwa i przypomnienia",
+        body: "Gdy wniosek czeka zbyt długo, przełożony dostaje przypomnienie, a podczas jego nieobecności wniosek trafia do zastępcy.",
+        actor: "System",
+        automated: true,
+      },
+      {
+        title: "Kalendarz i informacja dla pracownika",
+        body: "Zaakceptowany urlop trafia do kalendarza zespołu i kalendarza pracownika, a pracownik dostaje potwierdzenie i zaktualizowane saldo.",
+        actor: "System",
+        automated: true,
+        tool: "Kalendarz Outlook lub Google",
+      },
+      {
+        title: "Przekazanie do kadr",
+        body: "Dane o nieobecności trafiają do kadr w formie, którą łatwo wprowadzić do programu kadrowo-płacowego: przez integrację, plik importu albo zestawienie.",
+        actor: "System",
+        automated: true,
+        tool: "Program kadrowo-płacowy",
+      },
+      {
+        title: "Kontrola kadr",
+        body: "Kadry sprawdzają tylko wyjątki, np. nieobecności wymagające dokumentów, takich jak zwolnienie lekarskie, i rozliczają je w programie.",
+        actor: "Kadry",
+        automated: false,
+      },
+      {
+        title: "Plan i podsumowania",
+        body: "Przełożeni widzą plan urlopów zespołu, a kadry podsumowanie wykorzystanych i zaległych urlopów, bez liczenia w arkuszu.",
+        actor: "System",
+        automated: true,
+        tool: "Raport",
+      },
+    ],
+  },
+  example: {
+    title: "Urlopy przed i po automatyzacji",
+    lead: "Przykład firmy z kilkoma działami, w której kadry prowadzi jedna osoba, a część zespołu pracuje zdalnie.",
+    rows: [
+      { label: "Wniosek", before: "Papierowy druk albo mail do przełożonego.", after: "Formularz w Teams z saldem urlopu." },
+      { label: "Akceptacja", before: "Podpis na druku, gdy przełożony jest w biurze.", after: "Akceptacja w Teams, także w telefonie." },
+      { label: "Kalendarz", before: "Arkusz z urlopami uzupełniany ręcznie.", after: "Kalendarz zespołu aktualizowany automatycznie." },
+      { label: "Kadry", before: "Przepisywanie wniosków do programu kadrowego.", after: "Zestawienie lub import gotowy do wprowadzenia." },
+      { label: "Saldo", before: "Pracownicy pytają kadry.", after: "Saldo widoczne przy każdym wniosku." },
+    ],
+    note: "To przykład ilustracyjny. Zakres zawsze ustalamy po rozmowie o waszym procesie.",
+  },
+  outcomes: {
+    title: "Co się zmienia po wdrożeniu",
+    items: [
+      { title: "Mniej pracy kadr", body: "Kadry nie przepisują wniosków ani nie odpowiadają na pytania o saldo urlopu." },
+      { title: "Szybka akceptacja", body: "Przełożony akceptuje wniosek tam, gdzie i tak pracuje, a zastępstwa działają same." },
+      { title: "Widoczność w zespole", body: "Wszyscy widzą, kto i kiedy jest nieobecny, a nakładające się urlopy wychodzą przed akceptacją." },
+      { title: "Porządek w dokumentacji", body: "Każdy wniosek ma historię decyzji i jest zapisany w jednym miejscu." },
+    ],
+  },
+  implementation: {
+    title: "Jak przebiega wdrożenie",
+    lead: "Cztery etapy, po każdym wiecie, co zostało zrobione i co dalej. Przy każdym etapie piszemy, czego potrzebujemy od was.",
+    phases: [
+      {
+        title: "Przegląd procesu",
+        duration: "kilka dni",
+        body: "Rozmawiamy z kadrami i jednym z przełożonych, spisujemy rodzaje nieobecności, ścieżki akceptacji i sposób rozliczania w programie kadrowym.",
+        fromYou: "Godzina rozmowy, obecny wzór wniosku i struktura zespołów.",
+      },
+      {
+        title: "Projekt procesu",
+        duration: "około tygodnia",
+        body: "Projektujemy formularz, ścieżki akceptacji, zastępstwa, zasady sprawdzania wniosków i sposób przekazania danych do kadr.",
+        fromYou: "Decyzje o zasadach akceptacji i o tym, kto widzi czyje nieobecności.",
+      },
+      {
+        title: "Budowa i testy",
+        duration: "zwykle 2–3 tygodnie",
+        body: "Budujemy proces w waszym środowisku, wprowadzamy salda urlopów i testujemy z wybranym zespołem.",
+        fromYou: "Aktualne salda urlopów, dostępy do środowiska i zespół testowy.",
+      },
+      {
+        title: "Start i opieka",
+        duration: "stale",
+        body: "Uruchamiamy proces dla całej firmy, przygotowujemy krótką instrukcję dla pracowników i pilnujemy działania.",
+        fromYou: "Informacja dla zespołu o nowym sposobie składania wniosków.",
+      },
+    ],
+  },
+  prerequisites: {
+    title: "Co warto przygotować przed startem",
+    lead: "Lista do przejścia po pierwszej rozmowie. Nie wszystko musi być gotowe od razu, część ustalamy razem.",
+    items: [
+      "Lista rodzajów nieobecności, które obsługujecie, np. urlop wypoczynkowy, na żądanie, opieka, praca zdalna.",
+      "Struktura zespołów i informacja, kto akceptuje czyje wnioski, z zastępcami.",
+      "Aktualne salda urlopów pracowników.",
+      "Nazwa programu kadrowo-płacowego i informacja, czy ma API lub import.",
+      "Środowisko pracy: Microsoft 365, Google Workspace albo inne.",
+      "Zasady, np. ile osób z zespołu może być nieobecnych jednocześnie.",
+      "Osoba po waszej stronie, która będzie właścicielem procesu.",
+    ],
+  },
+  variants: {
+    title: "Warianty rozwiązania",
+    lead: "Zakres dobieramy do skali firmy. Można zacząć od podstawowego wariantu i rozbudowywać go później.",
+    items: [
+      {
+        name: "Podstawowy",
+        description: "Dla firm, które chcą przede wszystkim skończyć z papierowymi wnioskami.",
+        includes: [
+          "Formularz wniosku w Teams, Forms lub Google",
+          "Akceptacja przełożonego w Teams lub mailu",
+          "Wpis do kalendarza zespołu",
+          "Zestawienie wniosków dla kadr",
+        ],
+      },
+      {
+        name: "Rozszerzony",
+        description: "Dla firm z kilkoma działami i ścieżkami akceptacji.",
+        includes: [
+          "Wszystko z wariantu podstawowego",
+          "Saldo urlopu widoczne przy wniosku",
+          "Liczenie dni roboczych ze świętami",
+          "Zastępstwa i przypomnienia dla przełożonych",
+          "Ostrzeżenie o nakładających się nieobecnościach",
+        ],
+      },
+      {
+        name: "Pełny",
+        description: "Dla firm, które chcą połączyć nieobecności z innymi procesami kadrowymi.",
+        includes: [
+          "Wszystko z wariantu rozszerzonego",
+          "Integracja z programem kadrowo-płacowym",
+          "Plan urlopów na rok i jego realizacja",
+          "Praca zdalna, delegacje i inne rodzaje nieobecności",
+          "Raporty dla kadr i zarządu",
+        ],
+      },
+    ],
+  },
+  costFactors: {
+    title: "Od czego zależy koszt",
+    lead: "Każde wdrożenie wyceniamy osobno, przed startem. Na cenę wpływa przede wszystkim:",
+    items: [
+      "liczba rodzajów nieobecności i ścieżek akceptacji,",
+      "sposób prowadzenia sald urlopów i ich stan na starcie,",
+      "integracja z programem kadrowo-płacowym: zestawienie, plik importu czy API,",
+      "środowisko, w którym budujemy proces,",
+      "koszty narzędzi, zwykle niewielkie, jeśli korzystacie z Microsoft 365 lub Google Workspace.",
+    ],
+  },
+  risks: {
+    title: "Na co uważamy przy wdrożeniu",
+    items: [
+      { risk: "Saldo w systemie nie zgadza się z programem kadrowym.", mitigation: "Na starcie wprowadzamy salda z programu kadrowego i ustalamy, który system jest źródłem prawdy oraz jak często je porównywać." },
+      { risk: "Przełożony nie zaakceptuje wniosku przed urlopem.", mitigation: "Przypomnienia, zastępstwa i informacja dla kadr o wnioskach, które czekają zbyt długo." },
+      { risk: "Pracownicy zobaczą dane, których nie powinni widzieć.", mitigation: "W kalendarzu zespołu widać tylko informację o nieobecności, bez jej rodzaju. Szczegóły widzą przełożony i kadry." },
+      { risk: "Część osób wróci do papierowych wniosków.", mitigation: "Jeden kanał składania wniosków i krótka instrukcja. Kadry nie przyjmują wniosków spoza procesu." },
+    ],
+  },
+  faq: [
+    { question: "Czy elektroniczny wniosek urlopowy jest ważny?", answer: "Przepisy nie wymagają papierowej formy wniosku urlopowego. Ważne, żeby wniosek i decyzja przełożonego były zapisane i możliwe do odtworzenia. Zasady warto opisać w regulaminie pracy." },
+    { question: "Czy musimy kupować system HR?", answer: "Nie zawsze. W wielu firmach proces budujemy na Microsoft 365 z Power Automate albo na Google Workspace, z których już korzystacie. System HR ma sens przy większej liczbie procesów kadrowych." },
+    { question: "Czy system połączy się z naszym programem kadrowym?", answer: "Jeśli program ma API lub import, przekazujemy nieobecności automatycznie. W pozostałych przypadkach kadry dostają gotowe zestawienie do wprowadzenia." },
+    { question: "Czy obsłużycie urlop na żądanie i inne nieobecności?", answer: "Tak. Każdy rodzaj nieobecności może mieć własne zasady, np. inne terminy zgłoszenia, inną ścieżkę akceptacji albo wymóg dokumentu." },
+    { question: "Czy pracownicy widzą nieobecności innych osób?", answer: "To zależy od waszych zasad. Zwykle zespół widzi, kto jest nieobecny, ale bez rodzaju nieobecności. Szczegóły widzą przełożony i kadry." },
+    { question: "Na czym to działa technicznie?", answer: "Najczęściej na Microsoft 365 z Power Automate i kartami akceptacji w Teams albo na Google Workspace z platformą automatyzacji. Narzędzia dobieramy do tego, czego już używacie." },
+    { question: "Ile trwa wdrożenie?", answer: "Wariant podstawowy zwykle kilka tygodni. Integracja z programem kadrowo-płacowym i wiele rodzajów nieobecności wydłużają projekt. Dokładny plan podajemy po przeglądzie procesu." },
+  ],
+  relatedServiceSlugs: ["automatyzacja-dla-hr", "integracje-systemow", "doradztwo-i-optymalizacja-procesow-biznesowych"],
+  relatedToolSlugs: ["power-automate", "microsoft-365", "google-workspace", "make"],
+  relatedArticleSlugs: ["automatyzacja-onboardingu-pracownika", "rodo-a-automatyzacja-procesow", "od-czego-zaczac-mapowanie-procesow"],
+};

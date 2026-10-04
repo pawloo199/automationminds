@@ -26,9 +26,9 @@ export const PROCESSES: ProcessCatalogEntry[] = [
   { slug: "obsluga-zapytan-i-leadow", name: "Obsługa zapytań i leadów", area: "sprzedaz", summary: "Zapytanie z formularza, maila lub reklamy trafia do CRM, do handlowca i dostaje odpowiedź.", status: "planned" },
   { slug: "ofertowanie", name: "Przygotowanie ofert", area: "sprzedaz", summary: "Oferta z szablonu, kalkulacja z cennika i przypomnienia o follow-upie.", status: "live" },
   { slug: "obsluga-reklamacji", name: "Obsługa reklamacji i zwrotów", area: "obsluga", summary: "Zgłoszenie, decyzja, komunikacja z klientem i korekta bez gubienia spraw.", status: "live" },
-  { slug: "umawianie-wizyt", name: "Umawianie wizyt i przypomnienia", area: "obsluga", summary: "Rezerwacja online, potwierdzenia, przypomnienia i przekładanie terminów.", status: "planned" },
+  { slug: "umawianie-wizyt", name: "Umawianie wizyt i przypomnienia", area: "obsluga", summary: "Rezerwacja online, potwierdzenia, przypomnienia i przekładanie terminów.", status: "live" },
   { slug: "onboarding-pracownika", name: "Onboarding nowego pracownika", area: "hr", summary: "Umowa, dostępy, sprzęt i szkolenia uruchamiane z jednej listy zadań.", status: "planned" },
-  { slug: "wnioski-urlopowe", name: "Wnioski urlopowe i nieobecności", area: "hr", summary: "Wniosek, akceptacja przełożonego i kalendarz zespołu bez maili i arkuszy.", status: "planned" },
+  { slug: "wnioski-urlopowe", name: "Wnioski urlopowe i nieobecności", area: "hr", summary: "Wniosek, akceptacja przełożonego i kalendarz zespołu bez maili i arkuszy.", status: "live" },
   { slug: "obieg-umow", name: "Obieg i akceptacja umów", area: "operacje", summary: "Wersje, akceptacje, podpis i przypomnienia o terminach w jednym miejscu.", status: "live" },
   { slug: "przyjmowanie-zamowien", name: "Przyjmowanie zamówień B2B", area: "operacje", summary: "Zamówienia z maili i plików trafiają do systemu po automatycznym odczycie.", status: "live" },
 ];
