@@ -6,6 +6,8 @@ import { getProcessEntry, PROCESSES_HUB_PATH, processPath } from "./catalog";
 import { obiegFakturKosztowych } from "./content/obieg-faktur-kosztowych";
 import { obiegUmow } from "./content/obieg-umow";
 import { obslugaReklamacji } from "./content/obsluga-reklamacji";
+import { obslugaZapytanILeadow } from "./content/obsluga-zapytan-i-leadow";
+import { onboardingPracownika } from "./content/onboarding-pracownika";
 import { ofertowanie } from "./content/ofertowanie";
 import { przyjmowanieZamowien } from "./content/przyjmowanie-zamowien";
 import { przypomnieniaOPlatnosciach } from "./content/przypomnienia-o-platnosciach";
@@ -18,7 +20,7 @@ export * from "./catalog";
 export type * from "./types";
 
 const PROCESS_CONTENT: Record<string, ProcessContent> = Object.fromEntries(
-  [obiegFakturKosztowych, przypomnieniaOPlatnosciach, przyjmowanieZamowien, ofertowanie, obiegUmow, raportyFinansowe, obslugaReklamacji, umawianieWizyt, wnioskiUrlopowe].map((content) => [content.slug, content]),
+  [obiegFakturKosztowych, przypomnieniaOPlatnosciach, przyjmowanieZamowien, ofertowanie, obiegUmow, raportyFinansowe, obslugaReklamacji, umawianieWizyt, wnioskiUrlopowe, obslugaZapytanILeadow, onboardingPracownika].map((content) => [content.slug, content]),
 );
 
 export function getProcessContent(slug: string) {

@@ -17,7 +17,7 @@ export default defineArticle({
     "Pierwsze dni w nowej pracy często mijają na czekaniu na laptopa i dostępy. Pokazujemy, jak poukładać onboarding tak, żeby pilnował się sam, bez wdrażania drogiego systemu HR.",
   categories: ["automatyzacja-procesow"],
   publishedAt: "2026-05-20",
-  updatedAt: "2026-09-30",
+  updatedAt: "2026-10-04",
   imageUrl:
     "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1200&q=80",
   imageAlt: "Rozmowa powitalna z nową osobą w zespole",
@@ -88,7 +88,7 @@ export default defineArticle({
     "Przy ocenie opłacalności nie licz tylko godzin HR. Policz też dni, w których nowa osoba czeka na dostępy zamiast pracować, i ryzyko związane z kontami, które nie zostały zablokowane po odejściu pracownika. Jak zebrać te liczby w jeden rachunek, pokazujemy w artykule [jak mierzyć ROI automatyzacji](/poradnik/jak-mierzyc-roi-automatyzacji).",
     "Jeśli zastanawiasz się, czy lepiej zbudować to w Power Automate, bo firma pracuje w Microsoft 365, czy w Make albo n8n, porównanie znajdziesz w tekście [jak wybrać narzędzie do automatyzacji](/poradnik/jak-wybrac-narzedzie-do-automatyzacji). A przed startem warto przejrzeć listę [błędów przy pierwszym wdrożeniu automatyzacji](/poradnik/bledy-przy-pierwszym-wdrozeniu-automatyzacji).",
     "## Od czego zacząć",
-    "Jeśli zatrudniasz kilka osób w roku, zacznij od jednej rzeczy: listy zadań uruchamianej podpisaniem umowy, z przypomnieniami dla osób odpowiedzialnych. Już to usuwa większość chaosu. Zakładanie kont i offboarding dołożysz w drugim kroku.",
+    "Jeśli zatrudniasz kilka osób w roku, zacznij od jednej rzeczy: listy zadań uruchamianej podpisaniem umowy, z przypomnieniami dla osób odpowiedzialnych. Już to usuwa większość chaosu. Zakładanie kont i offboarding dołożysz w drugim kroku. Jak wygląda cały proces po wdrożeniu, z wariantami zakresu i etapami prac, opisujemy na stronie [onboarding i offboarding pracownika](/procesy/onboarding-pracownika).",
     "Jeśli zatrudniasz regularnie albo w kilku lokalizacjach, lepiej od razu zaprojektować całość, łącznie z offboardingiem i bezpieczeństwem danych. Tym zajmujemy się przy [automatyzacji dla HR](/uslugi/automatyzacja-dla-hr). Onboarding to zresztą jeden z pięciu procesów, które najczęściej polecamy na start, obok faktur i obsługi zapytań. Pozostałe opisujemy w artykule [co zautomatyzować w małej firmie](/poradnik/5-procesow-do-automatyzacji-w-malej-firmie).",
   ].join("\n\n"),
   faq: [

@@ -1,0 +1,232 @@
+import type { ProcessContent } from "../types";
+
+export const onboardingPracownika: ProcessContent = {
+  slug: "onboarding-pracownika",
+  metaTitle: "Onboarding i offboarding pracownika: wdrożenie procesu",
+  metaDescription:
+    "Wdrażamy proces przyjęcia i odejścia pracownika: konta i dostępy w Microsoft 365 lub Google, sprzęt, dokumenty i lista zadań. Etapy, warianty, koszty.",
+  primaryKeyword: "onboarding i offboarding pracownika",
+  updatedAt: "2026-10-04",
+  hero: {
+    eyebrow: "Proces: kadry",
+    title: "Onboarding i offboarding pracownika: wdrożenie procesu",
+    lead: "Podpisana umowa uruchamia przygotowanie stanowiska: konta, dostępy, sprzęt, dokumenty i plan pierwszych dni. Gdy pracownik odchodzi, ten sam proces odbiera dostępy i pilnuje zwrotu sprzętu. Projektujemy i wdrażamy go na waszych narzędziach, z jasnym zakresem i wyceną przed startem.",
+    bullets: [
+      "Konta i dostępy według stanowiska",
+      "Lista zadań dla kadr, IT, przełożonego i biura",
+      "Offboarding z blokadą kont i zwrotem sprzętu",
+    ],
+  },
+  summary: [
+    { label: "Dla kogo", value: "Firmy, które regularnie zatrudniają lub mają wiele systemów i dostępów" },
+    { label: "Czas wdrożenia", value: "Zwykle kilka tygodni, zależnie od wariantu" },
+    { label: "Narzędzia", value: "Microsoft 365 lub Google Workspace, program kadrowy, lista zadań" },
+    { label: "Po waszej stronie", value: "Osoba z kadr, administrator IT i przełożeni" },
+  ],
+  symptoms: {
+    title: "Kiedy warto wdrożyć uporządkowany onboarding i offboarding",
+    lead: "Jeśli rozpoznajecie u siebie dwa lub trzy z tych sygnałów, wdrożenie zwykle szybko się zwraca.",
+    items: [
+      "Nikt nie ma pełnej listy systemów, do których dostęp ma dany pracownik.",
+      "Konta osób, które odeszły, są aktywne jeszcze tygodniami.",
+      "Sprzęt firmowy nie jest przypisany do osób i trudno go odzyskać.",
+      "Każdy przełożony przyjmuje nowe osoby po swojemu.",
+      "Kadry, IT i biuro dowiadują się o nowej osobie w różnym czasie.",
+      "Przy audycie bezpieczeństwa albo RODO trudno wykazać, kto ma dostęp do jakich danych.",
+    ],
+  },
+  flow: {
+    title: "Jak wygląda proces po wdrożeniu",
+    lead: "Tak przechodzi pracownik od podpisania umowy do pierwszego dnia, a potem do odejścia. Kroki oznaczone jako automatyczne dzieją się bez udziału zespołu.",
+    steps: [
+      {
+        title: "Zgłoszenie zatrudnienia",
+        body: "Kadry wprowadzają nową osobę raz: imię i nazwisko, stanowisko, dział, przełożony, data startu. To jedno zgłoszenie uruchamia cały proces.",
+        actor: "Kadry",
+        automated: false,
+        tool: "Formularz lub program kadrowy",
+      },
+      {
+        title: "Lista zadań dla działów",
+        body: "System tworzy zadania z terminami dla kadr, IT, biura i przełożonego, zależnie od stanowiska: dokumenty, badania, szkolenie BHP, sprzęt, plan pierwszego tygodnia.",
+        actor: "System",
+        automated: true,
+        tool: "Planner, Asana lub Airtable",
+      },
+      {
+        title: "Konta i dostępy",
+        body: "Konto w Microsoft 365 lub Google Workspace powstaje automatycznie, razem z grupami, kanałami Teams i folderami. Dostępy do pozostałych systemów są zakładane według profilu stanowiska albo trafiają jako zadanie do administratora.",
+        actor: "System",
+        automated: true,
+        tool: "Microsoft 365, Google Workspace",
+      },
+      {
+        title: "Sprzęt",
+        body: "Biuro lub IT dostaje zadanie przygotowania sprzętu według profilu stanowiska, a wydany sprzęt zapisuje się w ewidencji przy pracowniku.",
+        actor: "IT lub biuro",
+        automated: false,
+        tool: "Ewidencja sprzętu",
+      },
+      {
+        title: "Kontrola gotowości",
+        body: "Kilka dni przed startem przełożony i kadry widzą, co jest gotowe, a co nie. Opóźnione zadania wywołują przypomnienia.",
+        actor: "System",
+        automated: true,
+      },
+      {
+        title: "Pierwsze dni",
+        body: "Nowa osoba dostaje wiadomość powitalną z planem pierwszych dni, a przełożony przypomnienia o rozmowach po pierwszym tygodniu i miesiącu.",
+        actor: "Przełożony",
+        automated: false,
+      },
+      {
+        title: "Rejestr dostępów",
+        body: "Wszystkie nadane konta, uprawnienia i sprzęt są zapisane przy pracowniku. Zmiana stanowiska aktualizuje dostępy według nowego profilu.",
+        actor: "System",
+        automated: true,
+        tool: "Rejestr dostępów",
+      },
+      {
+        title: "Offboarding",
+        body: "Wprowadzenie daty końca umowy uruchamia listę: blokada kont w dniu odejścia, przekazanie skrzynki i plików, zwrot sprzętu, zmiana haseł do kont wspólnych. Każdy krok ma właściciela i termin.",
+        actor: "System",
+        automated: true,
+        tool: "Microsoft 365, Google Workspace",
+      },
+    ],
+  },
+  example: {
+    title: "Przyjęcie i odejście pracownika przed i po wdrożeniu",
+    lead: "Przykład firmy usługowej, która zatrudnia regularnie, a IT prowadzi zewnętrzna firma.",
+    rows: [
+      { label: "Informacja", before: "Kadry piszą maile do IT i biura, każdy w innym czasie.", after: "Jedno zgłoszenie uruchamia zadania dla wszystkich." },
+      { label: "Konta", before: "Zakładane ręcznie, często w dniu startu.", after: "Konto i grupy gotowe przed pierwszym dniem." },
+      { label: "Sprzęt", before: "Bez ewidencji, wydawany na słowo.", after: "Zapisany przy pracowniku, z protokołem." },
+      { label: "Odejście", before: "Konta aktywne jeszcze przez kilka tygodni.", after: "Blokada w dniu odejścia, zwrot sprzętu pilnowany." },
+      { label: "Audyt", before: "Trudno ustalić, kto ma dostęp do czego.", after: "Rejestr dostępów przy każdym pracowniku." },
+    ],
+    note: "To przykład ilustracyjny. Zakres zawsze ustalamy po rozmowie o waszym procesie.",
+  },
+  outcomes: {
+    title: "Co dostajecie po wdrożeniu",
+    items: [
+      { title: "Gotowe stanowisko pierwszego dnia", body: "Konta, sprzęt i plan pierwszych dni są przygotowane przed startem nowej osoby." },
+      { title: "Bezpieczne odejścia", body: "Dostępy są odbierane w dniu odejścia, a sprzęt i dane wracają do firmy." },
+      { title: "Jeden standard", body: "Każdy dział przyjmuje nowe osoby według tej samej, opisanej ścieżki." },
+      { title: "Wiedza o dostępach", body: "Rejestr pokazuje, kto ma dostęp do jakich systemów i danych, co ułatwia audyty i spełnienie wymogów RODO." },
+    ],
+  },
+  implementation: {
+    title: "Jak przebiega wdrożenie",
+    lead: "Cztery etapy, po każdym wiecie, co zostało zrobione i co dalej. Przy każdym etapie piszemy, czego potrzebujemy od was.",
+    phases: [
+      {
+        title: "Przegląd i inwentaryzacja",
+        duration: "kilka dni",
+        body: "Spisujemy z kadrami i IT, jak dziś wygląda przyjęcie i odejście pracownika, oraz robimy listę systemów, kont wspólnych i sprzętu.",
+        fromYou: "Godzina rozmowy z kadrami i IT oraz lista używanych systemów.",
+      },
+      {
+        title: "Profile stanowisk i projekt",
+        duration: "około tygodnia",
+        body: "Dla każdego rodzaju stanowiska ustalamy dostępy, sprzęt i zadania. Projektujemy listy zadań dla przyjęcia i odejścia oraz rejestr dostępów.",
+        fromYou: "Decyzje, jakie dostępy i sprzęt należą się na danym stanowisku.",
+      },
+      {
+        title: "Budowa i testy",
+        duration: "zwykle 2–4 tygodnie",
+        body: "Budujemy proces w waszym środowisku, w tym automatyczne zakładanie i blokowanie kont. Testujemy na kontach testowych i przy najbliższym zatrudnieniu.",
+        fromYou: "Uprawnienia administratora lub współpraca z waszym IT oraz osoba testująca.",
+      },
+      {
+        title: "Start i opieka",
+        duration: "stale",
+        body: "Przełączamy przyjęcia i odejścia na nowy proces, uzupełniamy rejestr dostępów obecnych pracowników i aktualizujemy profile przy zmianach.",
+        fromYou: "Informacja o nowych systemach i stanowiskach.",
+      },
+    ],
+  },
+  prerequisites: {
+    title: "Co warto przygotować przed startem",
+    lead: "Lista do przejścia po pierwszej rozmowie. Nie wszystko musi być gotowe od razu, część ustalamy razem.",
+    items: [
+      "Lista systemów, do których pracownicy mają dostęp, z osobami, które nimi zarządzają.",
+      "Lista stanowisk lub grup stanowisk z podobnymi dostępami.",
+      "Informacja, kto administruje Microsoft 365 lub Google Workspace.",
+      "Lista kont wspólnych, np. w mediach społecznościowych i serwisach dostawców.",
+      "Ewidencja sprzętu, jeśli istnieje, nawet w arkuszu.",
+      "Obecna lista rzeczy do zrobienia przy przyjęciu i odejściu pracownika.",
+      "Osoba po waszej stronie, która będzie właścicielem procesu.",
+    ],
+  },
+  variants: {
+    title: "Warianty wdrożenia",
+    lead: "Zakres dobieramy do skali firmy. Można zacząć od podstawowego wariantu i rozbudowywać go później.",
+    items: [
+      {
+        name: "Podstawowy",
+        description: "Dla firm, które chcą przede wszystkim mieć jedną listę zadań dla wszystkich działów.",
+        includes: [
+          "Zgłoszenie zatrudnienia i odejścia w jednym formularzu",
+          "Listy zadań dla kadr, IT, biura i przełożonego",
+          "Przypomnienia o opóźnionych zadaniach",
+          "Wiadomość powitalna dla nowej osoby",
+        ],
+      },
+      {
+        name: "Rozszerzony",
+        description: "Dla firm pracujących w Microsoft 365 lub Google Workspace.",
+        includes: [
+          "Wszystko z wariantu podstawowego",
+          "Automatyczne zakładanie i blokowanie kont",
+          "Grupy, kanały i foldery według profilu stanowiska",
+          "Ewidencja sprzętu przy pracowniku",
+          "Przekazanie skrzynki i plików przy odejściu",
+        ],
+      },
+      {
+        name: "Pełny",
+        description: "Dla firm z wieloma systemami lub wymaganiami bezpieczeństwa.",
+        includes: [
+          "Wszystko z wariantu rozszerzonego",
+          "Rejestr dostępów do wszystkich systemów",
+          "Zmiana dostępów przy zmianie stanowiska",
+          "Integracja z programem kadrowym",
+          "Okresowy przegląd dostępów przez przełożonych",
+        ],
+      },
+    ],
+  },
+  costFactors: {
+    title: "Od czego zależy koszt",
+    lead: "Każde wdrożenie wyceniamy osobno, przed startem. Na cenę wpływa przede wszystkim:",
+    items: [
+      "liczba systemów i to, ile z nich pozwala zakładać konta automatycznie,",
+      "liczba profili stanowisk i różnic między nimi,",
+      "integracja z programem kadrowym,",
+      "zakres rejestru dostępów i przeglądów,",
+      "koszty narzędzi, zwykle niewielkie, jeśli korzystacie z Microsoft 365 lub Google Workspace.",
+    ],
+  },
+  risks: {
+    title: "Na co uważamy przy wdrożeniu",
+    items: [
+      { risk: "Automatyczne zakładanie kont nada zbyt szerokie uprawnienia.", mitigation: "Profile stanowisk zatwierdzacie wy, a dostępy do wrażliwych systemów zawsze wymagają akceptacji." },
+      { risk: "Blokada kont zadziała za wcześnie lub za późno.", mitigation: "Blokada opiera się na dacie końca umowy z kadr, a kadry i przełożony dostają informację przed jej wykonaniem." },
+      { risk: "Część systemów nie pozwala zakładać kont automatycznie.", mitigation: "Takie konta trafiają jako zadanie do właściciela systemu, z terminem i przypomnieniem." },
+      { risk: "Dane pracowników będą widoczne dla zbyt wielu osób.", mitigation: "Każdy dział widzi tylko swoje zadania, a dane kadrowe zostają w kadrach." },
+    ],
+  },
+  faq: [
+    { question: "Czym ta usługa różni się od listy zadań w arkuszu?", answer: "Arkusz trzeba pamiętać uzupełnić. Tu jedno zgłoszenie uruchamia zadania dla wszystkich działów, zakłada konta i pilnuje terminów, a przy odejściu odbiera dostępy." },
+    { question: "Czy zakładanie kont działa w Microsoft 365 i Google Workspace?", answer: "Tak. W obu środowiskach konto, grupy i foldery można zakładać i blokować automatycznie, z uprawnieniami nadanymi przez administratora." },
+    { question: "Co, jeśli IT prowadzi zewnętrzna firma?", answer: "Proces wysyła zadania także do zewnętrznego IT, a zakładanie kont budujemy razem z nim, na uprawnieniach, które przyznacie." },
+    { question: "Czy obejmuje to dokumenty kadrowe i umowy?", answer: "Proces pilnuje zadań związanych z dokumentami, np. badań czy szkolenia BHP. Same dokumenty kadrowe zostają w waszym programie kadrowym lub teczkach osobowych." },
+    { question: "Czy da się wdrożyć sam offboarding?", answer: "Tak. Bywa to dobry pierwszy krok, bo zamyka najpoważniejsze ryzyko: aktywne konta osób, które już nie pracują w firmie." },
+    { question: "Na czym to działa technicznie?", answer: "Najczęściej na Microsoft 365 z Power Automate albo na Google Workspace z platformą automatyzacji, np. Make lub n8n, z listą zadań w Plannerze, Asanie lub Airtable." },
+    { question: "Ile trwa wdrożenie?", answer: "Wariant podstawowy zwykle kilka tygodni. Automatyczne konta w wielu systemach i rejestr dostępów wydłużają projekt. Dokładny plan i wycenę podajemy po przeglądzie." },
+  ],
+  relatedServiceSlugs: ["automatyzacja-dla-hr", "integracje-systemow", "porzadkowanie-i-strukturyzowanie-danych"],
+  relatedToolSlugs: ["power-automate", "microsoft-365", "google-workspace", "n8n"],
+  relatedArticleSlugs: ["automatyzacja-onboardingu-pracownika", "rodo-a-automatyzacja-procesow", "jak-wybrac-narzedzie-do-automatyzacji"],
+};

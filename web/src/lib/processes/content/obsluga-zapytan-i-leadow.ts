@@ -1,0 +1,233 @@
+import type { ProcessContent } from "../types";
+
+export const obslugaZapytanILeadow: ProcessContent = {
+  slug: "obsluga-zapytan-i-leadow",
+  metaTitle: "Obsługa zapytań ofertowych: wdrożenie od formularza do CRM",
+  metaDescription:
+    "Wdrażamy proces obsługi zapytań ofertowych: wszystkie kanały w jednym CRM, przydział do handlowca, odpowiedź w kilka minut i kontrola terminów. Etapy, warianty, koszty.",
+  primaryKeyword: "obsługa zapytań ofertowych",
+  updatedAt: "2026-10-04",
+  hero: {
+    eyebrow: "Proces: sprzedaż",
+    title: "Obsługa zapytań ofertowych: wdrożenie procesu od formularza do CRM",
+    lead: "Zapytania z formularza, maila, telefonu, reklam i portali branżowych trafiają do jednego CRM, mają handlowca i termin odpowiedzi. Projektujemy i wdrażamy ten proces na waszych narzędziach, z jasnym zakresem, etapami i wyceną przed startem.",
+    bullets: [
+      "Wszystkie kanały zapytań w jednym miejscu",
+      "Przydział handlowca i termin odpowiedzi",
+      "Przekazanie do przygotowania oferty",
+    ],
+  },
+  summary: [
+    { label: "Dla kogo", value: "Firmy B2B, które dostają zapytania kilkoma kanałami" },
+    { label: "Czas wdrożenia", value: "Zwykle kilka tygodni, zależnie od wariantu" },
+    { label: "Narzędzia", value: "CRM, formularze, poczta, reklamy, platforma automatyzacji" },
+    { label: "Po waszej stronie", value: "Szef sprzedaży i dostęp do kanałów, z których przychodzą zapytania" },
+  ],
+  symptoms: {
+    title: "Kiedy warto wdrożyć uporządkowaną obsługę zapytań",
+    lead: "Jeśli rozpoznajecie u siebie dwa lub trzy z tych sygnałów, wdrożenie zwykle szybko się zwraca.",
+    items: [
+      "Zapytania przychodzą na kilka skrzynek i do prywatnych telefonów handlowców.",
+      "Nie da się powiedzieć, ile zapytań przyszło w zeszłym miesiącu i ile z nich zamieniło się w sprzedaż.",
+      "Leady z reklam leżą w panelu reklamowym, dopóki ktoś ich nie pobierze.",
+      "Zapytania z portali branżowych i porównywarek są przepisywane ręcznie.",
+      "Nie wiadomo, który handlowiec odpowiada za które zapytanie.",
+      "CRM jest, ale zapytania trafiają do niego z opóźnieniem albo wcale.",
+    ],
+  },
+  flow: {
+    title: "Jak wygląda obsługa zapytania po wdrożeniu",
+    lead: "Tak przechodzi zapytanie od pierwszego kontaktu do przekazania do oferty. Kroki oznaczone jako automatyczne dzieją się bez udziału zespołu.",
+    steps: [
+      {
+        title: "Zebranie zapytań ze wszystkich kanałów",
+        body: "Formularz na stronie, skrzynka ofertowa, formularze reklam, portale branżowe i czat zasilają jeden CRM. Zapytania przyjęte telefonicznie zespół wpisuje przez krótki formularz.",
+        actor: "System",
+        automated: true,
+        tool: "Formularze, poczta, reklamy, CRM",
+      },
+      {
+        title: "Uzupełnienie i deduplikacja",
+        body: "System sprawdza, czy firma lub osoba jest już w CRM, łączy zapytanie z historią klienta i uzupełnia dane firmy z rejestrów po NIP.",
+        actor: "System",
+        automated: true,
+        tool: "CRM, rejestry firm",
+      },
+      {
+        title: "Przydział do handlowca",
+        body: "Zapytanie trafia do opiekuna klienta albo według ustalonych zasad: regionu, produktu, wielkości zamówienia lub kolejki. Handlowiec dostaje powiadomienie tam, gdzie pracuje.",
+        actor: "System",
+        automated: true,
+        tool: "CRM, Teams, Slack",
+      },
+      {
+        title: "Potwierdzenie dla klienta",
+        body: "Klient od razu dostaje potwierdzenie z imieniem handlowca i informacją, kiedy może spodziewać się kontaktu.",
+        actor: "System",
+        automated: true,
+        tool: "Poczta",
+      },
+      {
+        title: "Pierwszy kontakt",
+        body: "Handlowiec dzwoni lub pisze do klienta, doprecyzowuje potrzeby i zapisuje ustalenia w CRM. Ta część zostaje w rękach człowieka.",
+        actor: "Handlowiec",
+        automated: false,
+        tool: "CRM",
+      },
+      {
+        title: "Kontrola terminów",
+        body: "Gdy zapytanie czeka na kontakt dłużej niż ustalony czas, handlowiec dostaje przypomnienie, a potem informację dostaje szef sprzedaży.",
+        actor: "System",
+        automated: true,
+      },
+      {
+        title: "Kwalifikacja",
+        body: "Handlowiec oznacza, czy zapytanie jest szansą sprzedaży, a jeśli nie, wybiera powód. Szanse przechodzą do przygotowania oferty, pozostałe do raportu.",
+        actor: "Handlowiec",
+        automated: false,
+        tool: "CRM",
+      },
+      {
+        title: "Raport źródeł i wyników",
+        body: "Raport pokazuje liczbę zapytań według kanałów i handlowców, czas pierwszej odpowiedzi i to, ile zapytań zamieniło się w oferty i sprzedaż.",
+        actor: "System",
+        automated: true,
+        tool: "CRM, raport",
+      },
+    ],
+  },
+  example: {
+    title: "Zapytania przed i po wdrożeniu",
+    lead: "Przykład firmy produkcyjnej, która dostaje zapytania przez stronę, portal branżowy, targi i telefon.",
+    rows: [
+      { label: "Kanały", before: "Trzy skrzynki, portal i telefony handlowców.", after: "Wszystkie zapytania w jednym CRM." },
+      { label: "Przydział", before: "Kto pierwszy zobaczy, ten odpowiada.", after: "Przydział według regionu i produktu." },
+      { label: "Klient", before: "Czeka bez informacji.", after: "Dostaje potwierdzenie z imieniem handlowca." },
+      { label: "Terminy", before: "Nikt nie wie, na co nie odpowiedziano.", after: "Przypomnienie i informacja dla szefa sprzedaży." },
+      { label: "Wiedza", before: "Brak danych o skuteczności kanałów.", after: "Raport zapytań, odpowiedzi i sprzedaży według źródeł." },
+    ],
+    note: "To przykład ilustracyjny. Zakres zawsze ustalamy po rozmowie o waszym procesie.",
+  },
+  outcomes: {
+    title: "Co dostajecie po wdrożeniu",
+    items: [
+      { title: "Jedno miejsce na zapytania", body: "Każde zapytanie, z każdego kanału, jest w CRM i ma właściciela." },
+      { title: "Kontrola czasu odpowiedzi", body: "Widać, które zapytania czekają, a przypomnienia działają same." },
+      { title: "Dane o kanałach", body: "Wiecie, które źródła przynoszą zapytania, a które sprzedaż, i możecie lepiej planować marketing." },
+      { title: "Płynne przejście do oferty", body: "Zakwalifikowane zapytanie trafia od razu do przygotowania oferty, z kompletem danych." },
+    ],
+  },
+  implementation: {
+    title: "Jak przebiega wdrożenie",
+    lead: "Cztery etapy, po każdym wiecie, co zostało zrobione i co dalej. Przy każdym etapie piszemy, czego potrzebujemy od was.",
+    phases: [
+      {
+        title: "Przegląd kanałów i procesu",
+        duration: "kilka dni",
+        body: "Spisujemy wszystkie kanały, którymi przychodzą zapytania, sprawdzamy, co dzieje się z nimi dziś, i ustalamy zasady przydziału.",
+        fromYou: "Godzina rozmowy z szefem sprzedaży i lista kanałów, w tym portali i reklam.",
+      },
+      {
+        title: "Projekt",
+        duration: "około tygodnia",
+        body: "Projektujemy pola w CRM, zasady przydziału i terminów, treści potwierdzeń i raport. Jeśli nie macie CRM, pomagamy go wybrać.",
+        fromYou: "Decyzje o zasadach przydziału, czasie odpowiedzi i eskalacji.",
+      },
+      {
+        title: "Budowa i testy",
+        duration: "zwykle 2–4 tygodnie",
+        body: "Podłączamy kolejne kanały do CRM, budujemy przydział, przypomnienia i raport, testujemy na prawdziwych zapytaniach.",
+        fromYou: "Dostępy do formularzy, skrzynek, kont reklamowych, portali i CRM.",
+      },
+      {
+        title: "Start i opieka",
+        duration: "stale",
+        body: "Przełączamy zespół na nowy proces, szkolimy handlowców i pilnujemy, żeby żaden kanał nie przestał wysyłać zapytań.",
+        fromYou: "Informacja o nowych kanałach i zmianach w zespole sprzedaży.",
+      },
+    ],
+  },
+  prerequisites: {
+    title: "Co warto przygotować przed startem",
+    lead: "Lista do przejścia po pierwszej rozmowie. Nie wszystko musi być gotowe od razu, część ustalamy razem.",
+    items: [
+      "Lista kanałów, którymi przychodzą zapytania, z dostępami do nich.",
+      "Informacja, jakiego CRM używacie, albo decyzja o jego wyborze.",
+      "Zasady przydziału: regiony, produkty, opiekunowie stałych klientów.",
+      "Oczekiwany czas pierwszej odpowiedzi i kto ma być informowany o opóźnieniach.",
+      "Treść formularzy i zgód marketingowych, które dziś zbieracie.",
+      "Lista handlowców i ich zastępców.",
+      "Osoba po waszej stronie, która będzie właścicielem procesu.",
+    ],
+  },
+  variants: {
+    title: "Warianty wdrożenia",
+    lead: "Zakres dobieramy do skali firmy. Można zacząć od podstawowego wariantu i rozbudowywać go później.",
+    items: [
+      {
+        name: "Podstawowy",
+        description: "Dla firm, które chcą przede wszystkim, żeby zapytania ze strony nie ginęły.",
+        includes: [
+          "Formularz na stronie i skrzynka ofertowa połączone z CRM",
+          "Sprawdzanie duplikatów",
+          "Przydział handlowca i powiadomienie",
+          "Potwierdzenie dla klienta",
+        ],
+      },
+      {
+        name: "Rozszerzony",
+        description: "Dla firm z kilkoma kanałami i zespołem handlowców.",
+        includes: [
+          "Wszystko z wariantu podstawowego",
+          "Formularze reklam, portale branżowe i czat",
+          "Zasady przydziału według regionu lub produktu",
+          "Przypomnienia i eskalacja do szefa sprzedaży",
+          "Raport zapytań według źródeł",
+        ],
+      },
+      {
+        name: "Pełny",
+        description: "Dla firm, które chcą połączyć zapytania z całym procesem sprzedaży.",
+        includes: [
+          "Wszystko z wariantu rozszerzonego",
+          "Odczyt zapytań z maili i załączników przez AI",
+          "Uzupełnianie danych firm z rejestrów",
+          "Przekazanie do procesu przygotowania ofert",
+          "Raport od zapytania do sprzedaży i faktury",
+        ],
+      },
+    ],
+  },
+  costFactors: {
+    title: "Od czego zależy koszt",
+    lead: "Każde wdrożenie wyceniamy osobno, przed startem. Na cenę wpływa przede wszystkim:",
+    items: [
+      "liczba kanałów i to, czy mają gotowe integracje z CRM,",
+      "stan CRM i danych klientów, w tym liczba duplikatów do uporządkowania,",
+      "złożoność zasad przydziału i eskalacji,",
+      "zakres raportu i połączenie z procesem ofertowania,",
+      "koszty narzędzi, np. licencji CRM, platformy automatyzacji i modeli AI.",
+    ],
+  },
+  risks: {
+    title: "Na co uważamy przy wdrożeniu",
+    items: [
+      { risk: "Jeden z kanałów przestanie przesyłać zapytania.", mitigation: "Monitorujemy połączenia i dostajemy powiadomienie, gdy z kanału długo nie przychodzą zapytania." },
+      { risk: "Handlowcy będą dalej przyjmować zapytania poza CRM.", mitigation: "Prosty formularz do zapytań telefonicznych i zasada, że raport sprzedaży liczy tylko zapytania z CRM." },
+      { risk: "Ten sam klient pojawi się w CRM kilka razy.", mitigation: "Sprawdzanie duplikatów po mailu, telefonie i NIP przed utworzeniem nowego rekordu." },
+      { risk: "Dane z formularzy będą przetwarzane bez właściwych zgód.", mitigation: "Przeglądamy treść formularzy i zgód, a w CRM zapisujemy, na co klient wyraził zgodę." },
+    ],
+  },
+  faq: [
+    { question: "Czym ta usługa różni się od samego wdrożenia CRM?", answer: "CRM to narzędzie. Tu wdrażamy cały proces wokół niego: podłączenie wszystkich kanałów, zasady przydziału, terminy, potwierdzenia i raport. CRM może być już u was albo pomagamy go wybrać." },
+    { question: "Czy podłączycie formularze z reklam i portali branżowych?", answer: "Tak, jeśli dany kanał ma integrację lub wysyła powiadomienia mailowe. Formularze reklam, popularne portale i czat na stronie podłączamy zwykle bez problemu." },
+    { question: "Z jakimi CRM pracujecie?", answer: "Najczęściej z Pipedrive i HubSpot, a także z innymi systemami, które mają API. Przy prostszych potrzebach budujemy bazę zapytań w Airtable." },
+    { question: "Czy klient dostanie automatyczną odpowiedź na zapytanie?", answer: "Dostanie potwierdzenie z informacją, kto się z nim skontaktuje i kiedy. Merytoryczną odpowiedź przygotowuje handlowiec." },
+    { question: "Co dzieje się z zapytaniem po kwalifikacji?", answer: "Szansa sprzedaży przechodzi do przygotowania oferty. Ten etap opisujemy osobno na stronie procesu przygotowania ofert, a oba procesy można wdrożyć razem." },
+    { question: "Na czym to działa technicznie?", answer: "Na waszym CRM połączonym z formularzami, pocztą i kanałami reklamowymi przez integracje lub platformę automatyzacji, np. Make lub n8n." },
+    { question: "Ile trwa wdrożenie?", answer: "Wariant podstawowy zwykle kilka tygodni. Każdy kolejny kanał i integracja z ofertowaniem wydłużają projekt. Dokładny plan i wycenę podajemy po przeglądzie kanałów." },
+  ],
+  relatedServiceSlugs: ["automatyzacja-sprzedazy", "automatyzacja-marketingu", "integracje-systemow"],
+  relatedToolSlugs: ["pipedrive", "hubspot", "make", "n8n"],
+  relatedArticleSlugs: ["automatyzacja-obslugi-leadow-sprzedazowych", "integracja-crm-z-fakturowaniem", "rodo-a-automatyzacja-procesow"],
+};

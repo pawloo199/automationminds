@@ -18,7 +18,7 @@ export default defineArticle({
     "Zapytanie od klienta traci wartość z każdą godziną bez odpowiedzi. Pokazujemy, jak poukładać drogę leada od formularza do rozmowy handlowej, żeby nic nie ginęło, a handlowcy nie tracili czasu na przepisywanie.",
   categories: ["automatyzacja-procesow"],
   publishedAt: "2026-03-28",
-  updatedAt: "2026-09-30",
+  updatedAt: "2026-10-04",
   imageUrl:
     "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1200&q=80",
   imageAlt: "Handlowcy rozmawiający przy laptopie w biurze",
@@ -90,7 +90,7 @@ export default defineArticle({
     "## Po sprzedaży: faktura i dalsza współpraca",
     "Droga klienta nie kończy się na wygranej szansie. Gdy handlowiec oznaczy sprzedaż w CRM, może automatycznie powstać faktura, a informacja o płatności wrócić do handlowca. Opisujemy to w artykule o [integracji CRM z systemem do fakturowania](/poradnik/integracja-crm-z-fakturowaniem). Obsługa leadów i faktury to zresztą dwa z pięciu procesów, które najczęściej polecamy na start. Pozostałe znajdziesz w tekście [co zautomatyzować w małej firmie](/poradnik/5-procesow-do-automatyzacji-w-malej-firmie).",
     "## Od czego zacząć",
-    "Zacznij od jednego źródła leadów, zwykle formularza na stronie, i jednej ścieżki: zapis w CRM, potwierdzenie dla klienta, zadanie dla handlowca, przypomnienie po kilku godzinach. Kiedy to działa stabilnie, dołóż kolejne kanały, scoring i follow-up.",
+    "Zacznij od jednego źródła leadów, zwykle formularza na stronie, i jednej ścieżki: zapis w CRM, potwierdzenie dla klienta, zadanie dla handlowca, przypomnienie po kilku godzinach. Kiedy to działa stabilnie, dołóż kolejne kanały, scoring i follow-up. Jak taki proces wygląda po wdrożeniu, etap po etapie i z wariantami zakresu, pokazujemy na stronie [obsługa zapytań ofertowych](/procesy/obsluga-zapytan-i-leadow).",
     "Jeśli chcesz od razu zaprojektować całą drogę klienta, od reklamy przez pierwszą rozmowę po fakturę, zobacz, jak pracujemy przy [automatyzacji sprzedaży](/uslugi/automatyzacja-sprzedazy).",
   ].join("\n\n"),
   faq: [
