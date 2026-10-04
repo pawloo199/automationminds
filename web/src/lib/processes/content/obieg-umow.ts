@@ -1,0 +1,232 @@
+import type { ProcessContent } from "../types";
+
+export const obiegUmow: ProcessContent = {
+  slug: "obieg-umow",
+  metaTitle: "Elektroniczny obieg umów: akceptacja, podpis i terminy",
+  metaDescription:
+    "Jak działa zautomatyzowany obieg umów: umowa z szablonu, wersje, akceptacje, podpis elektroniczny, rejestr i przypomnienia o terminach. Etapy, warianty, koszty.",
+  primaryKeyword: "obieg umów",
+  updatedAt: "2026-10-04",
+  hero: {
+    eyebrow: "Proces: operacje",
+    title: "Elektroniczny obieg umów: od szablonu do przypomnienia o końcu umowy",
+    lead: "Umowa powstaje z szablonu, przechodzi przez akceptacje w ustalonej kolejności, jest podpisywana elektronicznie, a jej najważniejsze dane trafiają do rejestru z przypomnieniami o terminach. Pokazujemy krok po kroku, jak taki proces wygląda i co jest potrzebne, żeby go wdrożyć.",
+    bullets: [
+      "Umowy z szablonów i jedna aktualna wersja",
+      "Akceptacje w Teams lub mailu z historią",
+      "Rejestr umów z przypomnieniami o terminach",
+    ],
+  },
+  summary: [
+    { label: "Dla kogo", value: "Firmy, w których umowę sprawdza więcej niż jedna osoba" },
+    { label: "Czas wdrożenia", value: "Zwykle kilka tygodni, zależnie od wariantu" },
+    { label: "Narzędzia", value: "SharePoint lub Dysk Google, Teams lub mail, podpis elektroniczny" },
+    { label: "Po waszej stronie", value: "Osoba odpowiedzialna za umowy i prawnik lub zarząd" },
+  ],
+  symptoms: {
+    title: "Po czym poznać, że obieg umów warto zautomatyzować",
+    lead: "Jeśli rozpoznajecie u siebie dwa lub trzy z tych sygnałów, automatyzacja zwykle szybko się zwraca.",
+    items: [
+      "Umowy krążą mailem w kilku wersjach i nie wiadomo, która jest ostateczna.",
+      "Nie wiadomo, u kogo umowa utknęła i kto jeszcze musi ją zobaczyć.",
+      "Podpisane umowy leżą w segregatorach albo w czyichś skrzynkach.",
+      "Umowy przedłużają się automatycznie, bo nikt nie pamiętał o terminie wypowiedzenia.",
+      "Każdy dział przygotowuje umowy po swojemu, na różnych wzorach.",
+      "Odpowiedź na pytanie „jakie mamy warunki z tym kontrahentem” wymaga szukania.",
+    ],
+  },
+  flow: {
+    title: "Jak wygląda obieg umowy po automatyzacji",
+    lead: "Tak przechodzi umowa od wniosku do archiwum i przypomnienia o terminie. Kroki oznaczone jako automatyczne dzieją się bez udziału zespołu.",
+    steps: [
+      {
+        title: "Wniosek o umowę",
+        body: "Osoba z działu wypełnia krótki formularz: kontrahent, rodzaj umowy, wartość, okres. Dane kontrahenta uzupełniają się z rejestrów po NIP.",
+        actor: "Wnioskujący",
+        automated: false,
+        tool: "Formularz, Teams lub Forms",
+      },
+      {
+        title: "Projekt z szablonu",
+        body: "System tworzy projekt umowy z właściwego szablonu i wstawia dane z wniosku. Umowa trafia do jednego folderu, w którym istnieje tylko jedna aktualna wersja.",
+        actor: "System",
+        automated: true,
+        tool: "SharePoint lub Dysk Google",
+      },
+      {
+        title: "Umowa od kontrahenta",
+        body: "Gdy umowę przysyła druga strona, AI porównuje ją z waszym wzorem i oznacza zapisy, które od niego odbiegają, np. kary, terminy płatności czy odpowiedzialność.",
+        actor: "System",
+        automated: true,
+        tool: "AI do dokumentów",
+      },
+      {
+        title: "Akceptacje",
+        body: "Umowa przechodzi przez akceptacje w ustalonej kolejności, np. kierownik, prawnik, finanse, zarząd. Ścieżka zależy od rodzaju i wartości umowy. Każdy akceptuje w Teams lub mailu i może dodać uwagi.",
+        actor: "Akceptujący",
+        automated: false,
+        tool: "Teams, mail",
+      },
+      {
+        title: "Przypomnienia",
+        body: "Gdy umowa czeka zbyt długo na jednej osobie, system przypomina o niej, a wnioskujący widzi, na jakim etapie jest jego sprawa.",
+        actor: "System",
+        automated: true,
+      },
+      {
+        title: "Podpis",
+        body: "Zaakceptowana umowa trafia do podpisu elektronicznego u osób uprawnionych po obu stronach. Rodzaj podpisu dobieramy do wymagań umowy.",
+        actor: "Reprezentanci stron",
+        automated: false,
+        tool: "Narzędzie do podpisu elektronicznego",
+      },
+      {
+        title: "Rejestr umów",
+        body: "Podpisana umowa trafia do archiwum, a jej dane, takie jak strony, wartość, data końca i okres wypowiedzenia, do rejestru umów z linkiem do dokumentu.",
+        actor: "System",
+        automated: true,
+        tool: "Rejestr, np. Airtable lub lista SharePoint",
+      },
+      {
+        title: "Terminy i odnowienia",
+        body: "Przed terminem wypowiedzenia lub końcem umowy właściciel umowy dostaje przypomnienie z pytaniem, czy przedłużyć, renegocjować czy zakończyć.",
+        actor: "System",
+        automated: true,
+      },
+    ],
+  },
+  example: {
+    title: "Obieg umów przed i po automatyzacji",
+    lead: "Przykład firmy usługowej, która zawiera umowy z klientami i podwykonawcami, a umowy sprawdza zewnętrzny prawnik.",
+    rows: [
+      { label: "Przygotowanie", before: "Kopia ostatniej podobnej umowy i ręczne zmiany.", after: "Projekt z aktualnego szablonu z danymi z wniosku." },
+      { label: "Wersje", before: "Kilka plików w mailach, z różnymi poprawkami.", after: "Jedna wersja w jednym folderze, z historią zmian." },
+      { label: "Akceptacje", before: "Maile i pytania na korytarzu.", after: "Ścieżka akceptacji z przypomnieniami i widocznym etapem." },
+      { label: "Podpis", before: "Wydruk, skan, kurier.", after: "Podpis elektroniczny i automatyczne archiwum." },
+      { label: "Terminy", before: "Umowy przedłużały się bez decyzji.", after: "Przypomnienie przed terminem wypowiedzenia." },
+    ],
+    note: "To przykład ilustracyjny. Zakres zawsze ustalamy po rozmowie o waszym procesie.",
+  },
+  outcomes: {
+    title: "Co się zmienia po wdrożeniu",
+    items: [
+      { title: "Jedna aktualna wersja", body: "Wszyscy pracują na tym samym dokumencie, a historia zmian i uwag jest zapisana." },
+      { title: "Widoczny status", body: "Wnioskujący i zarząd widzą, na jakim etapie jest każda umowa i na kogo czeka." },
+      { title: "Szybszy podpis", body: "Podpis elektroniczny zastępuje wydruki i kuriera, a podpisana umowa sama trafia do archiwum." },
+      { title: "Kontrola terminów", body: "Żadna umowa nie przedłuża się ani nie kończy bez decyzji właściciela." },
+    ],
+  },
+  implementation: {
+    title: "Jak przebiega wdrożenie",
+    lead: "Cztery etapy, po każdym wiecie, co zostało zrobione i co dalej. Przy każdym etapie piszemy, czego potrzebujemy od was.",
+    phases: [
+      {
+        title: "Przegląd procesu",
+        duration: "kilka dni",
+        body: "Rozmawiamy z osobą odpowiedzialną za umowy, prawnikiem lub zarządem, spisujemy rodzaje umów i obecne ścieżki akceptacji.",
+        fromYou: "Godzina rozmowy, lista rodzajów umów i obecne wzory.",
+      },
+      {
+        title: "Projekt obiegu i rejestru",
+        duration: "około tygodnia",
+        body: "Projektujemy ścieżki akceptacji dla rodzajów i wartości umów, strukturę rejestru, uprawnienia i zasady przypomnień.",
+        fromYou: "Decyzje, kto akceptuje jakie umowy i kto ma dostęp do których dokumentów.",
+      },
+      {
+        title: "Budowa i testy",
+        duration: "zwykle 2–4 tygodnie",
+        body: "Budujemy obieg w waszym środowisku, przygotowujemy szablony i przenosimy do rejestru umowy, które obowiązują dziś. Testujemy na kilku prawdziwych umowach.",
+        fromYou: "Dostępy do środowiska, aktualne szablony i lista obowiązujących umów.",
+      },
+      {
+        title: "Start i opieka",
+        duration: "stale",
+        body: "Uruchamiamy obieg dla wszystkich nowych umów, szkolimy osoby wnioskujące i akceptujące, pilnujemy działania.",
+        fromYou: "Krótkie szkolenie zespołu i zgłaszanie uwag w pierwszych tygodniach.",
+      },
+    ],
+  },
+  prerequisites: {
+    title: "Co warto przygotować przed startem",
+    lead: "Lista do przejścia po pierwszej rozmowie. Nie wszystko musi być gotowe od razu, część ustalamy razem.",
+    items: [
+      "Lista rodzajów umów, które zawieracie, np. z klientami, dostawcami, podwykonawcami, pracownikami.",
+      "Aktualne wzory umów, najlepiej sprawdzone przez prawnika.",
+      "Zasady akceptacji: kto akceptuje jakie umowy i od jakiej wartości potrzebny jest zarząd.",
+      "Informacja, kto może podpisywać umowy w imieniu firmy.",
+      "Informacja, gdzie dziś są podpisane umowy i ile z nich obowiązuje.",
+      "Środowisko pracy: Microsoft 365, Google Workspace albo inne.",
+      "Osoba po waszej stronie, która będzie właścicielem procesu.",
+    ],
+  },
+  variants: {
+    title: "Warianty rozwiązania",
+    lead: "Zakres dobieramy do skali firmy. Można zacząć od podstawowego wariantu i rozbudowywać go później.",
+    items: [
+      {
+        name: "Podstawowy",
+        description: "Dla firm, które chcą przede wszystkim mieć porządek w umowach i terminach.",
+        includes: [
+          "Rejestr umów z najważniejszymi danymi",
+          "Przeniesienie obowiązujących umów do rejestru",
+          "Przypomnienia o terminach wypowiedzenia i końca umów",
+          "Uporządkowane archiwum z uprawnieniami",
+        ],
+      },
+      {
+        name: "Rozszerzony",
+        description: "Dla firm, w których umowy akceptuje kilka osób.",
+        includes: [
+          "Wszystko z wariantu podstawowego",
+          "Wniosek o umowę i projekt z szablonu",
+          "Ścieżki akceptacji zależne od rodzaju i wartości umowy",
+          "Podpis elektroniczny i automatyczne archiwizowanie",
+          "Status umowy widoczny dla wnioskującego",
+        ],
+      },
+      {
+        name: "Pełny",
+        description: "Dla firm z dużą liczbą umów lub negocjacjami z kontrahentami.",
+        includes: [
+          "Wszystko z wariantu rozszerzonego",
+          "Porównanie umowy kontrahenta z waszym wzorem przez AI",
+          "Odczyt danych ze starych umów przez AI przy budowie rejestru",
+          "Integracja z CRM i programem do faktur",
+          "Raporty: umowy w toku, czas akceptacji, zbliżające się terminy",
+        ],
+      },
+    ],
+  },
+  costFactors: {
+    title: "Od czego zależy koszt",
+    lead: "Każde wdrożenie wyceniamy osobno, przed startem. Na cenę wpływa przede wszystkim:",
+    items: [
+      "liczba rodzajów umów, szablonów i ścieżek akceptacji,",
+      "liczba obowiązujących umów do przeniesienia do rejestru i ich stan,",
+      "wybór narzędzia do podpisu elektronicznego i rodzaj podpisu,",
+      "integracja z CRM, programem do faktur lub systemem kadrowym,",
+      "koszty narzędzi, np. podpisu elektronicznego, platformy automatyzacji i modeli AI.",
+    ],
+  },
+  risks: {
+    title: "Na co uważamy przy wdrożeniu",
+    items: [
+      { risk: "Ktoś pominie obieg i wyśle umowę mailem.", mitigation: "Prosta zasada: umowa bez akceptacji w obiegu nie trafia do podpisu, a szablony są dostępne tylko w obiegu." },
+      { risk: "Dostęp do poufnych umów dostaną niewłaściwe osoby.", mitigation: "Uprawnienia ustawiamy według rodzaju umowy i działu, a umowy kadrowe trzymamy osobno." },
+      { risk: "AI przeoczy ważny zapis w umowie kontrahenta.", mitigation: "AI tylko wskazuje różnice względem wzoru. Ocena prawna zawsze należy do prawnika lub zarządu." },
+      { risk: "Rejestr przestanie być aktualny.", mitigation: "Rejestr uzupełnia się sam po podpisie, a aneksy przechodzą przez ten sam obieg co umowy." },
+    ],
+  },
+  faq: [
+    { question: "Czy umowa podpisana elektronicznie jest ważna?", answer: "W większości umów handlowych tak. Kwalifikowany podpis elektroniczny jest równoważny podpisowi własnoręcznemu. Przy umowach, dla których prawo wymaga szczególnej formy, rodzaj podpisu warto potwierdzić z prawnikiem." },
+    { question: "Czy musimy kupować system do zarządzania umowami?", answer: "Nie zawsze. W wielu firmach obieg umów budujemy na tym, co już macie: SharePoint i Teams albo Dysk Google, z rejestrem w liście lub w Airtable. Osobny system ma sens przy dużej liczbie umów." },
+    { question: "Co ze starymi, papierowymi umowami?", answer: "Obowiązujące umowy skanujemy lub zbieramy z dysków i przenosimy do rejestru. AI może pomóc odczytać z nich strony, daty i okresy wypowiedzenia, a wyniki sprawdza człowiek." },
+    { question: "Czy AI może sprawdzać umowy?", answer: "AI dobrze porównuje umowę z waszym wzorem i wskazuje zapisy, które od niego odbiegają. Nie zastępuje prawnika, ale skraca jego pracę do miejsc, które wymagają uwagi." },
+    { question: "Czy obieg obejmie aneksy?", answer: "Tak. Aneks przechodzi przez tę samą ścieżkę co umowa i jest powiązany z nią w rejestrze, więc terminy i warunki zawsze są aktualne." },
+    { question: "Na czym to działa technicznie?", answer: "Zwykle na Microsoft 365 z Power Automate albo na Google Workspace z platformą automatyzacji, połączonych z narzędziem do podpisu elektronicznego. Narzędzia dobieramy do tego, czego już używacie." },
+    { question: "Ile trwa wdrożenie?", answer: "Wariant podstawowy zwykle kilka tygodni. Duża liczba starych umów do przeniesienia i integracje z innymi systemami wydłużają projekt. Dokładny plan podajemy po przeglądzie procesu." },
+  ],
+  relatedServiceSlugs: ["ai-w-obsludze-dokumentow", "cyfryzacja-danych-i-dokumentow", "doradztwo-i-optymalizacja-procesow-biznesowych"],
+  relatedToolSlugs: ["power-automate", "microsoft-365", "google-workspace", "claude"],
+  relatedArticleSlugs: ["cyfryzacja-danych-w-firmie", "rodo-a-automatyzacja-procesow", "od-czego-zaczac-mapowanie-procesow"],
+};
