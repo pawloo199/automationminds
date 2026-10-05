@@ -20,6 +20,8 @@ import {
 } from "@/lib/services";
 import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
+import Link from "next/link";
+import { AGENCY_PATH } from "@/lib/agency-content";
 
 export const metadata: Metadata = buildMetadata({
   title: "Usługi automatyzacji procesów i AI | Automation Minds",
@@ -108,7 +110,11 @@ export default function ServicesHubPage() {
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/75">
             Pomagamy od pierwszej diagnozy po działające wdrożenie. Zaczynamy od
             procesu, nie od narzędzia, i budujemy rozwiązania, które da się
-            później rozwijać bez zaczynania od nowa.
+            później rozwijać bez zaczynania od nowa.{" "}
+            <Link href={AGENCY_PATH} className="font-semibold text-white underline decoration-brand-light/60 underline-offset-4 hover:decoration-white">
+              Poznaj naszą agencję AI i automatyzacji
+            </Link>
+            .
           </p>
           <nav aria-label="Obszary usług" className="mt-10">
             <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">

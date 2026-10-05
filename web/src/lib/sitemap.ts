@@ -13,6 +13,7 @@ import {
 import { getLiveProcesses, PROCESSES_HUB_PATH, processPath } from "@/lib/processes/catalog";
 import { getToolPages, TOOLS_HUB_PATH, toolPath } from "@/lib/tools/catalog";
 import { getToolSubpages, toolSubpagePath } from "@/lib/tools";
+import { AGENCY_PATH } from "@/lib/agency-content";
 import { getAllIndustryPages, INDUSTRIES_HUB_PATH, industryPagePath } from "@/lib/industries";
 import {
   getGuideArticles,
@@ -137,6 +138,10 @@ export async function buildSitemapEntries(): Promise<MetadataRoute.Sitemap> {
     })),
   ];
 
+  const agencyPage: MetadataRoute.Sitemap = [
+    { url: `${siteUrl}${AGENCY_PATH}`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+  ];
+
   const industryPages: MetadataRoute.Sitemap = [
     { url: `${siteUrl}${INDUSTRIES_HUB_PATH}`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
     ...getAllIndustryPages().map((page) => ({
@@ -164,6 +169,7 @@ export async function buildSitemapEntries(): Promise<MetadataRoute.Sitemap> {
     ...processPages,
     ...toolPages,
     ...industryPages,
+    ...agencyPage,
     ...regionPages,
     ...citySeoPages,
   ];

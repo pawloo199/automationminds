@@ -38,6 +38,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { AGENCY_PATH } from "@/lib/agency-content";
 
 export const revalidate = 60;
 
@@ -241,10 +242,13 @@ export default async function AboutPage() {
                 </span>
               </h1>
               <p className="mt-7 max-w-2xl text-lg leading-relaxed text-white/75 sm:text-xl">
-                Automation Minds łączy automatyzację procesów, sztuczną
-                inteligencję i projektowanie danych. Pomagamy małym i średnim
-                firmom z całej Polski odzyskać czas zespołu i porządek w
-                danych.
+                Automation Minds to{" "}
+                <Link href={AGENCY_PATH} className="font-semibold text-white underline decoration-brand-light/60 underline-offset-4 hover:decoration-white">
+                  agencja AI i automatyzacji procesów
+                </Link>
+                , która łączy automatyzację, sztuczną inteligencję i
+                projektowanie danych. Pomagamy małym i średnim firmom z całej
+                Polski odzyskać czas zespołu i porządek w danych.
               </p>
               <div className="mt-9 flex flex-wrap gap-3">
                 <Link

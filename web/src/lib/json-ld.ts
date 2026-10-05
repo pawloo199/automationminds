@@ -563,3 +563,43 @@ export function industryServiceJsonLd(
     },
   };
 }
+
+/** Strona /agencja-ai: agencja jako ProfessionalService z zakresem usług. */
+export function agencyJsonLd(
+  content: { metaTitle: string; metaDescription: string; primaryKeyword: string },
+  services: { slug: string; name: string; menuDescription: string }[],
+) {
+  const url = `${siteUrl}/agencja-ai`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": `${url}#agency`,
+    name: "Automation Minds",
+    alternateName: "Automation Minds: agencja AI i automatyzacji procesów",
+    description: content.metaDescription,
+    url,
+    parentOrganization: { "@id": `${siteUrl}/#organization` },
+    areaServed: { "@type": "Country", name: "Polska" },
+    knowsAbout: [
+      "sztuczna inteligencja",
+      "agenci AI",
+      "automatyzacja procesów biznesowych",
+      "integracje systemów",
+      "n8n",
+      "porządkowanie i projektowanie danych",
+    ],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Usługi agencji AI i automatyzacji",
+      itemListElement: services.map((service) => ({
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: service.name,
+          description: service.menuDescription,
+          url: `${siteUrl}/uslugi/${service.slug}`,
+        },
+      })),
+    },
+  };
+}
