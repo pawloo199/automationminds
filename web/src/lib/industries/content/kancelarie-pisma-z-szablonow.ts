@@ -120,5 +120,5 @@ export const kancelariePismaZSzablonow: IndustryPageContent = {
   relatedServiceSlugs: ["ai-w-obsludze-dokumentow", "cyfryzacja-danych-i-dokumentow", "automatyzacja-oraz-ai-w-niestandardowych-procesach"],
   relatedProcessSlugs: ["obieg-umow", "przypomnienia-o-platnosciach"],
   relatedToolSlugs: ["microsoft-365", "google-workspace", "power-automate"],
-  relatedArticleSlugs: ["cyfryzacja-danych-w-firmie", "gotowa-automatyzacja-czy-budowana-od-zera", "ile-kosztuje-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-kancelarii", "cyfryzacja-danych-w-firmie", "gotowa-automatyzacja-czy-budowana-od-zera"],
 };

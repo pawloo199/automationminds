@@ -138,5 +138,5 @@ export const kancelarieObslugaKlienta: IndustryPageContent = {
   relatedServiceSlugs: ["chatbot-ai-dla-firmy", "automatyzacja-w-obsludze-klienta", "automatyzacja-dla-firm-uslugowych"],
   relatedProcessSlugs: ["obsluga-zapytan-i-leadow", "umawianie-wizyt", "obieg-umow"],
   relatedToolSlugs: ["microsoft-365", "google-workspace", "n8n"],
-  relatedArticleSlugs: ["automatyzacja-obslugi-leadow-sprzedazowych", "rodo-a-automatyzacja-procesow", "5-procesow-do-automatyzacji-w-malej-firmie"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-kancelarii", "automatyzacja-obslugi-leadow-sprzedazowych", "rodo-a-automatyzacja-procesow"],
 };

@@ -138,5 +138,5 @@ export const kancelarieTerminyISprawy: IndustryPageContent = {
   relatedServiceSlugs: ["ai-w-obsludze-dokumentow", "cyfryzacja-danych-i-dokumentow", "wdrozenia-airtable"],
   relatedProcessSlugs: ["obieg-umow"],
   relatedToolSlugs: ["microsoft-365", "google-workspace", "n8n"],
-  relatedArticleSlugs: ["cyfryzacja-danych-w-firmie", "od-czego-zaczac-mapowanie-procesow", "bledy-przy-pierwszym-wdrozeniu-automatyzacji"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-kancelarii", "od-czego-zaczac-mapowanie-procesow", "bledy-przy-pierwszym-wdrozeniu-automatyzacji"],
 };

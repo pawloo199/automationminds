@@ -1,5 +1,9 @@
 import type { GuideArticle } from "../airtable.types";
 import procesowDoAutomatyzacjiWMalejFirmie from "./articles/5-procesow-do-automatyzacji-w-malej-firmie";
+import aiWAnalizieUmow from "./articles/ai-w-analizie-umow";
+import aiWKancelariiPrawnej from "./articles/ai-w-kancelarii-prawnej";
+import chatgptDlaPrawnikowTajemnicaZawodowa from "./articles/chatgpt-dla-prawnikow-tajemnica-zawodowa";
+import coZautomatyzowacWKancelarii from "./articles/co-zautomatyzowac-w-kancelarii";
 import aiWCodziennejPracyZespolu from "./articles/ai-w-codziennej-pracy-zespolu";
 import airtableCzyExcel from "./articles/airtable-czy-excel";
 import airtableWPraktyceZastosowania from "./articles/airtable-w-praktyce-zastosowania";
@@ -28,6 +32,10 @@ import wdrozenieAiWMalejISredniejFirmie from "./articles/wdrozenie-ai-w-malej-i-
 export const guideArticles: GuideArticle[] = [
   procesowDoAutomatyzacjiWMalejFirmie,
   aiWCodziennejPracyZespolu,
+  aiWAnalizieUmow,
+  aiWKancelariiPrawnej,
+  chatgptDlaPrawnikowTajemnicaZawodowa,
+  coZautomatyzowacWKancelarii,
   airtableCzyExcel,
   airtableWPraktyceZastosowania,
   audytProcesowWFirmie,

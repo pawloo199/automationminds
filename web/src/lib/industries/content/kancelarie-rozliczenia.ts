@@ -138,5 +138,5 @@ export const kancelarieRozliczenia: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-ksiegowosci", "automatyzacja-raportow", "integracje-systemow"],
   relatedProcessSlugs: ["przypomnienia-o-platnosciach", "raporty-finansowe"],
   relatedToolSlugs: ["ksef", "microsoft-365", "n8n"],
-  relatedArticleSlugs: ["integracja-crm-z-fakturowaniem", "jak-mierzyc-roi-automatyzacji", "airtable-czy-excel"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-kancelarii", "integracja-crm-z-fakturowaniem", "jak-mierzyc-roi-automatyzacji"],
 };

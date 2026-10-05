@@ -7,6 +7,7 @@ export const GUIDE_CATEGORY_SLUGS = [
   "dane-i-cyfryzacja",
   "audyt-i-koszty",
   "narzedzia-i-integracje",
+  "kancelarie-prawne",
 ] as const;
 
 export type GuideCategorySlug = (typeof GUIDE_CATEGORY_SLUGS)[number];
@@ -293,6 +294,40 @@ export const guideCategories: GuideCategory[] = [
       body: "Opisz nam proces i systemy, z których korzystasz. Dobierzemy platformę do twojej skali i zaprojektujemy integracje, które nie drożeją z każdym miesiącem.",
     },
     inMenu: true,
+  },
+  {
+    slug: "kancelarie-prawne",
+    name: "Kancelarie prawne",
+    title: "AI i automatyzacja w kancelarii prawnej. Poradnik dla prawników",
+    metaTitle: "AI i automatyzacja w kancelarii. Poradnik",
+    metaDescription:
+      "Jak bezpiecznie korzystać z AI i automatyzacji w kancelarii prawnej: zastosowania, tajemnica zawodowa, analiza umów i procesy, od których warto zacząć.",
+    shortDescription:
+      "Jak kancelarie mogą korzystać z AI i automatyzacji bez ryzyka dla tajemnicy zawodowej i jakości pracy.",
+    lead: "Artykuły dla adwokatów, radców prawnych i zespołów kancelarii, które chcą pracować szybciej, ale nie kosztem bezpieczeństwa danych klientów. Piszemy z perspektywy wdrożeń w kancelariach.",
+    about: [
+      "Kancelaria to miejsce, w którym praca z dokumentami, terminami i wiedzą wypełnia większość dnia. To dobre pole dla automatyzacji i AI, ale też szczególne: obowiązuje tajemnica zawodowa, a za każdy termin i każde pismo odpowiada pełnomocnik.",
+      "W tej części Poradnika opisujemy, jak AI pomaga prawnikom w praktyce, gdzie są jego granice, jak korzystać z narzędzi takich jak ChatGPT bez ryzyka dla danych klientów i które procesy w kancelarii warto zautomatyzować najpierw.",
+      "Jeśli szukacie konkretnych rozwiązań i przebiegu wdrożenia, zajrzyjcie także na stronę automatyzacji kancelarii w części Branże.",
+    ],
+    faq: [
+      {
+        question: "Czy kancelaria może bezpiecznie korzystać z AI?",
+        answer:
+          "Tak, jeśli korzysta z narzędzi na kontach firmowych, ogranicza dane przesyłane do modeli, ma spisane zasady korzystania z AI i traktuje wyniki AI jako materiał roboczy, który weryfikuje prawnik.",
+      },
+      {
+        question: "Od czego zacząć automatyzację w kancelarii?",
+        answer:
+          "Od obszaru, który najbardziej odciąga prawników od pracy merytorycznej. Najczęściej to przyjmowanie klientów, pilnowanie terminów, powtarzalne pisma albo rozliczenia.",
+      },
+    ],
+    relatedServiceSlugs: ["asystent-ai-na-firmowej-wiedzy", "ai-w-obsludze-dokumentow", "szkolenia-ai-dla-zespolow"],
+    cta: {
+      title: "Chcecie wdrożyć AI lub automatyzację w kancelarii?",
+      body: "Porozmawiajmy o tym, co zabiera wam najwięcej czasu. Wskażemy, od czego zacząć i jak zadbać o tajemnicę zawodową.",
+    },
+    inMenu: false,
   },
 ];
 

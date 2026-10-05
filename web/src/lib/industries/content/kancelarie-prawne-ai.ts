@@ -197,5 +197,5 @@ export const kancelariePrawneAi: IndustryPageContent = {
   relatedServiceSlugs: ["asystent-ai-na-firmowej-wiedzy", "ai-w-obsludze-dokumentow", "szkolenia-ai-dla-zespolow", "strategia-wdrozenia-ai"],
   relatedProcessSlugs: ["obieg-umow"],
   relatedToolSlugs: ["claude", "chatgpt", "n8n", "microsoft-365"],
-  relatedArticleSlugs: ["ai-w-codziennej-pracy-zespolu", "rodo-a-automatyzacja-procesow", "wdrozenie-ai-w-malej-i-sredniej-firmie"],
+  relatedArticleSlugs: ["ai-w-kancelarii-prawnej", "chatgpt-dla-prawnikow-tajemnica-zawodowa", "ai-w-codziennej-pracy-zespolu"],
 };

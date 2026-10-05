@@ -189,5 +189,5 @@ export const kancelarieAnalizaUmow: IndustryPageContent = {
   relatedServiceSlugs: ["ai-w-obsludze-dokumentow", "asystent-ai-na-firmowej-wiedzy", "automatyzacja-oraz-ai-w-niestandardowych-procesach"],
   relatedProcessSlugs: ["obieg-umow"],
   relatedToolSlugs: ["claude", "chatgpt", "n8n"],
-  relatedArticleSlugs: ["ai-w-codziennej-pracy-zespolu", "rodo-a-automatyzacja-procesow", "porzadek-w-danych-przed-ai-i-automatyzacja"],
+  relatedArticleSlugs: ["ai-w-analizie-umow", "chatgpt-dla-prawnikow-tajemnica-zawodowa", "porzadek-w-danych-przed-ai-i-automatyzacja"],
 };

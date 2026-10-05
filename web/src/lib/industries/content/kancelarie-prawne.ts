@@ -218,5 +218,5 @@ export const kancelariePrawne: IndustryPageContent = {
   relatedServiceSlugs: ["asystent-ai-na-firmowej-wiedzy", "ai-w-obsludze-dokumentow", "automatyzacja-dla-firm-uslugowych", "szkolenia-ai-dla-zespolow"],
   relatedProcessSlugs: ["obsluga-zapytan-i-leadow", "obieg-umow", "umawianie-wizyt", "przypomnienia-o-platnosciach"],
   relatedToolSlugs: ["n8n", "microsoft-365", "claude", "chatgpt"],
-  relatedArticleSlugs: ["rodo-a-automatyzacja-procesow", "wdrozenie-ai-w-malej-i-sredniej-firmie", "porzadek-w-danych-przed-ai-i-automatyzacja"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-kancelarii", "ai-w-kancelarii-prawnej", "rodo-a-automatyzacja-procesow"],
 };

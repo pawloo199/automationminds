@@ -165,5 +165,5 @@ export const kancelarieAsystentWiedzy: IndustryPageContent = {
   relatedServiceSlugs: ["asystent-ai-na-firmowej-wiedzy", "przygotowanie-danych-pod-ai", "porzadkowanie-i-strukturyzowanie-danych"],
   relatedProcessSlugs: [],
   relatedToolSlugs: ["microsoft-365", "claude", "n8n"],
-  relatedArticleSlugs: ["porzadek-w-danych-przed-ai-i-automatyzacja", "ai-w-codziennej-pracy-zespolu", "cyfryzacja-danych-w-firmie"],
+  relatedArticleSlugs: ["ai-w-kancelarii-prawnej", "porzadek-w-danych-przed-ai-i-automatyzacja", "cyfryzacja-danych-w-firmie"],
 };
