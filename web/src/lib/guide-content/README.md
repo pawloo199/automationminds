@@ -34,9 +34,10 @@ Bloki oddzielone pustą linią:
 - lista `- punkt` albo numerowana `1. punkt`,
 - ramka `> [Tytuł]` + kolejne linie `> tekst`,
 - tabela w składni markdown `| a | b |`,
+- blok kodu otoczony trzema znakami ` (bez pustych linii w środku), np. polecenia instalacji,
 - `[[CTA]]`: wezwanie do konsultacji w środku tekstu (najlepiej po około 40% artykułu).
 
-W tekście: `**pogrubienie**` i `[anchor](/uslugi/slug)` dla linków.
+W tekście: `**pogrubienie**`, kod w pojedynczych znakach ` oraz `[anchor](/uslugi/slug)` dla linków.
 
 ## Zasady redakcyjne
 

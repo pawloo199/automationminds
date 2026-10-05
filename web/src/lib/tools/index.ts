@@ -16,6 +16,7 @@ import { zapier } from "./content/zapier";
 import { n8nAgenciAi } from "./subpages/n8n-agenci-ai";
 import { n8nOpieka } from "./subpages/n8n-opieka";
 import { n8nSelfHosted } from "./subpages/n8n-self-hosted";
+import { n8nSzkolenie } from "./subpages/n8n-szkolenie";
 import type { ToolContent, ToolSubpageContent } from "./types";
 
 export * from "./catalog";
@@ -48,7 +49,7 @@ export function getRelatedTools(content: ToolContent) {
 }
 
 /** Podstrony narzędzi w kolejności wyświetlania na stronie narzędzia. */
-const TOOL_SUBPAGES: ToolSubpageContent[] = [n8nAgenciAi, n8nSelfHosted, n8nOpieka];
+const TOOL_SUBPAGES: ToolSubpageContent[] = [n8nAgenciAi, n8nSelfHosted, n8nOpieka, n8nSzkolenie];
 
 export function toolSubpagePath(toolSlug: string, slug: string) {
   return `${toolPath(toolSlug)}/${slug}`;

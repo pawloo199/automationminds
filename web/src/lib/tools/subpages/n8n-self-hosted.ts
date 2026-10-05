@@ -183,5 +183,5 @@ export const n8nSelfHosted: ToolSubpageContent = {
     { question: "Czy jesteście partnerem n8n?", answer: "Nie. Jesteśmy niezależnymi specjalistami od automatyzacji i wdrażamy n8n tam, gdzie to najlepsze narzędzie dla klienta." },
   ],
   relatedServiceSlugs: ["integracje-systemow", "automatyzacja-oraz-ai-w-niestandardowych-procesach", "migracja-danych"],
-  relatedArticleSlugs: ["n8n-co-to-jest", "rodo-a-automatyzacja-procesow", "gotowa-automatyzacja-czy-budowana-od-zera"],
+  relatedArticleSlugs: ["jak-zainstalowac-n8n", "n8n-co-to-jest", "rodo-a-automatyzacja-procesow"],
 };

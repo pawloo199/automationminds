@@ -114,5 +114,5 @@ export const zapier: ToolContent = {
   ],
   relatedServiceSlugs: ["automatyzacja-sprzedazy", "automatyzacja-dla-firm-uslugowych", "integracje-systemow", "audyt-procesow-biznesowych"],
   relatedToolSlugs: ["make", "n8n", "google-workspace", "hubspot"],
-  relatedArticleSlugs: ["jak-wybrac-narzedzie-do-automatyzacji", "5-procesow-do-automatyzacji-w-malej-firmie", "bledy-przy-pierwszym-wdrozeniu-automatyzacji"],
+  relatedArticleSlugs: ["n8n-czy-zapier", "jak-wybrac-narzedzie-do-automatyzacji", "5-procesow-do-automatyzacji-w-malej-firmie"],
 };

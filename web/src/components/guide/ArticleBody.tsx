@@ -4,7 +4,7 @@ import { ArrowRight, Lightbulb } from "lucide-react";
 import Link from "next/link";
 import type { ReactNode } from "react";
 
-const INLINE_PATTERN = /(\*\*[^*]+\*\*|\[[^\]]+\]\([^)\s]+\))/g;
+const INLINE_PATTERN = /(\*\*[^*]+\*\*|`[^`]+`|\[[^\]]+\]\([^)\s]+\))/g;
 
 function renderInline(text: string): ReactNode[] {
   return text.split(INLINE_PATTERN).map((part, index) => {
@@ -13,6 +13,13 @@ function renderInline(text: string): ReactNode[] {
         <strong key={index} className="font-semibold text-dark">
           {part.slice(2, -2)}
         </strong>
+      );
+    }
+    if (part.length > 2 && part.startsWith("`") && part.endsWith("`")) {
+      return (
+        <code key={index} className="rounded bg-surface px-1.5 py-0.5 font-mono text-[0.9em] text-dark">
+          {part.slice(1, -1)}
+        </code>
       );
     }
     const link = part.match(/^\[([^\]]+)\]\(([^)\s]+)\)$/);
@@ -174,6 +181,15 @@ export function ArticleBody({
                   </tbody>
                 </table>
               </div>
+            );
+          case "code":
+            return (
+              <pre
+                key={index}
+                className="overflow-x-auto rounded-2xl bg-dark p-5 font-mono text-sm leading-relaxed text-white/90"
+              >
+                <code>{block.code}</code>
+              </pre>
             );
           case "cta":
             return <ArticleInlineCta key={index} {...cta} />;

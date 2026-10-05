@@ -9,6 +9,7 @@ export type GuideBodyBlock =
   | { type: "ul" | "ol"; items: string[] }
   | { type: "callout"; title?: string; text: string[] }
   | { type: "table"; head: string[]; rows: string[][] }
+  | { type: "code"; code: string }
   | { type: "cta" };
 
 export type GuideHeading = { id: string; text: string };
@@ -50,6 +51,10 @@ export function parseGuideBody(body: string): GuideBodyBlock[] {
       const lines = block.split("\n").map((line) => line.trim());
 
       if (block === "[[CTA]]") return { type: "cta" };
+      if (block.startsWith("```") && block.endsWith("```") && block.length > 6) {
+        const raw = block.split("\n");
+        return { type: "code", code: raw.slice(1, -1).join("\n") };
+      }
       if (block.startsWith("### ")) {
         const text = block.slice(4).trim();
         return { type: "h3", text, id: uniqueId(text) };
@@ -96,6 +101,7 @@ export function extractHeadings(body: string): GuideHeading[] {
 export function plainText(body: string): string {
   return body
     .replace(/\[\[CTA\]\]/g, " ")
+    .replace(/```[\s\S]*?```/g, " ")
     .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
     .replace(/[#>*|]/g, " ")
     .replace(/\s+/g, " ")
