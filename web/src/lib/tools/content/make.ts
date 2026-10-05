@@ -114,5 +114,5 @@ export const make: ToolContent = {
   ],
   relatedServiceSlugs: ["automatyzacja-sprzedazy", "integracje-systemow", "automatyzacja-dla-ksiegowosci", "automatyzacja-marketingu"],
   relatedToolSlugs: ["n8n", "zapier", "pipedrive", "hubspot"],
-  relatedArticleSlugs: ["jak-wybrac-narzedzie-do-automatyzacji", "automatyzacja-obslugi-leadow-sprzedazowych", "integracja-crm-z-fakturowaniem"],
+  relatedArticleSlugs: ["n8n-czy-make", "jak-wybrac-narzedzie-do-automatyzacji", "automatyzacja-obslugi-leadow-sprzedazowych"],
 };

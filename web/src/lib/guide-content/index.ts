@@ -13,6 +13,8 @@ import ileKosztujeAutomatyzacjaProcesow from "./articles/ile-kosztuje-automatyza
 import integracjaCrmZFakturowaniem from "./articles/integracja-crm-z-fakturowaniem";
 import jakMierzycRoiAutomatyzacji from "./articles/jak-mierzyc-roi-automatyzacji";
 import jakWybracNarzedzieDoAutomatyzacji from "./articles/jak-wybrac-narzedzie-do-automatyzacji";
+import n8nCoToJest from "./articles/n8n-co-to-jest";
+import n8nCzyMake from "./articles/n8n-czy-make";
 import odCzegoZaczacMapowanieProcesow from "./articles/od-czego-zaczac-mapowanie-procesow";
 import porzadekWDanychPrzedAiIAutomatyzacja from "./articles/porzadek-w-danych-przed-ai-i-automatyzacja";
 import rodoAAutomatyzacjaProcesow from "./articles/rodo-a-automatyzacja-procesow";
@@ -35,6 +37,8 @@ export const guideArticles: GuideArticle[] = [
   integracjaCrmZFakturowaniem,
   jakMierzycRoiAutomatyzacji,
   jakWybracNarzedzieDoAutomatyzacji,
+  n8nCoToJest,
+  n8nCzyMake,
   odCzegoZaczacMapowanieProcesow,
   porzadekWDanychPrzedAiIAutomatyzacja,
   rodoAAutomatyzacjaProcesow,

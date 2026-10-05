@@ -118,5 +118,5 @@ export const n8n: ToolContent = {
   ],
   relatedServiceSlugs: ["automatyzacja-oraz-ai-w-niestandardowych-procesach", "agenci-ai", "integracje-systemow", "ai-w-obsludze-dokumentow"],
   relatedToolSlugs: ["make", "zapier", "claude", "chatgpt"],
-  relatedArticleSlugs: ["jak-wybrac-narzedzie-do-automatyzacji", "gotowa-automatyzacja-czy-budowana-od-zera", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["n8n-co-to-jest", "n8n-czy-make", "jak-wybrac-narzedzie-do-automatyzacji"],
 };
