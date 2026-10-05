@@ -44,12 +44,12 @@ export function IndustrySecurity({ security }: { security: NonNullable<IndustryP
 export type IndustryLinkItem = { href: string; name: string; excerpt: string };
 
 /** Karty stron branżowych, np. w sekcjach „Zobacz też” usług, narzędzi i procesów. */
-export function IndustryLinks({ items, title = "Dla branż" }: { items: IndustryLinkItem[]; title?: string }) {
+export function IndustryLinks({ items, title }: { items: IndustryLinkItem[]; title?: string }) {
   if (items.length === 0) return null;
   return (
     <>
-      <h3 className="mt-14 text-sm font-semibold uppercase tracking-[0.2em] text-muted">{title}</h3>
-      <ul className="mt-5 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+      {title ? <h3 className="mt-14 text-sm font-semibold uppercase tracking-[0.2em] text-muted">{title}</h3> : null}
+      <ul className={title ? "mt-5 grid gap-5 md:grid-cols-2 lg:grid-cols-3" : "mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3"}>
         {items.map((item) => (
           <li key={item.href}>
             <Link
@@ -66,5 +66,18 @@ export function IndustryLinks({ items, title = "Dla branż" }: { items: Industry
         ))}
       </ul>
     </>
+  );
+}
+
+/** Sekcja z podstronami rozwiązań na stronie głównej branży. */
+export function IndustrySolutions({ items, title, lead }: { items: IndustryLinkItem[]; title: string; lead: string }) {
+  if (items.length === 0) return null;
+  return (
+    <section aria-labelledby="rozwiazania-tytul" className="border-y border-brand/10 bg-surface py-20 lg:py-24">
+      <Container>
+        <SectionTitle id="rozwiazania-tytul" eyebrow="Rozwiązania" title={title} lead={lead} />
+        <IndustryLinks items={items} />
+      </Container>
+    </section>
   );
 }

@@ -14,7 +14,7 @@ export interface IndustryEntry {
   /** Miasta, na których stronach pokazujemy link do branży (duże rynki dla tej branży). */
   featuredCitySlugs?: string[];
   /** Teksty wezwań do kontaktu na stronach branży. */
-  cta: { midTitle: string; midBody: string; formTitle: string; formBody: string; processesTitle: string };
+  cta: { midTitle: string; midBody: string; formTitle: string; formBody: string; processesTitle: string; solutionsTitle: string };
 }
 
 /** Strona branży (/branze/{branza}) lub jej podstrona (/branze/{branza}/{podstrona}). */

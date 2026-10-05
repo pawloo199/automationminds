@@ -26,6 +26,7 @@ export const INDUSTRIES: IndustryEntry[] = [
       formTitle: "Porozmawiajmy o automatyzacji kancelarii",
       formBody: "Opowiedz, jak dziś pracuje kancelaria i co zabiera najwięcej czasu. W 30 minut wskażemy, od czego zacząć i jak zadbać o bezpieczeństwo danych.",
       processesTitle: "Procesy, które automatyzujemy w kancelariach",
+      solutionsTitle: "Rozwiązania dla kancelarii",
     },
   },
 ];

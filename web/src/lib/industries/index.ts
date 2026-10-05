@@ -5,14 +5,29 @@ import { getServicesBySlugs } from "../services";
 import { getToolEntry } from "../tools/catalog";
 import { getIndustryEntry, INDUSTRIES_HUB_PATH, industryPath } from "./catalog";
 import { kancelariePrawne } from "./content/kancelarie-prawne";
+import { kancelarieAnalizaUmow } from "./content/kancelarie-analiza-umow";
+import { kancelarieAsystentWiedzy } from "./content/kancelarie-asystent-wiedzy";
+import { kancelarieObslugaKlienta } from "./content/kancelarie-obsluga-klienta";
+import { kancelariePismaZSzablonow } from "./content/kancelarie-pisma-z-szablonow";
 import { kancelariePrawneAi } from "./content/kancelarie-prawne-ai";
+import { kancelarieRozliczenia } from "./content/kancelarie-rozliczenia";
+import { kancelarieTerminyISprawy } from "./content/kancelarie-terminy-i-sprawy";
 import type { IndustryPageContent } from "./types";
 
 export * from "./catalog";
 export type * from "./types";
 
 /** Strony branż: najpierw strona główna branży, potem jej podstrony w kolejności wyświetlania. */
-const INDUSTRY_PAGES: IndustryPageContent[] = [kancelariePrawne, kancelariePrawneAi];
+const INDUSTRY_PAGES: IndustryPageContent[] = [
+  kancelariePrawne,
+  kancelariePrawneAi,
+  kancelarieAsystentWiedzy,
+  kancelarieAnalizaUmow,
+  kancelarieObslugaKlienta,
+  kancelarieTerminyISprawy,
+  kancelariePismaZSzablonow,
+  kancelarieRozliczenia,
+];
 
 export function industryPagePath(page: IndustryPageContent) {
   return industryPath(page.industrySlug, page.subSlug);

@@ -25,7 +25,7 @@ import {
   type IndustryPageContent,
 } from "@/lib/industries";
 import { breadcrumbJsonLd, guideFaqJsonLd, industryServiceJsonLd } from "@/lib/json-ld";
-import { IndustryIntro, IndustryLinks, IndustrySecurity } from "./IndustrySections";
+import { IndustryIntro, IndustryLinks, IndustrySecurity, IndustrySolutions } from "./IndustrySections";
 
 export async function IndustryPage({ page }: { page: IndustryPageContent }) {
   const settings = await getSettings();
@@ -59,6 +59,13 @@ export async function IndustryPage({ page }: { page: IndustryPageContent }) {
 
       <ProcessIntro content={page} />
       <IndustryIntro intro={page.intro} eyebrow={entry.name} />
+      {page.subSlug ? null : (
+        <IndustrySolutions
+          items={industryLinkItems(getIndustrySubpages(page.industrySlug))}
+          title={entry.cta.solutionsTitle}
+          lead="Każde rozwiązanie opisujemy na osobnej stronie: jak działa, jak przebiega wdrożenie, warianty i bezpieczeństwo."
+        />
+      )}
       <ServiceScope scope={page.scope} />
       {page.flows ? <ToolFlows flows={page.flows} /> : null}
       {page.security ? <IndustrySecurity security={page.security} /> : null}
@@ -94,7 +101,7 @@ export async function IndustryPage({ page }: { page: IndustryPageContent }) {
           <h2 id="powiazane" className="text-3xl font-bold leading-tight tracking-tight text-dark sm:text-4xl">
             Zobacz też
           </h2>
-          <IndustryLinks items={otherPages} title={`Więcej dla branży: ${entry.name.toLowerCase()}`} />
+          {page.subSlug ? <IndustryLinks items={otherPages} title={`Więcej dla branży: ${entry.name.toLowerCase()}`} /> : null}
           {relatedServices.length > 0 ? (
             <>
               <h3 className="mt-14 text-sm font-semibold uppercase tracking-[0.2em] text-muted">Powiązane usługi</h3>
