@@ -1,5 +1,6 @@
 import type { GuideArticle } from "../airtable.types";
 import procesowDoAutomatyzacjiWMalejFirmie from "./articles/5-procesow-do-automatyzacji-w-malej-firmie";
+import agencjaAiCzySoftwareHouse from "./articles/agencja-ai-czy-software-house";
 import aiWAnalizieUmow from "./articles/ai-w-analizie-umow";
 import aiWKancelariiPrawnej from "./articles/ai-w-kancelarii-prawnej";
 import chatgptDlaPrawnikowTajemnicaZawodowa from "./articles/chatgpt-dla-prawnikow-tajemnica-zawodowa";
@@ -17,6 +18,7 @@ import ileKosztujeAutomatyzacjaProcesow from "./articles/ile-kosztuje-automatyza
 import integracjaCrmZFakturowaniem from "./articles/integracja-crm-z-fakturowaniem";
 import jakMierzycRoiAutomatyzacji from "./articles/jak-mierzyc-roi-automatyzacji";
 import jakWybracNarzedzieDoAutomatyzacji from "./articles/jak-wybrac-narzedzie-do-automatyzacji";
+import jakWybracAgencjeAi from "./articles/jak-wybrac-agencje-ai";
 import jakZainstalowacN8n from "./articles/jak-zainstalowac-n8n";
 import n8nCzyZapier from "./articles/n8n-czy-zapier";
 import n8nCennik from "./articles/n8n-cennik";
@@ -32,7 +34,9 @@ import wdrozenieAiWMalejISredniejFirmie from "./articles/wdrozenie-ai-w-malej-i-
 export const guideArticles: GuideArticle[] = [
   procesowDoAutomatyzacjiWMalejFirmie,
   aiWCodziennejPracyZespolu,
+  agencjaAiCzySoftwareHouse,
   aiWAnalizieUmow,
+  jakWybracAgencjeAi,
   aiWKancelariiPrawnej,
   chatgptDlaPrawnikowTajemnicaZawodowa,
   coZautomatyzowacWKancelarii,

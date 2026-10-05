@@ -106,7 +106,7 @@ export const AGENCY_CONTENT = {
     ],
   },
   toolSlugs: ["n8n", "make", "power-automate", "claude", "chatgpt", "microsoft-365", "google-workspace", "hubspot"],
-  articleSlugs: ["wdrozenie-ai-w-malej-i-sredniej-firmie", "ile-kosztuje-automatyzacja-procesow", "jak-wybrac-narzedzie-do-automatyzacji"],
+  articleSlugs: ["jak-wybrac-agencje-ai", "agencja-ai-czy-software-house", "wdrozenie-ai-w-malej-i-sredniej-firmie"],
   faq: [
     { question: "Czym zajmuje się agencja AI?", answer: "Agencja AI pomaga firmom wdrożyć sztuczną inteligencję w codziennej pracy: od wyboru zastosowań i przygotowania danych, przez budowę asystentów, agentów i automatyzacji, po szkolenia i utrzymanie. W naszym przypadku łączymy AI z automatyzacją procesów i integracją systemów." },
     { question: "Czym agencja AI różni się od agencji automatyzacji?", answer: "Agencja automatyzacji skupia się na przepływach między systemami, np. integracjach CRM z fakturowaniem. Agencja AI dodaje modele językowe, które czytają dokumenty, odpowiadają na pytania i wykonują zadania. My łączymy jedno i drugie, bo w praktyce najlepsze efekty daje automatyzacja wzbogacona o AI." },
