@@ -3,6 +3,7 @@ import { Header } from "@/components/layout/Header";
 import { MobileCallFab } from "@/components/layout/MobileCallFab";
 import { getServices, getSettings } from "@/lib/airtable";
 import { cn } from "@/lib/cn";
+import { withCodeServices } from "@/lib/n8n-service";
 import type { ReactNode } from "react";
 
 export async function SiteLayout({
@@ -12,10 +13,11 @@ export async function SiteLayout({
   children: ReactNode;
   transparentHeader?: boolean;
 }) {
-  const [settings, services] = await Promise.all([
+  const [settings, cmsServices] = await Promise.all([
     getSettings(),
     getServices(),
   ]);
+  const services = withCodeServices(cmsServices);
 
   return (
     <>

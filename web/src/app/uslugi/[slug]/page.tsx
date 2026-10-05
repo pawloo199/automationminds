@@ -16,6 +16,7 @@ import {
 } from "@/lib/airtable";
 import { breadcrumbJsonLd, serviceJsonLd } from "@/lib/json-ld";
 import { buildMetadata } from "@/lib/metadata";
+import { N8N_SERVICE_SLUG } from "@/lib/n8n-service";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
@@ -23,7 +24,10 @@ export const revalidate = 60;
 
 export async function generateStaticParams() {
   const services = await getServices();
-  return services.map((service) => ({ slug: service.slug }));
+  // /uslugi/wdrozenia-n8n ma własną, statyczną trasę.
+  return services
+    .filter((service) => service.slug !== N8N_SERVICE_SLUG)
+    .map((service) => ({ slug: service.slug }));
 }
 
 export async function generateMetadata({

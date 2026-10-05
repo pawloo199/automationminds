@@ -2,6 +2,7 @@ import { ContactFormStepsLazy } from "@/components/forms/ContactFormStepsLazy";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { getServices } from "@/lib/airtable";
+import { withCodeServices } from "@/lib/n8n-service";
 import { Check } from "lucide-react";
 
 export async function ContactSection({
@@ -21,7 +22,7 @@ export async function ContactSection({
   redirectOnSuccess?: boolean;
   sectionId?: string;
 }) {
-  const services = await getServices();
+  const services = withCodeServices(await getServices());
 
   return (
     <section className="py-20 lg:py-28" id={sectionId}>

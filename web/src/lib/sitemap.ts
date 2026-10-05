@@ -7,6 +7,7 @@ import { caseStudyPath } from "@/lib/case-study-icons";
 import { cityPath, getAllCityPages } from "@/lib/city-pages";
 import { getGuideArticles, guideArticlePath } from "@/lib/guide-articles";
 import { siteUrl } from "@/lib/metadata";
+import { withCodeServices } from "@/lib/n8n-service";
 import type { MetadataRoute } from "next";
 
 function parseDate(value: string | undefined): Date {
@@ -46,7 +47,7 @@ export async function buildSitemapEntries(): Promise<MetadataRoute.Sitemap> {
     priority: path === "" ? 1 : path === "/kontakt" ? 0.85 : 0.8,
   }));
 
-  const servicePages: MetadataRoute.Sitemap = services.map((service) => ({
+  const servicePages: MetadataRoute.Sitemap = withCodeServices(services).map((service) => ({
     url: `${siteUrl}/uslugi/${service.slug}`,
     lastModified: parseDate(service.updatedAt),
     changeFrequency: "weekly",

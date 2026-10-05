@@ -14,6 +14,7 @@ import type {
 } from "./airtable.types";
 import { CONSULTATION_OFFER } from "./consultation-offer";
 import { getLatestGuideArticles } from "./guide-articles-mock";
+import { n8nService } from "./n8n-service";
 
 const sectionDefaults = {
   imageAlt: "",
@@ -912,6 +913,88 @@ export const mockLandingPages: LandingPage[] = [
       },
     ],
   },
+  {
+    id: "lp3",
+    slug: "wdrozenie-n8n",
+    campaignName: "Google Ads · n8n",
+    metaTitle: "Wdrożenie n8n dla firm | Automation Minds",
+    metaDescription:
+      "Workflow n8n na zamówienie, agenci AI, instalacja self-hosted i opieka. Bezpłatna konsultacja 30 min, oddzwonimy w ciągu 1 dnia roboczego.",
+    heroTitle: "Wdrożymy n8n w Twojej firmie i weźmiemy na siebie utrzymanie",
+    heroSubtitle:
+      "Workflow na zamówienie, agenci AI i instalacja self-hosted. Bezpłatna konsultacja 30 min.",
+    heroImageUrl: "/images/migrated/hero-2.jpg",
+    heroImageAlt: "Wdrożenie n8n w firmie",
+    primaryCtaText: "Umów bezpłatną konsultację",
+    primaryCtaLink: "#formularz",
+    socialProof:
+      "Bezpłatna konsultacja 30 min · Oddzwonimy w ciągu 1 dnia roboczego · Pracujemy zdalnie w całej Polsce",
+    relatedServiceSlug: "wdrozenia-n8n",
+    formEnabled: true,
+    // Strona tylko pod reklamy: w organicu pozycjonujemy /uslugi/wdrozenia-n8n.
+    noIndex: true,
+    updatedAt: "2026-10-05",
+    benefits: [
+      {
+        id: "b6",
+        landingSlug: "wdrozenie-n8n",
+        title: "Workflow n8n na zamówienie",
+        body: "Dane między systemami, zamówienia, leady i dokumenty przechodzą bez ręcznego przepisywania.",
+        order: 1,
+      },
+      {
+        id: "b7",
+        landingSlug: "wdrozenie-n8n",
+        title: "Agenci AI w n8n",
+        body: "Czytanie maili, klasyfikacja zgłoszeń i wyciąganie danych z faktur, z akceptacją człowieka tam, gdzie trzeba.",
+        order: 2,
+      },
+      {
+        id: "b8",
+        landingSlug: "wdrozenie-n8n",
+        title: "Self-hosting i opieka",
+        body: "Instalacja na Waszym serwerze lub w chmurze w UE, kopie zapasowe, aktualizacje i monitoring wykonań.",
+        order: 3,
+      },
+      {
+        id: "b9",
+        landingSlug: "wdrozenie-n8n",
+        title: "Naprawa istniejących workflow",
+        body: "Przejmujemy workflow po poprzednim wykonawcy lub zbudowane samodzielnie, poprawiamy błędy i opisujemy logikę.",
+        order: 4,
+      },
+      {
+        id: "b10",
+        landingSlug: "wdrozenie-n8n",
+        title: "Migracja z Zapiera i Make",
+        body: "Przenosimy scenariusze do n8n i wyłączamy stare dopiero wtedy, gdy nowe dają te same wyniki.",
+        order: 5,
+      },
+      {
+        id: "b11",
+        landingSlug: "wdrozenie-n8n",
+        title: "Polskie systemy przez API",
+        body: "Fakturownia, wFirma, KSeF, BaseLinker, Allegro i inne narzędzia, dla których n8n nie ma gotowych węzłów.",
+        order: 6,
+      },
+    ],
+    sections: [
+      {
+        id: "s4",
+        landingSlug: "wdrozenie-n8n",
+        title: "Własny workflow przestał działać",
+        body: "n8n łatwo zacząć, trudniej utrzymać. Zmienione API, wygasły token albo pusty rekord potrafią zatrzymać automatyzację bez ostrzeżenia. Przejrzymy workflow, naprawimy błędy i dodamy alerty, żeby kolejna awaria nie przeszła bez echa.",
+        order: 1,
+      },
+      {
+        id: "s5",
+        landingSlug: "wdrozenie-n8n",
+        title: "Jak pracujemy",
+        body: "Na bezpłatnej konsultacji (30 min) wybieramy proces, od którego warto zacząć, i sprawdzamy, czy n8n do niego pasuje. Potem projektujemy workflow, instalujemy lub konfigurujemy n8n, testujemy na prawdziwych danych i szkolimy zespół. Zakres i koszt znacie przed rozpoczęciem budowy.",
+        order: 2,
+      },
+    ],
+  },
 ];
 
 export function getMockLandingPageBySlug(slug: string): LandingPage | null {
@@ -930,7 +1013,10 @@ export function getMockListItems(pageSlug: string): ListItem[] {
 }
 
 export function getMockServiceBySlug(slug: string): Service | null {
-  return mockServices.find((s) => s.slug === slug) ?? null;
+  return (
+    mockServices.find((s) => s.slug === slug) ??
+    (slug === n8nService.slug ? n8nService : null)
+  );
 }
 
 export function getMockProcessSteps(serviceSlug: string): ProcessStep[] {
