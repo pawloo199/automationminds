@@ -1,4 +1,10 @@
+import { AutomationFlow } from "@/components/home/AutomationFlow";
+import { LiveTicker } from "@/components/home/LiveTicker";
+import { TimeCalculator } from "@/components/home/TimeCalculator";
 import { LeadHero } from "@/components/city/LeadHero";
+import { AgentDemo } from "@/components/agency/AgentDemo";
+import { ModelPicker } from "@/components/agency/ModelPicker";
+import { Reveal } from "@/components/about/Reveal";
 import { ArticleCard } from "@/components/guide/ArticleCard";
 import { ArticleFaq } from "@/components/guide/ArticleSections";
 import { IndustryIntro, IndustryLinks } from "@/components/industries/IndustrySections";
@@ -9,7 +15,7 @@ import { SectionTitle, ServiceMidCta, ServiceScope } from "@/components/services
 import { JsonLd } from "@/components/seo/JsonLd";
 import { ToolCard, ToolComparison } from "@/components/tools/ToolSections";
 import { Container } from "@/components/ui/Container";
-import { AGENCY_CONTENT as C, AGENCY_PATH } from "@/lib/agency-content";
+import { AGENCY_CONTENT as C, AGENCY_FLOW, AGENCY_PATH, AGENCY_TICKER, AGENT_DEMO } from "@/lib/agency-content";
 import { getSettings } from "@/lib/airtable";
 import { CONSULTATION_OFFER } from "@/lib/consultation-offer";
 import { getGuideArticleBySlug } from "@/lib/guide-articles";
@@ -63,9 +69,30 @@ export default async function AgencyPage() {
         sourcePage={AGENCY_PATH}
       />
 
+      <div className="bg-dark">
+        <LiveTicker events={AGENCY_TICKER} />
+      </div>
+
       <IndustryIntro intro={C.intro} eyebrow="Kim jesteśmy" />
 
-      <section aria-labelledby="co-robimy" className="border-y border-brand/10 bg-surface py-20 lg:py-24">
+      <section id="agent-w-akcji" aria-labelledby="agent-tytul" className="scroll-mt-28 border-y border-brand/10 bg-surface py-20 lg:py-24">
+        <Container>
+          <Reveal className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-brand">Agent AI w akcji</p>
+            <h2 id="agent-tytul" className="mt-4 text-3xl font-bold leading-tight tracking-tight text-dark sm:text-4xl">
+              Zobacz, jak pracuje agent AI, którego budujemy
+            </h2>
+            <p className="mt-5 text-lg leading-relaxed text-muted">
+              Agent odbiera wiadomość, sprawdza dane w systemach firmy i przygotowuje gotowy szkic. Ostatnie słowo zawsze należy do człowieka.
+            </p>
+          </Reveal>
+          <div className="mt-12">
+            <AgentDemo scenarios={AGENT_DEMO} />
+          </div>
+        </Container>
+      </section>
+
+      <section aria-labelledby="co-robimy" className="py-20 lg:py-24">
         <Container>
           <SectionTitle
             id="co-robimy"
@@ -112,6 +139,44 @@ export default async function AgencyPage() {
       <ToolComparison comparison={C.comparison} />
       <ProcessImplementation implementation={C.process} />
 
+      <section id="jak-to-dziala" aria-labelledby="flow-tytul" className="relative scroll-mt-24 overflow-hidden bg-dark py-20 text-white lg:py-28">
+        <div className="about-grid-bg absolute inset-0" aria-hidden />
+        <div className="home-aurora pointer-events-none absolute -left-40 top-20 h-[30rem] w-[30rem] rounded-full bg-brand/20 blur-3xl" aria-hidden />
+        <Container className="relative">
+          <div className="grid gap-6 lg:grid-cols-12">
+            <Reveal className="lg:col-span-7">
+              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-brand-light">Jak to działa</p>
+              <h2 id="flow-tytul" className="mt-4 text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
+                {AGENCY_FLOW.title}
+              </h2>
+            </Reveal>
+            <Reveal className="lg:col-span-5 lg:pt-10">
+              <p className="text-lg leading-relaxed text-white/70">{AGENCY_FLOW.lead}</p>
+            </Reveal>
+          </div>
+          <div className="mt-10">
+            <AutomationFlow scenarios={AGENCY_FLOW.scenarios} />
+          </div>
+        </Container>
+      </section>
+
+      <section id="kalkulator" aria-labelledby="kalkulator-tytul" className="scroll-mt-24 bg-surface py-20 lg:py-28">
+        <Container>
+          <Reveal className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-brand">Kalkulator</p>
+            <h2 id="kalkulator-tytul" className="mt-4 text-3xl font-bold leading-tight tracking-tight text-dark sm:text-4xl">
+              Ile czasu oddalibyście agentom AI?
+            </h2>
+            <p className="mt-5 text-lg leading-relaxed text-muted">
+              Ustaw trzy wartości i zobacz, ile godzin i pieniędzy zespół przeznacza na powtarzalne zadania. To dobry punkt wyjścia do rozmowy o pierwszym wdrożeniu.
+            </p>
+          </Reveal>
+          <div className="mt-12">
+            <TimeCalculator />
+          </div>
+        </Container>
+      </section>
+
       <ServiceMidCta
         title="Szukacie agencji AI do konkretnego projektu?"
         body="W 30 minut przejdziemy przez wasze procesy i powiemy wprost, co warto zrobić najpierw, ile to może kosztować i czy jesteśmy właściwym wykonawcą."
@@ -120,7 +185,18 @@ export default async function AgencyPage() {
 
       <ProcessVariants variants={C.models} />
 
-      <section aria-labelledby="technologie" className="py-20 lg:py-24">
+      <section aria-label="Dobór modelu współpracy" className="pb-20 lg:pb-28">
+        <Container>
+          <Reveal>
+            <p className="mb-5 text-center text-sm font-semibold uppercase tracking-[0.25em] text-brand">
+              Nie wiecie, który model wybrać? Odpowiedzcie na trzy pytania
+            </p>
+            <ModelPicker />
+          </Reveal>
+        </Container>
+      </section>
+
+      <section aria-labelledby="technologie" className="border-t border-brand/10 py-20 lg:py-24">
         <Container>
           <SectionTitle
             id="technologie"

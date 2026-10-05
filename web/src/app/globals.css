@@ -545,3 +545,21 @@ body {
     }
   }
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes agency-demo-pop {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 12px, 0) scale(0.98);
+    }
+
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  .agency-demo-pop {
+    animation: agency-demo-pop 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+}

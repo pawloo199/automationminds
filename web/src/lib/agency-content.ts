@@ -117,3 +117,197 @@ export const AGENCY_CONTENT = {
     { question: "Dla jakich firm pracujecie?", answer: "Głównie dla małych i średnich firm usługowych, handlowych i produkcyjnych. Mamy też duże doświadczenie w kancelariach prawnych, dla których przygotowaliśmy osobną ścieżkę rozwiązań." },
   ] satisfies GuideFaqItem[],
 };
+
+/** Pasek „agenci w akcji” pod hero. */
+export const AGENCY_TICKER = [
+  "Agent AI zakwalifikował zapytanie ofertowe",
+  "Umowa porównana ze wzorcem",
+  "Faktura odczytana i wysłana do akceptacji",
+  "Odpowiedź z bazy wiedzy przygotowana",
+  "Dane firmy uzupełnione po NIP",
+  "Raport tygodniowy wysłany do zarządu",
+  "Zamówienie z PDF wprowadzone do systemu",
+  "Przypomnienie o terminie wysłane",
+  "Zgłoszenie przypisane do właściwej osoby",
+  "Notatka ze spotkania gotowa",
+] as const;
+
+/** Schemat przepływu (komponent AutomationFlow) dla strony agencji. */
+export const AGENCY_FLOW = {
+  title: "Jak łączymy AI z systemami firmy",
+  lead: "Agent AI sam niewiele zrobi. Siłę daje mu połączenie z miejscami, z których przychodzą informacje, i z systemami, w których mają trafić wyniki. Wybierz przykład.",
+  scenarios: [
+    {
+      id: "agent",
+      label: "Agent AI",
+      sources: ["Formularz", "E-mail", "Czat na stronie", "Telefon"],
+      hubLines: ["Agent AI rozumie", "i działa"],
+      targets: ["CRM", "Kalendarz", "Szkic odpowiedzi", "Raport"],
+      caption: "Agent czyta zapytanie, sprawdza klienta w CRM, proponuje termin rozmowy i przygotowuje odpowiedź. Człowiek zatwierdza to, co ważne.",
+      href: "/narzedzia/n8n/agenci-ai",
+      linkLabel: "Agenci AI w abonamencie",
+    },
+    {
+      id: "dokumenty",
+      label: "Dokumenty",
+      sources: ["Faktury", "Umowy", "Zamówienia", "Skany"],
+      hubLines: ["Odczyt i kontrola", "dokumentów"],
+      targets: ["System księgowy", "ERP", "Akceptacja", "Archiwum"],
+      caption: "AI odczytuje dane z dokumentów w różnych formatach, automat sprawdza je z systemami i przekazuje dalej, a wyjątki trafiają do człowieka.",
+      href: "/uslugi/ai-w-obsludze-dokumentow",
+      linkLabel: "AI w obsłudze dokumentów",
+    },
+    {
+      id: "wiedza",
+      label: "Wiedza firmy",
+      sources: ["Procedury", "Oferty", "Umowy", "Maile"],
+      hubLines: ["Asystent AI", "na wiedzy firmy"],
+      targets: ["Teams", "Strona", "Zespół", "Klienci"],
+      caption: "Asystent AI odpowiada na pytania zespołu i klientów na podstawie dokumentów firmy, zawsze ze wskazaniem źródła.",
+      href: "/uslugi/asystent-ai-na-firmowej-wiedzy",
+      linkLabel: "Asystent AI na firmowej wiedzy",
+    },
+  ],
+};
+
+export type AgentDemoScenario = {
+  id: string;
+  label: string;
+  input: { from: string; subject: string; body: string };
+  steps: { title: string; detail: string; tool: string }[];
+  output: { title: string; lines: string[] };
+  approveLabel: string;
+};
+
+/** Demo „agent AI w akcji”: przykłady ilustracyjne. */
+export const AGENT_DEMO: AgentDemoScenario[] = [
+  {
+    id: "zapytanie",
+    label: "Zapytanie ofertowe",
+    input: {
+      from: "Anna, kierowniczka zakupów",
+      subject: "Zapytanie o wdrożenie obiegu faktur",
+      body: "Dzień dobry, mamy ok. 300 faktur miesięcznie i trzy działy akceptujące koszty. Czy możecie przygotować ofertę?",
+    },
+    steps: [
+      { title: "Czyta zapytanie", detail: "Rozpoznaje temat, skalę i oczekiwania klienta.", tool: "Model AI" },
+      { title: "Sprawdza firmę", detail: "Uzupełnia dane firmy i historię kontaktów.", tool: "CRM" },
+      { title: "Szuka podobnych wdrożeń", detail: "Znajduje opis procesu i wcześniejsze oferty.", tool: "Baza wiedzy" },
+      { title: "Proponuje termin", detail: "Wybiera wolne terminy rozmowy w kalendarzu handlowca.", tool: "Kalendarz" },
+    ],
+    output: {
+      title: "Szkic odpowiedzi do klientki",
+      lines: [
+        "Dziękujemy za zapytanie. Obieg faktur dla trzech działów to proces, który dobrze znamy.",
+        "Proponujemy krótką rozmowę: wtorek 10:00 lub środa 14:00.",
+        "W załączeniu opis, jak wygląda taki obieg po wdrożeniu.",
+      ],
+    },
+    approveLabel: "Zatwierdź i wyślij",
+  },
+  {
+    id: "faktura",
+    label: "Faktura kosztowa",
+    input: {
+      from: "Skrzynka faktury@",
+      subject: "FV 2026/10/112 od dostawcy",
+      body: "Faktura PDF w załączniku: usługi serwisowe, 4 pozycje, termin płatności 14 dni.",
+    },
+    steps: [
+      { title: "Odczytuje fakturę", detail: "Dostawca, NIP, pozycje, kwoty i termin płatności.", tool: "Model AI" },
+      { title: "Sprawdza duplikaty", detail: "Porównuje z fakturami w systemie i z zamówieniem.", tool: "System księgowy" },
+      { title: "Sprawdza rachunek", detail: "Weryfikuje numer konta na białej liście VAT.", tool: "Biała lista" },
+      { title: "Proponuje opis kosztu", detail: "Dział, MPK i kategoria na podstawie historii dostawcy.", tool: "Reguły firmy" },
+    ],
+    output: {
+      title: "Karta akceptacji dla kierownika",
+      lines: [
+        "Dostawca: serwis urządzeń, kwota zgodna z zamówieniem.",
+        "Proponowany opis: dział produkcji, MPK 210, serwis.",
+        "Rachunek zweryfikowany, brak duplikatu.",
+      ],
+    },
+    approveLabel: "Zaakceptuj koszt",
+  },
+  {
+    id: "pytanie",
+    label: "Pytanie pracownika",
+    input: {
+      from: "Tomek, nowy handlowiec",
+      subject: "Pytanie w Teams",
+      body: "Jakie warunki płatności możemy dać nowemu klientowi hurtowemu przy pierwszym zamówieniu?",
+    },
+    steps: [
+      { title: "Rozumie pytanie", detail: "Szuka zasad dotyczących warunków płatności.", tool: "Model AI" },
+      { title: "Przeszukuje dokumenty", detail: "Znajduje politykę sprzedaży i cennik hurtowy.", tool: "Baza wiedzy" },
+      { title: "Sprawdza uprawnienia", detail: "Pokazuje tylko dokumenty dostępne dla działu sprzedaży.", tool: "Uprawnienia" },
+    ],
+    output: {
+      title: "Odpowiedź ze źródłem",
+      lines: [
+        "Przy pierwszym zamówieniu: przedpłata lub płatność 7 dni po akceptacji kierownika.",
+        "Źródło: Polityka sprzedaży hurtowej, rozdział 3.",
+      ],
+    },
+    approveLabel: "Odpowiedź pomocna",
+  },
+];
+
+export type ModelPickerQuestion = {
+  id: string;
+  question: string;
+  options: { label: string; scores: { projekt: number; abonament: number; opieka: number } }[];
+};
+
+/** Quiz „który model współpracy pasuje do was”. */
+export const MODEL_PICKER = {
+  questions: [
+    {
+      id: "zespol",
+      question: "Kto u was zajmie się rozwiązaniem po wdrożeniu?",
+      options: [
+        { label: "Mamy osobę techniczną lub dział IT", scores: { projekt: 2, abonament: 0, opieka: 1 } },
+        { label: "Ktoś się nauczy, ale potrzebujemy wsparcia", scores: { projekt: 1, abonament: 0, opieka: 2 } },
+        { label: "Nikt, nie chcemy zajmować się technologią", scores: { projekt: 0, abonament: 3, opieka: 1 } },
+      ],
+    },
+    {
+      id: "stan",
+      question: "Jak wygląda dziś automatyzacja w firmie?",
+      options: [
+        { label: "Zaczynamy od zera", scores: { projekt: 1, abonament: 2, opieka: 0 } },
+        { label: "Mamy pierwsze automatyzacje, które trzeba utrzymać", scores: { projekt: 0, abonament: 1, opieka: 3 } },
+        { label: "Mamy konkretny proces do zbudowania", scores: { projekt: 3, abonament: 1, opieka: 0 } },
+      ],
+    },
+    {
+      id: "budzet",
+      question: "Jaki sposób rozliczenia wolicie?",
+      options: [
+        { label: "Jednorazowo za projekt", scores: { projekt: 3, abonament: 0, opieka: 0 } },
+        { label: "Stała miesięczna opłata", scores: { projekt: 0, abonament: 2, opieka: 2 } },
+        { label: "Nie wiemy, doradźcie", scores: { projekt: 1, abonament: 1, opieka: 1 } },
+      ],
+    },
+  ] satisfies ModelPickerQuestion[],
+  results: {
+    projekt: {
+      name: "Projekt",
+      body: "Zbudujemy rozwiązanie, przekażemy je z dokumentacją i przeszkolimy zespół. Dalej rozwijacie je samodzielnie, a my pomagamy, gdy trzeba.",
+      href: "/uslugi/automatyzacja-oraz-ai-w-niestandardowych-procesach",
+      linkLabel: "Zobacz, jak budujemy rozwiązania",
+    },
+    abonament: {
+      name: "Agenci AI w abonamencie",
+      body: "Opisujecie zadanie, a my budujemy agenta i utrzymujemy go po naszej stronie. Płacicie stałą miesięczną opłatę i nie musicie zajmować się technologią.",
+      href: "/narzedzia/n8n/agenci-ai",
+      linkLabel: "Zobacz agentów w abonamencie",
+    },
+    opieka: {
+      name: "Stała opieka",
+      body: "Przejmiemy opiekę nad automatyzacjami, które już działają, uporządkujemy je i będziemy rozwijać kolejne w ustalonej puli godzin.",
+      href: "/narzedzia/n8n/opieka",
+      linkLabel: "Zobacz, jak wygląda opieka",
+    },
+  },
+} as const;
