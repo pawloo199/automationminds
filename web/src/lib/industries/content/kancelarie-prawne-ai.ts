@@ -1,0 +1,201 @@
+import type { IndustryPageContent } from "../types";
+
+export const kancelariePrawneAi: IndustryPageContent = {
+  industrySlug: "kancelarie-prawne",
+  subSlug: "ai",
+  name: "AI dla kancelarii",
+  excerpt: "Bezpieczne wdrożenie AI w kancelarii: dokumenty, umowy, wiedza kancelarii i zasady pracy z AI.",
+  metaTitle: "AI dla kancelarii i prawników: bezpieczne wdrożenie",
+  metaDescription:
+    "Wdrażamy AI w kancelariach prawnych: analiza dokumentów i umów, asystent na wiedzy kancelarii, zasady i szkolenia. Z ochroną tajemnicy zawodowej i danych.",
+  primaryKeyword: "AI dla kancelarii",
+  updatedAt: "2026-10-06",
+  hero: {
+    eyebrow: "Sztuczna inteligencja w kancelarii",
+    title: "AI dla kancelarii prawnych: szybsza praca z dokumentami, bez ryzyka dla tajemnicy",
+    lead: "Prawnicy i tak sięgają po AI, często na prywatnych kontach i bez zasad. Pomagamy kancelariom wdrożyć sztuczną inteligencję bezpiecznie: z kontrolą nad danymi, z jasnymi zasadami i tam, gdzie faktycznie oszczędza czas, czyli przy dokumentach, umowach i wiedzy kancelarii.",
+    bullets: [
+      "Analiza dokumentów i przegląd umów",
+      "Asystent AI na wiedzy kancelarii",
+      "Zasady, szkolenia i kontrola nad danymi",
+    ],
+  },
+  summary: [
+    { label: "Dla kogo", value: "Kancelarie adwokackie, radcowskie i działy prawne firm" },
+    { label: "Co robimy", value: "Narzędzia AI dla prawników, AI w dokumentach, asystent wiedzy kancelarii" },
+    { label: "Bezpieczeństwo", value: "Dane w UE, bez trenowania modeli na danych, uprawnienia do spraw" },
+    { label: "Zasada", value: "AI przygotowuje materiał roboczy, prawnik ocenia i decyduje" },
+  ],
+  symptoms: {
+    title: "Kiedy kancelaria powinna zająć się AI",
+    lead: "Jeśli rozpoznajecie u siebie któreś z tych sytuacji, to dobry moment, żeby uporządkować korzystanie z AI.",
+    items: [
+      "Prawnicy korzystają z czatów AI na prywatnych kontach i nikt nie wie, jakie dane tam trafiają.",
+      "Nie macie zasad, co wolno, a czego nie wolno wpisywać do narzędzi AI.",
+      "Analiza obszernych akt, umów i korespondencji zajmuje dni, choć duża część to czytanie i streszczanie.",
+      "Wiedza kancelarii jest w pismach i opiniach, których nikt nie potrafi szybko odnaleźć.",
+      "Klienci pytają, czy korzystacie z AI i jak chronicie ich dane.",
+      "Chcecie przyspieszyć pracę zespołu, ale obawiacie się o tajemnicę zawodową.",
+    ],
+  },
+  intro: {
+    title: "AI w kancelarii na trzech poziomach",
+    paragraphs: [
+      "Pierwszy poziom to narzędzia AI dla prawników: czat z modelem językowym na koncie firmowym, z zasadami korzystania i szkoleniem. Już to daje dużo, bo prawnicy szybciej streszczają dokumenty, przygotowują projekty korespondencji i porządkują notatki, a kancelaria wie, gdzie trafiają dane.",
+      "Drugi poziom to AI w procesach kancelarii. Model odczytuje pisma i umowy, wyciąga z nich daty, strony i najważniejsze postanowienia, porównuje umowę ze wzorcem kancelarii i oznacza odstępstwa. Wynik trafia do prawnika jako materiał roboczy, a nie gotowa porada.",
+      "Trzeci poziom to asystent AI na wiedzy kancelarii. Odpowiada na pytania na podstawie waszych pism, opinii i wzorów, zawsze ze wskazaniem dokumentu źródłowego. Nie zastępuje baz aktów prawnych i orzecznictwa, tylko udostępnia doświadczenie, które kancelaria już ma, a które dziś jest rozproszone w folderach.",
+    ],
+  },
+  scope: {
+    title: "Jak AI pomaga w pracy prawnika",
+    lead: "Zastosowania, które wdrażamy najczęściej. Każde z nich działa jako wsparcie, a końcową ocenę zawsze robi prawnik.",
+    items: [
+      { title: "Streszczenia akt i pism", body: "Krótkie streszczenie obszernych dokumentów z listą stron, dat i najważniejszych wątków." },
+      { title: "Przegląd umów", body: "Porównanie umowy ze wzorcem kancelarii i oznaczenie postanowień, które od niego odbiegają." },
+      { title: "Wyciąganie danych", body: "Daty, kwoty, strony i terminy z pism zapisane w systemie zamiast przepisywane ręcznie." },
+      { title: "Projekty korespondencji", body: "Szkice maili i pism powtarzalnych do sprawdzenia i dopracowania przez prawnika." },
+      { title: "Asystent wiedzy kancelarii", body: "Odpowiedzi na podstawie wcześniejszych pism, opinii i wzorów, ze wskazaniem źródła." },
+      { title: "Notatki ze spotkań", body: "Transkrypcja i podsumowanie rozmów, gdy uczestnicy się na to zgadzają." },
+      { title: "Tłumaczenia robocze", body: "Szybkie tłumaczenia dokumentów do analizy, z zastrzeżeniem, że nie zastępują tłumaczeń przysięgłych." },
+      { title: "Zasady i szkolenia", body: "Polityka korzystania z AI w kancelarii i warsztaty dla prawników na prawdziwych zadaniach." },
+    ],
+  },
+  security: {
+    title: "AI a tajemnica zawodowa",
+    lead: "Najczęstsze pytanie, które słyszymy od prawników. Odpowiadamy na nie rozwiązaniami, a nie obietnicami.",
+    items: [
+      { title: "Konta firmowe zamiast prywatnych", body: "Prawnicy korzystają z AI na kontach kancelarii, w planach, w których dane nie służą do trenowania modeli." },
+      { title: "Minimum danych", body: "Do modelu trafia tylko to, co potrzebne do zadania. Gdzie się da, dane osobowe są usuwane lub zastępowane przed wysłaniem." },
+      { title: "Dane w UE lub u was", body: "Przepływy z AI mogą działać na serwerze w UE albo w infrastrukturze kancelarii, bez zewnętrznych usług automatyzacji." },
+      { title: "Uprawnienia do wiedzy", body: "Asystent pokazuje tylko te dokumenty, do których dana osoba ma dostęp w kancelarii." },
+      { title: "Jasne zasady", body: "Pisemne zasady korzystania z AI: co wolno wpisywać, jak oznaczać materiały robocze, kto odpowiada za weryfikację." },
+      { title: "Weryfikacja przez prawnika", body: "Każdy wynik AI jest materiałem roboczym. Przepisy, orzeczenia i wnioski sprawdza prawnik." },
+    ],
+  },
+  comparison: {
+    title: "Prywatne konta AI czy AI wdrożone w kancelarii",
+    lead: "Różnica nie polega na jakości modelu, tylko na kontroli nad danymi i sposobem pracy.",
+    columns: ["AI wdrożone w kancelarii", "Prywatne konta prawników"],
+    rows: [
+      { label: "Gdzie trafiają dane", values: ["Ustalone miejsce, umowa z dostawcą", "Zależy od ustawień każdego konta"] },
+      { label: "Trenowanie modeli na danych", values: ["Wyłączone w planach firmowych", "Często włączone domyślnie w planach prywatnych"] },
+      { label: "Wiedza kancelarii", values: ["Dostępna przez asystenta, z uprawnieniami", "Brak, chyba że ktoś wklei dokumenty"] },
+      { label: "Zasady i odpowiedzialność", values: ["Spisane i znane zespołowi", "Każdy na własną rękę"] },
+      { label: "Wpływ na procesy", values: ["AI w dokumentach, terminach, raportach", "Tylko praca w oknie czatu"] },
+    ],
+    note: "Porównanie jest uproszczone. Ustawienia narzędzi AI zmieniają się, dlatego weryfikujemy je przy każdym wdrożeniu.",
+  },
+  example: {
+    title: "Analiza dokumentów przed i po wdrożeniu AI",
+    lead: "Przykład kancelarii prowadzącej spory gospodarcze, w której przed każdą sprawą trzeba przeczytać obszerną korespondencję i umowy.",
+    rows: [
+      { label: "Pierwsze zapoznanie", before: "Prawnik czyta całość, żeby zrozumieć sprawę.", after: "Streszczenie z listą stron, dat i wątków na start." },
+      { label: "Umowy", before: "Ręczne porównanie ze wzorcem kancelarii.", after: "Lista postanowień odbiegających od wzorca do oceny." },
+      { label: "Wcześniejsze sprawy", before: "Pytanie kolegów, czy ktoś miał podobną sprawę.", after: "Asystent wskazuje podobne pisma i opinie z kancelarii." },
+      { label: "Dane", before: "Przepisywanie dat i kwot do systemu.", after: "Dane zapisane w systemie do sprawdzenia." },
+      { label: "Bezpieczeństwo", before: "Prywatne czaty AI bez zasad.", after: "Konta firmowe, zasady i kontrola nad danymi." },
+    ],
+    note: "To przykład ilustracyjny. Zakres zawsze ustalamy po rozmowie o waszej kancelarii.",
+  },
+  implementation: {
+    title: "Jak wdrażamy AI w kancelarii",
+    lead: "Zaczynamy od zasad i bezpiecznych narzędzi, a potem dokładamy AI do procesów i wiedzy kancelarii.",
+    phases: [
+      {
+        title: "Przegląd i zasady",
+        duration: "kilka dni",
+        body: "Sprawdzamy, jak zespół korzysta dziś z AI, i przygotowujemy zasady korzystania z narzędzi AI w kancelarii.",
+        fromYou: "Rozmowa z partnerem i informacja o używanych narzędziach.",
+      },
+      {
+        title: "Narzędzia i szkolenie",
+        duration: "1–2 tygodnie",
+        body: "Konfigurujemy konta firmowe, uprawnienia i ustawienia prywatności, a potem prowadzimy warsztat na prawdziwych zadaniach prawników.",
+        fromYou: "Udział zespołu w warsztacie i przykładowe, zanonimizowane dokumenty.",
+      },
+      {
+        title: "AI w dokumentach i wiedzy",
+        duration: "zwykle 3–6 tygodni",
+        body: "Budujemy wybrane zastosowania: przegląd umów, streszczenia, asystenta wiedzy. Testujemy na dokumentach kancelarii z oceną prawników.",
+        fromYou: "Wzorce dokumentów, zbiór pism do asystenta i osoba oceniająca wyniki.",
+      },
+      {
+        title: "Opieka i rozwój",
+        duration: "stale",
+        body: "Pilnujemy działania i kosztów, aktualizujemy zasady wraz ze zmianami narzędzi i przepisów i dokładamy kolejne zastosowania.",
+        fromYou: "Uwagi zespołu i informacja o nowych potrzebach.",
+      },
+    ],
+  },
+  variants: {
+    title: "Warianty wdrożenia AI",
+    lead: "Wiele kancelarii zaczyna od bezpiecznego startu i po kilku tygodniach dokłada kolejne zastosowania.",
+    items: [
+      {
+        name: "Bezpieczny start",
+        description: "Dla kancelarii, które chcą uporządkować korzystanie z AI.",
+        includes: [
+          "Zasady korzystania z AI w kancelarii",
+          "Konfiguracja kont firmowych i prywatności",
+          "Warsztat dla prawników na prawdziwych zadaniach",
+          "Biblioteka sprawdzonych poleceń",
+        ],
+      },
+      {
+        name: "AI w dokumentach",
+        description: "Dla kancelarii, które pracują na dużej liczbie dokumentów.",
+        includes: [
+          "Wszystko z wariantu Bezpieczny start",
+          "Streszczenia akt i pism",
+          "Przegląd umów względem wzorców kancelarii",
+          "Wyciąganie danych do systemu",
+          "Przepływy działające na serwerze w UE",
+        ],
+      },
+      {
+        name: "Asystent wiedzy kancelarii",
+        description: "Dla kancelarii, które chcą wykorzystać własne doświadczenie.",
+        includes: [
+          "Wszystko z wariantu AI w dokumentach",
+          "Asystent na pismach, opiniach i wzorach kancelarii",
+          "Odpowiedzi ze wskazaniem źródła",
+          "Uprawnienia zgodne z zespołami spraw",
+          "Opieka i rozwój w abonamencie",
+        ],
+      },
+    ],
+  },
+  costFactors: {
+    title: "Od czego zależy koszt",
+    lead: "Wycenę przygotowujemy po przeglądzie. Na koszt wpływa przede wszystkim:",
+    items: [
+      "liczba prawników korzystających z narzędzi AI,",
+      "liczba i rodzaj dokumentów, które przetwarza AI,",
+      "wielkość zbioru dokumentów, na którym działa asystent wiedzy,",
+      "wymagania bezpieczeństwa, np. działanie wyłącznie w infrastrukturze kancelarii,",
+      "zakres szkoleń i opieki po wdrożeniu.",
+    ],
+  },
+  risks: {
+    title: "Granice AI w pracy prawnika",
+    items: [
+      { risk: "AI może podać nieistniejący przepis lub orzeczenie.", mitigation: "Asystent opiera się na dokumentach kancelarii i wskazuje źródło. Przepisy i orzecznictwo zawsze weryfikuje się w źródłach urzędowych lub bazach prawniczych." },
+      { risk: "Dane klienta trafią do niewłaściwego narzędzia.", mitigation: "Konta firmowe, zasady korzystania i przepływy, które ograniczają dane przesyłane do modelu." },
+      { risk: "Nadmierne zaufanie do wyników AI.", mitigation: "Szkolenie uczy, jak sprawdzać wyniki, a materiały AI są oznaczane jako robocze." },
+      { risk: "Zmiany w przepisach i stanowiskach samorządów dotyczących AI.", mitigation: "Aktualizujemy zasady i konfigurację, gdy zmieniają się przepisy, rekomendacje samorządów zawodowych lub ustawienia narzędzi." },
+    ],
+  },
+  faq: [
+    { question: "Czy prawnik może korzystać z AI?", answer: "Tak, pod warunkiem, że robi to w sposób chroniący tajemnicę zawodową i dane klientów oraz sam weryfikuje wyniki. Warto śledzić rekomendacje samorządów zawodowych dotyczące AI i opisać zasady korzystania w wewnętrznych procedurach kancelarii." },
+    { question: "Czy ChatGPT lub Claude mogą widzieć dane naszych klientów?", answer: "W planach firmowych i przez API dane domyślnie nie służą do trenowania modeli. Mimo to ograniczamy dane wysyłane do modeli do niezbędnego minimum i konfigurujemy narzędzia tak, żeby kancelaria wiedziała, gdzie trafiają informacje." },
+    { question: "Czy AI dla kancelarii zastąpi bazy prawnicze?", answer: "Nie. Bazy aktów prawnych i orzecznictwa pozostają podstawowym źródłem. Asystent AI, którego budujemy, korzysta z wiedzy samej kancelarii: jej pism, opinii i wzorów." },
+    { question: "Czy AI dla adwokatów różni się od AI dla radców prawnych?", answer: "Narzędzia i zasady bezpieczeństwa są takie same. Różnice wynikają z rodzaju spraw i praktyki kancelarii, które uwzględniamy przy wdrożeniu." },
+    { question: "Od czego zacząć wdrożenie AI w kancelarii?", answer: "Od zasad i bezpiecznych kont dla zespołu, połączonych z warsztatem na prawdziwych zadaniach. To szybko porządkuje sytuację i pokazuje, gdzie AI daje kancelarii najwięcej." },
+    { question: "Czy AI może przygotowywać pisma procesowe?", answer: "Może przygotować projekt lub fragmenty, np. stan faktyczny na podstawie dokumentów. Treść pisma, argumentacja i odpowiedzialność za nie zawsze należą do pełnomocnika." },
+    { question: "Czy prowadzicie szkolenia z AI dla prawników?", answer: "Tak. Warsztaty prowadzimy na zadaniach z praktyki kancelarii: streszczenia, analiza dokumentów, korespondencja, bezpieczeństwo danych i sprawdzanie wyników." },
+  ],
+  relatedServiceSlugs: ["asystent-ai-na-firmowej-wiedzy", "ai-w-obsludze-dokumentow", "szkolenia-ai-dla-zespolow", "strategia-wdrozenia-ai"],
+  relatedProcessSlugs: ["obieg-umow"],
+  relatedToolSlugs: ["claude", "chatgpt", "n8n", "microsoft-365"],
+  relatedArticleSlugs: ["ai-w-codziennej-pracy-zespolu", "rodo-a-automatyzacja-procesow", "wdrozenie-ai-w-malej-i-sredniej-firmie"],
+};

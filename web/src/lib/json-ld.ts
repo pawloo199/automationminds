@@ -522,3 +522,44 @@ export function processServiceJsonLd(
     },
   };
 }
+
+/** Service schema dla stron branż (/branze/{branza} i podstron). */
+export function industryServiceJsonLd(
+  page: {
+    industrySlug: string;
+    subSlug?: string;
+    hero: { title: string };
+    metaDescription: string;
+    primaryKeyword: string;
+    scope: { items: { title: string; body: string }[] };
+  },
+  industryName: string,
+) {
+  const url = `${siteUrl}/branze/${page.industrySlug}${page.subSlug ? `/${page.subSlug}` : ""}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${url}#service`,
+    name: page.hero.title,
+    serviceType: page.primaryKeyword,
+    description: page.metaDescription,
+    url,
+    inLanguage: "pl-PL",
+    areaServed: { "@type": "Country", name: "Polska" },
+    audience: { "@type": "BusinessAudience", name: industryName },
+    provider: {
+      "@type": "Organization",
+      "@id": `${siteUrl}/#organization`,
+      name: "Automation Minds",
+      url: siteUrl,
+    },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: `${industryName}: zakres`,
+      itemListElement: page.scope.items.map((item) => ({
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: item.title, description: item.body },
+      })),
+    },
+  };
+}

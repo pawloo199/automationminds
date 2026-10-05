@@ -13,6 +13,7 @@ import {
 import { getLiveProcesses, PROCESSES_HUB_PATH, processPath } from "@/lib/processes/catalog";
 import { getToolPages, TOOLS_HUB_PATH, toolPath } from "@/lib/tools/catalog";
 import { getToolSubpages, toolSubpagePath } from "@/lib/tools";
+import { getAllIndustryPages, INDUSTRIES_HUB_PATH, industryPagePath } from "@/lib/industries";
 import {
   getGuideArticles,
   getGuideCategoriesWithCounts,
@@ -136,6 +137,16 @@ export async function buildSitemapEntries(): Promise<MetadataRoute.Sitemap> {
     })),
   ];
 
+  const industryPages: MetadataRoute.Sitemap = [
+    { url: `${siteUrl}${INDUSTRIES_HUB_PATH}`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
+    ...getAllIndustryPages().map((page) => ({
+      url: `${siteUrl}${industryPagePath(page)}`,
+      lastModified: new Date(page.updatedAt),
+      changeFrequency: "monthly" as const,
+      priority: page.subSlug ? 0.75 : 0.8,
+    })),
+  ];
+
   const citySeoPages: MetadataRoute.Sitemap = cityPages.map((city) => ({
     url: `${siteUrl}${cityPath(city.slug)}`,
     lastModified: now,
@@ -152,6 +163,7 @@ export async function buildSitemapEntries(): Promise<MetadataRoute.Sitemap> {
     ...guidePages,
     ...processPages,
     ...toolPages,
+    ...industryPages,
     ...regionPages,
     ...citySeoPages,
   ];

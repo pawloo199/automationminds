@@ -13,6 +13,8 @@ import {
   ServiceTools,
 } from "@/components/services/ServiceSections";
 import { ProcessLinks } from "@/components/processes/ProcessLinks";
+import { IndustryLinks } from "@/components/industries/IndustrySections";
+import { getIndustryPagesFor, industryLinkItems } from "@/lib/industries";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { getProcessesForService } from "@/lib/processes";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
@@ -265,6 +267,7 @@ async function ServiceTemplate({
               </>
             ) : null}
             <ProcessLinks processes={processes} title="Jak to wygląda w praktyce" />
+            <IndustryLinks items={industryLinkItems(getIndustryPagesFor("service", entry.slug))} title="W branżach" />
             {relatedServices.length > 0 ? (
               <>
                 <h3 className="mt-14 text-sm font-semibold uppercase tracking-[0.2em] text-muted">

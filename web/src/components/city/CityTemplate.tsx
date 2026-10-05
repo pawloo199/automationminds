@@ -1,4 +1,5 @@
 import { Reveal } from "@/components/about/Reveal";
+import { getIndustriesForCity, industryPath } from "@/lib/industries/catalog";
 import { LeadHero } from "@/components/city/LeadHero";
 import { ArticleCard } from "@/components/guide/ArticleCard";
 import { ArticleFaq } from "@/components/guide/ArticleSections";
@@ -337,6 +338,16 @@ export function CityTemplate({
                   Automatyzacja procesów w całej Polsce
                   <ArrowUpRight className="h-4 w-4 shrink-0 text-brand" aria-hidden />
                 </Link>
+                {getIndustriesForCity(city.slug).map((industry) => (
+                  <Link
+                    key={industry.slug}
+                    href={industryPath(industry.slug)}
+                    className="flex items-center justify-between gap-3 rounded-2xl bg-white p-5 font-semibold text-dark shadow-sm transition hover:text-brand"
+                  >
+                    Automatyzacja i AI: {industry.name.toLowerCase()} {inCity(city)}
+                    <ArrowUpRight className="h-4 w-4 shrink-0 text-brand" aria-hidden />
+                  </Link>
+                ))}
               </div>
             </div>
             {articles.length > 0 ? (

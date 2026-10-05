@@ -15,6 +15,8 @@ import { ContactSection } from "@/components/sections/ContactSection";
 import { ServiceCard, ServiceExample, ServiceMidCta } from "@/components/services/ServiceSections";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { ToolCard } from "@/components/tools/ToolSections";
+import { IndustryLinks } from "@/components/industries/IndustrySections";
+import { getIndustryPagesFor, industryLinkItems } from "@/lib/industries";
 import { Container } from "@/components/ui/Container";
 import { getSettings } from "@/lib/airtable";
 import { CONSULTATION_OFFER } from "@/lib/consultation-offer";
@@ -161,6 +163,7 @@ export default async function ProcessPage({ params }: { params: Promise<{ slug: 
               </ul>
             </>
           ) : null}
+          <IndustryLinks items={industryLinkItems(getIndustryPagesFor("process", slug))} title="W branżach" />
           {relatedArticles.length > 0 ? (
             <>
               <h3 className="mt-14 text-sm font-semibold uppercase tracking-[0.2em] text-muted">Z Poradnika</h3>

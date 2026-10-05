@@ -8,6 +8,7 @@ import { COMPANY, COMPANY_ADDRESS_LINE } from "@/lib/company";
 import Image from "next/image";
 import Link from "next/link";
 import { CITY_HUB_PATH } from "@/lib/city-pages/types";
+import { INDUSTRIES_HUB_PATH } from "@/lib/industries/catalog";
 import { PROCESSES_HUB_PATH } from "@/lib/processes/catalog";
 import { TOOLS_HUB_PATH } from "@/lib/tools/catalog";
 
@@ -126,6 +127,8 @@ export function Footer({
               ))}
               <FooterLink href="/#case-studies">Case studies</FooterLink>
               <FooterLink href={PROCESSES_HUB_PATH}>Procesy</FooterLink>
+              <FooterLink href={INDUSTRIES_HUB_PATH}>Branże</FooterLink>
+              <FooterLink href="/branze/kancelarie-prawne">Automatyzacja kancelarii</FooterLink>
               <FooterLink href={TOOLS_HUB_PATH}>Narzędzia</FooterLink>
               <FooterLink href={CITY_HUB_PATH}>Automatyzacja w miastach</FooterLink>
               <FooterLink href="/polityka-prywatnosci">

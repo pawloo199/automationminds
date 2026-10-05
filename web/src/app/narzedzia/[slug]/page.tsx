@@ -6,6 +6,8 @@ import { ContactSection } from "@/components/sections/ContactSection";
 import { ServiceCard, ServiceExample, ServiceMidCta, ServiceScope } from "@/components/services/ServiceSections";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { ProcessLinks } from "@/components/processes/ProcessLinks";
+import { IndustryLinks } from "@/components/industries/IndustrySections";
+import { getIndustryPagesFor, industryLinkItems } from "@/lib/industries";
 import { getProcessesForTool } from "@/lib/processes";
 import { ToolCard, ToolComparison, ToolCosts, ToolFit, ToolFlows, ToolIntro, ToolSubpageLinks } from "@/components/tools/ToolSections";
 import { Container } from "@/components/ui/Container";
@@ -125,6 +127,7 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
             </>
           ) : null}
           <ProcessLinks processes={processes} title={`Procesy z wykorzystaniem ${entry.name}`} />
+          <IndustryLinks items={industryLinkItems(getIndustryPagesFor("tool", entry.slug))} title="W branżach" />
           {relatedTools.length > 0 ? (
             <>
               <h3 className="mt-14 text-sm font-semibold uppercase tracking-[0.2em] text-muted">Inne narzędzia</h3>
