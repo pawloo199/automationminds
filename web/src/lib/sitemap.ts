@@ -12,6 +12,7 @@ import {
 } from "@/lib/city-pages";
 import { getLiveProcesses, PROCESSES_HUB_PATH, processPath } from "@/lib/processes/catalog";
 import { getToolPages, TOOLS_HUB_PATH, toolPath } from "@/lib/tools/catalog";
+import { getToolSubpages, toolSubpagePath } from "@/lib/tools";
 import {
   getGuideArticles,
   getGuideCategoriesWithCounts,
@@ -126,6 +127,12 @@ export async function buildSitemapEntries(): Promise<MetadataRoute.Sitemap> {
       lastModified: now,
       changeFrequency: "monthly" as const,
       priority: 0.75,
+    })),
+    ...getToolSubpages().map((page) => ({
+      url: `${siteUrl}${toolSubpagePath(page.toolSlug, page.slug)}`,
+      lastModified: new Date(page.updatedAt),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
     })),
   ];
 

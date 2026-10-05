@@ -13,7 +13,9 @@ import { n8n } from "./content/n8n";
 import { pipedrive } from "./content/pipedrive";
 import { powerAutomate } from "./content/power-automate";
 import { zapier } from "./content/zapier";
-import type { ToolContent } from "./types";
+import { n8nAgenciAi } from "./subpages/n8n-agenci-ai";
+import { n8nSelfHosted } from "./subpages/n8n-self-hosted";
+import type { ToolContent, ToolSubpageContent } from "./types";
 
 export * from "./catalog";
 export type * from "./types";
@@ -44,6 +46,38 @@ export function getRelatedTools(content: ToolContent) {
     .filter((tool) => tool !== undefined);
 }
 
+/** Podstrony narzędzi w kolejności wyświetlania na stronie narzędzia. */
+const TOOL_SUBPAGES: ToolSubpageContent[] = [n8nAgenciAi, n8nSelfHosted];
+
+export function toolSubpagePath(toolSlug: string, slug: string) {
+  return `${toolPath(toolSlug)}/${slug}`;
+}
+
+export function getToolSubpages(toolSlug?: string) {
+  return toolSlug ? TOOL_SUBPAGES.filter((page) => page.toolSlug === toolSlug) : TOOL_SUBPAGES;
+}
+
+export function getToolSubpage(toolSlug: string, slug: string) {
+  return TOOL_SUBPAGES.find((page) => page.toolSlug === toolSlug && page.slug === slug);
+}
+
+export function getToolSubpageRelatedServices(page: ToolSubpageContent) {
+  return getServicesBySlugs(page.relatedServiceSlugs);
+}
+
+export function getToolSubpageRelatedArticles(page: ToolSubpageContent) {
+  return page.relatedArticleSlugs
+    .map((slug) => getGuideArticleBySlug(slug))
+    .filter((article): article is GuideArticle => Boolean(article));
+}
+
+export function toolSubpageBreadcrumbs(toolName: string, page: ToolSubpageContent) {
+  return [
+    ...toolBreadcrumbs(toolName, page.toolSlug),
+    { label: page.name, href: toolSubpagePath(page.toolSlug, page.slug) },
+  ];
+}
+
 export function toolBreadcrumbs(name: string, slug: string) {
   return [
     { label: "Strona główna", href: "/" },
@@ -61,5 +95,13 @@ if (process.env.NODE_ENV !== "production") {
       throw new Error(`Tool ${content.slug}: unknown related article`);
     if (getRelatedTools(content).length !== content.relatedToolSlugs.length)
       throw new Error(`Tool ${content.slug}: unknown related tool`);
+  }
+  for (const page of TOOL_SUBPAGES) {
+    const id = `${page.toolSlug}/${page.slug}`;
+    if (!TOOL_CONTENT[page.toolSlug]) throw new Error(`Tool subpage ${id}: missing tool page`);
+    if (getToolSubpageRelatedServices(page).length !== page.relatedServiceSlugs.length)
+      throw new Error(`Tool subpage ${id}: unknown related service`);
+    if (getToolSubpageRelatedArticles(page).length !== page.relatedArticleSlugs.length)
+      throw new Error(`Tool subpage ${id}: unknown related article`);
   }
 }

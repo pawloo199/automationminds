@@ -1,7 +1,15 @@
 import { Reveal } from "@/components/about/Reveal";
 import { SectionTitle } from "@/components/services/ServiceSections";
 import { Container } from "@/components/ui/Container";
-import { getToolGroup, toolHref, type ToolCatalogEntry, type ToolContent } from "@/lib/tools";
+import {
+  getToolGroup,
+  toolHref,
+  toolPath,
+  toolSubpagePath,
+  type ToolCatalogEntry,
+  type ToolContent,
+  type ToolSubpageContent,
+} from "@/lib/tools";
 import { ArrowRight, ArrowUpRight, Check, Minus, Zap } from "lucide-react";
 import Link from "next/link";
 
@@ -225,6 +233,64 @@ export function ToolCosts({ costs }: { costs: ToolContent["costs"] }) {
               <p key={paragraph.slice(0, 40)}>{paragraph}</p>
             ))}
           </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+/** Karty podstron narzędzia, np. n8n self-hosted, na stronie narzędzia. */
+export function ToolSubpageLinks({ toolName, pages }: { toolName: string; pages: ToolSubpageContent[] }) {
+  if (pages.length === 0) return null;
+  return (
+    <section aria-labelledby="podstrony-tytul" className="border-y border-brand/10 bg-surface py-20 lg:py-24">
+      <Container>
+        <SectionTitle
+          id="podstrony-tytul"
+          eyebrow={`Więcej o ${toolName}`}
+          title={`${toolName}: usługi i tematy szczegółowo`}
+          lead={`Każdy z tych tematów opisujemy na osobnej stronie, z zakresem, wariantami i odpowiedziami na częste pytania.`}
+        />
+        <ul className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {pages.map((page) => (
+            <li key={page.slug}>
+              <Link
+                href={toolSubpagePath(page.toolSlug, page.slug)}
+                className="group flex h-full flex-col rounded-2xl border border-brand/10 bg-white p-6 transition hover:-translate-y-0.5 hover:border-brand/40 hover:shadow-lg hover:shadow-brand/10"
+              >
+                <span className="flex items-start justify-between gap-3">
+                  <span className="text-lg font-semibold text-dark group-hover:text-brand">{page.name}</span>
+                  <ArrowUpRight className="mt-1 h-4 w-4 shrink-0 text-brand/50 group-hover:text-brand" aria-hidden />
+                </span>
+                <span className="mt-2 text-sm leading-relaxed text-muted">{page.excerpt}</span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </Container>
+    </section>
+  );
+}
+
+/** Wstęp podstrony narzędzia: opis tematu i link powrotny do strony narzędzia. */
+export function ToolSubpageIntro({ page, toolName }: { page: ToolSubpageContent; toolName: string }) {
+  return (
+    <section aria-labelledby="o-temacie" className="border-t border-brand/10 py-20 lg:py-24">
+      <Container>
+        <div className="max-w-3xl">
+          <SectionTitle id="o-temacie" eyebrow={toolName} title={page.intro.title} />
+          <div className="mt-8 space-y-5 text-lg leading-relaxed text-muted">
+            {page.intro.paragraphs.map((paragraph) => (
+              <p key={paragraph.slice(0, 40)}>{paragraph}</p>
+            ))}
+          </div>
+          <Link
+            href={toolPath(page.toolSlug)}
+            className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-brand hover:text-dark"
+          >
+            Wszystko o wdrożeniach {toolName}
+            <ArrowRight className="h-4 w-4" aria-hidden />
+          </Link>
         </div>
       </Container>
     </section>

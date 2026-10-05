@@ -453,8 +453,10 @@ export function toolServiceJsonLd(
     useCases: { items: { title: string; body: string }[] };
   },
   categoryName: string,
+  /** Ścieżka podstrony narzędzia, np. /narzedzia/n8n/self-hosted. */
+  path = `/narzedzia/${tool.slug}`,
 ) {
-  const url = `${siteUrl}/narzedzia/${tool.slug}`;
+  const url = `${siteUrl}${path}`;
   return {
     "@context": "https://schema.org",
     "@type": "Service",

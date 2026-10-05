@@ -2,11 +2,11 @@ import type { ToolContent } from "../types";
 
 export const n8n: ToolContent = {
   slug: "n8n",
-  metaTitle: "Wdrożenia n8n: automatyzacja i agenci AI | Automation Minds",
+  metaTitle: "Wdrożenie n8n: ekspert od automatyzacji i agentów AI",
   metaDescription:
     "Wdrażamy n8n w firmach: automatyzacje procesów, integracje systemów i agentów AI, w chmurze lub na waszym serwerze. Bezpłatna konsultacja 30 min.",
   primaryKeyword: "wdrożenie n8n",
-  updatedAt: "2026-10-01",
+  updatedAt: "2026-10-05",
   hero: {
     eyebrow: "Platforma automatyzacji",
     title: "Wdrożenia n8n: automatyzacje i agenci AI pod waszą kontrolą",
@@ -112,6 +112,8 @@ export const n8n: ToolContent = {
     { question: "Czy n8n nadaje się do agentów AI?", answer: "Tak. n8n ma rozbudowane bloki do pracy z modelami językowymi, pamięcią i narzędziami. Budujemy w nim agentów, którzy odczytują dokumenty, odpowiadają na zgłoszenia i wykonują zadania w waszych systemach." },
     { question: "n8n czy Make, co wybrać?", answer: "Make jest łatwiejszy na start i działa wyłącznie w chmurze. n8n daje większą kontrolę nad danymi i kosztami przy dużych wolumenach, ale wymaga więcej wiedzy technicznej. Wybór zależy od procesu, danych i zespołu." },
     { question: "Kto będzie utrzymywał przepływy po wdrożeniu?", answer: "Możemy przekazać przepływy waszemu zespołowi z dokumentacją albo zostać przy opiece: monitorować działanie, aktualizować n8n i rozwijać kolejne procesy." },
+    { question: "Zbudowaliśmy przepływy w n8n sami i coś przestało działać. Czy pomożecie?", answer: "Tak. Zaczynamy od przeglądu instalacji i przepływów, naprawiamy błędy i porządkujemy obsługę wyjątków. Potem możemy przejąć stałą opiekę albo przekazać wam poprawione przepływy z dokumentacją." },
+    { question: "Czy jesteście partnerem n8n?", answer: "Nie. Jesteśmy niezależnymi specjalistami od automatyzacji. Pracujemy w n8n na co dzień i wybieramy je tam, gdzie jest najlepszym narzędziem dla klienta." },
     { question: "Czy przenosicie automatyzacje z Make lub Zapiera do n8n?", answer: "Tak. Przenosimy istniejące scenariusze, przy okazji porządkując logikę i obsługę błędów. Najpierw oceniamy, czy migracja faktycznie się opłaci." },
   ],
   relatedServiceSlugs: ["automatyzacja-oraz-ai-w-niestandardowych-procesach", "agenci-ai", "integracje-systemow", "ai-w-obsludze-dokumentow"],

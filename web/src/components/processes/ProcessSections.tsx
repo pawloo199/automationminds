@@ -5,7 +5,7 @@ import type { ProcessContent } from "@/lib/processes";
 import { cn } from "@/lib/cn";
 import { AlertTriangle, Bot, Check, ClipboardCheck, ShieldCheck, User } from "lucide-react";
 
-export function ProcessIntro({ content }: { content: ProcessContent }) {
+export function ProcessIntro({ content }: { content: Pick<ProcessContent, "summary" | "symptoms"> }) {
   return (
     <section aria-labelledby="sygnaly-tytul" className="py-20 lg:py-28">
       <Container>
@@ -190,7 +190,7 @@ export function ProcessVariants({ variants }: { variants: ProcessContent["varian
   );
 }
 
-export function ProcessCostsAndRisks({ content }: { content: ProcessContent }) {
+export function ProcessCostsAndRisks({ content }: { content: Pick<ProcessContent, "costFactors" | "risks"> }) {
   return (
     <section aria-labelledby="koszty-tytul" className="border-t border-brand/10 py-20 lg:py-24">
       <Container>

@@ -7,7 +7,7 @@ import { ServiceCard, ServiceExample, ServiceMidCta, ServiceScope } from "@/comp
 import { JsonLd } from "@/components/seo/JsonLd";
 import { ProcessLinks } from "@/components/processes/ProcessLinks";
 import { getProcessesForTool } from "@/lib/processes";
-import { ToolCard, ToolComparison, ToolCosts, ToolFit, ToolFlows, ToolIntro } from "@/components/tools/ToolSections";
+import { ToolCard, ToolComparison, ToolCosts, ToolFit, ToolFlows, ToolIntro, ToolSubpageLinks } from "@/components/tools/ToolSections";
 import { Container } from "@/components/ui/Container";
 import { getSettings } from "@/lib/airtable";
 import { CONSULTATION_OFFER } from "@/lib/consultation-offer";
@@ -21,6 +21,7 @@ import {
   getToolPages,
   getToolRelatedArticles,
   getToolRelatedServices,
+  getToolSubpages,
   toolBreadcrumbs,
   toolPath,
 } from "@/lib/tools";
@@ -55,6 +56,7 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
   const relatedArticles = getToolRelatedArticles(content);
   const path = toolPath(entry.slug);
   const processes = getProcessesForTool(entry.slug);
+  const subpages = getToolSubpages(entry.slug);
 
   return (
     <SiteLayout>
@@ -77,6 +79,7 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
       />
 
       <ToolIntro content={content} related={relatedTools} />
+      <ToolSubpageLinks toolName={entry.name} pages={subpages} />
       <ServiceScope scope={content.useCases} />
       <ToolFlows flows={content.flows} />
       <ToolFit fit={content.fit} name={entry.name} />
