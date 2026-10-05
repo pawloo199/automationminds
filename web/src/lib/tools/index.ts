@@ -14,6 +14,7 @@ import { pipedrive } from "./content/pipedrive";
 import { powerAutomate } from "./content/power-automate";
 import { zapier } from "./content/zapier";
 import { n8nAgenciAi } from "./subpages/n8n-agenci-ai";
+import { n8nKsef } from "./subpages/n8n-ksef";
 import { n8nOpieka } from "./subpages/n8n-opieka";
 import { n8nSelfHosted } from "./subpages/n8n-self-hosted";
 import { n8nSzkolenie } from "./subpages/n8n-szkolenie";
@@ -49,7 +50,7 @@ export function getRelatedTools(content: ToolContent) {
 }
 
 /** Podstrony narzędzi w kolejności wyświetlania na stronie narzędzia. */
-const TOOL_SUBPAGES: ToolSubpageContent[] = [n8nAgenciAi, n8nSelfHosted, n8nOpieka, n8nSzkolenie];
+const TOOL_SUBPAGES: ToolSubpageContent[] = [n8nAgenciAi, n8nSelfHosted, n8nOpieka, n8nSzkolenie, n8nKsef];
 
 export function toolSubpagePath(toolSlug: string, slug: string) {
   return `${toolPath(toolSlug)}/${slug}`;
@@ -57,6 +58,11 @@ export function toolSubpagePath(toolSlug: string, slug: string) {
 
 export function getToolSubpages(toolSlug?: string) {
   return toolSlug ? TOOL_SUBPAGES.filter((page) => page.toolSlug === toolSlug) : TOOL_SUBPAGES;
+}
+
+/** Podstrony pokazywane na stronie narzędzia: własne i powiązane, np. „n8n i KSeF” na stronie KSeF. */
+export function getToolSubpagesForToolPage(toolSlug: string) {
+  return TOOL_SUBPAGES.filter((page) => page.toolSlug === toolSlug || page.alsoForToolSlugs?.includes(toolSlug));
 }
 
 export function getToolSubpage(toolSlug: string, slug: string) {
@@ -101,6 +107,7 @@ if (process.env.NODE_ENV !== "production") {
   for (const page of TOOL_SUBPAGES) {
     const id = `${page.toolSlug}/${page.slug}`;
     if (!TOOL_CONTENT[page.toolSlug]) throw new Error(`Tool subpage ${id}: missing tool page`);
+    if (page.alsoForToolSlugs?.some((slug) => !TOOL_CONTENT[slug])) throw new Error(`Tool subpage ${id}: unknown alsoForToolSlugs`);
     if (getToolSubpageRelatedServices(page).length !== page.relatedServiceSlugs.length)
       throw new Error(`Tool subpage ${id}: unknown related service`);
     if (getToolSubpageRelatedArticles(page).length !== page.relatedArticleSlugs.length)

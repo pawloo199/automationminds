@@ -68,6 +68,8 @@ export interface ToolContent {
 export interface ToolSubpageContent {
   toolSlug: string;
   slug: string;
+  /** Inne narzędzia, na których stronach podstrona też jest pokazana, np. KSeF dla „n8n i KSeF”. */
+  alsoForToolSlugs?: string[];
   /** Krótka nazwa w okruszkach i na kartach, np. „n8n self-hosted”. */
   name: string;
   /** Jedno zdanie na karcie na stronie narzędzia. */

@@ -21,7 +21,7 @@ import {
   getToolPages,
   getToolRelatedArticles,
   getToolRelatedServices,
-  getToolSubpages,
+  getToolSubpagesForToolPage,
   toolBreadcrumbs,
   toolPath,
 } from "@/lib/tools";
@@ -56,7 +56,7 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
   const relatedArticles = getToolRelatedArticles(content);
   const path = toolPath(entry.slug);
   const processes = getProcessesForTool(entry.slug);
-  const subpages = getToolSubpages(entry.slug);
+  const subpages = getToolSubpagesForToolPage(entry.slug);
 
   return (
     <SiteLayout>

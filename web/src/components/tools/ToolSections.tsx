@@ -2,6 +2,7 @@ import { Reveal } from "@/components/about/Reveal";
 import { SectionTitle } from "@/components/services/ServiceSections";
 import { Container } from "@/components/ui/Container";
 import {
+  getToolEntry,
   getToolGroup,
   toolHref,
   toolPath,
@@ -284,13 +285,21 @@ export function ToolSubpageIntro({ page, toolName }: { page: ToolSubpageContent;
               <p key={paragraph.slice(0, 40)}>{paragraph}</p>
             ))}
           </div>
-          <Link
-            href={toolPath(page.toolSlug)}
-            className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-brand hover:text-dark"
-          >
-            Wszystko o wdrożeniach {toolName}
-            <ArrowRight className="h-4 w-4" aria-hidden />
-          </Link>
+          <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3">
+            {[page.toolSlug, ...(page.alsoForToolSlugs ?? [])].map((slug) => {
+              const name = slug === page.toolSlug ? toolName : (getToolEntry(slug)?.name ?? slug);
+              return (
+                <Link
+                  key={slug}
+                  href={toolPath(slug)}
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-brand hover:text-dark"
+                >
+                  Wszystko o wdrożeniach {name}
+                  <ArrowRight className="h-4 w-4" aria-hidden />
+                </Link>
+              );
+            })}
+          </div>
         </div>
       </Container>
     </section>
