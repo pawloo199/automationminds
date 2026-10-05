@@ -14,6 +14,7 @@ import { pipedrive } from "./content/pipedrive";
 import { powerAutomate } from "./content/power-automate";
 import { zapier } from "./content/zapier";
 import { n8nAgenciAi } from "./subpages/n8n-agenci-ai";
+import { n8nOpieka } from "./subpages/n8n-opieka";
 import { n8nSelfHosted } from "./subpages/n8n-self-hosted";
 import type { ToolContent, ToolSubpageContent } from "./types";
 
@@ -47,7 +48,7 @@ export function getRelatedTools(content: ToolContent) {
 }
 
 /** Podstrony narzędzi w kolejności wyświetlania na stronie narzędzia. */
-const TOOL_SUBPAGES: ToolSubpageContent[] = [n8nAgenciAi, n8nSelfHosted];
+const TOOL_SUBPAGES: ToolSubpageContent[] = [n8nAgenciAi, n8nSelfHosted, n8nOpieka];
 
 export function toolSubpagePath(toolSlug: string, slug: string) {
   return `${toolPath(toolSlug)}/${slug}`;
