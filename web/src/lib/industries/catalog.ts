@@ -18,6 +18,7 @@ export const INDUSTRIES: IndustryEntry[] = [
     summary: "Automatyzacja i AI dla kancelarii adwokackich i radcowskich: dokumenty, sprawy, klienci i wiedza kancelarii.",
     icon: Scale,
     status: "live",
+    mainPageLabel: "Automatyzacja kancelarii",
     featuredCitySlugs: ["warszawa", "krakow", "wroclaw", "poznan", "gdansk", "lodz", "katowice", "szczecin", "lublin"],
     cta: {
       midTitle: "Porozmawiajmy o waszej kancelarii",

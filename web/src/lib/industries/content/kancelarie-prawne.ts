@@ -3,12 +3,12 @@ import type { IndustryPageContent } from "../types";
 export const kancelariePrawne: IndustryPageContent = {
   industrySlug: "kancelarie-prawne",
   name: "Kancelarie prawne",
-  excerpt: "Automatyzacja i AI dla kancelarii adwokackich i radcowskich: klienci, sprawy, terminy, pisma i rozliczenia.",
-  metaTitle: "Automatyzacja kancelarii prawnej i AI dla prawników",
+  excerpt: "Automatyzacja pracy kancelarii adwokackich i radcowskich: klienci, sprawy, terminy, pisma i rozliczenia.",
+  metaTitle: "Automatyzacja kancelarii prawnej: klienci, sprawy, terminy",
   metaDescription:
     "Automatyzujemy pracę kancelarii prawnych: obsługa klientów, sprawy, terminy, pisma, umowy, rozliczenia i AI na wiedzy kancelarii. Z dbałością o tajemnicę zawodową.",
   primaryKeyword: "automatyzacja kancelarii prawnej",
-  updatedAt: "2026-10-06",
+  updatedAt: "2026-10-05",
   hero: {
     eyebrow: "Branża: kancelarie prawne",
     title: "Automatyzacja kancelarii prawnej: mniej administracji, więcej pracy prawniczej",

@@ -9,7 +9,7 @@ export const kancelariePrawneAi: IndustryPageContent = {
   metaDescription:
     "Wdrażamy AI w kancelariach prawnych: analiza dokumentów i umów, asystent na wiedzy kancelarii, zasady i szkolenia. Z ochroną tajemnicy zawodowej i danych.",
   primaryKeyword: "AI dla kancelarii",
-  updatedAt: "2026-10-06",
+  updatedAt: "2026-10-05",
   hero: {
     eyebrow: "Sztuczna inteligencja w kancelarii",
     title: "AI dla kancelarii prawnych: szybsza praca z dokumentami, bez ryzyka dla tajemnicy",

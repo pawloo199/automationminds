@@ -83,7 +83,7 @@ export function industryLinkItems(pages: IndustryPageContent[]) {
     const entry = getIndustryEntry(page.industrySlug)!;
     return {
       href: industryPagePath(page),
-      name: page.subSlug ? `${entry.name}: ${page.name}` : `${entry.name}: automatyzacja i AI`,
+      name: page.subSlug ? page.name : entry.mainPageLabel,
       excerpt: page.excerpt,
     };
   });

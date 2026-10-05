@@ -9,6 +9,8 @@ export interface IndustryEntry {
   summary: string;
   icon: LucideIcon;
   status: "live" | "planned";
+  /** Etykieta strony głównej branży w linkach, np. „Automatyzacja kancelarii”. */
+  mainPageLabel: string;
   /** Miasta, na których stronach pokazujemy link do branży (duże rynki dla tej branży). */
   featuredCitySlugs?: string[];
   /** Teksty wezwań do kontaktu na stronach branży. */

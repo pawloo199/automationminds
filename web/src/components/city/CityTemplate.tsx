@@ -344,7 +344,7 @@ export function CityTemplate({
                     href={industryPath(industry.slug)}
                     className="flex items-center justify-between gap-3 rounded-2xl bg-white p-5 font-semibold text-dark shadow-sm transition hover:text-brand"
                   >
-                    Automatyzacja i AI: {industry.name.toLowerCase()} {inCity(city)}
+                    {industry.mainPageLabel} {inCity(city)}
                     <ArrowUpRight className="h-4 w-4 shrink-0 text-brand" aria-hidden />
                   </Link>
                 ))}

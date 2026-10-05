@@ -85,6 +85,14 @@ export default async function IndustriesHubPage() {
                   </Link>
                   {subpages.length > 0 ? (
                     <ul className="mt-6 flex flex-wrap gap-2 border-t border-brand/10 pt-5">
+                      <li>
+                        <Link
+                          href={industryPath(industry.slug)}
+                          className="inline-flex rounded-full border border-brand/15 px-4 py-2 text-sm font-medium text-dark transition hover:border-brand hover:text-brand"
+                        >
+                          {industry.mainPageLabel}
+                        </Link>
+                      </li>
                       {subpages.map((page) => (
                         <li key={page.subSlug}>
                           <Link
