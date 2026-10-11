@@ -138,5 +138,5 @@ export const hurtownieNaleznosciILimity: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-ksiegowosci", "automatyzacja-sprzedazy", "automatyzacja-raportow"],
   relatedProcessSlugs: ["przypomnienia-o-platnosciach", "raporty-finansowe"],
   relatedToolSlugs: ["n8n", "microsoft-365", "ksef"],
-  relatedArticleSlugs: ["integracja-crm-z-fakturowaniem", "jak-mierzyc-roi-automatyzacji", "5-procesow-do-automatyzacji-w-malej-firmie"],
+  relatedArticleSlugs: ["limity-kupieckie-i-naleznosci", "co-zautomatyzowac-w-hurtowni", "integracja-crm-z-fakturowaniem"],
 };

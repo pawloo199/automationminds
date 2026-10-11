@@ -42,6 +42,10 @@ import coZautomatyzowacWFirmieLogistycznej from "./articles/co-zautomatyzowac-w-
 import aiWLogistyce from "./articles/ai-w-logistyce";
 import wmsAAutomatyzacja from "./articles/wms-a-automatyzacja";
 import kpiWLogistyce from "./articles/kpi-w-logistyce";
+import coZautomatyzowacWHurtowni from "./articles/co-zautomatyzowac-w-hurtowni";
+import aiWHandluB2b from "./articles/ai-w-handlu-b2b";
+import platformaB2bCzyAutomatyzacjaZamowien from "./articles/platforma-b2b-czy-automatyzacja-zamowien";
+import limityKupieckieINaleznosci from "./articles/limity-kupieckie-i-naleznosci";
 /** Wszystkie artykuły Poradnika, od najnowszego. */
 export const guideArticles: GuideArticle[] = [
   procesowDoAutomatyzacjiWMalejFirmie,
@@ -86,6 +90,10 @@ export const guideArticles: GuideArticle[] = [
   aiWLogistyce,
   wmsAAutomatyzacja,
   kpiWLogistyce,
+  coZautomatyzowacWHurtowni,
+  aiWHandluB2b,
+  platformaB2bCzyAutomatyzacjaZamowien,
+  limityKupieckieINaleznosci,
 ].sort(
   (a, b) =>
     new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),

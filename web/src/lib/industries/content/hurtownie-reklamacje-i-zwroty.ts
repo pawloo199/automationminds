@@ -138,5 +138,5 @@ export const hurtownieReklamacjeIZwroty: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-w-obsludze-klienta", "ai-w-obsludze-dokumentow", "automatyzacja-raportow"],
   relatedProcessSlugs: ["obsluga-reklamacji"],
   relatedToolSlugs: ["n8n", "chatgpt", "airtable"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "airtable-w-praktyce-zastosowania", "jak-mierzyc-roi-automatyzacji"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-hurtowni", "airtable-w-praktyce-zastosowania", "jak-mierzyc-roi-automatyzacji"],
 };

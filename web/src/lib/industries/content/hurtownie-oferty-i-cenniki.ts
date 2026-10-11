@@ -138,5 +138,5 @@ export const hurtownieOfertyICenniki: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-sprzedazy", "automatyzacja-oraz-ai-w-niestandardowych-procesach", "integracje-systemow"],
   relatedProcessSlugs: ["ofertowanie"],
   relatedToolSlugs: ["hubspot", "pipedrive", "n8n", "microsoft-365"],
-  relatedArticleSlugs: ["automatyzacja-obslugi-leadow-sprzedazowych", "integracja-crm-z-fakturowaniem", "airtable-czy-excel"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-hurtowni", "automatyzacja-obslugi-leadow-sprzedazowych", "integracja-crm-z-fakturowaniem"],
 };

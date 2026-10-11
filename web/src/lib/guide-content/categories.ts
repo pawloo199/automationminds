@@ -11,6 +11,7 @@ export const GUIDE_CATEGORY_SLUGS = [
   "biura-rachunkowe",
   "spedycja",
   "firmy-logistyczne",
+  "hurtownie-i-dystrybucja",
 ] as const;
 
 export type GuideCategorySlug = (typeof GUIDE_CATEGORY_SLUGS)[number];
@@ -431,6 +432,40 @@ export const guideCategories: GuideCategory[] = [
     cta: {
       title: "Chcecie zautomatyzować pracę firmy logistycznej?",
       body: "Porozmawiajmy o tym, co zabiera biuru najwięcej czasu. Wskażemy, od czego zacząć i co da się połączyć z waszym WMS lub TMS.",
+    },
+    inMenu: false,
+  },
+  {
+    slug: "hurtownie-i-dystrybucja",
+    name: "Hurtownie i dystrybucja",
+    title: "AI i automatyzacja w hurtowni i handlu B2B. Poradnik",
+    metaTitle: "AI i automatyzacja w hurtowni i handlu B2B. Poradnik",
+    metaDescription:
+      "Jak hurtownie i dystrybutorzy mogą korzystać z AI i automatyzacji: procesy na początek, zamówienia B2B, należności i limity kupieckie, AI w handlu B2B.",
+    shortDescription:
+      "Jak hurtownie i firmy handlowe B2B mogą odciążyć handlowców i biuro dzięki automatyzacji i AI.",
+    lead: "Artykuły dla właścicieli i menedżerów hurtowni, dystrybutorów i firm handlowych B2B, które chcą, żeby handlowcy spędzali więcej czasu z klientami, a biuro mniej czasu na przepisywaniu. Piszemy z perspektywy wdrożeń w handlu B2B.",
+    about: [
+      "Hurtownia pracuje na dużej liczbie zamówień, produktów i klientów. ERP prowadzi stany, ceny i dokumenty, ale wiele informacji trafia do niego ręcznie: zamówienia z maili, oferty z arkuszy, potwierdzenia od dostawców.",
+      "W tej części Poradnika opisujemy, które procesy w hurtowni warto zautomatyzować najpierw, kiedy wystarczy platforma B2B, a kiedy automatyzacja zamówień z maili, jak pilnować należności i limitów kupieckich i jak AI pomaga w handlu B2B.",
+      "Jeśli szukacie konkretnych rozwiązań i przebiegu wdrożenia, zajrzyjcie także na stronę automatyzacji hurtowni w części Branże.",
+    ],
+    faq: [
+      {
+        question: "Co w hurtowni da się zautomatyzować?",
+        answer:
+          "Najczęściej obsługę zamówień od klientów, oferty i cenniki, pracę handlowców w CRM, zakupy u dostawców, reklamacje i zwroty oraz należności i limity kupieckie.",
+      },
+      {
+        question: "Czy automatyzacja wymaga zmiany ERP?",
+        answer:
+          "Zwykle nie. Automatyzacje buduje się obok ERP i łączy z nim przez API, import i eksport plików albo bazę danych.",
+      },
+    ],
+    relatedServiceSlugs: ["automatyzacja-sprzedazy", "integracje-systemow", "ai-w-obsludze-dokumentow"],
+    cta: {
+      title: "Chcecie zautomatyzować pracę hurtowni?",
+      body: "Porozmawiajmy o tym, co zabiera handlowcom i biuru najwięcej czasu. Wskażemy, od czego zacząć i co da się połączyć z waszym ERP.",
     },
     inMenu: false,
   },

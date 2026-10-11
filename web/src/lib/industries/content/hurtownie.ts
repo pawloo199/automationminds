@@ -218,5 +218,5 @@ export const hurtownie: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-sprzedazy", "integracje-systemow", "ai-w-obsludze-dokumentow", "automatyzacja-w-obsludze-klienta"],
   relatedProcessSlugs: ["przyjmowanie-zamowien", "ofertowanie", "przypomnienia-o-platnosciach", "obsluga-reklamacji"],
   relatedToolSlugs: ["n8n", "hubspot", "pipedrive", "microsoft-365"],
-  relatedArticleSlugs: ["automatyzacja-obslugi-leadow-sprzedazowych", "integracja-crm-z-fakturowaniem", "jak-mierzyc-roi-automatyzacji"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-hurtowni", "platforma-b2b-czy-automatyzacja-zamowien", "limity-kupieckie-i-naleznosci"],
 };

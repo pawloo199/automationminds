@@ -138,5 +138,5 @@ export const hurtownieZakupyUDostawcow: IndustryPageContent = {
   relatedServiceSlugs: ["ai-w-obsludze-dokumentow", "automatyzacja-dla-ksiegowosci", "integracje-systemow"],
   relatedProcessSlugs: ["obieg-faktur-kosztowych"],
   relatedToolSlugs: ["n8n", "ksef", "microsoft-365"],
-  relatedArticleSlugs: ["porzadek-w-danych-przed-ai-i-automatyzacja", "integracja-crm-z-fakturowaniem", "gotowa-automatyzacja-czy-budowana-od-zera"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-hurtowni", "ai-w-handlu-b2b", "porzadek-w-danych-przed-ai-i-automatyzacja"],
 };

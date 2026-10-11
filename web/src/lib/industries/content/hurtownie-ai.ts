@@ -194,5 +194,5 @@ export const hurtownieAi: IndustryPageContent = {
   relatedServiceSlugs: ["agenci-ai", "ai-w-obsludze-dokumentow", "asystent-ai-na-firmowej-wiedzy", "szkolenia-ai-dla-zespolow"],
   relatedProcessSlugs: ["przyjmowanie-zamowien", "ofertowanie"],
   relatedToolSlugs: ["chatgpt", "claude", "n8n", "hubspot"],
-  relatedArticleSlugs: ["ai-w-codziennej-pracy-zespolu", "wdrozenie-ai-w-malej-i-sredniej-firmie", "porzadek-w-danych-przed-ai-i-automatyzacja"],
+  relatedArticleSlugs: ["ai-w-handlu-b2b", "co-zautomatyzowac-w-hurtowni", "ai-w-codziennej-pracy-zespolu"],
 };

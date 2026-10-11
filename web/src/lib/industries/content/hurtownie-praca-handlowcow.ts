@@ -138,5 +138,5 @@ export const hurtowniePracaHandlowcow: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-sprzedazy", "automatyzacja-raportow", "agenci-ai"],
   relatedProcessSlugs: ["obsluga-zapytan-i-leadow"],
   relatedToolSlugs: ["hubspot", "pipedrive", "n8n", "chatgpt"],
-  relatedArticleSlugs: ["automatyzacja-obslugi-leadow-sprzedazowych", "ai-w-codziennej-pracy-zespolu", "jak-mierzyc-roi-automatyzacji"],
+  relatedArticleSlugs: ["ai-w-handlu-b2b", "co-zautomatyzowac-w-hurtowni", "automatyzacja-obslugi-leadow-sprzedazowych"],
 };

@@ -138,5 +138,5 @@ export const hurtownieObslugaZamowien: IndustryPageContent = {
   relatedServiceSlugs: ["ai-w-obsludze-dokumentow", "automatyzacja-sprzedazy", "integracje-systemow"],
   relatedProcessSlugs: ["przyjmowanie-zamowien"],
   relatedToolSlugs: ["n8n", "chatgpt", "microsoft-365"],
-  relatedArticleSlugs: ["gotowa-automatyzacja-czy-budowana-od-zera", "porzadek-w-danych-przed-ai-i-automatyzacja", "jak-mierzyc-roi-automatyzacji"],
+  relatedArticleSlugs: ["platforma-b2b-czy-automatyzacja-zamowien", "ai-w-handlu-b2b", "co-zautomatyzowac-w-hurtowni"],
 };
