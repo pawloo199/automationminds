@@ -28,6 +28,14 @@ import { spedycjaWeryfikacjaPrzewoznikow } from "./content/spedycja-weryfikacja-
 import { spedycjaStatusyDlaKlientow } from "./content/spedycja-statusy-dla-klientow";
 import { spedycjaDokumentyPrzewozowe } from "./content/spedycja-dokumenty-przewozowe";
 import { spedycjaRozliczeniaFrachtu } from "./content/spedycja-rozliczenia-frachtu";
+import { firmyLogistyczne } from "./content/firmy-logistyczne";
+import { firmyLogistyczneAi } from "./content/firmy-logistyczne-ai";
+import { logistykaZleceniaKlientow } from "./content/logistyka-zlecenia-klientow";
+import { logistykaAwizacjeDostaw } from "./content/logistyka-awizacje-dostaw";
+import { logistykaDokumentyIReklamacje } from "./content/logistyka-dokumenty-i-reklamacje";
+import { logistykaObslugaKlientow } from "./content/logistyka-obsluga-klientow";
+import { logistykaFlotaIKierowcy } from "./content/logistyka-flota-i-kierowcy";
+import { logistykaRozliczeniaUslug } from "./content/logistyka-rozliczenia-uslug";
 import type { IndustryPageContent } from "./types";
 
 export * from "./catalog";
@@ -59,6 +67,14 @@ const INDUSTRY_PAGES: IndustryPageContent[] = [
   spedycjaStatusyDlaKlientow,
   spedycjaDokumentyPrzewozowe,
   spedycjaRozliczeniaFrachtu,
+  firmyLogistyczne,
+  firmyLogistyczneAi,
+  logistykaZleceniaKlientow,
+  logistykaAwizacjeDostaw,
+  logistykaDokumentyIReklamacje,
+  logistykaObslugaKlientow,
+  logistykaFlotaIKierowcy,
+  logistykaRozliczeniaUslug,
 ];
 
 export function industryPagePath(page: IndustryPageContent) {
