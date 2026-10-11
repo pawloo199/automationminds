@@ -60,6 +60,14 @@ import { nieruchomosciUmowyIDokumenty } from "./content/nieruchomosci-umowy-i-do
 import { nieruchomosciZgloszeniaNajemcow } from "./content/nieruchomosci-zgloszenia-najemcow";
 import { nieruchomosciRozliczeniaNajmu } from "./content/nieruchomosci-rozliczenia-najmu";
 import { nieruchomosciAsystentNajemcy } from "./content/nieruchomosci-asystent-najemcy";
+import { posrednictwoUbezpieczeniowe } from "./content/posrednictwo-ubezpieczeniowe";
+import { posrednictwoUbezpieczenioweAi } from "./content/posrednictwo-ubezpieczeniowe-ai";
+import { posrednictwoUbezpieczenioweOdnowieniaPolis } from "./content/posrednictwo-ubezpieczeniowe-odnowienia-polis";
+import { posrednictwoUbezpieczenioweZapytaniaIKalkulacje } from "./content/posrednictwo-ubezpieczeniowe-zapytania-i-kalkulacje";
+import { posrednictwoUbezpieczenioweDokumentyKlientow } from "./content/posrednictwo-ubezpieczeniowe-dokumenty-klientow";
+import { posrednictwoUbezpieczenioweSzkodyKlientow } from "./content/posrednictwo-ubezpieczeniowe-szkody-klientow";
+import { posrednictwoUbezpieczenioweProwizje } from "./content/posrednictwo-ubezpieczeniowe-prowizje";
+import { posrednictwoUbezpieczenioweBazaPolis } from "./content/posrednictwo-ubezpieczeniowe-baza-polis";
 import type { IndustryPageContent } from "./types";
 
 export * from "./catalog";
@@ -123,6 +131,14 @@ const INDUSTRY_PAGES: IndustryPageContent[] = [
   nieruchomosciZgloszeniaNajemcow,
   nieruchomosciRozliczeniaNajmu,
   nieruchomosciAsystentNajemcy,
+  posrednictwoUbezpieczeniowe,
+  posrednictwoUbezpieczenioweAi,
+  posrednictwoUbezpieczenioweOdnowieniaPolis,
+  posrednictwoUbezpieczenioweZapytaniaIKalkulacje,
+  posrednictwoUbezpieczenioweDokumentyKlientow,
+  posrednictwoUbezpieczenioweSzkodyKlientow,
+  posrednictwoUbezpieczenioweProwizje,
+  posrednictwoUbezpieczenioweBazaPolis,
 ];
 
 export function industryPagePath(page: IndustryPageContent) {

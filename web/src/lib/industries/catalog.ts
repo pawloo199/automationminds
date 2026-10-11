@@ -1,4 +1,4 @@
-import { Building2, Calculator, Megaphone, Scale, Store, Truck, Warehouse } from "lucide-react";
+import { Building2, Calculator, Megaphone, Scale, ShieldCheck, Store, Truck, Warehouse } from "lucide-react";
 import type { IndustryEntry } from "./types";
 
 export const INDUSTRIES_HUB_PATH = "/branze";
@@ -129,6 +129,23 @@ export const INDUSTRIES: IndustryEntry[] = [
       formBody: "Opowiedz, czy prowadzicie pośrednictwo, zarządzanie czy oba, i co zabiera zespołowi najwięcej czasu. W 30 minut wskażemy, od czego zacząć.",
       processesTitle: "Procesy, które automatyzujemy w nieruchomościach",
       solutionsTitle: "Rozwiązania dla nieruchomości",
+    },
+  },
+  {
+    slug: "posrednictwo-ubezpieczeniowe",
+    name: "Pośrednictwo ubezpieczeniowe",
+    summary: "Automatyzacja i AI dla agencji ubezpieczeniowych, multiagencji i brokerów: zapytania, odnowienia polis, dokumenty klientów, szkody i prowizje.",
+    icon: ShieldCheck,
+    status: "live",
+    mainPageLabel: "Automatyzacja agencji ubezpieczeniowej",
+    featuredCitySlugs: ["warszawa", "krakow", "wroclaw", "poznan", "gdansk", "lodz", "katowice", "lublin", "bydgoszcz"],
+    cta: {
+      midTitle: "Porozmawiajmy o waszej agencji",
+      midBody: "W 30 minut przejdziemy przez to, co najbardziej obciąża agentów i biuro, i powiemy, od czego zacząć. Rozmowa jest bezpłatna i do niczego nie zobowiązuje.",
+      formTitle: "Porozmawiajmy o automatyzacji w agencji ubezpieczeniowej",
+      formBody: "Opowiedz, czy jesteście agencją, multiagencją czy brokerem, i co zabiera zespołowi najwięcej czasu. W 30 minut wskażemy, od czego zacząć.",
+      processesTitle: "Procesy, które automatyzujemy w pośrednictwie ubezpieczeniowym",
+      solutionsTitle: "Rozwiązania dla agencji ubezpieczeniowych",
     },
   },
 ];
