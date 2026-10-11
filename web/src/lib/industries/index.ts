@@ -6,6 +6,12 @@ import { getToolEntry } from "../tools/catalog";
 import { getIndustryEntry, INDUSTRIES_HUB_PATH, industryPath } from "./catalog";
 import { biuraRachunkowe } from "./content/biura-rachunkowe";
 import { biuraRachunkoweAi } from "./content/biura-rachunkowe-ai";
+import { biuraDokumentyOdKlientow } from "./content/biura-dokumenty-od-klientow";
+import { biuraOdczytDokumentow } from "./content/biura-odczyt-dokumentow";
+import { biuraKsef } from "./content/biura-ksef";
+import { biuraKomunikacjaZKlientami } from "./content/biura-komunikacja-z-klientami";
+import { biuraZamkniecieMiesiaca } from "./content/biura-zamkniecie-miesiaca";
+import { biuraRozliczenia } from "./content/biura-rozliczenia";
 import { kancelariePrawne } from "./content/kancelarie-prawne";
 import { kancelarieAnalizaUmow } from "./content/kancelarie-analiza-umow";
 import { kancelarieAsystentWiedzy } from "./content/kancelarie-asystent-wiedzy";
@@ -31,6 +37,12 @@ const INDUSTRY_PAGES: IndustryPageContent[] = [
   kancelarieRozliczenia,
   biuraRachunkowe,
   biuraRachunkoweAi,
+  biuraDokumentyOdKlientow,
+  biuraOdczytDokumentow,
+  biuraKsef,
+  biuraKomunikacjaZKlientami,
+  biuraZamkniecieMiesiaca,
+  biuraRozliczenia,
 ];
 
 export function industryPagePath(page: IndustryPageContent) {
