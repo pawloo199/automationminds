@@ -138,5 +138,5 @@ export const logistykaZleceniaKlientow: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-logistyki", "ai-w-obsludze-dokumentow", "integracje-systemow"],
   relatedProcessSlugs: ["przyjmowanie-zamowien"],
   relatedToolSlugs: ["n8n", "chatgpt", "microsoft-365"],
-  relatedArticleSlugs: ["gotowa-automatyzacja-czy-budowana-od-zera", "porzadek-w-danych-przed-ai-i-automatyzacja", "jak-mierzyc-roi-automatyzacji"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-firmie-logistycznej", "ai-w-logistyce", "wms-a-automatyzacja"],
 };

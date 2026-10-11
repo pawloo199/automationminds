@@ -218,5 +218,5 @@ export const firmyLogistyczne: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-logistyki", "integracje-systemow", "ai-w-obsludze-dokumentow", "automatyzacja-raportow"],
   relatedProcessSlugs: ["przyjmowanie-zamowien", "obsluga-reklamacji", "przypomnienia-o-platnosciach", "raporty-finansowe"],
   relatedToolSlugs: ["n8n", "microsoft-365", "airtable", "ksef"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "integracja-crm-z-fakturowaniem", "jak-mierzyc-roi-automatyzacji"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-firmie-logistycznej", "wms-a-automatyzacja", "kpi-w-logistyce"],
 };

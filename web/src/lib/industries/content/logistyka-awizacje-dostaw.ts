@@ -138,5 +138,5 @@ export const logistykaAwizacjeDostaw: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-logistyki", "automatyzacja-oraz-ai-w-niestandardowych-procesach", "integracje-systemow"],
   relatedProcessSlugs: ["umawianie-wizyt"],
   relatedToolSlugs: ["n8n", "airtable", "microsoft-365"],
-  relatedArticleSlugs: ["airtable-w-praktyce-zastosowania", "gotowa-automatyzacja-czy-budowana-od-zera", "5-procesow-do-automatyzacji-w-malej-firmie"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-firmie-logistycznej", "wms-a-automatyzacja", "airtable-w-praktyce-zastosowania"],
 };

@@ -138,5 +138,5 @@ export const logistykaObslugaKlientow: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-raportow", "automatyzacja-w-obsludze-klienta", "agenci-ai"],
   relatedProcessSlugs: ["obsluga-reklamacji", "raporty-finansowe"],
   relatedToolSlugs: ["microsoft-365", "n8n", "chatgpt"],
-  relatedArticleSlugs: ["jak-mierzyc-roi-automatyzacji", "airtable-czy-excel", "ai-w-codziennej-pracy-zespolu"],
+  relatedArticleSlugs: ["kpi-w-logistyce", "ai-w-logistyce", "jak-mierzyc-roi-automatyzacji"],
 };

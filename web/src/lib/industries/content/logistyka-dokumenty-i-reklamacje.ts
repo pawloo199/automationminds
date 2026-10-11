@@ -138,5 +138,5 @@ export const logistykaDokumentyIReklamacje: IndustryPageContent = {
   relatedServiceSlugs: ["ai-w-obsludze-dokumentow", "cyfryzacja-danych-i-dokumentow", "automatyzacja-w-obsludze-klienta"],
   relatedProcessSlugs: ["obsluga-reklamacji"],
   relatedToolSlugs: ["chatgpt", "claude", "n8n", "microsoft-365"],
-  relatedArticleSlugs: ["cyfryzacja-danych-w-firmie", "porzadek-w-danych-przed-ai-i-automatyzacja", "wdrozenie-ai-w-malej-i-sredniej-firmie"],
+  relatedArticleSlugs: ["ai-w-logistyce", "co-zautomatyzowac-w-firmie-logistycznej", "cyfryzacja-danych-w-firmie"],
 };

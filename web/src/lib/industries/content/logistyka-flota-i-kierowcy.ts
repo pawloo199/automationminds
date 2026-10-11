@@ -138,5 +138,5 @@ export const logistykaFlotaIKierowcy: IndustryPageContent = {
   relatedServiceSlugs: ["projektowanie-baz-danych", "wdrozenia-airtable", "automatyzacja-dla-logistyki"],
   relatedProcessSlugs: ["obieg-faktur-kosztowych"],
   relatedToolSlugs: ["airtable", "n8n", "microsoft-365"],
-  relatedArticleSlugs: ["airtable-czy-excel", "airtable-w-praktyce-zastosowania", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-firmie-logistycznej", "airtable-czy-excel", "airtable-w-praktyce-zastosowania"],
 };

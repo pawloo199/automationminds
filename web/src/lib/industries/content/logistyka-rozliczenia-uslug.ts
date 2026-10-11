@@ -138,5 +138,5 @@ export const logistykaRozliczeniaUslug: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-ksiegowosci", "automatyzacja-raportow", "integracje-systemow"],
   relatedProcessSlugs: ["przypomnienia-o-platnosciach", "raporty-finansowe"],
   relatedToolSlugs: ["ksef", "n8n", "microsoft-365"],
-  relatedArticleSlugs: ["jak-mierzyc-roi-automatyzacji", "integracja-crm-z-fakturowaniem", "ile-kosztuje-automatyzacja-procesow"],
+  relatedArticleSlugs: ["kpi-w-logistyce", "wms-a-automatyzacja", "jak-mierzyc-roi-automatyzacji"],
 };

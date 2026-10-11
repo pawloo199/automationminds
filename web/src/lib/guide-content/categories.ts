@@ -10,6 +10,7 @@ export const GUIDE_CATEGORY_SLUGS = [
   "kancelarie-prawne",
   "biura-rachunkowe",
   "spedycja",
+  "firmy-logistyczne",
 ] as const;
 
 export type GuideCategorySlug = (typeof GUIDE_CATEGORY_SLUGS)[number];
@@ -396,6 +397,40 @@ export const guideCategories: GuideCategory[] = [
     cta: {
       title: "Chcecie zautomatyzować pracę spedycji?",
       body: "Porozmawiajmy o tym, co zabiera spedytorom najwięcej czasu. Wskażemy, od czego zacząć i co da się połączyć z waszym TMS.",
+    },
+    inMenu: false,
+  },
+  {
+    slug: "firmy-logistyczne",
+    name: "Logistyka i magazyny",
+    title: "AI i automatyzacja w firmie logistycznej. Poradnik dla logistyki i magazynów",
+    metaTitle: "AI i automatyzacja w logistyce i magazynie. Poradnik",
+    metaDescription:
+      "Jak firmy logistyczne i magazyny mogą korzystać z AI i automatyzacji: procesy na początek, WMS i integracje, raporty KPI dla klientów i AI w logistyce.",
+    shortDescription:
+      "Jak operatorzy logistyczni i magazyny mogą ograniczyć pracę biurową wokół operacji dzięki automatyzacji i AI.",
+    lead: "Artykuły dla właścicieli i menedżerów firm logistycznych, magazynów i firm transportowych, którzy chcą, żeby biuro obsługi klienta i dział rozliczeń nadążały za operacjami. Piszemy z perspektywy wdrożeń w logistyce.",
+    about: [
+      "W firmie logistycznej operacje są zwykle dobrze zorganizowane, a słabym ogniwem jest przepływ informacji: zlecenia od klientów w różnych formatach, awizacje, dokumenty, raporty i rozliczenia. To tu biuro spędza najwięcej czasu na przepisywaniu i szukaniu.",
+      "W tej części Poradnika opisujemy, które procesy w firmie logistycznej warto zautomatyzować najpierw, jak łączyć WMS z innymi systemami, jak automatyzować raporty i KPI dla klientów i jak AI pomaga w logistyce w praktyce.",
+      "Jeśli szukacie konkretnych rozwiązań i przebiegu wdrożenia, zajrzyjcie także na stronę automatyzacji firm logistycznych w części Branże.",
+    ],
+    faq: [
+      {
+        question: "Co w firmie logistycznej da się zautomatyzować?",
+        answer:
+          "Najczęściej przyjmowanie zleceń od klientów, awizacje dostaw, obieg dokumentów i reklamacji, raporty i KPI dla klientów, administrację floty i rozliczenia usług logistycznych.",
+      },
+      {
+        question: "Czy automatyzacja wymaga zmiany WMS?",
+        answer:
+          "Zwykle nie. Automatyzacje buduje się obok WMS i TMS i łączy z nimi przez API, import i eksport plików albo pocztę.",
+      },
+    ],
+    relatedServiceSlugs: ["automatyzacja-dla-logistyki", "integracje-systemow", "automatyzacja-raportow"],
+    cta: {
+      title: "Chcecie zautomatyzować pracę firmy logistycznej?",
+      body: "Porozmawiajmy o tym, co zabiera biuru najwięcej czasu. Wskażemy, od czego zacząć i co da się połączyć z waszym WMS lub TMS.",
     },
     inMenu: false,
   },

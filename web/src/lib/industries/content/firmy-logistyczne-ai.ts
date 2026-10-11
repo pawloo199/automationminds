@@ -194,5 +194,5 @@ export const firmyLogistyczneAi: IndustryPageContent = {
   relatedServiceSlugs: ["agenci-ai", "ai-w-obsludze-dokumentow", "szkolenia-ai-dla-zespolow", "strategia-wdrozenia-ai"],
   relatedProcessSlugs: ["przyjmowanie-zamowien"],
   relatedToolSlugs: ["chatgpt", "claude", "n8n", "microsoft-365"],
-  relatedArticleSlugs: ["ai-w-codziennej-pracy-zespolu", "wdrozenie-ai-w-malej-i-sredniej-firmie", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["ai-w-logistyce", "co-zautomatyzowac-w-firmie-logistycznej", "ai-w-codziennej-pracy-zespolu"],
 };
