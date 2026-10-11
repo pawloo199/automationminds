@@ -1,4 +1,4 @@
-import { Building2, Calculator, HardHat, Megaphone, Scale, ShieldCheck, Store, Truck, Warehouse, Wrench } from "lucide-react";
+import { Building2, Calculator, HardHat, Megaphone, Scale, ShieldCheck, ShoppingCart, Store, Truck, Warehouse, Wrench } from "lucide-react";
 import type { IndustryEntry } from "./types";
 
 export const INDUSTRIES_HUB_PATH = "/branze";
@@ -180,6 +180,23 @@ export const INDUSTRIES: IndustryEntry[] = [
       formBody: "Opowiedz, jakie budowy prowadzicie, ilu macie kierowników i podwykonawców i co zabiera zespołowi najwięcej czasu. W 30 minut wskażemy, od czego zacząć.",
       processesTitle: "Procesy, które automatyzujemy w firmach budowlanych",
       solutionsTitle: "Rozwiązania dla firm budowlanych",
+    },
+  },
+  {
+    slug: "sklepy-internetowe",
+    name: "Sklepy internetowe",
+    summary: "Automatyzacja i AI dla sklepów internetowych: obsługa klienta, zwroty, opisy produktów, oferty i stany w wielu kanałach, zakupy i raporty marży.",
+    icon: ShoppingCart,
+    status: "live",
+    mainPageLabel: "Automatyzacja sklepu internetowego",
+    featuredCitySlugs: ["warszawa", "krakow", "wroclaw", "poznan", "gdansk", "lodz", "katowice", "szczecin", "bydgoszcz"],
+    cta: {
+      midTitle: "Porozmawiajmy o waszym sklepie",
+      midBody: "W 30 minut przejdziemy przez to, co najbardziej obciąża zespół sklepu, i powiemy, od czego zacząć. Rozmowa jest bezpłatna i do niczego nie zobowiązuje.",
+      formTitle: "Porozmawiajmy o automatyzacji sklepu internetowego",
+      formBody: "Opowiedz, na jakiej platformie działa sklep, w jakich kanałach sprzedajecie i co zabiera zespołowi najwięcej czasu. W 30 minut wskażemy, od czego zacząć.",
+      processesTitle: "Procesy, które automatyzujemy w sklepach internetowych",
+      solutionsTitle: "Rozwiązania dla sklepów internetowych",
     },
   },
 ];

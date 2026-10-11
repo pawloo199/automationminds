@@ -84,6 +84,14 @@ import { firmyBudowlanePodwykonawcy } from "./content/firmy-budowlane-podwykonaw
 import { firmyBudowlaneMaterialy } from "./content/firmy-budowlane-materialy";
 import { firmyBudowlaneOdbiory } from "./content/firmy-budowlane-odbiory";
 import { firmyBudowlaneKoszty } from "./content/firmy-budowlane-koszty";
+import { sklepyInternetowe } from "./content/sklepy-internetowe";
+import { sklepyInternetoweAi } from "./content/sklepy-internetowe-ai";
+import { sklepyInternetoweObslugaKlienta } from "./content/sklepy-internetowe-obsluga-klienta";
+import { sklepyInternetoweZwroty } from "./content/sklepy-internetowe-zwroty";
+import { sklepyInternetoweProdukty } from "./content/sklepy-internetowe-produkty";
+import { sklepyInternetoweOfertyIStany } from "./content/sklepy-internetowe-oferty-i-stany";
+import { sklepyInternetoweZakupy } from "./content/sklepy-internetowe-zakupy";
+import { sklepyInternetoweRaporty } from "./content/sklepy-internetowe-raporty";
 import type { IndustryPageContent } from "./types";
 
 export * from "./catalog";
@@ -171,6 +179,14 @@ const INDUSTRY_PAGES: IndustryPageContent[] = [
   firmyBudowlaneMaterialy,
   firmyBudowlaneOdbiory,
   firmyBudowlaneKoszty,
+  sklepyInternetowe,
+  sklepyInternetoweAi,
+  sklepyInternetoweObslugaKlienta,
+  sklepyInternetoweZwroty,
+  sklepyInternetoweProdukty,
+  sklepyInternetoweOfertyIStany,
+  sklepyInternetoweZakupy,
+  sklepyInternetoweRaporty,
 ];
 
 export function industryPagePath(page: IndustryPageContent) {
