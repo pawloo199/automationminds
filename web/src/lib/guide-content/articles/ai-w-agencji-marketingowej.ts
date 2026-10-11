@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "AI trafiło do agencji szybciej niż do większości firm, ale często bez zasad i bez kontekstu marek. Opisujemy, gdzie AI daje agencjom najwięcej, jak zadbać o jakość i dane klientów i od czego zacząć uporządkowane wdrożenie.",
   categories: ["agencje-marketingowe", "ai-w-firmie"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-05-19",
+  updatedAt: "2026-05-19",
   imageUrl: "https://images.unsplash.com/photo-1758691736580-a41e0cfe9e9f?w=1200&q=80",
   imageAlt: "Prezentacja dla zespołu w nowoczesnym biurze",
   summary: [

@@ -17,8 +17,8 @@ export default defineArticle({
   excerpt:
     "Prawnicy coraz częściej korzystają z ChatGPT, Claude i innych czatów AI. Wyjaśniamy, co to oznacza dla tajemnicy zawodowej, jakie dane można wpisywać, jak ustawić konta i jakie zasady wprowadzić w kancelarii.",
   categories: ["kancelarie-prawne", "ai-w-firmie"],
-  publishedAt: "2026-10-05",
-  updatedAt: "2026-10-05",
+  publishedAt: "2026-04-30",
+  updatedAt: "2026-04-30",
   imageUrl: "https://images.unsplash.com/photo-1695388474402-ed805a890d8d?w=1200&q=80",
   imageAlt: "Kobieta czytająca dokument przy stole w biurze",
   summary: [

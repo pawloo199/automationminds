@@ -18,8 +18,8 @@ export default defineArticle({
   excerpt:
     "n8n i Make to dwa najpopularniejsze narzędzia do automatyzacji wśród firm, które wyrosły z Zapiera. Porównujemy koszty, hosting, pracę z danymi, AI i łatwość obsługi, i podpowiadamy, które wybrać w jakiej sytuacji.",
   categories: ["narzedzia-i-integracje", "automatyzacja-procesow"],
-  publishedAt: "2026-10-05",
-  updatedAt: "2026-10-05",
+  publishedAt: "2026-04-28",
+  updatedAt: "2026-04-28",
   imageUrl:
     "https://images.unsplash.com/photo-1532622785990-d2c36a76f5a6?w=1200&q=80",
   imageAlt: "Dwie osoby rozrysowują schemat na tablicy i porównują rozwiązania",

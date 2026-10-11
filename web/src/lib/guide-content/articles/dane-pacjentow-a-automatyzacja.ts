@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Dane o zdrowiu są szczególnie chronione, więc wiele placówek medycznych odkłada automatyzację na później. Tymczasem większość procesów organizacyjnych da się zautomatyzować bez dotykania danych o zdrowiu albo z ich minimalnym udziałem. Opisujemy zasady, które pozwalają to zrobić bezpiecznie.",
   categories: ["placowki-medyczne", "ai-w-firmie"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
   imageUrl: "https://images.unsplash.com/photo-1606318313647-137d1f3b4d3c?w=1200&q=80",
   imageAlt: "Pracownica placówki medycznej z dokumentem w dłoni",
   summary: [

@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "W handlu B2B sprzedaż z odroczonym terminem płatności to standard, a należności to często największe aktywo hurtowni. Opisujemy, jak ustalać limity kupieckie, jak przypominać o płatnościach i jak zautomatyzować tę pracę, nie psując relacji z klientami.",
   categories: ["hurtownie-i-dystrybucja", "audyt-i-koszty"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-09-02",
+  updatedAt: "2026-09-02",
   imageUrl: "https://images.unsplash.com/photo-1560249951-67f7a21fbd98?w=1200&q=80",
   imageAlt: "Rozmowa handlowa przy stole w biurze",
   summary: [

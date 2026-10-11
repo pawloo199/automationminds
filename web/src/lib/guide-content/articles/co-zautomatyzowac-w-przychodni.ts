@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "W przychodni najwięcej czasu pochłania nie leczenie, tylko organizacja wokół niego: telefony, przypomnienia, formularze, grafiki i rozliczenia. Opisujemy siedem procesów organizacyjnych, od których placówki najczęściej zaczynają automatyzację, i granice, których nie przekraczamy.",
   categories: ["placowki-medyczne", "automatyzacja-procesow"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-04-09",
+  updatedAt: "2026-04-09",
   imageUrl: "https://images.unsplash.com/photo-1608979827489-2b855e79debe?w=1200&q=80",
   imageAlt: "Jasne wnętrze placówki medycznej",
   summary: [

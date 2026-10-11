@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Księgowi coraz częściej korzystają z ChatGPT i innych czatów AI, zwykle bez ustalonych zasad. Wyjaśniamy, co dzieje się z danymi wpisanymi do czatu, jak ustawić konta i jakie zasady wprowadzić w biurze.",
   categories: ["biura-rachunkowe", "ai-w-firmie"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-07-02",
+  updatedAt: "2026-07-02",
   imageUrl: "https://images.unsplash.com/photo-1648201637025-1c77b9be3013?w=1200&q=80",
   imageAlt: "Kalkulator i długopis na kartce z wyliczeniami",
   summary: [

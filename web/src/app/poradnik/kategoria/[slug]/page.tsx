@@ -19,8 +19,11 @@ import {
   getGuideArticlesByCategory,
   getGuideCategoriesWithCounts,
   getGuideCategory,
+  guideCategoryPagePath,
   guideCategoryPath,
+  paginateGuideArticles,
 } from "@/lib/guide-articles";
+import { GuidePagination } from "@/components/guide/GuidePagination";
 import {
   breadcrumbJsonLd,
   guideCategoryJsonLd,
@@ -72,7 +75,7 @@ export default async function GuideCategoryPage({
 
   const relatedServices = getServicesBySlugs(category.relatedServiceSlugs);
   const categories = getGuideCategoriesWithCounts();
-  const [featured, ...rest] = articles;
+  const { featured, items: rest, totalPages } = paginateGuideArticles(articles, 1);
 
   const breadcrumbs = [
     { label: "Strona główna", href: "/" },
@@ -127,6 +130,11 @@ export default async function GuideCategoryPage({
               ))}
             </div>
           ) : null}
+          <GuidePagination
+            current={1}
+            total={totalPages}
+            pathFor={(page) => guideCategoryPagePath(slug, page)}
+          />
         </Container>
       </section>
 

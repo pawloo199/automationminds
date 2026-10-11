@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Klient rzadko wybiera ubezpieczenie tylko po cenie, jeśli rozumie, czym różnią się oferty. Opisujemy, jak przygotować porównanie ofert, które jest czytelne dla klienta, szybkie dla agenta i oparte na danych, a nie na pamięci.",
   categories: ["posrednictwo-ubezpieczeniowe", "narzedzia-i-integracje"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-09-10",
+  updatedAt: "2026-09-10",
   imageUrl: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80",
   imageAlt: "Klient podpisuje dokumenty przy biurku",
   summary: [

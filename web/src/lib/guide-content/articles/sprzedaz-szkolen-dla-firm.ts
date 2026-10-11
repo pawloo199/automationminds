@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "W sprzedaży szkoleń zamkniętych wygrywa często nie najtańsza oferta, tylko ta, która przyszła szybko i trafiła w potrzeby klienta. Opisujemy, jak uporządkować proces od zapytania do kolejnego zamówienia i które jego kroki można zautomatyzować.",
   categories: ["firmy-szkoleniowe", "automatyzacja-procesow"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-09-25",
+  updatedAt: "2026-09-25",
   imageUrl: "https://images.unsplash.com/photo-1758691736067-b309ee3ef7b9?w=1200&q=80",
   imageAlt: "Prezentacja dla zespołu w sali konferencyjnej",
   summary: [

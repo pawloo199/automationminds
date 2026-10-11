@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Kierownik budowy spędza na dokumentach więcej czasu, niż chciałby: raporty, pisma, protokoły, specyfikacje, korespondencja z inwestorem i podwykonawcami. Opisujemy, w czym AI może mu pomóc, gdzie są granice i jak zacząć bez ryzyka.",
   categories: ["firmy-budowlane", "ai-w-firmie"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-06-02",
+  updatedAt: "2026-06-02",
   imageUrl: "https://images.unsplash.com/photo-1716037991590-c975184b37df?w=1200&q=80",
   imageAlt: "Kierowniczka budowy w kasku przegląda dokumenty",
   summary: [

@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "W biurze rachunkowym sporo czasu zabiera praca, która nie wymaga wiedzy księgowej. Opisujemy siedem procesów, od których biura najczęściej zaczynają automatyzację, i podpowiadamy, jak wybrać pierwszy.",
   categories: ["biura-rachunkowe", "automatyzacja-procesow"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-03-12",
+  updatedAt: "2026-03-12",
   imageUrl: "https://images.unsplash.com/photo-1709880945165-d2208c6ad2ec?w=1200&q=80",
   imageAlt: "Kalkulator na biurku obok laptopa",
   summary: [

@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Serwisant zna urządzenia, ale nie zna na pamięć kilkuset instrukcji i historii każdej naprawy. AI może mu w tym pomóc, w terenie i bez szukania po folderach. Opisujemy, jak to działa, gdzie są granice i od czego zacząć.",
   categories: ["firmy-serwisowe", "ai-w-firmie"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-05-29",
+  updatedAt: "2026-05-29",
   imageUrl: "https://images.unsplash.com/photo-1732660513320-a6b489f3fece?w=1200&q=80",
   imageAlt: "Instalator pracuje przy ogrzewaniu podłogowym",
   summary: [

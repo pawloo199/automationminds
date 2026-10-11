@@ -17,7 +17,7 @@ export default defineArticle({
     "Automatyzacja nie zwalnia z ochrony danych osobowych, ale też nie musi być jej wrogiem. Pokazujemy, o czym pamiętać, łącząc systemy z danymi klientów i pracowników, i co sprawdzić przed uruchomieniem.",
   categories: ["automatyzacja-procesow", "ai-w-firmie"],
   publishedAt: "2026-05-12",
-  updatedAt: "2026-09-30",
+  updatedAt: "2026-09-11",
   imageUrl:
     "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1200&q=80",
   imageAlt: "Laptop z kłódką symbolizującą ochronę danych osobowych",

@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Wiele agencji nie wie, na których klientach zarabia, a na których dokłada, bo czas pracy nie jest zestawiany z przychodami. Opisujemy, jak liczyć rentowność klientów, jakie są typowe pułapki i jak zautomatyzować zbieranie danych.",
   categories: ["agencje-marketingowe", "audyt-i-koszty"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-09-03",
+  updatedAt: "2026-09-03",
   imageUrl: "https://images.unsplash.com/photo-1603201667230-bd139210db18?w=1200&q=80",
   imageAlt: "Zespół pracujący razem przy laptopie w biurze",
   summary: [

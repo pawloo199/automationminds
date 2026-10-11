@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "O AI w logistyce mówi się najczęściej w kontekście prognoz i planowania tras. Tymczasem w wielu firmach najszybszy efekt daje AI w pracy biura: przy zleceniach, dokumentach i obsłudze klientów. Opisujemy, co działa, gdzie AI się myli i od czego zacząć.",
   categories: ["firmy-logistyczne", "ai-w-firmie"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-05-14",
+  updatedAt: "2026-05-14",
   imageUrl: "https://images.unsplash.com/photo-1590497008432-598f04441de8?w=1200&q=80",
   imageAlt: "Port kontenerowy z dźwigami",
   summary: [

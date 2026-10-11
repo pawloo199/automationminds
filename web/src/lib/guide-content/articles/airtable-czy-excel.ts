@@ -18,7 +18,7 @@ export default defineArticle({
     "Arkusz kalkulacyjny to świetne narzędzie, dopóki nie zaczyna udawać systemu do zarządzania firmą. Pokazujemy, po czym poznać ten moment, czym jest Airtable i kiedy przejście na bazę danych ma sens, a kiedy nie.",
   categories: ["airtable", "dane-i-cyfryzacja", "narzedzia-i-integracje"],
   publishedAt: "2026-07-13",
-  updatedAt: "2026-09-30",
+  updatedAt: "2026-09-04",
   imageUrl:
     "https://images.unsplash.com/photo-1784334312040-5b3d4cf78b88?w=1200&q=80",
   imageAlt: "Laptop z arkuszem kalkulacyjnym pełnym danych na biurku",

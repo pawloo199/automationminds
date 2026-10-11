@@ -18,7 +18,7 @@ export default defineArticle({
     "Nie trzeba automatyzować wszystkiego naraz. Pokazujemy pięć procesów, na których małe firmy najszybciej odzyskują czas, i podpowiadamy, jak wybrać ten pierwszy.",
   categories: ["automatyzacja-procesow"],
   publishedAt: "2026-06-15",
-  updatedAt: "2026-09-30",
+  updatedAt: "2026-10-05",
   imageUrl:
     "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80",
   imageAlt: "Laptop z wykresami na biurku w małej firmie",

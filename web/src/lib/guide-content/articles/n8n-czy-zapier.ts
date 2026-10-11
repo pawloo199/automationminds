@@ -17,8 +17,8 @@ export default defineArticle({
   excerpt:
     "Zapier to najprostszy start z automatyzacją, n8n daje kontrolę nad danymi i kosztami. Porównujemy oba narzędzia i pokazujemy, kiedy wystarczy Zapier, a kiedy warto przejść na n8n.",
   categories: ["narzedzia-i-integracje", "automatyzacja-procesow"],
-  publishedAt: "2026-10-05",
-  updatedAt: "2026-10-05",
+  publishedAt: "2026-08-18",
+  updatedAt: "2026-08-18",
   imageUrl:
     "https://images.unsplash.com/photo-1730804518415-75297e8d2a41?w=1200&q=80",
   imageAlt: "Element układanki z brakującym fragmentem",

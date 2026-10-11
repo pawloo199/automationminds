@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Trenerzy i firmy szkoleniowe pracują na tekstach: programach, materiałach, ćwiczeniach, ankietach. AI może skrócić przygotowanie szkolenia i pomóc wyciągać wnioski po nim. Opisujemy praktyczne zastosowania, granice i zasady, które chronią jakość szkoleń.",
   categories: ["firmy-szkoleniowe", "ai-w-firmie"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-06-12",
+  updatedAt: "2026-06-12",
   imageUrl: "https://images.unsplash.com/photo-1758691737182-d42aefd6dee8?w=1200&q=80",
   imageAlt: "Trenerka prowadzi prezentację dla grupy w nowoczesnym biurze",
   summary: [

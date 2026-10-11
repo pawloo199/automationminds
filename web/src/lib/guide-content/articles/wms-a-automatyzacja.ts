@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "WMS porządkuje pracę magazynu, ale rzadko obejmuje wszystko, co dzieje się wokół niego. Wyjaśniamy, czego zwykle brakuje, jak łączyć WMS z pocztą, systemami klientów, TMS i księgowością i kiedy zmiana systemu ma sens.",
   categories: ["firmy-logistyczne", "narzedzia-i-integracje"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-07-08",
+  updatedAt: "2026-07-08",
   imageUrl: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=1200&q=80",
   imageAlt: "Kartony na metalowych regałach magazynowych",
   summary: [

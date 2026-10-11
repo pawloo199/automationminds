@@ -9,7 +9,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { CITY_HUB_PATH } from "@/lib/city-pages/types";
 import { AGENCY_PATH } from "@/lib/agency-content";
-import { getLiveIndustries, INDUSTRIES_HUB_PATH, industryPath } from "@/lib/industries/catalog";
+import { INDUSTRIES_HUB_PATH } from "@/lib/industries/catalog";
 import { PROCESSES_HUB_PATH } from "@/lib/processes/catalog";
 import { TOOLS_HUB_PATH } from "@/lib/tools/catalog";
 
@@ -130,32 +130,11 @@ export function Footer({
               <FooterLink href="/#case-studies">Case studies</FooterLink>
               <FooterLink href={PROCESSES_HUB_PATH}>Procesy</FooterLink>
               <FooterLink href={INDUSTRIES_HUB_PATH}>Branże</FooterLink>
-              {getLiveIndustries().map((industry) => (
-                <FooterLink key={industry.slug} href={industryPath(industry.slug)}>
-                  {industry.mainPageLabel}
-                </FooterLink>
-              ))}
               <FooterLink href={TOOLS_HUB_PATH}>Narzędzia</FooterLink>
               <FooterLink href={CITY_HUB_PATH}>Automatyzacja w miastach</FooterLink>
               <FooterLink href="/polityka-prywatnosci">
                 Polityka prywatności
               </FooterLink>
-              {guideCategories.length > 0 ? (
-                <>
-                  <h3 className="mt-4 text-xs font-semibold uppercase tracking-[0.2em] text-brand">
-                    Tematy Poradnika
-                  </h3>
-                  <ul className="flex flex-col gap-2.5">
-                    {guideCategories.map((category) => (
-                      <li key={category.slug}>
-                        <FooterLink href={`/poradnik/kategoria/${category.slug}`}>
-                          {category.name}
-                        </FooterLink>
-                      </li>
-                    ))}
-                  </ul>
-                </>
-              ) : null}
             </FooterColumn>
 
             <FooterColumn title="Usługi">
@@ -177,6 +156,25 @@ export function Footer({
                   </Link>
                 </li>
               </ul>
+              {guideCategories.length > 0 ? (
+                <>
+                  <h3 className="mt-6 text-xs font-semibold uppercase tracking-[0.2em] text-brand">
+                    Tematy Poradnika
+                  </h3>
+                  <ul className="flex flex-col gap-2.5">
+                    {guideCategories.map((category) => (
+                      <li key={category.slug}>
+                        <FooterLink href={`/poradnik/kategoria/${category.slug}`}>
+                          {category.name}
+                        </FooterLink>
+                      </li>
+                    ))}
+                    <li>
+                      <FooterLink href="/poradnik#tematy">Poradniki branżowe</FooterLink>
+                    </li>
+                  </ul>
+                </>
+              ) : null}
             </FooterColumn>
 
             <FooterColumn title="Kontakt" className="sm:col-span-2 lg:col-span-1">

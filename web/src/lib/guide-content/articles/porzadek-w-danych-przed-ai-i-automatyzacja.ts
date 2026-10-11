@@ -18,7 +18,7 @@ export default defineArticle({
     "Firmy chcą wdrażać AI i automatyzacje, a potem okazuje się, że najwięcej pracy wymaga sprzątanie danych. Wyjaśniamy bez żargonu, czym jest struktura danych, jakie błędy spotykamy najczęściej i jak je naprawić.",
   categories: ["dane-i-cyfryzacja", "ai-w-firmie"],
   publishedAt: "2026-08-10",
-  updatedAt: "2026-09-30",
+  updatedAt: "2026-09-11",
   imageUrl:
     "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=1200&q=80",
   imageAlt: "Drewniane szuflady katalogu kartkowego jako symbol uporządkowanych danych",

@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "W kancelarii jest sporo pracy, która nie wymaga wiedzy prawniczej, a zabiera prawnikom godziny. Opisujemy siedem procesów, od których najczęściej zaczyna się automatyzację, i podpowiadamy, jak wybrać pierwszy.",
   categories: ["kancelarie-prawne", "automatyzacja-procesow"],
-  publishedAt: "2026-10-05",
-  updatedAt: "2026-10-05",
+  publishedAt: "2026-06-26",
+  updatedAt: "2026-06-26",
   imageUrl: "https://images.unsplash.com/photo-1583521214690-73421a1829a9?w=1200&q=80",
   imageAlt: "Stosy dokumentów i teczek z aktami",
   summary: [

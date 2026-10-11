@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Prawie każda firma szkoleniowa zbiera ankiety, ale niewiele z nich korzysta z wyników. Opisujemy, jak przygotować ankietę, która daje użyteczne odpowiedzi, jak zwiększyć liczbę wypełnień i jak zamienić wyniki we wnioski dla trenerów i firmy.",
   categories: ["firmy-szkoleniowe", "dane-i-cyfryzacja"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-08-04",
+  updatedAt: "2026-08-04",
   imageUrl: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1200&q=80",
   imageAlt: "Uczestnicy szkolenia w sali z ekranem projektora",
   summary: [

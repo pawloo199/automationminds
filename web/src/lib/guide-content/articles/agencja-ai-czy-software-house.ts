@@ -17,8 +17,8 @@ export default defineArticle({
   excerpt:
     "Firma, która chce wdrożyć AI, może zlecić to agencji AI, software house'owi, freelancerowi albo firmie doradczej. Każda z tych opcji ma sens w innej sytuacji. Porównujemy je i podpowiadamy, kiedy która sprawdzi się najlepiej.",
   categories: ["ai-w-firmie", "audyt-i-koszty"],
-  publishedAt: "2026-10-05",
-  updatedAt: "2026-10-05",
+  publishedAt: "2026-05-04",
+  updatedAt: "2026-05-04",
   imageUrl: "https://images.unsplash.com/photo-1603201667141-5a2d4c673378?w=1200&q=80",
   imageAlt: "Zespół pracujący przy laptopach w biurze",
   summary: [

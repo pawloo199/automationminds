@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Przychody w panelu sklepu rosną, a na koncie tego nie widać. Często powodem jest marża, którą liczy się tylko od ceny zakupu, bez prowizji, reklam, wysyłek i zwrotów. Opisujemy, jak policzyć marżę po wszystkich kosztach i jak zautomatyzować ten raport.",
   categories: ["sklepy-internetowe", "audyt-i-koszty"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-07-29",
+  updatedAt: "2026-07-29",
   imageUrl: "https://images.unsplash.com/photo-1664455340023-214c33a9d0bd?w=1200&q=80",
   imageAlt: "Model wózka sklepowego na jasnym tle",
   summary: [

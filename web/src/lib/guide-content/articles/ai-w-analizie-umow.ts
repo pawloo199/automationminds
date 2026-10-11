@@ -17,8 +17,8 @@ export default defineArticle({
   excerpt:
     "Analiza umów to jedno z zastosowań AI, które najszybciej przyjmują się w kancelariach i działach prawnych. Wyjaśniamy, jak model czyta umowę, co robi dobrze, gdzie się myli i jak zbudować proces, w którym AI pomaga, a nie szkodzi.",
   categories: ["kancelarie-prawne", "ai-w-firmie"],
-  publishedAt: "2026-10-05",
-  updatedAt: "2026-10-05",
+  publishedAt: "2026-08-19",
+  updatedAt: "2026-08-19",
   imageUrl: "https://images.unsplash.com/photo-1635859890085-ec8cb5466806?w=1200&q=80",
   imageAlt: "Osoba podpisująca umowę długopisem przy stole",
   summary: [

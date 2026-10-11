@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Zlecenie dla niesprawdzonego przewoźnika to ryzyko utraty ładunku, pieniędzy i klienta. Opisujemy, co warto sprawdzić przed wysłaniem zlecenia, jakie sygnały powinny zaniepokoić i jak uporządkować weryfikację w firmie.",
   categories: ["spedycja", "automatyzacja-procesow"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-07-03",
+  updatedAt: "2026-07-03",
   imageUrl: "https://images.unsplash.com/photo-1528797249377-0257bfb1a183?w=1200&q=80",
   imageAlt: "Ciężarówka jadąca drogą wśród drzew",
   summary: [

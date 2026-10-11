@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Odnowienie to moment, w którym agencja może zatrzymać klienta na kolejny rok albo go stracić. Opisujemy, dlaczego odnowienia umykają, jak zorganizować ten proces i co warto mierzyć, żeby wiedzieć, ile klientów agencja traci i dlaczego.",
   categories: ["posrednictwo-ubezpieczeniowe", "automatyzacja-procesow"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-07-20",
+  updatedAt: "2026-07-20",
   imageUrl: "https://images.unsplash.com/photo-1686771416282-3888ddaf249b?w=1200&q=80",
   imageAlt: "Agent i klientka podają sobie ręce nad laptopem",
   summary: [

@@ -19,8 +19,8 @@ export default defineArticle({
   excerpt:
     "n8n to narzędzie do automatyzacji, które łączy systemy firmy w przepływy i pozwala budować agentów AI, także na własnym serwerze. Wyjaśniamy, jak działa, do czego się nadaje, ile kosztuje i kiedy lepiej wybrać coś innego.",
   categories: ["narzedzia-i-integracje", "automatyzacja-procesow"],
-  publishedAt: "2026-10-05",
-  updatedAt: "2026-10-05",
+  publishedAt: "2026-03-04",
+  updatedAt: "2026-03-04",
   imageUrl:
     "https://images.unsplash.com/photo-1743385779347-1549dabf1320?w=1200&q=80",
   imageAlt: "Schemat przepływu pracy rozrysowany na tablicy",

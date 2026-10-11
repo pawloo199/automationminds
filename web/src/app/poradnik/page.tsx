@@ -17,7 +17,10 @@ import {
   getGuideArticles,
   getGuideCategoriesWithCounts,
   guideArticlePath,
+  guideIndexPagePath,
+  paginateGuideArticles,
 } from "@/lib/guide-articles";
+import { GuidePagination } from "@/components/guide/GuidePagination";
 import { defaultGuideAuthor } from "@/lib/guide-content/authors";
 import { breadcrumbJsonLd, guideIndexJsonLd } from "@/lib/json-ld";
 import { buildMetadata } from "@/lib/metadata";
@@ -56,7 +59,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function GuideIndexPage() {
   const articles = getGuideArticles();
   const categories = getGuideCategoriesWithCounts();
-  const [featured, ...rest] = articles;
+  const { featured, items, totalPages } = paginateGuideArticles(articles, 1);
   const startHere = START_HERE.map((item) => ({
     ...item,
     article: getGuideArticleBySlug(item.slug),
@@ -173,7 +176,7 @@ export default async function GuideIndexPage() {
             Wszystkie artykuły
           </h2>
           <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {rest.slice(0, 6).map((article) => (
+            {items.slice(0, 6).map((article) => (
               <ArticleCard key={article.id} article={article} />
             ))}
           </div>
@@ -185,10 +188,15 @@ export default async function GuideIndexPage() {
             />
           </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {rest.slice(6).map((article) => (
+            {items.slice(6).map((article) => (
               <ArticleCard key={article.id} article={article} />
             ))}
           </div>
+          <GuidePagination
+            current={1}
+            total={totalPages}
+            pathFor={guideIndexPagePath}
+          />
           <div className="mt-12">
             <GuideAuthorStrip author={defaultGuideAuthor} />
           </div>

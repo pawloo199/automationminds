@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Gdy mowa o automatyzacji w produkcji, większość osób myśli o robotach i liniach. Tymczasem w wielu zakładach najwięcej czasu ginie poza maszynami: w wycenach, potwierdzeniach zamówień, zakupach, reklamacjach i szukaniu dokumentów. Opisujemy siedem procesów, od których zakłady najczęściej zaczynają, i podpowiadamy, jak wybrać pierwszy.",
   categories: ["zaklady-produkcyjne", "automatyzacja-procesow"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-04-23",
+  updatedAt: "2026-04-23",
   imageUrl: "https://images.unsplash.com/photo-1717386255773-1e3037c81788?w=1200&q=80",
   imageAlt: "Zautomatyzowana linia produkcyjna w hali zakładu",
   summary: [

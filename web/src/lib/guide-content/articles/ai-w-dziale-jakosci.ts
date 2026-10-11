@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Dział jakości w zakładzie produkcyjnym spędza dużo czasu na dokumentach: reklamacjach, raportach, świadectwach, procedurach i audytach. W tej pracy AI pomaga już dziś, bez dotykania samej oceny jakości. Opisujemy, gdzie AI ma sens, czego nie powinno robić i jak wdrożyć je bezpiecznie.",
   categories: ["zaklady-produkcyjne", "ai-w-firmie"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-06-22",
+  updatedAt: "2026-06-22",
   imageUrl: "https://images.unsplash.com/photo-1758873263563-5ba4aa330799?w=1200&q=80",
   imageAlt: "Pomiar metalowego detalu suwmiarką cyfrową",
   summary: [

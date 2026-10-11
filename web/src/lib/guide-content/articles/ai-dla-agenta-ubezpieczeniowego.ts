@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Agenci ubezpieczeniowi pracują na dokumentach i wiadomościach, więc AI może im sporo pomóc. Jednocześnie pracują na danych, które wymagają ostrożności, i wykonują pracę doradczą, której AI nie powinno przejmować. Opisujemy, jak to pogodzić.",
   categories: ["posrednictwo-ubezpieczeniowe", "ai-w-firmie"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-05-27",
+  updatedAt: "2026-05-27",
   imageUrl: "https://images.unsplash.com/photo-1616587224026-668840f26916?w=1200&q=80",
   imageAlt: "Agent i klientka przeglądają dokumenty na laptopie",
   summary: [
