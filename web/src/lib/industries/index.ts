@@ -100,6 +100,14 @@ import { placowkiMedyczneFormularze } from "./content/placowki-medyczne-formular
 import { placowkiMedyczneKomunikacja } from "./content/placowki-medyczne-komunikacja";
 import { placowkiMedyczneGrafiki } from "./content/placowki-medyczne-grafiki";
 import { placowkiMedyczneRozliczenia } from "./content/placowki-medyczne-rozliczenia";
+import { firmySzkoleniowe } from "./content/firmy-szkoleniowe";
+import { firmySzkolenioweAi } from "./content/firmy-szkoleniowe-ai";
+import { firmySzkolenioweZapisy } from "./content/firmy-szkoleniowe-zapisy";
+import { firmySzkolenioweOrganizacja } from "./content/firmy-szkoleniowe-organizacja";
+import { firmySzkolenioweOferty } from "./content/firmy-szkoleniowe-oferty";
+import { firmySzkolenioweCertyfikaty } from "./content/firmy-szkoleniowe-certyfikaty";
+import { firmySzkolenioweTrenerzy } from "./content/firmy-szkoleniowe-trenerzy";
+import { firmySzkolenioweDokumentacja } from "./content/firmy-szkoleniowe-dokumentacja";
 import type { IndustryPageContent } from "./types";
 
 export * from "./catalog";
@@ -203,6 +211,14 @@ const INDUSTRY_PAGES: IndustryPageContent[] = [
   placowkiMedyczneKomunikacja,
   placowkiMedyczneGrafiki,
   placowkiMedyczneRozliczenia,
+  firmySzkoleniowe,
+  firmySzkolenioweAi,
+  firmySzkolenioweZapisy,
+  firmySzkolenioweOrganizacja,
+  firmySzkolenioweOferty,
+  firmySzkolenioweCertyfikaty,
+  firmySzkolenioweTrenerzy,
+  firmySzkolenioweDokumentacja,
 ];
 
 export function industryPagePath(page: IndustryPageContent) {

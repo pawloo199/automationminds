@@ -1,4 +1,4 @@
-import { Building2, Calculator, HardHat, Megaphone, Scale, ShieldCheck, ShoppingCart, Stethoscope, Store, Truck, Warehouse, Wrench } from "lucide-react";
+import { Building2, Calculator, GraduationCap, HardHat, Megaphone, Scale, ShieldCheck, ShoppingCart, Stethoscope, Store, Truck, Warehouse, Wrench } from "lucide-react";
 import type { IndustryEntry } from "./types";
 
 export const INDUSTRIES_HUB_PATH = "/branze";
@@ -214,6 +214,23 @@ export const INDUSTRIES: IndustryEntry[] = [
       formBody: "Opowiedz, jaką placówkę prowadzicie, z jakiego systemu gabinetowego korzystacie i co zabiera zespołowi najwięcej czasu. W 30 minut wskażemy, od czego zacząć.",
       processesTitle: "Procesy, które automatyzujemy w placówkach medycznych",
       solutionsTitle: "Rozwiązania dla placówek medycznych",
+    },
+  },
+  {
+    slug: "firmy-szkoleniowe",
+    name: "Firmy szkoleniowe",
+    summary: "Automatyzacja i AI dla firm szkoleniowych i organizatorów kursów: zapisy i płatności, organizacja szkoleń, oferty dla firm, certyfikaty, trenerzy i dokumentacja.",
+    icon: GraduationCap,
+    status: "live",
+    mainPageLabel: "Automatyzacja firmy szkoleniowej",
+    featuredCitySlugs: ["warszawa", "krakow", "wroclaw", "poznan", "gdansk", "lodz", "katowice", "lublin", "szczecin"],
+    cta: {
+      midTitle: "Porozmawiajmy o waszej firmie szkoleniowej",
+      midBody: "W 30 minut przejdziemy przez to, co najbardziej obciąża zespół, i powiemy, od czego zacząć. Rozmowa jest bezpłatna i do niczego nie zobowiązuje.",
+      formTitle: "Porozmawiajmy o automatyzacji w firmie szkoleniowej",
+      formBody: "Opowiedz, jakie szkolenia prowadzicie, dla kogo i w jakiej formie, i co zabiera zespołowi najwięcej czasu. W 30 minut wskażemy, od czego zacząć.",
+      processesTitle: "Procesy, które automatyzujemy w firmach szkoleniowych",
+      solutionsTitle: "Rozwiązania dla firm szkoleniowych",
     },
   },
 ];
