@@ -138,5 +138,5 @@ export const nieruchomosciZgloszeniaNajemcow: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-w-obsludze-klienta", "chatbot-ai-dla-firmy", "projektowanie-baz-danych"],
   relatedProcessSlugs: ["obsluga-reklamacji"],
   relatedToolSlugs: ["airtable", "n8n", "chatgpt"],
-  relatedArticleSlugs: ["airtable-w-praktyce-zastosowania", "5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji"],
+  relatedArticleSlugs: ["zarzadzanie-najmem-wielu-mieszkan", "co-zautomatyzowac-w-biurze-nieruchomosci", "airtable-w-praktyce-zastosowania"],
 };

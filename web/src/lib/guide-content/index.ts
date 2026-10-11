@@ -50,6 +50,10 @@ import coZautomatyzowacWAgencjiMarketingowej from "./articles/co-zautomatyzowac-
 import aiWAgencjiMarketingowej from "./articles/ai-w-agencji-marketingowej";
 import raportMarketingowyDlaKlienta from "./articles/raport-marketingowy-dla-klienta";
 import rentownoscKlientowAgencji from "./articles/rentownosc-klientow-agencji";
+import coZautomatyzowacWBiurzeNieruchomosci from "./articles/co-zautomatyzowac-w-biurze-nieruchomosci";
+import aiDlaAgentowNieruchomosci from "./articles/ai-dla-agentow-nieruchomosci";
+import crmDlaBiuraNieruchomosci from "./articles/crm-dla-biura-nieruchomosci";
+import zarzadzanieNajmemWieluMieszkan from "./articles/zarzadzanie-najmem-wielu-mieszkan";
 /** Wszystkie artykuły Poradnika, od najnowszego. */
 export const guideArticles: GuideArticle[] = [
   procesowDoAutomatyzacjiWMalejFirmie,
@@ -102,6 +106,10 @@ export const guideArticles: GuideArticle[] = [
   aiWAgencjiMarketingowej,
   raportMarketingowyDlaKlienta,
   rentownoscKlientowAgencji,
+  coZautomatyzowacWBiurzeNieruchomosci,
+  aiDlaAgentowNieruchomosci,
+  crmDlaBiuraNieruchomosci,
+  zarzadzanieNajmemWieluMieszkan,
 ].sort(
   (a, b) =>
     new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),

@@ -13,6 +13,7 @@ export const GUIDE_CATEGORY_SLUGS = [
   "firmy-logistyczne",
   "hurtownie-i-dystrybucja",
   "agencje-marketingowe",
+  "nieruchomosci",
 ] as const;
 
 export type GuideCategorySlug = (typeof GUIDE_CATEGORY_SLUGS)[number];
@@ -501,6 +502,40 @@ export const guideCategories: GuideCategory[] = [
     cta: {
       title: "Chcecie zautomatyzować pracę agencji?",
       body: "Porozmawiajmy o tym, co zabiera zespołowi najwięcej czasu poza pracą kreatywną. Wskażemy, od czego zacząć i jak bezpiecznie korzystać z AI.",
+    },
+    inMenu: false,
+  },
+  {
+    slug: "nieruchomosci",
+    name: "Nieruchomości",
+    title: "AI i automatyzacja w biurze nieruchomości. Poradnik",
+    metaTitle: "AI i automatyzacja w nieruchomościach. Poradnik",
+    metaDescription:
+      "Jak biura nieruchomości i zarządcy najmu mogą korzystać z AI i automatyzacji: procesy na początek, AI dla agentów, CRM i zarządzanie najmem wielu mieszkań.",
+    shortDescription:
+      "Jak biura nieruchomości i firmy zarządzające najmem mogą oddać pracę powtarzalną systemom i bezpiecznie korzystać z AI.",
+    lead: "Artykuły dla właścicieli biur nieruchomości, agentów i firm zarządzających najmem, które chcą więcej czasu poświęcać klientom i transakcjom, a mniej przepisywaniu zapytań, dokumentom i rozliczeniom. Piszemy z perspektywy wdrożeń w tej branży.",
+    about: [
+      "Biuro nieruchomości sprzedaje wiedzę o rynku, kontakty i czas agentów. Wokół tej pracy jest dużo operacji: zapytania z portali, opisy ofert, umowy, prezentacje, a w zarządzaniu najmem także zgłoszenia, czynsze i rozliczenia z właścicielami.",
+      "W tej części Poradnika opisujemy, które procesy warto zautomatyzować najpierw, jak agenci mogą korzystać z AI bez ryzyka dla danych klientów, jak uporządkować CRM i jak zarządzać najmem wielu mieszkań bez arkuszy.",
+      "Jeśli szukacie konkretnych rozwiązań i przebiegu wdrożenia, zajrzyjcie także na stronę automatyzacji biura nieruchomości w części Branże.",
+    ],
+    faq: [
+      {
+        question: "Co w biurze nieruchomości da się zautomatyzować?",
+        answer:
+          "Najczęściej obsługę zapytań z portali, umawianie prezentacji, opisy ofert, umowy i protokoły z szablonów, zgłoszenia najemców, rozliczenia najmu i raporty dla właścicieli.",
+      },
+      {
+        question: "Czy agent nieruchomości może bezpiecznie korzystać z AI?",
+        answer:
+          "Tak, jeśli korzysta z kont firmowych w planach bez trenowania na danych, nie wkleja danych klientów do prywatnych narzędzi i sprawdza każdy tekst przed publikacją lub wysłaniem.",
+      },
+    ],
+    relatedServiceSlugs: ["automatyzacja-sprzedazy", "automatyzacja-dla-firm-uslugowych", "szkolenia-ai-dla-zespolow"],
+    cta: {
+      title: "Chcecie zautomatyzować pracę biura?",
+      body: "Porozmawiajmy o tym, co zabiera agentom i zarządcom najwięcej czasu poza pracą z klientem. Wskażemy, od czego zacząć i jak bezpiecznie korzystać z AI.",
     },
     inMenu: false,
   },

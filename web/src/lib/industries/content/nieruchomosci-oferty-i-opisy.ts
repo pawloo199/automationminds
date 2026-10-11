@@ -138,5 +138,5 @@ export const nieruchomosciOfertyIOpisy: IndustryPageContent = {
   relatedServiceSlugs: ["ai-w-obsludze-dokumentow", "automatyzacja-sprzedazy", "szkolenia-ai-dla-zespolow"],
   relatedProcessSlugs: ["ofertowanie"],
   relatedToolSlugs: ["chatgpt", "claude", "n8n"],
-  relatedArticleSlugs: ["ai-w-codziennej-pracy-zespolu", "porzadek-w-danych-przed-ai-i-automatyzacja", "airtable-w-praktyce-zastosowania"],
+  relatedArticleSlugs: ["ai-dla-agentow-nieruchomosci", "crm-dla-biura-nieruchomosci", "porzadek-w-danych-przed-ai-i-automatyzacja"],
 };

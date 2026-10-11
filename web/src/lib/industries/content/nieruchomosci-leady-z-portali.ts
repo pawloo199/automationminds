@@ -138,5 +138,5 @@ export const nieruchomosciLeadyZPortali: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-sprzedazy", "automatyzacja-w-obsludze-klienta", "chatbot-ai-dla-firmy"],
   relatedProcessSlugs: ["obsluga-zapytan-i-leadow", "umawianie-wizyt"],
   relatedToolSlugs: ["hubspot", "pipedrive", "n8n"],
-  relatedArticleSlugs: ["automatyzacja-obslugi-leadow-sprzedazowych", "jak-mierzyc-roi-automatyzacji", "5-procesow-do-automatyzacji-w-malej-firmie"],
+  relatedArticleSlugs: ["crm-dla-biura-nieruchomosci", "co-zautomatyzowac-w-biurze-nieruchomosci", "automatyzacja-obslugi-leadow-sprzedazowych"],
 };

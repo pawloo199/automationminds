@@ -138,5 +138,5 @@ export const nieruchomosciAsystentNajemcy: IndustryPageContent = {
   relatedServiceSlugs: ["chatbot-ai-dla-firmy", "asystent-ai-na-firmowej-wiedzy", "automatyzacja-w-obsludze-klienta"],
   relatedProcessSlugs: ["obsluga-zapytan-i-leadow"],
   relatedToolSlugs: ["chatgpt", "claude", "n8n"],
-  relatedArticleSlugs: ["ai-w-codziennej-pracy-zespolu", "rodo-a-automatyzacja-procesow", "wdrozenie-ai-w-malej-i-sredniej-firmie"],
+  relatedArticleSlugs: ["zarzadzanie-najmem-wielu-mieszkan", "ai-dla-agentow-nieruchomosci", "rodo-a-automatyzacja-procesow"],
 };

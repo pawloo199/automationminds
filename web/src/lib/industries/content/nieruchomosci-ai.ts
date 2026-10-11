@@ -146,5 +146,5 @@ export const nieruchomosciAi: IndustryPageContent = {
   relatedServiceSlugs: ["agenci-ai", "chatbot-ai-dla-firmy", "szkolenia-ai-dla-zespolow", "strategia-wdrozenia-ai"],
   relatedProcessSlugs: ["obsluga-zapytan-i-leadow"],
   relatedToolSlugs: ["chatgpt", "claude", "n8n", "hubspot"],
-  relatedArticleSlugs: ["ai-w-codziennej-pracy-zespolu", "wdrozenie-ai-w-malej-i-sredniej-firmie", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["ai-dla-agentow-nieruchomosci", "co-zautomatyzowac-w-biurze-nieruchomosci", "ai-w-codziennej-pracy-zespolu"],
 };

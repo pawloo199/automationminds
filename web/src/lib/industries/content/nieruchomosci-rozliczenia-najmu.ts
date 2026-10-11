@@ -138,5 +138,5 @@ export const nieruchomosciRozliczeniaNajmu: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-ksiegowosci", "automatyzacja-raportow", "projektowanie-baz-danych"],
   relatedProcessSlugs: ["przypomnienia-o-platnosciach", "raporty-finansowe"],
   relatedToolSlugs: ["airtable", "ksef", "n8n"],
-  relatedArticleSlugs: ["integracja-crm-z-fakturowaniem", "airtable-czy-excel", "jak-mierzyc-roi-automatyzacji"],
+  relatedArticleSlugs: ["zarzadzanie-najmem-wielu-mieszkan", "airtable-czy-excel", "integracja-crm-z-fakturowaniem"],
 };

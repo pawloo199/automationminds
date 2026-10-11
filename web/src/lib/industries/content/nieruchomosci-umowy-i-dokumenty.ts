@@ -138,5 +138,5 @@ export const nieruchomosciUmowyIDokumenty: IndustryPageContent = {
   relatedServiceSlugs: ["ai-w-obsludze-dokumentow", "cyfryzacja-danych-i-dokumentow", "automatyzacja-dla-firm-uslugowych"],
   relatedProcessSlugs: ["obieg-umow"],
   relatedToolSlugs: ["microsoft-365", "google-workspace", "n8n"],
-  relatedArticleSlugs: ["cyfryzacja-danych-w-firmie", "rodo-a-automatyzacja-procesow", "gotowa-automatyzacja-czy-budowana-od-zera"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-biurze-nieruchomosci", "ai-dla-agentow-nieruchomosci", "rodo-a-automatyzacja-procesow"],
 };

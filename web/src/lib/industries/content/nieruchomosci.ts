@@ -170,5 +170,5 @@ export const nieruchomosci: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-sprzedazy", "automatyzacja-w-obsludze-klienta", "ai-w-obsludze-dokumentow", "automatyzacja-dla-firm-uslugowych"],
   relatedProcessSlugs: ["obsluga-zapytan-i-leadow", "umawianie-wizyt", "obieg-umow", "przypomnienia-o-platnosciach"],
   relatedToolSlugs: ["n8n", "hubspot", "google-workspace", "chatgpt"],
-  relatedArticleSlugs: ["automatyzacja-obslugi-leadow-sprzedazowych", "5-procesow-do-automatyzacji-w-malej-firmie", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-biurze-nieruchomosci", "crm-dla-biura-nieruchomosci", "zarzadzanie-najmem-wielu-mieszkan"],
 };
