@@ -68,6 +68,14 @@ import { posrednictwoUbezpieczenioweDokumentyKlientow } from "./content/posredni
 import { posrednictwoUbezpieczenioweSzkodyKlientow } from "./content/posrednictwo-ubezpieczeniowe-szkody-klientow";
 import { posrednictwoUbezpieczenioweProwizje } from "./content/posrednictwo-ubezpieczeniowe-prowizje";
 import { posrednictwoUbezpieczenioweBazaPolis } from "./content/posrednictwo-ubezpieczeniowe-baza-polis";
+import { firmySerwisowe } from "./content/firmy-serwisowe";
+import { firmySerwisoweAi } from "./content/firmy-serwisowe-ai";
+import { firmySerwisoweZgloszenia } from "./content/firmy-serwisowe-zgloszenia";
+import { firmySerwisowePlanowanieWizyt } from "./content/firmy-serwisowe-planowanie-wizyt";
+import { firmySerwisoweProtokoly } from "./content/firmy-serwisowe-protokoly";
+import { firmySerwisowePrzeglady } from "./content/firmy-serwisowe-przeglady";
+import { firmySerwisoweWyceny } from "./content/firmy-serwisowe-wyceny";
+import { firmySerwisoweRozliczenia } from "./content/firmy-serwisowe-rozliczenia";
 import type { IndustryPageContent } from "./types";
 
 export * from "./catalog";
@@ -139,6 +147,14 @@ const INDUSTRY_PAGES: IndustryPageContent[] = [
   posrednictwoUbezpieczenioweSzkodyKlientow,
   posrednictwoUbezpieczenioweProwizje,
   posrednictwoUbezpieczenioweBazaPolis,
+  firmySerwisowe,
+  firmySerwisoweAi,
+  firmySerwisoweZgloszenia,
+  firmySerwisowePlanowanieWizyt,
+  firmySerwisoweProtokoly,
+  firmySerwisowePrzeglady,
+  firmySerwisoweWyceny,
+  firmySerwisoweRozliczenia,
 ];
 
 export function industryPagePath(page: IndustryPageContent) {

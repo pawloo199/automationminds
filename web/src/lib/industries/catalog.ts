@@ -1,4 +1,4 @@
-import { Building2, Calculator, Megaphone, Scale, ShieldCheck, Store, Truck, Warehouse } from "lucide-react";
+import { Building2, Calculator, Megaphone, Scale, ShieldCheck, Store, Truck, Warehouse, Wrench } from "lucide-react";
 import type { IndustryEntry } from "./types";
 
 export const INDUSTRIES_HUB_PATH = "/branze";
@@ -146,6 +146,23 @@ export const INDUSTRIES: IndustryEntry[] = [
       formBody: "Opowiedz, czy jesteście agencją, multiagencją czy brokerem, i co zabiera zespołowi najwięcej czasu. W 30 minut wskażemy, od czego zacząć.",
       processesTitle: "Procesy, które automatyzujemy w pośrednictwie ubezpieczeniowym",
       solutionsTitle: "Rozwiązania dla agencji ubezpieczeniowych",
+    },
+  },
+  {
+    slug: "firmy-serwisowe",
+    name: "Firmy serwisowe i instalacyjne",
+    summary: "Automatyzacja i AI dla firm serwisowych i instalacyjnych: zgłoszenia, planowanie wizyt, protokoły, przeglądy okresowe, wyceny i rozliczenia zleceń.",
+    icon: Wrench,
+    status: "live",
+    mainPageLabel: "Automatyzacja firmy serwisowej",
+    featuredCitySlugs: ["warszawa", "krakow", "wroclaw", "poznan", "gdansk", "lodz", "katowice", "szczecin", "rzeszow"],
+    cta: {
+      midTitle: "Porozmawiajmy o waszym serwisie",
+      midBody: "W 30 minut przejdziemy przez to, co najbardziej obciąża biuro i serwisantów, i powiemy, od czego zacząć. Rozmowa jest bezpłatna i do niczego nie zobowiązuje.",
+      formTitle: "Porozmawiajmy o automatyzacji w firmie serwisowej",
+      formBody: "Opowiedz, czym zajmuje się wasz serwis, ilu macie serwisantów i co zabiera zespołowi najwięcej czasu. W 30 minut wskażemy, od czego zacząć.",
+      processesTitle: "Procesy, które automatyzujemy w firmach serwisowych",
+      solutionsTitle: "Rozwiązania dla firm serwisowych",
     },
   },
 ];
