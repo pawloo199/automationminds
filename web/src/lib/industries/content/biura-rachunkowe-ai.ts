@@ -1,0 +1,200 @@
+import type { IndustryPageContent } from "../types";
+
+export const biuraRachunkoweAi: IndustryPageContent = {
+  industrySlug: "biura-rachunkowe",
+  subSlug: "ai",
+  name: "AI w biurze rachunkowym",
+  excerpt: "Bezpieczne wdrożenie AI w biurze rachunkowym: odczyt dokumentów, propozycje dekretacji, pytania klientów i zasady pracy z AI.",
+  metaTitle: "AI w biurze rachunkowym i AI dla księgowych: wdrożenie",
+  metaDescription:
+    "Wdrażamy AI w biurach rachunkowych: odczyt faktur i dokumentów, propozycje opisu kosztów, asystent dla klientów i zespołu, zasady i szkolenia.",
+  primaryKeyword: "AI w biurze rachunkowym",
+  updatedAt: "2026-10-11",
+  hero: {
+    eyebrow: "Sztuczna inteligencja w księgowości",
+    title: "AI w biurze rachunkowym: mniej przepisywania, więcej czasu na doradztwo",
+    lead: "Księgowi coraz częściej sięgają po AI, zwykle na prywatnych kontach i bez zasad. Pomagamy biurom rachunkowym wdrożyć sztuczną inteligencję bezpiecznie: z kontrolą nad danymi klientów, z jasnymi zasadami i tam, gdzie faktycznie oszczędza czas, czyli przy dokumentach, opisie kosztów i pytaniach klientów.",
+    bullets: [
+      "Odczyt faktur, paragonów i wyciągów",
+      "Propozycje opisu kosztów na podstawie historii klienta",
+      "Zasady, szkolenia i kontrola nad danymi",
+    ],
+  },
+  summary: [
+    { label: "Dla kogo", value: "Biura rachunkowe, kancelarie podatkowe i działy księgowe firm" },
+    { label: "Co robimy", value: "Narzędzia AI dla księgowych, AI w dokumentach, asystent dla klientów i zespołu" },
+    { label: "Bezpieczeństwo", value: "Dane w UE, bez trenowania modeli na danych, uprawnienia do klientów" },
+    { label: "Zasada", value: "AI przygotowuje dane i propozycje, księgowy sprawdza i decyduje" },
+  ],
+  symptoms: {
+    title: "Kiedy biuro rachunkowe powinno zająć się AI",
+    lead: "Jeśli rozpoznajecie u siebie któreś z tych sytuacji, to dobry moment, żeby uporządkować korzystanie z AI.",
+    items: [
+      "Księgowi wklejają dokumenty klientów do czatów AI na prywatnych kontach.",
+      "Nie macie zasad, co wolno, a czego nie wolno przesyłać do narzędzi AI.",
+      "Dużą część dnia zajmuje przepisywanie danych z dokumentów, których program nie odczytuje dobrze.",
+      "Opis tych samych kosztów u tego samego klienta powtarza się co miesiąc, a i tak robi się go ręcznie.",
+      "Klienci zadają pytania, na które odpowiedź jest w umowie, cenniku lub wcześniejszych mailach.",
+      "Chcecie obsłużyć więcej klientów bez zatrudniania, ale nie kosztem jakości i bezpieczeństwa.",
+    ],
+  },
+  intro: {
+    title: "AI w biurze rachunkowym na trzech poziomach",
+    paragraphs: [
+      "Pierwszy poziom to narzędzia AI dla księgowych: czat z modelem językowym na koncie firmowym, z zasadami korzystania i szkoleniem. Księgowi szybciej przygotowują wyjaśnienia dla klientów, streszczają pisma z urzędów i porządkują notatki, a biuro wie, gdzie trafiają dane.",
+      "Drugi poziom to AI w procesach biura. Model odczytuje faktury, paragony, wyciągi i inne dokumenty, rozpoznaje ich rodzaj i proponuje opis kosztu na podstawie historii klienta. Dane trafiają do sprawdzenia, a dokumenty, przy których AI nie ma pewności, są oznaczane do ręcznej weryfikacji.",
+      "Trzeci poziom to asystent AI dla zespołu i klientów. Odpowiada na pytania na podstawie dokumentów biura: umów z klientami, cennika, procedur i wcześniejszych odpowiedzi. Nie interpretuje przepisów za księgowego, tylko udostępnia to, co biuro już wie, i przekazuje trudniejsze pytania właściwej osobie.",
+    ],
+  },
+  scope: {
+    title: "Jak AI pomaga w pracy księgowego",
+    lead: "Zastosowania, które wdrażamy najczęściej. Każde z nich działa jako wsparcie, a decyzję zawsze podejmuje księgowy.",
+    items: [
+      { title: "Odczyt dokumentów", body: "Dane z faktur, paragonów, wyciągów i not odczytane i przygotowane do sprawdzenia." },
+      { title: "Rozpoznawanie dokumentów", body: "Automatyczne rozróżnienie faktury, korekty, paragonu, umowy i pisma oraz przypisanie do klienta." },
+      { title: "Propozycje opisu kosztów", body: "Kategoria i opis kosztu na podstawie wcześniejszych dokumentów klienta, do akceptacji księgowego." },
+      { title: "Uzgadnianie płatności", body: "Dopasowanie pozycji z wyciągu do faktur i lista pozycji do wyjaśnienia." },
+      { title: "Pisma z urzędów", body: "Streszczenie pisma, termin i lista potrzebnych dokumentów jako materiał roboczy." },
+      { title: "Pytania klientów", body: "Odpowiedzi na typowe pytania na podstawie dokumentów biura, z przekazaniem trudniejszych spraw księgowemu." },
+      { title: "Wyjaśnienia dla klientów", body: "Projekty maili tłumaczących rozliczenie prostym językiem, do sprawdzenia przez księgowego." },
+      { title: "Zasady i szkolenia", body: "Polityka korzystania z AI w biurze i warsztaty dla księgowych na prawdziwych zadaniach." },
+    ],
+  },
+  security: {
+    title: "AI a dane finansowe klientów",
+    lead: "Pierwsze pytanie, które słyszymy od właścicieli biur. Odpowiadamy na nie rozwiązaniami, a nie obietnicami.",
+    items: [
+      { title: "Konta firmowe zamiast prywatnych", body: "Księgowi korzystają z AI na kontach biura, w planach, w których dane nie służą do trenowania modeli." },
+      { title: "Minimum danych", body: "Do modelu trafia tylko to, co potrzebne do zadania, np. sam dokument, bez całej historii klienta." },
+      { title: "Dane w UE lub u was", body: "Przepływy z AI mogą działać na serwerze w UE albo w infrastrukturze biura, bez zewnętrznych usług automatyzacji." },
+      { title: "Uprawnienia do klientów", body: "Asystent pokazuje tylko informacje o klientach, których obsługuje dana osoba." },
+      { title: "Jasne zasady", body: "Pisemne zasady korzystania z AI: co wolno przesyłać, jak oznaczać dane do sprawdzenia, kto odpowiada za weryfikację." },
+      { title: "Weryfikacja przez księgowego", body: "Każdy wynik AI jest propozycją. Do ksiąg i deklaracji trafia dopiero po zatwierdzeniu." },
+    ],
+  },
+  comparison: {
+    title: "Prywatne konta AI czy AI wdrożone w biurze",
+    lead: "Różnica nie polega na jakości modelu, tylko na kontroli nad danymi i wpływie na procesy biura.",
+    columns: ["AI wdrożone w biurze", "Prywatne konta księgowych"],
+    rows: [
+      { label: "Gdzie trafiają dane", values: ["Ustalone miejsce, umowa z dostawcą", "Zależy od ustawień każdego konta"] },
+      { label: "Trenowanie modeli na danych", values: ["Wyłączone w planach firmowych", "Często włączone domyślnie w planach prywatnych"] },
+      { label: "Dokumenty klientów", values: ["Odczytywane w procesie, z kontrolą", "Wklejane ręcznie do czatu"] },
+      { label: "Zasady i odpowiedzialność", values: ["Spisane i znane zespołowi", "Każdy na własną rękę"] },
+      { label: "Wpływ na procesy", values: ["AI w dokumentach, statusach, komunikacji", "Tylko praca w oknie czatu"] },
+    ],
+    note: "Porównanie jest uproszczone. Ustawienia narzędzi AI zmieniają się, dlatego weryfikujemy je przy każdym wdrożeniu.",
+  },
+  example: {
+    title: "Praca z dokumentami przed i po wdrożeniu AI",
+    lead: "Przykład biura, które obsługuje wielu małych klientów przesyłających dokumenty w różnych formach.",
+    rows: [
+      { label: "Przyjęcie dokumentu", before: "Księgowy otwiera maila, zapisuje plik, sprawdza klienta.", after: "Dokument przypisany do klienta i miesiąca automatycznie." },
+      { label: "Dane", before: "Przepisywanie pozycji z dokumentów, których program nie odczytał.", after: "Dane odczytane przez AI do sprawdzenia." },
+      { label: "Opis kosztu", before: "Ten sam opis wpisywany co miesiąc.", after: "Propozycja na podstawie historii klienta do akceptacji." },
+      { label: "Pytania klientów", before: "Odpowiedzi szukane w mailach i umowach.", after: "Asystent przygotowuje odpowiedź ze źródłem." },
+      { label: "Bezpieczeństwo", before: "Prywatne czaty AI bez zasad.", after: "Konta firmowe, zasady i kontrola nad danymi." },
+    ],
+    note: "To przykład ilustracyjny. Zakres zawsze ustalamy po rozmowie o waszym biurze.",
+  },
+  implementation: {
+    title: "Jak wdrażamy AI w biurze rachunkowym",
+    lead: "Zaczynamy od zasad i bezpiecznych narzędzi, a potem dokładamy AI do dokumentów i komunikacji z klientami.",
+    phases: [
+      {
+        title: "Przegląd i zasady",
+        duration: "kilka dni",
+        body: "Sprawdzamy, jak zespół korzysta dziś z AI i jakie dokumenty sprawiają najwięcej pracy, i przygotowujemy zasady korzystania z AI w biurze.",
+        fromYou: "Rozmowa z właścicielem i informacja o używanych programach.",
+      },
+      {
+        title: "Narzędzia i szkolenie",
+        duration: "1–2 tygodnie",
+        body: "Konfigurujemy konta firmowe i ustawienia prywatności, a potem prowadzimy warsztat na prawdziwych zadaniach księgowych.",
+        fromYou: "Udział zespołu w warsztacie i przykładowe, zanonimizowane dokumenty.",
+      },
+      {
+        title: "AI w dokumentach i komunikacji",
+        duration: "zwykle 3–6 tygodni",
+        body: "Budujemy wybrane zastosowania: odczyt dokumentów, propozycje opisu kosztów, asystenta. Testujemy na dokumentach kilku klientów z oceną księgowych.",
+        fromYou: "Dokumenty testowe, osoba oceniająca wyniki i kilku klientów do pilotażu.",
+      },
+      {
+        title: "Opieka i rozwój",
+        duration: "stale",
+        body: "Pilnujemy jakości odczytu i kosztów, aktualizujemy zasady wraz ze zmianami narzędzi i dokładamy kolejne zastosowania.",
+        fromYou: "Uwagi zespołu i informacja o nowych potrzebach.",
+      },
+    ],
+  },
+  variants: {
+    title: "Warianty wdrożenia AI",
+    lead: "Wiele biur zaczyna od bezpiecznego startu i po kilku tygodniach dokłada kolejne zastosowania.",
+    items: [
+      {
+        name: "Bezpieczny start",
+        description: "Dla biur, które chcą uporządkować korzystanie z AI.",
+        includes: [
+          "Zasady korzystania z AI w biurze",
+          "Konfiguracja kont firmowych i prywatności",
+          "Warsztat dla księgowych na prawdziwych zadaniach",
+          "Biblioteka sprawdzonych poleceń",
+        ],
+      },
+      {
+        name: "AI w dokumentach",
+        description: "Dla biur, które przetwarzają dużo dokumentów od klientów.",
+        includes: [
+          "Wszystko z wariantu Bezpieczny start",
+          "Odczyt i rozpoznawanie dokumentów",
+          "Propozycje opisu kosztów",
+          "Przekazanie danych do programu księgowego",
+          "Przepływy działające na serwerze w UE",
+        ],
+      },
+      {
+        name: "Asystent biura",
+        description: "Dla biur, które chcą odciążyć zespół od pytań klientów.",
+        includes: [
+          "Wszystko z wariantu AI w dokumentach",
+          "Asystent na umowach, cenniku i procedurach biura",
+          "Odpowiedzi ze wskazaniem źródła",
+          "Uprawnienia zgodne z podziałem klientów",
+          "Opieka i rozwój w abonamencie",
+        ],
+      },
+    ],
+  },
+  costFactors: {
+    title: "Od czego zależy koszt",
+    lead: "Wycenę przygotowujemy po przeglądzie. Na koszt wpływa przede wszystkim:",
+    items: [
+      "liczba księgowych korzystających z narzędzi AI,",
+      "liczba i rodzaj dokumentów, które przetwarza AI,",
+      "możliwości integracji programu księgowego,",
+      "wymagania bezpieczeństwa, np. działanie wyłącznie w infrastrukturze biura,",
+      "zakres szkoleń i opieki po wdrożeniu.",
+    ],
+  },
+  risks: {
+    title: "Granice AI w pracy księgowego",
+    items: [
+      { risk: "AI źle odczyta dane z dokumentu słabej jakości.", mitigation: "Dokumenty z niską pewnością odczytu są oznaczane, a wszystkie dane przechodzą przez sprawdzenie przed zaksięgowaniem." },
+      { risk: "AI zaproponuje błędną kwalifikację podatkową.", mitigation: "Propozycje opierają się na historii klienta i są tylko podpowiedzią. Kwalifikację zawsze zatwierdza księgowy." },
+      { risk: "Asystent udzieli klientowi porady podatkowej.", mitigation: "Asystent odpowiada na pytania organizacyjne na podstawie dokumentów biura, a pytania podatkowe przekazuje księgowemu." },
+      { risk: "Zmiany w przepisach i narzędziach AI.", mitigation: "Aktualizujemy zasady i konfigurację, gdy zmieniają się przepisy lub ustawienia narzędzi." },
+    ],
+  },
+  faq: [
+    { question: "Czy księgowy może korzystać z AI?", answer: "Tak, pod warunkiem, że chroni dane klientów i sam weryfikuje wyniki. Warto opisać zasady korzystania z AI w wewnętrznych procedurach biura i korzystać z kont firmowych zamiast prywatnych." },
+    { question: "Czy AI zaksięguje dokumenty za nas?", answer: "AI odczyta dane i zaproponuje opis, ale do ksiąg dokument trafia po sprawdzeniu przez księgowego. Odpowiedzialność za księgi zostaje po stronie biura." },
+    { question: "Czy nasz program księgowy nie ma już odczytu dokumentów?", answer: "Wiele programów ma odczyt faktur. AI pomaga tam, gdzie on nie wystarcza: przy nietypowych dokumentach, paragonach, wyciągach, pismach i przy propozycjach opisu na podstawie historii klienta." },
+    { question: "Czy ChatGPT lub Claude zobaczą dane naszych klientów?", answer: "W planach firmowych i przez API dane domyślnie nie służą do trenowania modeli. Mimo to ograniczamy dane wysyłane do modeli do niezbędnego minimum i konfigurujemy narzędzia tak, żeby biuro wiedziało, gdzie trafiają informacje." },
+    { question: "Od czego zacząć wdrożenie AI w biurze rachunkowym?", answer: "Od zasad i bezpiecznych kont dla zespołu, połączonych z warsztatem na prawdziwych zadaniach. Potem zwykle od odczytu dokumentów, bo to tam AI najszybciej oszczędza czas." },
+    { question: "Czy prowadzicie szkolenia z AI dla księgowych?", answer: "Tak. Warsztaty prowadzimy na zadaniach z praktyki biura: dokumenty, wyjaśnienia dla klientów, pisma z urzędów, bezpieczeństwo danych i sprawdzanie wyników." },
+  ],
+  relatedServiceSlugs: ["ai-w-obsludze-dokumentow", "asystent-ai-na-firmowej-wiedzy", "szkolenia-ai-dla-zespolow", "strategia-wdrozenia-ai"],
+  relatedProcessSlugs: ["obieg-faktur-kosztowych"],
+  relatedToolSlugs: ["claude", "chatgpt", "n8n", "ksef"],
+  relatedArticleSlugs: ["ai-w-codziennej-pracy-zespolu", "wdrozenie-ai-w-malej-i-sredniej-firmie", "rodo-a-automatyzacja-procesow"],
+};

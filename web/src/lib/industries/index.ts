@@ -4,6 +4,8 @@ import { getProcessEntry } from "../processes/catalog";
 import { getServicesBySlugs } from "../services";
 import { getToolEntry } from "../tools/catalog";
 import { getIndustryEntry, INDUSTRIES_HUB_PATH, industryPath } from "./catalog";
+import { biuraRachunkowe } from "./content/biura-rachunkowe";
+import { biuraRachunkoweAi } from "./content/biura-rachunkowe-ai";
 import { kancelariePrawne } from "./content/kancelarie-prawne";
 import { kancelarieAnalizaUmow } from "./content/kancelarie-analiza-umow";
 import { kancelarieAsystentWiedzy } from "./content/kancelarie-asystent-wiedzy";
@@ -27,6 +29,8 @@ const INDUSTRY_PAGES: IndustryPageContent[] = [
   kancelarieTerminyISprawy,
   kancelariePismaZSzablonow,
   kancelarieRozliczenia,
+  biuraRachunkowe,
+  biuraRachunkoweAi,
 ];
 
 export function industryPagePath(page: IndustryPageContent) {

@@ -1,4 +1,4 @@
-import { Scale } from "lucide-react";
+import { Calculator, Scale } from "lucide-react";
 import type { IndustryEntry } from "./types";
 
 export const INDUSTRIES_HUB_PATH = "/branze";
@@ -27,6 +27,23 @@ export const INDUSTRIES: IndustryEntry[] = [
       formBody: "Opowiedz, jak dziś pracuje kancelaria i co zabiera najwięcej czasu. W 30 minut wskażemy, od czego zacząć i jak zadbać o bezpieczeństwo danych.",
       processesTitle: "Procesy, które automatyzujemy w kancelariach",
       solutionsTitle: "Rozwiązania dla kancelarii",
+    },
+  },
+  {
+    slug: "biura-rachunkowe",
+    name: "Biura rachunkowe",
+    summary: "Automatyzacja i AI dla biur rachunkowych i kancelarii podatkowych: dokumenty od klientów, KSeF, terminy i komunikacja.",
+    icon: Calculator,
+    status: "live",
+    mainPageLabel: "Automatyzacja biur rachunkowych",
+    featuredCitySlugs: ["warszawa", "krakow", "wroclaw", "poznan", "gdansk", "lodz", "katowice", "szczecin", "lublin"],
+    cta: {
+      midTitle: "Porozmawiajmy o waszym biurze",
+      midBody: "W 30 minut przejdziemy przez to, co najbardziej obciąża zespół, i powiemy, od czego zacząć. Rozmowa jest poufna i do niczego nie zobowiązuje.",
+      formTitle: "Porozmawiajmy o automatyzacji biura rachunkowego",
+      formBody: "Opowiedz, jak dziś pracuje biuro i co zabiera najwięcej czasu. W 30 minut wskażemy, od czego zacząć i jak zadbać o bezpieczeństwo danych klientów.",
+      processesTitle: "Procesy, które automatyzujemy w biurach rachunkowych",
+      solutionsTitle: "Rozwiązania dla biur rachunkowych",
     },
   },
 ];
