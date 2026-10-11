@@ -116,6 +116,14 @@ import { agencjePracyDokumenty } from "./content/agencje-pracy-dokumenty";
 import { agencjePracyCzasPracy } from "./content/agencje-pracy-czas-pracy";
 import { agencjePracyRozliczenia } from "./content/agencje-pracy-rozliczenia";
 import { agencjePracyKomunikacja } from "./content/agencje-pracy-komunikacja";
+import { biuraProjektowe } from "./content/biura-projektowe";
+import { biuraProjektoweAi } from "./content/biura-projektowe-ai";
+import { biuraProjektoweOferty } from "./content/biura-projektowe-oferty";
+import { biuraProjektoweTerminy } from "./content/biura-projektowe-terminy";
+import { biuraProjektoweDokumentacja } from "./content/biura-projektowe-dokumentacja";
+import { biuraProjektoweUzgodnienia } from "./content/biura-projektowe-uzgodnienia";
+import { biuraProjektoweCzasPracy } from "./content/biura-projektowe-czas-pracy";
+import { biuraProjektoweInwestor } from "./content/biura-projektowe-inwestor";
 import type { IndustryPageContent } from "./types";
 
 export * from "./catalog";
@@ -235,6 +243,14 @@ const INDUSTRY_PAGES: IndustryPageContent[] = [
   agencjePracyCzasPracy,
   agencjePracyRozliczenia,
   agencjePracyKomunikacja,
+  biuraProjektowe,
+  biuraProjektoweAi,
+  biuraProjektoweOferty,
+  biuraProjektoweTerminy,
+  biuraProjektoweDokumentacja,
+  biuraProjektoweUzgodnienia,
+  biuraProjektoweCzasPracy,
+  biuraProjektoweInwestor,
 ];
 
 export function industryPagePath(page: IndustryPageContent) {

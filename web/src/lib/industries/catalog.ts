@@ -1,4 +1,4 @@
-import { Building2, Calculator, GraduationCap, HardHat, Megaphone, Scale, ShieldCheck, ShoppingCart, Stethoscope, Store, Truck, Users, Warehouse, Wrench } from "lucide-react";
+import { Building2, Calculator, DraftingCompass, GraduationCap, HardHat, Megaphone, Scale, ShieldCheck, ShoppingCart, Stethoscope, Store, Truck, Users, Warehouse, Wrench } from "lucide-react";
 import type { IndustryEntry } from "./types";
 
 export const INDUSTRIES_HUB_PATH = "/branze";
@@ -248,6 +248,23 @@ export const INDUSTRIES: IndustryEntry[] = [
       formBody: "Opowiedz, czy prowadzicie rekrutację stałą, pracę tymczasową czy oba, ilu macie pracowników i klientów i co zabiera zespołowi najwięcej czasu. W 30 minut wskażemy, od czego zacząć.",
       processesTitle: "Procesy, które automatyzujemy w agencjach pracy",
       solutionsTitle: "Rozwiązania dla agencji pracy",
+    },
+  },
+  {
+    slug: "biura-projektowe",
+    name: "Biura projektowe i architektoniczne",
+    summary: "Automatyzacja i AI dla biur projektowych i pracowni architektonicznych: zapytania i oferty, projekty i terminy, dokumentacja, uzgodnienia, czas pracy i komunikacja z inwestorem.",
+    icon: DraftingCompass,
+    status: "live",
+    mainPageLabel: "Automatyzacja biura projektowego",
+    featuredCitySlugs: ["warszawa", "krakow", "wroclaw", "poznan", "gdansk", "lodz", "katowice", "lublin", "szczecin"],
+    cta: {
+      midTitle: "Porozmawiajmy o waszym biurze",
+      midBody: "W 30 minut przejdziemy przez to, co najbardziej obciąża projektantów i biuro, i powiemy, od czego zacząć. Rozmowa jest bezpłatna i do niczego nie zobowiązuje.",
+      formTitle: "Porozmawiajmy o automatyzacji w biurze projektowym",
+      formBody: "Opowiedz, jakie projekty prowadzicie, ilu macie projektantów i co zabiera zespołowi najwięcej czasu poza projektowaniem. W 30 minut wskażemy, od czego zacząć.",
+      processesTitle: "Procesy, które automatyzujemy w biurach projektowych",
+      solutionsTitle: "Rozwiązania dla biur projektowych",
     },
   },
 ];
