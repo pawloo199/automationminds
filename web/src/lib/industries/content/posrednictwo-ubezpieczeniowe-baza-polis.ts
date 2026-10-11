@@ -138,5 +138,5 @@ export const posrednictwoUbezpieczenioweBazaPolis: IndustryPageContent = {
   relatedServiceSlugs: ["projektowanie-baz-danych", "wdrozenia-airtable", "migracja-danych"],
   relatedProcessSlugs: ["raporty-finansowe"],
   relatedToolSlugs: ["airtable", "pipedrive", "n8n"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["odnowienia-polis-jak-nie-tracic-klientow", "porzadek-w-danych-przed-ai-i-automatyzacja", "airtable-w-praktyce-zastosowania"],
 };

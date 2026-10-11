@@ -54,6 +54,10 @@ import coZautomatyzowacWBiurzeNieruchomosci from "./articles/co-zautomatyzowac-w
 import aiDlaAgentowNieruchomosci from "./articles/ai-dla-agentow-nieruchomosci";
 import crmDlaBiuraNieruchomosci from "./articles/crm-dla-biura-nieruchomosci";
 import zarzadzanieNajmemWieluMieszkan from "./articles/zarzadzanie-najmem-wielu-mieszkan";
+import coZautomatyzowacWAgencjiUbezpieczeniowej from "./articles/co-zautomatyzowac-w-agencji-ubezpieczeniowej";
+import aiDlaAgentaUbezpieczeniowego from "./articles/ai-dla-agenta-ubezpieczeniowego";
+import odnowieniaPolisJakNieTracicKlientow from "./articles/odnowienia-polis-jak-nie-tracic-klientow";
+import porownanieOfertUbezpieczenDlaKlienta from "./articles/porownanie-ofert-ubezpieczen-dla-klienta";
 /** Wszystkie artykuły Poradnika, od najnowszego. */
 export const guideArticles: GuideArticle[] = [
   procesowDoAutomatyzacjiWMalejFirmie,
@@ -110,6 +114,10 @@ export const guideArticles: GuideArticle[] = [
   aiDlaAgentowNieruchomosci,
   crmDlaBiuraNieruchomosci,
   zarzadzanieNajmemWieluMieszkan,
+  coZautomatyzowacWAgencjiUbezpieczeniowej,
+  aiDlaAgentaUbezpieczeniowego,
+  odnowieniaPolisJakNieTracicKlientow,
+  porownanieOfertUbezpieczenDlaKlienta,
 ].sort(
   (a, b) =>
     new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),

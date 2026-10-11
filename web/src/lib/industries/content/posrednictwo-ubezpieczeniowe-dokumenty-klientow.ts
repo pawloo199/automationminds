@@ -138,5 +138,5 @@ export const posrednictwoUbezpieczenioweDokumentyKlientow: IndustryPageContent =
   relatedServiceSlugs: ["ai-w-obsludze-dokumentow", "cyfryzacja-danych-i-dokumentow", "automatyzacja-dla-firm-uslugowych"],
   relatedProcessSlugs: ["obieg-umow"],
   relatedToolSlugs: ["microsoft-365", "google-workspace", "n8n"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-agencji-ubezpieczeniowej", "ai-dla-agenta-ubezpieczeniowego", "rodo-a-automatyzacja-procesow"],
 };

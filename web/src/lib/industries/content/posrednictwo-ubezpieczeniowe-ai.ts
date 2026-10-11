@@ -145,5 +145,5 @@ export const posrednictwoUbezpieczenioweAi: IndustryPageContent = {
   relatedServiceSlugs: ["ai-w-obsludze-dokumentow", "asystent-ai-na-firmowej-wiedzy", "szkolenia-ai-dla-zespolow", "agenci-ai"],
   relatedProcessSlugs: ["obsluga-zapytan-i-leadow"],
   relatedToolSlugs: ["chatgpt", "claude", "n8n"],
-  relatedArticleSlugs: ["ai-w-codziennej-pracy-zespolu", "rodo-a-automatyzacja-procesow", "wdrozenie-ai-w-malej-i-sredniej-firmie"],
+  relatedArticleSlugs: ["ai-dla-agenta-ubezpieczeniowego", "porownanie-ofert-ubezpieczen-dla-klienta", "ai-w-codziennej-pracy-zespolu"],
 };

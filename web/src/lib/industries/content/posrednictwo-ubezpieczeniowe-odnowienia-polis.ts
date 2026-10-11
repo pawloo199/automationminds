@@ -138,5 +138,5 @@ export const posrednictwoUbezpieczenioweOdnowieniaPolis: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-sprzedazy", "automatyzacja-w-obsludze-klienta", "porzadkowanie-i-strukturyzowanie-danych"],
   relatedProcessSlugs: ["przypomnienia-o-platnosciach", "ofertowanie"],
   relatedToolSlugs: ["n8n", "pipedrive", "airtable"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["odnowienia-polis-jak-nie-tracic-klientow", "co-zautomatyzowac-w-agencji-ubezpieczeniowej", "jak-mierzyc-roi-automatyzacji"],
 };

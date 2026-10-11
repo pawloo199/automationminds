@@ -138,5 +138,5 @@ export const posrednictwoUbezpieczenioweSzkodyKlientow: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-w-obsludze-klienta", "chatbot-ai-dla-firmy", "ai-w-obsludze-dokumentow"],
   relatedProcessSlugs: ["obsluga-reklamacji"],
   relatedToolSlugs: ["airtable", "n8n", "chatgpt"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["ai-dla-agenta-ubezpieczeniowego", "co-zautomatyzowac-w-agencji-ubezpieczeniowej", "5-procesow-do-automatyzacji-w-malej-firmie"],
 };

@@ -170,5 +170,5 @@ export const posrednictwoUbezpieczeniowe: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-sprzedazy", "automatyzacja-w-obsludze-klienta", "ai-w-obsludze-dokumentow", "porzadkowanie-i-strukturyzowanie-danych"],
   relatedProcessSlugs: ["obsluga-zapytan-i-leadow", "ofertowanie", "obieg-umow", "przypomnienia-o-platnosciach"],
   relatedToolSlugs: ["n8n", "pipedrive", "microsoft-365", "chatgpt"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "automatyzacja-obslugi-leadow-sprzedazowych", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-agencji-ubezpieczeniowej", "odnowienia-polis-jak-nie-tracic-klientow", "porownanie-ofert-ubezpieczen-dla-klienta"],
 };

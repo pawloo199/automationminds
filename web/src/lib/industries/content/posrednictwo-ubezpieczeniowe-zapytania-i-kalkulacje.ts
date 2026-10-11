@@ -138,5 +138,5 @@ export const posrednictwoUbezpieczenioweZapytaniaIKalkulacje: IndustryPageConten
   relatedServiceSlugs: ["automatyzacja-sprzedazy", "chatbot-ai-dla-firmy", "automatyzacja-w-obsludze-klienta"],
   relatedProcessSlugs: ["obsluga-zapytan-i-leadow", "ofertowanie"],
   relatedToolSlugs: ["n8n", "hubspot", "chatgpt"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["porownanie-ofert-ubezpieczen-dla-klienta", "co-zautomatyzowac-w-agencji-ubezpieczeniowej", "automatyzacja-obslugi-leadow-sprzedazowych"],
 };

@@ -138,5 +138,5 @@ export const posrednictwoUbezpieczenioweProwizje: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-ksiegowosci", "automatyzacja-raportow", "porzadkowanie-i-strukturyzowanie-danych"],
   relatedProcessSlugs: ["raporty-finansowe"],
   relatedToolSlugs: ["airtable", "ksef", "n8n"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["odnowienia-polis-jak-nie-tracic-klientow", "airtable-czy-excel", "jak-mierzyc-roi-automatyzacji"],
 };

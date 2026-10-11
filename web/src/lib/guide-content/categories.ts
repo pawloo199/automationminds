@@ -14,6 +14,7 @@ export const GUIDE_CATEGORY_SLUGS = [
   "hurtownie-i-dystrybucja",
   "agencje-marketingowe",
   "nieruchomosci",
+  "posrednictwo-ubezpieczeniowe",
 ] as const;
 
 export type GuideCategorySlug = (typeof GUIDE_CATEGORY_SLUGS)[number];
@@ -536,6 +537,40 @@ export const guideCategories: GuideCategory[] = [
     cta: {
       title: "Chcecie zautomatyzować pracę biura?",
       body: "Porozmawiajmy o tym, co zabiera agentom i zarządcom najwięcej czasu poza pracą z klientem. Wskażemy, od czego zacząć i jak bezpiecznie korzystać z AI.",
+    },
+    inMenu: false,
+  },
+  {
+    slug: "posrednictwo-ubezpieczeniowe",
+    name: "Pośrednictwo ubezpieczeniowe",
+    title: "AI i automatyzacja w agencji ubezpieczeniowej. Poradnik",
+    metaTitle: "AI i automatyzacja w agencji ubezpieczeniowej. Poradnik",
+    metaDescription:
+      "Jak agencje ubezpieczeniowe i brokerzy mogą korzystać z AI i automatyzacji: procesy na początek, AI dla agentów, odnowienia polis i porównanie ofert.",
+    shortDescription:
+      "Jak agencje ubezpieczeniowe, multiagencje i brokerzy mogą oddać pracę powtarzalną systemom i bezpiecznie korzystać z AI.",
+    lead: "Artykuły dla właścicieli agencji ubezpieczeniowych, multiagencji i kancelarii brokerskich oraz ich agentów, którzy chcą więcej czasu poświęcać klientom i doradztwu, a mniej przepisywaniu danych, pilnowaniu terminów i rozliczeniom. Piszemy z perspektywy wdrożeń w tej branży.",
+    about: [
+      "Agencja ubezpieczeniowa żyje z relacji z klientami i odnowień. Wokół tej pracy jest dużo operacji: zapytania, dane do kalkulacji, dokumenty, szkody, zestawienia prowizji z wielu towarzystw.",
+      "W tej części Poradnika opisujemy, które procesy warto zautomatyzować najpierw, jak agenci mogą korzystać z AI bez ryzyka dla danych klientów, jak nie tracić klientów przy odnowieniach i jak przygotować porównanie ofert dla klienta.",
+      "Jeśli szukacie konkretnych rozwiązań i przebiegu wdrożenia, zajrzyjcie także na stronę automatyzacji agencji ubezpieczeniowej w części Branże.",
+    ],
+    faq: [
+      {
+        question: "Co w agencji ubezpieczeniowej da się zautomatyzować?",
+        answer:
+          "Najczęściej odnowienia polis, obsługę zapytań i zbieranie danych do kalkulacji, dokumenty klientów, wsparcie przy szkodach, rozliczenia prowizji i bazę polis z wielu towarzystw.",
+      },
+      {
+        question: "Czy agent ubezpieczeniowy może bezpiecznie korzystać z AI?",
+        answer:
+          "Tak, jeśli korzysta z kont firmowych w planach bez trenowania na danych, nie przekazuje do AI danych o zdrowiu klientów i sprawdza każdy materiał, zanim trafi do klienta.",
+      },
+    ],
+    relatedServiceSlugs: ["automatyzacja-sprzedazy", "ai-w-obsludze-dokumentow", "szkolenia-ai-dla-zespolow"],
+    cta: {
+      title: "Chcecie zautomatyzować pracę agencji?",
+      body: "Porozmawiajmy o tym, co zabiera agentom najwięcej czasu poza rozmowami z klientami. Wskażemy, od czego zacząć i jak bezpiecznie korzystać z AI.",
     },
     inMenu: false,
   },
