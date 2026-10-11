@@ -82,6 +82,10 @@ import coZautomatyzowacWAgencjiPracy from "./articles/co-zautomatyzowac-w-agencj
 import aiWRekrutacji from "./articles/ai-w-rekrutacji";
 import bazaKandydatowWAgencjiPracy from "./articles/baza-kandydatow-w-agencji-pracy";
 import obsadzanieZlecenWAgencjiPracy from "./articles/obsadzanie-zlecen-w-agencji-pracy";
+import coZautomatyzowacWBiurzeProjektowym from "./articles/co-zautomatyzowac-w-biurze-projektowym";
+import aiDlaArchitektow from "./articles/ai-dla-architektow";
+import wycenaPracProjektowych from "./articles/wycena-prac-projektowych";
+import rentownoscProjektowWBiurzeProjektowym from "./articles/rentownosc-projektow-w-biurze-projektowym";
 /** Wszystkie artykuły Poradnika, od najnowszego. */
 export const guideArticles: GuideArticle[] = [
   procesowDoAutomatyzacjiWMalejFirmie,
@@ -166,6 +170,10 @@ export const guideArticles: GuideArticle[] = [
   aiWRekrutacji,
   bazaKandydatowWAgencjiPracy,
   obsadzanieZlecenWAgencjiPracy,
+  coZautomatyzowacWBiurzeProjektowym,
+  aiDlaArchitektow,
+  wycenaPracProjektowych,
+  rentownoscProjektowWBiurzeProjektowym,
 ].sort(
   (a, b) =>
     new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),

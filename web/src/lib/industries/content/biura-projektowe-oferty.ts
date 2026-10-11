@@ -138,5 +138,5 @@ export const biuraProjektoweOferty: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-sprzedazy", "ai-w-obsludze-dokumentow", "automatyzacja-dla-firm-uslugowych"],
   relatedProcessSlugs: ["ofertowanie", "obsluga-zapytan-i-leadow", "obieg-umow"],
   relatedToolSlugs: ["pipedrive", "google-workspace", "n8n"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["wycena-prac-projektowych", "co-zautomatyzowac-w-biurze-projektowym", "rentownosc-projektow-w-biurze-projektowym"],
 };

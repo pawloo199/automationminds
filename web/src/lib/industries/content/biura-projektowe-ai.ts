@@ -145,5 +145,5 @@ export const biuraProjektoweAi: IndustryPageContent = {
   relatedServiceSlugs: ["ai-w-obsludze-dokumentow", "asystent-ai-na-firmowej-wiedzy", "szkolenia-ai-dla-zespolow", "strategia-wdrozenia-ai"],
   relatedProcessSlugs: ["obieg-umow"],
   relatedToolSlugs: ["chatgpt", "claude", "n8n"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["ai-dla-architektow", "co-zautomatyzowac-w-biurze-projektowym", "porzadek-w-danych-przed-ai-i-automatyzacja"],
 };

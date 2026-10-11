@@ -138,5 +138,5 @@ export const biuraProjektoweTerminy: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-firm-uslugowych", "projektowanie-baz-danych", "integracje-systemow"],
   relatedProcessSlugs: ["raporty-finansowe"],
   relatedToolSlugs: ["airtable", "microsoft-365", "n8n"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-biurze-projektowym", "rentownosc-projektow-w-biurze-projektowym", "ai-dla-architektow"],
 };

@@ -138,5 +138,5 @@ export const biuraProjektoweUzgodnienia: IndustryPageContent = {
   relatedServiceSlugs: ["ai-w-obsludze-dokumentow", "cyfryzacja-danych-i-dokumentow", "automatyzacja-dla-firm-uslugowych"],
   relatedProcessSlugs: ["obieg-umow"],
   relatedToolSlugs: ["airtable", "n8n", "claude"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["ai-dla-architektow", "co-zautomatyzowac-w-biurze-projektowym", "wycena-prac-projektowych"],
 };

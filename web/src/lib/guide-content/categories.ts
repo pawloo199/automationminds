@@ -21,6 +21,7 @@ export const GUIDE_CATEGORY_SLUGS = [
   "placowki-medyczne",
   "firmy-szkoleniowe",
   "agencje-pracy",
+  "biura-projektowe",
 ] as const;
 
 export type GuideCategorySlug = (typeof GUIDE_CATEGORY_SLUGS)[number];
@@ -781,6 +782,40 @@ export const guideCategories: GuideCategory[] = [
     cta: {
       title: "Chcecie ograniczyć administrację w agencji?",
       body: "Porozmawiajmy o tym, co zabiera rekruterom i biuru najwięcej czasu. Wskażemy, od czego zacząć i jak odpowiedzialnie korzystać z AI.",
+    },
+    inMenu: false,
+  },
+  {
+    slug: "biura-projektowe",
+    name: "Biura projektowe",
+    title: "AI i automatyzacja w biurze projektowym. Poradnik",
+    metaTitle: "AI i automatyzacja w biurze projektowym. Poradnik",
+    metaDescription:
+      "Jak biura projektowe i pracownie architektoniczne mogą korzystać z AI i automatyzacji: procesy na początek, AI dla architektów, wycena prac i rentowność.",
+    shortDescription:
+      "Jak biura projektowe i pracownie architektoniczne mogą ograniczyć organizację wokół projektów i bezpiecznie korzystać z AI.",
+    lead: "Artykuły dla właścicieli pracowni architektonicznych i biur projektowych oraz ich kierowników projektów i projektantów, którzy chcą więcej czasu poświęcać projektowaniu, a mniej ofertom, terminom, dokumentacji i rozliczeniom. Piszemy z perspektywy wdrożeń w tej branży.",
+    about: [
+      "Biuro projektowe łączy pracę twórczą i inżynierską z dużą ilością organizacji: oferty, harmonogramy, wersje dokumentacji, uzgodnienia, uwagi inwestorów, czas pracy i rozliczenia.",
+      "W tej części Poradnika opisujemy, które procesy warto zautomatyzować najpierw, jak architekci i projektanci mogą korzystać z AI bez ryzyka dla projektów, jak wyceniać prace projektowe na podstawie danych i jak liczyć rentowność projektów.",
+      "Jeśli szukacie konkretnych rozwiązań i przebiegu wdrożenia, zajrzyjcie także na stronę automatyzacji biura projektowego w części Branże.",
+    ],
+    faq: [
+      {
+        question: "Co w biurze projektowym da się zautomatyzować?",
+        answer:
+          "Najczęściej oferty i rejestr zapytań, harmonogramy i terminy, obieg dokumentacji i wersji, rejestr uzgodnień, czas pracy i rentowność oraz komunikację z inwestorem.",
+      },
+      {
+        question: "Czy AI może projektować za architekta?",
+        answer:
+          "Nie w naszych wdrożeniach. AI pomaga w pracy z tekstem wokół projektu, a decyzje projektowe i odpowiedzialność należą do projektanta z uprawnieniami.",
+      },
+    ],
+    relatedServiceSlugs: ["automatyzacja-dla-firm-uslugowych", "cyfryzacja-danych-i-dokumentow", "ai-w-obsludze-dokumentow"],
+    cta: {
+      title: "Chcecie odciążyć projektantów od organizacji?",
+      body: "Porozmawiajmy o tym, co zabiera zespołowi najwięcej czasu poza projektowaniem. Wskażemy, od czego zacząć i gdzie AI ma sens.",
     },
     inMenu: false,
   },

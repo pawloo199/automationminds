@@ -138,5 +138,5 @@ export const biuraProjektoweInwestor: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-w-obsludze-klienta", "ai-w-obsludze-dokumentow", "automatyzacja-dla-firm-uslugowych"],
   relatedProcessSlugs: ["obsluga-reklamacji", "obieg-umow"],
   relatedToolSlugs: ["microsoft-365", "n8n", "chatgpt"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["wycena-prac-projektowych", "ai-dla-architektow", "rentownosc-projektow-w-biurze-projektowym"],
 };

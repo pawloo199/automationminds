@@ -138,5 +138,5 @@ export const biuraProjektoweDokumentacja: IndustryPageContent = {
   relatedServiceSlugs: ["cyfryzacja-danych-i-dokumentow", "ai-w-obsludze-dokumentow", "projektowanie-baz-danych"],
   relatedProcessSlugs: ["obieg-umow"],
   relatedToolSlugs: ["microsoft-365", "google-workspace", "n8n"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-biurze-projektowym", "ai-dla-architektow", "porzadek-w-danych-przed-ai-i-automatyzacja"],
 };

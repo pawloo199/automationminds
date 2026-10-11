@@ -138,5 +138,5 @@ export const biuraProjektoweCzasPracy: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-raportow", "automatyzacja-dla-ksiegowosci", "projektowanie-baz-danych"],
   relatedProcessSlugs: ["raporty-finansowe", "obieg-faktur-kosztowych"],
   relatedToolSlugs: ["airtable", "ksef", "n8n"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["rentownosc-projektow-w-biurze-projektowym", "wycena-prac-projektowych", "co-zautomatyzowac-w-biurze-projektowym"],
 };
