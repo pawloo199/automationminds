@@ -138,5 +138,5 @@ export const placowkiMedyczneKomunikacja: IndustryPageContent = {
   relatedServiceSlugs: ["chatbot-ai-dla-firmy", "automatyzacja-w-obsludze-klienta", "asystent-ai-na-firmowej-wiedzy"],
   relatedProcessSlugs: ["obsluga-zapytan-i-leadow", "umawianie-wizyt"],
   relatedToolSlugs: ["chatgpt", "n8n", "google-workspace"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["jak-odciazyc-rejestracje-w-przychodni", "dane-pacjentow-a-automatyzacja", "co-zautomatyzowac-w-przychodni"],
 };

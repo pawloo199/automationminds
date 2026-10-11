@@ -18,6 +18,7 @@ export const GUIDE_CATEGORY_SLUGS = [
   "firmy-serwisowe",
   "firmy-budowlane",
   "sklepy-internetowe",
+  "placowki-medyczne",
 ] as const;
 
 export type GuideCategorySlug = (typeof GUIDE_CATEGORY_SLUGS)[number];
@@ -676,6 +677,40 @@ export const guideCategories: GuideCategory[] = [
     cta: {
       title: "Chcecie zautomatyzować pracę sklepu?",
       body: "Porozmawiajmy o tym, co zabiera zespołowi sklepu najwięcej czasu. Wskażemy, od czego zacząć i gdzie AI ma sens.",
+    },
+    inMenu: false,
+  },
+  {
+    slug: "placowki-medyczne",
+    name: "Placówki medyczne",
+    title: "Automatyzacja w przychodni i gabinecie. Poradnik",
+    metaTitle: "Automatyzacja w przychodni i gabinecie. Poradnik",
+    metaDescription:
+      "Jak przychodnie i gabinety mogą korzystać z automatyzacji i AI w pracy organizacyjnej: procesy na początek, dane pacjentów, nieobecności, rejestracja.",
+    shortDescription:
+      "Jak przychodnie i gabinety mogą odciążyć rejestrację i administrację, z najwyższą ostrożnością wobec danych pacjentów.",
+    lead: "Artykuły dla właścicieli i kierowników prywatnych przychodni, gabinetów i centrów medycznych, którzy chcą odciążyć rejestrację i administrację. Piszemy wyłącznie o pracy organizacyjnej, nie o decyzjach medycznych.",
+    about: [
+      "Placówka medyczna to praca personelu i dużo pracy organizacyjnej wokół niej: rejestracja, przypomnienia, formularze, pytania pacjentów, grafiki, rozliczenia. Ta praca obciąża rejestrację i rośnie z każdym nowym lekarzem.",
+      "W tej części Poradnika opisujemy, które procesy organizacyjne warto zautomatyzować najpierw, jak chronić dane pacjentów przy automatyzacji, jak ograniczyć nieodwołane wizyty i jak odciążyć rejestrację.",
+      "Jeśli szukacie konkretnych rozwiązań i przebiegu wdrożenia, zajrzyjcie także na stronę automatyzacji przychodni w części Branże.",
+    ],
+    faq: [
+      {
+        question: "Co w przychodni da się zautomatyzować?",
+        answer:
+          "Pracę organizacyjną: rejestrację online, przypomnienia o wizytach, listę oczekujących, formularze i zgody przed wizytą, odpowiedzi na pytania organizacyjne, grafiki i rozliczenia.",
+      },
+      {
+        question: "Czy automatyzacja w przychodni dotyczy decyzji medycznych?",
+        answer:
+          "Nie. Automatyzacja dotyczy organizacji pracy. Decyzje medyczne, dokumentacja i rozmowy o zdrowiu należą do personelu.",
+      },
+    ],
+    relatedServiceSlugs: ["automatyzacja-w-obsludze-klienta", "automatyzacja-dla-firm-uslugowych", "cyfryzacja-danych-i-dokumentow"],
+    cta: {
+      title: "Chcecie odciążyć rejestrację?",
+      body: "Porozmawiajmy o tym, co zabiera rejestracji i administracji najwięcej czasu. Wskażemy, od czego zacząć, z ostrożnością wobec danych pacjentów.",
     },
     inMenu: false,
   },

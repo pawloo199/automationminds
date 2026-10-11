@@ -138,5 +138,5 @@ export const placowkiMedyczneFormularze: IndustryPageContent = {
   relatedServiceSlugs: ["cyfryzacja-danych-i-dokumentow", "automatyzacja-w-obsludze-klienta", "integracje-systemow"],
   relatedProcessSlugs: ["umawianie-wizyt", "obieg-umow"],
   relatedToolSlugs: ["n8n", "microsoft-365", "google-workspace"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["dane-pacjentow-a-automatyzacja", "jak-odciazyc-rejestracje-w-przychodni", "cyfryzacja-danych-w-firmie"],
 };

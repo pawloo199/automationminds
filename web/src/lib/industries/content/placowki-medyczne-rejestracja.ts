@@ -138,5 +138,5 @@ export const placowkiMedyczneRejestracja: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-w-obsludze-klienta", "automatyzacja-dla-firm-uslugowych", "integracje-systemow"],
   relatedProcessSlugs: ["umawianie-wizyt"],
   relatedToolSlugs: ["n8n", "google-workspace", "microsoft-365"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["jak-odciazyc-rejestracje-w-przychodni", "nieodwolane-wizyty-pacjentow", "co-zautomatyzowac-w-przychodni"],
 };

@@ -138,5 +138,5 @@ export const placowkiMedyczneGrafiki: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-hr", "integracje-systemow", "automatyzacja-raportow"],
   relatedProcessSlugs: ["umawianie-wizyt"],
   relatedToolSlugs: ["microsoft-365", "google-workspace", "n8n"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-przychodni", "nieodwolane-wizyty-pacjentow", "airtable-w-praktyce-zastosowania"],
 };

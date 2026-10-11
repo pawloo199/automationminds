@@ -138,5 +138,5 @@ export const placowkiMedycznePrzypomnienia: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-w-obsludze-klienta", "automatyzacja-dla-firm-uslugowych", "automatyzacja-raportow"],
   relatedProcessSlugs: ["umawianie-wizyt"],
   relatedToolSlugs: ["n8n", "google-workspace", "airtable"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["nieodwolane-wizyty-pacjentow", "dane-pacjentow-a-automatyzacja", "jak-mierzyc-roi-automatyzacji"],
 };

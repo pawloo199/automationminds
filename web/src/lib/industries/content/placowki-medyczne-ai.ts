@@ -145,5 +145,5 @@ export const placowkiMedyczneAi: IndustryPageContent = {
   relatedServiceSlugs: ["szkolenia-ai-dla-zespolow", "chatbot-ai-dla-firmy", "strategia-wdrozenia-ai", "automatyzacja-w-obsludze-klienta"],
   relatedProcessSlugs: ["umawianie-wizyt"],
   relatedToolSlugs: ["chatgpt", "claude", "n8n"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["dane-pacjentow-a-automatyzacja", "co-zautomatyzowac-w-przychodni", "rodo-a-automatyzacja-procesow"],
 };

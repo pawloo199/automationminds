@@ -158,5 +158,5 @@ export const placowkiMedyczne: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-w-obsludze-klienta", "automatyzacja-dla-firm-uslugowych", "cyfryzacja-danych-i-dokumentow", "automatyzacja-raportow"],
   relatedProcessSlugs: ["umawianie-wizyt", "przypomnienia-o-platnosciach", "raporty-finansowe"],
   relatedToolSlugs: ["n8n", "google-workspace", "microsoft-365"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-przychodni", "dane-pacjentow-a-automatyzacja", "jak-odciazyc-rejestracje-w-przychodni"],
 };

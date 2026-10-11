@@ -70,6 +70,10 @@ import coZautomatyzowacWSklepieInternetowym from "./articles/co-zautomatyzowac-w
 import aiWEcommerce from "./articles/ai-w-ecommerce";
 import marzaWSklepieInternetowym from "./articles/marza-w-sklepie-internetowym";
 import daneProduktoweWSklepie from "./articles/dane-produktowe-w-sklepie";
+import coZautomatyzowacWPrzychodni from "./articles/co-zautomatyzowac-w-przychodni";
+import danePacjentowAAutomatyzacja from "./articles/dane-pacjentow-a-automatyzacja";
+import nieodwolaneWizytyPacjentow from "./articles/nieodwolane-wizyty-pacjentow";
+import jakOdciazycRejestracjeWPrzychodni from "./articles/jak-odciazyc-rejestracje-w-przychodni";
 /** Wszystkie artykuły Poradnika, od najnowszego. */
 export const guideArticles: GuideArticle[] = [
   procesowDoAutomatyzacjiWMalejFirmie,
@@ -142,6 +146,10 @@ export const guideArticles: GuideArticle[] = [
   aiWEcommerce,
   marzaWSklepieInternetowym,
   daneProduktoweWSklepie,
+  coZautomatyzowacWPrzychodni,
+  danePacjentowAAutomatyzacja,
+  nieodwolaneWizytyPacjentow,
+  jakOdciazycRejestracjeWPrzychodni,
 ].sort(
   (a, b) =>
     new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),

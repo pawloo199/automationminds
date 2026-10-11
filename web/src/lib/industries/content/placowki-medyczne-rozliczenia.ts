@@ -138,5 +138,5 @@ export const placowkiMedyczneRozliczenia: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-ksiegowosci", "automatyzacja-raportow", "integracje-systemow"],
   relatedProcessSlugs: ["raporty-finansowe", "przypomnienia-o-platnosciach"],
   relatedToolSlugs: ["ksef", "airtable", "n8n"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-przychodni", "dane-pacjentow-a-automatyzacja", "integracja-crm-z-fakturowaniem"],
 };
