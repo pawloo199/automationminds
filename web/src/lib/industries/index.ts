@@ -76,6 +76,14 @@ import { firmySerwisoweProtokoly } from "./content/firmy-serwisowe-protokoly";
 import { firmySerwisowePrzeglady } from "./content/firmy-serwisowe-przeglady";
 import { firmySerwisoweWyceny } from "./content/firmy-serwisowe-wyceny";
 import { firmySerwisoweRozliczenia } from "./content/firmy-serwisowe-rozliczenia";
+import { firmyBudowlane } from "./content/firmy-budowlane";
+import { firmyBudowlaneAi } from "./content/firmy-budowlane-ai";
+import { firmyBudowlaneOferty } from "./content/firmy-budowlane-oferty";
+import { firmyBudowlaneRaporty } from "./content/firmy-budowlane-raporty";
+import { firmyBudowlanePodwykonawcy } from "./content/firmy-budowlane-podwykonawcy";
+import { firmyBudowlaneMaterialy } from "./content/firmy-budowlane-materialy";
+import { firmyBudowlaneOdbiory } from "./content/firmy-budowlane-odbiory";
+import { firmyBudowlaneKoszty } from "./content/firmy-budowlane-koszty";
 import type { IndustryPageContent } from "./types";
 
 export * from "./catalog";
@@ -155,6 +163,14 @@ const INDUSTRY_PAGES: IndustryPageContent[] = [
   firmySerwisowePrzeglady,
   firmySerwisoweWyceny,
   firmySerwisoweRozliczenia,
+  firmyBudowlane,
+  firmyBudowlaneAi,
+  firmyBudowlaneOferty,
+  firmyBudowlaneRaporty,
+  firmyBudowlanePodwykonawcy,
+  firmyBudowlaneMaterialy,
+  firmyBudowlaneOdbiory,
+  firmyBudowlaneKoszty,
 ];
 
 export function industryPagePath(page: IndustryPageContent) {

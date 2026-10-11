@@ -1,4 +1,4 @@
-import { Building2, Calculator, Megaphone, Scale, ShieldCheck, Store, Truck, Warehouse, Wrench } from "lucide-react";
+import { Building2, Calculator, HardHat, Megaphone, Scale, ShieldCheck, Store, Truck, Warehouse, Wrench } from "lucide-react";
 import type { IndustryEntry } from "./types";
 
 export const INDUSTRIES_HUB_PATH = "/branze";
@@ -163,6 +163,23 @@ export const INDUSTRIES: IndustryEntry[] = [
       formBody: "Opowiedz, czym zajmuje się wasz serwis, ilu macie serwisantów i co zabiera zespołowi najwięcej czasu. W 30 minut wskażemy, od czego zacząć.",
       processesTitle: "Procesy, które automatyzujemy w firmach serwisowych",
       solutionsTitle: "Rozwiązania dla firm serwisowych",
+    },
+  },
+  {
+    slug: "firmy-budowlane",
+    name: "Firmy budowlane",
+    summary: "Automatyzacja i AI dla firm budowlanych i wykonawczych: oferty i kosztorysy, raporty z budowy, podwykonawcy, materiały, odbiory i kontrola kosztów.",
+    icon: HardHat,
+    status: "live",
+    mainPageLabel: "Automatyzacja firmy budowlanej",
+    featuredCitySlugs: ["warszawa", "krakow", "wroclaw", "poznan", "gdansk", "lodz", "katowice", "lublin", "bialystok"],
+    cta: {
+      midTitle: "Porozmawiajmy o waszej firmie",
+      midBody: "W 30 minut przejdziemy przez to, co najbardziej obciąża biuro i kierowników budów, i powiemy, od czego zacząć. Rozmowa jest bezpłatna i do niczego nie zobowiązuje.",
+      formTitle: "Porozmawiajmy o automatyzacji w firmie budowlanej",
+      formBody: "Opowiedz, jakie budowy prowadzicie, ilu macie kierowników i podwykonawców i co zabiera zespołowi najwięcej czasu. W 30 minut wskażemy, od czego zacząć.",
+      processesTitle: "Procesy, które automatyzujemy w firmach budowlanych",
+      solutionsTitle: "Rozwiązania dla firm budowlanych",
     },
   },
 ];
