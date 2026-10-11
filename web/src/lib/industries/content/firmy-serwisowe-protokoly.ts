@@ -138,5 +138,5 @@ export const firmySerwisoweProtokoly: IndustryPageContent = {
   relatedServiceSlugs: ["cyfryzacja-danych-i-dokumentow", "automatyzacja-dla-ksiegowosci", "automatyzacja-dla-firm-uslugowych"],
   relatedProcessSlugs: ["obieg-faktur-kosztowych"],
   relatedToolSlugs: ["airtable", "ksef", "n8n"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["ai-dla-serwisantow", "program-do-zarzadzania-serwisem", "cyfryzacja-danych-w-firmie"],
 };

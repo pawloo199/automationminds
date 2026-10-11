@@ -138,5 +138,5 @@ export const firmySerwisowePrzeglady: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-firm-uslugowych", "automatyzacja-sprzedazy", "projektowanie-baz-danych"],
   relatedProcessSlugs: ["umawianie-wizyt", "przypomnienia-o-platnosciach"],
   relatedToolSlugs: ["airtable", "google-workspace", "n8n"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["umowy-serwisowe", "co-zautomatyzowac-w-firmie-serwisowej", "airtable-w-praktyce-zastosowania"],
 };

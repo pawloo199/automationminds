@@ -145,5 +145,5 @@ export const firmySerwisoweAi: IndustryPageContent = {
   relatedServiceSlugs: ["asystent-ai-na-firmowej-wiedzy", "agenci-ai", "szkolenia-ai-dla-zespolow", "strategia-wdrozenia-ai"],
   relatedProcessSlugs: ["obsluga-reklamacji"],
   relatedToolSlugs: ["chatgpt", "claude", "n8n"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["ai-dla-serwisantow", "co-zautomatyzowac-w-firmie-serwisowej", "ai-w-codziennej-pracy-zespolu"],
 };

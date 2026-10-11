@@ -15,6 +15,7 @@ export const GUIDE_CATEGORY_SLUGS = [
   "agencje-marketingowe",
   "nieruchomosci",
   "posrednictwo-ubezpieczeniowe",
+  "firmy-serwisowe",
 ] as const;
 
 export type GuideCategorySlug = (typeof GUIDE_CATEGORY_SLUGS)[number];
@@ -571,6 +572,40 @@ export const guideCategories: GuideCategory[] = [
     cta: {
       title: "Chcecie zautomatyzować pracę agencji?",
       body: "Porozmawiajmy o tym, co zabiera agentom najwięcej czasu poza rozmowami z klientami. Wskażemy, od czego zacząć i jak bezpiecznie korzystać z AI.",
+    },
+    inMenu: false,
+  },
+  {
+    slug: "firmy-serwisowe",
+    name: "Firmy serwisowe",
+    title: "AI i automatyzacja w firmie serwisowej. Poradnik",
+    metaTitle: "AI i automatyzacja w firmie serwisowej. Poradnik",
+    metaDescription:
+      "Jak firmy serwisowe i instalacyjne mogą korzystać z AI i automatyzacji: procesy na początek, AI dla serwisantów, program do serwisu i umowy serwisowe.",
+    shortDescription:
+      "Jak firmy serwisowe i instalacyjne mogą oddać pracę powtarzalną systemom i bezpiecznie korzystać z AI.",
+    lead: "Artykuły dla właścicieli firm serwisowych, instalacyjnych i utrzymania technicznego oraz ich dyspozytorów i serwisantów, którzy chcą mniej czasu spędzać na telefonie, grafiku i papierach, a więcej na pracy u klientów. Piszemy z perspektywy wdrożeń w tej branży.",
+    about: [
+      "Firma serwisowa sprzedaje wiedzę techniczną i czas serwisantów. Wokół tej pracy jest dużo operacji: zgłoszenia, grafik, protokoły, przeglądy, części, faktury.",
+      "W tej części Poradnika opisujemy, które procesy warto zautomatyzować najpierw, jak serwisanci mogą korzystać z AI, kiedy wystarczy program do zarządzania serwisem, a kiedy potrzebna jest automatyzacja, i jak rozliczać umowy serwisowe.",
+      "Jeśli szukacie konkretnych rozwiązań i przebiegu wdrożenia, zajrzyjcie także na stronę automatyzacji firmy serwisowej w części Branże.",
+    ],
+    faq: [
+      {
+        question: "Co w firmie serwisowej da się zautomatyzować?",
+        answer:
+          "Najczęściej przyjmowanie zgłoszeń, planowanie wizyt, protokoły na telefonie, przeglądy okresowe, wyceny i oferty oraz rozliczenia zleceń i części.",
+      },
+      {
+        question: "Czy serwisanci mogą korzystać z AI?",
+        answer:
+          "Tak, np. do wyszukiwania informacji w instrukcjach urządzeń i opisów prac z notatek głosowych. Diagnozę i decyzję o naprawie zawsze podejmuje serwisant.",
+      },
+    ],
+    relatedServiceSlugs: ["automatyzacja-dla-firm-uslugowych", "automatyzacja-w-obsludze-klienta", "asystent-ai-na-firmowej-wiedzy"],
+    cta: {
+      title: "Chcecie zautomatyzować pracę serwisu?",
+      body: "Porozmawiajmy o tym, co zabiera biuru i serwisantom najwięcej czasu. Wskażemy, od czego zacząć i gdzie AI ma sens.",
     },
     inMenu: false,
   },

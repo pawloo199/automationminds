@@ -58,6 +58,10 @@ import coZautomatyzowacWAgencjiUbezpieczeniowej from "./articles/co-zautomatyzow
 import aiDlaAgentaUbezpieczeniowego from "./articles/ai-dla-agenta-ubezpieczeniowego";
 import odnowieniaPolisJakNieTracicKlientow from "./articles/odnowienia-polis-jak-nie-tracic-klientow";
 import porownanieOfertUbezpieczenDlaKlienta from "./articles/porownanie-ofert-ubezpieczen-dla-klienta";
+import coZautomatyzowacWFirmieSerwisowej from "./articles/co-zautomatyzowac-w-firmie-serwisowej";
+import aiDlaSerwisantow from "./articles/ai-dla-serwisantow";
+import programDoZarzadzaniaSerwisem from "./articles/program-do-zarzadzania-serwisem";
+import umowySerwisowe from "./articles/umowy-serwisowe";
 /** Wszystkie artykuły Poradnika, od najnowszego. */
 export const guideArticles: GuideArticle[] = [
   procesowDoAutomatyzacjiWMalejFirmie,
@@ -118,6 +122,10 @@ export const guideArticles: GuideArticle[] = [
   aiDlaAgentaUbezpieczeniowego,
   odnowieniaPolisJakNieTracicKlientow,
   porownanieOfertUbezpieczenDlaKlienta,
+  coZautomatyzowacWFirmieSerwisowej,
+  aiDlaSerwisantow,
+  programDoZarzadzaniaSerwisem,
+  umowySerwisowe,
 ].sort(
   (a, b) =>
     new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),

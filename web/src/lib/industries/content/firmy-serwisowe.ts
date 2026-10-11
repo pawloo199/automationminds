@@ -158,5 +158,5 @@ export const firmySerwisowe: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-firm-uslugowych", "automatyzacja-w-obsludze-klienta", "integracje-systemow", "automatyzacja-dla-ksiegowosci"],
   relatedProcessSlugs: ["umawianie-wizyt", "obsluga-reklamacji", "ofertowanie", "przypomnienia-o-platnosciach"],
   relatedToolSlugs: ["n8n", "airtable", "google-workspace", "ksef"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-firmie-serwisowej", "program-do-zarzadzania-serwisem", "umowy-serwisowe"],
 };

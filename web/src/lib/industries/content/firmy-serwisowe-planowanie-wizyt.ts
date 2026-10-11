@@ -138,5 +138,5 @@ export const firmySerwisowePlanowanieWizyt: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-firm-uslugowych", "automatyzacja-w-obsludze-klienta", "integracje-systemow"],
   relatedProcessSlugs: ["umawianie-wizyt"],
   relatedToolSlugs: ["google-workspace", "microsoft-365", "n8n"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["program-do-zarzadzania-serwisem", "co-zautomatyzowac-w-firmie-serwisowej", "5-procesow-do-automatyzacji-w-malej-firmie"],
 };

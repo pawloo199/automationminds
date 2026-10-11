@@ -138,5 +138,5 @@ export const firmySerwisoweZgloszenia: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-w-obsludze-klienta", "chatbot-ai-dla-firmy", "automatyzacja-dla-firm-uslugowych"],
   relatedProcessSlugs: ["obsluga-reklamacji", "umawianie-wizyt"],
   relatedToolSlugs: ["airtable", "n8n", "chatgpt"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-firmie-serwisowej", "ai-dla-serwisantow", "program-do-zarzadzania-serwisem"],
 };

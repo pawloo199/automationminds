@@ -138,5 +138,5 @@ export const firmySerwisoweRozliczenia: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-ksiegowosci", "automatyzacja-raportow", "integracje-systemow"],
   relatedProcessSlugs: ["obieg-faktur-kosztowych", "raporty-finansowe"],
   relatedToolSlugs: ["ksef", "airtable", "n8n"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["umowy-serwisowe", "program-do-zarzadzania-serwisem", "integracja-crm-z-fakturowaniem"],
 };

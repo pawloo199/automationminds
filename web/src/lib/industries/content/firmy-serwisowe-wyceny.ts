@@ -138,5 +138,5 @@ export const firmySerwisoweWyceny: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-sprzedazy", "ai-w-obsludze-dokumentow", "automatyzacja-dla-firm-uslugowych"],
   relatedProcessSlugs: ["ofertowanie"],
   relatedToolSlugs: ["pipedrive", "google-workspace", "n8n"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-firmie-serwisowej", "automatyzacja-obslugi-leadow-sprzedazowych", "jak-mierzyc-roi-automatyzacji"],
 };
