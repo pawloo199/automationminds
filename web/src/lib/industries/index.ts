@@ -92,6 +92,14 @@ import { sklepyInternetoweProdukty } from "./content/sklepy-internetowe-produkty
 import { sklepyInternetoweOfertyIStany } from "./content/sklepy-internetowe-oferty-i-stany";
 import { sklepyInternetoweZakupy } from "./content/sklepy-internetowe-zakupy";
 import { sklepyInternetoweRaporty } from "./content/sklepy-internetowe-raporty";
+import { placowkiMedyczne } from "./content/placowki-medyczne";
+import { placowkiMedyczneAi } from "./content/placowki-medyczne-ai";
+import { placowkiMedyczneRejestracja } from "./content/placowki-medyczne-rejestracja";
+import { placowkiMedycznePrzypomnienia } from "./content/placowki-medyczne-przypomnienia";
+import { placowkiMedyczneFormularze } from "./content/placowki-medyczne-formularze";
+import { placowkiMedyczneKomunikacja } from "./content/placowki-medyczne-komunikacja";
+import { placowkiMedyczneGrafiki } from "./content/placowki-medyczne-grafiki";
+import { placowkiMedyczneRozliczenia } from "./content/placowki-medyczne-rozliczenia";
 import type { IndustryPageContent } from "./types";
 
 export * from "./catalog";
@@ -187,6 +195,14 @@ const INDUSTRY_PAGES: IndustryPageContent[] = [
   sklepyInternetoweOfertyIStany,
   sklepyInternetoweZakupy,
   sklepyInternetoweRaporty,
+  placowkiMedyczne,
+  placowkiMedyczneAi,
+  placowkiMedyczneRejestracja,
+  placowkiMedycznePrzypomnienia,
+  placowkiMedyczneFormularze,
+  placowkiMedyczneKomunikacja,
+  placowkiMedyczneGrafiki,
+  placowkiMedyczneRozliczenia,
 ];
 
 export function industryPagePath(page: IndustryPageContent) {

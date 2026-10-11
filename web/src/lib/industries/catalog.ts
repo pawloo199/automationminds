@@ -1,4 +1,4 @@
-import { Building2, Calculator, HardHat, Megaphone, Scale, ShieldCheck, ShoppingCart, Store, Truck, Warehouse, Wrench } from "lucide-react";
+import { Building2, Calculator, HardHat, Megaphone, Scale, ShieldCheck, ShoppingCart, Stethoscope, Store, Truck, Warehouse, Wrench } from "lucide-react";
 import type { IndustryEntry } from "./types";
 
 export const INDUSTRIES_HUB_PATH = "/branze";
@@ -197,6 +197,23 @@ export const INDUSTRIES: IndustryEntry[] = [
       formBody: "Opowiedz, na jakiej platformie działa sklep, w jakich kanałach sprzedajecie i co zabiera zespołowi najwięcej czasu. W 30 minut wskażemy, od czego zacząć.",
       processesTitle: "Procesy, które automatyzujemy w sklepach internetowych",
       solutionsTitle: "Rozwiązania dla sklepów internetowych",
+    },
+  },
+  {
+    slug: "placowki-medyczne",
+    name: "Placówki medyczne",
+    summary: "Automatyzacja i AI dla prywatnych przychodni, gabinetów i centrów medycznych: rejestracja, przypomnienia, formularze, komunikacja, grafiki i rozliczenia.",
+    icon: Stethoscope,
+    status: "live",
+    mainPageLabel: "Automatyzacja przychodni i gabinetu",
+    featuredCitySlugs: ["warszawa", "krakow", "wroclaw", "poznan", "gdansk", "lodz", "katowice", "lublin", "rzeszow"],
+    cta: {
+      midTitle: "Porozmawiajmy o waszej placówce",
+      midBody: "W 30 minut przejdziemy przez to, co najbardziej obciąża rejestrację i zespół, i powiemy, od czego zacząć. Rozmowa jest bezpłatna i do niczego nie zobowiązuje.",
+      formTitle: "Porozmawiajmy o automatyzacji w placówce medycznej",
+      formBody: "Opowiedz, jaką placówkę prowadzicie, z jakiego systemu gabinetowego korzystacie i co zabiera zespołowi najwięcej czasu. W 30 minut wskażemy, od czego zacząć.",
+      processesTitle: "Procesy, które automatyzujemy w placówkach medycznych",
+      solutionsTitle: "Rozwiązania dla placówek medycznych",
     },
   },
 ];
