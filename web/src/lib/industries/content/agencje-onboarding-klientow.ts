@@ -138,5 +138,5 @@ export const agencjeOnboardingKlientow: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-firm-uslugowych", "automatyzacja-w-obsludze-klienta", "projektowanie-baz-danych"],
   relatedProcessSlugs: ["obieg-umow", "onboarding-pracownika"],
   relatedToolSlugs: ["google-workspace", "n8n", "airtable"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "automatyzacja-onboardingu-pracownika", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-agencji-marketingowej", "automatyzacja-onboardingu-pracownika", "rodo-a-automatyzacja-procesow"],
 };

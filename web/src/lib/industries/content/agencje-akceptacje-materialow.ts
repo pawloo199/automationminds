@@ -138,5 +138,5 @@ export const agencjeAkceptacjeMaterialow: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-firm-uslugowych", "automatyzacja-w-obsludze-klienta", "integracje-systemow"],
   relatedProcessSlugs: ["obieg-umow"],
   relatedToolSlugs: ["google-workspace", "microsoft-365", "n8n"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "gotowa-automatyzacja-czy-budowana-od-zera", "bledy-przy-pierwszym-wdrozeniu-automatyzacji"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-agencji-marketingowej", "rentownosc-klientow-agencji", "gotowa-automatyzacja-czy-budowana-od-zera"],
 };

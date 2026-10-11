@@ -138,5 +138,5 @@ export const agencjeRaportyDlaKlientow: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-raportow", "automatyzacja-marketingu", "integracje-systemow"],
   relatedProcessSlugs: ["raporty-finansowe"],
   relatedToolSlugs: ["google-workspace", "n8n", "chatgpt"],
-  relatedArticleSlugs: ["jak-mierzyc-roi-automatyzacji", "airtable-czy-excel", "porzadek-w-danych-przed-ai-i-automatyzacja"],
+  relatedArticleSlugs: ["raport-marketingowy-dla-klienta", "co-zautomatyzowac-w-agencji-marketingowej", "porzadek-w-danych-przed-ai-i-automatyzacja"],
 };

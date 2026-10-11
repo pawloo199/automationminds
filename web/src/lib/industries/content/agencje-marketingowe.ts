@@ -218,5 +218,5 @@ export const agencjeMarketingowe: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-raportow", "automatyzacja-dla-firm-uslugowych", "automatyzacja-marketingu", "szkolenia-ai-dla-zespolow"],
   relatedProcessSlugs: ["ofertowanie", "obsluga-zapytan-i-leadow", "przypomnienia-o-platnosciach", "obieg-umow"],
   relatedToolSlugs: ["n8n", "google-workspace", "chatgpt", "claude"],
-  relatedArticleSlugs: ["ai-w-codziennej-pracy-zespolu", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-agencji-marketingowej", "raport-marketingowy-dla-klienta", "rentownosc-klientow-agencji"],
 };

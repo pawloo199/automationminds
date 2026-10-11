@@ -194,5 +194,5 @@ export const agencjeMarketingoweAi: IndustryPageContent = {
   relatedServiceSlugs: ["szkolenia-ai-dla-zespolow", "asystent-ai-na-firmowej-wiedzy", "strategia-wdrozenia-ai", "agenci-ai"],
   relatedProcessSlugs: ["ofertowanie"],
   relatedToolSlugs: ["chatgpt", "claude", "n8n", "google-workspace"],
-  relatedArticleSlugs: ["ai-w-codziennej-pracy-zespolu", "wdrozenie-ai-w-malej-i-sredniej-firmie", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["ai-w-agencji-marketingowej", "co-zautomatyzowac-w-agencji-marketingowej", "ai-w-codziennej-pracy-zespolu"],
 };

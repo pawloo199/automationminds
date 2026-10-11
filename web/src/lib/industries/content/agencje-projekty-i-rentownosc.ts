@@ -138,5 +138,5 @@ export const agencjeProjektyIRentownosc: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-raportow", "automatyzacja-dla-firm-uslugowych", "automatyzacja-dla-ksiegowosci"],
   relatedProcessSlugs: ["przypomnienia-o-platnosciach", "raporty-finansowe"],
   relatedToolSlugs: ["airtable", "n8n", "ksef", "google-workspace"],
-  relatedArticleSlugs: ["jak-mierzyc-roi-automatyzacji", "airtable-czy-excel", "integracja-crm-z-fakturowaniem"],
+  relatedArticleSlugs: ["rentownosc-klientow-agencji", "co-zautomatyzowac-w-agencji-marketingowej", "airtable-czy-excel"],
 };

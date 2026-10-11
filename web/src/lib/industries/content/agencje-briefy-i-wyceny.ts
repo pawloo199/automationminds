@@ -138,5 +138,5 @@ export const agencjeBriefyIWyceny: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-firm-uslugowych", "automatyzacja-sprzedazy", "ai-w-obsludze-dokumentow"],
   relatedProcessSlugs: ["ofertowanie", "obsluga-zapytan-i-leadow"],
   relatedToolSlugs: ["hubspot", "n8n", "google-workspace", "chatgpt"],
-  relatedArticleSlugs: ["automatyzacja-obslugi-leadow-sprzedazowych", "gotowa-automatyzacja-czy-budowana-od-zera", "airtable-w-praktyce-zastosowania"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-agencji-marketingowej", "rentownosc-klientow-agencji", "automatyzacja-obslugi-leadow-sprzedazowych"],
 };

@@ -46,6 +46,10 @@ import coZautomatyzowacWHurtowni from "./articles/co-zautomatyzowac-w-hurtowni";
 import aiWHandluB2b from "./articles/ai-w-handlu-b2b";
 import platformaB2bCzyAutomatyzacjaZamowien from "./articles/platforma-b2b-czy-automatyzacja-zamowien";
 import limityKupieckieINaleznosci from "./articles/limity-kupieckie-i-naleznosci";
+import coZautomatyzowacWAgencjiMarketingowej from "./articles/co-zautomatyzowac-w-agencji-marketingowej";
+import aiWAgencjiMarketingowej from "./articles/ai-w-agencji-marketingowej";
+import raportMarketingowyDlaKlienta from "./articles/raport-marketingowy-dla-klienta";
+import rentownoscKlientowAgencji from "./articles/rentownosc-klientow-agencji";
 /** Wszystkie artykuły Poradnika, od najnowszego. */
 export const guideArticles: GuideArticle[] = [
   procesowDoAutomatyzacjiWMalejFirmie,
@@ -94,6 +98,10 @@ export const guideArticles: GuideArticle[] = [
   aiWHandluB2b,
   platformaB2bCzyAutomatyzacjaZamowien,
   limityKupieckieINaleznosci,
+  coZautomatyzowacWAgencjiMarketingowej,
+  aiWAgencjiMarketingowej,
+  raportMarketingowyDlaKlienta,
+  rentownoscKlientowAgencji,
 ].sort(
   (a, b) =>
     new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),

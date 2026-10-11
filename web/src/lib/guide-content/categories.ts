@@ -12,6 +12,7 @@ export const GUIDE_CATEGORY_SLUGS = [
   "spedycja",
   "firmy-logistyczne",
   "hurtownie-i-dystrybucja",
+  "agencje-marketingowe",
 ] as const;
 
 export type GuideCategorySlug = (typeof GUIDE_CATEGORY_SLUGS)[number];
@@ -466,6 +467,40 @@ export const guideCategories: GuideCategory[] = [
     cta: {
       title: "Chcecie zautomatyzować pracę hurtowni?",
       body: "Porozmawiajmy o tym, co zabiera handlowcom i biuru najwięcej czasu. Wskażemy, od czego zacząć i co da się połączyć z waszym ERP.",
+    },
+    inMenu: false,
+  },
+  {
+    slug: "agencje-marketingowe",
+    name: "Agencje marketingowe",
+    title: "AI i automatyzacja w agencji marketingowej. Poradnik",
+    metaTitle: "AI i automatyzacja w agencji marketingowej. Poradnik",
+    metaDescription:
+      "Jak agencje marketingowe mogą korzystać z AI i automatyzacji: procesy na początek, AI w treściach, raporty dla klientów i rentowność klientów agencji.",
+    shortDescription:
+      "Jak agencje marketingowe mogą oddać pracę operacyjną systemom i bezpiecznie korzystać z AI.",
+    lead: "Artykuły dla właścicieli agencji marketingowych, reklamowych i interaktywnych oraz ich zespołów, które chcą więcej czasu poświęcać strategii i kreacji, a mniej raportom, akceptacjom i rozliczeniom. Piszemy z perspektywy wdrożeń w agencjach.",
+    about: [
+      "Agencja sprzedaje wiedzę, kreatywność i czas. Wokół tej pracy jest jednak dużo operacji: raporty dla klientów, briefy, akceptacje, wyceny, czas pracy i faktury. Ta praca rośnie z każdym klientem i zjada czas zespołu.",
+      "W tej części Poradnika opisujemy, które procesy w agencji warto zautomatyzować najpierw, jak korzystać z AI w treściach i raportach bez utraty jakości, jak przygotować raport dla klienta i jak liczyć rentowność klientów.",
+      "Jeśli szukacie konkretnych rozwiązań i przebiegu wdrożenia, zajrzyjcie także na stronę automatyzacji agencji marketingowej w części Branże.",
+    ],
+    faq: [
+      {
+        question: "Co w agencji marketingowej da się zautomatyzować?",
+        answer:
+          "Najczęściej raporty dla klientów, briefy i wyceny, akceptacje materiałów, część pracy nad treściami z AI, kontrolę czasu pracy i rentowności oraz onboarding klientów.",
+      },
+      {
+        question: "Czy agencja może bezpiecznie korzystać z AI?",
+        answer:
+          "Tak, jeśli korzysta z kont firmowych w planach bez trenowania na danych, chroni materiały klientów, ma spisane zasady i redaguje treści przed przekazaniem klientowi.",
+      },
+    ],
+    relatedServiceSlugs: ["automatyzacja-raportow", "automatyzacja-dla-firm-uslugowych", "szkolenia-ai-dla-zespolow"],
+    cta: {
+      title: "Chcecie zautomatyzować pracę agencji?",
+      body: "Porozmawiajmy o tym, co zabiera zespołowi najwięcej czasu poza pracą kreatywną. Wskażemy, od czego zacząć i jak bezpiecznie korzystać z AI.",
     },
     inMenu: false,
   },
