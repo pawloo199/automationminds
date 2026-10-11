@@ -74,6 +74,10 @@ import coZautomatyzowacWPrzychodni from "./articles/co-zautomatyzowac-w-przychod
 import danePacjentowAAutomatyzacja from "./articles/dane-pacjentow-a-automatyzacja";
 import nieodwolaneWizytyPacjentow from "./articles/nieodwolane-wizyty-pacjentow";
 import jakOdciazycRejestracjeWPrzychodni from "./articles/jak-odciazyc-rejestracje-w-przychodni";
+import coZautomatyzowacWFirmieSzkoleniowej from "./articles/co-zautomatyzowac-w-firmie-szkoleniowej";
+import aiWSzkoleniach from "./articles/ai-w-szkoleniach";
+import ankietaPoszkoleniowa from "./articles/ankieta-poszkoleniowa";
+import sprzedazSzkolenDlaFirm from "./articles/sprzedaz-szkolen-dla-firm";
 /** Wszystkie artykuły Poradnika, od najnowszego. */
 export const guideArticles: GuideArticle[] = [
   procesowDoAutomatyzacjiWMalejFirmie,
@@ -150,6 +154,10 @@ export const guideArticles: GuideArticle[] = [
   danePacjentowAAutomatyzacja,
   nieodwolaneWizytyPacjentow,
   jakOdciazycRejestracjeWPrzychodni,
+  coZautomatyzowacWFirmieSzkoleniowej,
+  aiWSzkoleniach,
+  ankietaPoszkoleniowa,
+  sprzedazSzkolenDlaFirm,
 ].sort(
   (a, b) =>
     new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),

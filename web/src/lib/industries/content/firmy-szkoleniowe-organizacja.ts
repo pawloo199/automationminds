@@ -138,5 +138,5 @@ export const firmySzkolenioweOrganizacja: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-firm-uslugowych", "projektowanie-baz-danych", "automatyzacja-w-obsludze-klienta"],
   relatedProcessSlugs: ["umawianie-wizyt"],
   relatedToolSlugs: ["airtable", "google-workspace", "n8n"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-firmie-szkoleniowej", "airtable-w-praktyce-zastosowania", "jak-mierzyc-roi-automatyzacji"],
 };

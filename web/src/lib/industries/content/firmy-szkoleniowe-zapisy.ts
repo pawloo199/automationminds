@@ -138,5 +138,5 @@ export const firmySzkolenioweZapisy: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-ksiegowosci", "automatyzacja-sprzedazy", "automatyzacja-dla-firm-uslugowych"],
   relatedProcessSlugs: ["przypomnienia-o-platnosciach", "przyjmowanie-zamowien"],
   relatedToolSlugs: ["ksef", "n8n", "airtable"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-firmie-szkoleniowej", "integracja-crm-z-fakturowaniem", "5-procesow-do-automatyzacji-w-malej-firmie"],
 };

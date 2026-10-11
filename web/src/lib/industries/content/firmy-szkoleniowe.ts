@@ -158,5 +158,5 @@ export const firmySzkoleniowe: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-firm-uslugowych", "automatyzacja-sprzedazy", "automatyzacja-w-obsludze-klienta", "automatyzacja-dla-ksiegowosci"],
   relatedProcessSlugs: ["obsluga-zapytan-i-leadow", "ofertowanie", "przypomnienia-o-platnosciach", "raporty-finansowe"],
   relatedToolSlugs: ["n8n", "airtable", "google-workspace", "ksef"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-firmie-szkoleniowej", "sprzedaz-szkolen-dla-firm", "ankieta-poszkoleniowa"],
 };

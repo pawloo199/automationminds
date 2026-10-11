@@ -138,5 +138,5 @@ export const firmySzkolenioweTrenerzy: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-ksiegowosci", "automatyzacja-dla-hr", "projektowanie-baz-danych"],
   relatedProcessSlugs: ["obieg-umow", "obieg-faktur-kosztowych", "raporty-finansowe"],
   relatedToolSlugs: ["airtable", "ksef", "n8n"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-firmie-szkoleniowej", "ankieta-poszkoleniowa", "airtable-czy-excel"],
 };

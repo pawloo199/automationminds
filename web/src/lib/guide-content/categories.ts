@@ -19,6 +19,7 @@ export const GUIDE_CATEGORY_SLUGS = [
   "firmy-budowlane",
   "sklepy-internetowe",
   "placowki-medyczne",
+  "firmy-szkoleniowe",
 ] as const;
 
 export type GuideCategorySlug = (typeof GUIDE_CATEGORY_SLUGS)[number];
@@ -711,6 +712,40 @@ export const guideCategories: GuideCategory[] = [
     cta: {
       title: "Chcecie odciążyć rejestrację?",
       body: "Porozmawiajmy o tym, co zabiera rejestracji i administracji najwięcej czasu. Wskażemy, od czego zacząć, z ostrożnością wobec danych pacjentów.",
+    },
+    inMenu: false,
+  },
+  {
+    slug: "firmy-szkoleniowe",
+    name: "Firmy szkoleniowe",
+    title: "AI i automatyzacja w firmie szkoleniowej. Poradnik",
+    metaTitle: "AI i automatyzacja w firmie szkoleniowej. Poradnik",
+    metaDescription:
+      "Jak firmy szkoleniowe mogą korzystać z AI i automatyzacji: procesy na początek, AI w szkoleniach, ankiety poszkoleniowe i sprzedaż szkoleń dla firm.",
+    shortDescription:
+      "Jak firmy szkoleniowe i organizatorzy kursów mogą ograniczyć administrację i bezpiecznie korzystać z AI.",
+    lead: "Artykuły dla właścicieli firm szkoleniowych, organizatorów kursów i szkół językowych oraz ich opiekunów i trenerów, którzy chcą prowadzić więcej szkoleń bez dokładania administracji. Piszemy z perspektywy wdrożeń w tej branży.",
+    about: [
+      "Firma szkoleniowa sprzedaje wiedzę trenerów i dobrze zorganizowane szkolenia. Wokół każdego szkolenia jest jednak dużo administracji: zapisy, płatności, faktury, przypomnienia, certyfikaty, ankiety, rozliczenia trenerów.",
+      "W tej części Poradnika opisujemy, które procesy warto zautomatyzować najpierw, jak korzystać z AI przy tworzeniu szkoleń, jak wykorzystać ankiety poszkoleniowe i jak lepiej sprzedawać szkolenia firmom.",
+      "Jeśli szukacie konkretnych rozwiązań i przebiegu wdrożenia, zajrzyjcie także na stronę automatyzacji firmy szkoleniowej w części Branże.",
+    ],
+    faq: [
+      {
+        question: "Co w firmie szkoleniowej da się zautomatyzować?",
+        answer:
+          "Najczęściej zapisy, płatności i faktury, przypomnienia i informacje dla uczestników, certyfikaty i ankiety, oferty dla firm, rozliczenia trenerów i dokumentację szkoleń.",
+      },
+      {
+        question: "Czy trenerzy mogą korzystać z AI?",
+        answer:
+          "Tak, np. przy przygotowaniu ćwiczeń, przykładów i quizów, na kontach firmowych i z kontrolą jakości treści przez trenera.",
+      },
+    ],
+    relatedServiceSlugs: ["automatyzacja-dla-firm-uslugowych", "automatyzacja-sprzedazy", "szkolenia-ai-dla-zespolow"],
+    cta: {
+      title: "Chcecie ograniczyć administrację szkoleń?",
+      body: "Porozmawiajmy o tym, co zabiera zespołowi najwięcej czasu. Wskażemy, od czego zacząć i gdzie AI ma sens.",
     },
     inMenu: false,
   },

@@ -138,5 +138,5 @@ export const firmySzkolenioweDokumentacja: IndustryPageContent = {
   relatedServiceSlugs: ["cyfryzacja-danych-i-dokumentow", "ai-w-obsludze-dokumentow", "projektowanie-baz-danych"],
   relatedProcessSlugs: ["obieg-umow"],
   relatedToolSlugs: ["google-workspace", "microsoft-365", "n8n"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-firmie-szkoleniowej", "cyfryzacja-danych-w-firmie", "rodo-a-automatyzacja-procesow"],
 };

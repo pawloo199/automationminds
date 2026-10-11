@@ -138,5 +138,5 @@ export const firmySzkolenioweCertyfikaty: IndustryPageContent = {
   relatedServiceSlugs: ["cyfryzacja-danych-i-dokumentow", "automatyzacja-raportow", "ai-w-obsludze-dokumentow"],
   relatedProcessSlugs: ["raporty-finansowe"],
   relatedToolSlugs: ["google-workspace", "n8n", "chatgpt"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["ankieta-poszkoleniowa", "co-zautomatyzowac-w-firmie-szkoleniowej", "ai-w-szkoleniach"],
 };

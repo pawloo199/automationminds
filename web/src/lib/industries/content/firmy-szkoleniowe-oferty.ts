@@ -138,5 +138,5 @@ export const firmySzkolenioweOferty: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-sprzedazy", "ai-w-obsludze-dokumentow", "automatyzacja-dla-firm-uslugowych"],
   relatedProcessSlugs: ["ofertowanie", "obsluga-zapytan-i-leadow"],
   relatedToolSlugs: ["hubspot", "n8n", "chatgpt"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["sprzedaz-szkolen-dla-firm", "ai-w-szkoleniach", "automatyzacja-obslugi-leadow-sprzedazowych"],
 };
