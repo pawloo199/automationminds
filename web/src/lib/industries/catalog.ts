@@ -1,4 +1,4 @@
-import { Building2, Calculator, GraduationCap, HardHat, Megaphone, Scale, ShieldCheck, ShoppingCart, Stethoscope, Store, Truck, Warehouse, Wrench } from "lucide-react";
+import { Building2, Calculator, GraduationCap, HardHat, Megaphone, Scale, ShieldCheck, ShoppingCart, Stethoscope, Store, Truck, Users, Warehouse, Wrench } from "lucide-react";
 import type { IndustryEntry } from "./types";
 
 export const INDUSTRIES_HUB_PATH = "/branze";
@@ -231,6 +231,23 @@ export const INDUSTRIES: IndustryEntry[] = [
       formBody: "Opowiedz, jakie szkolenia prowadzicie, dla kogo i w jakiej formie, i co zabiera zespołowi najwięcej czasu. W 30 minut wskażemy, od czego zacząć.",
       processesTitle: "Procesy, które automatyzujemy w firmach szkoleniowych",
       solutionsTitle: "Rozwiązania dla firm szkoleniowych",
+    },
+  },
+  {
+    slug: "agencje-pracy",
+    name: "Agencje pracy",
+    summary: "Automatyzacja i AI dla agencji pracy i rekrutacji: kandydaci, zlecenia od klientów, dokumenty pracowników, ewidencja czasu pracy, rozliczenia i komunikacja.",
+    icon: Users,
+    status: "live",
+    mainPageLabel: "Automatyzacja agencji pracy",
+    featuredCitySlugs: ["warszawa", "krakow", "wroclaw", "poznan", "gdansk", "lodz", "katowice", "szczecin", "bydgoszcz"],
+    cta: {
+      midTitle: "Porozmawiajmy o waszej agencji",
+      midBody: "W 30 minut przejdziemy przez to, co najbardziej obciąża rekruterów i biuro, i powiemy, od czego zacząć. Rozmowa jest bezpłatna i do niczego nie zobowiązuje.",
+      formTitle: "Porozmawiajmy o automatyzacji w agencji pracy",
+      formBody: "Opowiedz, czy prowadzicie rekrutację stałą, pracę tymczasową czy oba, ilu macie pracowników i klientów i co zabiera zespołowi najwięcej czasu. W 30 minut wskażemy, od czego zacząć.",
+      processesTitle: "Procesy, które automatyzujemy w agencjach pracy",
+      solutionsTitle: "Rozwiązania dla agencji pracy",
     },
   },
 ];

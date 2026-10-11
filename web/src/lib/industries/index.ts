@@ -108,6 +108,14 @@ import { firmySzkolenioweOferty } from "./content/firmy-szkoleniowe-oferty";
 import { firmySzkolenioweCertyfikaty } from "./content/firmy-szkoleniowe-certyfikaty";
 import { firmySzkolenioweTrenerzy } from "./content/firmy-szkoleniowe-trenerzy";
 import { firmySzkolenioweDokumentacja } from "./content/firmy-szkoleniowe-dokumentacja";
+import { agencjePracy } from "./content/agencje-pracy";
+import { agencjePracyAi } from "./content/agencje-pracy-ai";
+import { agencjePracyKandydaci } from "./content/agencje-pracy-kandydaci";
+import { agencjePracyZlecenia } from "./content/agencje-pracy-zlecenia";
+import { agencjePracyDokumenty } from "./content/agencje-pracy-dokumenty";
+import { agencjePracyCzasPracy } from "./content/agencje-pracy-czas-pracy";
+import { agencjePracyRozliczenia } from "./content/agencje-pracy-rozliczenia";
+import { agencjePracyKomunikacja } from "./content/agencje-pracy-komunikacja";
 import type { IndustryPageContent } from "./types";
 
 export * from "./catalog";
@@ -219,6 +227,14 @@ const INDUSTRY_PAGES: IndustryPageContent[] = [
   firmySzkolenioweCertyfikaty,
   firmySzkolenioweTrenerzy,
   firmySzkolenioweDokumentacja,
+  agencjePracy,
+  agencjePracyAi,
+  agencjePracyKandydaci,
+  agencjePracyZlecenia,
+  agencjePracyDokumenty,
+  agencjePracyCzasPracy,
+  agencjePracyRozliczenia,
+  agencjePracyKomunikacja,
 ];
 
 export function industryPagePath(page: IndustryPageContent) {
