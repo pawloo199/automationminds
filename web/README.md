@@ -54,7 +54,7 @@ npm run migrate -- --seed  # zapisuje mocki do Airtable
 2. **Root Directory:** `web`
 3. Region: `fra1` (skonfigurowany w `vercel.json`)
 4. Dodaj zmienne środowiskowe z `.env.example`
-5. Podłącz domenę `automationminds.net`
+5. Podłącz domenę `www.automationminds.net` jako główną; `automationminds.net` ustaw jako przekierowanie 308 na www (canonical w `src/lib/metadata.ts` wskazuje www)
 
 ## Strony
 

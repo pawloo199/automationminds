@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { truncateDescription } from "./truncate";
 
-const CANONICAL_SITE_URL = "https://automationminds.net";
+// Domena główna w Vercel to www — automationminds.net przekierowuje na www.
+// Canonical, sitemap i og:url muszą wskazywać host, który zwraca 200;
+// inaczej GSC oznacza strony www jako „Alternatywna strona z tagiem kanonicznym”.
+const CANONICAL_SITE_URL = "https://www.automationminds.net";
 
 function resolveSiteUrl(): string {
   const raw = (process.env.NEXT_PUBLIC_SITE_URL ?? "").trim().replace(/\/$/, "");
@@ -15,7 +18,7 @@ function resolveSiteUrl(): string {
       parsed.hostname === "automationminds.net" ||
       parsed.hostname === "www.automationminds.net"
     ) {
-      return "https://automationminds.net";
+      return CANONICAL_SITE_URL;
     }
     if (
       process.env.VERCEL_ENV === "production" ||

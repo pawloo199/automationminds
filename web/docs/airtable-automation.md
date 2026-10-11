@@ -7,7 +7,7 @@ Po edycji treści w Airtable strona odświeża cache ISR przez endpoint `/api/re
 | Gdzie | Zmienna | Opis |
 |-------|---------|------|
 | Vercel | `REVALIDATE_SECRET` | Losowy ciąg — ten sam co w automatyzacji |
-| Vercel | `NEXT_PUBLIC_SITE_URL` | URL produkcji (np. `https://automationminds.net`) |
+| Vercel | `NEXT_PUBLIC_SITE_URL` | URL produkcji (np. `https://www.automationminds.net`) |
 | Vercel | `AIRTABLE_API_TOKEN` | Odczyt rekordów przy rewalidacji per rekord |
 | Vercel | `AIRTABLE_BASE_ID` | ID bazy CMS |
 
@@ -37,7 +37,7 @@ Dla **każdej tabeli CMS** (lub jednej automatyzacji z wieloma triggerami) utwó
 | Nazwa zmiennej | Typ | Wartość |
 |----------------|-----|---------|
 | `revalidateSecret` | string | Ten sam sekret co `REVALIDATE_SECRET` na Vercel |
-| `siteUrl` | string | `https://automationminds.net` lub URL preview Vercel |
+| `siteUrl` | string | `https://www.automationminds.net` lub URL preview Vercel |
 | `tableName` | string | Z triggera: **Table name** |
 | `recordId` | string | Z triggera: **Record ID** |
 
