@@ -20,6 +20,7 @@ export const GUIDE_CATEGORY_SLUGS = [
   "sklepy-internetowe",
   "placowki-medyczne",
   "firmy-szkoleniowe",
+  "agencje-pracy",
 ] as const;
 
 export type GuideCategorySlug = (typeof GUIDE_CATEGORY_SLUGS)[number];
@@ -746,6 +747,40 @@ export const guideCategories: GuideCategory[] = [
     cta: {
       title: "Chcecie ograniczyć administrację szkoleń?",
       body: "Porozmawiajmy o tym, co zabiera zespołowi najwięcej czasu. Wskażemy, od czego zacząć i gdzie AI ma sens.",
+    },
+    inMenu: false,
+  },
+  {
+    slug: "agencje-pracy",
+    name: "Agencje pracy",
+    title: "AI i automatyzacja w agencji pracy. Poradnik",
+    metaTitle: "AI i automatyzacja w agencji pracy. Poradnik",
+    metaDescription:
+      "Jak agencje pracy i rekrutacyjne mogą korzystać z AI i automatyzacji: procesy na początek, AI w rekrutacji, baza kandydatów i szybsze obsadzanie zleceń.",
+    shortDescription:
+      "Jak agencje pracy i rekrutacyjne mogą ograniczyć administrację i odpowiedzialnie korzystać z AI.",
+    lead: "Artykuły dla właścicieli agencji pracy tymczasowej i rekrutacyjnych oraz ich rekruterów i koordynatorów, którzy chcą szybciej obsadzać zlecenia i mniej czasu spędzać na przepisywaniu danych. Piszemy z perspektywy wdrożeń w tej branży.",
+    about: [
+      "Agencja pracy łączy rekrutację, kadry i obsługę klientów. Wokół tej pracy jest dużo administracji: CV z wielu kanałów, dokumenty pracowników i ich terminy, godziny od klientów, rozliczenia i komunikacja w wielu językach.",
+      "W tej części Poradnika opisujemy, które procesy warto zautomatyzować najpierw, jak odpowiedzialnie korzystać z AI w rekrutacji, jak zbudować bazę kandydatów, która pracuje dla agencji, i jak szybciej obsadzać zlecenia.",
+      "Jeśli szukacie konkretnych rozwiązań i przebiegu wdrożenia, zajrzyjcie także na stronę automatyzacji agencji pracy w części Branże.",
+    ],
+    faq: [
+      {
+        question: "Co w agencji pracy da się zautomatyzować?",
+        answer:
+          "Najczęściej obsługę aplikacji i bazy kandydatów, rejestr zleceń, terminy dokumentów pracowników, ewidencję czasu pracy od klientów, rozliczenia i komunikację z pracownikami.",
+      },
+      {
+        question: "Czy AI może wybierać kandydatów?",
+        answer:
+          "Nie powinno. AI może porządkować CV i pomagać w wyszukiwaniu, ale ocena i wybór kandydatów należą do rekrutera. Unijne przepisy traktują takie systemy jako wysokiego ryzyka.",
+      },
+    ],
+    relatedServiceSlugs: ["automatyzacja-dla-hr", "porzadkowanie-i-strukturyzowanie-danych", "szkolenia-ai-dla-zespolow"],
+    cta: {
+      title: "Chcecie ograniczyć administrację w agencji?",
+      body: "Porozmawiajmy o tym, co zabiera rekruterom i biuru najwięcej czasu. Wskażemy, od czego zacząć i jak odpowiedzialnie korzystać z AI.",
     },
     inMenu: false,
   },

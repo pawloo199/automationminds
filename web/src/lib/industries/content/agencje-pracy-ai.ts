@@ -145,5 +145,5 @@ export const agencjePracyAi: IndustryPageContent = {
   relatedServiceSlugs: ["szkolenia-ai-dla-zespolow", "ai-w-obsludze-dokumentow", "strategia-wdrozenia-ai", "agenci-ai"],
   relatedProcessSlugs: ["onboarding-pracownika"],
   relatedToolSlugs: ["chatgpt", "claude", "n8n"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["ai-w-rekrutacji", "baza-kandydatow-w-agencji-pracy", "ai-w-codziennej-pracy-zespolu"],
 };

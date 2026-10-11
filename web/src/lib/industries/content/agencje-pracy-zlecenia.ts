@@ -138,5 +138,5 @@ export const agencjePracyZlecenia: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-sprzedazy", "automatyzacja-dla-hr", "automatyzacja-w-obsludze-klienta"],
   relatedProcessSlugs: ["obsluga-zapytan-i-leadow", "przyjmowanie-zamowien"],
   relatedToolSlugs: ["airtable", "n8n", "pipedrive"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["obsadzanie-zlecen-w-agencji-pracy", "baza-kandydatow-w-agencji-pracy", "co-zautomatyzowac-w-agencji-pracy"],
 };

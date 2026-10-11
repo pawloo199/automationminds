@@ -138,5 +138,5 @@ export const agencjePracyKomunikacja: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-w-obsludze-klienta", "chatbot-ai-dla-firmy", "automatyzacja-dla-hr"],
   relatedProcessSlugs: ["onboarding-pracownika"],
   relatedToolSlugs: ["n8n", "chatgpt", "google-workspace"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["obsadzanie-zlecen-w-agencji-pracy", "ai-w-rekrutacji", "automatyzacja-onboardingu-pracownika"],
 };

@@ -138,5 +138,5 @@ export const agencjePracyDokumenty: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-hr", "cyfryzacja-danych-i-dokumentow", "ai-w-obsludze-dokumentow"],
   relatedProcessSlugs: ["onboarding-pracownika", "obieg-umow"],
   relatedToolSlugs: ["airtable", "n8n", "microsoft-365"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-agencji-pracy", "obsadzanie-zlecen-w-agencji-pracy", "rodo-a-automatyzacja-procesow"],
 };

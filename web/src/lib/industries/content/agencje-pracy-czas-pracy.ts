@@ -138,5 +138,5 @@ export const agencjePracyCzasPracy: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-hr", "integracje-systemow", "ai-w-obsludze-dokumentow"],
   relatedProcessSlugs: ["raporty-finansowe"],
   relatedToolSlugs: ["airtable", "n8n", "microsoft-365"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-agencji-pracy", "airtable-czy-excel", "jak-mierzyc-roi-automatyzacji"],
 };

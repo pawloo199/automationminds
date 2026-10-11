@@ -138,5 +138,5 @@ export const agencjePracyKandydaci: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-hr", "porzadkowanie-i-strukturyzowanie-danych", "ai-w-obsludze-dokumentow"],
   relatedProcessSlugs: ["obsluga-zapytan-i-leadow"],
   relatedToolSlugs: ["airtable", "n8n", "chatgpt"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["baza-kandydatow-w-agencji-pracy", "ai-w-rekrutacji", "porzadek-w-danych-przed-ai-i-automatyzacja"],
 };

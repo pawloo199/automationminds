@@ -78,6 +78,10 @@ import coZautomatyzowacWFirmieSzkoleniowej from "./articles/co-zautomatyzowac-w-
 import aiWSzkoleniach from "./articles/ai-w-szkoleniach";
 import ankietaPoszkoleniowa from "./articles/ankieta-poszkoleniowa";
 import sprzedazSzkolenDlaFirm from "./articles/sprzedaz-szkolen-dla-firm";
+import coZautomatyzowacWAgencjiPracy from "./articles/co-zautomatyzowac-w-agencji-pracy";
+import aiWRekrutacji from "./articles/ai-w-rekrutacji";
+import bazaKandydatowWAgencjiPracy from "./articles/baza-kandydatow-w-agencji-pracy";
+import obsadzanieZlecenWAgencjiPracy from "./articles/obsadzanie-zlecen-w-agencji-pracy";
 /** Wszystkie artykuły Poradnika, od najnowszego. */
 export const guideArticles: GuideArticle[] = [
   procesowDoAutomatyzacjiWMalejFirmie,
@@ -158,6 +162,10 @@ export const guideArticles: GuideArticle[] = [
   aiWSzkoleniach,
   ankietaPoszkoleniowa,
   sprzedazSzkolenDlaFirm,
+  coZautomatyzowacWAgencjiPracy,
+  aiWRekrutacji,
+  bazaKandydatowWAgencjiPracy,
+  obsadzanieZlecenWAgencjiPracy,
 ].sort(
   (a, b) =>
     new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),

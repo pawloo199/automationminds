@@ -138,5 +138,5 @@ export const agencjePracyRozliczenia: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-ksiegowosci", "automatyzacja-raportow", "integracje-systemow"],
   relatedProcessSlugs: ["przypomnienia-o-platnosciach", "raporty-finansowe"],
   relatedToolSlugs: ["ksef", "airtable", "n8n"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-agencji-pracy", "integracja-crm-z-fakturowaniem", "jak-mierzyc-roi-automatyzacji"],
 };
