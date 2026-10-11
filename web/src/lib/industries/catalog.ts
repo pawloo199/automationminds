@@ -1,4 +1,4 @@
-import { Building2, Calculator, DraftingCompass, GraduationCap, HardHat, Megaphone, Scale, ShieldCheck, ShoppingCart, Stethoscope, Store, Truck, Users, Warehouse, Wrench } from "lucide-react";
+import { Building2, Calculator, DraftingCompass, Factory, GraduationCap, HardHat, Megaphone, Scale, ShieldCheck, ShoppingCart, Stethoscope, Store, Truck, Users, Warehouse, Wrench } from "lucide-react";
 import type { IndustryEntry } from "./types";
 
 export const INDUSTRIES_HUB_PATH = "/branze";
@@ -265,6 +265,23 @@ export const INDUSTRIES: IndustryEntry[] = [
       formBody: "Opowiedz, jakie projekty prowadzicie, ilu macie projektantów i co zabiera zespołowi najwięcej czasu poza projektowaniem. W 30 minut wskażemy, od czego zacząć.",
       processesTitle: "Procesy, które automatyzujemy w biurach projektowych",
       solutionsTitle: "Rozwiązania dla biur projektowych",
+    },
+  },
+  {
+    slug: "zaklady-produkcyjne",
+    name: "Zakłady produkcyjne",
+    summary: "Automatyzacja i AI dla zakładów produkcyjnych: zapytania i wyceny, zamówienia i terminy, zakupy, reklamacje i jakość, utrzymanie ruchu i dokumentacja techniczna.",
+    icon: Factory,
+    status: "live",
+    mainPageLabel: "Automatyzacja zakładu produkcyjnego",
+    featuredCitySlugs: ["warszawa", "krakow", "wroclaw", "poznan", "gdansk", "lodz", "katowice", "lublin", "szczecin"],
+    cta: {
+      midTitle: "Porozmawiajmy o waszym zakładzie",
+      midBody: "W 30 minut przejdziemy przez to, co najbardziej obciąża biuro i dział jakości, i powiemy, od czego zacząć. Rozmowa jest bezpłatna i do niczego nie zobowiązuje.",
+      formTitle: "Porozmawiajmy o automatyzacji w zakładzie produkcyjnym",
+      formBody: "Opowiedz, co produkujecie, z jakich systemów korzystacie i gdzie informacja najczęściej utyka między biurem a halą. W 30 minut wskażemy, od czego zacząć.",
+      processesTitle: "Procesy, które automatyzujemy w zakładach produkcyjnych",
+      solutionsTitle: "Rozwiązania dla zakładów produkcyjnych",
     },
   },
 ];

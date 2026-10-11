@@ -124,6 +124,14 @@ import { biuraProjektoweDokumentacja } from "./content/biura-projektowe-dokument
 import { biuraProjektoweUzgodnienia } from "./content/biura-projektowe-uzgodnienia";
 import { biuraProjektoweCzasPracy } from "./content/biura-projektowe-czas-pracy";
 import { biuraProjektoweInwestor } from "./content/biura-projektowe-inwestor";
+import { zakladyProdukcyjne } from "./content/zaklady-produkcyjne";
+import { zakladyProdukcyjneAi } from "./content/zaklady-produkcyjne-ai";
+import { zakladyProdukcyjneWyceny } from "./content/zaklady-produkcyjne-wyceny";
+import { zakladyProdukcyjneZamowienia } from "./content/zaklady-produkcyjne-zamowienia";
+import { zakladyProdukcyjneReklamacje } from "./content/zaklady-produkcyjne-reklamacje";
+import { zakladyProdukcyjneZakupy } from "./content/zaklady-produkcyjne-zakupy";
+import { zakladyProdukcyjneUtrzymanieRuchu } from "./content/zaklady-produkcyjne-utrzymanie-ruchu";
+import { zakladyProdukcyjneDokumentacja } from "./content/zaklady-produkcyjne-dokumentacja";
 import type { IndustryPageContent } from "./types";
 
 export * from "./catalog";
@@ -251,6 +259,14 @@ const INDUSTRY_PAGES: IndustryPageContent[] = [
   biuraProjektoweUzgodnienia,
   biuraProjektoweCzasPracy,
   biuraProjektoweInwestor,
+  zakladyProdukcyjne,
+  zakladyProdukcyjneAi,
+  zakladyProdukcyjneWyceny,
+  zakladyProdukcyjneZamowienia,
+  zakladyProdukcyjneReklamacje,
+  zakladyProdukcyjneZakupy,
+  zakladyProdukcyjneUtrzymanieRuchu,
+  zakladyProdukcyjneDokumentacja,
 ];
 
 export function industryPagePath(page: IndustryPageContent) {
