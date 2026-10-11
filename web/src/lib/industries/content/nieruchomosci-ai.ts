@@ -1,0 +1,150 @@
+import type { IndustryPageContent } from "../types";
+
+export const nieruchomosciAi: IndustryPageContent = {
+  industrySlug: "nieruchomosci",
+  subSlug: "ai",
+  name: "AI w nieruchomościach",
+  excerpt: "AI w biurze nieruchomości i zarządzaniu najmem: opisy ofert, kwalifikacja zapytań, odpowiedzi dla klientów i najemców, analiza dokumentów.",
+  metaTitle: "AI w nieruchomościach: AI dla agentów i zarządców",
+  metaDescription:
+    "Wdrażamy AI w nieruchomościach: opisy ofert, kwalifikacja zapytań, odpowiedzi dla klientów i najemców, streszczenia dokumentów, zasady i szkolenia.",
+  primaryKeyword: "AI w nieruchomościach",
+  updatedAt: "2026-10-11",
+  hero: {
+    eyebrow: "Sztuczna inteligencja w nieruchomościach",
+    title: "AI w nieruchomościach: szybsze odpowiedzi, lepsze oferty, mniej papierów",
+    lead: "Agenci i zarządcy pracują na opisach, wiadomościach i dokumentach: opisy ofert, odpowiedzi na zapytania, umowy, regulaminy, zgłoszenia najemców. To rodzaj pracy, w którym AI daje dziś wyraźny efekt. Pomagamy biurom nieruchomości i firmom zarządzającym wdrożyć AI tam, gdzie oszczędza czas, z kontrolą nad danymi klientów i jasnym podziałem odpowiedzialności.",
+    bullets: [
+      "Opisy ofert w stylu biura, sprawdzane przez agenta",
+      "Kwalifikacja zapytań i szybkie odpowiedzi",
+      "Asystent dla najemców i zespołu",
+    ],
+  },
+  summary: [
+    { label: "Dla kogo", value: "Biura nieruchomości, firmy zarządzające najmem i deweloperzy z działem sprzedaży" },
+    { label: "Co robimy", value: "AI w ofertach, zapytaniach, dokumentach i obsłudze najemców, zasady i szkolenia" },
+    { label: "Bezpieczeństwo", value: "Dane w UE, bez trenowania modeli na danych, uprawnienia" },
+    { label: "Zasada", value: "AI przygotowuje, agent lub zarządca zatwierdza" },
+  ],
+  symptoms: {
+    title: "Kiedy biuro nieruchomości powinno zająć się AI",
+    lead: "Jeśli rozpoznajecie u siebie któreś z tych sytuacji, AI może przejąć sporą część pracy z tekstem.",
+    items: [
+      "Agenci piszą opisy ofert od zera albo kopiują je z poprzednich.",
+      "Zapytania z portali są różnej jakości, a agent nie wie, które warto obsłużyć najpierw.",
+      "Najemcy zadają te same pytania o regulamin, płatności i procedury.",
+      "Umowy i dokumenty transakcyjne trzeba czytać w całości, żeby znaleźć kilka informacji.",
+      "Zespół korzysta z czatów AI na prywatnych kontach, wklejając dane klientów.",
+      "Chcecie obsłużyć więcej ofert i nieruchomości bez zatrudniania.",
+    ],
+  },
+  intro: {
+    title: "AI w nieruchomościach na trzech poziomach",
+    paragraphs: [
+      "Pierwszy poziom to narzędzia AI dla zespołu: czat z modelem językowym na koncie firmowym, z zasadami i szkoleniem. Agenci szybciej piszą wiadomości do klientów, przygotowują posty o ofertach i streszczają długie wątki, a firma wie, gdzie trafiają dane.",
+      "Drugi poziom to AI w procesach. Model przygotowuje szkic opisu oferty na podstawie danych i zdjęć, w stylu biura. Kwalifikuje zapytania z portali, np. czy klient ma określony budżet i termin, i pomaga agentowi ustalić kolejność kontaktów. Streszcza umowy i dokumenty, wskazując daty, kwoty i zobowiązania.",
+      "Trzeci poziom to asystenci i agenci AI. Asystent dla najemców odpowiada na pytania o regulamin, płatności i procedury na podstawie dokumentów firmy. Agent może odpowiadać na zapytania o oferty i proponować terminy prezentacji. Oba przekazują ludziom sprawy wymagające decyzji.",
+    ],
+  },
+  scope: {
+    title: "Jak AI pomaga w nieruchomościach",
+    lead: "Zastosowania, które wdrażamy najczęściej. Każde działa jako wsparcie, a decyzje należą do agenta lub zarządcy.",
+    items: [
+      { title: "Opisy ofert", body: "Szkic opisu z danych i zdjęć, w stylu biura, do sprawdzenia przez agenta." },
+      { title: "Kwalifikacja zapytań", body: "Wskazanie budżetu, terminu i potrzeb klienta z treści zapytania." },
+      { title: "Odpowiedzi na zapytania", body: "Szkic odpowiedzi z danymi oferty i propozycją terminu." },
+      { title: "Streszczenia dokumentów", body: "Daty, kwoty i zobowiązania z umów i dokumentów, jako materiał roboczy." },
+      { title: "Asystent dla najemców", body: "Odpowiedzi o regulamin, płatności i procedury ze wskazaniem źródła." },
+      { title: "Kategoryzacja zgłoszeń", body: "Rodzaj i pilność usterki rozpoznane z opisu i zdjęcia." },
+      { title: "Komunikacja w językach obcych", body: "Wiadomości do klientów i najemców z zagranicy, do sprawdzenia." },
+      { title: "Zasady i szkolenia", body: "Polityka korzystania z AI i warsztaty dla agentów i zarządców." },
+    ],
+  },
+  security: {
+    title: "AI a dane klientów i najemców",
+    lead: "Nieruchomości to dane osobowe, finansowe i dokumenty tożsamości. Wdrażamy AI tak, żeby były pod kontrolą.",
+    items: [
+      { title: "Konta firmowe zamiast prywatnych", body: "Zespół korzysta z AI na kontach firmy, w planach, w których dane nie służą do trenowania modeli." },
+      { title: "Minimum danych", body: "Do modelu trafia tylko to, co potrzebne do zadania, np. parametry oferty bez danych właściciela." },
+      { title: "Dokumenty tożsamości poza AI", body: "Kopie dowodów i dokumentów finansowych nie trafiają do modeli bez wyraźnej potrzeby." },
+      { title: "Dane w UE lub u was", body: "Przepływy z AI mogą działać na serwerze w UE albo w infrastrukturze firmy." },
+      { title: "Jasne zasady", body: "Pisemne zasady korzystania z AI: co wolno przesyłać, jak sprawdzać wyniki, kto odpowiada za treść." },
+      { title: "Weryfikacja przez człowieka", body: "Opisy ofert, odpowiedzi w sprawach umów i decyzje wobec najemców zatwierdza człowiek." },
+    ],
+  },
+  comparison: {
+    title: "Prywatne konta AI czy AI wdrożone w firmie",
+    lead: "Różnica nie polega na jakości modelu, tylko na kontroli nad danymi i wpływie na procesy.",
+    columns: ["AI wdrożone w firmie", "Prywatne konta zespołu"],
+    rows: [
+      { label: "Gdzie trafiają dane", values: ["Ustalone miejsce, umowa z dostawcą", "Zależy od ustawień każdego konta"] },
+      { label: "Trenowanie modeli na danych", values: ["Wyłączone w planach firmowych", "Często włączone domyślnie w planach prywatnych"] },
+      { label: "Opisy ofert", values: ["Ze stylem biura i danymi z CRM", "Ogólne, wpisywane ręcznie"] },
+      { label: "Zapytania i zgłoszenia", values: ["Obsługiwane w procesie", "Wklejane do czatu"] },
+      { label: "Wpływ na procesy", values: ["AI w ofertach, zapytaniach, zgłoszeniach", "Tylko praca w oknie czatu"] },
+    ],
+    note: "Porównanie jest uproszczone. Ustawienia narzędzi AI zmieniają się, dlatego weryfikujemy je przy każdym wdrożeniu.",
+  },
+  example: {
+    title: "Praca z AI przed i po wdrożeniu",
+    lead: "Przykład biura nieruchomości z kilkunastoma agentami i działem zarządzania najmem.",
+    rows: [
+      { label: "Opisy ofert", before: "Pisane od zera.", after: "Szkic w stylu biura do dopracowania." },
+      { label: "Zapytania", before: "Obsługiwane w kolejności wpływu.", after: "Kwalifikacja i szkic odpowiedzi." },
+      { label: "Najemcy", before: "Te same pytania co tydzień.", after: "Asystent z dokumentami firmy." },
+      { label: "Dokumenty", before: "Czytane w całości.", after: "Streszczenie z najważniejszymi danymi." },
+      { label: "Bezpieczeństwo", before: "Prywatne czaty AI bez zasad.", after: "Konta firmowe, zasady i kontrola nad danymi." },
+    ],
+    note: "To przykład ilustracyjny. Zakres zawsze ustalamy po rozmowie o waszej firmie.",
+  },
+  implementation: {
+    title: "Jak wdrażamy AI w nieruchomościach",
+    lead: "Zaczynamy od zasad i bezpiecznych narzędzi, a potem dokładamy AI do ofert, zapytań i obsługi najemców.",
+    phases: [
+      { title: "Przegląd i zasady", duration: "kilka dni", body: "Sprawdzamy, jak zespół korzysta dziś z AI i gdzie traci najwięcej czasu, i przygotowujemy zasady.", fromYou: "Rozmowa z właścicielem i liderami zespołów." },
+      { title: "Narzędzia i szkolenie", duration: "1–2 tygodnie", body: "Konfigurujemy konta firmowe i prowadzimy warsztat na prawdziwych zadaniach agentów i zarządców.", fromYou: "Udział zespołu w warsztacie." },
+      { title: "AI w procesach", duration: "zwykle 3–6 tygodni", body: "Budujemy wybrane zastosowania: opisy ofert, kwalifikację zapytań, asystenta dla najemców. Testujemy na wybranych ofertach i nieruchomościach.", fromYou: "Osoby oceniające wyniki i dokumenty firmy." },
+      { title: "Opieka i rozwój", duration: "stale", body: "Pilnujemy jakości i kosztów, aktualizujemy zasady i dokładamy kolejne zastosowania.", fromYou: "Uwagi zespołu." },
+    ],
+  },
+  variants: {
+    title: "Warianty wdrożenia AI",
+    lead: "Wiele firm zaczyna od bezpiecznego startu i po kilku tygodniach dokłada kolejne zastosowania.",
+    items: [
+      { name: "Bezpieczny start", description: "Dla firm, które chcą uporządkować korzystanie z AI.", includes: ["Zasady korzystania z AI", "Konfiguracja kont firmowych", "Warsztat dla zespołu", "Biblioteka sprawdzonych poleceń"] },
+      { name: "AI w ofertach i zapytaniach", description: "Dla biur z dużą liczbą ofert i zapytań.", includes: ["Wszystko z wariantu Bezpieczny start", "Opisy ofert w stylu biura", "Kwalifikacja zapytań", "Szkice odpowiedzi", "Przepływy działające na serwerze w UE"] },
+      { name: "Asystenci i agenci", description: "Dla firm, które chcą odciążyć zespół od powtarzalnych pytań.", includes: ["Asystent dla najemców", "Agent odpowiadający na zapytania o oferty", "Infrastruktura i utrzymanie po naszej stronie", "Monitoring i miesięczny raport"] },
+    ],
+  },
+  costFactors: {
+    title: "Od czego zależy koszt",
+    lead: "Wycenę przygotowujemy po przeglądzie. Na koszt wpływa przede wszystkim:",
+    items: [
+      "liczba osób korzystających z narzędzi AI,",
+      "liczba ofert, zapytań i najemców,",
+      "możliwości integracji CRM,",
+      "zakres asystentów i agentów,",
+      "zakres szkoleń i opieki po wdrożeniu.",
+    ],
+  },
+  risks: {
+    title: "Granice AI w nieruchomościach",
+    items: [
+      { risk: "Opis oferty z AI będzie zawierał błędne parametry lub obietnice.", mitigation: "Opis powstaje z danych oferty i jest sprawdzany przez agenta przed publikacją." },
+      { risk: "Asystent udzieli najemcy porady prawnej.", mitigation: "Asystent odpowiada na podstawie dokumentów firmy, a sprawy prawne i sporne przekazuje zarządcy." },
+      { risk: "Kwalifikacja zapytania pominie dobrego klienta.", mitigation: "Kwalifikacja ustala kolejność, a nie odrzuca zapytań. Każde zapytanie dostaje odpowiedź." },
+      { risk: "Zmiany w narzędziach AI.", mitigation: "Aktualizujemy zasady i konfigurację, gdy zmieniają się ustawienia narzędzi lub modele." },
+    ],
+  },
+  faq: [
+    { question: "Czy AI napisze opis oferty za agenta?", answer: "Przygotuje szkic na podstawie danych i zdjęć, w stylu biura. Agent sprawdza parametry, dopracowuje tekst i odpowiada za publikację." },
+    { question: "Czy AI może odpowiadać na zapytania klientów?", answer: "Tak, na pytania o dane oferty i terminy prezentacji. Pytania o cenę, negocjacje i sprawy prawne trafiają do agenta." },
+    { question: "Czy asystent dla najemców jest bezpieczny?", answer: "Odpowiada wyłącznie na podstawie dokumentów firmy, nie ma dostępu do danych innych najemców i przekazuje zarządcy sprawy wymagające decyzji." },
+    { question: "Czy można wklejać umowy do ChatGPT?", answer: "Tylko na kontach firmowych, w planach bez trenowania na danych i zgodnie z zasadami firmy. Lepiej przygotować do tego rozwiązanie z ustalonym przepływem danych." },
+    { question: "Czy prowadzicie szkolenia z AI dla agentów nieruchomości?", answer: "Tak. Warsztaty prowadzimy na zadaniach z praktyki biura: opisy ofert, wiadomości do klientów, dokumenty, bezpieczeństwo danych i sprawdzanie wyników." },
+  ],
+  relatedServiceSlugs: ["agenci-ai", "chatbot-ai-dla-firmy", "szkolenia-ai-dla-zespolow", "strategia-wdrozenia-ai"],
+  relatedProcessSlugs: ["obsluga-zapytan-i-leadow"],
+  relatedToolSlugs: ["chatgpt", "claude", "n8n", "hubspot"],
+  relatedArticleSlugs: ["ai-w-codziennej-pracy-zespolu", "wdrozenie-ai-w-malej-i-sredniej-firmie", "rodo-a-automatyzacja-procesow"],
+};

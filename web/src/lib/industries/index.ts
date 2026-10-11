@@ -52,6 +52,14 @@ import { agencjeAkceptacjeMaterialow } from "./content/agencje-akceptacje-materi
 import { agencjeTresciZAi } from "./content/agencje-tresci-z-ai";
 import { agencjeProjektyIRentownosc } from "./content/agencje-projekty-i-rentownosc";
 import { agencjeOnboardingKlientow } from "./content/agencje-onboarding-klientow";
+import { nieruchomosci } from "./content/nieruchomosci";
+import { nieruchomosciAi } from "./content/nieruchomosci-ai";
+import { nieruchomosciLeadyZPortali } from "./content/nieruchomosci-leady-z-portali";
+import { nieruchomosciOfertyIOpisy } from "./content/nieruchomosci-oferty-i-opisy";
+import { nieruchomosciUmowyIDokumenty } from "./content/nieruchomosci-umowy-i-dokumenty";
+import { nieruchomosciZgloszeniaNajemcow } from "./content/nieruchomosci-zgloszenia-najemcow";
+import { nieruchomosciRozliczeniaNajmu } from "./content/nieruchomosci-rozliczenia-najmu";
+import { nieruchomosciAsystentNajemcy } from "./content/nieruchomosci-asystent-najemcy";
 import type { IndustryPageContent } from "./types";
 
 export * from "./catalog";
@@ -107,6 +115,14 @@ const INDUSTRY_PAGES: IndustryPageContent[] = [
   agencjeTresciZAi,
   agencjeProjektyIRentownosc,
   agencjeOnboardingKlientow,
+  nieruchomosci,
+  nieruchomosciAi,
+  nieruchomosciLeadyZPortali,
+  nieruchomosciOfertyIOpisy,
+  nieruchomosciUmowyIDokumenty,
+  nieruchomosciZgloszeniaNajemcow,
+  nieruchomosciRozliczeniaNajmu,
+  nieruchomosciAsystentNajemcy,
 ];
 
 export function industryPagePath(page: IndustryPageContent) {

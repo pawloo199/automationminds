@@ -1,4 +1,4 @@
-import { Calculator, Megaphone, Scale, Store, Truck, Warehouse } from "lucide-react";
+import { Building2, Calculator, Megaphone, Scale, Store, Truck, Warehouse } from "lucide-react";
 import type { IndustryEntry } from "./types";
 
 export const INDUSTRIES_HUB_PATH = "/branze";
@@ -112,6 +112,23 @@ export const INDUSTRIES: IndustryEntry[] = [
       formBody: "Opowiedz, jak dziś pracuje agencja i co zabiera zespołowi najwięcej czasu. W 30 minut wskażemy, od czego zacząć i jak bezpiecznie korzystać z AI.",
       processesTitle: "Procesy, które automatyzujemy w agencjach",
       solutionsTitle: "Rozwiązania dla agencji marketingowych",
+    },
+  },
+  {
+    slug: "nieruchomosci",
+    name: "Nieruchomości",
+    summary: "Automatyzacja i AI dla biur nieruchomości i firm zarządzających nieruchomościami: leady, oferty, umowy, najemcy, zgłoszenia i rozliczenia.",
+    icon: Building2,
+    status: "live",
+    mainPageLabel: "Automatyzacja biura nieruchomości",
+    featuredCitySlugs: ["warszawa", "krakow", "wroclaw", "poznan", "gdansk", "gdynia", "lodz", "katowice", "szczecin"],
+    cta: {
+      midTitle: "Porozmawiajmy o waszym biurze lub zarządzaniu",
+      midBody: "W 30 minut przejdziemy przez to, co najbardziej obciąża agentów lub zarządców, i powiemy, od czego zacząć. Rozmowa jest bezpłatna i do niczego nie zobowiązuje.",
+      formTitle: "Porozmawiajmy o automatyzacji w nieruchomościach",
+      formBody: "Opowiedz, czy prowadzicie pośrednictwo, zarządzanie czy oba, i co zabiera zespołowi najwięcej czasu. W 30 minut wskażemy, od czego zacząć.",
+      processesTitle: "Procesy, które automatyzujemy w nieruchomościach",
+      solutionsTitle: "Rozwiązania dla nieruchomości",
     },
   },
 ];
