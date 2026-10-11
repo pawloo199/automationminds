@@ -1,4 +1,4 @@
-import { Calculator, Scale } from "lucide-react";
+import { Calculator, Scale, Truck } from "lucide-react";
 import type { IndustryEntry } from "./types";
 
 export const INDUSTRIES_HUB_PATH = "/branze";
@@ -44,6 +44,23 @@ export const INDUSTRIES: IndustryEntry[] = [
       formBody: "Opowiedz, jak dziś pracuje biuro i co zabiera najwięcej czasu. W 30 minut wskażemy, od czego zacząć i jak zadbać o bezpieczeństwo danych klientów.",
       processesTitle: "Procesy, które automatyzujemy w biurach rachunkowych",
       solutionsTitle: "Rozwiązania dla biur rachunkowych",
+    },
+  },
+  {
+    slug: "spedycja",
+    name: "Spedycja",
+    summary: "Automatyzacja i AI dla firm spedycyjnych: zapytania i wyceny, zlecenia, przewoźnicy, statusy, dokumenty i rozliczenia frachtu.",
+    icon: Truck,
+    status: "live",
+    mainPageLabel: "Automatyzacja spedycji",
+    featuredCitySlugs: ["warszawa", "lodz", "poznan", "wroclaw", "gdansk", "gdynia", "szczecin", "katowice", "krakow"],
+    cta: {
+      midTitle: "Porozmawiajmy o waszej spedycji",
+      midBody: "W 30 minut przejdziemy przez to, co najbardziej obciąża spedytorów, i powiemy, od czego zacząć. Rozmowa jest bezpłatna i do niczego nie zobowiązuje.",
+      formTitle: "Porozmawiajmy o automatyzacji spedycji",
+      formBody: "Opowiedz, jak dziś pracuje firma i co zabiera spedytorom najwięcej czasu. W 30 minut wskażemy, od czego zacząć i co da się połączyć z waszym TMS.",
+      processesTitle: "Procesy, które automatyzujemy w spedycji",
+      solutionsTitle: "Rozwiązania dla spedycji",
     },
   },
 ];

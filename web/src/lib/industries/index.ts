@@ -20,6 +20,14 @@ import { kancelariePismaZSzablonow } from "./content/kancelarie-pisma-z-szablono
 import { kancelariePrawneAi } from "./content/kancelarie-prawne-ai";
 import { kancelarieRozliczenia } from "./content/kancelarie-rozliczenia";
 import { kancelarieTerminyISprawy } from "./content/kancelarie-terminy-i-sprawy";
+import { spedycja } from "./content/spedycja";
+import { spedycjaAi } from "./content/spedycja-ai";
+import { spedycjaZapytaniaIWyceny } from "./content/spedycja-zapytania-i-wyceny";
+import { spedycjaZleceniaTransportowe } from "./content/spedycja-zlecenia-transportowe";
+import { spedycjaWeryfikacjaPrzewoznikow } from "./content/spedycja-weryfikacja-przewoznikow";
+import { spedycjaStatusyDlaKlientow } from "./content/spedycja-statusy-dla-klientow";
+import { spedycjaDokumentyPrzewozowe } from "./content/spedycja-dokumenty-przewozowe";
+import { spedycjaRozliczeniaFrachtu } from "./content/spedycja-rozliczenia-frachtu";
 import type { IndustryPageContent } from "./types";
 
 export * from "./catalog";
@@ -43,6 +51,14 @@ const INDUSTRY_PAGES: IndustryPageContent[] = [
   biuraKomunikacjaZKlientami,
   biuraZamkniecieMiesiaca,
   biuraRozliczenia,
+  spedycja,
+  spedycjaAi,
+  spedycjaZapytaniaIWyceny,
+  spedycjaZleceniaTransportowe,
+  spedycjaWeryfikacjaPrzewoznikow,
+  spedycjaStatusyDlaKlientow,
+  spedycjaDokumentyPrzewozowe,
+  spedycjaRozliczeniaFrachtu,
 ];
 
 export function industryPagePath(page: IndustryPageContent) {
