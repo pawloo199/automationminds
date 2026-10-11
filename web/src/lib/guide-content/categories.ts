@@ -16,6 +16,7 @@ export const GUIDE_CATEGORY_SLUGS = [
   "nieruchomosci",
   "posrednictwo-ubezpieczeniowe",
   "firmy-serwisowe",
+  "firmy-budowlane",
 ] as const;
 
 export type GuideCategorySlug = (typeof GUIDE_CATEGORY_SLUGS)[number];
@@ -606,6 +607,40 @@ export const guideCategories: GuideCategory[] = [
     cta: {
       title: "Chcecie zautomatyzować pracę serwisu?",
       body: "Porozmawiajmy o tym, co zabiera biuru i serwisantom najwięcej czasu. Wskażemy, od czego zacząć i gdzie AI ma sens.",
+    },
+    inMenu: false,
+  },
+  {
+    slug: "firmy-budowlane",
+    name: "Firmy budowlane",
+    title: "AI i automatyzacja w firmie budowlanej. Poradnik",
+    metaTitle: "AI i automatyzacja w firmie budowlanej. Poradnik",
+    metaDescription:
+      "Jak firmy budowlane mogą korzystać z AI i automatyzacji: procesy na początek, AI dla kierownika budowy, kontrola kosztów budowy i cyfryzacja firmy.",
+    shortDescription:
+      "Jak firmy budowlane i wykonawcze mogą uporządkować przepływ informacji między budową a biurem i bezpiecznie korzystać z AI.",
+    lead: "Artykuły dla właścicieli i zarządów firm budowlanych, kierowników budów i pracowników biur, którzy chcą mniej czasu spędzać na raportach, dokumentach i rozliczeniach, a więcej na prowadzeniu budów. Piszemy z perspektywy wdrożeń w tej branży.",
+    about: [
+      "Firma budowlana łączy pracę w terenie z dużą ilością dokumentów: oferty, raporty, dokumenty podwykonawców, zamówienia, protokoły odbioru, faktury. Informacje przechodzą między budową a biurem przez telefony i maile, a część z nich ginie po drodze.",
+      "W tej części Poradnika opisujemy, które procesy warto zautomatyzować najpierw, jak kierownik budowy może korzystać z AI, jak kontrolować koszty budowy na bieżąco i od czego zacząć cyfryzację firmy.",
+      "Jeśli szukacie konkretnych rozwiązań i przebiegu wdrożenia, zajrzyjcie także na stronę automatyzacji firmy budowlanej w części Branże.",
+    ],
+    faq: [
+      {
+        question: "Co w firmie budowlanej da się zautomatyzować?",
+        answer:
+          "Najczęściej raporty z budowy, dokumenty i faktury podwykonawców, zamówienia materiałów, odbiory i usterki, przypisanie kosztów do budów oraz rejestr ofert i przetargów.",
+      },
+      {
+        question: "Czy automatyzacja zastąpi dziennik budowy?",
+        answer:
+          "Nie. Dziennik budowy prowadzi się według przepisów. Raporty i rejestry wewnętrzne mogą ułatwić jego prowadzenie.",
+      },
+    ],
+    relatedServiceSlugs: ["integracje-systemow", "ai-w-obsludze-dokumentow", "automatyzacja-raportow"],
+    cta: {
+      title: "Chcecie uporządkować pracę firmy budowlanej?",
+      body: "Porozmawiajmy o tym, co zabiera biuru i kierownikom najwięcej czasu. Wskażemy, od czego zacząć i gdzie AI ma sens.",
     },
     inMenu: false,
   },

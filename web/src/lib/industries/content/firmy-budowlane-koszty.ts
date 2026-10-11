@@ -138,5 +138,5 @@ export const firmyBudowlaneKoszty: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-ksiegowosci", "automatyzacja-raportow", "ai-w-obsludze-dokumentow"],
   relatedProcessSlugs: ["obieg-faktur-kosztowych", "raporty-finansowe"],
   relatedToolSlugs: ["ksef", "airtable", "n8n"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["kontrola-kosztow-budowy", "cyfryzacja-firmy-budowlanej", "jak-mierzyc-roi-automatyzacji"],
 };

@@ -138,5 +138,5 @@ export const firmyBudowlaneOdbiory: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-w-obsludze-klienta", "cyfryzacja-danych-i-dokumentow", "projektowanie-baz-danych"],
   relatedProcessSlugs: ["obsluga-reklamacji"],
   relatedToolSlugs: ["airtable", "n8n", "google-workspace"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["cyfryzacja-firmy-budowlanej", "co-zautomatyzowac-w-firmie-budowlanej", "5-procesow-do-automatyzacji-w-malej-firmie"],
 };

@@ -62,6 +62,10 @@ import coZautomatyzowacWFirmieSerwisowej from "./articles/co-zautomatyzowac-w-fi
 import aiDlaSerwisantow from "./articles/ai-dla-serwisantow";
 import programDoZarzadzaniaSerwisem from "./articles/program-do-zarzadzania-serwisem";
 import umowySerwisowe from "./articles/umowy-serwisowe";
+import coZautomatyzowacWFirmieBudowlanej from "./articles/co-zautomatyzowac-w-firmie-budowlanej";
+import aiDlaKierownikaBudowy from "./articles/ai-dla-kierownika-budowy";
+import kontrolaKosztowBudowy from "./articles/kontrola-kosztow-budowy";
+import cyfryzacjaFirmyBudowlanej from "./articles/cyfryzacja-firmy-budowlanej";
 /** Wszystkie artykuły Poradnika, od najnowszego. */
 export const guideArticles: GuideArticle[] = [
   procesowDoAutomatyzacjiWMalejFirmie,
@@ -126,6 +130,10 @@ export const guideArticles: GuideArticle[] = [
   aiDlaSerwisantow,
   programDoZarzadzaniaSerwisem,
   umowySerwisowe,
+  coZautomatyzowacWFirmieBudowlanej,
+  aiDlaKierownikaBudowy,
+  kontrolaKosztowBudowy,
+  cyfryzacjaFirmyBudowlanej,
 ].sort(
   (a, b) =>
     new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),

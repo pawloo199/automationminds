@@ -138,5 +138,5 @@ export const firmyBudowlaneRaporty: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-raportow", "cyfryzacja-danych-i-dokumentow", "ai-w-obsludze-dokumentow"],
   relatedProcessSlugs: ["raporty-finansowe"],
   relatedToolSlugs: ["airtable", "google-workspace", "n8n"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["ai-dla-kierownika-budowy", "cyfryzacja-firmy-budowlanej", "co-zautomatyzowac-w-firmie-budowlanej"],
 };

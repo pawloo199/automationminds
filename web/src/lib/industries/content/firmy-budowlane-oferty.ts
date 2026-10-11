@@ -138,5 +138,5 @@ export const firmyBudowlaneOferty: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-sprzedazy", "ai-w-obsludze-dokumentow", "integracje-systemow"],
   relatedProcessSlugs: ["ofertowanie", "obsluga-zapytan-i-leadow"],
   relatedToolSlugs: ["microsoft-365", "n8n", "chatgpt"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-firmie-budowlanej", "ai-dla-kierownika-budowy", "jak-mierzyc-roi-automatyzacji"],
 };

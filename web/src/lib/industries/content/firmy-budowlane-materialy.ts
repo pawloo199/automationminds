@@ -138,5 +138,5 @@ export const firmyBudowlaneMaterialy: IndustryPageContent = {
   relatedServiceSlugs: ["integracje-systemow", "automatyzacja-dla-ksiegowosci", "automatyzacja-raportow"],
   relatedProcessSlugs: ["przyjmowanie-zamowien", "obieg-faktur-kosztowych"],
   relatedToolSlugs: ["airtable", "n8n", "ksef"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["kontrola-kosztow-budowy", "co-zautomatyzowac-w-firmie-budowlanej", "airtable-w-praktyce-zastosowania"],
 };

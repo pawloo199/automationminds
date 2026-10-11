@@ -158,5 +158,5 @@ export const firmyBudowlane: IndustryPageContent = {
   relatedServiceSlugs: ["integracje-systemow", "ai-w-obsludze-dokumentow", "automatyzacja-raportow", "cyfryzacja-danych-i-dokumentow"],
   relatedProcessSlugs: ["obieg-faktur-kosztowych", "obieg-umow", "ofertowanie", "raporty-finansowe"],
   relatedToolSlugs: ["n8n", "airtable", "microsoft-365", "ksef"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-firmie-budowlanej", "kontrola-kosztow-budowy", "cyfryzacja-firmy-budowlanej"],
 };

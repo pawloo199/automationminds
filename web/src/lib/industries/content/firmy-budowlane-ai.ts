@@ -145,5 +145,5 @@ export const firmyBudowlaneAi: IndustryPageContent = {
   relatedServiceSlugs: ["ai-w-obsludze-dokumentow", "asystent-ai-na-firmowej-wiedzy", "szkolenia-ai-dla-zespolow", "agenci-ai"],
   relatedProcessSlugs: ["obieg-faktur-kosztowych"],
   relatedToolSlugs: ["chatgpt", "claude", "n8n"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["ai-dla-kierownika-budowy", "cyfryzacja-firmy-budowlanej", "ai-w-codziennej-pracy-zespolu"],
 };
