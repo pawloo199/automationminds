@@ -1,4 +1,4 @@
-import { Calculator, Scale, Truck, Warehouse } from "lucide-react";
+import { Calculator, Scale, Store, Truck, Warehouse } from "lucide-react";
 import type { IndustryEntry } from "./types";
 
 export const INDUSTRIES_HUB_PATH = "/branze";
@@ -78,6 +78,23 @@ export const INDUSTRIES: IndustryEntry[] = [
       formBody: "Opowiedz, jak dziś pracuje firma i co zabiera zespołowi najwięcej czasu. W 30 minut wskażemy, od czego zacząć i co da się połączyć z waszym WMS lub TMS.",
       processesTitle: "Procesy, które automatyzujemy w firmach logistycznych",
       solutionsTitle: "Rozwiązania dla firm logistycznych",
+    },
+  },
+  {
+    slug: "hurtownie-i-dystrybucja",
+    name: "Hurtownie i dystrybucja",
+    summary: "Automatyzacja i AI dla hurtowni, dystrybutorów i firm handlowych B2B: zamówienia, oferty i cenniki, handlowcy, zakupy, reklamacje i należności.",
+    icon: Store,
+    status: "live",
+    mainPageLabel: "Automatyzacja hurtowni",
+    featuredCitySlugs: ["warszawa", "poznan", "wroclaw", "krakow", "lodz", "katowice", "gdansk", "bydgoszcz", "lublin"],
+    cta: {
+      midTitle: "Porozmawiajmy o waszej hurtowni",
+      midBody: "W 30 minut przejdziemy przez to, co najbardziej obciąża dział handlowy i obsługę zamówień, i powiemy, od czego zacząć. Rozmowa jest bezpłatna i do niczego nie zobowiązuje.",
+      formTitle: "Porozmawiajmy o automatyzacji hurtowni",
+      formBody: "Opowiedz, jak dziś pracuje firma i co zabiera handlowcom i biuru najwięcej czasu. W 30 minut wskażemy, od czego zacząć i co da się połączyć z waszym ERP.",
+      processesTitle: "Procesy, które automatyzujemy w hurtowniach",
+      solutionsTitle: "Rozwiązania dla hurtowni i dystrybutorów",
     },
   },
 ];

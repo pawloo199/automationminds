@@ -36,6 +36,14 @@ import { logistykaDokumentyIReklamacje } from "./content/logistyka-dokumenty-i-r
 import { logistykaObslugaKlientow } from "./content/logistyka-obsluga-klientow";
 import { logistykaFlotaIKierowcy } from "./content/logistyka-flota-i-kierowcy";
 import { logistykaRozliczeniaUslug } from "./content/logistyka-rozliczenia-uslug";
+import { hurtownie } from "./content/hurtownie";
+import { hurtownieAi } from "./content/hurtownie-ai";
+import { hurtownieObslugaZamowien } from "./content/hurtownie-obsluga-zamowien";
+import { hurtownieOfertyICenniki } from "./content/hurtownie-oferty-i-cenniki";
+import { hurtowniePracaHandlowcow } from "./content/hurtownie-praca-handlowcow";
+import { hurtownieZakupyUDostawcow } from "./content/hurtownie-zakupy-u-dostawcow";
+import { hurtownieReklamacjeIZwroty } from "./content/hurtownie-reklamacje-i-zwroty";
+import { hurtownieNaleznosciILimity } from "./content/hurtownie-naleznosci-i-limity";
 import type { IndustryPageContent } from "./types";
 
 export * from "./catalog";
@@ -75,6 +83,14 @@ const INDUSTRY_PAGES: IndustryPageContent[] = [
   logistykaObslugaKlientow,
   logistykaFlotaIKierowcy,
   logistykaRozliczeniaUslug,
+  hurtownie,
+  hurtownieAi,
+  hurtownieObslugaZamowien,
+  hurtownieOfertyICenniki,
+  hurtowniePracaHandlowcow,
+  hurtownieZakupyUDostawcow,
+  hurtownieReklamacjeIZwroty,
+  hurtownieNaleznosciILimity,
 ];
 
 export function industryPagePath(page: IndustryPageContent) {
