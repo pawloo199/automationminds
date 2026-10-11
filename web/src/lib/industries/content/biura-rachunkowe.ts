@@ -218,5 +218,5 @@ export const biuraRachunkowe: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-ksiegowosci", "ai-w-obsludze-dokumentow", "cyfryzacja-danych-i-dokumentow", "asystent-ai-na-firmowej-wiedzy"],
   relatedProcessSlugs: ["obieg-faktur-kosztowych", "przypomnienia-o-platnosciach", "raporty-finansowe", "obsluga-zapytan-i-leadow"],
   relatedToolSlugs: ["n8n", "ksef", "microsoft-365", "google-workspace"],
-  relatedArticleSlugs: ["integracja-crm-z-fakturowaniem", "cyfryzacja-danych-w-firmie", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-biurze-rachunkowym", "ksef-w-pracy-biura-rachunkowego", "ai-dla-ksiegowych"],
 };

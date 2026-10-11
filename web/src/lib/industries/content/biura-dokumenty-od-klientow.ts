@@ -138,5 +138,5 @@ export const biuraDokumentyOdKlientow: IndustryPageContent = {
   relatedServiceSlugs: ["cyfryzacja-danych-i-dokumentow", "automatyzacja-dla-ksiegowosci", "ai-w-obsludze-dokumentow"],
   relatedProcessSlugs: ["obieg-faktur-kosztowych"],
   relatedToolSlugs: ["n8n", "microsoft-365", "google-workspace"],
-  relatedArticleSlugs: ["cyfryzacja-danych-w-firmie", "5-procesow-do-automatyzacji-w-malej-firmie", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-biurze-rachunkowym", "ksef-w-pracy-biura-rachunkowego", "cyfryzacja-danych-w-firmie"],
 };

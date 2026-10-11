@@ -138,5 +138,5 @@ export const biuraKsef: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-ksiegowosci", "integracje-systemow", "cyfryzacja-danych-i-dokumentow"],
   relatedProcessSlugs: ["obieg-faktur-kosztowych"],
   relatedToolSlugs: ["ksef", "n8n"],
-  relatedArticleSlugs: ["integracja-crm-z-fakturowaniem", "cyfryzacja-danych-w-firmie", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["ksef-w-pracy-biura-rachunkowego", "co-zautomatyzowac-w-biurze-rachunkowym", "integracja-crm-z-fakturowaniem"],
 };

@@ -196,5 +196,5 @@ export const biuraRachunkoweAi: IndustryPageContent = {
   relatedServiceSlugs: ["ai-w-obsludze-dokumentow", "asystent-ai-na-firmowej-wiedzy", "szkolenia-ai-dla-zespolow", "strategia-wdrozenia-ai"],
   relatedProcessSlugs: ["obieg-faktur-kosztowych"],
   relatedToolSlugs: ["claude", "chatgpt", "n8n", "ksef"],
-  relatedArticleSlugs: ["ai-w-codziennej-pracy-zespolu", "wdrozenie-ai-w-malej-i-sredniej-firmie", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["ai-dla-ksiegowych", "chatgpt-dla-ksiegowych-dane-klientow", "co-zautomatyzowac-w-biurze-rachunkowym"],
 };

@@ -5,6 +5,10 @@ import aiWAnalizieUmow from "./articles/ai-w-analizie-umow";
 import aiWKancelariiPrawnej from "./articles/ai-w-kancelarii-prawnej";
 import chatgptDlaPrawnikowTajemnicaZawodowa from "./articles/chatgpt-dla-prawnikow-tajemnica-zawodowa";
 import coZautomatyzowacWKancelarii from "./articles/co-zautomatyzowac-w-kancelarii";
+import coZautomatyzowacWBiurzeRachunkowym from "./articles/co-zautomatyzowac-w-biurze-rachunkowym";
+import aiDlaKsiegowych from "./articles/ai-dla-ksiegowych";
+import chatgptDlaKsiegowychDaneKlientow from "./articles/chatgpt-dla-ksiegowych-dane-klientow";
+import ksefWPracyBiuraRachunkowego from "./articles/ksef-w-pracy-biura-rachunkowego";
 import aiWCodziennejPracyZespolu from "./articles/ai-w-codziennej-pracy-zespolu";
 import airtableCzyExcel from "./articles/airtable-czy-excel";
 import airtableWPraktyceZastosowania from "./articles/airtable-w-praktyce-zastosowania";
@@ -40,6 +44,10 @@ export const guideArticles: GuideArticle[] = [
   aiWKancelariiPrawnej,
   chatgptDlaPrawnikowTajemnicaZawodowa,
   coZautomatyzowacWKancelarii,
+  coZautomatyzowacWBiurzeRachunkowym,
+  aiDlaKsiegowych,
+  chatgptDlaKsiegowychDaneKlientow,
+  ksefWPracyBiuraRachunkowego,
   airtableCzyExcel,
   airtableWPraktyceZastosowania,
   audytProcesowWFirmie,

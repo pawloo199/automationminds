@@ -138,5 +138,5 @@ export const biuraRozliczenia: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-ksiegowosci", "automatyzacja-dla-firm-uslugowych", "automatyzacja-raportow"],
   relatedProcessSlugs: ["przypomnienia-o-platnosciach", "ofertowanie", "obieg-umow"],
   relatedToolSlugs: ["ksef", "n8n", "microsoft-365"],
-  relatedArticleSlugs: ["integracja-crm-z-fakturowaniem", "jak-mierzyc-roi-automatyzacji", "5-procesow-do-automatyzacji-w-malej-firmie"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-biurze-rachunkowym", "integracja-crm-z-fakturowaniem", "jak-mierzyc-roi-automatyzacji"],
 };

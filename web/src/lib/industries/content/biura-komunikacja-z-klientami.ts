@@ -138,5 +138,5 @@ export const biuraKomunikacjaZKlientami: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-w-obsludze-klienta", "asystent-ai-na-firmowej-wiedzy", "chatbot-ai-dla-firmy"],
   relatedProcessSlugs: ["obsluga-zapytan-i-leadow", "przypomnienia-o-platnosciach"],
   relatedToolSlugs: ["n8n", "microsoft-365", "claude"],
-  relatedArticleSlugs: ["ai-w-codziennej-pracy-zespolu", "5-procesow-do-automatyzacji-w-malej-firmie", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["ai-dla-ksiegowych", "co-zautomatyzowac-w-biurze-rachunkowym", "rodo-a-automatyzacja-procesow"],
 };

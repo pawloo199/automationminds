@@ -8,6 +8,7 @@ export const GUIDE_CATEGORY_SLUGS = [
   "audyt-i-koszty",
   "narzedzia-i-integracje",
   "kancelarie-prawne",
+  "biura-rachunkowe",
 ] as const;
 
 export type GuideCategorySlug = (typeof GUIDE_CATEGORY_SLUGS)[number];
@@ -326,6 +327,40 @@ export const guideCategories: GuideCategory[] = [
     cta: {
       title: "Chcecie wdrożyć AI lub automatyzację w kancelarii?",
       body: "Porozmawiajmy o tym, co zabiera wam najwięcej czasu. Wskażemy, od czego zacząć i jak zadbać o tajemnicę zawodową.",
+    },
+    inMenu: false,
+  },
+  {
+    slug: "biura-rachunkowe",
+    name: "Biura rachunkowe",
+    title: "AI i automatyzacja w biurze rachunkowym. Poradnik dla księgowych",
+    metaTitle: "AI i automatyzacja w biurze rachunkowym. Poradnik",
+    metaDescription:
+      "Jak biura rachunkowe mogą korzystać z AI i automatyzacji: procesy na początek, KSeF, odczyt dokumentów i bezpieczna praca z narzędziami takimi jak ChatGPT.",
+    shortDescription:
+      "Jak biura rachunkowe mogą korzystać z AI i automatyzacji bez ryzyka dla danych klientów.",
+    lead: "Artykuły dla właścicieli biur rachunkowych, księgowych i kancelarii podatkowych, które chcą mniej czasu poświęcać na dokumenty i administrację, a więcej na klientów. Piszemy z perspektywy wdrożeń w biurach.",
+    about: [
+      "Biuro rachunkowe pracuje na dokumentach, terminach i danych finansowych klientów. Duża część dnia to praca, która nie wymaga wiedzy księgowej: zbieranie dokumentów, przepisywanie danych, przypominanie i odpowiadanie na te same pytania. To dobre pole dla automatyzacji i AI.",
+      "W tej części Poradnika opisujemy, które procesy w biurze warto zautomatyzować najpierw, jak pracować z KSeF w imieniu wielu klientów, jak AI pomaga księgowym w praktyce i jak korzystać z narzędzi takich jak ChatGPT bez ryzyka dla danych klientów.",
+      "Jeśli szukacie konkretnych rozwiązań i przebiegu wdrożenia, zajrzyjcie także na stronę automatyzacji biur rachunkowych w części Branże.",
+    ],
+    faq: [
+      {
+        question: "Czy biuro rachunkowe może bezpiecznie korzystać z AI?",
+        answer:
+          "Tak, jeśli korzysta z narzędzi na kontach firmowych, w planach bez trenowania na danych, ogranicza dane przesyłane do modeli, ma spisane zasady korzystania z AI i traktuje wyniki AI jako materiał do sprawdzenia przez księgowego.",
+      },
+      {
+        question: "Od czego zacząć automatyzację w biurze rachunkowym?",
+        answer:
+          "Najczęściej od zbierania dokumentów od klientów, bo to ono najbardziej obciąża zespół pod koniec miesiąca. Kolejne obszary to odczyt dokumentów, KSeF, komunikacja z klientami i rozliczenia biura.",
+      },
+    ],
+    relatedServiceSlugs: ["automatyzacja-dla-ksiegowosci", "ai-w-obsludze-dokumentow", "szkolenia-ai-dla-zespolow"],
+    cta: {
+      title: "Chcecie wdrożyć AI lub automatyzację w biurze?",
+      body: "Porozmawiajmy o tym, co zabiera wam najwięcej czasu. Wskażemy, od czego zacząć i jak zadbać o bezpieczeństwo danych klientów.",
     },
     inMenu: false,
   },

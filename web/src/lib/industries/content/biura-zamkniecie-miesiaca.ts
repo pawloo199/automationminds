@@ -138,5 +138,5 @@ export const biuraZamkniecieMiesiaca: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-raportow", "projektowanie-baz-danych", "wdrozenia-airtable"],
   relatedProcessSlugs: ["raporty-finansowe"],
   relatedToolSlugs: ["airtable", "microsoft-365", "n8n"],
-  relatedArticleSlugs: ["airtable-czy-excel", "od-czego-zaczac-mapowanie-procesow", "porzadek-w-danych-przed-ai-i-automatyzacja"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-biurze-rachunkowym", "airtable-czy-excel", "od-czego-zaczac-mapowanie-procesow"],
 };

@@ -138,5 +138,5 @@ export const biuraOdczytDokumentow: IndustryPageContent = {
   relatedServiceSlugs: ["ai-w-obsludze-dokumentow", "automatyzacja-dla-ksiegowosci", "cyfryzacja-danych-i-dokumentow"],
   relatedProcessSlugs: ["obieg-faktur-kosztowych"],
   relatedToolSlugs: ["claude", "chatgpt", "n8n", "ksef"],
-  relatedArticleSlugs: ["porzadek-w-danych-przed-ai-i-automatyzacja", "wdrozenie-ai-w-malej-i-sredniej-firmie", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["ai-dla-ksiegowych", "chatgpt-dla-ksiegowych-dane-klientow", "porzadek-w-danych-przed-ai-i-automatyzacja"],
 };
