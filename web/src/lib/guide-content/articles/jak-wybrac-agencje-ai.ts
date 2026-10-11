@@ -17,8 +17,8 @@ export default defineArticle({
   excerpt:
     "Agencji AI przybywa szybciej niż firm, które potrafią je ocenić. Podpowiadamy, jakie pytania zadać przed podpisaniem umowy, po czym poznać dobrego wykonawcę i jakie sygnały powinny zapalić czerwoną lampkę.",
   categories: ["ai-w-firmie", "audyt-i-koszty"],
-  publishedAt: "2026-10-05",
-  updatedAt: "2026-10-05",
+  publishedAt: "2026-03-11",
+  updatedAt: "2026-03-11",
   imageUrl: "https://images.unsplash.com/photo-1672380135241-c024f7fbfa13?w=1200&q=80",
   imageAlt: "Dwie osoby podają sobie ręce nad laptopem po rozmowie biznesowej",
   summary: [

@@ -18,7 +18,7 @@ export default defineArticle({
     "Zanim zautomatyzujesz cokolwiek, musisz wiedzieć, jak proces wygląda w praktyce, a nie jak powinien wyglądać. Pokazujemy, jak przeprowadzić mapowanie w jeden warsztat i dojść do konkretnej decyzji.",
   categories: ["automatyzacja-procesow"],
   publishedAt: "2026-03-15",
-  updatedAt: "2026-09-30",
+  updatedAt: "2026-05-29",
   imageUrl:
     "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80",
   imageAlt: "Osoby rozrysowujące proces na kartkach i wykresach przy biurku",

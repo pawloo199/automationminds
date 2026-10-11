@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "AI nie zastąpi księgowego, ale może przejąć sporą część pracy przy dokumentach i komunikacji. Opisujemy, gdzie sztuczna inteligencja pomaga w biurze rachunkowym, gdzie się myli i jak zacząć z niej korzystać.",
   categories: ["biura-rachunkowe", "ai-w-firmie"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-05-06",
+  updatedAt: "2026-05-06",
   imageUrl: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&q=80",
   imageAlt: "Dłoń trzymająca telefon z kalkulatorem nad teczką z dokumentami",
   summary: [

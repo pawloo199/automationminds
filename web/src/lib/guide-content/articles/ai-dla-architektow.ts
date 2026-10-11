@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Dyskusja o AI w architekturze kręci się zwykle wokół generowania wizualizacji. Tymczasem największa oszczędność czasu leży gdzie indziej: w tekstach, które architekt pisze codziennie. Opisujemy, w czym AI pomaga, czego nie powinno robić i jak korzystać z niego bezpiecznie.",
   categories: ["biura-projektowe", "ai-w-firmie"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-06-19",
+  updatedAt: "2026-06-19",
   imageUrl: "https://images.unsplash.com/photo-1618385455730-2571c38966b7?w=1200&q=80",
   imageAlt: "Architekt pracujący nad projektem przy biurku",
   summary: [

@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "AI nie zastąpi spedytora, ale może przejąć sporą część pracy przy mailach, dokumentach i komunikacji. Opisujemy, gdzie sztuczna inteligencja pomaga w spedycji, gdzie się myli i jak zacząć z niej korzystać.",
   categories: ["spedycja", "ai-w-firmie"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-05-11",
+  updatedAt: "2026-05-11",
   imageUrl: "https://images.unsplash.com/photo-1766785368863-f2188a8c8b32?w=1200&q=80",
   imageAlt: "Dwie ciężarówki na autostradzie",
   summary: [

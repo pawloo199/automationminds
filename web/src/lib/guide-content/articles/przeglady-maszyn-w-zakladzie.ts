@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "W wielu zakładach przeglądy maszyn są zapisane w zeszycie albo w kalendarzu jednej osoby, a o awariach wiadomo tylko tyle, że były. Opisujemy, jak zorganizować plan przeglądów, zgłoszenia awarii i historię maszyn tak, żeby przeglądy odbywały się w terminie, a planowanie znało postoje z wyprzedzeniem.",
   categories: ["zaklady-produkcyjne", "automatyzacja-procesow"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-10-06",
+  updatedAt: "2026-10-06",
   imageUrl: "https://images.unsplash.com/photo-1748255882537-cbe88b145305?w=1200&q=80",
   imageAlt: "Technik wypełniający listę kontrolną przy panelu sterowania urządzenia",
   summary: [

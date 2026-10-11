@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "W wielu firmach budowlanych wynik budowy jest znany dopiero po jej zakończeniu. Opisujemy, jak zorganizować kontrolę kosztów tak, żeby przekroczenia były widoczne w trakcie realizacji, kiedy jeszcze można zareagować.",
   categories: ["firmy-budowlane", "audyt-i-koszty"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-07-28",
+  updatedAt: "2026-07-28",
   imageUrl: "https://images.unsplash.com/photo-1628158088791-89567a8e84ec?w=1200&q=80",
   imageAlt: "Geodeta w kasku wykonuje pomiary na budowie",
   summary: [

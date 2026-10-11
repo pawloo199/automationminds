@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "W firmie serwisowej pieniądze zarabia się u klienta, a traci w biurze: na telefonach, przestawianiu grafiku, przepisywaniu protokołów i fakturach wystawianych po tygodniu. Opisujemy siedem procesów, od których serwisy i firmy instalacyjne najczęściej zaczynają automatyzację.",
   categories: ["firmy-serwisowe", "automatyzacja-procesow"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-04-01",
+  updatedAt: "2026-04-01",
   imageUrl: "https://images.unsplash.com/photo-1625148230889-8195e85aae6b?w=1200&q=80",
   imageAlt: "Serwisant z elektronarzędziem podczas pracy",
   summary: [

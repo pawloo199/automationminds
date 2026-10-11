@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "W firmie szkoleniowej administracja rośnie razem z liczbą szkoleń i uczestników. Opisujemy siedem procesów, od których firmy szkoleniowe najczęściej zaczynają automatyzację, i podpowiadamy, jak wybrać pierwszy.",
   categories: ["firmy-szkoleniowe", "automatyzacja-procesow"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-04-14",
+  updatedAt: "2026-04-14",
   imageUrl: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1200&q=80",
   imageAlt: "Trener prowadzi szkolenie dla grupy uczestników przy laptopach",
   summary: [

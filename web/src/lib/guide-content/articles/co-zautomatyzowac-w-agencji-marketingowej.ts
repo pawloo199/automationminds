@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "W agencji marketingowej sporo czasu zespołu idzie na pracę, za którą klient nie płaci wprost: raporty, briefy, akceptacje, rozliczanie godzin. Opisujemy siedem procesów, od których agencje najczęściej zaczynają automatyzację, i podpowiadamy, jak wybrać pierwszy.",
   categories: ["agencje-marketingowe", "automatyzacja-procesow"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-03-24",
+  updatedAt: "2026-03-24",
   imageUrl: "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=1200&q=80",
   imageAlt: "Zespół agencji przy laptopie podczas przeglądu projektu",
   summary: [

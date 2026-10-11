@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "AI może przejąć sporą część żmudnej pracy rekrutera: przepisywanie CV, przeszukiwanie bazy, pisanie ogłoszeń i wiadomości. Jednocześnie rekrutacja to obszar, w którym błąd AI dotyka ludzi i może być dyskryminujący. Opisujemy, jak korzystać z AI, żeby przyspieszyć pracę i nie przekroczyć granicy.",
   categories: ["agencje-pracy", "ai-w-firmie"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-06-17",
+  updatedAt: "2026-06-17",
   imageUrl: "https://images.unsplash.com/photo-1698047681432-006d2449c631?w=1200&q=80",
   imageAlt: "Rekruterka czyta CV kandydata podczas rozmowy",
   summary: [

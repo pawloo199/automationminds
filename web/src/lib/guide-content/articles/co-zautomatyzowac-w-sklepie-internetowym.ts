@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Sklep internetowy rośnie, a razem z nim liczba wiadomości, zwrotów, produktów do opisania i kanałów do pilnowania. Opisujemy siedem procesów, od których sklepy najczęściej zaczynają automatyzację, i podpowiadamy, jak wybrać pierwszy.",
   categories: ["sklepy-internetowe", "automatyzacja-procesow"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-04-07",
+  updatedAt: "2026-04-07",
   imageUrl: "https://images.unsplash.com/photo-1449247666642-264389f5f5b1?w=1200&q=80",
   imageAlt: "Osoba trzyma karton z zamówieniem przygotowanym do wysyłki",
   summary: [

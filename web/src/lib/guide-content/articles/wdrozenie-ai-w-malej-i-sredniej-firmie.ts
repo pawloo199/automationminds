@@ -18,7 +18,7 @@ export default defineArticle({
     "Wdrożenie AI nie musi być wielkim projektem na rok. Pokazujemy plan na trzy miesiące, po których mała lub średnia firma ma pierwsze działające zastosowanie, zasady dla zespołu i twarde dane, czy warto iść dalej.",
   categories: ["ai-w-firmie", "audyt-i-koszty"],
   publishedAt: "2026-09-07",
-  updatedAt: "2026-09-30",
+  updatedAt: "2026-10-02",
   imageUrl:
     "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1200&q=80",
   imageAlt: "Rozmowa przy laptopie o planie wdrożenia w firmie",

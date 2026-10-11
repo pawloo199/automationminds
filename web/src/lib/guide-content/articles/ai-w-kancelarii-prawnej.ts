@@ -17,8 +17,8 @@ export default defineArticle({
   excerpt:
     "Sztuczna inteligencja zmienia pracę prawników szybciej niż wiele wcześniejszych technologii. Pokazujemy, gdzie AI realnie pomaga w kancelarii, gdzie są jego granice, jak chronić tajemnicę zawodową i jak zacząć bez ryzyka.",
   categories: ["kancelarie-prawne", "ai-w-firmie"],
-  publishedAt: "2026-10-05",
-  updatedAt: "2026-10-05",
+  publishedAt: "2026-03-06",
+  updatedAt: "2026-03-06",
   imageUrl: "https://images.unsplash.com/photo-1589994965851-a8f479c573a9?w=1200&q=80",
   imageAlt: "Posąg Temidy z wagą i mieczem jako symbol prawa",
   summary: [

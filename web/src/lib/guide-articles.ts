@@ -91,3 +91,34 @@ export {
   getGuideCategory,
 };
 export type { GuideCategory };
+
+/** Liczba kart na stronie listy (bez artykułu wyróżnionego). */
+export const GUIDE_PAGE_SIZE = 12;
+
+export function guideIndexPagePath(page: number): string {
+  return page <= 1 ? "/poradnik" : `/poradnik/strona/${page}`;
+}
+
+export function guideCategoryPagePath(slug: string, page: number): string {
+  return page <= 1
+    ? guideCategoryPath(slug)
+    : `${guideCategoryPath(slug)}/strona/${page}`;
+}
+
+/** Podział listy na strony: pierwszy element jest wyróżniony tylko na stronie 1. */
+export function paginateGuideArticles(articles: GuideArticle[], page: number) {
+  const [featured, ...rest] = articles;
+  const totalPages = Math.max(1, Math.ceil(rest.length / GUIDE_PAGE_SIZE));
+  const items = rest.slice(
+    (page - 1) * GUIDE_PAGE_SIZE,
+    page * GUIDE_PAGE_SIZE,
+  );
+  return { featured, items, totalPages };
+}
+
+/** Numer strony z segmentu adresu; null, gdy strona nie istnieje. */
+export function parseGuidePage(value: string, totalPages: number): number | null {
+  if (!/^[0-9]+$/.test(value)) return null;
+  const page = Number(value);
+  return page >= 2 && page <= totalPages ? page : null;
+}

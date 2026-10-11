@@ -17,7 +17,7 @@ export default defineArticle({
     "Wiedza firmy leży w segregatorach, skrzynkach mailowych, arkuszach i głowach pracowników. Pokazujemy, jak zebrać ją w jednym miejscu krok po kroku, tak żeby projekt nie utonął w skanowaniu wszystkiego, co jest w archiwum.",
   categories: ["dane-i-cyfryzacja", "airtable"],
   publishedAt: "2026-07-27",
-  updatedAt: "2026-09-30",
+  updatedAt: "2026-08-25",
   imageUrl:
     "https://images.unsplash.com/photo-1768158989131-64cbff67f292?w=1200&q=80",
   imageAlt: "Regały z kolorowymi segregatorami pełnymi dokumentów firmy",

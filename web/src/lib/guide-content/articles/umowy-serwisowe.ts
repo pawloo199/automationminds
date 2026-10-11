@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Umowy serwisowe dają firmie przewidywalny przychód, ale tylko wtedy, gdy są dobrze prowadzone. W wielu firmach przeglądy z umów umykają, prace poza zakresem nie są fakturowane, a nikt nie wie, które umowy są rentowne. Opisujemy, jak to uporządkować.",
   categories: ["firmy-serwisowe", "audyt-i-koszty"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-09-14",
+  updatedAt: "2026-09-14",
   imageUrl: "https://images.unsplash.com/photo-1642749776312-aa42ce20c9f5?w=1200&q=80",
   imageAlt: "Serwisanci przy urządzeniach na dachu budynku",
   summary: [

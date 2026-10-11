@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Klienci operatorów logistycznych oczekują regularnych raportów i wskaźników jakości usług. Opisujemy, jakie KPI warto mierzyć, jak je definiować, żeby nie było sporów, i jak automatyzować raporty, żeby nie zabierały opiekunom klientów całego tygodnia.",
   categories: ["firmy-logistyczne", "dane-i-cyfryzacja"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-08-28",
+  updatedAt: "2026-08-28",
   imageUrl: "https://images.unsplash.com/photo-1672552226380-486fe900b322?w=1200&q=80",
   imageAlt: "Magazyn z kartonami i paletami",
   summary: [

@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "W firmie budowlanej informacje krążą między budową a biurem przez telefony, maile i komunikatory, a część z nich ginie po drodze. Opisujemy siedem procesów, od których firmy budowlane najczęściej zaczynają automatyzację, i podpowiadamy, jak wybrać pierwszy.",
   categories: ["firmy-budowlane", "automatyzacja-procesow"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-04-03",
+  updatedAt: "2026-04-03",
   imageUrl: "https://images.unsplash.com/photo-1768677903496-becc4be07258?w=1200&q=80",
   imageAlt: "Pracownik sprawdza zbrojenie na budowie",
   summary: [

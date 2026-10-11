@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Przy kilku mieszkaniach arkusz i telefon wystarczają. Przy kilkudziesięciu zarządca spędza dni na dopasowywaniu wpłat, odbieraniu zgłoszeń i składaniu rozliczeń dla właścicieli. Opisujemy, jak poukładać zarządzanie najmem, żeby rosło razem z liczbą lokali.",
   categories: ["nieruchomosci", "automatyzacja-procesow"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-09-08",
+  updatedAt: "2026-09-08",
   imageUrl: "https://images.unsplash.com/photo-1624204386084-dd8c05e32226?w=1200&q=80",
   imageAlt: "Nowoczesny budynek mieszkalny z balkonami",
   summary: [

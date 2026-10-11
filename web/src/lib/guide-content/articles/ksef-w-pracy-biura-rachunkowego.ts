@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "KSeF zmienił sposób, w jaki faktury trafiają do biura, ale nie usunął pracy z dokumentami. Opisujemy, jak zorganizować pracę biura z KSeF dla wielu klientów i które elementy warto zautomatyzować.",
   categories: ["biura-rachunkowe", "narzedzia-i-integracje"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-08-25",
+  updatedAt: "2026-08-25",
   imageUrl: "https://images.unsplash.com/photo-1554224155-3a58922a22c3?w=1200&q=80",
   imageAlt: "Stos białych dokumentów na biurku",
   summary: [

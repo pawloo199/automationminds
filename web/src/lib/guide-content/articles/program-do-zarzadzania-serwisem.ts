@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Wiele firm serwisowych zaczyna porządkowanie pracy od zakupu programu. Czasem to dobry wybór, czasem po roku firma nadal przepisuje dane, tylko w innym miejscu. Opisujemy, jak podjąć tę decyzję i jak połączyć gotowy program z automatyzacją.",
   categories: ["firmy-serwisowe", "narzedzia-i-integracje"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-07-22",
+  updatedAt: "2026-07-22",
   imageUrl: "https://images.unsplash.com/photo-1660330589827-da8ab7dd3c02?w=1200&q=80",
   imageAlt: "Technik pracuje przy liczniku elektrycznym",
   summary: [

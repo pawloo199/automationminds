@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "CRM w biurze nieruchomości często jest jednocześnie wszystkim i niczym: zawiera oferty, klientów i notatki, ale każdy agent prowadzi go po swojemu. Opisujemy, jak go uporządkować, jakie dane są potrzebne do automatyzacji i kiedy warto rozważyć zmianę systemu.",
   categories: ["nieruchomosci", "dane-i-cyfryzacja"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-07-16",
+  updatedAt: "2026-07-16",
   imageUrl: "https://images.unsplash.com/photo-1628592102751-ba83b0314276?w=1200&q=80",
   imageAlt: "Nowoczesny salon w mieszkaniu przygotowanym do prezentacji",
   summary: [

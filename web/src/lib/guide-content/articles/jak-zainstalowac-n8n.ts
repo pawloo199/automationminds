@@ -18,8 +18,8 @@ export default defineArticle({
   excerpt:
     "Uruchomienie n8n na próbę zajmuje kilka minut. Instalacja, na której firma może bezpiecznie oprzeć procesy, wymaga kilku dodatkowych kroków. Pokazujemy oba warianty: szybki test w Dockerze i instalację produkcyjną z bazą PostgreSQL, HTTPS i kopiami zapasowymi.",
   categories: ["narzedzia-i-integracje"],
-  publishedAt: "2026-10-05",
-  updatedAt: "2026-10-05",
+  publishedAt: "2026-10-08",
+  updatedAt: "2026-10-08",
   imageUrl:
     "https://images.unsplash.com/photo-1762163516269-3c143e04175c?w=1200&q=80",
   imageAlt: "Szafa serwerowa z kontrolkami w centrum danych",

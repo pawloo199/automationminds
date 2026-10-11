@@ -18,7 +18,7 @@ export default defineArticle({
     "Zapytanie od klienta traci wartość z każdą godziną bez odpowiedzi. Pokazujemy, jak poukładać drogę leada od formularza do rozmowy handlowej, żeby nic nie ginęło, a handlowcy nie tracili czasu na przepisywanie.",
   categories: ["automatyzacja-procesow"],
   publishedAt: "2026-03-28",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-07-07",
   imageUrl:
     "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1200&q=80",
   imageAlt: "Handlowcy rozmawiający przy laptopie w biurze",

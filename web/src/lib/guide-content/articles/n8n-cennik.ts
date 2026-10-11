@@ -18,8 +18,8 @@ export default defineArticle({
   excerpt:
     "Cennik n8n na stronie producenta to tylko część kosztów. Pokazujemy, z czego składa się pełny koszt n8n w firmie: plan w chmurze lub serwer, modele AI, wdrożenie i utrzymanie, i jak oszacować go przed decyzją.",
   categories: ["narzedzia-i-integracje", "audyt-i-koszty"],
-  publishedAt: "2026-10-05",
-  updatedAt: "2026-10-05",
+  publishedAt: "2026-06-25",
+  updatedAt: "2026-06-25",
   imageUrl:
     "https://images.unsplash.com/photo-1711606815631-38d32cdaec3e?w=1200&q=80",
   imageAlt: "Kalkulator obok laptopa na biurku podczas planowania kosztów",

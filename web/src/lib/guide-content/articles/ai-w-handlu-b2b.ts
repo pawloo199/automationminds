@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Hurtownie pracują na tysiącach produktów i ogromnej liczbie maili, a to dokładnie ten rodzaj pracy, w którym AI daje dziś wyraźny efekt. Opisujemy, gdzie AI pomaga w handlu B2B, gdzie się myli i jak zacząć z niego korzystać.",
   categories: ["hurtownie-i-dystrybucja", "ai-w-firmie"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-05-18",
+  updatedAt: "2026-05-18",
   imageUrl: "https://images.unsplash.com/photo-1616587896595-51352538155b?w=1200&q=80",
   imageAlt: "Spotkanie handlowe przy laptopie w biurze",
   summary: [

@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Agent ubezpieczeniowy zarabia na doradztwie i relacjach, a dużą część dnia spędza na przepisywaniu danych, szukaniu polis i rozliczeniach. Opisujemy siedem procesów, od których agencje i brokerzy najczęściej zaczynają automatyzację, i podpowiadamy, jak wybrać pierwszy.",
   categories: ["posrednictwo-ubezpieczeniowe", "automatyzacja-procesow"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-03-30",
+  updatedAt: "2026-03-30",
   imageUrl: "https://images.unsplash.com/photo-1551836022-4c4c79ecde51?w=1200&q=80",
   imageAlt: "Agentka rozmawia z klientką przy stole w biurze",
   summary: [

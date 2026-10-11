@@ -22,7 +22,7 @@ export default defineArticle({
     "Transformacja cyfrowa kojarzy się z korporacjami i wieloletnimi programami. W małej i średniej firmie wygląda inaczej: to seria konkretnych zmian w procesach, danych i narzędziach. Wyjaśniamy, co to jest, pokazujemy przykłady i plan, od którego można zacząć.",
   categories: ["dane-i-cyfryzacja", "automatyzacja-procesow"],
   publishedAt: "2026-03-02",
-  updatedAt: "2026-10-02",
+  updatedAt: "2026-04-08",
   imageUrl:
     "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80",
   imageAlt: "Zespół pracujący razem przy laptopach nad projektem w firmie",

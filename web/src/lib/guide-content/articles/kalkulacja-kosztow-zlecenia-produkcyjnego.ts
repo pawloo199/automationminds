@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "W zakładach produkujących na zamówienie każda oferta zaczyna się od kalkulacji. Gdy jest liczona od zera, oferta wychodzi późno, a gdy na wyczucie, część zleceń przynosi stratę. Opisujemy, z czego składa się koszt zlecenia, skąd brać dane i jak połączyć kalkulację z rzeczywistym wykonaniem.",
   categories: ["zaklady-produkcyjne", "audyt-i-koszty"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-08-14",
+  updatedAt: "2026-08-14",
   imageUrl: "https://images.unsplash.com/photo-1740209475472-aa7d280f7452?w=1200&q=80",
   imageAlt: "Obróbka aluminiowego detalu na frezarce CNC",
   summary: [

@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Klient agencji pracy oczekuje ludzi na konkretny dzień. Agencja, która obsadza zlecenia szybciej i pewniej, dostaje kolejne. Opisujemy, gdzie w procesie obsadzania traci się najwięcej czasu i jak to zmienić.",
   categories: ["agencje-pracy", "automatyzacja-procesow"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-10-01",
+  updatedAt: "2026-10-01",
   imageUrl: "https://images.unsplash.com/photo-1698047682091-782b1e5c6536?w=1200&q=80",
   imageAlt: "Kandydatka podaje rękę rekruterce po rozmowie",
   summary: [

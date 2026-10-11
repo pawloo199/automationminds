@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "W firmie logistycznej towar porusza się według planu, ale wokół niego biuro przepisuje zlecenia, ustala awizacje, składa raporty i liczy rozliczenia. Opisujemy siedem procesów, od których firmy logistyczne najczęściej zaczynają automatyzację.",
   categories: ["firmy-logistyczne", "automatyzacja-procesow"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-03-18",
+  updatedAt: "2026-03-18",
   imageUrl: "https://images.unsplash.com/photo-1684695749267-233af13276d0?w=1200&q=80",
   imageAlt: "Duży magazyn wypełniony kartonami",
   summary: [

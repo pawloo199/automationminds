@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Wiele hurtowni wdraża platformę B2B, a i tak dostaje dużą część zamówień mailem. Wyjaśniamy, kiedy platforma B2B jest dobrym wyborem, kiedy lepiej sprawdzi się automatyzacja zamówień z maili i jak połączyć oba rozwiązania.",
   categories: ["hurtownie-i-dystrybucja", "narzedzia-i-integracje"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-07-10",
+  updatedAt: "2026-07-10",
   imageUrl: "https://images.unsplash.com/photo-1560250056-07ba64664864?w=1200&q=80",
   imageAlt: "Osoba pracująca na laptopie",
   summary: [

@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Agent nieruchomości zarabia na transakcjach, a dużą część dnia spędza na przepisywaniu zapytań, umawianiu prezentacji i przygotowywaniu dokumentów. Opisujemy siedem procesów, od których biura i zarządcy najmu najczęściej zaczynają automatyzację, i podpowiadamy, jak wybrać pierwszy.",
   categories: ["nieruchomosci", "automatyzacja-procesow"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-03-27",
+  updatedAt: "2026-03-27",
   imageUrl: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80",
   imageAlt: "Miniatura domu na biurku agenta nieruchomości",
   summary: [

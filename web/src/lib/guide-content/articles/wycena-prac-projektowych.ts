@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Wiele biur projektowych wycenia projekty na wyczucie albo na podstawie ceny z poprzedniej oferty. Efekt widać dopiero po zakończeniu projektu, gdy okazuje się, że godzin było znacznie więcej, niż zakładała oferta. Opisujemy, jak wyceniać prace projektowe na podstawie danych i jak opisać zakres, żeby prace dodatkowe dało się rozliczyć.",
   categories: ["biura-projektowe", "automatyzacja-procesow"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-08-12",
+  updatedAt: "2026-08-12",
   imageUrl: "https://images.unsplash.com/photo-1782290546834-29fdbd9326b5?w=1200&q=80",
   imageAlt: "Plany projektowe i kalkulator na biurku",
   summary: [

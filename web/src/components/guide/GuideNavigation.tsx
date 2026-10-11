@@ -1,5 +1,4 @@
 import type { GuideAuthor } from "@/lib/airtable.types";
-import { cn } from "@/lib/cn";
 import { CONSULTATION_OFFER } from "@/lib/consultation-offer";
 import {
   guideCategoryPath,
@@ -7,8 +6,9 @@ import {
 } from "@/lib/guide-articles";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+import { GuideCategoryChips as GuideCategoryChipsClient } from "./GuideCategoryChips";
 
-/** Chipy tematów: nawigacja i linkowanie do stron kategorii. */
+/** Chipy tematów: tematy ogólne widoczne, branżowe pod jednym przyciskiem. */
 export function GuideCategoryChips({
   categories,
   activeSlug,
@@ -20,54 +20,21 @@ export function GuideCategoryChips({
   totalCount: number;
   align?: "center" | "left";
 }) {
-  const chip = (active: boolean) =>
-    cn(
-      "inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-full border px-4 py-2 text-sm font-medium transition",
-      active
-        ? "border-brand bg-brand text-white"
-        : "border-brand/15 bg-white text-dark hover:border-brand/40 hover:text-brand",
-    );
-  const count = (active: boolean) =>
-    cn(
-      "rounded-full px-1.5 text-xs",
-      active ? "bg-white/20" : "bg-surface text-muted",
-    );
-
+  const toChip = ({ slug, name, count }: GuideCategoryWithCount) => ({
+    slug,
+    name,
+    count,
+  });
   return (
-    <nav aria-label="Tematy Poradnika">
-      <ul
-        className={cn(
-          "flex gap-2 overflow-x-auto pb-2 [scrollbar-width:none] sm:flex-wrap sm:overflow-visible sm:pb-0 [&::-webkit-scrollbar]:hidden",
-          align === "center" ? "sm:justify-center" : "sm:justify-start",
-        )}
-      >
-        <li>
-          <Link
-            href="/poradnik"
-            className={chip(!activeSlug)}
-            aria-current={!activeSlug ? "page" : undefined}
-          >
-            Wszystkie
-            <span className={count(!activeSlug)}>{totalCount}</span>
-          </Link>
-        </li>
-        {categories.map((category) => {
-          const active = category.slug === activeSlug;
-          return (
-            <li key={category.slug}>
-              <Link
-                href={guideCategoryPath(category.slug)}
-                className={chip(active)}
-                aria-current={active ? "page" : undefined}
-              >
-                {category.name}
-                <span className={count(active)}>{category.count}</span>
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
-    </nav>
+    <GuideCategoryChipsClient
+      topics={categories.filter((category) => category.inMenu).map(toChip)}
+      industries={categories
+        .filter((category) => !category.inMenu)
+        .map(toChip)}
+      activeSlug={activeSlug}
+      totalCount={totalCount}
+      align={align}
+    />
   );
 }
 
@@ -81,40 +48,68 @@ function articlesLabel(count: number) {
   return "artykułów";
 }
 
-/** Kafelki tematów z opisem: huby tematyczne na stronie Poradnika. */
+/** Kafelki tematów ogólnych i zwarta lista poradników branżowych. */
 export function GuideCategoryTiles({
   categories,
 }: {
   categories: GuideCategoryWithCount[];
 }) {
+  const topics = categories.filter((category) => category.inMenu);
+  const industries = categories.filter((category) => !category.inMenu);
+
   return (
-    <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      {categories.map((category) => (
-        <li key={category.slug}>
-          <Link
-            href={guideCategoryPath(category.slug)}
-            className="group flex h-full flex-col rounded-2xl border border-brand/10 bg-white p-6 transition hover:-translate-y-0.5 hover:border-brand/30 hover:shadow-md"
-          >
-            <span className="text-xs font-semibold uppercase tracking-wide text-brand">
-              {category.count} {articlesLabel(category.count)}
-            </span>
-            <h3 className="mt-2 text-lg font-bold text-dark group-hover:text-brand">
-              {category.name}
-            </h3>
-            <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">
-              {category.shortDescription}
-            </p>
-            <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand">
-              Zobacz artykuły
-              <ArrowUpRight
-                className="h-4 w-4 transition group-hover:translate-x-0.5"
-                aria-hidden
-              />
-            </span>
-          </Link>
-        </li>
-      ))}
-    </ul>
+    <>
+      <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {topics.map((category) => (
+          <li key={category.slug}>
+            <Link
+              href={guideCategoryPath(category.slug)}
+              className="group flex h-full flex-col rounded-2xl border border-brand/10 bg-white p-6 transition hover:-translate-y-0.5 hover:border-brand/30 hover:shadow-md"
+            >
+              <span className="text-xs font-semibold uppercase tracking-wide text-brand">
+                {category.count} {articlesLabel(category.count)}
+              </span>
+              <h3 className="mt-2 text-lg font-bold text-dark group-hover:text-brand">
+                {category.name}
+              </h3>
+              <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">
+                {category.shortDescription}
+              </p>
+              <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand">
+                Zobacz artykuły
+                <ArrowUpRight
+                  className="h-4 w-4 transition group-hover:translate-x-0.5"
+                  aria-hidden
+                />
+              </span>
+            </Link>
+          </li>
+        ))}
+      </ul>
+      {industries.length > 0 ? (
+        <div className="mt-10">
+          <h3 className="text-lg font-bold text-dark">Poradniki branżowe</h3>
+          <p className="mt-1 text-sm text-muted">
+            Artykuły o procesach i AI w konkretnych branżach.
+          </p>
+          <ul className="mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
+            {industries.map((category) => (
+              <li key={category.slug}>
+                <Link
+                  href={guideCategoryPath(category.slug)}
+                  className="group flex h-full items-center justify-between gap-3 rounded-xl border border-brand/10 bg-white px-4 py-3 text-sm font-medium text-dark transition hover:border-brand/30 hover:text-brand"
+                >
+                  <span>{category.name}</span>
+                  <span className="shrink-0 text-xs text-muted">
+                    {category.count} {articlesLabel(category.count)}
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+    </>
   );
 }
 

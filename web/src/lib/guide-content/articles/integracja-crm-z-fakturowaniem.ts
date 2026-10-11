@@ -17,7 +17,7 @@ export default defineArticle({
     "Gdy sprzedaż i księgowość pracują na tych samych danych, znika przepisywanie, spada liczba błędów na fakturach, a handlowiec widzi, czy klient zapłacił. Pokazujemy, jak to poukładać.",
   categories: ["narzedzia-i-integracje", "automatyzacja-procesow"],
   publishedAt: "2026-05-28",
-  updatedAt: "2026-09-30",
+  updatedAt: "2026-10-09",
   imageUrl:
     "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80",
   imageAlt: "Faktury i wydruki finansowe na biurku obok kalkulatora",

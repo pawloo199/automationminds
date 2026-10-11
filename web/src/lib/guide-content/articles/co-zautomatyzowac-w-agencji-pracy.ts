@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "W agencji pracy administracja rośnie razem z liczbą kandydatów, pracowników i klientów. Opisujemy siedem procesów, od których agencje najczęściej zaczynają automatyzację, i granice, których nie warto przekraczać.",
   categories: ["agencje-pracy", "automatyzacja-procesow"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-04-16",
+  updatedAt: "2026-04-16",
   imageUrl: "https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=1200&q=80",
   imageAlt: "Rekruterka rozmawia z kandydatką w biurze",
   summary: [

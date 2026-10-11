@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "W biurze projektowym projektanci spędzają dużą część czasu poza projektowaniem: na ofertach, terminach, wersjach dokumentacji, uzgodnieniach i rozliczeniach. Opisujemy siedem procesów, od których biura najczęściej zaczynają automatyzację, i podpowiadamy, jak wybrać pierwszy.",
   categories: ["biura-projektowe", "automatyzacja-procesow"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-04-21",
+  updatedAt: "2026-04-21",
   imageUrl: "https://images.unsplash.com/photo-1748050868733-f5db24b7e154?w=1200&q=80",
   imageAlt: "Jasne biuro projektowe z biurkami i komputerami",
   summary: [

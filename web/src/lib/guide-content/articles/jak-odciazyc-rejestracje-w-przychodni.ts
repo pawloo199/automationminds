@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Rejestracja w przychodni jednocześnie odbiera telefony, obsługuje pacjentów przy okienku i odpowiada na maile. Gdy pacjentów przybywa, coś musi ustąpić, a najczęściej ustępuje telefon. Opisujemy, skąd bierze się obciążenie rejestracji i jak je zmniejszyć, krok po kroku.",
   categories: ["placowki-medyczne", "automatyzacja-procesow"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-09-24",
+  updatedAt: "2026-09-24",
   imageUrl: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&q=80",
   imageAlt: "Rejestracja w holu placówki medycznej",
   summary: [

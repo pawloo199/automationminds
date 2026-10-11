@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "AI w e-commerce kojarzy się z chatbotem na stronie, ale najwięcej dają zastosowania, których klient nie widzi: dane produktów, kategoryzacja zgłoszeń, analiza opinii i zwrotów. Opisujemy, co działa w praktyce, gdzie są granice i od czego zacząć.",
   categories: ["sklepy-internetowe", "ai-w-firmie"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-06-05",
+  updatedAt: "2026-06-05",
   imageUrl: "https://images.unsplash.com/photo-1770013413878-2530e2c3d82b?w=1200&q=80",
   imageAlt: "Właścicielka sklepu internetowego sprawdza paczkę z telefonem w ręku",
   summary: [

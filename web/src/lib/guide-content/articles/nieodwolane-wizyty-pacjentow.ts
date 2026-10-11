@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Pacjent, który nie przyszedł i nie odwołał wizyty, to pusty termin, na który czekał ktoś inny. Opisujemy, dlaczego tak się dzieje, jakie rozwiązania organizacyjne pomagają i jak zautomatyzować przypomnienia i listę oczekujących.",
   categories: ["placowki-medyczne", "automatyzacja-procesow"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-07-31",
+  updatedAt: "2026-07-31",
   imageUrl: "https://images.unsplash.com/photo-1629909614456-6b1c5c94cecc?w=1200&q=80",
   imageAlt: "Pusta poczekalnia w placówce medycznej",
   summary: [

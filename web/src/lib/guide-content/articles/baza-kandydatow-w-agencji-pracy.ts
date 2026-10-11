@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Wiele agencji ma bazę z tysiącami kandydatów, a mimo to dla każdego zlecenia publikuje nowe ogłoszenie. Powód jest prosty: bazy nie da się przeszukać. Opisujemy, jak ją uporządkować, utrzymać aktualną i zgodną z zasadami ochrony danych.",
   categories: ["agencje-pracy", "dane-i-cyfryzacja"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-08-07",
+  updatedAt: "2026-08-07",
   imageUrl: "https://images.unsplash.com/photo-1573497491208-6b1acb260507?w=1200&q=80",
   imageAlt: "Dwie osoby rozmawiają przy stole podczas spotkania rekrutacyjnego",
   summary: [

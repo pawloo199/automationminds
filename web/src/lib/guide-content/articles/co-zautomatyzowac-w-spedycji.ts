@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Spedytorzy spędzają dużą część dnia na przepisywaniu danych między mailami, arkuszami, TMS i fakturami. Opisujemy siedem procesów, od których firmy spedycyjne najczęściej zaczynają automatyzację, i podpowiadamy, jak wybrać pierwszy.",
   categories: ["spedycja", "automatyzacja-procesow"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-03-16",
+  updatedAt: "2026-03-16",
   imageUrl: "https://images.unsplash.com/photo-1670509295484-df0c2512fec4?w=1200&q=80",
   imageAlt: "Ciężarówka na drodze",
   summary: [

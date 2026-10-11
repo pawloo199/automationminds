@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "W hurtowni sporo czasu handlowców i biura zabiera praca, która nie wymaga wiedzy handlowej: przepisywanie zamówień, składanie ofert, pilnowanie dostaw i płatności. Opisujemy siedem procesów, od których firmy handlowe B2B najczęściej zaczynają automatyzację.",
   categories: ["hurtownie-i-dystrybucja", "automatyzacja-procesow"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-03-20",
+  updatedAt: "2026-03-20",
   imageUrl: "https://images.unsplash.com/photo-1700165644892-3dd6b67b25bc?w=1200&q=80",
   imageAlt: "Otwarte kartony z towarem",
   summary: [

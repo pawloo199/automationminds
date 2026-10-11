@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Filtry, które nie działają, opisy skopiowane od producenta, produkty w złej kategorii i różne dane w różnych kanałach: to objawy nieuporządkowanych danych produktowych. Opisujemy, jak je uporządkować, jak utrzymać porządek przy kolejnych dostawach i gdzie pomaga AI.",
   categories: ["sklepy-internetowe", "dane-i-cyfryzacja"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-09-22",
+  updatedAt: "2026-09-22",
   imageUrl: "https://images.unsplash.com/photo-1631010231130-5c7828d9a3a7?w=1200&q=80",
   imageAlt: "Kartonowe pudełko z produktem na jasnym stole",
   summary: [

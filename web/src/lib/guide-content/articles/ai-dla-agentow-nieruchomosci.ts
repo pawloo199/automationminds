@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Agenci nieruchomości coraz częściej korzystają z AI, zwykle na własną rękę i bez zasad. Opisujemy, w czym AI pomaga agentowi najbardziej, gdzie popełnia błędy i jak biuro może wprowadzić je tak, żeby nie ryzykować danych klientów ani reputacji.",
   categories: ["nieruchomosci", "ai-w-firmie"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-05-22",
+  updatedAt: "2026-05-22",
   imageUrl: "https://images.unsplash.com/photo-1741156386380-0236c72eb6f9?w=1200&q=80",
   imageAlt: "Agent nieruchomości trzyma klucze do mieszkania przed wejściem",
   summary: [

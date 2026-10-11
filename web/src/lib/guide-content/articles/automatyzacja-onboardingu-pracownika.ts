@@ -17,7 +17,7 @@ export default defineArticle({
     "Pierwsze dni w nowej pracy często mijają na czekaniu na laptopa i dostępy. Pokazujemy, jak poukładać onboarding tak, żeby pilnował się sam, bez wdrażania drogiego systemu HR.",
   categories: ["automatyzacja-procesow"],
   publishedAt: "2026-05-20",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-07-31",
   imageUrl:
     "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1200&q=80",
   imageAlt: "Rozmowa powitalna z nową osobą w zespole",

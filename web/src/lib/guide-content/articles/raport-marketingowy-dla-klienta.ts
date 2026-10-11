@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Raport dla klienta to dla agencji okazja, żeby pokazać wartość swojej pracy. W wielu agencjach to jednak kilka godzin kopiowania liczb i niewiele czasu na wnioski. Opisujemy, co powinien zawierać dobry raport i jak zautomatyzować jego przygotowanie.",
   categories: ["agencje-marketingowe", "dane-i-cyfryzacja"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-07-14",
+  updatedAt: "2026-07-14",
   imageUrl: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=1200&q=80",
   imageAlt: "Raport z danymi na ekranie laptopa",
   summary: [

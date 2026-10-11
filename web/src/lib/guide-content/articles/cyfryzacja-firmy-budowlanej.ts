@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Cyfryzacja w budownictwie często kończy się zakupem programu, z którego korzysta połowa zespołu. Opisujemy, jak podejść do niej krok po kroku: od uporządkowania danych i dokumentów, przez formularze na budowie, po połączenie narzędzi.",
   categories: ["firmy-budowlane", "dane-i-cyfryzacja"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-09-17",
+  updatedAt: "2026-09-17",
   imageUrl: "https://images.unsplash.com/photo-1664662568348-24b1482b6354?w=1200&q=80",
   imageAlt: "Pracownik budowy na drabinie przy konstrukcji",
   summary: [

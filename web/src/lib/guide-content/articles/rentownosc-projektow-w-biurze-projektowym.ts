@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "Biuro projektowe może mieć pełny portfel zleceń i słaby wynik, bo część projektów przynosi stratę, o której nikt nie wie do końca roku. Opisujemy, jak liczyć rentowność każdego projektu w trakcie jego trwania, jakich danych do tego potrzeba i jak je zbierać bez dodatkowej pracy projektantów.",
   categories: ["biura-projektowe", "audyt-i-koszty"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-10-02",
+  updatedAt: "2026-10-02",
   imageUrl: "https://images.unsplash.com/photo-1748050869948-a03ab08682fd?w=1200&q=80",
   imageAlt: "Zespół biura projektowego przy komputerach",
   summary: [

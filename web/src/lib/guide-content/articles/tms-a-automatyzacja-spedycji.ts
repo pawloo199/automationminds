@@ -16,8 +16,8 @@ export default defineArticle({
   excerpt:
     "TMS jest sercem pracy firmy spedycyjnej, ale rzadko obejmuje wszystko. Wyjaśniamy, co zwykle robi TMS, czego brakuje i jak łączyć go z pocztą, AI, KSeF i księgowością, żeby spedytorzy nie przepisywali danych.",
   categories: ["spedycja", "narzedzia-i-integracje"],
-  publishedAt: "2026-10-11",
-  updatedAt: "2026-10-11",
+  publishedAt: "2026-08-27",
+  updatedAt: "2026-08-27",
   imageUrl: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&q=80",
   imageAlt: "Statki z kontenerami przy nabrzeżu",
   summary: [
