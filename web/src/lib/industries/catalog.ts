@@ -1,4 +1,4 @@
-import { Calculator, Scale, Store, Truck, Warehouse } from "lucide-react";
+import { Calculator, Megaphone, Scale, Store, Truck, Warehouse } from "lucide-react";
 import type { IndustryEntry } from "./types";
 
 export const INDUSTRIES_HUB_PATH = "/branze";
@@ -95,6 +95,23 @@ export const INDUSTRIES: IndustryEntry[] = [
       formBody: "Opowiedz, jak dziś pracuje firma i co zabiera handlowcom i biuru najwięcej czasu. W 30 minut wskażemy, od czego zacząć i co da się połączyć z waszym ERP.",
       processesTitle: "Procesy, które automatyzujemy w hurtowniach",
       solutionsTitle: "Rozwiązania dla hurtowni i dystrybutorów",
+    },
+  },
+  {
+    slug: "agencje-marketingowe",
+    name: "Agencje marketingowe",
+    summary: "Automatyzacja i AI dla agencji marketingowych, reklamowych i interaktywnych: briefy i wyceny, raporty dla klientów, akceptacje, treści, projekty i rentowność.",
+    icon: Megaphone,
+    status: "live",
+    mainPageLabel: "Automatyzacja agencji marketingowej",
+    featuredCitySlugs: ["warszawa", "krakow", "wroclaw", "poznan", "gdansk", "lodz", "katowice", "szczecin", "lublin"],
+    cta: {
+      midTitle: "Porozmawiajmy o waszej agencji",
+      midBody: "W 30 minut przejdziemy przez to, co zabiera zespołowi czas poza pracą kreatywną, i powiemy, od czego zacząć. Rozmowa jest bezpłatna i do niczego nie zobowiązuje.",
+      formTitle: "Porozmawiajmy o automatyzacji agencji",
+      formBody: "Opowiedz, jak dziś pracuje agencja i co zabiera zespołowi najwięcej czasu. W 30 minut wskażemy, od czego zacząć i jak bezpiecznie korzystać z AI.",
+      processesTitle: "Procesy, które automatyzujemy w agencjach",
+      solutionsTitle: "Rozwiązania dla agencji marketingowych",
     },
   },
 ];

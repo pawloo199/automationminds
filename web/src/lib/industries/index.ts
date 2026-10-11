@@ -44,6 +44,14 @@ import { hurtowniePracaHandlowcow } from "./content/hurtownie-praca-handlowcow";
 import { hurtownieZakupyUDostawcow } from "./content/hurtownie-zakupy-u-dostawcow";
 import { hurtownieReklamacjeIZwroty } from "./content/hurtownie-reklamacje-i-zwroty";
 import { hurtownieNaleznosciILimity } from "./content/hurtownie-naleznosci-i-limity";
+import { agencjeMarketingowe } from "./content/agencje-marketingowe";
+import { agencjeMarketingoweAi } from "./content/agencje-marketingowe-ai";
+import { agencjeRaportyDlaKlientow } from "./content/agencje-raporty-dla-klientow";
+import { agencjeBriefyIWyceny } from "./content/agencje-briefy-i-wyceny";
+import { agencjeAkceptacjeMaterialow } from "./content/agencje-akceptacje-materialow";
+import { agencjeTresciZAi } from "./content/agencje-tresci-z-ai";
+import { agencjeProjektyIRentownosc } from "./content/agencje-projekty-i-rentownosc";
+import { agencjeOnboardingKlientow } from "./content/agencje-onboarding-klientow";
 import type { IndustryPageContent } from "./types";
 
 export * from "./catalog";
@@ -91,6 +99,14 @@ const INDUSTRY_PAGES: IndustryPageContent[] = [
   hurtownieZakupyUDostawcow,
   hurtownieReklamacjeIZwroty,
   hurtownieNaleznosciILimity,
+  agencjeMarketingowe,
+  agencjeMarketingoweAi,
+  agencjeRaportyDlaKlientow,
+  agencjeBriefyIWyceny,
+  agencjeAkceptacjeMaterialow,
+  agencjeTresciZAi,
+  agencjeProjektyIRentownosc,
+  agencjeOnboardingKlientow,
 ];
 
 export function industryPagePath(page: IndustryPageContent) {
