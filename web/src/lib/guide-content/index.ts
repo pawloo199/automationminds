@@ -34,6 +34,10 @@ import rodoAAutomatyzacjaProcesow from "./articles/rodo-a-automatyzacja-procesow
 import transformacjaCyfrowaFirmy from "./articles/transformacja-cyfrowa-firmy";
 import wdrozenieAiWMalejISredniejFirmie from "./articles/wdrozenie-ai-w-malej-i-sredniej-firmie";
 
+import coZautomatyzowacWSpedycji from "./articles/co-zautomatyzowac-w-spedycji";
+import aiDlaSpedytorow from "./articles/ai-dla-spedytorow";
+import jakSprawdzicPrzewoznika from "./articles/jak-sprawdzic-przewoznika";
+import tmsAAutomatyzacjaSpedycji from "./articles/tms-a-automatyzacja-spedycji";
 /** Wszystkie artykuły Poradnika, od najnowszego. */
 export const guideArticles: GuideArticle[] = [
   procesowDoAutomatyzacjiWMalejFirmie,
@@ -70,6 +74,10 @@ export const guideArticles: GuideArticle[] = [
   rodoAAutomatyzacjaProcesow,
   transformacjaCyfrowaFirmy,
   wdrozenieAiWMalejISredniejFirmie,
+  coZautomatyzowacWSpedycji,
+  aiDlaSpedytorow,
+  jakSprawdzicPrzewoznika,
+  tmsAAutomatyzacjaSpedycji,
 ].sort(
   (a, b) =>
     new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),

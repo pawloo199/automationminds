@@ -9,6 +9,7 @@ export const GUIDE_CATEGORY_SLUGS = [
   "narzedzia-i-integracje",
   "kancelarie-prawne",
   "biura-rachunkowe",
+  "spedycja",
 ] as const;
 
 export type GuideCategorySlug = (typeof GUIDE_CATEGORY_SLUGS)[number];
@@ -361,6 +362,40 @@ export const guideCategories: GuideCategory[] = [
     cta: {
       title: "Chcecie wdrożyć AI lub automatyzację w biurze?",
       body: "Porozmawiajmy o tym, co zabiera wam najwięcej czasu. Wskażemy, od czego zacząć i jak zadbać o bezpieczeństwo danych klientów.",
+    },
+    inMenu: false,
+  },
+  {
+    slug: "spedycja",
+    name: "Spedycja",
+    title: "AI i automatyzacja w spedycji. Poradnik dla spedytorów",
+    metaTitle: "AI i automatyzacja w spedycji. Poradnik",
+    metaDescription:
+      "Jak firmy spedycyjne mogą korzystać z AI i automatyzacji: procesy na początek, weryfikacja przewoźników, TMS i integracje oraz AI w pracy spedytora.",
+    shortDescription:
+      "Jak firmy spedycyjne mogą pracować szybciej dzięki automatyzacji i AI, bez utraty kontroli nad zleceniami.",
+    lead: "Artykuły dla właścicieli firm spedycyjnych, kierowników spedycji i spedytorów, którzy chcą mniej czasu spędzać na przepisywaniu danych i szukaniu dokumentów, a więcej na klientach i przewoźnikach. Piszemy z perspektywy wdrożeń w spedycji.",
+    about: [
+      "Spedycja to praca na danych, które krążą między klientem, spedytorem i przewoźnikiem. Zapytania, zlecenia, statusy, dokumenty i faktury przechodzą przez wiele rąk i systemów, a każde przepisanie to czas i ryzyko błędu.",
+      "W tej części Poradnika opisujemy, które procesy w spedycji warto zautomatyzować najpierw, jak sprawdzać przewoźników, jak łączyć TMS z innymi systemami i jak AI pomaga spedytorom w codziennej pracy.",
+      "Jeśli szukacie konkretnych rozwiązań i przebiegu wdrożenia, zajrzyjcie także na stronę automatyzacji spedycji w części Branże.",
+    ],
+    faq: [
+      {
+        question: "Co w spedycji da się zautomatyzować?",
+        answer:
+          "Najczęściej odczyt zapytań i wyceny, zlecenia dla przewoźników, weryfikację przewoźników, statusy dla klientów, obieg CMR i innych dokumentów oraz rozliczenia frachtu.",
+      },
+      {
+        question: "Czy automatyzacja wymaga zmiany TMS?",
+        answer:
+          "Zwykle nie. Automatyzacje buduje się obok TMS i łączy z nim przez API, import i eksport plików albo pocztę, zależnie od możliwości systemu.",
+      },
+    ],
+    relatedServiceSlugs: ["automatyzacja-dla-logistyki", "integracje-systemow", "ai-w-obsludze-dokumentow"],
+    cta: {
+      title: "Chcecie zautomatyzować pracę spedycji?",
+      body: "Porozmawiajmy o tym, co zabiera spedytorom najwięcej czasu. Wskażemy, od czego zacząć i co da się połączyć z waszym TMS.",
     },
     inMenu: false,
   },

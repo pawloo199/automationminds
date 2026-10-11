@@ -138,5 +138,5 @@ export const spedycjaWeryfikacjaPrzewoznikow: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-logistyki", "projektowanie-baz-danych", "ai-w-obsludze-dokumentow"],
   relatedProcessSlugs: ["obieg-faktur-kosztowych"],
   relatedToolSlugs: ["n8n", "airtable", "microsoft-365"],
-  relatedArticleSlugs: ["porzadek-w-danych-przed-ai-i-automatyzacja", "airtable-w-praktyce-zastosowania", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["jak-sprawdzic-przewoznika", "co-zautomatyzowac-w-spedycji", "airtable-w-praktyce-zastosowania"],
 };

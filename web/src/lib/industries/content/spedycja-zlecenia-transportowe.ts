@@ -138,5 +138,5 @@ export const spedycjaZleceniaTransportowe: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-logistyki", "integracje-systemow", "automatyzacja-oraz-ai-w-niestandardowych-procesach"],
   relatedProcessSlugs: ["obieg-umow", "przyjmowanie-zamowien"],
   relatedToolSlugs: ["n8n", "microsoft-365", "google-workspace"],
-  relatedArticleSlugs: ["gotowa-automatyzacja-czy-budowana-od-zera", "integracja-crm-z-fakturowaniem", "bledy-przy-pierwszym-wdrozeniu-automatyzacji"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-spedycji", "tms-a-automatyzacja-spedycji", "jak-sprawdzic-przewoznika"],
 };

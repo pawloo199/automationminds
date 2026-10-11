@@ -194,5 +194,5 @@ export const spedycjaAi: IndustryPageContent = {
   relatedServiceSlugs: ["agenci-ai", "ai-w-obsludze-dokumentow", "szkolenia-ai-dla-zespolow", "strategia-wdrozenia-ai"],
   relatedProcessSlugs: ["obsluga-zapytan-i-leadow"],
   relatedToolSlugs: ["chatgpt", "claude", "n8n", "microsoft-365"],
-  relatedArticleSlugs: ["ai-w-codziennej-pracy-zespolu", "wdrozenie-ai-w-malej-i-sredniej-firmie", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["ai-dla-spedytorow", "co-zautomatyzowac-w-spedycji", "ai-w-codziennej-pracy-zespolu"],
 };

@@ -138,5 +138,5 @@ export const spedycjaZapytaniaIWyceny: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-sprzedazy", "ai-w-obsludze-dokumentow", "automatyzacja-dla-logistyki"],
   relatedProcessSlugs: ["obsluga-zapytan-i-leadow", "ofertowanie"],
   relatedToolSlugs: ["n8n", "chatgpt", "microsoft-365"],
-  relatedArticleSlugs: ["automatyzacja-obslugi-leadow-sprzedazowych", "5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-spedycji", "ai-dla-spedytorow", "automatyzacja-obslugi-leadow-sprzedazowych"],
 };

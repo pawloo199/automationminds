@@ -138,5 +138,5 @@ export const spedycjaStatusyDlaKlientow: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-w-obsludze-klienta", "agenci-ai", "automatyzacja-dla-logistyki"],
   relatedProcessSlugs: ["obsluga-reklamacji"],
   relatedToolSlugs: ["n8n", "chatgpt", "microsoft-365"],
-  relatedArticleSlugs: ["ai-w-codziennej-pracy-zespolu", "gotowa-automatyzacja-czy-budowana-od-zera", "jak-wybrac-narzedzie-do-automatyzacji"],
+  relatedArticleSlugs: ["ai-dla-spedytorow", "tms-a-automatyzacja-spedycji", "co-zautomatyzowac-w-spedycji"],
 };

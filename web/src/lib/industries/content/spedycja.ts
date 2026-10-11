@@ -218,5 +218,5 @@ export const spedycja: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-logistyki", "integracje-systemow", "ai-w-obsludze-dokumentow", "agenci-ai"],
   relatedProcessSlugs: ["obsluga-zapytan-i-leadow", "ofertowanie", "obieg-faktur-kosztowych", "przypomnienia-o-platnosciach"],
   relatedToolSlugs: ["n8n", "microsoft-365", "chatgpt", "ksef"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "integracja-crm-z-fakturowaniem", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-spedycji", "tms-a-automatyzacja-spedycji", "ai-dla-spedytorow"],
 };

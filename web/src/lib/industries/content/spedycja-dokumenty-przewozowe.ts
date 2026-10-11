@@ -138,5 +138,5 @@ export const spedycjaDokumentyPrzewozowe: IndustryPageContent = {
   relatedServiceSlugs: ["ai-w-obsludze-dokumentow", "cyfryzacja-danych-i-dokumentow", "automatyzacja-dla-logistyki"],
   relatedProcessSlugs: ["obsluga-reklamacji", "obieg-faktur-kosztowych"],
   relatedToolSlugs: ["chatgpt", "claude", "n8n"],
-  relatedArticleSlugs: ["cyfryzacja-danych-w-firmie", "porzadek-w-danych-przed-ai-i-automatyzacja", "wdrozenie-ai-w-malej-i-sredniej-firmie"],
+  relatedArticleSlugs: ["ai-dla-spedytorow", "co-zautomatyzowac-w-spedycji", "cyfryzacja-danych-w-firmie"],
 };

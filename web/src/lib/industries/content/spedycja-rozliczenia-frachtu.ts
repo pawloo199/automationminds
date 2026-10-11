@@ -138,5 +138,5 @@ export const spedycjaRozliczeniaFrachtu: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-dla-ksiegowosci", "automatyzacja-raportow", "integracje-systemow"],
   relatedProcessSlugs: ["obieg-faktur-kosztowych", "przypomnienia-o-platnosciach", "raporty-finansowe"],
   relatedToolSlugs: ["ksef", "n8n", "microsoft-365"],
-  relatedArticleSlugs: ["integracja-crm-z-fakturowaniem", "jak-mierzyc-roi-automatyzacji", "ile-kosztuje-automatyzacja-procesow"],
+  relatedArticleSlugs: ["tms-a-automatyzacja-spedycji", "jak-mierzyc-roi-automatyzacji", "integracja-crm-z-fakturowaniem"],
 };
