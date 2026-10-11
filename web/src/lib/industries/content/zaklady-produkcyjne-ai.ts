@@ -145,5 +145,5 @@ export const zakladyProdukcyjneAi: IndustryPageContent = {
   relatedServiceSlugs: ["ai-w-obsludze-dokumentow", "asystent-ai-na-firmowej-wiedzy", "szkolenia-ai-dla-zespolow", "strategia-wdrozenia-ai"],
   relatedProcessSlugs: ["ofertowanie", "obsluga-reklamacji"],
   relatedToolSlugs: ["chatgpt", "claude", "n8n"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["ai-w-dziale-jakosci", "co-zautomatyzowac-w-zakladzie-produkcyjnym", "porzadek-w-danych-przed-ai-i-automatyzacja"],
 };

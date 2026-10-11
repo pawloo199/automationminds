@@ -138,5 +138,5 @@ export const zakladyProdukcyjneDokumentacja: IndustryPageContent = {
   relatedServiceSlugs: ["cyfryzacja-danych-i-dokumentow", "ai-w-obsludze-dokumentow", "automatyzacja-w-produkcji"],
   relatedProcessSlugs: ["obieg-umow"],
   relatedToolSlugs: ["n8n", "microsoft-365", "google-workspace"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-zakladzie-produkcyjnym", "ai-w-dziale-jakosci", "przeglady-maszyn-w-zakladzie"],
 };

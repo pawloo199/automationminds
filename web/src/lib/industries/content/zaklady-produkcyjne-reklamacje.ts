@@ -138,5 +138,5 @@ export const zakladyProdukcyjneReklamacje: IndustryPageContent = {
   relatedServiceSlugs: ["ai-w-obsludze-dokumentow", "automatyzacja-w-obsludze-klienta", "automatyzacja-raportow"],
   relatedProcessSlugs: ["obsluga-reklamacji"],
   relatedToolSlugs: ["n8n", "airtable", "microsoft-365"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["ai-w-dziale-jakosci", "co-zautomatyzowac-w-zakladzie-produkcyjnym", "kalkulacja-kosztow-zlecenia-produkcyjnego"],
 };

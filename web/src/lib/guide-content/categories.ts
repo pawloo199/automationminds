@@ -22,6 +22,7 @@ export const GUIDE_CATEGORY_SLUGS = [
   "firmy-szkoleniowe",
   "agencje-pracy",
   "biura-projektowe",
+  "zaklady-produkcyjne",
 ] as const;
 
 export type GuideCategorySlug = (typeof GUIDE_CATEGORY_SLUGS)[number];
@@ -816,6 +817,40 @@ export const guideCategories: GuideCategory[] = [
     cta: {
       title: "Chcecie odciążyć projektantów od organizacji?",
       body: "Porozmawiajmy o tym, co zabiera zespołowi najwięcej czasu poza projektowaniem. Wskażemy, od czego zacząć i gdzie AI ma sens.",
+    },
+    inMenu: false,
+  },
+  {
+    slug: "zaklady-produkcyjne",
+    name: "Zakłady produkcyjne",
+    title: "AI i automatyzacja w zakładzie produkcyjnym. Poradnik",
+    metaTitle: "AI i automatyzacja w zakładzie produkcyjnym. Poradnik",
+    metaDescription:
+      "Jak zakłady produkcyjne mogą korzystać z AI i automatyzacji: procesy na początek, AI w dziale jakości, kalkulacja kosztów zleceń i przeglądy maszyn.",
+    shortDescription:
+      "Jak zakłady produkcyjne mogą uporządkować przepływ informacji wokół produkcji i bezpiecznie korzystać z AI.",
+    lead: "Artykuły dla właścicieli i kierowników zakładów produkcyjnych, działów handlowych, jakości, zakupów i utrzymania ruchu, którzy chcą mniej czasu tracić na przepisywanie, telefony i szukanie dokumentów. Piszemy z perspektywy wdrożeń w tej branży.",
+    about: [
+      "Wokół produkcji pracuje biuro handlowe, technologia, zakupy, dział jakości i utrzymanie ruchu. Każdy z tych działów przekazuje informacje pozostałym, a gdy przekazania idą mailem i telefonem, informacja się gubi.",
+      "W tej części Poradnika opisujemy, które procesy warto zautomatyzować najpierw, jak dział jakości może korzystać z AI, jak liczyć koszt zlecenia produkcyjnego i jak zorganizować przeglądy maszyn.",
+      "Jeśli szukacie konkretnych rozwiązań i przebiegu wdrożenia, zajrzyjcie także na stronę automatyzacji zakładu produkcyjnego w części Branże.",
+    ],
+    faq: [
+      {
+        question: "Co w zakładzie produkcyjnym da się zautomatyzować?",
+        answer:
+          "Najczęściej zapytania ofertowe i wyceny, przyjmowanie zamówień, zakupy u dostawców, reklamacje, utrzymanie ruchu i obieg dokumentacji technicznej.",
+      },
+      {
+        question: "Czy automatyzujecie maszyny?",
+        answer:
+          "Nie. Automatyzujemy przepływ informacji wokół produkcji. Sterowanie maszynami i decyzje technologiczne zostają bez zmian.",
+      },
+    ],
+    relatedServiceSlugs: ["automatyzacja-w-produkcji", "integracje-systemow", "ai-w-obsludze-dokumentow"],
+    cta: {
+      title: "Chcecie, żeby informacja w zakładzie płynęła sprawniej?",
+      body: "Porozmawiajmy o tym, gdzie informacja najczęściej utyka między biurem a halą. Wskażemy, od czego zacząć i gdzie AI ma sens.",
     },
     inMenu: false,
   },

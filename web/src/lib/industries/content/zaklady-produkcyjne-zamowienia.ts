@@ -138,5 +138,5 @@ export const zakladyProdukcyjneZamowienia: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-w-obsludze-klienta", "integracje-systemow", "automatyzacja-w-produkcji"],
   relatedProcessSlugs: ["przyjmowanie-zamowien", "obsluga-zapytan-i-leadow"],
   relatedToolSlugs: ["n8n", "microsoft-365", "make"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-zakladzie-produkcyjnym", "kalkulacja-kosztow-zlecenia-produkcyjnego", "ai-w-dziale-jakosci"],
 };

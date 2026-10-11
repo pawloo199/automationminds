@@ -86,6 +86,10 @@ import coZautomatyzowacWBiurzeProjektowym from "./articles/co-zautomatyzowac-w-b
 import aiDlaArchitektow from "./articles/ai-dla-architektow";
 import wycenaPracProjektowych from "./articles/wycena-prac-projektowych";
 import rentownoscProjektowWBiurzeProjektowym from "./articles/rentownosc-projektow-w-biurze-projektowym";
+import coZautomatyzowacWZakladzieProdukcyjnym from "./articles/co-zautomatyzowac-w-zakladzie-produkcyjnym";
+import aiWDzialeJakosci from "./articles/ai-w-dziale-jakosci";
+import kalkulacjaKosztowZleceniaProdukcyjnego from "./articles/kalkulacja-kosztow-zlecenia-produkcyjnego";
+import przegladyMaszynWZakladzie from "./articles/przeglady-maszyn-w-zakladzie";
 /** Wszystkie artykuły Poradnika, od najnowszego. */
 export const guideArticles: GuideArticle[] = [
   procesowDoAutomatyzacjiWMalejFirmie,
@@ -174,6 +178,10 @@ export const guideArticles: GuideArticle[] = [
   aiDlaArchitektow,
   wycenaPracProjektowych,
   rentownoscProjektowWBiurzeProjektowym,
+  coZautomatyzowacWZakladzieProdukcyjnym,
+  aiWDzialeJakosci,
+  kalkulacjaKosztowZleceniaProdukcyjnego,
+  przegladyMaszynWZakladzie,
 ].sort(
   (a, b) =>
     new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),

@@ -158,5 +158,5 @@ export const zakladyProdukcyjne: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-w-produkcji", "integracje-systemow", "automatyzacja-raportow", "cyfryzacja-danych-i-dokumentow"],
   relatedProcessSlugs: ["ofertowanie", "przyjmowanie-zamowien", "obsluga-reklamacji", "obieg-faktur-kosztowych"],
   relatedToolSlugs: ["n8n", "airtable", "microsoft-365", "ksef"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-zakladzie-produkcyjnym", "kalkulacja-kosztow-zlecenia-produkcyjnego", "przeglady-maszyn-w-zakladzie"],
 };

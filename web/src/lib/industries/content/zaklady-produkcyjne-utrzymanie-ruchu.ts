@@ -138,5 +138,5 @@ export const zakladyProdukcyjneUtrzymanieRuchu: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-w-produkcji", "automatyzacja-raportow", "cyfryzacja-danych-i-dokumentow"],
   relatedProcessSlugs: ["obieg-faktur-kosztowych"],
   relatedToolSlugs: ["n8n", "airtable", "microsoft-365"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["przeglady-maszyn-w-zakladzie", "co-zautomatyzowac-w-zakladzie-produkcyjnym", "kalkulacja-kosztow-zlecenia-produkcyjnego"],
 };

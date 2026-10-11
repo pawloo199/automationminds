@@ -138,5 +138,5 @@ export const zakladyProdukcyjneWyceny: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-sprzedazy", "ai-w-obsludze-dokumentow", "automatyzacja-w-produkcji"],
   relatedProcessSlugs: ["ofertowanie", "obsluga-zapytan-i-leadow"],
   relatedToolSlugs: ["n8n", "airtable", "microsoft-365"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["kalkulacja-kosztow-zlecenia-produkcyjnego", "co-zautomatyzowac-w-zakladzie-produkcyjnym", "ai-w-dziale-jakosci"],
 };
