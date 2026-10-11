@@ -158,5 +158,5 @@ export const sklepyInternetowe: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-w-obsludze-klienta", "automatyzacja-dla-logistyki", "automatyzacja-marketingu", "integracje-systemow"],
   relatedProcessSlugs: ["przyjmowanie-zamowien", "obsluga-reklamacji", "obsluga-zapytan-i-leadow", "raporty-finansowe"],
   relatedToolSlugs: ["n8n", "make", "google-workspace", "chatgpt"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-sklepie-internetowym", "marza-w-sklepie-internetowym", "dane-produktowe-w-sklepie"],
 };

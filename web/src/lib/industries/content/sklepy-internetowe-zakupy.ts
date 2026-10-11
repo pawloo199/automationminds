@@ -138,5 +138,5 @@ export const sklepyInternetoweZakupy: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-raportow", "integracje-systemow", "automatyzacja-dla-ksiegowosci"],
   relatedProcessSlugs: ["przyjmowanie-zamowien", "obieg-faktur-kosztowych"],
   relatedToolSlugs: ["airtable", "ksef", "n8n"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["marza-w-sklepie-internetowym", "co-zautomatyzowac-w-sklepie-internetowym", "airtable-w-praktyce-zastosowania"],
 };

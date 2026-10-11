@@ -138,5 +138,5 @@ export const sklepyInternetoweObslugaKlienta: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-w-obsludze-klienta", "chatbot-ai-dla-firmy", "agenci-ai"],
   relatedProcessSlugs: ["obsluga-reklamacji", "przyjmowanie-zamowien"],
   relatedToolSlugs: ["chatgpt", "n8n", "google-workspace"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["co-zautomatyzowac-w-sklepie-internetowym", "ai-w-ecommerce", "5-procesow-do-automatyzacji-w-malej-firmie"],
 };

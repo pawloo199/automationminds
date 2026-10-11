@@ -66,6 +66,10 @@ import coZautomatyzowacWFirmieBudowlanej from "./articles/co-zautomatyzowac-w-fi
 import aiDlaKierownikaBudowy from "./articles/ai-dla-kierownika-budowy";
 import kontrolaKosztowBudowy from "./articles/kontrola-kosztow-budowy";
 import cyfryzacjaFirmyBudowlanej from "./articles/cyfryzacja-firmy-budowlanej";
+import coZautomatyzowacWSklepieInternetowym from "./articles/co-zautomatyzowac-w-sklepie-internetowym";
+import aiWEcommerce from "./articles/ai-w-ecommerce";
+import marzaWSklepieInternetowym from "./articles/marza-w-sklepie-internetowym";
+import daneProduktoweWSklepie from "./articles/dane-produktowe-w-sklepie";
 /** Wszystkie artykuły Poradnika, od najnowszego. */
 export const guideArticles: GuideArticle[] = [
   procesowDoAutomatyzacjiWMalejFirmie,
@@ -134,6 +138,10 @@ export const guideArticles: GuideArticle[] = [
   aiDlaKierownikaBudowy,
   kontrolaKosztowBudowy,
   cyfryzacjaFirmyBudowlanej,
+  coZautomatyzowacWSklepieInternetowym,
+  aiWEcommerce,
+  marzaWSklepieInternetowym,
+  daneProduktoweWSklepie,
 ].sort(
   (a, b) =>
     new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),

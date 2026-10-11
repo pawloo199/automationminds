@@ -138,5 +138,5 @@ export const sklepyInternetoweOfertyIStany: IndustryPageContent = {
   relatedServiceSlugs: ["integracje-systemow", "automatyzacja-dla-logistyki", "porzadkowanie-i-strukturyzowanie-danych"],
   relatedProcessSlugs: ["przyjmowanie-zamowien"],
   relatedToolSlugs: ["n8n", "make", "airtable"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["dane-produktowe-w-sklepie", "marza-w-sklepie-internetowym", "jak-wybrac-narzedzie-do-automatyzacji"],
 };

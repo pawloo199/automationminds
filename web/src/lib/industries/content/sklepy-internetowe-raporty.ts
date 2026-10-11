@@ -138,5 +138,5 @@ export const sklepyInternetoweRaporty: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-raportow", "automatyzacja-marketingu", "porzadkowanie-i-strukturyzowanie-danych"],
   relatedProcessSlugs: ["raporty-finansowe"],
   relatedToolSlugs: ["google-workspace", "airtable", "n8n"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["marza-w-sklepie-internetowym", "co-zautomatyzowac-w-sklepie-internetowym", "jak-mierzyc-roi-automatyzacji"],
 };

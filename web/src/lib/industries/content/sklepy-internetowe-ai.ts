@@ -145,5 +145,5 @@ export const sklepyInternetoweAi: IndustryPageContent = {
   relatedServiceSlugs: ["chatbot-ai-dla-firmy", "agenci-ai", "szkolenia-ai-dla-zespolow", "automatyzacja-marketingu"],
   relatedProcessSlugs: ["obsluga-reklamacji"],
   relatedToolSlugs: ["chatgpt", "claude", "n8n"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["ai-w-ecommerce", "dane-produktowe-w-sklepie", "ai-w-codziennej-pracy-zespolu"],
 };

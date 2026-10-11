@@ -17,6 +17,7 @@ export const GUIDE_CATEGORY_SLUGS = [
   "posrednictwo-ubezpieczeniowe",
   "firmy-serwisowe",
   "firmy-budowlane",
+  "sklepy-internetowe",
 ] as const;
 
 export type GuideCategorySlug = (typeof GUIDE_CATEGORY_SLUGS)[number];
@@ -641,6 +642,40 @@ export const guideCategories: GuideCategory[] = [
     cta: {
       title: "Chcecie uporządkować pracę firmy budowlanej?",
       body: "Porozmawiajmy o tym, co zabiera biuru i kierownikom najwięcej czasu. Wskażemy, od czego zacząć i gdzie AI ma sens.",
+    },
+    inMenu: false,
+  },
+  {
+    slug: "sklepy-internetowe",
+    name: "Sklepy internetowe",
+    title: "AI i automatyzacja w sklepie internetowym. Poradnik",
+    metaTitle: "AI i automatyzacja w sklepie internetowym. Poradnik",
+    metaDescription:
+      "Jak sklepy internetowe mogą korzystać z AI i automatyzacji: procesy na początek, AI w e-commerce, marża po wszystkich kosztach i dane produktowe.",
+    shortDescription:
+      "Jak sklepy internetowe mogą oddać pracę powtarzalną systemom i bezpiecznie korzystać z AI.",
+    lead: "Artykuły dla właścicieli sklepów internetowych, marek sprzedających online i ich zespołów, które chcą rosnąć bez proporcjonalnego zwiększania zespołu. Piszemy z perspektywy wdrożeń w e-commerce.",
+    about: [
+      "Sklep internetowy to sprzedaż, obsługa klienta, zarządzanie produktami i logistyka w jednym. Wiele z tej pracy polega na kopiowaniu danych między platformą, marketplace, magazynem i arkuszami.",
+      "W tej części Poradnika opisujemy, które procesy w sklepie warto zautomatyzować najpierw, jak korzystać z AI w e-commerce, jak liczyć marżę po wszystkich kosztach i jak uporządkować dane produktowe.",
+      "Jeśli szukacie konkretnych rozwiązań i przebiegu wdrożenia, zajrzyjcie także na stronę automatyzacji sklepu internetowego w części Branże.",
+    ],
+    faq: [
+      {
+        question: "Co w sklepie internetowym da się zautomatyzować?",
+        answer:
+          "Najczęściej odpowiedzi o status zamówienia, zwroty i reklamacje, opisy i dane produktów, synchronizację stanów i cen, zakupy u dostawców oraz raporty sprzedaży i marży.",
+      },
+      {
+        question: "Czy sklep internetowy może bezpiecznie korzystać z AI?",
+        answer:
+          "Tak, jeśli korzysta z kont firmowych w planach bez trenowania na danych, nie przekazuje do AI danych płatności i sprawdza opisy i odpowiedzi, zanim trafią do klientów.",
+      },
+    ],
+    relatedServiceSlugs: ["automatyzacja-w-obsludze-klienta", "automatyzacja-dla-logistyki", "automatyzacja-marketingu"],
+    cta: {
+      title: "Chcecie zautomatyzować pracę sklepu?",
+      body: "Porozmawiajmy o tym, co zabiera zespołowi sklepu najwięcej czasu. Wskażemy, od czego zacząć i gdzie AI ma sens.",
     },
     inMenu: false,
   },

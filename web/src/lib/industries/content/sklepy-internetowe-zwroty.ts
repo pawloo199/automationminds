@@ -138,5 +138,5 @@ export const sklepyInternetoweZwroty: IndustryPageContent = {
   relatedServiceSlugs: ["automatyzacja-w-obsludze-klienta", "automatyzacja-dla-ksiegowosci", "automatyzacja-dla-logistyki"],
   relatedProcessSlugs: ["obsluga-reklamacji"],
   relatedToolSlugs: ["n8n", "ksef", "airtable"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["marza-w-sklepie-internetowym", "co-zautomatyzowac-w-sklepie-internetowym", "jak-mierzyc-roi-automatyzacji"],
 };

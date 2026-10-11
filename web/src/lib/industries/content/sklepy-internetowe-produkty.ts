@@ -138,5 +138,5 @@ export const sklepyInternetoweProdukty: IndustryPageContent = {
   relatedServiceSlugs: ["ai-w-obsludze-dokumentow", "porzadkowanie-i-strukturyzowanie-danych", "automatyzacja-marketingu"],
   relatedProcessSlugs: ["ofertowanie"],
   relatedToolSlugs: ["chatgpt", "claude", "n8n"],
-  relatedArticleSlugs: ["5-procesow-do-automatyzacji-w-malej-firmie", "jak-mierzyc-roi-automatyzacji", "rodo-a-automatyzacja-procesow"],
+  relatedArticleSlugs: ["dane-produktowe-w-sklepie", "ai-w-ecommerce", "porzadek-w-danych-przed-ai-i-automatyzacja"],
 };
