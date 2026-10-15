@@ -50,6 +50,8 @@ export type CityPageContent = {
   };
   /** Wyróżnik miasta, np. siedziba firmy (poziom A). */
   highlight?: { title: string; body: string };
+  /** Data ostatniej zmiany treści (lastmod w sitemapie); domyślnie CITY_PAGES_UPDATED_AT. */
+  updatedAt?: string;
 };
 
 /** Silos miast: /automatyzacja-procesow, /automatyzacja-procesow/{województwo|miasto}. */

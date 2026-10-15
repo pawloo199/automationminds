@@ -129,6 +129,16 @@ export function getNearbyCities(
 export { cityPath };
 export type { CityPageContent };
 
+/**
+ * Data ostatniej zmiany treści stron miast i województw (lastmod w sitemapie).
+ * Zmieniasz treść jednego miasta — ustaw mu `updatedAt`; zmieniasz wszystkie — podbij tę datę.
+ */
+export const CITY_PAGES_UPDATED_AT = "2026-09-30";
+
+export function getCityPageUpdatedAt(city: CityPageContent): string {
+  return city.updatedAt ?? CITY_PAGES_UPDATED_AT;
+}
+
 /** Miasta województwa, alfabetycznie. */
 export function getCitiesByVoivodeship(name: string): CityPageContent[] {
   return allCities

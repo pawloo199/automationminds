@@ -27,7 +27,7 @@ const { revalidateSecret, siteUrl, tableName, recordId } = config;
 log(
   "INPUT",
   JSON.stringify({
-    siteUrl: siteUrl || "(domyślnie https://automationminds.net)",
+    siteUrl: siteUrl || "(domyślnie https://www.automationminds.net)",
     secret: maskSecret(revalidateSecret),
     tableName: tableName || "(nie podano)",
     recordId: recordId || "(nie podano)",
@@ -39,7 +39,7 @@ if (!revalidateSecret) {
   throw new Error("Brak input variable: revalidateSecret");
 }
 
-const base = (siteUrl || "https://automationminds.net").replace(/\/$/, "");
+const base = (siteUrl || "https://www.automationminds.net").replace(/\/$/, "");
 const params = new URLSearchParams({
   secret: revalidateSecret,
 });

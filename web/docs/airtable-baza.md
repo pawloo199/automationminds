@@ -32,7 +32,7 @@ Do seedu treści i migracji:
 AIRTABLE_API_TOKEN=pat...
 AIRTABLE_BASE_ID=app...
 REVALIDATE_SECRET=losowy_ciag
-NEXT_PUBLIC_SITE_URL=https://automationminds.net
+NEXT_PUBLIC_SITE_URL=https://www.automationminds.net
 ```
 
 `AIRTABLE_BASE_ID` znajdziesz w URL bazy: `https://airtable.com/appXXXXXXXX/...`

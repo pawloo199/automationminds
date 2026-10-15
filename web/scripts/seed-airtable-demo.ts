@@ -37,7 +37,7 @@ const PUBLIC_SITE_URL = (() => {
   if (fromEnv.includes("localhost")) {
     return "https://web-topaz-sigma-56.vercel.app";
   }
-  return fromEnv || "https://automationminds.net";
+  return fromEnv || "https://www.automationminds.net";
 })();
 
 function absoluteUrl(url: string): string {
