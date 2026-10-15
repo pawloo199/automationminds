@@ -10,7 +10,7 @@ import { wielkopolskieCities } from "./content/regions/wielkopolskie";
 import { pomorskieCities } from "./content/regions/pomorskie";
 import { zachodniopomorskieCities } from "./content/regions/zachodniopomorskie";
 import { mazowieckieCities } from "./content/regions/mazowieckie";
-import { opolskiePowiatCities } from "./content/opolskie";
+import { opolskieCities } from "./content/regions/opolskie";
 import { podkarpackiePowiatCities } from "./content/podkarpackie";
 import { podlaskiePowiatCities } from "./content/podlaskie";
 import { polnocWschodCities } from "./content/polnoc-wschod";
@@ -32,7 +32,7 @@ const allCities: CityPageContent[] = [
   ...wielkopolskieCities,
   ...malopolskieCities,
   ...slaskieCities,
-  ...opolskiePowiatCities,
+  ...opolskieCities,
   ...lubuskiePowiatCities,
   ...lodzkiePowiatCities,
   ...kujawskoPomorskiePowiatCities,

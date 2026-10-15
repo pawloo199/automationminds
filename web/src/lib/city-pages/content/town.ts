@@ -30,6 +30,8 @@ export type TownInput = {
   /** Przykład „przed i po” (duże miasta). Wiersze: [etap, ręcznie, po automatyzacji]. */
   example?: { title: string; lead: string; rows: [string, string, string][] };
   heroImage?: { url: string; alt: string };
+  /** Data ostatniej zmiany treści (lastmod w sitemapie). */
+  updatedAt?: string;
 };
 
 export function town(input: TownInput): CityPageContent {
@@ -74,6 +76,7 @@ export function town(input: TownInput): CityPageContent {
         }
       : {}),
     heroImage: input.heroImage,
+    updatedAt: input.updatedAt,
   };
 }
 
