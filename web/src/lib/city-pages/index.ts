@@ -16,7 +16,7 @@ import { podlaskieCities } from "./content/regions/podlaskie";
 import { polnocWschodCities } from "./content/polnoc-wschod";
 import { swietokrzyskieCities } from "./content/regions/swietokrzyskie";
 import { tier1Cities } from "./content/tier1";
-import { warminskoMazurskiePowiatCities } from "./content/warminsko-mazurskie";
+import { warminskoMazurskieCities } from "./content/regions/warminsko-mazurskie";
 import { zachodCentrumCities } from "./content/zachod-centrum";
 import { cityPath, type CityPageContent } from "./types";
 import { getVoivodeshipByName, VOIVODESHIPS } from "./voivodeships";
@@ -40,7 +40,7 @@ const allCities: CityPageContent[] = [
   ...podkarpackiePowiatCities,
   ...podlaskieCities,
   ...swietokrzyskieCities,
-  ...warminskoMazurskiePowiatCities,
+  ...warminskoMazurskieCities,
 ];
 
 const bySlug = new Map(allCities.map((city) => [city.slug, city]));

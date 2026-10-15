@@ -10,6 +10,7 @@ import { lubuskieRegion } from "./content/regions/lubuskie";
 import { swietokrzyskieRegion } from "./content/regions/swietokrzyskie";
 import { podlaskieRegion } from "./content/regions/podlaskie";
 import { kujawskoPomorskieRegion } from "./content/regions/kujawsko-pomorskie";
+import { warminskoMazurskieRegion } from "./content/regions/warminsko-mazurskie";
 import { CITY_HUB_PATH } from "./types";
 
 export type Voivodeship = {
@@ -46,6 +47,7 @@ const DETAILS: Record<string, VoivodeshipDetails> = {
   swietokrzyskie: swietokrzyskieRegion,
   podlaskie: podlaskieRegion,
   "kujawsko-pomorskie": kujawskoPomorskieRegion,
+  "warminsko-mazurskie": warminskoMazurskieRegion,
 };
 
 const BASE_VOIVODESHIPS: Voivodeship[] = [
