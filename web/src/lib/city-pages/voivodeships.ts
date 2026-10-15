@@ -12,6 +12,7 @@ import { podlaskieRegion } from "./content/regions/podlaskie";
 import { kujawskoPomorskieRegion } from "./content/regions/kujawsko-pomorskie";
 import { warminskoMazurskieRegion } from "./content/regions/warminsko-mazurskie";
 import { lubelskieRegion } from "./content/regions/lubelskie";
+import { podkarpackieRegion } from "./content/regions/podkarpackie";
 import { CITY_HUB_PATH } from "./types";
 
 export type Voivodeship = {
@@ -50,6 +51,7 @@ const DETAILS: Record<string, VoivodeshipDetails> = {
   "kujawsko-pomorskie": kujawskoPomorskieRegion,
   "warminsko-mazurskie": warminskoMazurskieRegion,
   lubelskie: lubelskieRegion,
+  podkarpackie: podkarpackieRegion,
 };
 
 const BASE_VOIVODESHIPS: Voivodeship[] = [
