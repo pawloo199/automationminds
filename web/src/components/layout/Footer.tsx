@@ -131,6 +131,7 @@ export function Footer({
               <FooterLink href={PROCESSES_HUB_PATH}>Procesy</FooterLink>
               <FooterLink href={INDUSTRIES_HUB_PATH}>Branże</FooterLink>
               <FooterLink href={TOOLS_HUB_PATH}>Narzędzia</FooterLink>
+              <FooterLink href="/slownik">Słownik pojęć</FooterLink>
               <FooterLink href={CITY_HUB_PATH}>Automatyzacja w miastach</FooterLink>
               <FooterLink href="/polityka-prywatnosci">
                 Polityka prywatności

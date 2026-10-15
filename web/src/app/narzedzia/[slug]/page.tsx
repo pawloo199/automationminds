@@ -27,6 +27,8 @@ import {
   toolBreadcrumbs,
   toolPath,
 } from "@/lib/tools";
+import { GlossaryTermLinks } from "@/components/glossary/GlossaryTermLinks";
+import { getTermsForTool } from "@/lib/glossary";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
@@ -150,6 +152,7 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
               </div>
             </>
           ) : null}
+          <GlossaryTermLinks terms={getTermsForTool(entry.slug)} />
         </Container>
       </section>
 

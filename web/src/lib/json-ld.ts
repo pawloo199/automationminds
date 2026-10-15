@@ -603,3 +603,42 @@ export function agencyJsonLd(
     },
   };
 }
+
+const GLOSSARY_SET_ID = `${siteUrl}/slownik#zbior`;
+
+export function glossaryTermJsonLd(term: {
+  slug: string;
+  term: string;
+  fullName?: string;
+  definition: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    "@id": `${siteUrl}/slownik/${term.slug}#haslo`,
+    name: term.term,
+    ...(term.fullName ? { alternateName: term.fullName } : {}),
+    description: term.definition,
+    url: `${siteUrl}/slownik/${term.slug}`,
+    inDefinedTermSet: GLOSSARY_SET_ID,
+  };
+}
+
+export function glossarySetJsonLd(
+  terms: { slug: string; term: string; definition: string }[],
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "DefinedTermSet",
+    "@id": GLOSSARY_SET_ID,
+    name: "Słownik automatyzacji, AI i danych",
+    url: `${siteUrl}/slownik`,
+    inLanguage: "pl-PL",
+    hasDefinedTerm: terms.map((term) => ({
+      "@type": "DefinedTerm",
+      name: term.term,
+      description: term.definition,
+      url: `${siteUrl}/slownik/${term.slug}`,
+    })),
+  };
+}

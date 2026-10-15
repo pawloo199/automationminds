@@ -38,6 +38,8 @@ import {
 } from "@/lib/services";
 import type { ServiceCatalogEntry, ServiceContent } from "@/lib/services";
 import { ArrowRight, Check, Phone } from "lucide-react";
+import { GlossaryTermLinks } from "@/components/glossary/GlossaryTermLinks";
+import { getTermsForService } from "@/lib/glossary";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -103,6 +105,7 @@ async function ServiceTemplate({
   const breadcrumbs = serviceBreadcrumbs(entry);
   const relatedServices = getRelatedServices(entry.slug, 3);
   const relatedArticles = getServiceRelatedArticles(entry.slug).slice(0, 3);
+  const glossaryTerms = getTermsForService(entry.slug);
   const processes = getProcessesForService(entry.slug);
   const phoneHref = `tel:${settings.phone.replace(/\s/g, "")}`;
 
@@ -242,7 +245,7 @@ async function ServiceTemplate({
         </Container>
       </section>
 
-      {relatedArticles.length > 0 || relatedServices.length > 0 || processes.length > 0 ? (
+      {relatedArticles.length > 0 || relatedServices.length > 0 || processes.length > 0 || glossaryTerms.length > 0 ? (
         <section
           aria-labelledby="powiazane"
           className="border-t border-brand/10 bg-surface py-20 lg:py-24"
@@ -282,6 +285,7 @@ async function ServiceTemplate({
                 </ul>
               </>
             ) : null}
+            <GlossaryTermLinks terms={glossaryTerms} />
           </Container>
         </section>
       ) : null}

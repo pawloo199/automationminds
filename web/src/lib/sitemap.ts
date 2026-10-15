@@ -23,6 +23,7 @@ import {
   guideCategoryPath,
 } from "@/lib/guide-articles";
 import { siteUrl } from "@/lib/metadata";
+import { GLOSSARY_HUB_PATH, getGlossaryTerms, glossaryPath } from "@/lib/glossary";
 import { SERVICE_CONTENT } from "@/lib/services/content";
 import { getPublishedServices, servicePath } from "@/lib/services/catalog";
 import type { MetadataRoute } from "next";
@@ -138,6 +139,16 @@ export async function buildSitemapEntries(): Promise<MetadataRoute.Sitemap> {
     })),
   ];
 
+  const glossaryPages: MetadataRoute.Sitemap = [
+    { url: `${siteUrl}${GLOSSARY_HUB_PATH}`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    ...getGlossaryTerms().map((term) => ({
+      url: `${siteUrl}${glossaryPath(term.slug)}`,
+      lastModified: new Date(term.updatedAt),
+      changeFrequency: "monthly" as const,
+      priority: 0.55,
+    })),
+  ];
+
   const agencyPage: MetadataRoute.Sitemap = [
     { url: `${siteUrl}${AGENCY_PATH}`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
   ];
@@ -169,6 +180,7 @@ export async function buildSitemapEntries(): Promise<MetadataRoute.Sitemap> {
     ...processPages,
     ...toolPages,
     ...industryPages,
+    ...glossaryPages,
     ...agencyPage,
     ...regionPages,
     ...citySeoPages,
