@@ -210,10 +210,15 @@ export async function buildSitemapEntries(): Promise<MetadataRoute.Sitemap> {
   ];
 
   const glossaryPages: MetadataRoute.Sitemap = [
-    { url: `${siteUrl}${GLOSSARY_HUB_PATH}`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    {
+      url: `${siteUrl}${GLOSSARY_HUB_PATH}`,
+      lastModified: latestDate(...getGlossaryTerms().map((term) => term.updatedAt)),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
     ...getGlossaryTerms().map((term) => ({
       url: `${siteUrl}${glossaryPath(term.slug)}`,
-      lastModified: new Date(term.updatedAt),
+      lastModified: parseDate(term.updatedAt),
       changeFrequency: "monthly" as const,
       priority: 0.55,
     })),
