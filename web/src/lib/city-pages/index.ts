@@ -3,7 +3,7 @@ import { dolnoslaskieCities } from "./content/regions/dolnoslaskie";
 import { kujawskoPomorskiePowiatCities } from "./content/kujawsko-pomorskie";
 import { lodzkiePowiatCities } from "./content/lodzkie";
 import { lubelskiePowiatCities } from "./content/lubelskie";
-import { lubuskiePowiatCities } from "./content/lubuskie";
+import { lubuskieCities } from "./content/regions/lubuskie";
 import { slaskieCities } from "./content/regions/slaskie";
 import { malopolskieCities } from "./content/regions/malopolskie";
 import { wielkopolskieCities } from "./content/regions/wielkopolskie";
@@ -33,7 +33,7 @@ const allCities: CityPageContent[] = [
   ...malopolskieCities,
   ...slaskieCities,
   ...opolskieCities,
-  ...lubuskiePowiatCities,
+  ...lubuskieCities,
   ...lodzkiePowiatCities,
   ...kujawskoPomorskiePowiatCities,
   ...lubelskiePowiatCities,
