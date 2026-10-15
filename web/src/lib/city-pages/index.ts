@@ -12,7 +12,7 @@ import { zachodniopomorskieCities } from "./content/regions/zachodniopomorskie";
 import { mazowieckieCities } from "./content/regions/mazowieckie";
 import { opolskieCities } from "./content/regions/opolskie";
 import { podkarpackiePowiatCities } from "./content/podkarpackie";
-import { podlaskiePowiatCities } from "./content/podlaskie";
+import { podlaskieCities } from "./content/regions/podlaskie";
 import { polnocWschodCities } from "./content/polnoc-wschod";
 import { swietokrzyskieCities } from "./content/regions/swietokrzyskie";
 import { tier1Cities } from "./content/tier1";
@@ -38,7 +38,7 @@ const allCities: CityPageContent[] = [
   ...kujawskoPomorskiePowiatCities,
   ...lubelskiePowiatCities,
   ...podkarpackiePowiatCities,
-  ...podlaskiePowiatCities,
+  ...podlaskieCities,
   ...swietokrzyskieCities,
   ...warminskoMazurskiePowiatCities,
 ];

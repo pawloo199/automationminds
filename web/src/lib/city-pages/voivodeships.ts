@@ -8,6 +8,7 @@ import { mazowieckieRegion } from "./content/regions/mazowieckie";
 import { opolskieRegion } from "./content/regions/opolskie";
 import { lubuskieRegion } from "./content/regions/lubuskie";
 import { swietokrzyskieRegion } from "./content/regions/swietokrzyskie";
+import { podlaskieRegion } from "./content/regions/podlaskie";
 import { CITY_HUB_PATH } from "./types";
 
 export type Voivodeship = {
@@ -42,6 +43,7 @@ const DETAILS: Record<string, VoivodeshipDetails> = {
   opolskie: opolskieRegion,
   lubuskie: lubuskieRegion,
   swietokrzyskie: swietokrzyskieRegion,
+  podlaskie: podlaskieRegion,
 };
 
 const BASE_VOIVODESHIPS: Voivodeship[] = [
