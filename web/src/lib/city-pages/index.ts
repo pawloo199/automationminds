@@ -14,7 +14,7 @@ import { opolskieCities } from "./content/regions/opolskie";
 import { podkarpackiePowiatCities } from "./content/podkarpackie";
 import { podlaskiePowiatCities } from "./content/podlaskie";
 import { polnocWschodCities } from "./content/polnoc-wschod";
-import { swietokrzyskiePowiatCities } from "./content/swietokrzyskie";
+import { swietokrzyskieCities } from "./content/regions/swietokrzyskie";
 import { tier1Cities } from "./content/tier1";
 import { warminskoMazurskiePowiatCities } from "./content/warminsko-mazurskie";
 import { zachodCentrumCities } from "./content/zachod-centrum";
@@ -39,7 +39,7 @@ const allCities: CityPageContent[] = [
   ...lubelskiePowiatCities,
   ...podkarpackiePowiatCities,
   ...podlaskiePowiatCities,
-  ...swietokrzyskiePowiatCities,
+  ...swietokrzyskieCities,
   ...warminskoMazurskiePowiatCities,
 ];
 
