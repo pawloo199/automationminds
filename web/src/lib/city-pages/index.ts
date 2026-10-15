@@ -2,7 +2,7 @@ import { mockCitySilos } from "@/lib/airtable-mock";
 import { dolnoslaskieCities } from "./content/regions/dolnoslaskie";
 import { kujawskoPomorskieCities } from "./content/regions/kujawsko-pomorskie";
 import { lodzkiePowiatCities } from "./content/lodzkie";
-import { lubelskiePowiatCities } from "./content/lubelskie";
+import { lubelskieCities } from "./content/regions/lubelskie";
 import { lubuskieCities } from "./content/regions/lubuskie";
 import { slaskieCities } from "./content/regions/slaskie";
 import { malopolskieCities } from "./content/regions/malopolskie";
@@ -36,7 +36,7 @@ const allCities: CityPageContent[] = [
   ...lubuskieCities,
   ...lodzkiePowiatCities,
   ...kujawskoPomorskieCities,
-  ...lubelskiePowiatCities,
+  ...lubelskieCities,
   ...podkarpackiePowiatCities,
   ...podlaskieCities,
   ...swietokrzyskieCities,
