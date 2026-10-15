@@ -1,7 +1,7 @@
 import { mockCitySilos } from "@/lib/airtable-mock";
 import { dolnoslaskieCities } from "./content/regions/dolnoslaskie";
 import { kujawskoPomorskieCities } from "./content/regions/kujawsko-pomorskie";
-import { lodzkiePowiatCities } from "./content/lodzkie";
+import { lodzkieCities } from "./content/regions/lodzkie";
 import { lubelskieCities } from "./content/regions/lubelskie";
 import { lubuskieCities } from "./content/regions/lubuskie";
 import { slaskieCities } from "./content/regions/slaskie";
@@ -13,18 +13,14 @@ import { mazowieckieCities } from "./content/regions/mazowieckie";
 import { opolskieCities } from "./content/regions/opolskie";
 import { podkarpackieCities } from "./content/regions/podkarpackie";
 import { podlaskieCities } from "./content/regions/podlaskie";
-import { polnocWschodCities } from "./content/polnoc-wschod";
 import { swietokrzyskieCities } from "./content/regions/swietokrzyskie";
 import { tier1Cities } from "./content/tier1";
 import { warminskoMazurskieCities } from "./content/regions/warminsko-mazurskie";
-import { zachodCentrumCities } from "./content/zachod-centrum";
 import { cityPath, type CityPageContent } from "./types";
 import { getVoivodeshipByName, VOIVODESHIPS } from "./voivodeships";
 
 const allCities: CityPageContent[] = [
   ...tier1Cities,
-  ...polnocWschodCities,
-  ...zachodCentrumCities,
   ...dolnoslaskieCities,
   ...mazowieckieCities,
   ...zachodniopomorskieCities,
@@ -34,7 +30,7 @@ const allCities: CityPageContent[] = [
   ...slaskieCities,
   ...opolskieCities,
   ...lubuskieCities,
-  ...lodzkiePowiatCities,
+  ...lodzkieCities,
   ...kujawskoPomorskieCities,
   ...lubelskieCities,
   ...podkarpackieCities,
