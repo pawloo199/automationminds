@@ -163,7 +163,7 @@ export default async function ProcessPage({ params }: { params: Promise<{ slug: 
               </ul>
             </>
           ) : null}
-          <IndustryLinks items={industryLinkItems(getIndustryPagesFor("process", slug))} title="W branżach" />
+          <IndustryLinks items={industryLinkItems(getIndustryPagesFor("process", slug))} title="W branżach" limit={6} />
           {relatedArticles.length > 0 ? (
             <>
               <h3 className="mt-14 text-sm font-semibold uppercase tracking-[0.2em] text-muted">Z Poradnika</h3>

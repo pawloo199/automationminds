@@ -270,7 +270,7 @@ async function ServiceTemplate({
               </>
             ) : null}
             <ProcessLinks processes={processes} title="Jak to wygląda w praktyce" />
-            <IndustryLinks items={industryLinkItems(getIndustryPagesFor("service", entry.slug))} title="W branżach" />
+            <IndustryLinks items={industryLinkItems(getIndustryPagesFor("service", entry.slug))} title="W branżach" limit={6} />
             {relatedServices.length > 0 ? (
               <>
                 <h3 className="mt-14 text-sm font-semibold uppercase tracking-[0.2em] text-muted">

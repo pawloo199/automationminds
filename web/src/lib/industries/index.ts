@@ -340,6 +340,7 @@ export function industryLinkItems(pages: IndustryPageContent[]) {
       href: industryPagePath(page),
       name: page.subSlug ? page.name : entry.mainPageLabel,
       excerpt: page.excerpt,
+      industry: entry.name,
     };
   });
 }
